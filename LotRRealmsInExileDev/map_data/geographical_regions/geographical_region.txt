@@ -16,20 +16,30 @@
 	# These groups are mutually exclusive on the same tier & should cover every part of the map
 #########################################################################
 
+# valinor
+
 # middleearth
+
+# middleearth_valinor
+# middleearth_wastelands
 
 # middleearth_west
 	# middleearth_west_enedhwaith
 	# middleearth_west_isengard
 	# middleearth_west_rohan
+	# middleearth_west_lothlorien
+	# middleearth_west_fangorn
+	# middleearth_west_dolguldur
 	# middleearth_west_rhovanion
 		# middleearth_west_rhovanion_anduin
+		# middleearth_west_rhovanion_mirkwood
 		# middleearth_west_rhovanion_brownlands
+		# middleearth_west_rhovanion_dalelands
 	# middleearth_west_gondor
 		# middleearth_west_gondor_andrast
-		# middleearth_west_gondor_white_mountains
-		# middleearth_west_gondor_central_fiefdoms
-		# middleearth_west_gondor_western_fiefdoms
+		# middleearth_west_gondor_whitemountains
+		# middleearth_west_gondor_centralfiefdoms
+		# middleearth_west_gondor_easternfiefdoms
 		# middleearth_west_gondor_ithilien
 
 # middleearth_haradwaith
@@ -44,7 +54,7 @@
 		# middleearth_haradwaith_far_jungle
 
 # middleearth_mordor
-	# middleearth_mordor_gorgororth
+	# middleearth_mordor_gorgoroth
 	# middleearth_mordor_nurn
 
 # middleearth_beleriand
@@ -58,8 +68,26 @@
 	# middleearth_forodwaith_greymountains_witheredheath
 
 # middleearth_rhun
+	# middleearth_rhun_dorwinion
+	# middleearth_rhun_seaofrhun
+	# middleearth_rhun_khand
+
+
 
 # duchies
+middleearth_valinor = {
+	duchies = {
+		# Temp Valinor Duchy
+		d_valinor
+	}
+}
+
+middleearth_wastelands = {
+	duchies = {
+		d_wastelands
+	}
+}
+
 middleearth_west_enedhwaith = {
 	duchies = {
 		# k_andrast is in Gondor Region
@@ -82,18 +110,56 @@ middleearth_west_rohan = {
 		d_thefolde d_westfold d_eastfold d_thewold d_eastemnet
 	}
 }
-middleearth_west_rhovanion_anduin = {
+middleearth_west_lothlorien = {
 	duchies = {
 		# k_lothlorien
-		d_celebrant #d_lothlorien
-		# k_rhovanion
-		d_drownholt d_lothduin d_undeeps
+		d_lorien d_iathglan
+	}
+}
+#middleearth_west_fangorn = {}
+middleearth_west_dolguldur = {
+	duchies = {
+		# Matt: merge this with Mirkwood if needed - remove graphical region.
+		# k_amon_lanc
+		d_amon_lanc
+	}
+}
+middleearth_west_rhovanion_anduin = {
+	duchies = {
+		# k_langwell
+		d_ronen_in_anduin d_suflond d_dweorad
+		# k_lothlorien
+		d_parth_celebrant
+		# k_anduin_vale
+		d_warnelath d_west_bight d_carrock_vale d_drownholt
+		# k_south_rhovanion
+		d_undeeps
+	}
+}
+middleearth_west_rhovanion_mirkwood = {
+	duchies = {
+		# k_lasgalen
+		d_aradhrynd d_taurduin d_taur_nu_fuin d_emyn_i_firith d_nivrim
+		# k_angaladh
+		d_dundaedelu d_angaladh_rhunen d_men_i_naugrim
+		# k_amon_lanc
+		d_gwath_anglennol d_taur_e_ndaedlos d_amon_lanc
 	}
 }
 middleearth_west_rhovanion_brownlands = {
 	duchies = {
-		# k_uvanwaith
-		d_dagorlad
+		# k_brownlands (Brown Lands)
+		d_dagorlad d_brown_lands d_tumcelon
+		# k_south_rhovanion (Southern Rhovanion)
+		d_talath_harroch d_men_rhunen d_vethrafell d_taj_ures d_duil_rewinion
+		# k_ehwathrumavuld (East Bight and Eastern Wastes)
+		d_aivathiudor d_heahand d_anthardor d_east_bight d_sekelavuld
+	}
+}
+middleearth_west_rhovanion_dalelands = {
+	duchies = {
+		# k_dale
+		d_dalelands d_vargfell d_aldmyrr d_gramavuld d_sunnarinna d_drakkenvast
 	}
 }
 middleearth_west_gondor_andrast = {
@@ -102,7 +168,7 @@ middleearth_west_gondor_andrast = {
 		d_nan_enqui d_perth_maiwin d_parth_i_certemar d_annulefnui
 	}
 }
-middleearth_west_gondor_white_mountains = {
+middleearth_west_gondor_whitemountains = {
 	duchies = {
 		# k_lamedon
 		d_lamedon d_tarlang d_morthond_vale d_rhandir
@@ -110,7 +176,7 @@ middleearth_west_gondor_white_mountains = {
 		d_hairavercien d_arlefnui d_nan_i_feryn d_pinnath_gelin
 	}
 }
-middleearth_west_gondor_central_fiefdoms = {
+middleearth_west_gondor_centralfiefdoms = {
 	duchies = {
 		# k_belfalas
 		d_lond_ernil d_methrast d_anghabar d_edhelion
@@ -120,7 +186,7 @@ middleearth_west_gondor_central_fiefdoms = {
 		d_anfalas d_serelond
 	}
 }
-middleearth_west_gondor_western_fiefdoms = {
+middleearth_west_gondor_easternfiefdoms = {
 	duchies = {
 		# k_anorien
 		d_minas_tirith d_doranorien d_entyn_i_onodlo d_lossarnach
@@ -132,7 +198,7 @@ middleearth_west_gondor_western_fiefdoms = {
 middleearth_west_gondor_ithilien = {
 	duchies = {
 		# k_ithilin
-		d_minas_ithil d_emyn_arnen d_harithilien d_forithilien
+		d_minas_ithil d_emyn_arnen d_harithilien d_forithilien d_cormalthen
 	}
 }
 middleearth_haradwaith_harondor = {
@@ -213,7 +279,7 @@ middleearth_haradwaith_far_dune_sea = {
 	duchies = {
 		# e_haradwaith
 			# k_lurmsakun
-		d_starlurtsa d_noz_peka d_kuvango d_siakan d_sar_khand
+		d_noz_peka d_kuvango d_siakan d_sar_khand
 		# e_nafarat
 			# k_arysis
 		d_menarysis d_mannasha d_khadok d_moraghos d_sarysis
@@ -231,7 +297,7 @@ middleearth_haradwaith_far_dune_sea = {
 	}
 }
 
-middleearth_mordor_gorgororth = {
+middleearth_mordor_gorgoroth = {
 	duchies = {
 		d_udun d_barad_dur d_ephel_duath d_perth_ulmyn d_gaer_durlith d_rhunen_ered_lithui
 	}
@@ -241,23 +307,66 @@ middleearth_mordor_nurn = {
 		d_nurn d_maegond d_nargil d_glamhoth d_caran d_lithlad d_ghurzun 
 	}
 }
+middleearth_forodwaith_greymountains = {
+	duchies = {
+		# k_lasgalen
+		d_grey_mountain_narrows
+		# k_gundabad
+		d_gundabad
+	}
+}
+middleearth_rhun_dorwinion = {
+	duchies = {
+		# k_dorwinion
+		d_folyavuld d_doraldena d_ilanavuld d_uldonavuld d_rinnavuld d_ruscovuld d_iaurvuld
+		# k_logathavuld
+		# Matt: these could be moved into Iron Hills or an inclusive northern Rhûn region, moving it around shouldn't affect their unique building gfx.
+		d_gazar_narkad d_gazar_barak d_gazar_utol
+	}
+}
+middleearth_rhun_seaofrhun = {
+	duchies = {
+		# e_rhun
+		# k_usrievar
+		d_medloshad d_surubeki d_dacranamel d_gathod d_ulgathavuld
+		# k_nelornieth
+		d_nimbregardh d_dor_banath d_naergurthardh d_kugathavuld d_gazar_kug
+	}
+}
+
+middleearth_rhun_khand = {
+	duchies = {
+		# e_khand
+		# k_lower_khand
+		d_starlurtsa d_itakh_khand d_khand_amu d_khur_khand
+		# k_upper_khand
+		d_madh_ortogh d_uda_khand d_gap_of_khand d_khand_khuvesra d_subi_khand
+	}
+}
 
 # regions
 middleearth_west_rhovanion = {
 	regions = {
-		middleearth_west_rhovanion_anduin middleearth_west_rhovanion_brownlands
+		middleearth_west_rhovanion_anduin
+		middleearth_west_rhovanion_mirkwood
+		middleearth_west_rhovanion_brownlands
+		middleearth_west_rhovanion_dalelands
+		middleearth_west_lothlorien
 	}
 }
 middleearth_west_gondor = {
 	regions = {
-		middleearth_west_gondor_andrast	middleearth_west_gondor_white_mountains
-		middleearth_west_gondor_central_fiefdoms middleearth_west_gondor_western_fiefdoms
+		middleearth_west_gondor_andrast	middleearth_west_gondor_whitemountains
+		middleearth_west_gondor_centralfiefdoms middleearth_west_gondor_easternfiefdoms
 		middleearth_west_gondor_ithilien
 	}
 }
 middleearth_west = {
 	regions = {
-		middleearth_west_enedhwaith middleearth_west_isengard middleearth_west_rohan
+		middleearth_west_enedhwaith
+		middleearth_west_isengard
+		middleearth_west_rohan
+		#middleearth_west_fangorn
 		middleearth_west_rhovanion
 		middleearth_west_gondor
 	}
@@ -276,17 +385,26 @@ middleearth_haradwaith = {
 }
 middleearth_mordor = {
 	regions = {
-		middleearth_mordor_gorgororth middleearth_mordor_nurn
+		middleearth_mordor_gorgoroth middleearth_mordor_nurn
 	}
 }
-#middleearth_rhun = {
+middleearth_forodwaith = {
+	regions = {
+		middleearth_forodwaith_greymountains
+	}
+}
+middleearth_rhun = {
 #	generate_modifiers = yes
-#	regions = {
-#	}
-#}
+	regions = {
+		middleearth_rhun_dorwinion
+		middleearth_rhun_seaofrhun
+		middleearth_rhun_khand
+	}
+}
 middleearth = {
 	regions = {
 		middleearth_west middleearth_haradwaith middleearth_mordor
+		middleearth_rhun middleearth_forodwaith
 	}
 }
 
@@ -333,12 +451,14 @@ material_woods_pine_and_fir = {
 # Widespread Regional - Subsaharan Africa
 material_woods_subsaharan = {
 	regions = {
+		custom_greater_ray
 		middleearth_haradwaith_far_jungle
 	}
 }
 
 material_woods_padauk = {
 	regions = {
+		custom_greater_ray
 		middleearth_haradwaith_far_jungle
 	}
 }
@@ -347,29 +467,76 @@ material_woods_padauk = {
 material_woods_india = {
 	regions = {
 		middleearth_haradwaith_far_jungle # Matt note: temporary region for testing.
+		custom_greater_ray
 	}
 }
 
 material_woods_india_burma = {
 	regions = {
 		middleearth_haradwaith_far_jungle # Matt note: temporary region for testing.
+		custom_greater_ray
 	}
 }
 
 material_woods_ebony = {
 	regions = {
 		middleearth_haradwaith_far_jungle # Matt note: temporary region for testing.
+		custom_greater_ray
 	}
 }
 
 # Regional - France, England, Wales, Ireland
-material_wood_yew = {
+material_woods_yew = {
 	regions = {
 		middleearth_west_enedhwaith
 		middleearth_west_isengard
 		middleearth_west_rohan
 		#middleearth_west_eriador
 		#middleearth_beleriand
+	}
+}
+
+# EP2 Bow Woods
+material_woods_bamboo = {
+	regions = {
+		middleearth_rhun_seaofrhun
+	}
+}
+
+material_woods_cherry = {
+	regions = {
+		middleearth_rhun
+	}
+}
+
+material_woods_dogwood = {
+	regions = {
+		middleearth_rhun
+	}
+}
+
+material_woods_hazel = {
+	regions = {
+		middleearth_west
+	}
+}
+
+material_woods_hickory = {
+	regions = {
+		middleearth_rhun
+	}
+}
+
+material_woods_palm = {
+	regions = {
+		middleearth_haradwaith
+	}
+}
+
+material_woods_mulberry = {
+	regions = {
+		middleearth_west
+		middleearth_haradwaith
 	}
 }
 
@@ -387,7 +554,22 @@ material_woods_mediterranean = {
 # Regional - Sri Lanka
 material_woods_sri_lanka = {
 	regions = {
-		middleearth_haradwaith_far_jungle # Matt note: temporary region for testing.
+		middleearth_haradwaith_far_jungle
+		custom_greater_ray
+	}
+}
+
+# Regional - Lothlorien
+material_woods_mallorn = {
+	regions = {
+		middleearth_west_lothlorien
+	}
+}
+
+# Regional - Eastern Gondor
+material_woods_oiolare = {
+	regions = {
+		middleearth_west_gondor_easternfiefdoms
 	}
 }
 
@@ -413,29 +595,50 @@ material_cloth_cotton = {
 	}
 }
 
-material_metal_wootz = {
+material_bow_string_elven_hair = {
 	regions = {
-		middleearth_haradwaith_far_jungle # Matt note: temporary region for testing.
+		middleearth_west_lothlorien middleearth_west_rhovanion_mirkwood
+	}
+	duchies = {
+		d_nimbregardh d_dor_banath
 	}
 }
 
-material_metal_damascus = {
+material_metal_dwarven = {
 	regions = {
-		middleearth_haradwaith_far_abrakhan
-		middleearth_haradwaith_far_jungle
+		middleearth_west_rhovanion
+		middleearth_rhun
+		custom_bellakar
+		middleearth_haradwaith_umbar
+		middleearth_west_rohan
+		custom_anbalkumagan
 	}
 }
 
-material_metal_bulat = {
+material_metal_gondorian = {
 	regions = {
-		middleearth_haradwaith_far_jungle # Matt note: temporary region for testing.
+		middleearth_west_gondor
+		custom_bellakar
+		middleearth_haradwaith_umbar
+		middleearth_west_rohan
+		middleearth_haradwaith_harondor
+	}
+}
+
+material_metal_noldorin = {
+	regions = {
+		middleearth_west_lothlorien
+		middleearth_west_rhovanion_mirkwood
+	}
+	duchies = {
+		d_nimbregardh d_dor_banath
 	}
 }
 
 material_hsb_camel_bone = {
 	regions = {
 		middleearth_haradwaith
-		#middleearth_rhun_?
+		middleearth_rhun
 	}
 }
 
@@ -467,27 +670,29 @@ material_hsb_boar_tusk = {
 material_hsb_ivory_imported = {
 	regions = {
 		middleearth_mordor
-		middleearth_west_gondor_ithilien
+		middleearth_west_gondor
+		middleearth_haradwaith_harondor
+		middleearth_haradwaith_umbar
 	}
 }
 
 material_hsb_ivory_native = {
 	regions = {
-		middleearth_haradwaith
+		middleearth_haradwaith_far
+		middleearth_haradwaith_near
 	}
 }
 
 material_hsb_mother_of_pearl = {
 	regions = {
-		middleearth_haradwaith_far_mardruak
-		middleearth_haradwaith_far_bellakar
+		adventure_coastline
 	}
 }
 
 material_hsb_tortoiseshell = {
 	regions = {
 		#middleearth_west_eriador_?
-		middleearth_west_gondor_western_fiefdoms
+		middleearth_west_gondor_easternfiefdoms
 		middleearth_haradwaith_harondor
 		middleearth_haradwaith_near
 		middleearth_haradwaith_far_mardruak
@@ -500,7 +705,7 @@ material_hsb_seashell = {
 	regions = {
 		#middleearth_west_eriador_?
 		middleearth_west_gondor_andrast
-		middleearth_west_gondor_western_fiefdoms
+		middleearth_west_gondor_easternfiefdoms
 		middleearth_haradwaith_umbar
 		middleearth_haradwaith_far_mardruak
 		middleearth_haradwaith_far_bellakar
@@ -509,10 +714,30 @@ material_hsb_seashell = {
 	}
 }
 
+material_hsb_kine_horn = {
+	regions = {
+		middleearth_rhun
+	}
+}
+
 ###########################################################################
 # Graphical Regions
 ###########################################################################
 
+graphical_valinor = {
+	graphical = yes
+	color = { 150 190 30 }
+	regions = {
+		middleearth_valinor
+	}
+}
+graphical_wastelands = {
+	graphical = yes
+	color = { 20 20 20 }
+	regions = {
+		middleearth_wastelands
+	}
+}
 graphical_rohan = {
 	graphical = yes
 	color = { 50 200 50 }
@@ -531,7 +756,7 @@ graphical_western = {
 	graphical = yes
 	color = { 255 0 0 }
 	regions = {
-		middleearth_west_rhovanion
+		middleearth_west_rhovanion_anduin middleearth_west_rhovanion_mirkwood middleearth_west_rhovanion_brownlands
 		middleearth_west_enedhwaith
 	}
 }
@@ -546,6 +771,7 @@ graphical_mediterranean = { # Umbar, Dale and Northern Rhun
 	graphical = yes
 	color = { 0 0 255 }
 	regions = {
+		middleearth_west_rhovanion_dalelands middleearth_rhun_dorwinion
 		middleearth_haradwaith_harondor middleearth_haradwaith_umbar
 	}
 }
@@ -556,18 +782,21 @@ graphical_steppe = {
 		# Temporary added Orcs until Rhûn is added and can fill graphical_steppe.
 		# Orcish/Evil Regions
 		middleearth_mordor
-		#middleearth_misty_mountains middleearth_forodwaith_angmar middleearth_grey_mountains
+		middleearth_forodwaith
+		#middleearth_misty_mountains
 		# Rhûn
-		#middleearth_rhun
+		middleearth_rhun_seaofrhun
+		# Khand
+		middleearth_rhun_khand
 	}
 }
-#graphical_india = { # Unknown!
-#	graphical = yes
-#	color = { 0 255 0 }
-#	regions = {
-		
-#	}
-#}
+graphical_india = {
+	graphical = yes
+	color = { 0 255 0 }
+	regions = {
+		#Unset but not commented out to avoid error log spam
+	}
+}
 graphical_angrenost = {
 	graphical = yes
 	color = { 250 250 250 }
@@ -575,12 +804,134 @@ graphical_angrenost = {
 		middleearth_west_isengard
 	}
 }
-#graphical_gondor_white_mountains = {
-#	graphical = yes
-#	duchies = {
-#		d_arnach d_celosien d_lamedon d_morthond_vale d_rhandir d_nan_i_feryn d_hairavercien
-#	}
-#}
+graphical_lothlorien = {
+	graphical = yes
+	color = { 255 200 0 }
+	regions = {
+		middleearth_west_lothlorien
+	}
+}
+
+#############
+### Hunts ###
+#############
+
+# Deer Spread
+hunt_animal_deer_region = {
+	regions = {
+		# West
+		middleearth_west
+		# Rhûn
+		middleearth_rhun
+		# Haradwaith
+		middleearth_haradwaith
+		# Mordor
+		middleearth_mordor_nurn
+	}
+}
+
+# Antelope Spread
+hunt_animal_antelope_region = {
+	regions = {
+		# Haradwaith
+		middleearth_haradwaith
+		# Mordor
+		middleearth_mordor_nurn
+	}
+}
+
+# Gazelle Spread
+hunt_animal_gazelle_region = {
+	regions = {
+		# Haradwaith
+		middleearth_haradwaith
+	}
+}
+
+
+# Boar Spread
+hunt_animal_boar_region = {
+	regions = {
+		# West
+		middleearth_west_gondor middleearth_west_isengard middleearth_west_rhovanion middleearth_west_rohan
+		# Haradwaith
+		adventure_nearharad middleearth_haradwaith_far_mardruak middleearth_haradwaith_far_bellakar
+		# Rhûn
+		middleearth_rhun
+		# Mordor
+		middleearth_mordor_nurn
+	}
+}
+ 
+# Bear Spread
+hunt_animal_bear_region = {
+	regions = {
+		# West
+		middleearth_west
+		# Haradwaith
+		adventure_nearharad middleearth_haradwaith_far_mardruak middleearth_haradwaith_far_bellakar
+		# Rhûn
+		middleearth_rhun
+		# Mordor
+		middleearth_mordor_nurn
+	}
+}
+
+# Big Cat Spread
+hunt_animal_big_cat_region = {
+	regions = {
+		# Haradwaith
+		middleearth_haradwaith # Leopard/Lion
+		# Rhûn
+		middleearth_rhun_seaofrhun middleearth_rhun_khand
+		# Mordor
+		middleearth_mordor_nurn
+	}
+}
+
+# Bison Spread
+hunt_animal_bison_region = {
+	regions = {
+		# Haradwaith
+		adventure_nearharad middleearth_haradwaith_far_mardruak middleearth_haradwaith_far_bellakar
+		# Rhûn
+		middleearth_rhun
+		# West
+		middleearth_west
+		# Mordor
+		middleearth_mordor_nurn
+	}	
+}
+
+# Aurochs Spread
+hunt_animal_aurochs_region = {
+	regions = {
+		# Rhûn
+		middleearth_rhun_seaofrhun middleearth_rhun_khand
+	}
+}
+
+hunt_animal_reindeer_region = {
+	regions = {
+		# Forodwaith
+		middleearth_forodwaith
+		# Rhovanion
+		middleearth_west_rhovanion_dalelands middleearth_west_rhovanion_mirkwood
+		#Rhûn
+		middleearth_rhun_seaofrhun middleearth_rhun_dorwinion
+	}
+}
+
+hunt_animal_elk_region = {
+	regions = {
+		# Forodwaith
+		middleearth_forodwaith
+		# Rhovanion
+		middleearth_west_rhovanion_dalelands middleearth_west_rhovanion_mirkwood
+		#Rhûn
+		middleearth_rhun
+	}
+}
 
 ##########################################################################
 ## Special Regions
@@ -610,14 +961,33 @@ world_innovation_camels = {
 }
 special_region_innovation_all_things = {
 	regions = {
-		middleearth_west_enedhwaith middleearth_west_rhovanion_anduin
+		middleearth_west_rhovanion_anduin
+		# middleearth_west_enedhwaith - not reason for these guys to have it as they get a Tanistry variant
+	}
+}
+
+special_region_build_mumakil_pens = {
+	generate_modifiers = yes
+	duchies = { # Areas in southern Middle-earth where you can build Mumakil Pens
+		# k_tulwang
+		d_kanjar d_khorsaj d_tulwa d_bishra d_tulija d_ashatur
+		# k_raishoul
+		d_felira d_dalyan d_muryafa d_aus_yapat
+		# k_zajantak
+		d_lari d_qarneri d_mimita d_yeretik d_yasin
+		# k_an_balkumagan
+		d_aruzayan d_urithani d_nardubarim d_benthani d_velashar d_dobaraka d_sakya
+		# k_ray
+		d_dar d_sarwa d_suza_sumar d_suza_riy d_iunastiy d_briy_miyesec
+		d_riyeshara d_gai
+		# e_mumakan
 	}
 }
 
 # Custom Regions
 custom_gondor_calenardhon = {
 	duchies = {
-		d_isengard d_westfold d_thefolde d_eastfold d_eastrohan
+		d_isengard d_westfold d_thefolde d_eastfold d_eastemnet
 	}
 }
 custom_reunited_kingdom = {
@@ -672,7 +1042,7 @@ custom_gondorian_heartlands = {
 		d_minas_tirith d_doranorien d_entyn_i_onodlo d_lossarnach
 		# k_lebennin
 		d_pelargir d_lebennivet d_gilrain d_celosien
-		# k_ithilin
+		# k_ithilien
 		d_minas_ithil d_emyn_arnen d_harithilien d_forithilien
 	}
 }
@@ -737,6 +1107,42 @@ custom_dune_sea = {
 	}
 }
 
+custom_greater_rhovanion = {
+	duchies = {
+		# Lothlórien
+		d_lorien d_iathglan
+		# Fangorn
+		# Dol Guldur
+		d_amon_lanc
+		# Rhovanion
+		d_ronen_in_anduin d_suflond d_dweorad
+		d_parth_celebrant
+		d_warnelath d_west_bight d_carrock_vale d_drownholt
+		d_undeeps d_brown_lands
+		d_aradhrynd d_taurduin d_taur_nu_fuin d_emyn_i_firith d_nivrim
+		d_dundaedelu d_angaladh_rhunen d_men_i_naugrim
+		d_gwath_anglennol d_taur_e_ndaedlos
+		d_talath_harroch d_men_rhunen d_vethrafell d_taj_ures d_duil_rewinion d_dagorlad 
+		d_aivathiudor d_heahand d_anthardor d_east_bight d_sekelavuld
+		d_dalelands d_vargfell d_aldmyrr d_gramavuld d_sunnarinna d_drakkenvast
+		# Grey Mountains
+		d_grey_mountain_narrows
+		d_gundabad
+		# Dorwinion
+		d_folyavuld d_doraldena d_ilanavuld d_uldonavuld d_rinnavuld d_ruscovuld d_iaurvuld
+	}
+}
+
+custom_plains_rhovanion = {
+	counties = {
+		c_salur
+	}
+	duchies = {
+		d_talath_harroch d_men_rhunen d_vethrafell d_taj_ures d_duil_rewinion
+		d_aivathiudor d_heahand d_anthardor d_east_bight d_sekelavuld d_tumcelon
+	}
+}
+
 # Isengard Conquest regions
 special_isengard_unleashed_start_region = {				# Start area
 	duchies = {
@@ -773,17 +1179,27 @@ special_isengard_unleashed_conquest_all_regions = {		# All regions
 		special_isengard_unleashed_conquest_region_cleanup
 	}
 }
+special_mordor_and_surrounding_kingdoms = {		# Used in sarumans humble mordor CB faith conversion
+	regions = {
+		middleearth_mordor
+		middleearth_west_gondor_ithilien
+		 
+	}
+	duchies = {
+		 
+	}
+}
 
 # Special formable kingdoms/empires
 special_rohan_t4a_kingdom = {
 	duchies = {
 		# Rohan
-		d_thefolde d_westmark d_eastmark d_thewold d_eastrohan
+		d_thefolde d_westfold d_eastfold d_thewold d_eastemnet
 		# Western lands
 		d_isengard d_westmarches
 		# Beyond the Anduin
-		d_celebrant d_undeeps
-		# Into Dunland and Enedwaith
+		d_parth_celebrant d_undeeps
+		# Into Dunland and Enedhwaith
 		d_dathabha d_dunlending_wilds d_drulad d_isenlands
 		# Coastal Rohan
 		d_angrast d_druwaith_iaur
@@ -794,18 +1210,33 @@ special_dunland_t4a_kingdom = {
 		# Dunland
 		d_dunlandfells d_dunfearn d_dathabha d_dunlending_wilds
 		# West of the Gap of Rohan
-		d_westmarches # enedwaith and western andrast dutchies
+		d_westmarches d_isenlands
 		# Into Rohan
-		d_isengard d_westmark d_thefolde
+		d_isengard d_westfold d_thefolde
+	}
+}
+special_greater_dunland = {
+	duchies = {
+		# Dunland
+		d_dunlandfells d_dunfearn d_dathabha d_dunlending_wilds
+		# Rohan
+		d_thefolde d_westfold d_eastfold d_thewold d_eastemnet
+		# Others
+		d_westmarches d_isengard
+	}
+}
+special_western_enedhwaith = {
+	duchies = {
+		d_angrast d_wild_plains d_reedwater d_isenlands d_druwaith_iaur d_drulad d_parth_iaur
 	}
 }
 special_gondor_t4a_kingdom = {
 	regions = {
 		# middleearth_west_arnor 
 		middleearth_west_gondor
-		custom_gondor_calenardhon middleearth_west_enedhwaith middleearth_west_rhovanion_brownlands
+#		custom_gondor_calenardhon middleearth_west_enedhwaith middleearth_west_rhovanion_brownlands
 		middleearth_haradwaith_harondor
-		# middleearth_rhun_seaofrhun
+		# custom_gondor_seaofrhun
 	}
 }
 
@@ -815,6 +1246,8 @@ special_nafarati_tribute = {
 		d_sadhradamrun d_sadhradromen d_safakor d_firamir
 	}
 }
+
+
 
 # Coastal Regions
 #special_region_beleriand_coastal = {}
@@ -940,10 +1373,16 @@ dlc_fp1_region_western_adventure_targets_rhovanion_anduin = {
 		middleearth_west_rhovanion_anduin
 	}
 }
-#dlc_fp1_region_western_adventure_targets_grey_mountains = {}
+dlc_fp1_region_western_adventure_targets_mountains = {
+	regions = {
+		middleearth_forodwaith_greymountains
+		middleearth_west_gondor_whitemountains
+		middleearth_west_rhovanion_anduin #middleearth_west_misty_mountains
+	}
+}
 dlc_fp1_region_western_adventure_targets_gondor_mountains = {
 	regions = {
-		middleearth_west_gondor_white_mountains
+		middleearth_west_gondor_whitemountains
 	}
 }
 #dlc_fp1_region_western_adventure_targets_rhudaur = {}
@@ -990,6 +1429,104 @@ dlc_fp1_region_lotr_eastern_pool = {
 	regions = {
 		special_region_core_lotr_corsairs
 	}
+}
+dlc_fp1_region_lotr_wildmen_pool = {
+	regions = {
+		middleearth_west_enedhwaith middleearth_west_rohan middleearth_west_rhovanion_brownlands middleearth_west_gondor middleearth_haradwaith_harondor
+		# ToDo: Eregion Wildmen
+	}
+}
+### END FP1 Regions
+
+#####################
+# FP2 Regions
+#####################
+
+#dlc_fp2_old_vasconia = {
+#	duchies = {
+#		d_viscaya d_navarra d_armagnac
+#	}
+#	counties = {
+#		c_labourd c_albret c_marsan c_alto_aragon c_foix c_urgell c_lleida c_fraga c_puigcerda
+#	}
+#}
+
+#dlc_fp2_old_vasconia_pushed = {
+#	duchies = {
+#		d_viscaya d_navarra d_gascogne d_armagnac d_aragon d_barcelona
+#	}
+#}
+
+
+#dlc_fp2_mediterranean_shoreline = { # Then check is_coastal_county = yes
+#	duchies = { 
+#		d_mallorca
+#		d_sevilla d_granada d_murcia d_valencia d_barcelona
+#		d_languedoc
+#		d_istria d_croatia d_dalmatia d_usora d_ragusa d_duklja d_dyrrachion d_cephalonia
+#		d_epirus d_achaia d_krete d_aegean_islands d_athens
+#		d_thessaly d_thessalonika d_strymon
+#		d_thrace d_ephese d_cibyrrhaeot d_cilicia
+#		d_antioch d_lebanon d_cyprus d_urdunn d_palestine d_sinai d_delta d_alexandria
+#		d_cyrenaica d_syrte d_tripolitania d_gabes d_tunis d_kroumerie d_bejaia d_alger d_tlemcen d_rif
+#	}
+#
+#	regions = { world_europe_south_italy }
+#}
+
+#dlc_fp2_caucasian_iberia = { # Next to Georgia (Due to how counties are partitioned, and some warping, it does not match actual maps)
+#	counties = { c_tao c_klarjeti c_vanand c_hayk c_kartli c_tbilisi c_kakheti c_lori c_hereti }
+#}
+
+#dlc_fp2_form_aragon_region = {
+#	duchies = {
+#		# k_navarra
+#		d_viscaya d_navarra
+#		# k_valencia
+#		d_aragon d_valencia d_mallorca
+#		# k_aquitaine
+#		d_gascogne d_toulouse d_armagnac d_languedoc d_barcelona
+#	}
+#}
+
+#dlc_fp2_lyonese_monk_region = {
+#	duchies = {
+#		# k_aquitaine
+#		d_gascogne d_aquitaine d_toulouse d_languedoc d_armagnac d_poitou d_auvergne d_bourbon
+#	}
+#	regions = {
+#		world_europe_west_iberia
+#	}
+#}
+
+### END FP2 Regions
+
+# Adventure inspiration regions
+
+adventure_west = {
+	regions = { middleearth_west_enedhwaith middleearth_west_isengard middleearth_west_rohan
+		middleearth_west_lothlorien}
+}
+
+adventure_nearharad = {
+	regions = { middleearth_haradwaith_harondor middleearth_haradwaith_near middleearth_haradwaith_umbar }
+}
+
+adventure_elvenlands = {
+	regions = {  middleearth_west_lothlorien middleearth_west_rhovanion_mirkwood }
+	duchies = { d_nimbregardh d_dor_banath d_naergurthardh d_kugathavuld d_gazar_kug d_anfalas}
+}
+
+adventure_orclands = {
+	regions = { middleearth_mordor middleearth_forodwaith_greymountains  middleearth_west_dolguldur middleearth_haradwaith_far_abrakhan middleearth_west_isengard }
+}
+	
+adventure_coastline = {
+	regions = { special_region_enedhwaith_coastal special_region_andrast_coastal special_region_gondor_coastal special_region_haradwaith_near_coastal special_region_gondor_tolfalas special_region_capeofmardruak_coastal special_region_bellakar_coastal special_region_distant_lands_coastal }
+}
+
+adventure_belfalas_bay = {
+	regions = { special_region_andrast_coastal special_region_gondor_coastal special_region_haradwaith_near_coastal special_region_gondor_tolfalas }
 }
 
 ################
@@ -1094,6 +1631,12 @@ dlc_ep1_southwest_silk_road_trade_region = { # Silk Road
 	}
 }
 
+#dlc_ep1_arthurian_heartlands_region = {
+#	duchies = {
+#		d_somerset d_cornwall d_deheubarth d_powys d_gwynedd
+#	}
+#}
+
 ### END RC Regions
 
 divergence_island_regions = {
@@ -1106,6 +1649,91 @@ divergence_island_regions = {
 		#d_urezayan d_adazayin
 	}
 }
+
+# Regions which were logging errors by their non-existence; Should be reviewed for content transfers.
+
+world_africa_west = {}
+world_africa_west = {}
+dlc_fp2_mediterranean_shoreline = {}
+world_steppe = {}
+world_steppe = {}
+world_europe_west_iberia = {}
+world_europe = {}
+world_asia_minor = {}
+world_middle_east = {}
+world_india = {}
+world_africa = {}
+world_burma = {}
+world_tibet = {}
+world_steppe = {}
+world_tibet = {}
+world_burma = {}
+world_africa = {}
+world_india = {}
+world_middle_east = {}
+world_asia_minor = {}
+world_europe = {}
+world_steppe = {}
+ghw_region_scandinavia = {}
+world_europe_west_iberia = {}
+world_europe_west_iberia = {}
+world_europe_west_iberia = {}
+special_mongol_empire_start_region = {}
+special_mongol_empire_conquest_region_prio_1 = {}
+special_mongol_empire_conquest_region_prio_2 = {}
+special_mongol_empire_conquest_region_prio_3 = {}
+special_mongol_empire_conquest_region_prio_4 = {}
+special_mongol_empire_conquest_region_prio_5 = {}
+special_mongol_empire_conquest_region_cleanup = {}
+world_tibet = {}
+world_tibet = {}
+world_europe_north = {}
+world_europe_east = {}
+world_steppe = {}
+world_tibet = {}
+world_europe_north = {}
+world_europe_east = {}
+world_steppe = {}
+world_tibet = {}
+world_europe_north = {}
+world_europe_east = {}
+world_steppe = {}
+world_tibet = {}
+world_europe_north = {}
+world_europe_east = {}
+world_steppe = {}
+world_europe_west_iberia = {}
+world_india = {}
+world_burma = {}
+world_europe_north = {}
+world_europe_south = {}
+world_europe_west_britannia = {}
+world_asia_minor = {}
+world_asia_minor = {}
+world_europe = {}
+world_middle_east = {}
+world_india_rajastan = {}
+world_india_bengal = {}
+world_africa_north = {}
+world_steppe = {}
+world_tibet = {}
+world_africa_west = {}
+world_africa_east = {}
+world_india_deccan = {}
+world_burma = {}
+dlc_fp1_region_core_mainland_scandinavia = {}
+
+#####################
+# Achievements - Error log squashing, leave empty
+#####################
+
+dlc_fp1_achievement_far_from_home = { }
+
+dlc_fp1_achievement_king_of_all_the_isles = { }
+
+dlc_fp1_achievement_vladimirs_second_choice = { }
+
+dlc_ep1_achievement_rise_of_the_ghurids = { }
 
 
 

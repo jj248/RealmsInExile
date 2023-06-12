@@ -36,7 +36,10 @@ river_provinces = RANGE { 1211 1214 }
 river_provinces = RANGE { 3097 3102 }
 
 # Sea of Rhun Rivers
-river_provinces = RANGE { 1220 1229 }
+river_provinces = RANGE { 1226 1229 }
+
+# Upper Anduin
+river_provinces = RANGE { 4103 4114 }
 
 ########
 # LAKES
@@ -45,8 +48,10 @@ river_provinces = RANGE { 1220 1229 }
 lakes = RANGE { 1231 1236 }
 lakes = RANGE { 1240 1251 }
 lakes = RANGE { 1253 1257 }
+#lakes = LIST { 1256 } # Nen Hithoel (Amon Hen)
 lakes = RANGE { 1259 1262 }
 lakes = RANGE { 2248 2249 } # Uhtyara Lake of Abrakhan
+lakes = LIST { 4085 } # Lake Ata of Khand
 
 #####################
 # IMPASSABLE TERRAIN
@@ -70,6 +75,7 @@ impassable_mountains = RANGE { 1344 1349 } # Ered Nimrais
 impassable_mountains = RANGE { 1352 1367 } # Ered Nimrais
 impassable_mountains = RANGE { 1368 1378 } # Belfalas
 impassable_mountains = LIST { 1292 } # Tolfalas
+impassable_mountains = LIST { 4116 } # Falls of Rauros
 
 #Eredwaith
 impassable_mountains = LIST { 1379 } # Hills of Dunland
@@ -82,12 +88,18 @@ impassable_mountains = LIST { 1395 1396 } # Entwash
 
 #Rhovanion
 impassable_mountains = LIST { 2303 3067 3069 } # Gundabad Impassable (TEMP)
-impassable_mountains = LIST { 3075 } # Fangorn (TEMP)
 impassable_mountains = LIST { 1038 1151 } # Brown Lands (TEMP)
 impassable_mountains = RANGE { 3287 3294 } # Greenwood
 impassable_mountains = RANGE { 3377 3389 } # Greenwood
 impassable_mountains = LIST { 3462 3634 } # Dale
 impassable_mountains = LIST { 3300 } # Dale
+impassable_mountains = LIST { 4000 } # Rhovanion
+impassable_mountains = RANGE { 3892 3896 } # Rhovanion
+
+#Rhun
+impassable_mountains = LIST { 3075 } # Rhun
+impassable_mountains = RANGE { 3735 3739 } # Rhun
+impassable_mountains = RANGE { 4004 4014 } # Nelornieth
 
 #Harad
 impassable_mountains = LIST { 1295 } # Pin Hingren
@@ -99,6 +111,9 @@ impassable_mountains = LIST { 3068 } # Great Dune Sea
 impassable_mountains = LIST { 3070 3071 } # Great Dune Sea
 impassable_mountains = LIST { 2191 } # Eastern Harad
 impassable_mountains = RANGE { 3072 3088 } # Eastern Harad
+
+#Khand
+impassable_mountains = RANGE { 4086 4101 } # Khand
 
 #Umbar
 impassable_mountains = LIST { 1310 1311 1400 1402 } # Umbar Mountains

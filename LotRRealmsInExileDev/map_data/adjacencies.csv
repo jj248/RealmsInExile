@@ -1,4 +1,20 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
+# ANDUIN
+101;190;river_large;4104;-1;-1;-1;-1;Anduin
+99;185;river_large;4105;-1;-1;-1;-1;Anduin
+98;181;river_large;4106;-1;-1;-1;-1;Anduin
+97;181;river_large;4106;-1;-1;-1;-1;Anduin
+3132;761;river_large;4108;-1;-1;-1;-1;Anduin
+769;773;river_large;4109;-1;-1;-1;-1;Anduin
+3149;3144;river_large;4111;-1;-1;-1;-1;Anduin
+3152;3154;river_large;4112;-1;-1;-1;-1;Anduin
+3160;4102;river_large;4113;-1;-1;-1;-1;Anduin
+3160;3158;river_large;4113;-1;-1;-1;-1;Anduin
+# CELDUIN
+3468;3552;river_large;1226;-1;-1;-1;-1;Celduin
+3483;3549;river_large;1227;-1;-1;-1;-1;Celduin
+3481;3542;river_large;1227;-1;-1;-1;-1;Celduin
+3539;3525;river_large;1229;-1;-1;-1;-1;Celduin
 # ROHAN
 66;112;river_large;199;-1;-1;-1;-1;Entwash
 26;27;river_large;1038;-1;-1;-1;-1;Isen
@@ -8,7 +24,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 585;550;river_large;199;-1;-1;-1;-1;Isen
 71;155;river_large;199;-1;-1;-1;-1;Isen
 # GONDOR
-113;599;river_large;1176;-1;-1;-1;-1;Rauros
 209;208;river_large;1174;-1;-1;-1;-1;Cair_Andros
 231;208;river_large;1174;-1;-1;-1;-1;Cair_Andros
 202;203;river_large;1173;-1;-1;-1;-1;Osgiliath
@@ -33,5 +48,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2192;2196;river_large;1214;-1;-1;-1;-1;Riyesha
 1847;1863;river_large;1211;-1;-1;-1;-1;Felayia
 1859;1856;river_large;1212;-1;-1;-1;-1;Felayia
+1541;1492;sea;1131;-1;-1;-1;-1;Târik-Tamar
 # UNUSED
 -1;-1;;-1;-1;-1;-1;-1;
