@@ -5061,7 +5061,6 @@ e_enedhwaith = {
 						add = @correct_culture_primary_score
 					}
 				}
-
 				b_wulfborg = {
 					province = 114
 					color = { 85 18 17 }
@@ -5110,32 +5109,12 @@ e_enedhwaith = {
 					color = { 100 34 25 }
 					color2 = { 81 32 31 }
 				}
-				b_marishburh = { # Where the Stoor Hobbits of Dunland lived.
-					province = 121
-					color = { 100 74 25 }
-					color2 = { 81 32 31 }
-#					cultural_names = {
-#						name_list_hobbit = cn_oldmarishburg # Old Marishburg
-#					}
-				}
-				b_harthunn = {
-					province = 122
-					color = { 100 44 25 }
-					color2 = { 81 32 31 }
-					cultural_names = {
-						name_list_rohirrim = cn_mournshaws # Mournshaws
-					}
-				}
 				b_tormdreng = {
 					province = 123
 					color = { 100 54 25 }
 					color2 = { 81 32 31 }
 				}
-				b_ulundin = {
-					province = 124
-					color = { 100 64 25 }
-					color2 = { 81 32 31 }
-				}
+				
 			}
 			c_earcnoc = {
 				color = { 68 14 14 }
@@ -5193,9 +5172,9 @@ e_enedhwaith = {
 					}
 				}
 				
-				b_ravndal = {
-					province = 129
-					color = { 97 31 23 }
+				b_maidun = {
+					province = 131
+					color = { 105 31 23 }
 					color2 = { 81 32 31 }
 				}
 				b_lochthiar = {
@@ -5203,15 +5182,18 @@ e_enedhwaith = {
 					color = { 101 31 23 }
 					color2 = { 81 32 31 }
 				}
-				b_maidun = {
-					province = 131
-					color = { 105 31 23 }
+				b_ulundin = {
+					province = 124
+					color = { 100 64 25 }
 					color2 = { 81 32 31 }
 				}
-				b_ebronicurr = {
-					province = 132
-					color = { 109 31 23 }
+				b_marishburh = { # Where the Stoor Hobbits of Dunland lived.
+					province = 121
+					color = { 100 74 25 }
 					color2 = { 81 32 31 }
+					# cultural_names = {
+					# 	name_list_hobbit = cn_oldmarishburg # Old Marishburg
+					# }
 				}
 			}
 		}
@@ -5231,34 +5213,20 @@ e_enedhwaith = {
 						add = @correct_culture_primary_score
 					}
 				}
-				
+				b_ebronicurr = {
+					province = 132
+					color = { 109 31 23 }
+					color2 = { 81 32 31 }
+				}
 				b_riascach = {
 					province = 133
 					color = { 121 82 42 }
 					color2 = { 118 103 67 }
 				}
-				b_caimarava = {
-					province = 134
-					color = { 123 80 42 }
-					color2 = { 118 103 67 }
-				}
-				b_dunstrem = {
-					province = 135
-					color = { 125 78 42 }
-					color2 = { 118 103 67 }
-				}
-				b_vinyatir  = {
-					province = 136
-					color = { 127 76 42 }
-					color2 = { 118 103 67 }
-					cultural_names = {
-						name_list_rohirrim = cn_lichbluffs # Lich Bluffs
-					}
-				}
-				b_dunfidach = {
-					province = 137
-					color = { 129 74 42 }
-					color2 = { 118 103 67 }
+				b_ravndal = {
+					province = 129
+					color = { 97 31 23 }
+					color2 = { 81 32 31 }
 				}
 			}
 			c_chailcaerdh = {
@@ -5273,16 +5241,6 @@ e_enedhwaith = {
 					}
 				}
 
-				b_caeuchel = {
-					province = 138
-					color = { 109 80 46 }
-					color2 = { 118 103 67 }
-				}
-				b_treforn = {
-					province = 139
-					color = { 149 80 46 }
-					color2 = { 118 103 67 }
-				}
 				b_kedhern = {
 					province = 140
 					color = { 129 80 46 }
@@ -5293,48 +5251,13 @@ e_enedhwaith = {
 					color = { 139 80 46 }
 					color2 = { 118 103 67 }
 				}
-				b_ceobeinn = {
-					province = 142
-					color = { 119 80 46 }
-					color2 = { 118 103 67 }
+				
+				b_trumdreng = {
+					province = 161
+					color = { 67 46 35 }
+					color2 = { 67 75 58 }
 				}
 			}
-			c_nandunstrem = {
-				color = { 151 99 55 }
-				color2 = { 118 103 67 }
-
-				b_forthunn = {
-					province = 143
-					color = { 151 99 55 }
-					color2 = { 118 103 67 }
-				}
-				b_taralurior = {
-					province = 144
-					color = { 151 99 60 }
-					color2 = { 118 103 67 }
-				}
-				b_gwencoit = {
-					province = 145
-					color = { 151 99 65 }
-					color2 = { 118 103 67 }
-				}
-				b_mirthang = {
-					province = 146
-					color = { 151 99 70 }
-					color2 = { 118 103 67 }
-				}
-				b_larachduhnnan = {
-					province = 147
-					color = { 151 99 75 }
-					color2 = { 118 103 67 }
-				}
-			}
-		}
-		d_dathabha = {
-			color = { 71 40 42 }
-			color2 = { 67 64 67 }
-			capital = c_tormcaladach
-
 			c_tormcaladach = {
 				color = { 71 40 42 }
 				color2 = { 67 64 67 }
@@ -5349,6 +5272,114 @@ e_enedhwaith = {
 					color = { 79 42 42 }
 					color2 = { 67 64 67 }
 				}
+				b_dunfidach = {
+					province = 137
+					color = { 129 74 42 }
+					color2 = { 118 103 67 }
+				}
+				b_galtrev = {
+					province = 163
+					color = { 71 48 35 }
+					color2 = { 67 75 58 }
+				}
+			}
+			c_galtrev = {
+				color = { 71 48 35 }
+				color2 = { 67 75 58 }
+				ai_primary_priority = {
+					if = {
+						limit = {
+							culture = culture:herdfolk_dunlending
+						}
+						add = @correct_culture_primary_score
+					}
+				}
+				b_ceobeinn = {
+					province = 142
+					color = { 119 80 46 }
+					color2 = { 118 103 67 }
+				}
+				b_caeuchel = {
+					province = 138
+					color = { 109 80 46 }
+					color2 = { 118 103 67 }
+				}
+				b_treforn = {
+					province = 139
+					color = { 149 80 46 }
+					color2 = { 118 103 67 }
+				}
+				b_rengwydh = {
+					province = 164
+					color = { 73 46 35 }
+					color2 = { 67 75 58 }
+				}
+			}
+		}
+		d_dathabha = {
+			color = { 71 40 42 }
+			color2 = { 67 64 67 }
+			capital = c_riverwatch
+
+			c_riverwatch = {
+				color = { 60 30 45 }
+				color2 = { 67 64 67 }
+				
+				b_riverwatch = {
+					province = 27
+					color = { 153 72 226 }
+					color2 = { 220 220 220 }
+				}
+				b_fangcleft = {
+					province = 153
+					color = { 71 40 42 }
+					color2 = { 67 64 67 }
+				}
+				b_dolbaran = {
+					province = 24
+					color = "white"
+					color2 = "black"
+				}
+				b_cuvnerth = {
+					province = 22
+					color = "white"
+					color2 = "black"
+				}
+			}
+
+			c_starkmoors = {
+				color = { 77 54 40 }
+				color2 = { 67 75 58 }
+				ai_primary_priority = {
+					if = {
+						limit = {
+							culture = culture:herdfolk_dunlending
+						}
+						add = @correct_culture_primary_score
+					}
+				}
+
+				b_starkmoor = {
+					province = 158
+					color = { 61 48 35 }
+					color2 = { 67 75 58 }
+				}
+				b_bedhrych = {
+					province = 160
+					color = { 65 48 35 }
+					color2 = { 67 75 58 }
+				}
+				b_avencurr = {
+					province = 166
+					color = { 77 48 35 }
+					color2 = { 67 75 58 }
+				}
+			}
+
+			c_temparoonies = {
+				color = { 65 50 62 }
+				color2 = { 67 64 67 }
+
 				b_druwaur = {
 					province = 150
 					color = { 77 40 42 }
@@ -5381,11 +5412,6 @@ e_enedhwaith = {
 					color = { 67 40 42 }
 					color2 = { 67 64 67 }
 				}
-				b_iasgachphuing = {
-					province = 155
-					color = { 65 42 42 }
-					color2 = { 67 64 67 }
-				}
 				b_selgphuing = {
 					province = 156
 					color = { 63 44 42 }
@@ -5396,106 +5422,9 @@ e_enedhwaith = {
 					color = { 61 46 42 }
 					color2 = { 67 64 67 }
 				}
-			}
-			c_riverwatch = {
-				color = { 60 30 45 }
-				color2 = { 67 64 67 }
-				
-				b_riverwatch = {
-					province = 27
-					color = { 153 72 226 }
-					color2 = { 220 220 220 }
-				}
-				b_fangcleft = {
-					province = 153
-					color = { 71 40 42 }
-					color2 = { 67 64 67 }
-				}
-				b_dolbaran = {
-					province = 24
-					color = "white"
-					color2 = "black"
-				}
-				b_cuvnerth = {
-					province = 22
-					color = "white"
-					color2 = "black"
-				}
-			}
-		}
-		d_dunlending_wilds = { # temporary name for LotRO Dunland
-			color = { 71 48 35 }
-			color2 = { 67 75 58 }
-			capital = c_starkmoors
-
-			c_starkmoors = {
-				color = { 77 54 40 }
-				color2 = { 67 75 58 }
-				ai_primary_priority = {
-					if = {
-						limit = {
-							culture = culture:herdfolk_dunlending
-						}
-						add = @correct_culture_primary_score
-					}
-				}
-
-				b_starkmoor = {
-					province = 158
-					color = { 61 48 35 }
-					color2 = { 67 75 58 }
-				}
-				b_ramcadlus = {
-					province = 159
-					color = { 63 46 35 }
-					color2 = { 67 75 58 }
-				}
-				b_bedhrych = {
-					province = 160
-					color = { 65 48 35 }
-					color2 = { 67 75 58 }
-				}
-				b_trumdreng = {
-					province = 161
-					color = { 67 46 35 }
-					color2 = { 67 75 58 }
-				}
-				b_thoronnorc = {
-					province = 162
-					color = { 69 48 35 }
-					color2 = { 67 75 58 }
-				}
-			}
-			c_galtrev = {
-				color = { 71 48 35 }
-				color2 = { 67 75 58 }
-				ai_primary_priority = {
-					if = {
-						limit = {
-							culture = culture:herdfolk_dunlending
-						}
-						add = @correct_culture_primary_score
-					}
-				}
-
-				b_galtrev = {
-					province = 163
-					color = { 71 48 35 }
-					color2 = { 67 75 58 }
-				}
-				b_rengwydh = {
-					province = 164
-					color = { 73 46 35 }
-					color2 = { 67 75 58 }
-				}
-				b_dungyroch = {
-					province = 165
-					color = { 75 48 35 }
-					color2 = { 67 75 58 }
-				}
-				b_avencurr = {
-					province = 166
-					color = { 77 48 35 }
+				b_bogbarrows = {
+					province = 172
+					color = { 91 46 35 }
 					color2 = { 67 75 58 }
 				}
 			}
@@ -5524,21 +5453,6 @@ e_enedhwaith = {
 				b_dunbog = {
 					province = 169
 					color = { 85 38 35 }
-					color2 = { 67 75 58 }
-				}
-				b_corsavanc = {
-					province = 170
-					color = { 87 42 35 }
-					color2 = { 67 75 58 }
-				}
-				b_lhancolvarn = {
-					province = 171
-					color = { 89 44 35 }
-					color2 = { 67 75 58 }
-				}
-				b_bogbarrows = {
-					province = 172
-					color = { 91 46 35 }
 					color2 = { 67 75 58 }
 				}
 			}
@@ -6013,7 +5927,15 @@ e_enedhwaith = {
 					color2 = { 195 165 133 }
 					
 				}
-				
+
+				b_ithriuls_retreat = {
+					province = 598
+					
+					color = { 176 114 81 }
+					color2 = { 186 121 86 }
+					
+				}				
+
 				b_enedhir = {
 					province = 597
 					
@@ -6043,15 +5965,7 @@ e_enedhwaith = {
 					color2 = { 192 166 140 }
 					
 				}
-				
-				b_cartrev_andras = {
-					province = 581
-					
-					color = { 186 161 136 }
-					color2 = { 192 166 140 }
-					
-				}
-				
+								
 				b_astardin = {
 					province = 582
 					
@@ -6128,14 +6042,6 @@ e_enedhwaith = {
 					
 				}
 				
-				b_lhan_tarren = {
-					province = 578
-					
-					color = { 156 101 72 }
-					color2 = { 160 103 73 }
-					
-				}
-				
 				b_plas_lhan = {
 					province = 591
 					
@@ -6150,8 +6056,41 @@ e_enedhwaith = {
 					color = { 145 94 67 }
 					color2 = { 160 103 73 }
 					
+				}			
+
+			}
+
+			c_nandunstrem = {
+				color = { 151 99 55 }
+				color2 = { 118 103 67 }
+
+				b_forthunn = {
+					province = 143
+					color = { 151 99 55 }
+					color2 = { 118 103 67 }
 				}
-				
+				b_gwencoit = {
+					province = 145
+					color = { 151 99 65 }
+					color2 = { 118 103 67 }
+				}
+				b_mirthang = {
+					province = 146
+					color = { 151 99 70 }
+					color2 = { 118 103 67 }
+				}
+				b_larachduhnnan = {
+					province = 147
+					color = { 151 99 75 }
+					color2 = { 118 103 67 }
+				}
+				b_lhan_tarren = {
+					province = 578
+					
+					color = { 156 101 72 }
+					color2 = { 160 103 73 }
+					
+				}
 			}
 			
 			c_corcenis = {
@@ -6185,6 +6124,15 @@ e_enedhwaith = {
 					color = { 168 118 79 }
 					color2 = { 178 124 84 }
 					
+				}
+
+				b_harthunn = {
+					province = 122
+					color = { 100 44 25 }
+					color2 = { 81 32 31 }
+					cultural_names = {
+						name_list_rohirrim = cn_mournshaws # Mournshaws
+					}
 				}
 				
 			}
@@ -6223,7 +6171,15 @@ e_enedhwaith = {
 					color = { 181 133 96 }
 					color2 = { 201 148 107 }
 					
-				}	        
+				}
+				
+				b_an_gor_ghan = {
+					province = 564
+					
+					color = { 176 129 93 }
+					color2 = { 201 148 107 }
+					
+				}
 				
 			}
 			
@@ -6289,28 +6245,6 @@ e_enedhwaith = {
 					province = 596
 					
 					color = { 168 114 76 }
-					color2 = { 143 125 109 }
-					
-				}
-				
-			}
-
-			c_eryn_gwathlo = {
-				color = { 183 128 85 }
-				color2 = { 70 69 67 }
-
-				b_an_gor_ghan = {
-					province = 564
-					
-					color = { 176 129 93 }
-					color2 = { 201 148 107 }
-					
-				}
-			           
-				b_pura_khorg = {
-					province = 563
-					
-					color = { 163 111 73 }
 					color2 = { 143 125 109 }
 					
 				}
@@ -6409,14 +6343,6 @@ e_enedhwaith = {
 					province = 559
 					
 					color = { 181 118 83 }
-					color2 = { 186 121 86 }
-					
-				}
-				
-				b_ithriuls_retreat = {
-					province = 598
-					
-					color = { 176 114 81 }
 					color2 = { 186 121 86 }
 					
 				}
