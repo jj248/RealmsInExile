@@ -1,0 +1,199 @@
+﻿types LotRCouncilWindow { 
+    type lotr_council_window = window { 
+        size = { 1300 700 } 
+        position = { 400 75 } 
+        layer = middle 
+        visible = "[GetVariableSystem.Exists('lotr_council_window')]" 
+        
+        using = Window_Background 
+        using = Window_Decoration
+        using = Animation_ShowHide_Standard
+        allow_outside = yes
+
+        vbox = {
+            using = Window_Margins
+            restrictparent_min = yes 
+            allow_outside = yes
+
+            header_pattern = {
+                allow_outside = yes
+                layoutpolicy_horizontal = expanding
+
+                blockoverride "header_text" 
+                {
+                    raw_text = "DWARVEN MOOT, SCREAMING THEM HOOTS"
+                    default_format = "#high"
+                }
+
+                blockoverride "button_close"
+                {
+                    onclick = "[GetVariableSystem.Clear( 'lotr_council_window' )]"
+                }
+            }
+            hbox = {
+                allow_outside = yes
+                spacing = 15
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
+                    }
+                    blockoverride "position" {
+                        position = { 0 150 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_2')]"
+                    }
+                    blockoverride "position" {
+                        position = { 0 100 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_3')]"
+                    }
+                    blockoverride "position" {
+                        position = { 0 50 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_4')]"
+                    }
+                    blockoverride "position" {
+                        position = { 0 0 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_5')]"
+                    }
+                    blockoverride "position" {
+                        position = { 0 50 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_6')]"
+                    }
+                    blockoverride "position" {
+                        position = { 0 100 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_7')]"
+                    }
+                    blockoverride "position" {
+                        position = { 0 150 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+            }
+            expand = {}
+            hbox = {
+                layoutpolicy_horizontal = expanding
+                vbox = {
+                    spacing = 5
+                    text_single = {
+                        raw_text = "Walla"
+                        fontsize = 24
+                        default_format = "#high"
+                    }
+                    spacer = { size = { 0 5 }}
+                    hbox = {
+                        spacing = 5
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                    }
+                    hbox = {
+                        spacing = 5
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                    }
+                }
+                vbox = {
+                    spacing = 5
+                    text_single = {
+                        raw_text = "Willi"
+                        fontsize = 24
+                        default_format = "#high"
+                    }
+                    spacer = { size = { 0 5 }}
+                    hbox = {
+                        spacing = 5
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                    }
+                    hbox = {
+                        spacing = 5
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                    }
+                }
+            }
+            spacer = { size = { 0 25 }}
+            # expand = {}
+        }
+        
+    }
+
+    type council_window_torso = widget {
+        allow_outside = yes
+        vbox = {
+            block "datacontext" {
+                datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
+            }
+            block "position" {
+                position = { 0 0 }
+            }
+            
+            text_single = {
+                text = "[Scope.Char.GetCulture.GetHeritage.GetNameNoTooltip]"
+                fontsize = 15
+                default_format = "#high"
+            }
+            portrait_torso = {
+                datacontext = "[Scope.Char]"
+                blockoverride "opinion_box"{}
+            }
+            
+            text_single = {
+                text = "[Scope.Char.GetFirstNameNoTooltip]"
+                fontsize = 15
+                default_format = "#high"
+            }
+        }
+    }
+}

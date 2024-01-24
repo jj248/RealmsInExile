@@ -19,3 +19,34 @@ decrease_variable = { # From Tobbzn
         subtract = $AMOUNT$
     }
 }
+
+setup_initial_council_members = {
+    set_global_variable = {
+		name = dwarven_council_member_1
+		value = character:lineofdurin90
+	}
+    set_global_variable = {
+		name = dwarven_council_member_2
+		value = character:lineofuriVI
+	}
+    set_global_variable = {
+		name = dwarven_council_member_3
+		value = character:lineofdwalin91
+	}
+    set_global_variable = {
+		name = dwarven_council_member_4
+		value = character:lineofthrar83
+	}
+    set_global_variable = {
+		name = dwarven_council_member_5
+		value = character:lineofnacilionvector
+	}
+    set_global_variable = {
+		name = dwarven_council_member_6
+		value = character:lineofcirdan
+	}
+    set_global_variable = {
+		name = dwarven_council_member_7
+		value = character:lineofmorcad14
+	}
+}

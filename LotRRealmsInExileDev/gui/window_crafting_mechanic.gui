@@ -8,12 +8,12 @@
         using = Window_Background 
         using = Window_Decoration
         using = Animation_ShowHide_Standard
-                    allow_outside = yes
+        allow_outside = yes
         
         vbox = { 
             using = Window_Margins
             restrictparent_min = yes 
-                    allow_outside = yes
+            allow_outside = yes
     
             header_pattern = {
                     allow_outside = yes
