@@ -10241,6 +10241,13 @@ lineofbelphegor2 = {
     7005.1.1 = {
         birth = yes
     }
+	7028.1.1 = {
+		set_relation_rival = character:lineofbelphegor5
+	}
+	7030.1.1 = {
+		set_relation_rival = character:lineofbelphegor3
+		set_relation_rival = character:lineofbelphegor4
+	}
 }
 
 lineofbelphegor3 = {
@@ -10265,6 +10272,12 @@ lineofbelphegor3 = {
     7007.1.1 = {
         birth = yes
     }
+	7028.1.1 = {
+		set_relation_rival = character:lineofbelphegor5
+	}
+	7030.1.1 = {
+		set_relation_rival = character:lineofbelphegor4
+	}
 }
 
 lineofbelphegor4 = {
@@ -10282,6 +10295,9 @@ lineofbelphegor4 = {
     7010.1.1 = {
         birth = yes
     }
+	7028.1.1 = {
+		set_relation_rival = character:lineofbelphegor5
+	}
 }
 
 lineofbelphegor5 = {
