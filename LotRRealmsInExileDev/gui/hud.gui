@@ -931,11 +931,7 @@ widget = {
 					enabled = "[And(GetScriptedGui('can_do_sorcery').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End), And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode)))]"
 					
 					tooltipwidget = {
-						using = TooltipWithFakeShortcut
-						blockoverride "shortcut_text"
-						{
-							text = "[Select_CString( StringIsEmpty(GetScriptedGui('can_do_sorcery').IsValidTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)), Localize('SORCERY_HUD'), GetScriptedGui('can_do_sorcery').IsValidTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
-						}
+						container_sorcery_tooltip = {}
 					}
 
 					state = {
@@ -997,10 +993,7 @@ widget = {
 					name = "lotr_council"
 					datacontext = "[GetPlayer]"
 					datacontext = "[AccessLocalPlayerCachedData]" 
-						
-					# tooltipwidget = {
-					# 	container_crafting_tooltip = {}
-					# }
+					visible = "[GetScriptedGui('show_gui_button').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]" #show_gui_button
 
 					state = {
 						name = _mouse_hierarchy_enter

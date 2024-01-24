@@ -1,0 +1,8 @@
+show_gui_button = {
+    is_shown = {
+        OR = {
+            top_liege.primary_title = title:k_dorwinion
+            primary_title = title:k_dorwinion
+        }
+    }
+}

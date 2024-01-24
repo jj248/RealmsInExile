@@ -30,15 +30,44 @@
                     onclick = "[GetVariableSystem.Clear( 'lotr_council_window' )]"
                 }
             }
+            expand = {}
+        }
+
+        widget = {
+            parentanchor = center
+            position = { 0 25 }
+            size = { 1230 610 } 
+            
+            background = {
+                name = "background"
+                texture = "gfx/interface/illustrations/event_scenes/kitchen_dwarven.dds"
+        
+                modify_texture = {
+                    texture = "gfx/interface/component_masks/mask_rough_edges.dds"
+                    spriteType = Corneredtiled
+                    spriteborder = { 20 20 }
+                    blend_mode = alphamultiply
+                    texture_density = 1.5
+                }
+            }
+
+
             hbox = {
                 allow_outside = yes
-                spacing = 15
+                spacing = 5
+                position = { 0 -175 }
                 council_window_torso = {
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
                     }
                     blockoverride "position" {
                         position = { 0 150 }
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 50 30 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 70 265 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -49,6 +78,12 @@
                     blockoverride "position" {
                         position = { 0 100 }
                     }
+                    blockoverride "heritage_position" {
+                        position = { 50 -20 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 70 215 }
+                    }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
@@ -58,6 +93,12 @@
                     blockoverride "position" {
                         position = { 0 50 }
                     }
+                    blockoverride "heritage_position" {
+                        position = { 50 -70 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 70 165 }
+                    }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
@@ -65,7 +106,13 @@
                         datacontext = "[GetGlobalVariable('dwarven_council_member_4')]"
                     }
                     blockoverride "position" {
-                        position = { 0 0 }
+                        position = { 0 10 }
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 50 -105 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 50 125 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -76,6 +123,12 @@
                     blockoverride "position" {
                         position = { 0 50 }
                     }
+                    blockoverride "heritage_position" {
+                        position = { 50 -70 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 70 165 }
+                    }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
@@ -84,6 +137,12 @@
                     }
                     blockoverride "position" {
                         position = { 0 100 }
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 50 -20 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 70 215 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -94,12 +153,18 @@
                     blockoverride "position" {
                         position = { 0 150 }
                     }
+                    blockoverride "heritage_position" {
+                        position = { 50 30 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 70 265 }
+                    }
                 }
-                spacer = { size = { 150 0 } }
+                spacer = { size = { 180 0 } }
             }
-            expand = {}
             hbox = {
-                layoutpolicy_horizontal = expanding
+                position = { 0 200 }
+                spacer = { size = { 10 0 } }
                 vbox = {
                     spacing = 5
                     text_single = {
@@ -128,6 +193,58 @@
                         button_primary = { # 'Downgrade' button
                             raw_text = "Fun Button"
                             size = { 200 50 }
+                        }
+                    }
+                }
+                vbox = {
+                    spacing = 15
+                    text_single = {
+                        raw_text = "Willa"
+                        fontsize = 24
+                        default_format = "#high"
+                    }
+                    widget = {
+                        size = { 300 105 }
+                        using = DefaultTooltipBackground
+            
+                        background = {
+                            using = Background_Area_Dark
+                
+                            modify_texture = {
+                                texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+                                blend_mode = alphamultiply
+                                alpha = 0.7
+                                mirror = vertical
+                            }
+                        }
+                        vbox = {
+                            hbox = {
+                                layoutpolicy_horizontal = expanding
+                                text_single = {
+                                    raw_text = "Something"
+                                }
+                                text_single = {
+                                    raw_text = "Something"
+                                }
+                            }
+                            hbox = {
+                                layoutpolicy_horizontal = expanding
+                                text_single = {
+                                    raw_text = "Something"
+                                }
+                                text_single = {
+                                    raw_text = "Something"
+                                }
+                            }
+                            hbox = {
+                                layoutpolicy_horizontal = expanding
+                                text_single = {
+                                    raw_text = "Something"
+                                }
+                                text_single = {
+                                    raw_text = "Something"
+                                }
+                            }
                         }
                     }
                 }
@@ -162,15 +279,33 @@
                         }
                     }
                 }
+                spacer = { size = { 10 0 } }
             }
-            spacer = { size = { 0 25 }}
-            # expand = {}
+
+            # scrollbox = {
+            #     size = { 100% 100% }
+            #     allow_outside = yes
+            #     blockoverride "scrollbox_content" { }
+            # }
         }
         
     }
 
     type council_window_torso = widget {
         allow_outside = yes
+        vbox = {
+            block "heritage_position" {
+                position = { 50 0 }
+            }
+            block "datacontext" {
+                datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
+            }
+            text_single = {
+                text = "[Scope.Char.GetCulture.GetHeritage.GetNameNoTooltip]"
+                fontsize = 15
+                default_format = "#high"
+            }
+        }
         vbox = {
             block "datacontext" {
                 datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
@@ -179,16 +314,19 @@
                 position = { 0 0 }
             }
             
-            text_single = {
-                text = "[Scope.Char.GetCulture.GetHeritage.GetNameNoTooltip]"
-                fontsize = 15
-                default_format = "#high"
-            }
             portrait_torso = {
                 datacontext = "[Scope.Char]"
                 blockoverride "opinion_box"{}
             }
+        }
+        vbox = {
+            block "name_position" {
+                position = { 50 0 }
+            }
             
+            block "datacontext" {
+                datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
+            }
             text_single = {
                 text = "[Scope.Char.GetFirstNameNoTooltip]"
                 fontsize = 15
@@ -196,4 +334,5 @@
             }
         }
     }
+
 }
