@@ -1,6 +1,6 @@
 ﻿types LotRCouncilWindow { 
     type lotr_council_window = window { 
-        size = { 1300 700 } 
+        size = { 1300 900 } 
         position = { 400 75 } 
         layer = middle 
         visible = "[GetVariableSystem.Exists('lotr_council_window')]" 
@@ -36,7 +36,7 @@
         widget = {
             parentanchor = center
             position = { 0 25 }
-            size = { 1230 610 } 
+            size = { 1230 790 } 
             
             background = {
                 name = "background"
@@ -55,19 +55,32 @@
             hbox = {
                 allow_outside = yes
                 spacing = 5
-                position = { 0 -175 }
+                position = { 10 -170 }
                 council_window_torso = {
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
                     }
-                    blockoverride "position" {
-                        position = { 0 150 }
-                    }
+                    visible = "[GetScriptedGui( 'show_char_in_first_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
                     blockoverride "heritage_position" {
-                        position = { 50 30 }
+                        position = { 50 -40 }
+                    }
+                    blockoverride "position" {
+                        position = { 0 60 }
                     }
                     blockoverride "name_position" {
-                        position = { 70 265 }
+                        position = { 70 170 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 325 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 445 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 445 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 325 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -75,14 +88,27 @@
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_2')]"
                     }
-                    blockoverride "position" {
-                        position = { 0 100 }
-                    }
+                    visible = "[GetScriptedGui( 'show_char_in_second_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
                     blockoverride "heritage_position" {
-                        position = { 50 -20 }
+                        position = { 50 -100 }
+                    }
+                    blockoverride "position" {
+                        position = { 10 10 }
                     }
                     blockoverride "name_position" {
-                        position = { 70 215 }
+                        position = { 60 120 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 275 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 395 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 395 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 275 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -90,29 +116,84 @@
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_3')]"
                     }
-                    blockoverride "position" {
-                        position = { 0 50 }
-                    }
+                    visible = "[GetScriptedGui( 'show_char_in_third_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
                     blockoverride "heritage_position" {
-                        position = { 50 -70 }
+                        position = { 50 -140 }
+                    }
+                    blockoverride "position" {
+                        position = { 0 -40 }
                     }
                     blockoverride "name_position" {
-                        position = { 70 165 }
+                        position = { 50 70 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 225 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 345 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 345 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 225 }
                     }
                 }
                 spacer = { size = { 150 0 } }
+                # Central Char
                 council_window_torso = {
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_4')]"
                     }
-                    blockoverride "position" {
-                        position = { 0 10 }
-                    }
+                    visible = "[GetScriptedGui( 'show_char_in_fourth_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
                     blockoverride "heritage_position" {
-                        position = { 50 -105 }
+                        position = { 50 -180 }
+                    }
+                    blockoverride "position" {
+                        position = { 10 -80 }
                     }
                     blockoverride "name_position" {
-                        position = { 50 125 }
+                        position = { 65 30 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 185 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 305 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 305 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 185 }
+                    }
+                }
+                # Ruling Char
+                council_window_torso = {
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dwarven_council_member_4')]"
+                    }
+                    
+                    blockoverride "heritage_position" {
+                        position = { 50 120 }
+                    }
+                    blockoverride "position" {
+                        position = { 5 220 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 60 330 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { -5 485 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { -5 605 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { -5 605 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { -5 485 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -120,14 +201,27 @@
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_5')]"
                     }
-                    blockoverride "position" {
-                        position = { 0 50 }
-                    }
+                    visible = "[GetScriptedGui( 'show_char_in_fith_window' ).IsShown( GuiScope.SetRoot( Scope ).End)]"
                     blockoverride "heritage_position" {
-                        position = { 50 -70 }
+                        position = { 50 -145 }
+                    }
+                    blockoverride "position" {
+                        position = { 10 -40 }
                     }
                     blockoverride "name_position" {
-                        position = { 70 165 }
+                        position = { 60 70 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 225 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 345 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 345 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 225 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -135,14 +229,27 @@
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_6')]"
                     }
-                    blockoverride "position" {
-                        position = { 0 100 }
-                    }
+                    visible = "[GetScriptedGui( 'show_char_in_sixth_window' ).IsShown( GuiScope.SetRoot( Scope ).End)]"
                     blockoverride "heritage_position" {
-                        position = { 50 -20 }
+                        position = { 60 -90 }
+                    }
+                    blockoverride "position" {
+                        position = { 0 20 }
                     }
                     blockoverride "name_position" {
-                        position = { 70 215 }
+                        position = { 50 120 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 275 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 395 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 395 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 275 }
                     }
                 }
                 spacer = { size = { 150 0 } }
@@ -150,20 +257,33 @@
                     blockoverride "datacontext" {
                         datacontext = "[GetGlobalVariable('dwarven_council_member_7')]"
                     }
-                    blockoverride "position" {
-                        position = { 0 150 }
-                    }
+                    visible = "[GetScriptedGui( 'show_char_in_seventh_window' ).IsShown( GuiScope.SetRoot( Scope ).End)]"
                     blockoverride "heritage_position" {
-                        position = { 50 30 }
+                        position = { 50 -40 }
+                    }
+                    blockoverride "position" {
+                        position = { 0 60 }
                     }
                     blockoverride "name_position" {
-                        position = { 70 265 }
+                        position = { 65 170 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 325 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 445 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 445 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 325 }
                     }
                 }
                 spacer = { size = { 180 0 } }
             }
             hbox = {
-                position = { 0 200 }
+                position = { 0 300 }
                 spacer = { size = { 10 0 } }
                 vbox = {
                     spacing = 5
@@ -281,18 +401,62 @@
                 }
                 spacer = { size = { 10 0 } }
             }
-
-            # scrollbox = {
-            #     size = { 100% 100% }
-            #     allow_outside = yes
-            #     blockoverride "scrollbox_content" { }
-            # }
         }
         
     }
 
     type council_window_torso = widget {
         allow_outside = yes
+
+        ### Dark portrait behind char
+        icon = {
+            size = { 170 150 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+            texture_density = 2
+            alpha = 0.9
+            block "lower_mask_position" {
+                position = { 0 30 }
+            }
+        }
+        icon = {
+            size = { 170 150 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+            texture_density = 2
+            alpha = 0.9
+            block "upper_mask_position" {
+                position = { 0 30 }
+            }
+            mirror = vertical
+        }
+        icon = {
+            size = { 170 150 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+            texture_density = 2
+            mirror = vertical
+            block "upper_frame_position" {
+                position = { 0 30 }
+            }
+        }
+        icon = {
+            size = { 170 150 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+            texture_density = 2
+            position = { 0 30 }
+            alpha = 0.6
+            block "lower_frame_position" {
+                position = { 0 30 }
+            }
+        }
+
+        ### Char, Char name and heritage
         vbox = {
             block "heritage_position" {
                 position = { 50 0 }
@@ -307,6 +471,7 @@
             }
         }
         vbox = {
+            visible = "[GetScriptedGui( 'show_char_ruling_window' ).IsShown( GuiScope.SetRoot( Scope ).End)]"
             block "datacontext" {
                 datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
             }

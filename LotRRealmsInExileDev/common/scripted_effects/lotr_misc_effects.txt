@@ -23,19 +23,19 @@ decrease_variable = { # From Tobbzn
 setup_initial_council_members = {
     set_global_variable = {
 		name = dwarven_council_member_1
-		value = character:lineofdurin90
+		value = character:lineofchief9
 	}
     set_global_variable = {
 		name = dwarven_council_member_2
-		value = character:lineofuriVI
+		value = character:lineoffalgond
 	}
     set_global_variable = {
 		name = dwarven_council_member_3
-		value = character:lineofdwalin91
+		value = character:lineofsnail57
 	}
     set_global_variable = {
 		name = dwarven_council_member_4
-		value = character:lineofthrar83
+		value = character:lineofjauf15
 	}
     set_global_variable = {
 		name = dwarven_council_member_5
@@ -43,7 +43,7 @@ setup_initial_council_members = {
 	}
     set_global_variable = {
 		name = dwarven_council_member_6
-		value = character:lineofcirdan
+		value = character:lotr_vanity_juke
 	}
     set_global_variable = {
 		name = dwarven_council_member_7
