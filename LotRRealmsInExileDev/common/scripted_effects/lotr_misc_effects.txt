@@ -20,7 +20,7 @@ decrease_variable = { # From Tobbzn
     }
 }
 
-setup_initial_council_members = {
+setup_dorwinion_council_members = {
     set_global_variable = {
 		name = dwarven_council_member_1
 		value = character:lineofchief9
