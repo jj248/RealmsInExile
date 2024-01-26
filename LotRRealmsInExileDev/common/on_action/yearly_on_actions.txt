@@ -2,6 +2,19 @@
 # Root does not exist
 yearly_global_pulse = {
 	effect = {
+		if = {
+			limit = {
+				exists = title:k_dorwinion.holder
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_dorwinion_abolish_elections
+					}
+				}
+			}
+			title:k_dorwinion.holder = { setup_dorwinion_council_members = yes }
+		}
+
 		every_living_character = {
 			trigger_event = {
 				id = race.0001

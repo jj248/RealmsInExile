@@ -149,5 +149,9 @@ decision_dorwinion_abolish_elections = {
 		dynasty = {
 			add_dynasty_prestige_level = 1
 		}
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_dorwinion_abolish_elections
+		}
 	}
 }

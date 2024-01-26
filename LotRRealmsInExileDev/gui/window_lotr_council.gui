@@ -57,12 +57,15 @@
                 spacing = 5
                 position = { 10 -145 }
                 council_window_torso = {
+                    visible = "[GetScriptedGui( 'show_char_in_first_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_1')]"
                     }
-                    visible = "[GetScriptedGui( 'show_char_in_first_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_DORWINION_FACTIONS
+                    }
                     blockoverride "heritage_position" {
-                        position = { 50 -55 }
+                        position = { 30 -55 }
                     }
                     blockoverride "position" {
                         position = { 0 60 }
@@ -84,21 +87,26 @@
                     }
                     blockoverride "modify_lower_texture" { }
                     blockoverride "modify_upper_texture" { }
+                    blockoverride "modify_lower_numerical_texture" { }
+                    blockoverride "modify_upper_numerical_texture" { }
                     blockoverride "crown_position" {
                         position = { 45 285 }
                     }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
+                    visible = "[GetScriptedGui( 'show_char_in_second_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dwarven_council_member_2')]"
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_2')]"
                     }
-                    visible = "[GetScriptedGui( 'show_char_in_second_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_DORWINION_FACTIONS
+                    }
                     blockoverride "heritage_position" {
-                        position = { 50 -105 }
+                        position = { 30 -105 }
                     }
                     blockoverride "position" {
-                        position = { 10 0 }
+                        position = { 5 0 }
                     }
                     blockoverride "name_position" {
                         position = { 60 105 }
@@ -121,6 +129,24 @@
                     blockoverride "lower_frame_filigree" {
                         texture = "gfx/interface/colors/gold.dds"
                     }
+                    blockoverride "upper_numerical_frame_position" {
+                        position = { 60 500 }
+                    }
+                    blockoverride "upper_numerical_mask_position" {
+                        position = { 60 500 }
+                    }
+                    blockoverride "lower_numerical_frame_position" {
+                        position = { 60 525 }
+                    }
+                    blockoverride "lower_numerical_mask_position" {
+                        position = { 60 525 }
+                    }
+                    blockoverride "upper_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blockoverride "lower_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
                     blockoverride "crown_position" {
                         position = { 45 236 }
                     }
@@ -130,15 +156,18 @@
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
+                    visible = "[GetScriptedGui( 'show_char_in_third_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dwarven_council_member_3')]"
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_3')]"
                     }
-                    visible = "[GetScriptedGui( 'show_char_in_third_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_DORWINION_FACTIONS
+                    }
                     blockoverride "heritage_position" {
-                        position = { 50 -155 }
+                        position = { 30 -155 }
                     }
                     blockoverride "position" {
-                        position = { 0 -50 }
+                        position = { 5 -50 }
                     }
                     blockoverride "name_position" {
                         position = { 50 55 }
@@ -167,6 +196,30 @@
                     blockoverride "lower_frame_filigree_alpha" {
                         alpha = 2
                     }
+                    blockoverride "upper_numerical_frame_position" {
+                        position = { 60 450 }
+                    }
+                    blockoverride "upper_numerical_mask_position" {
+                        position = { 60 450 }
+                    }
+                    blockoverride "lower_numerical_frame_position" {
+                        position = { 60 475 }
+                    }
+                    blockoverride "lower_numerical_mask_position" {
+                        position = { 60 475 }
+                    }
+                    blockoverride "upper_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "lower_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "upper_numerical_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_numerical_frame_filigree_alpha" {
+                        alpha = 2
+                    }
                     blockoverride "crown_position" {
                         position = { 45 180 }
                     }
@@ -177,15 +230,18 @@
                 spacer = { size = { 150 0 } }
                 # Central Char
                 council_window_torso = {
+                    visible = "[GetScriptedGui( 'show_char_in_fourth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dwarven_council_member_4')]"
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_4')]"
                     }
-                    visible = "[GetScriptedGui( 'show_char_in_fourth_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_DORWINION_FACTIONS
+                    }
                     blockoverride "heritage_position" {
-                        position = { 50 -195 }
+                        position = { 30 -195 }
                     }
                     blockoverride "position" {
-                        position = { 10 -95 }
+                        position = { 5 -95 }
                     }
                     blockoverride "name_position" {
                         position = { 65 15 }
@@ -214,6 +270,30 @@
                     blockoverride "lower_frame_filigree_alpha" {
                         alpha = 2.5
                     }
+                    blockoverride "upper_numerical_frame_position" {
+                        position = { 60 410 }
+                    }
+                    blockoverride "upper_numerical_mask_position" {
+                        position = { 60 410 }
+                    }
+                    blockoverride "lower_numerical_frame_position" {
+                        position = { 60 435 }
+                    }
+                    blockoverride "lower_numerical_mask_position" {
+                        position = { 60 435 }
+                    }
+                    blockoverride "upper_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_numerical_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_numerical_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
                     blockoverride "crown_position" {
                         position = { 45 140 }
                     }
@@ -223,15 +303,18 @@
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
+                    visible = "[GetScriptedGui( 'show_char_in_fith_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dwarven_council_member_5')]"
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_5')]"
                     }
-                    visible = "[GetScriptedGui( 'show_char_in_fith_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_DORWINION_FACTIONS
+                    }
                     blockoverride "heritage_position" {
-                        position = { 50 -160 }
+                        position = { 30 -160 }
                     }
                     blockoverride "position" {
-                        position = { 10 -55 }
+                        position = { 5 -55 }
                     }
                     blockoverride "name_position" {
                         position = { 60 55 }
@@ -260,6 +343,30 @@
                     blockoverride "lower_frame_filigree_alpha" {
                         alpha = 2
                     }
+                    blockoverride "upper_numerical_frame_position" {
+                        position = { 60 450 }
+                    }
+                    blockoverride "upper_numerical_mask_position" {
+                        position = { 60 450 }
+                    }
+                    blockoverride "lower_numerical_frame_position" {
+                        position = { 60 475 }
+                    }
+                    blockoverride "lower_numerical_mask_position" {
+                        position = { 60 475 }
+                    }
+                    blockoverride "upper_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "lower_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "upper_numerical_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_numerical_frame_filigree_alpha" {
+                        alpha = 2
+                    }
                     blockoverride "crown_position" {
                         position = { 45 180 }
                     }
@@ -269,12 +376,15 @@
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
+                    visible = "[GetScriptedGui( 'show_char_in_sixth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dwarven_council_member_6')]"
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_6')]"
                     }
-                    visible = "[GetScriptedGui( 'show_char_in_sixth_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_DORWINION_FACTIONS
+                    }
                     blockoverride "heritage_position" {
-                        position = { 60 -105 }
+                        position = { 30 -105 }
                     }
                     blockoverride "position" {
                         position = { 0 5 }
@@ -300,6 +410,24 @@
                     blockoverride "lower_frame_filigree" {
                         texture = "gfx/interface/colors/gold.dds"
                     }
+                    blockoverride "upper_numerical_frame_position" {
+                        position = { 60 500 }
+                    }
+                    blockoverride "upper_numerical_mask_position" {
+                        position = { 60 500 }
+                    }
+                    blockoverride "lower_numerical_frame_position" {
+                        position = { 60 525 }
+                    }
+                    blockoverride "lower_numerical_mask_position" {
+                        position = { 60 525 }
+                    }
+                    blockoverride "upper_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blockoverride "lower_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
                     blockoverride "crown_position" {
                         position = { 45 236 }
                     }
@@ -309,12 +437,15 @@
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
+                    visible = "[GetScriptedGui( 'show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dwarven_council_member_7')]"
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_7')]"
                     }
-                    visible = "[GetScriptedGui( 'show_char_in_seventh_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_DORWINION_FACTIONS
+                    }
                     blockoverride "heritage_position" {
-                        position = { 50 -55 }
+                        position = { 30 -55 }
                     }
                     blockoverride "position" {
                         position = { 0 45 }
@@ -336,6 +467,9 @@
                     }
                     blockoverride "modify_lower_texture" { }
                     blockoverride "modify_upper_texture" { }
+                    blockoverride "modify_lower_numerical_texture" { }
+                    blockoverride "modify_upper_numerical_texture" { }
+                    
                     blockoverride "crown_position" {
                         position = { 45 285 }
                     }
@@ -383,87 +517,6 @@
                     }
                 }
                 vbox = {
-                    spacing = 15
-                    icon = {
-                        texture = "gfx/interface/hud/toast_title_bg.dds"
-                        size = { 200 40 }
-                        position = { 0 0 }
-                        text_single = {
-                            text = "COUNCIL_WINDOW_INFO"
-                            fontsize = 24
-                            default_format = "#color_black"
-                            parentanchor = center
-                        }
-                    }
-            
-                    
-                    widget = {
-                        size = { 300 125 }
-                        background = {
-                            name = "paper_texture_flat"
-                            texture = "gfx/interface/window_event/tile_letter_flat.dds"
-                            spriteType = Corneredtiled
-                            spriteborder = { 200 200 }
-                            alpha = 1
-            
-                            modify_texture = {
-                                name = "paper_texture_overlay"
-                                texture = "gfx/interface/window_event/overlay_letter_texture.dds"
-                                spriteType = Corneredstretched
-                                blend_mode = overlay
-                            }
-                        }
-                        widget = {
-                            size = { 320 30 }
-                            widgetanchor = center
-                            parentanchor = bottom|hcenter
-                            position = { 0 -8 }
-                
-                            background = {
-                                texture = "gfx/interface/window_event/letter_event_edge_bottom.dds"
-                                spriteType = Corneredstretched
-                                spriteborder = { 35 5 }
-                            }
-                        }
-                        vbox = {
-                            hbox = {
-                                layoutpolicy_horizontal = expanding
-                                text_single = {
-                                    raw_text = "Something"
-                                    default_format = "#color_black"
-                                }
-                                text_single = {
-                                    raw_text = "Something"
-                                    default_format = "#color_black"
-                                }
-                            }
-                            hbox = {
-                                layoutpolicy_horizontal = expanding
-                                text_single = {
-                                    raw_text = "Something"
-                                    default_format = "#color_black"
-                                }
-                                text_single = {
-                                    raw_text = "Something"
-                                    default_format = "#color_black"
-                                }
-                            }
-                        }
-                        widget = {
-                            size = { 320 30 }
-                            widgetanchor = center
-                            parentanchor = top|hcenter
-                            position = { 0 8 }
-                
-                            background = {
-                                texture = "gfx/interface/window_event/letter_event_edge_top.dds"
-                                spriteType = Corneredstretched
-                                spriteborder = { 35 5 }
-                            }
-                        }
-                    }
-                }
-                vbox = {
                     spacing = 5
                     icon = {
                         texture = "gfx/interface/hud/toast_title_bg.dds"
@@ -503,137 +556,143 @@
                 spacer = { size = { 10 0 } }
             }
         }
-        # widget = {
-        #     parentanchor = vcenter
-        #     allow_outside = yes
-        #     hbox = {
-        #         allow_outside = yes
-        #         spacing = 5
-        #         position = { 10 -170 }
-        #         spacer = { size = { 478 0 }}
-        #         council_window_torso = {
-        #             blockoverride "datacontext" {
-        #                 datacontext = "[GetGlobalVariable('dwarven_council_member_4')]"
-        #             }
-        #             blockoverride "heritage_position" {
-        #                 position = { -40 170 }
-        #             }
-        #             blockoverride "position" {
-        #                 position = { -85 180 }
-        #             }
-        #             blockoverride "name_position" {
-        #                 position = { -25 380 }
-        #             }
-        #             blockoverride "upper_frame_position" {
-        #                 position = { -95 145 }
-        #             }
-        #             blockoverride "lower_frame_position" {
-        #                 position = { -95 265 }
-        #             }
-        #             blockoverride "lower_mask_position" {
-        #                 position = { -95 265 }
-        #             }
-        #             blockoverride "upper_mask_position" {
-        #                 position = { -95 145 }
-        #             }
-        #             blockoverride "upper_frame_filigree" {
-        #                 texture = "gfx/interface/colors/gold_darker.dds"
-        #             }
-        #             blockoverride "lower_frame_filigree" {
-        #                 texture = "gfx/interface/colors/gold_darker.dds"
-        #             }
-        #             blockoverride "upper_frame_filigree_alpha" {
-        #                 alpha = 2
-        #             }
-        #             blockoverride "lower_frame_filigree_alpha" {
-        #                 alpha = 2.5
-        #             }
-        #         }
-        #         spacer = { size = { 173 0 }}
-        #         council_window_torso = {
-        #             blockoverride "datacontext" {
-        #                 datacontext = "[GetGlobalVariable('dwarven_council_member_5')]"
-        #             }
-        #             blockoverride "heritage_position" {
-        #                 position = { -40 130 }
-        #             }
-        #             blockoverride "position" {
-        #                 position = { -85 140 }
-        #             }
-        #             blockoverride "name_position" {
-        #                 position = { -25 340 }
-        #             }
-        #             blockoverride "upper_frame_position" {
-        #                 position = { -95 105 }
-        #             }
-        #             blockoverride "lower_frame_position" {
-        #                 position = { -95 225 }
-        #             }
-        #             blockoverride "lower_mask_position" {
-        #                 position = { -95 225 }
-        #             }
-        #             blockoverride "upper_mask_position" {
-        #                 position = { -95 105 }
-        #             }
-        #             blockoverride "upper_frame_filigree" {
-        #                 texture = "gfx/interface/colors/gold_darker.dds"
-        #             }
-        #             blockoverride "lower_frame_filigree" {
-        #                 texture = "gfx/interface/colors/gold_darker.dds"
-        #             }
-        #             blockoverride "upper_frame_filigree_alpha" {
-        #                 alpha = 2
-        #             }
-        #             blockoverride "lower_frame_filigree_alpha" {
-        #                 alpha = 2.5
-        #             }
-        #         }
-        #         spacer = { size = { 173 0 }}
-        #         council_window_torso = {
-        #             blockoverride "datacontext" {
-        #                 datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
-        #             }
-        #             blockoverride "heritage_position" {
-        #                 position = { -40 170 }
-        #             }
-        #             blockoverride "position" {
-        #                 position = { -85 180 }
-        #             }
-        #             blockoverride "name_position" {
-        #                 position = { -25 380 }
-        #             }
-        #             blockoverride "upper_frame_position" {
-        #                 position = { -95 145 }
-        #             }
-        #             blockoverride "lower_frame_position" {
-        #                 position = { -95 265 }
-        #             }
-        #             blockoverride "lower_mask_position" {
-        #                 position = { -95 265 }
-        #             }
-        #             blockoverride "upper_mask_position" {
-        #                 position = { -95 145 }
-        #             }
-        #             blockoverride "upper_frame_filigree" {
-        #                 texture = "gfx/interface/colors/gold_darker.dds"
-        #             }
-        #             blockoverride "lower_frame_filigree" {
-        #                 texture = "gfx/interface/colors/gold_darker.dds"
-        #             }
-        #             blockoverride "upper_frame_filigree_alpha" {
-        #                 alpha = 2
-        #             }
-        #             blockoverride "lower_frame_filigree_alpha" {
-        #                 alpha = 2.5
-        #             }
-        #         }
-        #     }
-            
-        # }
+        widget = {
+            parentanchor = vcenter
+            allow_outside = yes
+            hbox = {
+                allow_outside = yes
+                spacing = 5
+                position = { 10 -170 }
+                spacer = { size = { 478 0 }}
+                council_window_torso = {
+                    visible = "[GetGlobalVariable('dorinion_council_member_8').IsSet]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_4')]"
+                    }
+                    blockoverride "heritage_position" {
+                        position = { -40 170 }
+                    }
+                    blockoverride "position" {
+                        position = { -85 180 }
+                    }
+                    blockoverride "name_position" {
+                        position = { -25 380 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
+                }
+                spacer = { size = { 173 0 }}
+                council_window_torso = {
+                    visible = "[GetGlobalVariable('dorinion_council_member_9').IsSet]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_5')]"
+                    }
+                    blockoverride "heritage_position" {
+                        position = { -40 130 }
+                    }
+                    blockoverride "position" {
+                        position = { -85 140 }
+                    }
+                    blockoverride "name_position" {
+                        position = { -25 340 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { -95 105 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { -95 225 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { -95 225 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { -95 105 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
+                }
+                spacer = { size = { 173 0 }}
+                council_window_torso = {
+                    visible = "[GetGlobalVariable('dorinion_council_member_10').IsSet]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('dorinion_council_member_1')]"
+                    }
+                    blockoverride "heritage_position" {
+                        position = { -40 170 }
+                    }
+                    blockoverride "position" {
+                        position = { -85 180 }
+                    }
+                    blockoverride "name_position" {
+                        position = { -25 380 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
+                }
+            }
+        }
     }
 
     type council_window_torso = widget {
         allow_outside = yes
+        block "datacontext" {
+            datacontext = "[GetGlobalVariable('dorinion_council_member_1')]"
+        }
+        visible = "[GetScriptedGui( 'show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char ).End)]"
 
         ### Crown
         icon = {
@@ -703,7 +762,7 @@
             texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
             texture_density = 2
             position = { 0 30 }
-            alpha = 0.6
+            alpha = 0.8
             block "lower_frame_position" {
                 position = { 0 30 }
             }
@@ -721,25 +780,21 @@
         }
 			
 
-        ### Char, Char name and heritage
+        ### Char and heritage
         vbox = {
             block "heritage_position" {
                 position = { 50 0 }
             }
-            block "datacontext" {
-                datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
-            }
             text_single = {
-                text = "[Scope.Char.GetCulture.GetHeritage.GetNameNoTooltip]"
+                block "text_key" {
+                    text = "[Scope.Char.GetCulture.GetHeritage.GetNameNoTooltip]"
+                }
                 fontsize = 15
                 default_format = "#high"
+                parentanchor = top
             }
         }
         vbox = {
-            visible = "[GetScriptedGui( 'show_char_ruling_window' ).IsShown( GuiScope.SetRoot( Scope.Char ).End)]"
-            block "datacontext" {
-                datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
-            }
             block "position" {
                 position = { 0 0 }
             }
@@ -749,20 +804,83 @@
                 blockoverride "opinion_box"{}
             }
         }
-        vbox = {
-            block "name_position" {
-                position = { 50 0 }
+
+        ### Numerical value of 'Power' on the council
+        icon = {
+            size = { 60 50 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+            texture_density = 2
+            alpha = 0.9
+            block "upper_numerical_mask_position" {
+                position = { 55 550 }
+            }
+            mirror = vertical
+        }
+        icon = {
+            size = { 60 50 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+            texture_density = 2
+            alpha = 0.9
+            block "lower_numerical_mask_position" {
+                position = { 55 575 }
             }
             
-            block "datacontext" {
-                datacontext = "[GetGlobalVariable('dwarven_council_member_1')]"
-            }
             text_single = {
-                text = "[Scope.Char.GetFirstNameNoTooltip]"
-                fontsize = 15
-                default_format = "#high"
+                text = "[Scope.ScriptValue('dorwinion_council_member_strength')]"
+                default_format = "#V"
+                parentanchor = top|hcenter
+                margin_top = 4
+                tooltip = "[Scope.GetScriptValueDesc('dorwinion_council_member_strength')]"
+            }
+        }
+        icon = {
+            size = { 60 50 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+            texture_density = 2
+            mirror = vertical
+            block "upper_numerical_frame_position" {
+                position = { 55 550 }
+            }
+            
+            block "modify_upper_numerical_texture" {
+                modify_texture = {
+                    block "upper_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blend_mode = colordodge
+                    block "upper_numerical_frame_filigree_alpha" {
+                        alpha = 0.4
+                    }
+                }
+            }
+        }
+        icon = {
+            size = { 60 50 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+            texture_density = 2
+            position = { 0 30 }
+            block "lower_numerical_frame_position" {
+                position = { 55 575 }
+            }
+            block "modify_lower_numerical_texture" {
+                modify_texture = {
+                    block "lower_numerical_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blend_mode = colordodge
+                    block "lower_numerical_frame_filigree_alpha" {
+                        alpha = 0.4 # Needs to be brigther due to icon's alpha being lower
+                    }
+                }
             }
         }
     }
-
 }

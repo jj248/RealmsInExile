@@ -12,6 +12,26 @@ on_death = {
 
 		if = {
 			limit = {
+				OR = {
+					root = global_var:dorinion_council_member_1
+					root = global_var:dorinion_council_member_2
+					root = global_var:dorinion_council_member_3
+					root = global_var:dorinion_council_member_4
+					root = global_var:dorinion_council_member_5
+					root = global_var:dorinion_council_member_6
+					root = global_var:dorinion_council_member_7
+				}
+			}
+			title:k_dorwinion.holder = { 
+				trigger_event = {
+					id = council_events.9999
+					days = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
 				has_bp2_dlc_trigger = yes
 				prestige_level >= 3 #Illustrious
 				player_heir ?= {

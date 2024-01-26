@@ -1477,21 +1477,21 @@ wastelands.0020 = {
 
 			if = {
 				limit = { 
-					not_above_settlement_limit = yes
+					holder = { not_above_settlement_limit = yes }
 					title_province ?= { has_building = settlement_01 }
 				}
 				make_settlement_county_wilderness = { COUNTY = this }
 			}
 			else_if = {
 				limit = { 
-					not_above_settlement_limit = yes
+					holder = { not_above_settlement_limit = yes }
 					title_province ?= { has_building = settlement_02 }
 				}
 				make_settlement_county_wilderness = { COUNTY = this }
 			}
 			else_if = {
 				limit = { 
-					not_above_settlement_limit = yes
+					holder = { not_above_settlement_limit = yes }
 					title_province ?= { has_building = settlement_02 }
 				}
 				make_settlement_county_wilderness = { COUNTY = this }

@@ -1,0 +1,8 @@
+namespace = council_events
+
+
+council_events.9999 = {
+    hidden = yes
+
+    immediate = {  setup_dorwinion_council_members = yes }
+}

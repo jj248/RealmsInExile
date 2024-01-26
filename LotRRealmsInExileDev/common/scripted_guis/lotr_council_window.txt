@@ -8,66 +8,49 @@ show_gui_button = {
 }
 
 show_char_in_first_window = {
-    is_shown = {
-        OR = {
-            root = global_var:dwarven_council_member_1
-        }
+    is_valid = {
+        root = global_var:dorinion_council_member_1
     }
 }
 
 show_char_in_second_window = {
-    is_shown = {
-        OR = {
-            root = global_var:dwarven_council_member_2
-        }
+    is_valid = {
+        root = global_var:dorinion_council_member_2
     }
 }
 
 show_char_in_third_window = {
-    is_shown = {
-        OR = {
-            root = global_var:dwarven_council_member_3
-        }
+    is_valid = {
+        root = global_var:dorinion_council_member_3
     }
 }
 
 show_char_in_fourth_window = {
-    is_shown = {
-        OR = {
-            root = global_var:dwarven_council_member_4
-        }
+    is_valid = {
+        root = global_var:dorinion_council_member_4
     }
 }
 
 show_char_in_fith_window = {
-    is_shown = {
-        OR = {
-            root = global_var:dwarven_council_member_5
-        }
+    is_valid = {
+        root = global_var:dorinion_council_member_5
     }
 }
 
 show_char_in_sixth_window = {
-    is_shown = {
-        OR = {
-            root = global_var:dwarven_council_member_6
-        }
+    is_valid = {
+        root = global_var:dorinion_council_member_6
     }
 }
 
 show_char_in_seventh_window = {
-    is_shown = {
-        OR = {
-            root = global_var:dwarven_council_member_5
-        }
+    is_valid = {
+        root = global_var:dorinion_council_member_7
     }
 }
 
 show_char_ruling_window = {
-    is_shown = {
-        # OR = {
-        #     root = global_var:dwarven_council_member_7
-        # }
+    is_valid = {
         always = no
     }
 }

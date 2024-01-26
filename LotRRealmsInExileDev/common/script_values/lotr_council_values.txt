@@ -1,0 +1,218 @@
+﻿average_development_in_holdings = {
+	value = 0
+
+	every_held_title = {
+		limit = { tier = tier_county }
+		add = county.development_level.div3
+	}
+}
+
+council_voting_strengh = {
+	every_held_title = {
+		limit = {
+			title:k_dorwinion.holder = { target_is_de_jure_liege_or_above = prev }
+			tier = tier_county
+		}
+		add = this.development_level
+	}
+}
+
+number_of_held_holdings = {
+	value = 0
+
+	every_held_title = {
+		add = 2
+	}
+}
+
+position_in_council = {
+	value = 0
+	
+	if = {
+		limit = { 
+			any_in_list = {
+				list = voters_in_dorwinion
+				count > 6
+			}
+		}
+		add = 1
+	}
+	else_if = {
+		limit = { 
+			any_in_list = {
+				list = voters_in_dorwinion
+				count > 5
+			}
+		}
+		add = 2
+	}
+	else_if = {
+		limit = { 
+			any_in_list = {
+				list = voters_in_dorwinion
+				count > 4
+			}
+		}
+		add = 3
+	}
+	else_if = {
+		limit = { 
+			any_in_list = {
+				list = voters_in_dorwinion
+				count > 3
+			}
+		}
+		add = 4
+	}
+	else_if = {
+		limit = { 
+			any_in_list = {
+				list = voters_in_dorwinion
+				count > 2
+			}
+		}
+		add = 5
+	}
+	else_if = {
+		limit = { 
+			any_in_list = {
+				list = voters_in_dorwinion
+				count > 1
+			}
+		}
+		add = 6
+	}
+	else_if = {
+		limit = { 
+			any_in_list = {
+				list = voters_in_dorwinion
+				count > 0
+			}
+		}
+		add = 7
+	}
+}
+
+num_dorwinion_councillors = {
+	value = 7
+}
+
+gui_winelord_or_merchant = {
+	value = 0
+
+	if = {
+		limit = { dynasty ?= { has_dynasty_modifier = winelords } }
+		add = 1
+	}
+}
+
+dorwinion_council_member_strength = {
+	value = 0
+
+	add = {
+		value = council_voting_strengh
+		desc = gui_oligarchic_elective_development
+	}
+
+	### Master Merchants
+	if = {
+		limit = { 
+			dynasty ?= { 
+				has_dynasty_modifier = master_merchants
+				dynast = {
+					monthly_character_income > 5
+					monthly_character_income <= 10
+				}
+			}	
+		}
+		add = {
+			desc = gui_oligarchic_merchant_dynast_wealth_1
+			value = 5
+		}
+	}
+	if = {
+		limit = { 
+			dynasty ?= { 
+				has_dynasty_modifier = master_merchants
+				dynast = {
+					monthly_character_income > 10
+					monthly_character_income <= 20
+				}
+			}	
+		}
+		add = {
+			desc = gui_oligarchic_merchant_dynast_wealth_2
+			value = 10
+		}
+	}
+	if = {
+		limit = { 
+			dynasty ?= { 
+				has_dynasty_modifier = master_merchants
+				dynast = {
+					monthly_character_income > 20
+				}
+			}	
+		}
+		add = {
+			desc = gui_oligarchic_merchant_dynast_wealth_3
+			value = 15
+		}
+	}
+
+	# ### Winelords
+	if = {
+		limit = { 
+			dynasty ?= { 
+				has_dynasty_modifier = master_merchants
+				dynast = {
+					prestige_level = 2
+				}
+			}	
+		}
+		add = {
+			desc = gui_oligarchic_merchant_dynast_fame_2
+			value = 5
+		}
+	}
+	if = {
+		limit = { 
+			dynasty ?= { 
+				has_dynasty_modifier = master_merchants
+				dynast = {
+					prestige_level = 3
+				}
+			}
+		}
+		add = {
+			desc = gui_oligarchic_merchant_dynast_fame_3
+			value = 10
+		}
+	}
+	if = {
+		limit = { 
+			dynasty ?= { 
+				has_dynasty_modifier = master_merchants
+				dynast = {
+					prestige_level >= 4
+				}
+			}
+		}
+		add = {
+			desc = gui_oligarchic_merchant_dynast_fame_4
+			value = 15
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty ?= {
+				has_dynasty_modifier = master_merchants
+			}
+		}
+		add = {
+			value = stewardship
+			desc = gui_oligarchic_merchant_dynast_stewardship
+		}
+	}
+}
