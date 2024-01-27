@@ -57,7 +57,7 @@ setup_dorwinion_council_members = {
             add = average_development_in_holdings
             if = {
                 limit = { dynasty ?= { has_dynasty_modifier = master_merchants } }
-                add = stewardship.div3
+                add = stewardship.div2
             }
             if = {
                 limit = { dynasty ?= { has_dynasty_modifier = winelords } }
