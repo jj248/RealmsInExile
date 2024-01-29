@@ -488,6 +488,14 @@ d_thakalgund = {
 	}
 }
 
+#Dorf Gabilgir#
+d_gabilgir = {
+	item = {
+		trigger = { coa_switch_to_dwarf_trigger = yes }
+		coat_of_arms = d_dorf_gabilgir
+	}
+}
+
 #By Cairo#
 ### Evil Misties###
 e_misty_mountains = {
@@ -528,7 +536,6 @@ d_zandith_dum = {
 		coat_of_arms = d_evil_zandith_dum
 	}
 }
-
 
 ###Evil Iron Mountains###
 #Evil Iron Mountains#
@@ -573,6 +580,13 @@ k_iron_hills = {
 	}
 }
 
+k_erebor = {
+	item = {
+		trigger = { coa_switch_to_gobbo_trigger = yes }
+		coat_of_arms = k_evil_erebor
+	}
+}
+
 
 ##Short Kings are the true chosen of Eru###
 #Druedain Arnorien#
@@ -588,5 +602,20 @@ k_ray = {
 	item = {
 		trigger = { coa_switch_to_druedain_trigger = yes }
 		coat_of_arms = k_suzush_agkhor
+	}
+}
+
+#Harwan Good guy#
+e_haradwaith = {
+	item = {
+		trigger = { coa_switch_to_nadimanye_trigger = yes}
+		coat_of_arms = e_good_haradwaith
+	}
+}
+
+d_imladris = {
+	item = {
+		trigger = { coa_switch_to_gobbo_trigger = yes}
+		coat_of_arms = d_shiny_town
 	}
 }

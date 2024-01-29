@@ -4708,12 +4708,12 @@
 961 = {	   #Athrad Poros (b_athrad_poros)
 	culture = donan
 	religion = faith_donan
-	holding = castle_holding
+	holding = tribal_holding
 	4000.1.1 = {
 		religion = faith_edain
 	}
 	7000.1.1 = {
-		religion = lidless_eye
+		religion = faith_donan
 	}
 	#7033.1.1 = {
 	#	culture = ungurhai

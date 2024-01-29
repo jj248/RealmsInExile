@@ -390,7 +390,6 @@ sauron.0510 = {
 				years = 4
 				name = TRUCE_GONDOR_MORDOR
 			}
-			add_character_modifier = three_dwarven_rings_modifier
 		}
 	}
 }
@@ -832,24 +831,45 @@ sauron.3000 = { # A tempting offer
 		name = sauron.3000.a
 		custom_tooltip = sauron.3000.a.tt
 		
-		dynasty:dynasty_durin.dynast = {
-			trigger_event = {
-				id = sauron.3001
-				days = 14
+		if = {
+			limit = {
+				any_character_artifact =  {
+					has_variable = ring_of_longbeards
+				}
+			}
+			dynasty:dynasty_durin.dynast = {
+				trigger_event = {
+					id = sauron.3001
+					days = 14
+				}
 			}
 		}
 		
-		dynasty:dynasty_uri.dynast = {
-			trigger_event = {
-				id = sauron.3001
-				days = 15
+		if = {
+			limit = {
+				any_character_artifact =  {
+					has_variable = ring_of_firebeards
+				}
+			}
+			dynasty:dynasty_uri.dynast = {
+				trigger_event = {
+					id = sauron.3001
+					days = 15
+				}
 			}
 		}
 		
-		dynasty:dynasty_dwalin.dynast = {
-			trigger_event = {
-				id = sauron.3001
-				days = 16
+		if = {
+			limit = {
+				any_character_artifact =  {
+					has_variable = ring_of_broadbeams
+				}
+			}
+			dynasty:dynasty_dwalin.dynast = {
+				trigger_event = {
+					id = sauron.3001
+					days = 16
+				}
 			}
 		}
 	}
@@ -909,15 +929,13 @@ sauron.3001 = { # A Dark Messenger
 			base = 0 # LotR: This should be tied to WotR mode.
 
 			modifier = { # Game Rule
-				has_game_rule = default_ai_behavior
-				add = -500
+				has_game_rule = weighted_ai_behavior
+				add = 33
 			}
-					
-			ai_value_modifier = {
-				ai_greed = -2
-				ai_boldness = 2
-				ai_zeal = 1
-				ai_rationality = -1
+			
+			modifier = { # Game Rule
+				has_game_rule = random_ai_behavior
+				add = 25
 			}
 		}
 	}
@@ -937,20 +955,19 @@ sauron.3001 = { # A Dark Messenger
 
 			modifier = { # Game Rule
 				has_game_rule = default_ai_behavior
-				add = 500
+				add = 100
 			}
 
 			modifier = { # Game Rule
 				has_game_rule = weighted_ai_behavior
-				add = 300
+				add = 33
 			}
-				
-			ai_value_modifier = {
-				ai_greed = -2
-				ai_boldness = -1
-				ai_zeal = 1
-				ai_rationality = 2
+			
+			modifier = { # Game Rule
+				has_game_rule = random_ai_behavior
+				add = 25
 			}
+			
 		}
 	}
 	
@@ -966,36 +983,55 @@ sauron.3001 = { # A Dark Messenger
             TRIBUTARY = root
         }
 		
+		every_ally = {
+			limit = {
+				faith_is_good = yes
+			}
+			break_alliance = root
+		}
+		
 		if = {
 			limit = { dynasty = dynasty:dynasty_durin }
-			create_artifact_ring_of_longbeards_effect = { OWNER = this }
-			scope:newly_created_artifact = {
-				add_artifact_history = {
-					actor = title:e_mordor.holder #Sauron
-					recipient = root
-					type = given
+			title:e_mordor.holder = {
+				random_character_artifact = {
+					limit = { has_variable = ring_of_longbeards }
+					set_owner = {
+						target = root
+						history = {
+							type = given
+							recipient = root
+						}
+					}
 				}
 			}
 		}
 		else_if = {
 			limit = { dynasty = dynasty:dynasty_uri }
-			create_artifact_ring_of_firebeards_effect = { OWNER = this }
-			scope:newly_created_artifact = {
-				add_artifact_history = {
-					actor = title:e_mordor.holder #Sauron
-					recipient = root
-					type = given
+			title:e_mordor.holder = {
+				random_character_artifact = {
+					limit = { has_variable = ring_of_firebeards }
+					set_owner = {
+						target = root
+						history = {
+							type = given
+							recipient = root
+						}
+					}
 				}
 			}
 		}
 		else_if = {
 			limit = { dynasty = dynasty:dynasty_dwalin }
-			create_artifact_ring_of_broadbeams_effect = { OWNER = this }
-			scope:newly_created_artifact = {
-				add_artifact_history = {
-					actor = title:e_mordor.holder #Sauron
-					recipient = root
-					type = given
+			title:e_mordor.holder = {
+				random_character_artifact = {
+					limit = { has_variable = ring_of_broadbeams }
+					set_owner = {
+						target = root
+						history = {
+							type = given
+							recipient = root
+						}
+					}
 				}
 			}
 		}
@@ -1011,14 +1047,13 @@ sauron.3001 = { # A Dark Messenger
 			base = 0 # LotR: This should be tied to WotR mode.
 
 			modifier = { # Game Rule
-				has_game_rule = default_ai_behavior
-				add = -500
+				has_game_rule = weighted_ai_behavior
+				add = 33
 			}
 			
-			ai_value_modifier = {
-				ai_greed = 2
-				ai_zeal = -2
-				ai_rationality = -1
+			modifier = { # Game Rule
+				has_game_rule = random_ai_behavior
+				add = 50
 			}
 		}
 	}
@@ -1045,20 +1080,6 @@ sauron.3002 = { #Success !
 	
 	option = {
 		name = sauron.3002.a
-		if = {
-			limit = { has_character_modifier = three_dwarven_rings_modifier }
-			remove_character_modifier = three_dwarven_rings_modifier
-			add_character_modifier = two_dwarven_rings_modifier
-		}
-		else_if = {
-			limit = { has_character_modifier = two_dwarven_rings_modifier }
-			remove_character_modifier = two_dwarven_rings_modifier
-			add_character_modifier = one_dwarven_ring_modifier
-		}
-		else_if = {
-			limit = { has_character_modifier = one_dwarven_ring_modifier }
-			remove_character_modifier = one_dwarven_ring_modifier
-		}
 	}
 }
 

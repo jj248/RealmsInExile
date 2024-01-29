@@ -3080,6 +3080,38 @@
 			}
 		}
 	}
+	gardenia_portrait = { 
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = all_hairstyles
+				accessory = female_hair_western_03
+				type = female
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = western_low_nobility_clothes
+				accessory = female_clothes_secular_western_nobility_01_low
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = all_beards
+				value = 0.0
+			}
+		}   
+		weight = {
+			base = 0
+			modifier = {
+				add = 999
+				exists = this
+				exists = character:lineofbrownferret
+				this = character:lineofbrownferret
+			}
+		}
+	}
 	odo_portrait = { 
 		dna_modifiers = {
 			accessory = {
@@ -3610,6 +3642,31 @@
 			}
 		}
 	}
+	ithilbor_portrait = { 
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = all_hairstyles
+				accessory = m_hair_fp3_iranian_03
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = all_beards
+				accessory = male_beard_fp2_iberian_christian_01
+			}
+		}   
+		weight = {
+			base = 0
+			modifier = {
+				add = 999
+				exists = this
+				exists = character:lineminadir13
+				this = character:lineminadir13
+			}
+		}
+	}
 	halbarad_portrait = { 
 		dna_modifiers = {
 			accessory = {
@@ -4014,6 +4071,68 @@
 			}
 		}
 	}
+	oldbeorn_portrait = { 
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_hairstyles
+				accessory = male_hair_custom_15
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = all_beards
+				accessory = m_beard_ep2_western_02
+			}
+		}   
+		weight = {
+			base = 0
+			modifier = {
+				add = 999
+				exists = this
+				exists = character:lineofbeorn3b
+				this = character:lineofbeorn3b
+			}
+		}
+	}
+	aldbeorn_portrait = { 
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = all_hairstyles
+				accessory = male_hair_mena_03
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = all_beards
+				accessory = male_beard_western_10
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = northern_commoner_clothes
+				accessory = male_clothes_secular_northern_nobility_01_common
+			}
+		}   
+		weight = {
+			base = 0
+			modifier = {
+				add = 999
+				exists = this
+				exists = character:lineofbeorn3c
+				this = character:lineofbeorn3c
+			}
+		}
+	}
 	hlothere_portrait = { 
 		dna_modifiers = {
 			accessory = {
@@ -4346,6 +4465,32 @@
 			}
 		}
 	}
+	### LOSSOTH ###	
+	henri_portrait = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_hairstyles
+				accessory = male_hair_custom_17
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = all_beards
+				accessory = male_beard_mena_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 999
+				exists = this
+				exists = character:lineofhomela3
+				this = character:lineofhomela3
+			}
+		}
+	}		  	
 	
 	### DAEN ###
 	wulfgar_portrait = { 
@@ -5572,7 +5717,7 @@
 			}
 		}
 	}
-	ognor = {
+	ognor_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -5591,7 +5736,7 @@
 			}
 		}	
 	}
-	kull = {
+	kull_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -5622,7 +5767,7 @@
 			}
 		}	
 	}
-	ulthang = {
+	ulthang_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -5928,7 +6073,7 @@
 			}
 		}
 	}
-	balkhmog = {
+	balkhmog_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add	
@@ -5947,7 +6092,7 @@
 			}
 		}
 	}
-	grizz = {
+	grizz_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add	
@@ -5972,7 +6117,7 @@
 			}
 		}
 	}
-	gashbuz = {
+	gashbuz_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add	
@@ -5997,7 +6142,7 @@
 			}
 		}
 	}
-	hukor = {
+	hukor_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add	
@@ -6016,7 +6161,7 @@
 			}
 		}
 	}
-	kalmog = {
+	kalmog_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6059,7 +6204,7 @@
 			}
 		}	
 	}
-	garg = {
+	garg_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6090,7 +6235,7 @@
 			}
 		}	
 	}
-	ulthug = {
+	ulthug_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6109,7 +6254,7 @@
 			}
 		}	
 	}
-	yarnaghk = {
+	yarnaghk_portrait = {
 		dna_modifiers = {
 			morph = {
 				mode = add
@@ -6128,7 +6273,7 @@
 			}
 		}	
 	}
-	gorkil = {
+	gorkil_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add	
@@ -6153,7 +6298,7 @@
 			}
 		}	
 	}
-	mazog = {
+	mazog_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6184,7 +6329,7 @@
 			}
 		}	
 	}
-	gorgol = {
+	gorgol_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6215,7 +6360,7 @@
 			}
 		}	
 	}
-	gorgar = {
+	gorgar_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6234,7 +6379,7 @@
 			}
 		}
 	}
-	marku = {
+	marku_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6253,7 +6398,7 @@
 			}
 		}
 	}
-	radnag = {
+	radnag_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6272,7 +6417,7 @@
 			}
 		}
 	}
-	laglug = {
+	laglug_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6303,7 +6448,7 @@
 			}
 		}
 	}
-	gorshag = {
+	gorshag_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6334,7 +6479,7 @@
 			}
 		}
 	}
-	ugmuz = {
+	ugmuz_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6365,7 +6510,7 @@
 			}
 		}
 	}
-	tharzog = {
+	tharzog_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6384,7 +6529,7 @@
 			}
 		}
 	}
-	savgak = {
+	savgak_portrait = {
 		dna_modifiers = {
 			morph = {
 				mode = add
@@ -6409,7 +6554,7 @@
 			}
 		}	
 	}
-	agrolg = {
+	agrolg_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6428,7 +6573,7 @@
 			}
 		}	
 	}
-	karrog = {
+	karrog_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6447,7 +6592,7 @@
 			}
 		}	
 	}
-	lurtz = {
+	lurtz_portrait = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -6465,6 +6610,6 @@
 				this = character:isengardlurtz
 			}
 		}
-	}		  
+	}
 }
 

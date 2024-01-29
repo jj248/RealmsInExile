@@ -6170,7 +6170,7 @@
  b_nimrodeliant:0 "Nimrodeliant"
  b_talan_tirith:0 "Talan Tirith"
  b_heryn_send:0 "Heryn Send"
- c_nan_celebrant:0 "Nan Celebrant"
+ c_harglan_nimrodel:0 "Harglan Nimrodel"
  b_brochos:0 "Brochos"
  b_talan_harad:0 "Talan Harad"
  b_ethel_celebrant:0 "Ethel Celebrant"
@@ -7148,7 +7148,8 @@
  cn_rukhbnan_orc:0 "Blighted Tunnels"
  c_tharta:0 "Thartâ"
  b_tharta:0 "Thartâ"
-
+ 
+ d_gundalok:0 "Gundalok"
  c_gundalok:0 "Gundalok"
  b_zudramdam:0 "Zudramdam"
  b_elderslade:0 "Elderslade"
