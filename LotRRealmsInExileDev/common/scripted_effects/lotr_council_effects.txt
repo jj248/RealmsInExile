@@ -88,11 +88,20 @@
 }
 
 fire_events_for_dorwinion_council_members = {
-    global_var:dorinion_council_member_7 = { trigger_event = $EVENT_ID$ }
-    global_var:dorinion_council_member_6 = { trigger_event = $EVENT_ID$ }
-    global_var:dorinion_council_member_5 = { trigger_event = $EVENT_ID$ }
-    global_var:dorinion_council_member_4 = { trigger_event = $EVENT_ID$ }
-    global_var:dorinion_council_member_3 = { trigger_event = $EVENT_ID$ }
-    global_var:dorinion_council_member_2 = { trigger_event = $EVENT_ID$ }
-    global_var:dorinion_council_member_1 = { trigger_event = $EVENT_ID$ }
+    title:k_dorwinion.holder = {
+        clear_variable_list = positive_vote
+        clear_variable_list = negative_vote
+        set_variable = vote_is_being_held
+    }
+
+
+    global_var:dorinion_council_member_7 = { trigger_event = { id = $EVENT_ID$ days = { 1 5 } } }
+    global_var:dorinion_council_member_6 = { trigger_event = { id = $EVENT_ID$ days = { 1 5 } } }
+    global_var:dorinion_council_member_5 = { trigger_event = { id = $EVENT_ID$ days = { 1 5 } } }
+    global_var:dorinion_council_member_4 = { trigger_event = { id = $EVENT_ID$ days = { 1 5 } } }
+    global_var:dorinion_council_member_3 = { trigger_event = { id = $EVENT_ID$ days = { 1 5 } } }
+    global_var:dorinion_council_member_2 = { trigger_event = { id = $EVENT_ID$ days = { 1 5 } } }
+    global_var:dorinion_council_member_1 = { trigger_event = { id = $EVENT_ID$ days = { 1 5 } } }
+
+    title:k_dorwinion.holder = { trigger_event = { id = council_events.9998 days = 7 } }
 }

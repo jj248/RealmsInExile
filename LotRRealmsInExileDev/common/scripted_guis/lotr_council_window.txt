@@ -67,12 +67,16 @@ button_sign_white_peace = {
 
     is_valid = {
         custom_tooltip = {
-            text = BUTTON_sign_white_peace_enabled_tt
+            text = BUTTON_sign_white_peace_disabled_tt
             NOT = { root = title:k_dorwinion.holder }
         }
     }
 
     effect = {
+        if = {
+            limit = { NOT = { root = title:k_dorwinion.holder } }
+            custom_tooltip = BUTTON_sign_white_peace_enabled_tt
+        }
         fire_events_for_dorwinion_council_members = { EVENT_ID = council_events.0001 }
     }
 }

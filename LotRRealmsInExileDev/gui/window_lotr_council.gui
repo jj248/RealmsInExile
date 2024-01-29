@@ -479,6 +479,7 @@
             widget = {
                 visible = "[GetScriptedGui( 'show_progress_bar' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
                 parentanchor = center
+                allow_outside = yes
                 
                 progressbar_green_blue = {
                     size = { 300 30 }
@@ -487,11 +488,13 @@
                     mirror = horizontal
 
                     min = 0
-                    max = 100
-                    value = 50
+                    max = "[EmptyScope.ScriptValue('total_votes')]"
+                    value = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('leading_score_in_vote')]"
+                    tooltip = current_leading_white_peace_vote
                 }
 
                 widget = {
+                    allow_outside = yes
                     position = { 145 0 }
                     icon = {
                         size = { 60 50 }
@@ -553,6 +556,7 @@
                     }
                 }
                 widget = {
+                    allow_outside = yes
                     position = { -205 0 }
                     icon = {
                         size = { 60 50 }
@@ -1024,22 +1028,56 @@
         }
     }
 
-    type positive_vote_tooltip = widget {
+    type positive_vote_tooltip = container {
+		alwaystransparent = no
         vbox = {
             datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('positive_vote')]"
+            margin = { 15 15 }
+            using = Background_Tooltip
+            spacing = 5
+
             item = {
+                hbox = {
+                    layoutpolicy_horizontal = expanding
+                    spacing = 5
+                    text_single = {
+                        text = dorwinion_voter_name
+                        fontsize = 13
+                        default_format = "#high"
+                    }
+                    expand = {}
+                    text_single = {
+                        text = dorwinion_voter_strength
+                        fontsize = 13
+                        default_format = "#high;P"
+                    }
+                }
             }
         }
     }
 
-    type negative_vote_tooltip = widget {
+    type negative_vote_tooltip = container {
+		alwaystransparent = no
         vbox = {
-            datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.GetList('positive_vote')]"
+            datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('negative_vote')]"
+            margin = { 15 15 }
+            using = Background_Tooltip
+            spacing = 5
+
             item = {
-                text_single = {
-                    text = dorwinion_voting_strength
-                    fontsize = 12
-                    default_format = "#high"
+                hbox = {
+                    layoutpolicy_horizontal = expanding
+                    spacing = 5
+                    text_single = {
+                        text = dorwinion_voter_name
+                        fontsize = 13
+                        default_format = "#high"
+                    }
+                    text_single = {
+                        text = dorwinion_voter_strength
+                        fontsize = 13
+                        default_format = "#high;P"
+                    }
                 }
             }
         }

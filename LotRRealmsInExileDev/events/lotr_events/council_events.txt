@@ -1,4 +1,6 @@
-namespace = council_events
+﻿namespace = council_events
+
+# Vote on liege signing white peace
 
 council_events.0001 = {
 	content_source = realms
@@ -11,15 +13,6 @@ council_events.0001 = {
 		character = root
 		animation = personality_rational
 	}
-
-    immediate = {
-        title:k_dorwinion.holder = {
-			clear_variable_list = positive_vote
-			clear_variable_list = negative_vote
-            set_variable = vote_is_being_held
-        }
-        
-    }
 
     option = { # Vote positively on proposal
         name = council_events.0001.a
@@ -50,6 +43,98 @@ council_events.0001 = {
         }
     }
 }
+
+council_events.0002 = { # White peace vote won
+	content_source = realms
+	type = character_event
+    title = council_events.0002.t
+    desc = council_events.0002.desc
+	theme = stewardship
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+    option = {
+        name = council_events.0002.a
+
+        random_character_war = { end_war = white_peace }
+    }
+}
+
+council_events.0003 = { # White peace vote lost
+	content_source = realms
+	type = character_event
+    title = council_events.0003.t
+    desc = council_events.0003.desc
+	theme = stewardship
+    
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+    option = {
+        name = council_events.0003.a
+    }
+}
+
+
+
+##########################
+### Maintenance events ###
+##########################
+
+#
+# Hidden event to make liege sign white peace if the vote won
+#
+
+council_events.9998 = {
+    hidden = yes
+
+    immediate = {
+        every_in_list = {
+            variable = positive_vote
+
+            save_temporary_scope_as = target
+            
+            title:k_dorwinion.holder = {
+                increase_variable = {
+                    NAME = positive_vote_strength
+                    AMOUNT = scope:target.dorwinion_council_member_strength
+                }
+            }
+        }
+        every_in_list = {
+            variable = negative_vote
+
+            save_temporary_scope_as = target
+            
+            title:k_dorwinion.holder = {
+                increase_variable = {
+                    NAME = negative_vote_strength
+                    AMOUNT = scope:target.dorwinion_council_member_strength
+                }
+            }
+        }
+
+        clear_variable_list = positive_vote
+        clear_variable_list = negative_vote
+        remove_variable = vote_is_being_held
+
+        if = {
+            limit = { title:k_dorwinion.holder = { var:positive_vote_strength > var:negative_vote_strength } }
+            title:k_dorwinion.holder = { trigger_event = council_events.0002 }
+        }
+        else = { title:k_dorwinion.holder = { trigger_event = council_events.0003 } }
+    }
+}
+
+
+#
+# hidden event that fires at game start to select Dorwinion council
+#
 
 council_events.9999 = {
     hidden = yes

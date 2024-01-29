@@ -234,3 +234,20 @@ negative_issue_vote = {
 		}
 	}
 }
+
+leading_score_in_vote = {
+	value = 0
+	if = {
+		limit = { positive_issue_vote > negative_issue_vote }
+		add = positive_issue_vote
+	}
+	else = {
+		add = negative_issue_vote
+	}
+}
+
+total_votes = {
+	value = 0
+	add = positive_issue_vote
+	add = negative_issue_vote
+}

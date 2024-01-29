@@ -739,42 +739,42 @@ end_war_attacker_white_peace_interaction = {
 
 		#Send notification to vassals
 		hidden_effect = {
-		scope:attacker_white_peace = {
-			if = {
-				limit = {
-					any_vassal = { NOT = { this = scope:defender_white_peace } }
-				}
-				every_vassal = {
+			scope:attacker_white_peace = {
+				if = {
 					limit = {
-						NOT = { this = scope:defender_white_peace }
+						any_vassal = { NOT = { this = scope:defender_white_peace } }
 					}
-					send_interface_toast = {
-						title = WAR_RESULTS_WHITE_PEACE
-						left_icon = scope:attacker_white_peace
-						right_icon = scope:defender_white_peace
-						custom_tooltip = war_event.1903
+					every_vassal = {
+						limit = {
+							NOT = { this = scope:defender_white_peace }
+						}
+						send_interface_toast = {
+							title = WAR_RESULTS_WHITE_PEACE
+							left_icon = scope:attacker_white_peace
+							right_icon = scope:defender_white_peace
+							custom_tooltip = war_event.1903
+						}
 					}
 				}
 			}
-		}
-		scope:defender_white_peace = {
-			if = {
-				limit = {
-					any_vassal = { NOT = { this = scope:attacker_white_peace } }
-				}
-				every_vassal = {
+			scope:defender_white_peace = {
+				if = {
 					limit = {
-						NOT = { this = scope:attacker_white_peace }
+						any_vassal = { NOT = { this = scope:attacker_white_peace } }
 					}
-					send_interface_toast = {
-						title = WAR_RESULTS_WHITE_PEACE
-						left_icon = scope:defender_white_peace
-						right_icon = scope:attacker_white_peace
-						custom_tooltip = war_event.1904
+					every_vassal = {
+						limit = {
+							NOT = { this = scope:attacker_white_peace }
+						}
+						send_interface_toast = {
+							title = WAR_RESULTS_WHITE_PEACE
+							left_icon = scope:defender_white_peace
+							right_icon = scope:attacker_white_peace
+							custom_tooltip = war_event.1904
+						}
 					}
 				}
 			}
-		}
 		}
 
 		end_war = white_peace
