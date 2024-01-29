@@ -1009,7 +1009,7 @@ widget = {
 
 					blockoverride "maintab_button"
 					{
-						texture = "gfx/interface/skinned/hud_maintab/maintab_council.dds"
+						texture = "gfx/interface/skinned/maintab_lotr_council.dds"
 						onclick = "[GetVariableSystem.Toggle('lotr_council_window')]"
 						down = "[GetVariableSystem.Exists('lotr_council_window')]"
 					}		
