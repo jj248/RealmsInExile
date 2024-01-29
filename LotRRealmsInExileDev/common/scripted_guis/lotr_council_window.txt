@@ -1,4 +1,4 @@
-show_gui_button = {
+﻿show_gui_button = {
     is_shown = {
         OR = {
             top_liege.primary_title = title:k_dorwinion
@@ -52,5 +52,41 @@ show_char_in_seventh_window = {
 show_char_ruling_window = {
     is_valid = {
         always = no
+    }
+}
+
+
+### Policy button GUIs
+
+button_sign_white_peace = {
+    is_shown = {
+        title:k_dorwinion.holder = { # Realm-Master is at war
+            is_at_war = yes
+        }
+    }
+
+    is_valid = {
+        custom_tooltip = {
+            text = BUTTON_sign_white_peace_enabled_tt
+            NOT = { root = title:k_dorwinion.holder }
+        }
+    }
+
+    effect = {
+        fire_events_for_dorwinion_council_members = { EVENT_ID = council_events.0001 }
+    }
+}
+
+show_no_policies_text = {
+    is_shown = {
+        NOT = {
+            title:k_dorwinion.holder = { is_at_war = yes }
+        }
+    }
+}
+
+show_progress_bar = {
+    is_shown = {
+        title:k_dorwinion.holder = { has_variable = vote_is_being_held }
     }
 }

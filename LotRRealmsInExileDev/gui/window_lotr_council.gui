@@ -476,8 +476,147 @@
                 }
                 spacer = { size = { 180 0 } }
             }
+            widget = {
+                visible = "[GetScriptedGui( 'show_progress_bar' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                parentanchor = center
+                
+                progressbar_green_blue = {
+                    size = { 300 30 }
+                    position = { 0 10 }
+                    parentanchor = hcenter
+                    mirror = horizontal
+
+                    min = 0
+                    max = 100
+                    value = 50
+                }
+
+                widget = {
+                    position = { 145 0 }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 -15 }
+                        mirror = vertical
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 15 }
+                        
+                        text_single = {
+                            text = "positive_vote_score"
+                            default_format = "#V"
+                            parentanchor = top|hcenter
+                            margin_top = 4
+                            tooltipwidget = {
+                                positive_vote_tooltip = {}
+                            }
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        mirror = vertical
+                        position = { 0 -15 }
+                        
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        position = { 0 15 }
+    
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4 # Needs to be brigther due to icon's alpha being lower
+                        }
+                    }
+                }
+                widget = {
+                    position = { -205 0 }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 -15 }
+                        mirror = vertical
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 15 }
+                        
+                        text_single = {
+                            text = "negative_vote_score"
+                            default_format = "#V"
+                            parentanchor = top|hcenter
+                            margin_top = 4
+                            tooltipwidget = {
+                                negative_vote_tooltip = {}
+                            }
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        mirror = vertical
+                        position = { 0 -15 }
+                        
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        position = { 0 15 }
+    
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4 # Needs to be brigther due to icon's alpha being lower
+                        }
+                    }
+                }
+
+            }
             hbox = {
-                position = { 0 300 }
+                position = { 0 250 }
                 spacer = { size = { 10 0 } }
                 vbox = {
                     spacing = 5
@@ -492,27 +631,28 @@
                             parentanchor = center
                         }
                     }
-                    spacer = { size = { 0 5 }}
-                    hbox = {
-                        spacing = 5
-                        button_primary = { # 'Downgrade' button
-                            raw_text = "Fun Button"
-                            size = { 200 50 }
-                        }
-                        button_primary = { # 'Downgrade' button
-                            raw_text = "Fun Button"
-                            size = { 200 50 }
-                        }
-                    }
-                    hbox = {
-                        spacing = 5
-                        button_primary = { # 'Downgrade' button
-                            raw_text = "Fun Button"
-                            size = { 200 50 }
-                        }
-                        button_primary = { # 'Downgrade' button
-                            raw_text = "Fun Button"
-                            size = { 200 50 }
+                    scrollbox = {
+                        allow_outside = yes
+                        size = { 420 250 }    
+                        background = {  using = Background_Area_ExtraDark }
+                        
+                        blockoverride "scrollbox_content" {
+                            spacer = { size = { 0 10 } }
+                            button_primary = { # Force sign 'White Peace' button
+                                text = "BUTTON_sign_white_peace"
+                                visible = "[GetScriptedGui( 'button_sign_white_peace' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                enabled = "[GetScriptedGui( 'button_sign_white_peace' ).IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                tooltip = "[GetScriptedGui( 'button_sign_white_peace' ).BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                onclick = "[GetScriptedGui( 'button_sign_white_peace' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                size = { 370 35 }
+                            }
+                            text_single = {
+                                margin_top = 100
+                                text = "no_actions_available"
+                                fontsize = 28
+                                default_format = "#high"
+                                visible = "[GetScriptedGui( 'show_no_policies_text' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                            }
                         }
                     }
                 }
@@ -879,6 +1019,27 @@
                     block "lower_numerical_frame_filigree_alpha" {
                         alpha = 0.4 # Needs to be brigther due to icon's alpha being lower
                     }
+                }
+            }
+        }
+    }
+
+    type positive_vote_tooltip = widget {
+        vbox = {
+            datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('positive_vote')]"
+            item = {
+            }
+        }
+    }
+
+    type negative_vote_tooltip = widget {
+        vbox = {
+            datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.GetList('positive_vote')]"
+            item = {
+                text_single = {
+                    text = dorwinion_voting_strength
+                    fontsize = 12
+                    default_format = "#high"
                 }
             }
         }

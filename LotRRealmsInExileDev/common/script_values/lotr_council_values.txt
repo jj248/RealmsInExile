@@ -216,3 +216,21 @@ dorwinion_council_member_strength = {
 		}
 	}
 }
+
+positive_issue_vote = {
+	title:k_dorwinion.holder = {
+		every_in_list = {
+			variable = positive_vote
+			add = this.dorwinion_council_member_strength
+		}
+	}
+}
+
+negative_issue_vote = {
+	title:k_dorwinion.holder = {
+		every_in_list = {
+			variable = negative_vote
+			add = this.dorwinion_council_member_strength
+		}
+	}
+}

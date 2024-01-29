@@ -16,3 +16,13 @@
   gui_oligarchic_elective_fame_3:0 "[ROOT.Char.GetHerHis|U] Master Merchant [dynast|E] has a [prestige_level|E] of [GetModifier( 'prestige_level_3' ).GetNameWithTooltip|L]"
   gui_oligarchic_elective_fame_4:0 "[ROOT.Char.GetHerHis|U] Master Merchant [dynast|E] has a [prestige_level|E] of [GetModifier( 'prestige_level_4' ).GetNameWithTooltip|L] or higher"
   gui_oligarchic_merchant_dynast_stewardship:0 "[ROOT.Char.GetHerHis|U] [stewardship|E] skill as a Master Merchant"
+
+  ### Actions that can be voted on by the council | Localization keys
+  no_actions_available:0 "No policies to vote on"
+  BUTTON_sign_white_peace:0 "Sign white peace"
+  BUTTON_sign_white_peace_enabled_tt:0 "You are the Realm-Master of [GetTitleByKey('k_dorwinion').GetName]"
+
+  ### Progress Bar
+  positive_vote_score:0 "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('positive_issue_vote')]"
+  negative_vote_score:0 "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('negative_issue_vote')]"
+  dorwinion_voting_strength:0 "[Scope.GetName]    [Scope.ScriptValue('dorwinion_council_member_strength')]"

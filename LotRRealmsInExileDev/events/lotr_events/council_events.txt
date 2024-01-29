@@ -1,5 +1,55 @@
 namespace = council_events
 
+council_events.0001 = {
+	content_source = realms
+	type = character_event
+    title = council_events.0001.t
+    desc = council_events.0001.desc
+	theme = stewardship
+    
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+    immediate = {
+        title:k_dorwinion.holder = {
+			clear_variable_list = positive_vote
+			clear_variable_list = negative_vote
+            set_variable = vote_is_being_held
+        }
+        
+    }
+
+    option = { # Vote positively on proposal
+        name = council_events.0001.a
+
+        title:k_dorwinion.holder = {
+            add_to_variable_list = {
+                name = positive_vote
+                target = root
+            }
+        }
+
+        ai_chance = {
+            base = 50
+        }
+    }
+    option = { # Vote negatively against proposal
+        name = council_events.0001.b
+
+        title:k_dorwinion.holder = {
+            add_to_variable_list = {
+                name = negative_vote
+                target = root
+            }
+        }
+
+        ai_chance = {
+            base = 50
+        }
+    }
+}
 
 council_events.9999 = {
     hidden = yes
