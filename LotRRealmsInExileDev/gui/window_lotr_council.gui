@@ -10,6 +10,12 @@
         using = Animation_ShowHide_Standard
         allow_outside = yes
 
+        state = {
+            name = _show
+
+            on_finish = "[GetScriptedGui( 'set_active_wars_on_character' ).Execute( GuiScope.SetRoot( GetTitleByKey('k_dorwinion').GetHolder.MakeScope ).End)]"
+        }
+
         vbox = {
             using = Window_Margins
             restrictparent_min = yes 
@@ -477,11 +483,12 @@
                 spacer = { size = { 180 0 } }
             }
             widget = {
+                using = Animation_ShowHide_Standard
                 visible = "[GetScriptedGui( 'show_progress_bar' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
                 parentanchor = center
                 allow_outside = yes
                 
-                progressbar_green_blue = {
+                progressbar_red_green = {
                     size = { 300 30 }
                     position = { 0 10 }
                     parentanchor = hcenter
@@ -489,8 +496,9 @@
 
                     min = 0
                     max = "[EmptyScope.ScriptValue('total_votes')]"
-                    value = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('leading_score_in_vote')]"
-                    tooltip = current_leading_white_peace_vote
+                    value = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('positive_issue_vote')]"
+                    # tooltip = current_leading_white_peace_vote
+                    tooltip = "current_leading_white_peace_vote"
                 }
 
                 widget = {
@@ -642,13 +650,57 @@
                         
                         blockoverride "scrollbox_content" {
                             spacer = { size = { 0 10 } }
-                            button_primary = { # Force sign 'White Peace' button
-                                text = "BUTTON_sign_white_peace"
+                            hbox = { # White Peace
                                 visible = "[GetScriptedGui( 'button_sign_white_peace' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
-                                enabled = "[GetScriptedGui( 'button_sign_white_peace' ).IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
-                                tooltip = "[GetScriptedGui( 'button_sign_white_peace' ).BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
-                                onclick = "[GetScriptedGui( 'button_sign_white_peace' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
-                                size = { 370 35 }
+                                allow_outside = yes
+                                widget = {
+                                    allow_outside = yes
+                                    size = { 230 40 }
+                                    background = { using = Background_Area_Border_Solid }
+                                    title_list = {}
+                                    
+                                    button_feudalize_tribe = {
+                                        onclick = "[GetScriptedGui('clear_selected_war_as_variable').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                        texture = "gfx/interface/icons/flat_icons/unpin.dds"
+                                        visible = "[And(GetPlayer.MakeScope.Var('selected_war').IsSet,GetVariableSystem.Exists( 'white_peace_titles_retracted'))]"
+                                        size = { 35 35 }
+                                        position =  { 0 3 }
+                                    }
+                                    text_single = {
+                                        text = "BUTTON_sign_white_peace_title_selected"
+                                        visible = "[GetVariableSystem.Exists( 'white_peace_titles_retracted')]"
+                                        parentanchor = center
+                                        fontsize = 20
+                                    }
+                                    button_expand = {
+                                        size = { 30 30 }
+                                        frame = 2
+                        
+                                        parentanchor = vcenter|right
+                                        visible = "[GetVariableSystem.Exists( 'white_peace_titles_retracted')]"
+                                        onclick = "[GetVariableSystem.Clear( 'white_peace_titles_retracted')]"
+                                                            
+                                        position = { -5 0 }
+                                    }
+                                    button_expand = {
+                                        size = { 30 30 }
+                                        frame = 1
+                        
+                                        parentanchor = vcenter|right
+                                        visible = "[Not(GetVariableSystem.Exists( 'white_peace_titles_retracted'))]"
+                                        onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
+                        
+                                        position = { 0 0 }
+                                    }
+                                }
+                                spacer = { size = { 10 0 }}
+                                button_primary = { # Force sign 'White Peace' button
+                                    text = "BUTTON_sign_white_peace"
+                                    enabled = "[GetScriptedGui( 'button_sign_white_peace' ).IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                    tooltip = "[GetScriptedGui( 'button_sign_white_peace' ).BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                    onclick = "[GetScriptedGui( 'button_sign_white_peace' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                    size = { 150 40 }
+                                }
                             }
                             text_single = {
                                 margin_top = 100
@@ -1073,10 +1125,45 @@
                         fontsize = 13
                         default_format = "#high"
                     }
+                    expand = {}
                     text_single = {
                         text = dorwinion_voter_strength
                         fontsize = 13
                         default_format = "#high;P"
+                    }
+                }
+            }
+        }
+    }
+
+    type title_list = widget {
+        size = { 200 100 }
+        margin_bottom = 5
+        visible = "[Not(GetVariableSystem.Exists( 'white_peace_titles_retracted'))]"
+        background = { using = Background_Area_Border_Solid }
+
+        vbox = {
+            layoutpolicy_vertical = expanding
+            block "datamodel" {
+                datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('active_wars')]"
+            }
+            position = { -15 0 }
+    
+            item = {
+                button_normal = {
+                    allow_outside = yes
+                    # onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
+                    text_single = {
+                        text = "BUTTON_sign_white_peace_titles"
+                        fontsize = 15
+                        parentanchor = center
+                    }
+                    button_feudalize_tribe = {
+                        onclick = "[GetScriptedGui('set_selected_war_as_variable').Execute( GuiScope.SetRoot( Scope.War.MakeScope ).AddScope('player_scope', GetPlayer.MakeScope ).End)]"
+                        onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
+                        texture = "gfx/interface/icons/flat_icons/plus.dds"
+                        size = { 35 35 }
+                        position =  { 175 -15 }
                     }
                 }
             }

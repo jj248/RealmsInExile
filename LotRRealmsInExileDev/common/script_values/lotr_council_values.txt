@@ -239,10 +239,16 @@ leading_score_in_vote = {
 	value = 0
 	if = {
 		limit = { positive_issue_vote > negative_issue_vote }
-		add = positive_issue_vote
+		add = {
+			value = positive_issue_vote
+			subtract = negative_issue_vote
+		}
 	}
 	else = {
-		add = negative_issue_vote
+		add = {
+			value = negative_issue_vote
+			subtract = positive_issue_vote
+		}
 	}
 }
 

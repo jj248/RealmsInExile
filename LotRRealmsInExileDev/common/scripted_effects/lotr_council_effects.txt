@@ -105,3 +105,37 @@ fire_events_for_dorwinion_council_members = {
 
     title:k_dorwinion.holder = { trigger_event = { id = council_events.9998 days = 7 } }
 }
+
+fire_events_for_de_jure_vassals = {
+    
+    $TITLE$.holder = {
+        clear_variable_list = positive_vote
+        clear_variable_list = negative_vote
+        set_variable = vote_is_being_held
+    }
+    $TITLE$ = {
+        every_in_de_jure_hierarchy = {
+            limit = {
+                exists = holder
+                tier = tier_county
+                NOT = { holder = prev.holder }
+            }
+            holder = { add_to_list = targeted_vassals }
+        }
+    }
+
+    every_in_list = {
+        list = targeted_vassals
+        limit = { NOT = { this = root } }
+        trigger_event = { id = $EVENT_ID$ days = { 1 5 } }
+    }
+
+    $TITLE$.holder = {
+        add_to_variable_list = {
+            name = positive_vote
+            target = root
+        }
+    }
+
+    $TITLE$.holder = { trigger_event = { id = council_events.9998 days = 7 } }
+}

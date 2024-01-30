@@ -25,7 +25,17 @@ council_events.0001 = {
         }
 
         ai_chance = {
-            base = 50
+            base = 1
+
+            modifier = {
+                add = -3
+                proposee_in_opposite_faction = { PROPOSEE = title:k_dorwinion.holder.var:proposee }
+            }
+            
+            modifier = {
+                add = 5
+                negative_vote_has_opposite_faction_members = { LIST_HOLDER = title:k_dorwinion.holder }
+            }
         }
     }
     option = { # Vote negatively against proposal
@@ -39,7 +49,17 @@ council_events.0001 = {
         }
 
         ai_chance = {
-            base = 50
+            base = 1
+
+            modifier = {
+                add = 5
+                proposee_in_opposite_faction = { PROPOSEE = title:k_dorwinion.holder.var:proposee }
+            }
+
+            modifier = {
+                add = 5
+                positive_vote_has_opposite_faction_members = { LIST_HOLDER = title:k_dorwinion.holder }
+            }
         }
     }
 }

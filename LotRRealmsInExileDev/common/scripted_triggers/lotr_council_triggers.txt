@@ -1,0 +1,74 @@
+﻿dorwinion_opposite_faction_trigger = {
+	trigger_if = {
+		limit = { dynasty = { has_dynasty_modifier = winelords } }
+		$PERSON$.dynasty = { has_dynasty_modifier = master_merchants }
+	}
+	trigger_else_if = {
+		limit = { dynasty = { has_dynasty_modifier = master_merchants } }
+		$PERSON$.dynasty = { has_dynasty_modifier = winelords }
+	}
+	trigger_else = { always = no }
+}
+
+# Works with the assumption that a list is stored on a character
+positive_vote_has_opposite_faction_members = {
+	$LIST_HOLDER$ = {
+		trigger_if = {
+			limit = {
+				root.dyansty = { has_dynasty_modifier = winelords }
+				any_in_list = {
+					variable = positive_vote
+					dynasty = { has_dynasty_modifier = master_merchants }
+				}
+			}
+			always = yes
+		}
+		trigger_else_if = {
+			limit = { 
+				root.dyansty = { has_dynasty_modifier = master_merchants }
+				any_in_list = {
+					variable = positive_vote
+					dynasty = { has_dynasty_modifier = winelords }
+				}
+			}
+			always = yes
+		}
+		trigger_else = {
+			always = no
+		}
+	}
+}
+
+# Works with the assumption that a list is stored on a character
+negative_vote_has_opposite_faction_members = {
+	$LIST_HOLDER$ = {
+		trigger_if = {
+			limit = {
+				root.dyansty = { has_dynasty_modifier = winelords }
+				any_in_list = {
+					variable = negative_vote
+					dynasty = { has_dynasty_modifier = master_merchants }
+				}
+			}
+			always = yes
+		}
+		trigger_else_if = {
+			limit = { 
+				root.dyansty = { has_dynasty_modifier = master_merchants }
+				any_in_list = {
+					variable = negative_vote
+					dynasty = { has_dynasty_modifier = winelords }
+				}
+			}
+			always = yes
+		}
+		trigger_else = {
+			always = no
+		}
+	}
+}
+
+# Person who proposed vote, are they of same or opposite faction
+proposee_in_opposite_faction = {
+	dorwinion_opposite_faction_trigger = { PERSON = $PROPOSEE$ }
+}

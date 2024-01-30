@@ -55,7 +55,6 @@ show_char_ruling_window = {
     }
 }
 
-
 ### Policy button GUIs
 
 button_sign_white_peace = {
@@ -66,6 +65,22 @@ button_sign_white_peace = {
     }
 
     is_valid = {
+        custom_tooltip = {
+            text = BUTTON_sign_white_peace_cooldown
+            NOT = { title:k_dorwinion.holder = { has_variable = unavailable_proposal_dorwinion } }
+        }
+        custom_tooltip = {
+            text = BUTTON_sign_white_peace_no_title_selected.tt
+            has_variable = selected_war
+        }
+        custom_tooltip = {
+            text = BUTTON_sign_white_peace_no_title_selected.tt
+            has_variable = selected_war
+        }
+        custom_tooltip = {
+            text = BUTTON_proposal_is_being_voted_on
+            NOT = { title:k_dorwinion.holder = { has_variable = vote_is_being_held } }
+        }
         custom_tooltip = {
             text = BUTTON_sign_white_peace_disabled_tt
             NOT = { root = title:k_dorwinion.holder }
@@ -79,6 +94,10 @@ button_sign_white_peace = {
                 NOT = {
                     title:k_dorwinion.holder = {
                         any_character_war = {
+                            trigger_if = {
+                                limit = { root = { has_variable = selected_war } }
+                                this = root.var:selected_war
+                            }
                             primary_defender = title:k_dorwinion.holder 
                             defender_war_score < 30
                         }
@@ -92,6 +111,10 @@ button_sign_white_peace = {
                 NOT = {
                     title:k_dorwinion.holder = {
                         any_character_war = {
+                            trigger_if = {
+                                limit = { root = { has_variable = selected_war } }
+                                this = root.var:selected_war
+                            }
                             primary_attacker = title:k_dorwinion.holder 
                             attacker_war_score < 30
                         }
@@ -106,7 +129,21 @@ button_sign_white_peace = {
             limit = { NOT = { root = title:k_dorwinion.holder } }
             custom_tooltip = BUTTON_sign_white_peace_enabled_tt
         }
-        fire_events_for_dorwinion_council_members = { EVENT_ID = council_events.0001 }
+        fire_events_for_de_jure_vassals = { EVENT_ID = council_events.0001 TITLE = title:k_dorwinion }
+        title:k_dorwinion.holder = {
+            set_variable = {
+                name = proposee
+                value = root
+            }
+        }
+        title:k_dorwinion.holder = {
+            trigger_event = { id = council_events.0001 days = { 1 5 } }
+            set_variable = {
+                name = unavailable_proposal_dorwinion
+                years = 2
+            }
+        }
+
     }
 }
 
@@ -122,4 +159,43 @@ show_progress_bar = {
     is_shown = {
         title:k_dorwinion.holder = { has_variable = vote_is_being_held }
     }
+}
+
+set_active_wars_on_character = {
+    effect = {
+        clear_variable_list = active_wars
+        
+        every_character_war = {
+            save_temporary_scope_as = war
+            root = {
+                add_to_variable_list = {
+                    name = active_wars
+                    target = scope:war
+                }
+            }
+        }
+    }
+}
+
+set_selected_war_as_variable = {
+    saved_scopes = {
+        player_scope
+    }
+    effect = {
+
+        scope:player_scope = {
+            if = {
+                limit = { has_variable = selected_war }
+                remove_variable = selected_war
+            }
+            set_variable = {
+                name = selected_war
+                value = root
+            }
+        }
+    }
+}
+
+clear_selected_war_as_variable = {
+    effect = { remove_variable = selected_war }
 }

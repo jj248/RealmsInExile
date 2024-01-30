@@ -19,14 +19,24 @@
 
   ### Actions that can be voted on by the council | Localization keys
   no_actions_available:0 "No policies to vote on"
+  BUTTON_sign_white_peace_titles:0 "War for [Scope.War.GetActiveCB.GetFirstTitleTarget.GetNameNoTier]"
+  BUTTON_sign_white_peace_title_selected:0 "[SelectLocalization(GetPlayer.MakeScope.Var('selected_war').IsSet,GetPlayer.MakeScope.Var('selected_war').War.GetActiveCB.GetFirstTitleTarget.GetNameNoTier,'No Title Selected')]"
   BUTTON_sign_white_peace:0 "Sign white peace"
   BUTTON_sign_white_peace_disabled_tt:0 "You are the Realm-Master of [GetTitleByKey('k_dorwinion').GetName]"
   BUTTON_sign_white_peace_enabled_tt:0 "Start a vote for [GetTitleByKey('k_dorwinion').GetHolder.GetName] to make #V peace#! with a warring realm."
   BUTTON_sign_white_peace_offer_available:0 "The offending side is not willing to sign a white peace."
+  BUTTON_sign_white_peace_no_title_selected.tt:0 "No title has been selected."
+  BUTTON_sign_white_peace_cooldown:0 "This proposal can only be made again on the [GetCurrentDateWithDiff(GetVarTimeRemaining( GetTitleByKey('k_dorwinion').GetHolder.MakeScope, 'unavailable_proposal_dorwinion'))]"
 
   ### Progress Bar
   positive_vote_score:0 "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('positive_issue_vote')]"
   negative_vote_score:0 "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('negative_issue_vote')]"
   dorwinion_voter_name:0 "[Scope.Char.GetName]"
   dorwinion_voter_strength:0 "[Scope.ScriptValue('dorwinion_council_member_strength')]"
-  current_leading_white_peace_vote:0 "[SelectLocalization(GreaterThan_CFixedPoint(GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('positive_issue_vote'), GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('negative_issue_vote')),'The vote is winning','The vote is losing')]"
+  current_leading_white_peace_vote:0 "[SelectLocalization(GreaterThan_CFixedPoint(GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('positive_issue_vote'), GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('negative_issue_vote')),'The vote is winning with ','The vote is losing with ')]#V [EmptyScope.ScriptValue('leading_score_in_vote')]#! votes"
+
+  ### General
+  BUTTON_proposal_is_being_voted_on:0 "There is a proposal being voted on"
+
+  ### HUD
+  LOTR_COUNCIL_HUD:0 "Council Chambers"
