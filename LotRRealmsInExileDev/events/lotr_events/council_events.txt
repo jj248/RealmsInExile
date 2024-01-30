@@ -14,6 +14,10 @@ council_events.0001 = {
 		animation = personality_rational
 	}
 
+    immediate = {
+        title:k_dorwinion.holder.var:proposee.var:selected_war = { save_scope_as = war }
+    }
+
     option = { # Vote positively on proposal
         name = council_events.0001.a
 
@@ -27,15 +31,199 @@ council_events.0001 = {
         ai_chance = {
             base = 1
 
-            modifier = {
+            modifier = { # Person who proposed vote is in opposite faction
                 add = -3
                 proposee_in_opposite_faction = { PROPOSEE = title:k_dorwinion.holder.var:proposee }
             }
-            
-            modifier = {
+            modifier = { # People of opposite faction voted 'NO'
                 add = 5
                 negative_vote_has_opposite_faction_members = { LIST_HOLDER = title:k_dorwinion.holder }
             }
+            modifier = { # Concerned about defending in other wars
+                add = {
+                    value = 5
+                    if = {
+                        limit = {
+                            scope:war = {
+                                attacker_war_score <= -50
+                            }
+                        }
+                        add = 4
+                    }
+                }
+                scope:war.casus_belli = {
+                    primary_attacker = title:k_dorwinion.holder
+                }
+                scope:war = {
+                    war_days >= 365
+                    attacker_war_score <= 0
+                }
+                title:k_dorwinion.holder = {
+                    any_character_war = {
+                        NOT = { this = scope:war }
+                        casus_belli = {
+                            primary_defender = title:k_dorwinion.holder
+                        }
+                    }
+                }
+            }
+            modifier = { # Defender prefers White Peace to loss
+                scope:war.casus_belli = {
+                    primary_defender = title:k_dorwinion.holder
+                }
+                scope:war = {
+                    war_days >= 182
+                    defender_war_score <= 15
+                }
+                add = {
+                    value = 1
+                    if = {
+                        limit = {
+                            scope:war = {
+                                defender_war_score <= -40
+                            }
+                        }
+                        add = 5
+                    }
+                }
+            }
+            modifier = { # Defenders want to end wars that's taking too long to win
+                scope:war.casus_belli = {
+                    primary_defender = title:k_dorwinion.holder
+                }
+                scope:war = {
+                    war_days >= 365
+                }
+                add = {
+                    value = scope:war.war_days
+                    divide = 30
+                    if = {
+                        limit = {
+                            scope:war = {
+                                defender_war_score > 0
+                            }
+                        }
+                        subtract = scope:war.defender_war_score
+                    }
+                    if = { # If you're this close, perhaps it's worth waiting a few more months for ticking warscore?
+                        limit = {
+                            scope:war = {
+                                defender_war_score >= 70
+                            }
+                        }
+                        subtract = scope:war.defender_war_score
+                    }
+                    min = 0
+                }
+            }
+            modifier = { # I'm in debt, how about a white peace? Defender
+                scope:war = {
+                    war_days >= 182
+                }
+                scope:war.casus_belli = {
+                    primary_defender = title:k_dorwinion.holder
+                }
+                title:k_dorwinion.holder.debt_level >= 1
+    
+                add = {
+                    value = title:k_dorwinion.holder.debt_level
+                    
+                    if = {
+                        limit = { scope:war = { defender_war_score > 0 }}
+                        subtract = scope:war.defender_war_score
+                    }
+                    if = { # Push through to the end, it's worth it at this point...
+                        limit = { scope:war = { defender_war_score >= 80 }}
+                        subtract = scope:war.defender_war_score
+                    }
+                    min = 0
+                }
+            }
+            modifier = { # I'm in debt, how about a white peace? Attacker
+                scope:war = {
+                    war_days >= 182
+                }
+                scope:war.casus_belli = {
+                    primary_attacker = title:k_dorwinion.holder
+                }
+                title:k_dorwinion.holder.debt_level >= 1
+    
+                add = {
+                    value = title:k_dorwinion.holder.debt_level
+    
+                    if = {
+                        limit = { scope:war = { attacker_war_score > 0 }}
+                        subtract = scope:war.attacker_war_score
+                    }
+                    min = 0
+                }
+            }
+            modifier = { # Person in opposing war is a friend
+                add = 5
+                targeted_title_ruler_is_friend = { WAR = scope:war ACTOR = title:k_dorwinion.holder }
+            }
+            modifier = { # Person in opposing war is a best friend
+                add = 10
+                targeted_title_ruler_is_best_friend_or_lover = { WAR = scope:war ACTOR = title:k_dorwinion.holder }
+            }
+            modifier = { # Person we like voted 'YES'
+                add = {
+                    value = 5
+                    every_in_list = {
+                        list = positive_vote
+                        add = 2
+                    }
+                }
+                any_in_list = {
+                    list = positive_vote
+					has_relation_lover = root
+					has_relation_best_friend = root
+                    has_relation_friend = root
+                }
+            }
+            modifier = { # Person we hate voted 'YES'
+                add = {
+                    value = -5
+                    every_in_list = {
+                        list = positive_vote
+                        add = -2
+                    }
+                }
+                any_in_list = {
+                    list = positive_vote
+					has_relation_rival = root
+					has_relation_nemesis = root
+                }
+            }
+			modifier = { # We like person we are attacking/defending against
+				add = 10
+                trigger_if = {
+                    limit = { scope:war.primary_attacker = title:k_dorwinion.holder }
+                    opinion = {
+                        target = scope:war.primary_defender
+                        value >= 30
+                    }
+                }
+                trigger_else = {
+                    opinion = {
+                        target = scope:war.primary_attacker
+                        value >= 30
+                    }
+                }
+			}
+			modifier = { # We have traits that make us want to white peace
+				add = 5
+                OR = {
+                    has_trait = content
+                    has_trait = craven
+                    has_trait = temperate
+                    has_trait = education_diplomacy_1
+                    has_trait = education_diplomacy_2
+                    has_trait = education_diplomacy_3
+                    has_trait = education_diplomacy_4
+                    has_trait = education_diplomacy_5
+                }
+			}
         }
     }
     option = { # Vote negatively against proposal
@@ -51,15 +239,198 @@ council_events.0001 = {
         ai_chance = {
             base = 1
 
-            modifier = {
+            modifier = { # Person who proposed vote is in opposite faction
                 add = 5
                 proposee_in_opposite_faction = { PROPOSEE = title:k_dorwinion.holder.var:proposee }
             }
-
-            modifier = {
+            modifier = { # Attacker war is going really well
+                add = {
+                    value = 5
+                    if = {
+                        limit = {
+                            scope:war = {
+                                attacker_war_score >= 50
+                            }
+                        }
+                        add = 5
+                    }
+                }
+                scope:war.casus_belli = {
+                    primary_attacker = title:k_dorwinion.holder
+                }
+                scope:war = {
+                    war_days >= 365
+                    attacker_war_score >= 50
+                }
+            }
+            modifier = { # People of opposite faction voted 'YES'
                 add = 5
                 positive_vote_has_opposite_faction_members = { LIST_HOLDER = title:k_dorwinion.holder }
             }
+            modifier = { # Person in opposing war is a rival
+                add = 5
+                targeted_title_ruler_is_rival = { WAR = scope:war ACTOR = title:k_dorwinion.holder }
+            }
+            modifier = { # Person in opposing war is a nemesis
+                add = 10
+                targeted_title_ruler_is_nemesis = { WAR = scope:war ACTOR = title:k_dorwinion.holder }
+            }
+            modifier = { # Attacker is in debt, let's not white peace
+                scope:war = {
+                    war_days >= 182
+                }
+                scope:war.casus_belli = {
+                    primary_defender = title:k_dorwinion.holder
+                }
+                scope:war.casus_belli.primary_attacker.debt_level >= 1
+    
+                add = {
+                    value = scope:war.casus_belli.primary_attacker.debt_level
+                    
+                    if = {
+                        limit = { scope:war = { defender_war_score > 0 }}
+                        subtract = scope:war.defender_war_score
+                    }
+                    if = { # Push through to the end, it's worth it at this point...
+                        limit = { scope:war = { defender_war_score >= 80 }}
+                        subtract = scope:war.defender_war_score
+                    }
+                    min = 0
+                }
+            }
+            modifier = { # Defender is in debt, let's not white peace
+                scope:war = {
+                    war_days >= 182
+                }
+                scope:war.casus_belli = {
+                    primary_attacker = title:k_dorwinion.holder
+                }
+                scope:war.casus_belli.primary_defender.debt_level >= 1
+    
+                add = {
+                    value = scope:war.casus_belli.primary_defender.debt_level
+    
+                    if = {
+                        limit = { scope:war = { attacker_war_score > 0 }}
+                        subtract = scope:war.attacker_war_score
+                    }
+                    min = 0
+                }
+            }
+            modifier = { # Person we are attacking needs to attack/defend in other wars
+                add = {
+                    value = 5
+                    scope:war.casus_belli.primary_defender = {
+                        every_character_war = {
+                            limit = { NOT = { this = scope:war } }
+                            add = 2
+                        }
+                    }
+                }
+                scope:war.casus_belli = {
+                    primary_attacker = title:k_dorwinion.holder
+                }
+                scope:war = {
+                    war_days >= 365
+                    attacker_war_score <= 0
+                }
+                scope:war.casus_belli.primary_defender = {
+                    any_character_war = {
+                        NOT = { this = scope:war }
+                        casus_belli = {
+                            OR = {
+                                primary_defender = scope:war.casus_belli.primary_defender
+                                primary_attacker = scope:war.casus_belli.primary_defender
+                            }
+                        }
+                    }
+                }
+            }
+            modifier = { # Person we are defending against needs to attack/defend in other wars
+                add = {
+                    value = 5
+                    scope:war.casus_belli.primary_attacker = {
+                        every_character_war = {
+                            limit = { NOT = { this = scope:war } }
+                            add = 2
+                        }
+                    }
+                }
+                scope:war.casus_belli = {
+                    primary_defender = title:k_dorwinion.holder
+                }
+                scope:war = {
+                    war_days >= 365
+                    attacker_war_score <= 0
+                }
+                scope:war.casus_belli.primary_attacker = {
+                    any_character_war = {
+                        NOT = { this = scope:war }
+                        casus_belli = {
+                            primary_attacker = scope:war.casus_belli.primary_attacker
+                            primary_defender = scope:war.casus_belli.primary_attacker
+                        }
+                    }
+                }
+            }
+            modifier = { # Person we like voted 'NO'
+                add = {
+                    value = 5
+                    every_in_list = {
+                        list = negative_vote
+                        add = 2
+                    }
+                }
+                any_in_list = {
+                    list = negative_vote
+					has_relation_lover = root
+					has_relation_best_friend = root
+                    has_relation_friend = root
+                }
+            }
+            modifier = { # Person we hate voted 'NO'
+                add = {
+                    value = -5
+                    every_in_list = {
+                        list = negative_vote
+                        add = -2
+                    }
+                }
+                any_in_list = {
+                    list = negative_vote
+					has_relation_rival = root
+					has_relation_nemesis = root
+                }
+            }
+			modifier = { # We hate person we are attacking/defending against
+				add = 10
+                trigger_if = {
+                    limit = { scope:war.primary_attacker = title:k_dorwinion.holder }
+                    opinion = {
+                        target = scope:war.primary_defender
+                        value < -30
+                    }
+                }
+                trigger_else = {
+                    opinion = {
+                        target = scope:war.primary_attacker
+                        value < -30
+                    }
+                }
+			}
+			modifier = { # We have traits that make us want to go to war
+				add = 5
+                OR = {
+                    has_trait = brave
+                    has_trait = stubborn
+                    has_trait = ambitious
+                    has_trait = education_martial_1
+                    has_trait = education_martial_2
+                    has_trait = education_martial_3
+                    has_trait = education_martial_4
+                    has_trait = education_martial_5
+                }
+			}
         }
     }
 }

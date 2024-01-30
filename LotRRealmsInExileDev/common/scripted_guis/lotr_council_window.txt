@@ -125,17 +125,17 @@ button_sign_white_peace = {
     }
 
     effect = {
-        if = {
-            limit = { NOT = { root = title:k_dorwinion.holder } }
-            custom_tooltip = BUTTON_sign_white_peace_enabled_tt
-        }
-        fire_events_for_de_jure_vassals = { EVENT_ID = council_events.0001 TITLE = title:k_dorwinion }
         title:k_dorwinion.holder = {
             set_variable = {
                 name = proposee
                 value = root
             }
         }
+        if = {
+            limit = { NOT = { root = title:k_dorwinion.holder } }
+            custom_tooltip = BUTTON_sign_white_peace_enabled_tt
+        }
+        fire_events_for_de_jure_vassals = { EVENT_ID = council_events.0001 TITLE = title:k_dorwinion }
         title:k_dorwinion.holder = {
             trigger_event = { id = council_events.0001 days = { 1 5 } }
             set_variable = {

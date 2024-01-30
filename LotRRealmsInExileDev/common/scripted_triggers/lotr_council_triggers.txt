@@ -72,3 +72,52 @@ negative_vote_has_opposite_faction_members = {
 proposee_in_opposite_faction = {
 	dorwinion_opposite_faction_trigger = { PERSON = $PROPOSEE$ }
 }
+
+# Person in war is my friend/rival
+targeted_title_ruler_is_friend = {
+	$WAR$.casus_belli = {
+		trigger_if = {
+			limit = { primary_defender = $ACTOR$ }
+			primary_attacker = { has_relation_friend = root }
+		}
+		trigger_else = { always = no }
+	}
+}
+
+# Person in war is my best friend/lover/nemesis
+targeted_title_ruler_is_best_friend_or_lover = {
+	$WAR$.casus_belli = {
+		trigger_if = {
+			limit = { primary_defender = $ACTOR$ }
+			primary_attacker = {
+				OR = {
+					has_relation_lover = root
+					has_relation_best_friend = root
+				}
+			}
+		}
+		trigger_else = { always = no }
+	}
+}
+
+# Person in war is my best friend/lover/nemesis
+targeted_title_ruler_is_rival = {
+	$WAR$.casus_belli = {
+		trigger_if = {
+			limit = { primary_attacker = $ACTOR$ }
+			primary_defender = { has_relation_rival = root }
+		}
+		trigger_else = { always = no }
+	}
+}
+
+# Person in war is my best friend/lover/nemesis
+targeted_title_ruler_is_nemesis = {
+	$WAR$.casus_belli = {
+		trigger_if = {
+			limit = { primary_attacker = $ACTOR$ }
+			primary_defender = { has_relation_nemesis = root }
+		}
+		trigger_else = { always = no }
+	}
+}
