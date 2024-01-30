@@ -698,7 +698,7 @@ end_war_attacker_white_peace_interaction = {
 			}
 		}
 		else = {
-		release_prisoners_of_war_effect = yes
+			release_prisoners_of_war_effect = yes
 		}
 
 		# Hostages

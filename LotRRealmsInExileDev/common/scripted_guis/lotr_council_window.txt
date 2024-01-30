@@ -70,6 +70,35 @@ button_sign_white_peace = {
             text = BUTTON_sign_white_peace_disabled_tt
             NOT = { root = title:k_dorwinion.holder }
         }
+        trigger_if = {
+            limit = {
+                title:k_dorwinion.holder = { any_character_war = { primary_defender = root  } }
+            }
+            custom_tooltip = {
+                text = BUTTON_sign_white_peace_offer_available
+                NOT = {
+                    title:k_dorwinion.holder = {
+                        any_character_war = {
+                            primary_defender = title:k_dorwinion.holder 
+                            defender_war_score < 30
+                        }
+                    }
+                }
+            }
+        }
+        trigger_else = {
+            custom_tooltip = {
+                text = BUTTON_sign_white_peace_offer_available
+                NOT = {
+                    title:k_dorwinion.holder = {
+                        any_character_war = {
+                            primary_attacker = title:k_dorwinion.holder 
+                            attacker_war_score < 30
+                        }
+                    }
+                }
+            }
+        }
     }
 
     effect = {

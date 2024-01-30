@@ -22,6 +22,7 @@
   BUTTON_sign_white_peace:0 "Sign white peace"
   BUTTON_sign_white_peace_disabled_tt:0 "You are the Realm-Master of [GetTitleByKey('k_dorwinion').GetName]"
   BUTTON_sign_white_peace_enabled_tt:0 "Start a vote for [GetTitleByKey('k_dorwinion').GetHolder.GetName] to make #V peace#! with a warring realm."
+  BUTTON_sign_white_peace_offer_available:0 "The offending side is not willing to sign a white peace."
 
   ### Progress Bar
   positive_vote_score:0 "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('positive_issue_vote')]"
