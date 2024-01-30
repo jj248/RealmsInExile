@@ -121,3 +121,15 @@ targeted_title_ruler_is_nemesis = {
 		trigger_else = { always = no }
 	}
 }
+
+character_is_on_a_council = {
+	OR = {
+		this = global_var:dorinion_council_member_1
+		this = global_var:dorinion_council_member_2
+		this = global_var:dorinion_council_member_3
+		this = global_var:dorinion_council_member_4
+		this = global_var:dorinion_council_member_5
+		this = global_var:dorinion_council_member_6
+		this = global_var:dorinion_council_member_7
+	}
+}

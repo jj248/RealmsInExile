@@ -473,6 +473,20 @@ council_events.0003 = { # White peace vote lost
 
 
 
+#################
+### AI events ###
+#################
+
+council_events.5000 = {
+    hidden = yes
+
+    immediate = {
+        
+    }
+}
+
+
+
 ##########################
 ### Maintenance events ###
 ##########################

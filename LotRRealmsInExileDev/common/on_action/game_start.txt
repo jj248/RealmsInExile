@@ -402,6 +402,7 @@ on_game_start_after_lobby = {
     on_actions = {
         delay = { months = 1 }
         lotr_on_monthly_tribute
+		lotr_dorwinion_council_monthly_policy
     }	
 	
 	effect = {

@@ -1,0 +1,6 @@
+﻿lotr_council_member = {
+	base = ruler
+	conditions = {
+		character_is_on_a_council = yes
+	}
+}
