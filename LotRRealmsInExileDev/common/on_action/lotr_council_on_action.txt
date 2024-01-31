@@ -1,8 +1,12 @@
 ﻿lotr_dorwinion_council_monthly_policy = {
+    weight_multiplier = {
+		base = 1
+		
+	}
     effect = {
         every_lotr_council_member = {
 			limit = { target_is_liege_or_above = title:k_dorwinion.holder }
-			trigger_event = council_events.5000 # White Peace
+			trigger_event = council_events.5001 # White Peace
         }		
         trigger_event = {
             on_action = lotr_dorwinion_council_monthly_policy

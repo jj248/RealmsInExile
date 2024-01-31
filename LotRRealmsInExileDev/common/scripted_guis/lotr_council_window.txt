@@ -182,7 +182,6 @@ set_selected_war_as_variable = {
         player_scope
     }
     effect = {
-
         scope:player_scope = {
             if = {
                 limit = { has_variable = selected_war }
