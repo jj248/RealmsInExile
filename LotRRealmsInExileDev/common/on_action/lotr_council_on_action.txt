@@ -1,12 +1,35 @@
 ﻿lotr_dorwinion_council_monthly_policy = {
-    weight_multiplier = {
-		base = 1
-		
-	}
     effect = {
-        every_lotr_council_member = {
-			limit = { target_is_liege_or_above = title:k_dorwinion.holder }
-			trigger_event = council_events.5001 # White Peace
+        random = { # White Peace
+            chance = 50
+            modifier = {
+                add = 10
+                title:k_dorwinion.holder = {
+                    any_character_war = {
+                        count < 3
+                    }
+                }
+            }
+            modifier = {
+                add = 30
+                title:k_dorwinion.holder = {
+                    any_character_war = {
+                        count < 4
+                    }
+                }
+            }
+            modifier = {
+                add = 50
+                title:k_dorwinion.holder = {
+                    any_character_war = {
+                        count < 5
+                    }
+                }
+            }
+            every_lotr_council_member = {
+                limit = { target_is_liege_or_above = title:k_dorwinion.holder }
+                trigger_event = council_events.5001 # White Peace
+            }
         }		
         trigger_event = {
             on_action = lotr_dorwinion_council_monthly_policy
