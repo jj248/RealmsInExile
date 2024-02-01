@@ -131,6 +131,4 @@ fire_events_for_de_jure_vassals = {
             target = root
         }
     }
-
-    $TITLE$.holder = { trigger_event = { id = council_events.9998 days = 7 } }
 }

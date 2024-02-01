@@ -522,7 +522,6 @@ council_events.5000 = {
             }
         }
     }
-    
 
     option = { # Push for white peace
         title:k_dorwinion.holder = {
@@ -538,6 +537,7 @@ council_events.5000 = {
             }
         }
         fire_events_for_de_jure_vassals = { EVENT_ID = council_events.0001 TITLE = title:k_dorwinion }
+        title:k_dorwinion.holder = { trigger_event = { id = council_events.9998 days = 7 } }
         title:k_dorwinion.holder = {
             trigger_event = { id = council_events.0001 days = { 1 5 } }
             set_variable = {

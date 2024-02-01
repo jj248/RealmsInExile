@@ -21,18 +21,6 @@ yearly_global_pulse = {
 				days = 1
 			}
 		}
-		if = { #LotR
-			limit = { 
-				exists = title:e_golden_realm_rhun 
-				title:e_golden_realm_rhun = {
-					has_variable = stability
-				}
-			}
-			title:e_golden_realm_rhun = { #LotR
-				change_variable = { name = stability add = holder.iu_annual_change }
-				clamp_variable = { name = stability max = 100 min = 0 }
-			}
-		}
 	
 		every_independent_ruler = {
 			limit = {
