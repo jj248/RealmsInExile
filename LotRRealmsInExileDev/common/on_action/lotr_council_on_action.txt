@@ -2,6 +2,12 @@
     effect = {
         random = { # White Peace
             chance = 50
+            modifier = { # No chance if there isn't any wars
+                factor = 0
+                title:k_dorwinion.holder = {
+                    any_character_war = { count = 0 }
+                }
+            }
             modifier = {
                 add = 10
                 title:k_dorwinion.holder = {
