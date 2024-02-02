@@ -477,6 +477,23 @@ council_events.0003 = { # White peace vote lost
     }
 }
 
+council_events.0004 = {
+	content_source = realms
+	type = character_event
+    title = council_events.0004.t
+    desc = council_events.0004.desc
+	theme = stewardship
+
+    left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+    option = {
+        name = council_events.0004.a
+    }
+}
+
 
 
 #################
@@ -492,6 +509,7 @@ council_events.5000 = {
 
     trigger = {
         NOT = { has_variable = not_considering_white_peace }
+        NOT = { title:k_dorwinion.holder = { has_variable = unavailable_proposal_dorwinion } }
         trigger_if = {
             limit = { title:k_dorwinion.holder = { any_character_war = { primary_defender = root  } } }
             NOT = {
@@ -529,6 +547,10 @@ council_events.5000 = {
                 name = proposee
                 value = root
             }
+            set_variable = {
+                name = unavailable_proposal_dorwinion
+                years = 2
+            }
         }
         title:k_dorwinion.holder.var:proposee = {
             set_variable = {
@@ -540,6 +562,8 @@ council_events.5000 = {
         title:k_dorwinion.holder = { trigger_event = { id = council_events.9998 days = 7 } }
         title:k_dorwinion.holder = {
             trigger_event = { id = council_events.0001 days = { 1 5 } }
+            # Letting Dorwinion ruler know there is an ongoing vote
+            trigger_event = council_events.0004
             set_variable = {
                 name = unavailable_proposal_dorwinion
                 years = 2
@@ -681,6 +705,7 @@ council_events.5000 = {
             name = not_considering_white_peace
             months = 6
         }
+        title:k_dorwinion.holder.var:proposee = { remove_variable = selected_war }
 
         ai_chance = {
             base = 1

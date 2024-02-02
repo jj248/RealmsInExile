@@ -1,14 +1,18 @@
 ﻿l_english:
 
-council_events.0001.t:0 "WIP"
+council_events.0001.t:0 "The Vote for Peace"
 council_events.0001.desc:0 "WIP"
-council_events.0001.a:0 "WIP"
-council_events.0001.b:0 "WIP"
+council_events.0001.a:0 "Vote for White Peace"
+council_events.0001.b:0 "Vote against White Peace"
 
-council_events.0002.t:0 "WIP"
+council_events.0002.t:0 "Peace over War"
 council_events.0002.desc:0 "WIP"
-council_events.0002.a:0 "WIP"
+council_events.0002.a:0 "Sign White Peace"
 
-council_events.0003.t:0 "WIP"
+council_events.0003.t:0 "War over Peace"
 council_events.0003.desc:0 "WIP"
-council_events.0003.a:0 "WIP"
+council_events.0003.a:0 "Continue with War"
+
+council_events.0004.t:0 "The White Peace Vote"
+council_events.0004.desc:0 "WIP"
+council_events.0004.a:0 "WIP"
