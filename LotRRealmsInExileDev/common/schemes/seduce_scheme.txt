@@ -18,10 +18,10 @@
 	
 	
 	allow = {
-		is_nubile = yes
+		is_adult = yes
 		is_travelling = no 
 		scope:target = {
-			is_nubile = yes
+			is_adult = yes
 			is_travelling = no 
 		}
 

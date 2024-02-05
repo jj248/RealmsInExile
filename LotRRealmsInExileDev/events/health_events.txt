@@ -61,10 +61,13 @@ health.0001 = {
 	weight_multiplier = {
 		base = 1
 		compare_modifier = {
-			value = human_age_equivalent #LotR
+			trigger = { #LotR
+				cannot_be_killed = no
+				is_elf = no
+			}
+			value = age
 			multiplier = -0.01
 			min = -0.9
-			max = 0
 		}
 		compare_modifier = {
 			value = stress
@@ -132,7 +135,11 @@ health.0002 = {
 	weight_multiplier = {
 		base = 1
 		compare_modifier = {
-			value = human_age_equivalent #LotR
+			trigger = { #LotR
+				cannot_be_killed = no
+				is_elf = no
+			}
+			value = age
 			multiplier = -0.01
 			min = -0.9
 		}
@@ -197,7 +204,11 @@ health.0003 = {
 	weight_multiplier = {
 		base = 1
 		compare_modifier = {
-			value = human_age_equivalent #LotR
+			trigger = { #LotR
+				cannot_be_killed = no
+				is_elf = no
+			}
+			value = age
 			multiplier = -0.01
 			min = -0.9
 		}
@@ -259,7 +270,11 @@ health.0004 = {
 	weight_multiplier = {
 		base = 1
 		compare_modifier = {
-			value = human_age_equivalent #LotR
+			trigger = { #LotR
+				cannot_be_killed = no
+				is_elf = no
+			}
+			value = age
 			multiplier = -0.01
 			min = -0.9
 		}
