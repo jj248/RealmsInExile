@@ -2,15 +2,15 @@
 ## c_ky_asatal
 # b_bakoya
 1038 = {
-	culture = blacklocks
+	culture = blacklocks_nargubraz
 	religion = faith_blacklocks
 	holding = castle_holding
 }
 # b_ky_asatal
 1151 = {
-	culture = blacklocks
+	culture = blacklocks_nargubraz
 	religion = faith_blacklocks
-	holding = none
+	holding = castle_holding
 }
 
 ## c_nar_agathol 
@@ -90,9 +90,14 @@
 ## c_ukrati_d_um
 # b_ukrati_d_um
 5283 = {
-	culture = wastelands
-	religion = faith_wastelands_pagan
-	holding = wastelands_holding
+	culture = blacklocks
+	religion = faith_blacklocks
+	holding = dwarven_holding
+	buildings = {
+		dwarven_depths_02
+		dwarven_fungal_farm_02
+		dwarven_crafts_02
+	}
 }
 
 ## c_tuktazn_an
@@ -115,18 +120,18 @@
 # b_bund_ul
 # b_karabizar
 5287 = {
-	culture = blacklocks
+	culture = blacklocks_nargubraz
 	religion = faith_blacklocks
 	holding = castle_holding
 }
 5286 = {
-	culture = blacklocks
+	culture = blacklocks_nargubraz
 	religion = faith_khazad
 	holding = none
 }
 # b_atamabad
 5288 = {
-	culture = blacklocks
+	culture = blacklocks_nargubraz
 	religion = faith_blacklocks
 	holding = none
 }

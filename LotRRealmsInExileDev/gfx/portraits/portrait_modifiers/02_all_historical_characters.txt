@@ -6468,7 +6468,7 @@
 			accessory = {
 				mode = add
 				gene = hairstyles
-				template = no_hair
+				template = no_hairstyles
 				accessory = bald
 			}
 			accessory = {
@@ -6516,6 +6516,25 @@
 				exists = this
 				exists = character:weakorc9
 				this = character:weakorc9
+			}
+		}
+	}
+	igash_portrait = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_hairstyles
+				accessory = male_hair_custom_17
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 999
+				exists = this
+				exists = character:strongorc4
+				this = character:strongorc4
 			}
 		}
 	}

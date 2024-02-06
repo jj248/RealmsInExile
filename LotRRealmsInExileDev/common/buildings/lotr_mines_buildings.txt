@@ -250,12 +250,20 @@ iron_mines_01 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.4
-		stationed_maa_damage_mult = 0.15
-		stationed_maa_toughness_mult = 0.15
+		stationed_maa_damage_mult = 0.075
+		stationed_maa_toughness_mult = 0.075
 	}
 
 	province_dynasty_modifier = {
@@ -283,12 +291,20 @@ iron_mines_02 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 0.8
-		stationed_maa_damage_mult = 0.30
-		stationed_maa_toughness_mult = 0.30
+		stationed_maa_damage_mult = 0.15
+		stationed_maa_toughness_mult = 0.15
 	}
 
 	province_dynasty_modifier = {
@@ -314,12 +330,20 @@ iron_mines_03 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 250
 	
 	province_modifier = {
 		monthly_income = 1.2
-		stationed_maa_damage_mult = 0.45
-		stationed_maa_toughness_mult = 0.45
+		stationed_maa_damage_mult = 0.225
+		stationed_maa_toughness_mult = 0.225
 	}
 
 	province_dynasty_modifier = {
@@ -345,12 +369,20 @@ iron_mines_04 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
 		monthly_income = 1.6
-		stationed_maa_damage_mult = 0.60
-		stationed_maa_toughness_mult = 0.60
+		stationed_maa_damage_mult = 0.30
+		stationed_maa_toughness_mult = 0.30
 	}
 
 	province_dynasty_modifier = {
@@ -376,12 +408,20 @@ iron_mines_05 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
 		monthly_income = 2.0
-		stationed_maa_damage_mult = 0.75
-		stationed_maa_toughness_mult = 0.75
+		stationed_maa_damage_mult = 0.375
+		stationed_maa_toughness_mult = 0.375
 	}
 
 	province_dynasty_modifier = {
@@ -407,12 +447,20 @@ iron_mines_06 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
 		monthly_income = 2.4
-		stationed_maa_damage_mult = 0.90
-		stationed_maa_toughness_mult = 0.90
+		stationed_maa_damage_mult = 0.45
+		stationed_maa_toughness_mult = 0.45
 	}
 
 	province_dynasty_modifier = {
@@ -442,12 +490,20 @@ iron_mines_07 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
 		monthly_income = 2.8
-		stationed_maa_damage_mult = 1.05
-		stationed_maa_toughness_mult = 1.05
+		stationed_maa_damage_mult = 0.525
+		stationed_maa_toughness_mult = 0.525
 	}
 
 	province_dynasty_modifier = {
@@ -477,12 +533,20 @@ iron_mines_08 = {
 		has_province_modifier = mining_iron_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 625
 	
 	province_modifier = {
 		monthly_income = 3.2
-		stationed_maa_damage_mult = 1.20
-		stationed_maa_toughness_mult = 1.20
+		stationed_maa_damage_mult = 0.60
+		stationed_maa_toughness_mult = 0.60
 	}
 
 	province_dynasty_modifier = {
@@ -513,12 +577,16 @@ iron_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
 		monthly_income = 3.6
-		stationed_maa_damage_mult = 1.35
-		stationed_maa_toughness_mult = 1.35
+		stationed_maa_damage_mult = 0.675
+		stationed_maa_toughness_mult = 0.675
 	}
 
 	province_dynasty_modifier = {
@@ -549,12 +617,16 @@ iron_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 775
 	
 	province_modifier = {
 		monthly_income = 4.0
-		stationed_maa_damage_mult = 1.50
-		stationed_maa_toughness_mult = 1.50
+		stationed_maa_damage_mult = 0.75
+		stationed_maa_toughness_mult = 0.75
 	}
 
 	province_dynasty_modifier = {
@@ -583,12 +655,20 @@ tin_mines_01 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.4
-		stationed_maa_damage_mult = 0.08
-		stationed_maa_toughness_mult = 0.08
+		stationed_maa_damage_mult = 0.04
+		stationed_maa_toughness_mult = 0.04
 	}
 
 	province_dynasty_modifier = {
@@ -612,12 +692,20 @@ tin_mines_02 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 0.8
-		stationed_maa_damage_mult = 0.16
-		stationed_maa_toughness_mult = 0.16
+		stationed_maa_damage_mult = 0.08
+		stationed_maa_toughness_mult = 0.08
 	}
 
 	province_dynasty_modifier = {
@@ -643,12 +731,20 @@ tin_mines_03 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 250
 	
 	province_modifier = {
 		monthly_income = 1.2
-		stationed_maa_damage_mult = 0.24
-		stationed_maa_toughness_mult = 0.24
+		stationed_maa_damage_mult = 0.12
+		stationed_maa_toughness_mult = 0.12
 	}
 
 	province_dynasty_modifier = {
@@ -674,12 +770,20 @@ tin_mines_04 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
 		monthly_income = 1.6
-		stationed_maa_damage_mult = 0.32
-		stationed_maa_toughness_mult = 0.32
+		stationed_maa_damage_mult = 0.16
+		stationed_maa_toughness_mult = 0.16
 	}
 
 	province_dynasty_modifier = {
@@ -705,12 +809,20 @@ tin_mines_05 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
 		monthly_income = 2.0
-		stationed_maa_damage_mult = 0.40
-		stationed_maa_toughness_mult = 0.40
+		stationed_maa_damage_mult = 0.20
+		stationed_maa_toughness_mult = 0.20
 	}
 
 	province_dynasty_modifier = {
@@ -736,12 +848,20 @@ tin_mines_06 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
 		monthly_income = 2.4
-		stationed_maa_damage_mult = 0.48
-		stationed_maa_toughness_mult = 0.48
+		stationed_maa_damage_mult = 0.24
+		stationed_maa_toughness_mult = 0.24
 	}
 
 	province_dynasty_modifier = {
@@ -767,12 +887,20 @@ tin_mines_07 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
 		monthly_income = 2.8
-		stationed_maa_damage_mult = 0.56
-		stationed_maa_toughness_mult = 0.56
+		stationed_maa_damage_mult = 0.28
+		stationed_maa_toughness_mult = 0.28
 	}
 
 	province_dynasty_modifier = {
@@ -798,12 +926,20 @@ tin_mines_08 = {
 		has_province_modifier = mining_tin_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 625
 	
 	province_modifier = {
 		monthly_income = 3.2
-		stationed_maa_damage_mult = 0.64
-		stationed_maa_toughness_mult = 0.64
+		stationed_maa_damage_mult = 0.32
+		stationed_maa_toughness_mult = 0.32
 	}
 
 	province_dynasty_modifier = {
@@ -828,6 +964,10 @@ tin_mines_09 = {
 	can_construct_potential = {
 		has_province_modifier = mining_tin_province_modifier
 		scope:holder = { is_dwarf = yes }
+	}
+	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
 	}
 	
 	cost_gold = 700
@@ -862,6 +1002,10 @@ tin_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 725
 	
 	province_modifier = {
@@ -892,12 +1036,20 @@ copper_mines_01 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.4
-		stationed_maa_damage_mult = 0.08
-		stationed_maa_toughness_mult = 0.08
+		stationed_maa_damage_mult = 0.04
+		stationed_maa_toughness_mult = 0.04
 	}
 
 	province_dynasty_modifier = {
@@ -925,12 +1077,20 @@ copper_mines_02 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 0.8
-		stationed_maa_damage_mult = 0.16
-		stationed_maa_toughness_mult = 0.16
+		stationed_maa_damage_mult = 0.08
+		stationed_maa_toughness_mult = 0.08
 	}
 
 	province_dynasty_modifier = {
@@ -956,12 +1116,20 @@ copper_mines_03 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 250
 	
 	province_modifier = {
 		monthly_income = 1.2
-		stationed_maa_damage_mult = 0.24
-		stationed_maa_toughness_mult = 0.24
+		stationed_maa_damage_mult = 0.12
+		stationed_maa_toughness_mult = 0.12
 	}
 
 	province_dynasty_modifier = {
@@ -987,12 +1155,20 @@ copper_mines_04 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
 		monthly_income = 1.6
-		stationed_maa_damage_mult = 0.32
-		stationed_maa_toughness_mult = 0.32
+		stationed_maa_damage_mult = 0.16
+		stationed_maa_toughness_mult = 0.16
 	}
 
 	province_dynasty_modifier = {
@@ -1018,12 +1194,20 @@ copper_mines_05 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
 		monthly_income = 2.0
-		stationed_maa_damage_mult = 0.40
-		stationed_maa_toughness_mult = 0.40
+		stationed_maa_damage_mult = 0.20
+		stationed_maa_toughness_mult = 0.20
 	}
 
 	province_dynasty_modifier = {
@@ -1049,12 +1233,20 @@ copper_mines_06 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
 		monthly_income = 2.4
-		stationed_maa_damage_mult = 0.48
-		stationed_maa_toughness_mult = 0.48
+		stationed_maa_damage_mult = 0.24
+		stationed_maa_toughness_mult = 0.24
 	}
 
 	province_dynasty_modifier = {
@@ -1080,12 +1272,20 @@ copper_mines_07 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
 		monthly_income = 2.8
-		stationed_maa_damage_mult = 0.56
-		stationed_maa_toughness_mult = 0.56
+		stationed_maa_damage_mult = 0.28
+		stationed_maa_toughness_mult = 0.28
 	}
 
 	province_dynasty_modifier = {
@@ -1111,12 +1311,20 @@ copper_mines_08 = {
 		has_province_modifier = mining_copper_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 625
 	
 	province_modifier = {
 		monthly_income = 3.2
-		stationed_maa_damage_mult = 0.64
-		stationed_maa_toughness_mult = 0.64
+		stationed_maa_damage_mult = 0.32
+		stationed_maa_toughness_mult = 0.32
 	}
 
 	province_dynasty_modifier = {
@@ -1143,12 +1351,16 @@ copper_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
 		monthly_income = 3.6
-		stationed_maa_damage_mult = 0.72
-		stationed_maa_toughness_mult = 0.72
+		stationed_maa_damage_mult = 0.36
+		stationed_maa_toughness_mult = 0.36
 	}
 
 	province_dynasty_modifier = {
@@ -1175,12 +1387,16 @@ copper_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 725
 	
 	province_modifier = {
 		monthly_income = 4.0
-		stationed_maa_damage_mult = 0.80
-		stationed_maa_toughness_mult = 0.8
+		stationed_maa_damage_mult = 0.40
+		stationed_maa_toughness_mult = 0.40
 	}
 
 	province_dynasty_modifier = {
@@ -1205,7 +1421,15 @@ lead_mines_01 = {
 		has_province_modifier = mining_lead_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.4
@@ -1241,7 +1465,15 @@ lead_mines_02 = {
 		has_province_modifier = mining_lead_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 0.8
@@ -1273,6 +1505,14 @@ lead_mines_03 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_lead_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
 	}
 	
 	cost_gold = 250
@@ -1309,6 +1549,14 @@ lead_mines_04 = {
 		has_province_modifier = mining_lead_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
@@ -1341,6 +1589,14 @@ lead_mines_05 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_lead_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
 	}
 	
 	cost_gold = 400
@@ -1377,6 +1633,14 @@ lead_mines_06 = {
 		has_province_modifier = mining_lead_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
@@ -1411,6 +1675,14 @@ lead_mines_07 = {
 		has_province_modifier = mining_lead_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
@@ -1443,6 +1715,14 @@ lead_mines_08 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_lead_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
 	}
 	
 	cost_gold = 625
@@ -1480,6 +1760,10 @@ lead_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
@@ -1515,6 +1799,10 @@ lead_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 725
 	
 	province_modifier = {
@@ -1548,10 +1836,18 @@ silver_mines_01 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
-	cost_gold = 200
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
-		monthly_income = 0.6
+		monthly_income = 0.7
 	}
 
 	province_dynasty_modifier = {
@@ -1579,10 +1875,18 @@ silver_mines_02 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
-	cost_gold = 300
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
-		monthly_income = 1.2
+		monthly_income = 1.4
 	}
 
 	province_dynasty_modifier = {
@@ -1612,10 +1916,18 @@ silver_mines_03 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
-		monthly_income = 1.8
+		monthly_income = 2.1
 	}
 
 	province_dynasty_modifier = {
@@ -1645,10 +1957,18 @@ silver_mines_04 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 500
 	
 	province_modifier = {
-		monthly_income = 2.4
+		monthly_income = 2.8
 	}
 
 	province_dynasty_modifier = {
@@ -1678,10 +1998,18 @@ silver_mines_05 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 600
 	
 	province_modifier = {
-		monthly_income = 3.0
+		monthly_income = 3.5
 	}
 
 	province_dynasty_modifier = {
@@ -1711,10 +2039,18 @@ silver_mines_06 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
-		monthly_income = 3.6
+		monthly_income = 4.2
 	}
 
 	province_dynasty_modifier = {
@@ -1744,10 +2080,18 @@ silver_mines_07 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 800
 	
 	province_modifier = {
-		monthly_income = 4.2
+		monthly_income = 4.9
 	}
 
 	province_dynasty_modifier = {
@@ -1777,10 +2121,18 @@ silver_mines_08 = {
 		has_province_modifier = mining_silver_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 900
 	
 	province_modifier = {
-		monthly_income = 4.8
+		monthly_income = 5.6
 	}
 
 	province_dynasty_modifier = {
@@ -1811,10 +2163,14 @@ silver_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 1000
 	
 	province_modifier = {
-		monthly_income = 5.4
+		monthly_income = 6.3
 	}
 
 	province_dynasty_modifier = {
@@ -1845,10 +2201,14 @@ silver_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 1100
 	
 	province_modifier = {
-		monthly_income = 6.0
+		monthly_income = 7.0
 	}
 
 	province_dynasty_modifier = {
@@ -1877,10 +2237,18 @@ gold_mines_01 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
-	cost_gold = 200
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
-		monthly_income = 0.8
+		monthly_income = 1.0
 	}
 
 	province_dynasty_modifier = {
@@ -1908,10 +2276,18 @@ gold_mines_02 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
 	cost_gold = 300
 	
 	province_modifier = {
-		monthly_income = 1.6
+		monthly_income = 2.0
 	}
 
 	province_dynasty_modifier = {
@@ -1941,10 +2317,18 @@ gold_mines_03 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
-		monthly_income = 2.4
+		monthly_income = 3.0
 	}
 
 	province_dynasty_modifier = {
@@ -1974,10 +2358,18 @@ gold_mines_04 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 500
 	
 	province_modifier = {
-		monthly_income = 3.2
+		monthly_income = 4.0
 	}
 
 	province_dynasty_modifier = {
@@ -2007,10 +2399,18 @@ gold_mines_05 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 600
 	
 	province_modifier = {
-		monthly_income = 4.0
+		monthly_income = 5.0
 	}
 
 	province_dynasty_modifier = {
@@ -2040,10 +2440,18 @@ gold_mines_06 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
-		monthly_income = 4.8
+		monthly_income = 6.0
 	}
 
 	province_dynasty_modifier = {
@@ -2074,10 +2482,18 @@ gold_mines_07 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 800
 	
 	province_modifier = {
-		monthly_income = 5.6
+		monthly_income = 7.0
 	}
 
 	province_dynasty_modifier = {
@@ -2108,10 +2524,18 @@ gold_mines_08 = {
 		has_province_modifier = mining_gold_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 900
 	
 	province_modifier = {
-		monthly_income = 6.4
+		monthly_income = 8.0
 	}
 
 	province_dynasty_modifier = {
@@ -2143,10 +2567,14 @@ gold_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 1000
 	
 	province_modifier = {
-		monthly_income = 7.2
+		monthly_income = 9.0
 	}
 
 	province_dynasty_modifier = {
@@ -2178,10 +2606,14 @@ gold_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 1100
 	
 	province_modifier = {
-		monthly_income = 8.0
+		monthly_income = 10.0
 	}
 
 	province_dynasty_modifier = {
@@ -2211,11 +2643,18 @@ mithril_mines_01 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
-	cost_gold = 400
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 200
 	
 	province_modifier = {
 		monthly_income = 1.5
-		stationed_maa_damage_mult = 0.20
 		stationed_maa_toughness_mult = 0.20
 	}
 
@@ -2245,11 +2684,18 @@ mithril_mines_02 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
-	cost_gold = 800
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 400
 	
 	province_modifier = {
 		monthly_income = 3.0
-		stationed_maa_damage_mult = 0.40
 		stationed_maa_toughness_mult = 0.40
 	}
 
@@ -2281,11 +2727,18 @@ mithril_mines_03 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 1200
 	
 	province_modifier = {
 		monthly_income = 4.5
-		stationed_maa_damage_mult = 0.60
 		stationed_maa_toughness_mult = 0.60
 	}
 
@@ -2317,11 +2770,18 @@ mithril_mines_04 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 1600
 	
 	province_modifier = {
 		monthly_income = 6.0
-		stationed_maa_damage_mult = 0.80
 		stationed_maa_toughness_mult = 0.80
 	}
 
@@ -2353,11 +2813,18 @@ mithril_mines_05 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 2000
 	
 	province_modifier = {
 		monthly_income = 7.5
-		stationed_maa_damage_mult = 1.00
 		stationed_maa_toughness_mult = 1.00
 	}
 
@@ -2389,11 +2856,18 @@ mithril_mines_06 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 2400
 	
 	province_modifier = {
 		monthly_income = 9.0
-		stationed_maa_damage_mult = 1.20
 		stationed_maa_toughness_mult = 1.20
 	}
 
@@ -2425,11 +2899,18 @@ mithril_mines_07 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 2800
 	
 	province_modifier = {
 		monthly_income = 10.5
-		stationed_maa_damage_mult = 1.40
 		stationed_maa_toughness_mult = 1.40
 	}
 
@@ -2461,11 +2942,18 @@ mithril_mines_08 = {
 		has_province_modifier = mining_mithril_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 3200
 	
 	province_modifier = {
 		monthly_income = 12.0
-		stationed_maa_damage_mult = 1.60
 		stationed_maa_toughness_mult = 1.60
 	}
 
@@ -2498,11 +2986,14 @@ mithril_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 3600
 	
 	province_modifier = {
 		monthly_income = 13.5
-		stationed_maa_damage_mult = 1.80
 		stationed_maa_toughness_mult = 1.80
 	}
 
@@ -2535,11 +3026,14 @@ mithril_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 4000
 	
 	province_modifier = {
 		monthly_income = 15.0
-		stationed_maa_damage_mult = 2.00
 		stationed_maa_toughness_mult = 2.00
 	}
 
@@ -2570,7 +3064,15 @@ quartz_mines_01 = {
 		has_province_modifier = mining_quartz_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.4
@@ -2601,7 +3103,15 @@ quartz_mines_02 = {
 		has_province_modifier = mining_quartz_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 0.8
@@ -2628,6 +3138,14 @@ quartz_mines_03 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_quartz_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
 	}
 	
 	cost_gold = 250
@@ -2659,6 +3177,14 @@ quartz_mines_04 = {
 		has_province_modifier = mining_quartz_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
@@ -2686,6 +3212,14 @@ quartz_mines_05 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_quartz_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
 	}
 	
 	cost_gold = 400
@@ -2717,6 +3251,14 @@ quartz_mines_06 = {
 		has_province_modifier = mining_quartz_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
@@ -2746,6 +3288,14 @@ quartz_mines_07 = {
 		has_province_modifier = mining_quartz_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
@@ -2773,6 +3323,14 @@ quartz_mines_08 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_quartz_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
 	}
 	
 	cost_gold = 625
@@ -2805,6 +3363,10 @@ quartz_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
@@ -2835,6 +3397,10 @@ quartz_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 725
 	
 	province_modifier = {
@@ -2863,7 +3429,15 @@ peridot_mines_01 = {
 		has_province_modifier = mining_peridot_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.6
@@ -2894,7 +3468,15 @@ peridot_mines_02 = {
 		has_province_modifier = mining_peridot_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 1.2
@@ -2921,6 +3503,14 @@ peridot_mines_03 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_peridot_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
 	}
 	
 	cost_gold = 250
@@ -2952,6 +3542,14 @@ peridot_mines_04 = {
 		has_province_modifier = mining_peridot_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
@@ -2979,6 +3577,14 @@ peridot_mines_05 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_peridot_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
 	}
 	
 	cost_gold = 400
@@ -3010,6 +3616,14 @@ peridot_mines_06 = {
 		has_province_modifier = mining_peridot_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
@@ -3039,6 +3653,14 @@ peridot_mines_07 = {
 		has_province_modifier = mining_peridot_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
@@ -3066,6 +3688,14 @@ peridot_mines_08 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_peridot_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
 	}
 	
 	cost_gold = 625
@@ -3098,6 +3728,10 @@ peridot_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
@@ -3128,6 +3762,10 @@ peridot_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = {
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 725
 	
 	province_modifier = {
@@ -3156,7 +3794,15 @@ onyx_mines_01 = {
 		has_province_modifier = mining_onyx_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.6
@@ -3187,7 +3833,15 @@ onyx_mines_02 = {
 		has_province_modifier = mining_onyx_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 1.2
@@ -3214,6 +3868,14 @@ onyx_mines_03 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_onyx_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
 	}
 	
 	cost_gold = 250
@@ -3245,6 +3907,14 @@ onyx_mines_04 = {
 		has_province_modifier = mining_onyx_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
@@ -3272,6 +3942,14 @@ onyx_mines_05 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_onyx_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
 	}
 	
 	cost_gold = 400
@@ -3303,6 +3981,14 @@ onyx_mines_06 = {
 		has_province_modifier = mining_onyx_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
@@ -3332,6 +4018,14 @@ onyx_mines_07 = {
 		has_province_modifier = mining_onyx_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
@@ -3359,6 +4053,14 @@ onyx_mines_08 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_onyx_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
 	}
 	
 	cost_gold = 625
@@ -3391,6 +4093,10 @@ onyx_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
@@ -3421,6 +4127,10 @@ onyx_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 725
 	
 	province_modifier = {
@@ -3449,7 +4159,15 @@ amethyst_mines_01 = {
 		has_province_modifier = mining_amethyst_province_modifier
 	}
 	
-	cost_gold = 100
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 0.6
@@ -3481,7 +4199,15 @@ amethyst_mines_02 = {
 		has_province_modifier = mining_amethyst_province_modifier
 	}
 	
-	cost_gold = 175
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 1.2
@@ -3509,6 +4235,14 @@ amethyst_mines_03 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_amethyst_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
 	}
 	
 	cost_gold = 250
@@ -3541,6 +4275,14 @@ amethyst_mines_04 = {
 		has_province_modifier = mining_amethyst_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 325
 	
 	province_modifier = {
@@ -3569,6 +4311,14 @@ amethyst_mines_05 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_amethyst_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
 	}
 	
 	cost_gold = 400
@@ -3601,6 +4351,14 @@ amethyst_mines_06 = {
 		has_province_modifier = mining_amethyst_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 475
 	
 	province_modifier = {
@@ -3631,6 +4389,14 @@ amethyst_mines_07 = {
 		has_province_modifier = mining_amethyst_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 550
 	
 	province_modifier = {
@@ -3659,6 +4425,14 @@ amethyst_mines_08 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_amethyst_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
 	}
 	
 	cost_gold = 625
@@ -3692,6 +4466,10 @@ amethyst_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
@@ -3723,6 +4501,10 @@ amethyst_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 725
 	
 	province_modifier = {
@@ -3752,10 +4534,18 @@ ruby_mines_01 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
-	cost_gold = 200
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
-		monthly_income = 0.8
+		monthly_income = 0.6
 	}
 
 	province_dynasty_modifier = {
@@ -3784,10 +4574,18 @@ ruby_mines_02 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
-	cost_gold = 300
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
-		monthly_income = 1.6
+		monthly_income = 1.2
 	}
 
 	province_dynasty_modifier = {
@@ -3814,10 +4612,18 @@ ruby_mines_03 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
-		monthly_income = 2.4
+		monthly_income = 1.8
 	}
 
 	province_dynasty_modifier = {
@@ -3844,10 +4650,18 @@ ruby_mines_04 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 500
 	
 	province_modifier = {
-		monthly_income = 3.2
+		monthly_income = 2.4
 	}
 
 	province_dynasty_modifier = {
@@ -3874,10 +4688,18 @@ ruby_mines_05 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 600
 	
 	province_modifier = {
-		monthly_income = 4.0
+		monthly_income = 3.0
 	}
 
 	province_dynasty_modifier = {
@@ -3904,10 +4726,18 @@ ruby_mines_06 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
-		monthly_income = 4.8
+		monthly_income = 3.6
 	}
 
 	province_dynasty_modifier = {
@@ -3934,10 +4764,18 @@ ruby_mines_07 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 800
 	
 	province_modifier = {
-		monthly_income = 5.6
+		monthly_income = 4.2
 	}
 
 	province_dynasty_modifier = {
@@ -3964,10 +4802,18 @@ ruby_mines_08 = {
 		has_province_modifier = mining_ruby_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 900
 	
 	province_modifier = {
-		monthly_income = 6.4
+		monthly_income = 4.8
 	}
 
 	province_dynasty_modifier = {
@@ -3995,10 +4841,14 @@ ruby_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 1000
 	
 	province_modifier = {
-		monthly_income = 7.2
+		monthly_income = 5.4
 	}
 
 	province_dynasty_modifier = {
@@ -4026,10 +4876,14 @@ ruby_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 1100
 	
 	province_modifier = {
-		monthly_income = 8.0
+		monthly_income = 6.0
 	}
 
 	province_dynasty_modifier = {
@@ -4055,10 +4909,18 @@ sapphire_mines_01 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
-	cost_gold = 200
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
-		monthly_income = 0.8
+		monthly_income = 0.6
 	}
 
 	province_dynasty_modifier = {
@@ -4087,10 +4949,18 @@ sapphire_mines_02 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
-	cost_gold = 300
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
-		monthly_income = 1.6
+		monthly_income = 1.2
 	}
 
 	province_dynasty_modifier = {
@@ -4117,10 +4987,18 @@ sapphire_mines_03 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
-		monthly_income = 2.4
+		monthly_income = 1.8
 	}
 
 	province_dynasty_modifier = {
@@ -4147,10 +5025,18 @@ sapphire_mines_04 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 500
 	
 	province_modifier = {
-		monthly_income = 3.2
+		monthly_income = 2.4
 	}
 
 	province_dynasty_modifier = {
@@ -4177,10 +5063,18 @@ sapphire_mines_05 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 600
 	
 	province_modifier = {
-		monthly_income = 4.0
+		monthly_income = 3.0
 	}
 
 	province_dynasty_modifier = {
@@ -4207,10 +5101,18 @@ sapphire_mines_06 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
-		monthly_income = 4.8
+		monthly_income = 3.6
 	}
 
 	province_dynasty_modifier = {
@@ -4237,10 +5139,18 @@ sapphire_mines_07 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 800
 	
 	province_modifier = {
-		monthly_income = 5.6
+		monthly_income = 4.2
 	}
 
 	province_dynasty_modifier = {
@@ -4267,10 +5177,18 @@ sapphire_mines_08 = {
 		has_province_modifier = mining_sapphire_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 900
 	
 	province_modifier = {
-		monthly_income = 6.4
+		monthly_income = 4.8
 	}
 
 	province_dynasty_modifier = {
@@ -4298,10 +5216,14 @@ sapphire_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 1000
 	
 	province_modifier = {
-		monthly_income = 7.2
+		monthly_income = 5.4
 	}
 
 	province_dynasty_modifier = {
@@ -4329,10 +5251,14 @@ sapphire_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 1100
 	
 	province_modifier = {
-		monthly_income = 8.0
+		monthly_income = 6.0
 	}
 
 	province_dynasty_modifier = {
@@ -4358,10 +5284,18 @@ emerald_mines_01 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
-	cost_gold = 200
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
-		monthly_income = 0.8
+		monthly_income = 0.7
 	}
 
 	province_dynasty_modifier = {
@@ -4390,10 +5324,18 @@ emerald_mines_02 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
-	cost_gold = 300
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
-		monthly_income = 1.6
+		monthly_income = 1.4
 	}
 
 	province_dynasty_modifier = {
@@ -4420,10 +5362,18 @@ emerald_mines_03 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
+	}
+	
 	cost_gold = 400
 	
 	province_modifier = {
-		monthly_income = 2.4
+		monthly_income = 2.1
 	}
 
 	province_dynasty_modifier = {
@@ -4450,10 +5400,18 @@ emerald_mines_04 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 500
 	
 	province_modifier = {
-		monthly_income = 3.2
+		monthly_income = 2.8
 	}
 
 	province_dynasty_modifier = {
@@ -4480,10 +5438,18 @@ emerald_mines_05 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
+	}
+	
 	cost_gold = 600
 	
 	province_modifier = {
-		monthly_income = 4.0
+		monthly_income = 3.5
 	}
 
 	province_dynasty_modifier = {
@@ -4510,10 +5476,18 @@ emerald_mines_06 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
-		monthly_income = 4.8
+		monthly_income = 4.2
 	}
 
 	province_dynasty_modifier = {
@@ -4540,10 +5514,18 @@ emerald_mines_07 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 800
 	
 	province_modifier = {
-		monthly_income = 5.6
+		monthly_income = 4.9
 	}
 
 	province_dynasty_modifier = {
@@ -4570,10 +5552,18 @@ emerald_mines_08 = {
 		has_province_modifier = mining_emerald_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
+	}
+	
 	cost_gold = 900
 	
 	province_modifier = {
-		monthly_income = 6.4
+		monthly_income = 5.6
 	}
 
 	province_dynasty_modifier = {
@@ -4601,10 +5591,14 @@ emerald_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 1000
 	
 	province_modifier = {
-		monthly_income = 7.2
+		monthly_income = 6.3
 	}
 
 	province_dynasty_modifier = {
@@ -4632,10 +5626,14 @@ emerald_mines_10 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
+	}
+	
 	cost_gold = 1100
 	
 	province_modifier = {
-		monthly_income = 8.0
+		monthly_income = 7.0
 	}
 
 	province_dynasty_modifier = {
@@ -4661,7 +5659,15 @@ diamond_mines_01 = {
 		has_province_modifier = mining_diamond_province_modifier
 	}
 	
-	cost_gold = 250
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_01
+			has_building_or_higher = elven_settlement_01
+		}
+	}
+	
+	cost_gold = 25
 	
 	province_modifier = {
 		monthly_income = 1
@@ -4694,7 +5700,15 @@ diamond_mines_02 = {
 		has_province_modifier = mining_diamond_province_modifier
 	}
 	
-	cost_gold = 400
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_01
+			has_building_or_higher = dwarven_depths_02
+			has_building_or_higher = elven_settlement_02
+		}
+	}
+	
+	cost_gold = 75
 	
 	province_modifier = {
 		monthly_income = 2
@@ -4723,6 +5737,14 @@ diamond_mines_03 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_diamond_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_03
+			has_building_or_higher = elven_settlement_03
+		}
 	}
 	
 	cost_gold = 550
@@ -4756,6 +5778,14 @@ diamond_mines_04 = {
 		has_province_modifier = mining_diamond_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_02
+			has_building_or_higher = dwarven_depths_04
+			has_building_or_higher = elven_settlement_04
+		}
+	}
+	
 	cost_gold = 700
 	
 	province_modifier = {
@@ -4785,6 +5815,14 @@ diamond_mines_05 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_diamond_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_05
+			has_building_or_higher = elven_settlement_05
+		}
 	}
 	
 	cost_gold = 850
@@ -4818,6 +5856,14 @@ diamond_mines_06 = {
 		has_province_modifier = mining_diamond_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_03
+			has_building_or_higher = dwarven_depths_06
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 1000
 	
 	province_modifier = {
@@ -4849,6 +5895,14 @@ diamond_mines_07 = {
 		has_province_modifier = mining_diamond_province_modifier
 	}
 	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_07
+			has_building_or_higher = elven_settlement_06
+		}
+	}
+	
 	cost_gold = 1150
 	
 	province_modifier = {
@@ -4878,6 +5932,14 @@ diamond_mines_08 = {
 
 	can_construct_potential = {
 		has_province_modifier = mining_diamond_province_modifier
+	}
+	
+	can_construct = { 
+		OR = { 
+			has_building_or_higher = castle_04
+			has_building_or_higher = dwarven_depths_08
+			has_building_or_higher = elven_settlement_07
+		}
 	}
 	
 	cost_gold = 1300
@@ -4912,6 +5974,10 @@ diamond_mines_09 = {
 		scope:holder = { is_dwarf = yes }
 	}
 	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_09
+	}
+	
 	cost_gold = 1450
 	
 	province_modifier = {
@@ -4942,6 +6008,10 @@ diamond_mines_10 = {
 	can_construct_potential = {
 		has_province_modifier = mining_diamond_province_modifier
 		scope:holder = { is_dwarf = yes }
+	}
+	
+	can_construct = { 
+		has_building_or_higher = dwarven_depths_10
 	}
 	
 	cost_gold = 1600

@@ -5,7 +5,7 @@
 		monthly_lifestyle_xp_gain_mult = -0.75
 		monthly_prestige_gain_mult = -0.3
 		monthly_piety_gain_mult = -0.3
-		rf_forcesofevil_opinion = -100
+		rf_forcesofevil_opinion = -200
 		halls_advantage = -10
 	}
 }
@@ -17,7 +17,7 @@ heritage_fallen_ainur = {
 		monthly_lifestyle_xp_gain_mult = -0.75
 		monthly_prestige_gain_mult = -0.3
 		monthly_piety_gain_mult = -0.3
-		rf_eruhini_opinion = -100
+		rf_eruhini_opinion = -200
 		halls_advantage = -10
 	}
 }
@@ -140,7 +140,7 @@ heritage_quendi = {
 		prowess = 3
 		levy_reinforcement_rate = -0.5
 		cultural_head_fascination_mult = -0.5
-		rf_forcesofevil_opinion = -100
+		rf_forcesofevil_opinion = -200
 		halls_advantage = -10
 	}
 	culture_modifier = {
@@ -173,7 +173,7 @@ heritage_calaquendi = {
 		forest_travel_danger = forest_low_danger_reduction
 		mallorn_forest_travel_danger = mallorn_forest_low_danger_reduction
 		character_travel_speed_mult = 1.5
-		rf_forcesofevil_opinion = -100
+		rf_forcesofevil_opinion = -200
 		halls_advantage = -10
 	}
 	culture_modifier = {
@@ -206,7 +206,7 @@ heritage_lomiquendi = {
 		forest_travel_danger = forest_high_danger_reduction
 		mallorn_forest_travel_danger = mallorn_forest_high_danger_reduction
 		character_travel_speed_mult = 1.5
-		rf_forcesofevil_opinion = -100
+		rf_forcesofevil_opinion = -200
 		halls_advantage = -10
 	}
 	culture_modifier = {
@@ -239,7 +239,7 @@ heritage_moriquendi = {
 		forest_travel_danger = forest_high_danger_reduction
 		mallorn_forest_travel_danger = mallorn_forest_high_danger_reduction
 		character_travel_speed_mult = 1.5
-		rf_forcesofevil_opinion = -100
+		rf_forcesofevil_opinion = -200
 		halls_advantage = -10
 	}
 	culture_modifier = {
@@ -328,7 +328,7 @@ heritage_orc = {
 		hills_travel_danger = hills_medium_danger_reduction
 		
 		general_opinion = -25
-		rf_eruhini_opinion = -100
+		rf_eruhini_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
@@ -351,7 +351,7 @@ heritage_goblin = { #juke note: boni should be adjusted later
 		hills_travel_danger = hills_medium_danger_reduction
 		
 		general_opinion = -25
-		rf_eruhini_opinion = -100
+		rf_eruhini_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
@@ -423,6 +423,7 @@ heritage_longbeard = {
 
 	parameters = {
 		can_use_mining_activity = yes
+		unlock_full_delving = yes
 	}
 
 	character_modifier = {
@@ -439,6 +440,8 @@ heritage_longbeard = {
 		halls_travel_danger = halls_high_danger_reduction
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
+		
+		#orcish_religion_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
@@ -450,6 +453,7 @@ heritage_firebeard = {
 
 	parameters = {
 		can_use_mining_activity = yes
+		unlock_full_delving = yes
 	}
 
 	character_modifier = {
@@ -466,6 +470,8 @@ heritage_firebeard = {
 		halls_travel_danger = halls_high_danger_reduction
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
+		
+		#orcish_religion_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
@@ -477,6 +483,7 @@ heritage_broadbeam = {
 
 	parameters = {
 		can_use_mining_activity = yes
+		unlock_full_delving = yes
 	}
 
 	character_modifier = {
@@ -493,6 +500,8 @@ heritage_broadbeam = {
 		halls_travel_danger = halls_high_danger_reduction
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
+		
+		#orcish_religion_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
@@ -504,6 +513,7 @@ heritage_ironfist = {
 
 	parameters = {
 		can_use_mining_activity = yes
+		unlock_full_delving = yes
 	}
 
 	character_modifier = {
@@ -520,6 +530,8 @@ heritage_ironfist = {
 		halls_travel_danger = halls_high_danger_reduction
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
+		
+		#orcish_religion_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
@@ -531,6 +543,7 @@ heritage_stiffbeard = {
 
 	parameters = {
 		can_use_mining_activity = yes
+		unlock_full_delving = yes
 	}
 
 	character_modifier = {
@@ -547,6 +560,8 @@ heritage_stiffbeard = {
 		halls_travel_danger = halls_high_danger_reduction
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
+		
+		#orcish_religion_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
@@ -558,6 +573,7 @@ heritage_blacklock = {
 
 	parameters = {
 		can_use_mining_activity = yes
+		unlock_full_delving = yes
 	}
 
 	character_modifier = {
@@ -574,6 +590,8 @@ heritage_blacklock = {
 		halls_travel_danger = halls_high_danger_reduction
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
+		
+		#orcish_religion_opinion = -200
 	}
 	culture_modifier = {
 		#mercenary_count_mult = -10
@@ -585,6 +603,7 @@ heritage_stonefoot = {
 
 	parameters = {
 		can_use_mining_activity = yes
+		unlock_full_delving = yes
 	}
 
 	character_modifier = {
@@ -601,6 +620,8 @@ heritage_stonefoot = {
 		halls_travel_danger = halls_high_danger_reduction
 		mountains_travel_danger = mountains_high_danger_reduction
 		hills_travel_danger = hills_high_danger_reduction
+		
+		#orcish_religion_opinion = -200
 	}
 	culture_modifier = {
 		mercenary_count_mult = -10
