@@ -55,8 +55,11 @@ show_char_ruling_window = {
     }
 }
 
-### Policy button GUIs
+##########################
+### Policy button GUIs ###
+##########################
 
+### White Peace sGUIs ###
 button_sign_white_peace = {
     is_shown = {
         title:k_dorwinion.holder = { # Realm-Master is at war
@@ -147,36 +150,6 @@ button_sign_white_peace = {
     }
 }
 
-show_no_policies_text = {
-    is_shown = {
-        NOT = {
-            title:k_dorwinion.holder = { is_at_war = yes }
-        }
-    }
-}
-
-show_progress_bar = {
-    is_shown = {
-        title:k_dorwinion.holder = { has_variable = vote_is_being_held }
-    }
-}
-
-set_active_wars_on_character = {
-    effect = {
-        clear_variable_list = active_wars
-        
-        every_character_war = {
-            save_temporary_scope_as = war
-            root = {
-                add_to_variable_list = {
-                    name = active_wars
-                    target = scope:war
-                }
-            }
-        }
-    }
-}
-
 set_selected_war_as_variable = {
     saved_scopes = {
         player_scope
@@ -197,4 +170,165 @@ set_selected_war_as_variable = {
 
 clear_selected_war_as_variable = {
     effect = { remove_variable = selected_war }
+}
+
+### War Declaration sGUIs ##
+
+button_war_declaration = {
+    is_shown = {
+        any_ruler = {
+            NOT =  { target_is_vassal_or_below = title:k_dorwinion.holder }
+            NOT = { this = title:k_dorwinion.holder }
+            NOT = { is_allied_to = title:k_dorwinion.holder }
+            in_diplomatic_range = title:k_dorwinion.holder
+            title:k_dorwinion.holder = { # Realm-Master is at war
+                OR = {
+                    has_cb_on = {
+                        target = prev
+                        cb = de_jure_cb
+                    }
+                    has_cb_on = {
+                        target = prev
+                        cb = individual_county_de_jure_cb
+                    }
+                    has_cb_on = {
+                        target = prev
+                        cb = individual_duchy_de_jure_cb
+                    }
+                }
+            }
+        }
+    }
+
+    is_valid = {
+        custom_tooltip = {
+            text = BUTTON_vote_for_war_select_title_tt
+            has_variable = title_selected
+        }
+    }
+
+    effect = {
+
+    }
+}
+
+set_selected_title_as_variable = {
+    saved_scopes = {
+        player_scope
+    }
+    effect = {
+        scope:player_scope = {
+            if = {
+                limit = { has_variable = selected_title }
+                remove_variable = selected_title
+            }
+            set_variable = {
+                name = selected_title
+                value = root
+            }
+        }
+    }
+}
+
+clear_selected_title_as_variable = {
+    effect = { remove_variable = selected_war }
+}
+
+show_no_policies_text = {
+    is_shown = {
+        NOT = {
+            title:k_dorwinion.holder = { has_variable_list = active_wars }
+            title:k_dorwinion.holder = { has_variable_list = target_chars }
+        }
+    }
+}
+
+show_progress_bar = {
+    is_shown = {
+        title:k_dorwinion.holder = { has_variable = vote_is_being_held }
+    }
+}
+
+set_starting_lists_on_character = {
+    effect = {
+        clear_variable_list = active_wars
+        clear_variable_list = target_chars
+        
+        # WHITE PEACE
+        every_character_war = {
+            save_temporary_scope_as = war
+            root = {
+                add_to_variable_list = {
+                    name = active_wars
+                    target = scope:war
+                }
+            }
+        }
+
+        # DECLARE WAR
+        every_ruler = {
+            limit = {
+                NOT =  { target_is_vassal_or_below = title:k_dorwinion.holder }
+                NOT = { this = title:k_dorwinion.holder }
+                NOT = { is_allied_to = title:k_dorwinion.holder }
+                in_diplomatic_range = title:k_dorwinion.holder
+                NOT = { this = character:k_wastelands_holder }
+                title:k_dorwinion.holder = { # Realm-Master is at war
+                    OR = {
+                        has_cb_on = {
+                            target = prev
+                            cb = de_jure_cb
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = individual_county_de_jure_cb
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = individual_duchy_de_jure_cb
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = claim_cb
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = ducal_conquest_cb
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = county_conquest_cb
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = duchy_conquest_cb
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = minor_religious_war
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = religious_war
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = major_religious_war
+                        }
+                        has_cb_on = {
+                            target = prev
+                            cb = vassalization_cb
+                        }
+                    }
+                }
+            }
+            save_temporary_scope_as = char
+            root = {
+                add_to_variable_list = {
+                    name = target_chars
+                    target = scope:char
+                }
+            }
+        }
+    }
 }

@@ -13,7 +13,7 @@
         state = {
             name = _show
 
-            on_finish = "[GetScriptedGui( 'set_active_wars_on_character' ).Execute( GuiScope.SetRoot( GetTitleByKey('k_dorwinion').GetHolder.MakeScope ).End)]"
+            on_finish = "[GetScriptedGui( 'set_starting_lists_on_character' ).Execute( GuiScope.SetRoot( GetTitleByKey('k_dorwinion').GetHolder.MakeScope ).End)]"
         }
 
         vbox = {
@@ -659,12 +659,12 @@
                                     background = { using = Background_Area_Border_Solid }
                                     title_list = {}
                                     
-                                    button_feudalize_tribe = {
+                                    button_feudalize_tribe = { # Remove selected county
                                         onclick = "[GetScriptedGui('clear_selected_war_as_variable').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
                                         texture = "gfx/interface/icons/flat_icons/unpin.dds"
                                         visible = "[And(GetPlayer.MakeScope.Var('selected_war').IsSet,GetVariableSystem.Exists( 'white_peace_titles_retracted'))]"
-                                        size = { 35 35 }
-                                        position =  { 0 3 }
+                                        size = { 30 30 }
+                                        position =  { 10 5 }
                                     }
                                     text_single = {
                                         text = "BUTTON_sign_white_peace_title_selected"
@@ -702,7 +702,61 @@
                                     size = { 150 40 }
                                 }
                             }
-                            text_single = {
+                            # valid_war_types = {}
+                            spacer = { size = { 0 10 } }
+                            hbox = { # Declare War Interaction
+                                visible = "[GetScriptedGui( 'button_war_declaration' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                allow_outside = yes
+                                widget = {
+                                    allow_outside = yes
+                                    size = { 180 40 }
+                                    background = { using = Background_Area_Border_Solid }
+                                    valid_titles_for_war_list = {}
+                                    
+                                    button_feudalize_tribe = { # Remove selected county
+                                        onclick = "[GetScriptedGui('clear_selected_title_as_variable').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                        texture = "gfx/interface/icons/flat_icons/unpin.dds"
+                                        visible = "[And(GetPlayer.MakeScope.Var('selected_war').IsSet,GetVariableSystem.Exists( 'valid_titles_for_war_retracted'))]"
+                                        size = { 30 30 }
+                                        position =  { 10 5 }
+                                    }
+                                    text_single = {
+                                        text = "BUTTON_vote_for_war_title_selected"
+                                        visible = "[GetVariableSystem.Exists( 'valid_titles_for_war_retracted')]"
+                                        parentanchor = center
+                                        fontsize = 20
+                                    }
+                                    button_expand = {
+                                        size = { 30 30 }
+                                        frame = 2
+                        
+                                        parentanchor = vcenter|right
+                                        visible = "[GetVariableSystem.Exists( 'valid_titles_for_war_retracted')]"
+                                        onclick = "[GetVariableSystem.Clear( 'valid_titles_for_war_retracted')]"
+                                                            
+                                        position = { -5 0 }
+                                    }
+                                    button_expand = {
+                                        size = { 30 30 }
+                                        frame = 1
+                        
+                                        parentanchor = vcenter|right
+                                        visible = "[Not(GetVariableSystem.Exists( 'valid_titles_for_war_retracted'))]"
+                                        onclick = "[GetVariableSystem.Set( 'valid_titles_for_war_retracted', 'true' )]"
+                        
+                                        position = { 0 0 }
+                                    }
+                                }
+                                spacer = { size = { 10 0 }}
+                                button_primary = { # Force sign 'White Peace' button
+                                    text = "BUTTON_sign_white_peace"
+                                    enabled = "[GetScriptedGui( 'button_war_declaration' ).IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                    tooltip = "[GetScriptedGui( 'button_war_declaration' ).BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                    onclick = "[GetScriptedGui( 'button_war_declaration' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                                    size = { 150 40 }
+                                }
+                            }
+                            text_single = { # No Actions are available
                                 margin_top = 100
                                 text = "no_actions_available"
                                 fontsize = 28
@@ -1137,33 +1191,127 @@
     }
 
     type title_list = widget {
-        size = { 200 100 }
-        margin_bottom = 5
+        allow_outside = yes
         visible = "[Not(GetVariableSystem.Exists( 'white_peace_titles_retracted'))]"
-        background = { using = Background_Area_Border_Solid }
 
         vbox = {
+            allow_outside = yes
             layoutpolicy_vertical = expanding
             block "datamodel" {
                 datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('active_wars')]"
             }
-            position = { -15 0 }
-    
+            background = {
+                using = Background_Area_Border_Solid
+            }
             item = {
-                button_normal = {
+                widget = {
                     allow_outside = yes
-                    # onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
-                    text_single = {
-                        text = "BUTTON_sign_white_peace_titles"
-                        fontsize = 15
-                        parentanchor = center
+                    size = { 200 40 }
+                    
+                    button_normal = {
+                        position =  { 20 20 }
+                        allow_outside = yes
+                        # onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
+                        text_single = {
+                            text = "BUTTON_sign_white_peace_titles"
+                            fontsize = 15
+                            parentanchor = center|left
+                            
+                        }
+                        button_feudalize_tribe = {
+                            onclick = "[GetScriptedGui('set_selected_war_as_variable').Execute( GuiScope.SetRoot( Scope.War.MakeScope ).AddScope('player_scope', GetPlayer.MakeScope ).End)]"
+                            onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
+                            texture = "gfx/interface/icons/flat_icons/plus.dds"
+                            size = { 35 35 }
+                            position =  { 140 -15 }
+                        }
                     }
-                    button_feudalize_tribe = {
-                        onclick = "[GetScriptedGui('set_selected_war_as_variable').Execute( GuiScope.SetRoot( Scope.War.MakeScope ).AddScope('player_scope', GetPlayer.MakeScope ).End)]"
-                        onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
-                        texture = "gfx/interface/icons/flat_icons/plus.dds"
-                        size = { 35 35 }
-                        position =  { 175 -15 }
+                }
+            }
+        }
+    }
+
+    type valid_titles_for_war_list = widget {
+        allow_outside = yes
+        visible = "[Not(GetVariableSystem.Exists( 'valid_titles_for_war_retracted'))]"
+
+        scrollbox = {
+            allow_outside = yes
+            size = { 150 150 }    
+            position = { 0 0 }
+            background = {
+                using = Background_Area_Border_Solid
+            }
+            
+            blockoverride "scrollbox_content" {
+                vbox = {
+                    allow_outside = yes
+                    layoutpolicy_vertical = expanding
+                    block "datamodel" {
+                        datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('target_chars')]"
+                    }
+                    item = {
+                        widget = {
+                            allow_outside = yes
+                            size = { 150 40 }
+                            button_normal = {
+                                position =  { -5 0 }
+                                allow_outside = yes
+                                text_single = {
+                                    text = "BUTTON_vote_for_war_select_title"
+                                    fontsize = 15
+                                    parentanchor = center|left
+                                    margin_top = 10
+                                }
+                                button_feudalize_tribe = {
+                                    onclick = "[GetScriptedGui('set_selected_title_as_variable').Execute( GuiScope.SetRoot( Scope.Char.GetPrimaryTitle.MakeScope ).AddScope('player_scope', GetPlayer.MakeScope ).End)]"
+                                    onclick = "[GetVariableSystem.Set( 'valid_titles_for_war_retracted', 'true' )]"
+                                    texture = "gfx/interface/icons/flat_icons/plus.dds"
+                                    size = { 35 35 }
+                                    position =  { 90 -10 }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    type valid_war_types = widget {
+        allow_outside = yes
+        visible = "[Not(GetVariableSystem.Exists( 'valid_war_types_retracted'))]"
+
+        vbox = {
+            allow_outside = yes
+            layoutpolicy_vertical = expanding
+            block "datamodel" {
+                datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('target_chars')]"
+            }
+            background = {
+                using = Background_Area_Border_Solid
+            }
+            item = {
+                widget = {
+                    allow_outside = yes
+                    size = { 200 40 }
+                    
+                    button_normal = {
+                        position =  { 20 20 }
+                        allow_outside = yes
+                        text_single = {
+                            text = "BUTTON_vote_for_war_select_title"
+                            fontsize = 15
+                            parentanchor = center|left
+                            
+                        }
+                        button_feudalize_tribe = {
+                            onclick = "[GetScriptedGui('set_selected_war_as_variable').Execute( GuiScope.SetRoot( Scope.War.MakeScope ).AddScope('player_scope', GetPlayer.MakeScope ).End)]"
+                            onclick = "[GetVariableSystem.Set( 'white_peace_titles_retracted', 'true' )]"
+                            texture = "gfx/interface/icons/flat_icons/plus.dds"
+                            size = { 35 35 }
+                            position =  { 140 -15 }
+                        }
                     }
                 }
             }
