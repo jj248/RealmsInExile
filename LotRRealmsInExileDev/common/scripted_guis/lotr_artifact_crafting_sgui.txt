@@ -3107,8 +3107,11 @@ change_artifact_name_description = {
 dismantle_artifact = {
 	saved_scopes = {
 		player_scope
+		recipient_scope
 	}
 	is_valid = {
+		scope:player_scope ?= { has_perk = tinkerer_perk }
+		scope:recipient_scope ?= scope:player_scope
 		trigger_if = {
 			limit = { exists = root }
 			NOT = {

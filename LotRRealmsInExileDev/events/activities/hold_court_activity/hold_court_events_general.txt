@@ -460,7 +460,7 @@ hold_court.1001 = {
 scripted_trigger hold_court_1011_valid_neighbour_trigger = {
 	tier < root.primary_title.tier
 	any_claimant = { hold_court_1011_valid_neighbour_claimant_trigger = yes }
-	is_independent_ruler = yes
+	holder = { is_independent_ruler = yes }
 	NOR = {
 		title_capital_county.culture = culture:wastelands
 		AND = {
@@ -5360,8 +5360,11 @@ hold_court.4200 = {
 
 	trigger = {
 		is_elf = no #LotR
+		lotr_canon_safe_from_harm_trigger = no
 		any_ally = {
 			is_ai = yes
+			lotr_canon_safe_from_harm_trigger = no
+			is_elf = no
 			this.liege = { NOT = { this = root } }
 			is_at_war = no
 			exists = this.primary_heir
@@ -9645,7 +9648,7 @@ hold_court.5020 = {
 		}
 		random_realm_province = {
 			limit = {
-				always = no
+				always = yes
 #				hold_court_5020_province_trigger = yes
 #				OR = {
 #					AND = {
@@ -9782,7 +9785,7 @@ hold_court.5020 = {
 
 	option = { # It looks like you're having a grand time, what are you complaining about?
 		name = hold_court.5020.a
-		scope:province = {	
+		scope:province ?= {	
 			county = {	
 				add_county_modifier = {
 					modifier = dance_plague_modifier
@@ -9813,7 +9816,7 @@ hold_court.5020 = {
 			text = hold_court.5020.b_saint
 		}
 		scope:province = {	
-			county ={
+			county = {
 				add_county_modifier = {
 					modifier = contained_dance_plague_modifier
 					days = 3650
@@ -20910,9 +20913,7 @@ hold_court.6230 = {
 	option = {
 		name = hold_court.6230.d
 		trigger = {
-			capital_province = {
-				geographical_region = middleearth_haradwaith
-			}
+			always = no
 		}
 		add_piety = major_piety_gain
 		reverse_add_opinion = {

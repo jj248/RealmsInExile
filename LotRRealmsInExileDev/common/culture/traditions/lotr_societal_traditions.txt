@@ -190,7 +190,6 @@ tradition_surface_dweller = {
 	province_modifier = {
 		build_gold_cost = -0.1
 		halls_construction_gold_cost = 0.2
-		halls_holding_construction_gold_cost = 0.2
 	}
 	
 	cost = {
@@ -253,6 +252,7 @@ tradition_mende_anduya = { #Dúnedain insularity
 		dislikes_marrying_outside_of_cultural_heritage = yes
 		ai_doesnt_marry_outside_cultural_heritage = yes
 		courtiers_less_likely_to_leave_same_culture_court = yes
+		values_numenorean_blood = yes
 	}
 	character_modifier = {
 		same_culture_opinion = 10		
@@ -784,6 +784,10 @@ tradition_nelyarin_heritage = { # For Avari of primarily Nelyarin descent
                 NOT = { has_cultural_tradition = tradition_variag_succession } #To prevent stacking after hybridization
             }
         }
+		custom_tooltip = {
+			text = cannot_have_tradition_tatyarin_culture
+			NOT = { culture_tradition:tradition_tatyarin_heritage = { is_in_list = traits } }
+		}
 	}
 	
 	parameters = {
@@ -892,6 +896,10 @@ tradition_tatyarin_heritage = { # For Avari of primarily Tatyarin descent
                 NOT = { has_cultural_tradition = tradition_variag_succession } #To prevent stacking after hybridization
             }
         }
+		custom_tooltip = {
+			text = cannot_have_tradition_nelyarin_culture
+			NOT = { culture_tradition:tradition_nelyarin_heritage = { is_in_list = traits } }
+		}
 	}
 	
 	parameters = {
@@ -1490,6 +1498,9 @@ tradition_legendary_artisans = {
 	}
 
 	can_pick = {
+		NOT = { 
+			has_cultural_tradition = tradition_artisans
+		}
 		trigger_if = { #LotR
             limit = {
                 scope:replacing ?= culture_tradition:tradition_variag_succession

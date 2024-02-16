@@ -587,6 +587,21 @@ k_erebor = {
 	}
 }
 
+#Gobbo Nurunkizdin#
+k_nurunkizdin = {
+	item = {
+		trigger = { coa_switch_to_gobbo_trigger = yes }
+		coat_of_arms = k_evil_nurunkizdin
+	}
+}
+
+d_nurunkizdin = {
+	item = {
+		trigger = { coa_switch_to_gobbo_trigger = yes }
+		coat_of_arms = d_gobbo_nurunkizdin
+	}
+}
+
 #Gobbo Yellow Mountains#
 e_yellow_mountains = {
 	item = {
@@ -664,4 +679,180 @@ k_isengard = {
 		trigger = { coa_switch_to_dunlending_trigger = yes}
 		coat_of_arms = k_isengeard
 	}	
+}
+
+
+#Donan/Daen Dynamic Coas#
+k_ithilien = {
+	item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_donan_ithilien
+	}
+}
+
+k_andrast = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_daen_andrast
+	}
+}
+
+k_pinnath_gelin = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_daen_pinnath_gelin
+	}
+}
+
+k_lamedon = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_daen_lamedon
+	}
+}
+
+k_anorien = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_daen_anorien
+	}
+}
+
+k_lebennin = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_daen_lebennin
+	}
+}
+
+k_belfalas = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_daen_belfalas
+	}
+}
+
+k_anfalas = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_daen_anfalas
+	}
+}
+
+k_nurn = {
+		item = {
+		trigger = { coa_switch_to_daen_trigger = yes}
+		coat_of_arms = k_free_nurn
+	}
+}
+
+#Khamul kingdoms#
+k_lothlorien = {
+	item = {
+		trigger = { coa_switch_to_gobbo_trigger = yes}
+		coat_of_arms = k_eryn_gorgor
+	}
+}
+
+k_lasgalen = {
+	item = {
+		trigger = { coa_switch_to_gobbo_trigger = yes}
+		coat_of_arms = k_north_mirkood
+	}
+}
+
+k_langwell = {
+	item = {
+		trigger = { coa_switch_to_gobbo_trigger = yes}
+		coat_of_arms = k_east_angmar
+	}
+}
+
+
+#Tedjin Kingdoms#
+k_umbar = {
+	item = {
+		trigger = {coa_switch_to_tedjin_trigger = yes}
+		coat_of_arms = k_tedjin_umbar
+	}
+}
+
+k_felaya ={
+	item = {
+		trigger = {coa_switch_to_evil_tedjin_trigger = yes}
+		coat_of_arms = k_tedjin_felaya
+	}
+}
+
+k_bellazen ={
+	item = {
+		trigger = {coa_switch_to_evil_tedjin_trigger = yes}
+		coat_of_arms = k_tedjin_bellazen
+	}
+}
+
+k_nilulonde = {
+	item = {
+		trigger = {coa_switch_to_evil_tedjin_trigger = yes}
+		coat_of_arms = k_tedjin_nilulonde
+	}
+}
+
+k_narak = {
+	item = {
+		trigger = {coa_switch_to_tedjin_trigger = yes}
+		coat_of_arms = k_tedjin_narak
+	}
+}
+
+k_haruzan = {
+	item = {
+		trigger = {coa_switch_to_tedjin_trigger = yes}
+		coat_of_arms = k_tedjin_haruzan
+	}
+}
+
+k_pezarsan = {
+	item = {
+		trigger = {coa_switch_to_tedjin_trigger = yes}
+		coat_of_arms = k_tedjin_pezarsan
+	}
+}
+
+
+
+#Loke-Khan's wild ride#
+k_dale = {
+	item = {
+		trigger = {coa_switch_to_easterling_trigger = yes}
+		coat_of_arms = k_easterling_dale
+	}
+}
+
+k_ehwathrumavuld = {
+	item = {
+		trigger = {coa_switch_to_easterling_trigger = yes}
+		coat_of_arms = k_easterling_ehwathrumavuld
+	}
+}
+
+k_south_rhovanion = {
+	item = {
+		trigger = {coa_switch_to_easterling_trigger = yes}
+		coat_of_arms = k_easterling_south_rhovanion
+	}	
+}
+
+k_nelornieth = {
+	item = {
+		trigger = {coa_switch_to_easterling_trigger = yes}
+		coat_of_arms = k_easterling_nelornieth
+	}		
+}
+
+k_dorwinion = {
+	item = {
+		trigger = {coa_switch_to_easterling_trigger = yes}
+		coat_of_arms = k_easterling_dorwinion
+	}		
 }

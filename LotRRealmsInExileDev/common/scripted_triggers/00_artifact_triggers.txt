@@ -4,8 +4,8 @@ artifact_value_trigger = {
 		limit = {
 			exists = $VALUE$
 		}
-	$VALUE$ >= $MIN$
-	$VALUE$ < $MAX$
+		$VALUE$ >= $MIN$
+		$VALUE$ < $MAX$
 	}
 	trigger_else_if = {
 		limit = {
@@ -59,7 +59,7 @@ artifact_region_trigger = {
 		}
 	}
 	trigger_else = {
-		scope:artifact.artifact_owner = {
+		scope:artifact.artifact_owner ?= {
 			trigger_if = {
 				limit = {
 					exists = capital_province
@@ -445,7 +445,12 @@ artifact_use_iranian_building_visuals_trigger = {
 	culture = { has_building_gfx = iranian_building_gfx }
 }
 
-# GFX Trigger-picker - only use this in the 'visuals' files!
+artifact_use_berber_building_visuals_trigger = {
+	exists = culture
+	culture = { has_building_gfx = berber_group_building_gfx }
+}
+
+# GFX Trigger-picker
 
 artifact_should_use_gfx_type_trigger = {
 	trigger_if = {
