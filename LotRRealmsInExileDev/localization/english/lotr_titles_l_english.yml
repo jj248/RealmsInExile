@@ -23,6 +23,7 @@
  river_isen:0 "The Isen"
  river_gwathlo:0 "The Gwathlo"
  river_baranduin:0 "The Baraduin"
+ river_forodwaith1:0 "The Forodwaith"
  river_forodwaith2:0 "The Forodwaith"
  river_riyesha:0 "The Riyesha"
  river_felayia:0 "The Felayia"
@@ -31,6 +32,10 @@
  abrakhan_salt_lake:0 "Mirror of Fire"
  falls_rauros:0 "Falls of Rauros"
  lake_nen_hithoel:0 "Nen Hithoel"
+ 
+ ### VANILLA ###
+ 
+ k_fashion:0 "Fashion"
  
  ### ROHAN RELEASE ###
  b_adornas:0 "Adornas"

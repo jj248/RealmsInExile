@@ -13,7 +13,7 @@ majority_age = {
 		value = 33
 	}
 	else = {
-		value = adulthood_start_age
+		value = 16
 	}
 }
 
@@ -78,7 +78,7 @@ additional_years_of_fertility = {
 				is_elf = yes
 			}
 		}
-		add = 12000
+		add = 13000
 	}
 	if = {
 		limit = { is_orc = yes }
@@ -133,6 +133,12 @@ additional_years_of_fertility = {
 	}
 }
 
+fertility_age_equivalent = {
+	value = age
+	subtract = additional_years_of_fertility
+	min = 0
+}
+
 bride_old_age = {
 	value = 29
 	add = additional_years_of_fertility
@@ -162,7 +168,7 @@ additional_life_expectancy = {
 				is_elf = yes
 			}
 		}
-		add = 12000
+		add = 13000
 	}
 	if = {
 		limit = { is_orc = yes }
@@ -251,6 +257,16 @@ human_age_equivalent = {
 	min = 0
 }
 
+age_equivalent_20 = {
+	value = 20
+	add = additional_life_expectancy
+}
+
+age_equivalent_25 = {
+	value = 25
+	add = additional_life_expectancy
+}
+
 age_equivalent_30 = {
 	value = 30
 	add = additional_life_expectancy
@@ -258,6 +274,11 @@ age_equivalent_30 = {
 
 age_equivalent_40 = {
 	value = 40
+	add = additional_life_expectancy
+}
+
+age_equivalent_45 = {
+	value = 45
 	add = additional_life_expectancy
 }
 
