@@ -467,6 +467,7 @@ scripted_trigger hold_court_1011_valid_neighbour_trigger = {
 			exists = empire
 			empire = title:e_valinor
 		}
+		holder.var:my_suzerain ?= root
 	}
 }
 
@@ -19379,7 +19380,9 @@ hold_court.6200 = {
 						}
 					}
 					10 = {
-						trigger = { cannot_be_killed = no }
+						trigger = { 
+							cannot_be_killed = no
+						}
 						desc = hold_court.6200.b.crit_failure
 						compare_modifier = {
 							value = scope:duel_value
@@ -19731,6 +19734,7 @@ hold_court.6201 = {
 			5 = {
 				trigger = {
 					cannot_be_killed = no
+					is_elf = no
 					NOT = { exists = scope:m_hunt }
 				}
 				desc = hold_court.6201.a.crit_failure
@@ -28277,6 +28281,7 @@ hold_court.8060 = {
 
 	trigger = {
 		is_elf = no #LotR - wrong type of holding
+		is_dwarf = no #LotR - wrong type of holding
 		exists = cp:councillor_court_chaplain
 		cp:councillor_court_chaplain = {
 			has_court_event_flag = no
@@ -29031,6 +29036,7 @@ hold_court.8070 = {
 
 	trigger = {
 		is_elf = no #LotR - wrong type of holding
+		is_dwarf = no #LotR - wrong type of holding
 		exists = cp:councillor_steward
 		cp:councillor_steward = {
 			has_court_event_flag = no
@@ -37822,6 +37828,7 @@ hold_court.8190 = {
 			limit = {
 				is_available_ai_adult = yes
 				NOT = { culture = root.culture }
+				same_race = { TARGET = root }
 			}
 			weight = {
 				base = 1
@@ -38225,6 +38232,7 @@ hold_court.8190 = {
 scripted_trigger hold_court_8200_infidel_trigger = {
 	is_available_ai_adult = yes
 	NOT = { faith = root.faith }
+	is_elf = no
 	# NOR = { # LotR
 	# 	AND = { # Eastern # LotR
 	# 		religion = { is_in_family = rf_eastern }

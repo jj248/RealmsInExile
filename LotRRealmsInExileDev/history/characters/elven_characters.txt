@@ -1398,6 +1398,9 @@ linefinwe27 = {
 			learn_language = language_taliska
 		}
 	}
+
+	
+
 	1034.1.1 = {
 		effect = {
 			create_character_memory = {
@@ -2752,6 +2755,7 @@ lineofcirdan = { # Cirdan the Shipwright
 			add_character_flag = no_auto_family							
 		}
 	}
+	
 }
 
 #####################################
@@ -3389,6 +3393,9 @@ lineoffalgond2 = { # Basilion, son of Falgond
 	dynasty = dynasty_ambano
 	religion = faith_eldar
 	culture = noldor
+	
+	trait = beauty_good_2
+	trait = intellect_good_2
 	
 	father = lineoffalgond
 	mother = lineofelena

@@ -55,7 +55,6 @@ dwarven.0200 = { # Introduction to Balin
 	
 	immediate = {
 		play_music_cue = lotr_cue_dwarves
-		add_gold = 200
 	}
 	
 	right_portrait = {
@@ -65,16 +64,7 @@ dwarven.0200 = { # Introduction to Balin
 	
 	option = { 
 		name = dwarven.0200.a
-	}
-	option = { 
-		name = dwarven.0200.b
-		custom_tooltip = {
-			text = disable_balrog_open_beta_temp_effect
-			every_province = { remove_province_modifier = durins_bane_modifier }
-		}
-		ai_chance = {
-			base = 0 
-		}
+		add_gold = 200
 	}
 }
 
@@ -747,6 +737,19 @@ dwarven.9002 = { # Bearded Again !
 ### Dwarven Fertility Events ###
 ################################
 
+scripted_trigger dwarven_9500_youngest_brother_all_brothers_celibate_trigger = {
+	is_male = yes
+	NOR = {
+		any_sibling = { #All brothers celibate
+			is_male = yes
+			NOT = { has_trait = cannot_marry }
+		}
+		any_sibling = { # Youngest brother
+			is_male = yes
+			age < root.age
+		}
+	}
+}
 
 dwarven.9500 = {
 	content_source = realms_dlc
@@ -776,8 +779,19 @@ dwarven.9500 = {
 
 	option = { # Gain dwarf_refuses_marriage modifiers
 		name = dwarven.9500.b
+		trigger = { 
+			NOT = {
+				is_ai = yes
+				dwarven_9500_youngest_brother_all_brothers_celibate_trigger = yes
+			}
+		}
 
 		add_trait = cannot_marry
+		
+		if = {
+			limit = { is_betrothed = yes }
+			break_betrothal = root.betrothed
+		}
 
 		ai_chance = {
 			base = 33
