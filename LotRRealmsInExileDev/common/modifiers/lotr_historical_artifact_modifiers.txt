@@ -886,6 +886,9 @@ kine_drinking_horn_modifier = {
 	movement_speed = 0.05
 }
 
+walrus_tooth_modifier = {
+	monthly_prestige = 0.2 # Temp, was throwing errors
+}
 	
 
 ## Adventure Uniques ##	
@@ -1110,4 +1113,13 @@ galadhrim_bow_modifier = {
 	mallorn_forest_advantage = 5
 	archers_damage_mult = 0.1
 	archers_toughness_mult = 0.1
+}
+
+elven_sword_modifier = {
+	prowess_no_portrait = 12
+	knight_effectiveness_mult = 0.08
+	forest_advantage = 5
+	plains_advantage = 5
+	heavy_infantry_damage_mult = 0.1
+	heavy_infantry_toughness_mult = 0.1
 }

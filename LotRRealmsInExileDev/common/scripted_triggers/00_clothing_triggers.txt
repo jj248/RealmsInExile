@@ -632,6 +632,7 @@ portrait_french_clothing_spouse_trigger = {
 }
 
 portrait_french_clothing_contents_trigger = {
+	always = no #LotR - TODO - nothing for now
 	portrait_french_proxy_clothing_contents_trigger = yes
 	NOR = {
 		portrait_northern_proxy_clothing_contents_trigger = yes #LotR

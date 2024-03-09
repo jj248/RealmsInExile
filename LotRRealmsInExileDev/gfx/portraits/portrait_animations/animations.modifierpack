@@ -8,6 +8,10 @@ one_handed_axe = {
         }
         animations_props = artifact_axe_equipped_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Norse
@@ -17,6 +21,9 @@ one_handed_axe = {
         }			
         animations_props = artisan_axe_northern_pagan_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Steppe
@@ -26,6 +33,9 @@ one_handed_axe = {
         }			
         animations_props = artisan_axe_steppe_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # MENA
@@ -35,6 +45,9 @@ one_handed_axe = {
         }			
         animations_props = artisan_axe_mena_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Mediterranean
@@ -44,6 +57,9 @@ one_handed_axe = {
         }			
         animations_props = artisan_axe_mediterranean_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # African
@@ -53,6 +69,9 @@ one_handed_axe = {
         }			
         animations_props = artisan_axe_african_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Indian
@@ -62,6 +81,9 @@ one_handed_axe = {
         }			
         animations_props = artisan_axe_indian_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Western
@@ -75,6 +97,9 @@ one_handed_axe = {
         }			
         animations_props = artifact_axe_equipped_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 	
     portrait_modifier = { # Dwarven
@@ -84,6 +109,9 @@ one_handed_axe = {
         }			
         animations_props = artisan_dwarven_spear_prop_right_hand
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 }
 
@@ -95,6 +123,9 @@ one_handed_mace = {
         }
         animations_props = artifact_mace_equipped_prop
         animations = AI_vengeful_decal
+		animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Steppe
@@ -104,6 +135,9 @@ one_handed_mace = {
         }
         animations_props = artisan_mace_steppe_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # MENA
@@ -113,6 +147,9 @@ one_handed_mace = {
         }			
         animations_props = artisan_mace_mena_prop
         animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Mediterranean
@@ -122,6 +159,9 @@ one_handed_mace = {
         }			
         animations_props = artisan_mace_byzantine_prop
         animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # African
@@ -131,6 +171,9 @@ one_handed_mace = {
         }			
         animations_props = artisan_mace_african_prop
         animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Indian
@@ -140,6 +183,9 @@ one_handed_mace = {
         }			
         animations_props = artisan_mace_indian_prop
         animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Western
@@ -153,6 +199,9 @@ one_handed_mace = {
         }			
         animations_props = artisan_mace_western_prop
         animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 }
 
@@ -166,6 +215,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
     
     portrait_modifier = { # Hunting
@@ -178,6 +228,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
     
     portrait_modifier = { # Berber
@@ -287,6 +338,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Iberian Christian
@@ -298,6 +350,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Iberian Muslim
@@ -309,6 +362,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Steppe
@@ -320,6 +374,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Mediterranean
@@ -331,6 +386,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Indian
@@ -342,6 +398,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # MENA
@@ -356,6 +413,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Western
@@ -380,6 +438,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Hunting
@@ -399,6 +458,7 @@ one_handed_sword = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 }
 
@@ -410,6 +470,9 @@ one_handed_dagger = {
         }
         animations_props = artifact_dagger_equipped_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
     
     portrait_modifier = { # Berber
@@ -446,6 +509,9 @@ one_handed_dagger = {
         }
         animations_props = spymaster_fp1_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Iberian
@@ -458,6 +524,9 @@ one_handed_dagger = {
         }
         animations_props = spymaster_fp2_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # MENA
@@ -469,6 +538,9 @@ one_handed_dagger = {
         }
         animations_props = spymaster_mena_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Indian
@@ -484,6 +556,9 @@ one_handed_dagger = {
         }
         animations_props = spymaster_indian_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Western
@@ -502,6 +577,9 @@ one_handed_dagger = {
         }
         animations_props = spymaster_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Late Western (Rondel)
@@ -520,6 +598,9 @@ one_handed_dagger = {
         }
         animations_props = rondel_dagger_prop
         animations = AI_vengeful_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 }
 
@@ -990,6 +1071,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 	
 	portrait_modifier = { # Gondorian
@@ -1001,6 +1083,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Berber
@@ -1023,6 +1106,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Rohirrim
@@ -1032,7 +1116,9 @@ throneRoom_one_handed_passive_1 = {
         }			
         animations_props = marshal_prop_rohan
         animations = council_marshal_decal
-        
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 	
     portrait_modifier = { # Norse
@@ -1045,6 +1131,9 @@ throneRoom_one_handed_passive_1 = {
         }			
         animations_props = marshal_fp1_prop
         animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Iberian Christian
@@ -1054,6 +1143,9 @@ throneRoom_one_handed_passive_1 = {
         }
         animations_props = marshal_fp2_christian_prop
         animations = council_marshal_decal
+        animations = fat_additive
+        animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Iberian Muslim
@@ -1065,6 +1157,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Steppe
@@ -1076,6 +1169,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Mediterranean
@@ -1087,6 +1181,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Indian
@@ -1098,6 +1193,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # MENA
@@ -1112,6 +1208,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Longsword
@@ -1145,6 +1242,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Western
@@ -1169,6 +1267,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Hunting
@@ -1188,6 +1287,7 @@ throneRoom_one_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 }
 
@@ -1201,6 +1301,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Norse
@@ -1212,6 +1313,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Steppe
@@ -1223,6 +1325,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # MENA
@@ -1234,6 +1337,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Mediterranean
@@ -1245,6 +1349,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # African
@@ -1256,6 +1361,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Indian
@@ -1267,6 +1373,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Western
@@ -1282,6 +1389,7 @@ throneRoom_one_handed_passive_2 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 }
 
@@ -1295,6 +1403,7 @@ throneRoom_two_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 	
     portrait_modifier = { # Dwarven
@@ -1312,6 +1421,7 @@ throneRoom_two_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Indian
@@ -1323,6 +1433,7 @@ throneRoom_two_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # MENA / Steppe
@@ -1337,6 +1448,7 @@ throneRoom_two_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # African
@@ -1348,6 +1460,7 @@ throneRoom_two_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Western
@@ -1368,6 +1481,7 @@ throneRoom_two_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 
     portrait_modifier = { # Hunting
@@ -1383,6 +1497,7 @@ throneRoom_two_handed_passive_1 = {
         animations = council_marshal_decal
         animations = fat_additive
         animations = dwarf_additive
+        animations = female_prop_fix_additive
     }
 }
 

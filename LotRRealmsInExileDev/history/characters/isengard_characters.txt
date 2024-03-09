@@ -12,16 +12,27 @@
 	trait = forest_fighter
 	martial = 9
     diplomacy = 4
-   intrigue = 7
+	intrigue = 7
     stewardship = 7
     learning = 9
 	prowess = 13
 
-	6000.1.1 = {						
-		birth = yes					
-	}						
-							
-	6010.1.1 = {						
+	7010.1.1 = {						
+		birth = yes
+		effect = {	
+			add_character_flag = is_isengardlurtz
+			add_character_flag = has_scripted_appearance	
+			add_trait_xp = {
+				trait = lifestyle_hunter
+				track = hunter
+				value = 100
+			}
+		}
+	}
+	7033.1.1 = {
+		employer = lineorrkog1
+	}
+	7040.1.1 = {						
 		death = { death_reason = death_natural_causes }  					
 	}		
 }
