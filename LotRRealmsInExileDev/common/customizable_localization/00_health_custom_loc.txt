@@ -99,26 +99,30 @@ EventTitleDisease = {
 		trigger = { scope:disease_type = flag:black_breath }
 		localization_key = trait_black_breath
 	}
+	text = {
+		trigger = { scope:disease_type = flag:beardless_plague }
+		localization_key = trait_beardless_plague
+	}	
 }
 
 GetYoungMiddleAgedOld = {
 	type = character
 
 	text = {
-		trigger = { age <= 30 }
+		trigger = { age <= young_age }
 		localization_key = age_young
 	}
 
 	text = {
 		trigger = {
-			age > 30
-			age < 60
+			age > young_age
+			age < old_age
 		}
 		localization_key = age_middle_aged
 	}
 
 	text = {
-		trigger = { age >= 60 }
+		trigger = { age >= old_age }
 		localization_key = age_old
 	}
 }
@@ -136,7 +140,7 @@ GetYoungOld = {
 		localization_key = age_old
 	}
 }
-	
+
 RandomDisease = {
 	type = character
 
@@ -172,6 +176,8 @@ RandomDisease = {
 	
 	text = { localization_key = disease_black_breath }
 
+	text = { localization_key = disease_beardless_plague }
+
 }
 
 GetRandomBattlefieldMedic = {
@@ -188,7 +194,7 @@ GetRandomBattlefieldMedic = {
 	
 	text = { localization_key = medic_sawbones }
 	
-	text = { localization_key = medic_barber }
+	text = { localization_key = medic_barber }	
 }
 
 GetRandomCourtMedic = {

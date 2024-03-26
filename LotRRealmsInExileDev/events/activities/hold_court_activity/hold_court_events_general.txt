@@ -970,7 +970,10 @@ hold_court.1041 = {
 		faith = { has_doctrine = doctrine_theocracy_temporal }
 		any_held_title = {
 			tier = tier_county
-			NOT = { this = root.capital_county}
+			NOT = { this = root.capital_county }
+			NOT = {
+				any_county_province = { has_holding_type = settlement_holding }
+			}
 		}
 	}
 
@@ -995,7 +998,10 @@ hold_court.1041 = {
 		random_held_title = {
 			limit = {
 				tier = tier_county
-				NOT = { this = root.capital_county}
+				NOT = { this = root.capital_county }
+				NOT = {
+					any_county_province = { has_holding_type = settlement_holding }
+				}
 			}
 			save_scope_as = selected_title
 		}
@@ -3297,7 +3303,7 @@ hold_court.3070 = {
 			template = servant_character
 			location = root.capital_province
 			gender = female
-			age = { 25 40 }
+			age = { young_age middle_age }
 			dynasty = none
 			save_scope_as = possible_mother_oldest	
 		}
@@ -3305,7 +3311,7 @@ hold_court.3070 = {
 			template = servant_character
 			location = root.capital_province
 			gender = female
-			age = { 18 24 } #So that she's always the younger woman
+			age = { nubile_age young_age } #So that she's always the younger woman
 			dynasty = none
 			save_scope_as = possible_mother_youngest	
 		}
@@ -7112,6 +7118,8 @@ scripted_trigger cannibal_follow_up_trigger = {
 	scope:possible_cannibal_ruler = { 
 		is_alive = yes
 		is_cannibal_trigger = no
+		cannot_be_killed = no
+		is_elf = no
 	}
 	scope:cannibal_vassal = {
 		is_alive = yes
@@ -7330,6 +7338,9 @@ hold_court.4600 = {
 		name = hold_court.4600.c
 		flavor = hold_court.4600.c.tt
 		add_dread = major_dread_loss
+		trigger = { # LOTR
+			cannot_be_killed = No
+		}
 		stress_impact = {
 				confider = medium_stress_loss
 			}
@@ -12356,6 +12367,9 @@ hold_court.6060 = {
 	
 	trigger = {
 		any_held_county = {
+			NOT = {
+				any_county_province = { has_holding_type = settlement_holding }
+			}
 			any_county_province = {
 				hold_court_6060_valid_county_trigger = yes
 			}
@@ -12392,6 +12406,9 @@ hold_court.6060 = {
 	immediate = {
 		random_held_county = {
 			limit = {
+				NOT = {
+					any_county_province = { has_holding_type = settlement_holding }
+				}
 				any_county_province = {
 					hold_court_6060_valid_county_trigger = yes
 				}
@@ -13351,6 +13368,9 @@ scripted_trigger hold_court_6080_valid_county_trigger = {
 		NOT = {
 			this = root.culture
 		}
+	}
+	NOT = {
+		any_county_province = { has_holding_type = settlement_holding }
 	}
 }
 
@@ -21685,6 +21705,9 @@ hold_court.7010 = {
 					}
 				}
 				NOT = { this = root.capital_county }
+				NOT = {
+					any_county_province = { has_holding_type = settlement_holding }
+				}
 			}
 			save_scope_as = frontier_hero_county
 			holder = {
@@ -24004,7 +24027,10 @@ hold_court.7060 = {
 		NOT = { has_character_flag = had_hold_court_event_7060 }
 		is_married = no
 		#LotR
-		NOT = { has_trait = widowed }
+		NOR = {
+			has_trait = widowed
+			has_trait = cannot_marry
+		}
 		lotr_is_immortal_culture_trigger = no
 		
 		# Eligible vassal spouse exists
@@ -25588,6 +25614,9 @@ hold_court.8010 = {
 
 scripted_trigger hold_court_8020_county_trigger = {
 	NOT = { this = root.capital_county }
+	NOT = {
+		any_county_province = { has_holding_type = settlement_holding }
+	}
 	any_county_province = {
 		barony = { is_holy_site_of = root.faith }
 	}
@@ -25843,7 +25872,7 @@ hold_court.8020 = {
 			}
 		}
 		create_character = {
-			age = { 30 50 }
+			age = { young_age middle_age }
 			template = priest_character_template
 			location = root.capital_province
 			trait = devoted
@@ -33429,6 +33458,9 @@ hold_court.8150 = {
 				limit = {
 					tier = tier_county
 					NOT = { this = root.capital_county }
+					NOT = {
+						any_county_province = { has_holding_type = settlement_holding }
+					}
 				}
 				order_by = {
 					value = 0
@@ -35958,6 +35990,9 @@ scripted_trigger hold_court_8170_barony_trigger = {
 scripted_trigger hold_court_8170_county_trigger = {
 	tier = tier_county
 	NOT = { this = root.capital_county }
+	NOT = {
+		any_county_province = { has_holding_type = settlement_holding }
+	}
 }
 
 scripted_trigger hold_court_8170_vassal_barony_trigger = {

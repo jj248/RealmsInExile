@@ -1322,7 +1322,7 @@ create_artifact_staff_saruman_effect = {
 		name = staff_saruman_name
 		description = staff_saruman_description
 		creator = character:lineofsaruman #Saruman
-		type = regalia
+		type = spear
 		visuals = staff_saruman
 		wealth = scope:wealth
 		quality = scope:quality
@@ -2205,6 +2205,30 @@ create_artifact_hyandolire_effect = {
 		set_variable = hyandolire
 		set_variable = elven
 		save_scope_as = epic
+	}
+}
+
+create_artifact_rop_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_famed = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = rop_name
+		description = rop_description
+		type = book
+		visuals = book
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = rop_modifier
+		save_scope_as = newly_created_artifact
+		decaying = yes
+	}
+	
+	scope:newly_created_artifact = {
+		flag_as_trash_artifact = yes
 	}
 }
 
@@ -3574,8 +3598,9 @@ create_artifact_ulukai_effect = {
         quality = scope:quality
 		template = ulukai_template
         history = {
-            type = created
-            date = 510.1.1
+            type = discovered
+            date = 6974.11.30
+			actor = character:lineofazog6 #Gorgol, Lord of Gundabad
             recipient = character:lineofazog6 #Gorgol, Lord of Gundabad
             location = province:3210 #Gundabad
         }
@@ -7673,7 +7698,7 @@ create_artifact_dragon_helm_of_dor_lomin_effect = {
 			type = created
 			date = 262.1.1
 			actor = character:lineoftelchar1  #Telchar
-			recipient = character:linefinwe10 #Maedhros
+			recipient = character:lineofdwalin5 # Azaghâl 
 			location = province:4869 #Nogrod
 		}
 		modifier = dragon_helm_of_dor_lomin_modifier
@@ -7687,6 +7712,11 @@ create_artifact_dragon_helm_of_dor_lomin_effect = {
 		set_variable = relic
 		save_scope_as = epic
 		
+		add_artifact_history = {
+			type = given
+			date = 83.1.1
+			recipient = character:linefinwe10 #Maedhros
+		}
 		add_artifact_history = {
 			type = given
 			date = 93.1.1
@@ -8998,7 +9028,7 @@ create_artifact_azaghal_effect = {
 			type = created
 			date = 363.1.1
 			actor = character:lineoftelchar1  #Telchar
-			recipient = character:lineoftelchar1  #Telchar
+			recipient = character:lineofdwalin31  #Azaghâl
 			location = province:4869 #Nogrod
 		}
 		modifier = azaghal_helmet_modifier

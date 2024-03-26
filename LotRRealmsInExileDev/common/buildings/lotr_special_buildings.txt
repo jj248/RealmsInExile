@@ -2079,7 +2079,7 @@ wonder_baraddur = {
 		}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_learning
@@ -2116,7 +2116,7 @@ wonder_orodruin = { #Mount Doom
 	}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_religious
@@ -2131,14 +2131,15 @@ wonder_thaurband_01 = { #Tharbaud, city of slaves
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 02 }
 		scope:holder = {
-				culture = {
-					has_innovation = innovation_hoardings
-					}
-				NOT = {
-					religion = { is_in_family = rf_eruhini }
-				}
+			culture = {
+				has_innovation = innovation_hoardings
+			}
+			NOR = {
+				religion = { is_in_family = rf_eruhini }
+				faith = { has_doctrine = doctrine_echoes_of_the_ainur }
 			}
 		}
+	}
 	county_modifier = {
 		development_growth_factor = 0.3
 		tax_mult = 0.1
@@ -2147,13 +2148,14 @@ wonder_thaurband_01 = { #Tharbaud, city of slaves
 
 	is_enabled = {
 		scope:holder = {
-			NOT = {
-					religion = { is_in_family = rf_eruhini }
+			NOR = {
+				religion = { is_in_family = rf_eruhini }
+				faith = { has_doctrine = doctrine_echoes_of_the_ainur }
 			}
 		}
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_thaurband_02
 	type = special
@@ -2168,12 +2170,13 @@ wonder_thaurband_02 = { #Tharbaud, city of slaves
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 02 }
 		scope:holder = {
-				culture = {
-					has_innovation = innovation_hoardings
-					}
-				NOT = {
-					religion = { is_in_family = rf_eruhini }
-				}
+			culture = {
+				has_innovation = innovation_hoardings
+			}
+			NOR = {
+				religion = { is_in_family = rf_eruhini }
+				faith = { has_doctrine = doctrine_echoes_of_the_ainur }
+			}
 		}
 	}
 	county_modifier = {
@@ -2187,13 +2190,14 @@ wonder_thaurband_02 = { #Tharbaud, city of slaves
 	
 	is_enabled = {
 		scope:holder = {
-			NOT = {
+			NOR = {
 				religion = { is_in_family = rf_eruhini }
+				faith = { has_doctrine = doctrine_echoes_of_the_ainur }
 			}
 		}
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_thaurband_03
 	type = special
@@ -2208,14 +2212,15 @@ wonder_thaurband_03 = { #Tharbaud, city of slaves
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 02 }
 		scope:holder = {
-				culture = {
-					has_innovation = innovation_hoardings
-					}
-				NOT = {
-					religion = { is_in_family = rf_eruhini }
-				}
+			culture = {
+				has_innovation = innovation_hoardings
+			}
+			NOR = {
+				religion = { is_in_family = rf_eruhini }
+				faith = { has_doctrine = doctrine_echoes_of_the_ainur }
 			}
 		}
+	}
 	county_modifier = {
 		development_growth_factor = 0.7
 		tax_mult = 0.5
@@ -2227,13 +2232,14 @@ wonder_thaurband_03 = { #Tharbaud, city of slaves
 	
 	is_enabled = {
 		scope:holder = {
-			NOT = {
+			NOR = {
 				religion = { is_in_family = rf_eruhini }
+				faith = { has_doctrine = doctrine_echoes_of_the_ainur }
 			}
 		}
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_economic
@@ -2268,7 +2274,7 @@ wonder_black_gate = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_martial
@@ -2305,7 +2311,7 @@ wonder_palace_of_haruzan_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_northern_apysaic }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_palace_of_haruzan_02
 	type = special
@@ -2338,7 +2344,7 @@ wonder_palace_of_haruzan_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_northern_apysaic }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_palace_of_haruzan_03
 	type = special
@@ -2380,7 +2386,7 @@ wonder_palace_of_haruzan_03 = {
 		scope:holder.culture = { has_innovation = innovation_mumakil_domestication }
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_palace_of_haruzan_04
 	type = special
@@ -2422,7 +2428,7 @@ wonder_palace_of_haruzan_04 = {
 		scope:holder.culture = { has_innovation = innovation_mumakil_domestication }
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_diplomatic
@@ -2467,7 +2473,7 @@ wonder_mirlond = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_economic
@@ -2512,7 +2518,7 @@ wonder_ramlond = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_economic
@@ -2557,7 +2563,7 @@ wonder_ancalimon = {
 		}
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_wonder
@@ -2724,7 +2730,7 @@ wonder_umbar_01 = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_umbar_02
 	type = special
@@ -2773,7 +2779,7 @@ wonder_umbar_02 = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_umbar_03
 	type = special
@@ -2824,7 +2830,7 @@ wonder_umbar_03 = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_umbar_04
 	type = special
@@ -2881,7 +2887,7 @@ wonder_umbar_04 = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_economic
@@ -2925,7 +2931,7 @@ wonder_umbar_citadel = {
 	#	}
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_martial_minor
@@ -2945,7 +2951,7 @@ wonder_arminalethor_01 = {
 				has_innovation = innovation_hoardings
 			}
 			culture = {	has_cultural_pillar = heritage_northern_adunaic	}
-			has_primary_title = title:e_adunaim 
+			has_title = title:e_adunaim 
 		}
 	}
 	county_modifier = {
@@ -2957,16 +2963,16 @@ wonder_arminalethor_01 = {
 	is_enabled = {
 		scope:holder = {
 			culture = {
-				OR = {
+				#OR = {
 					has_cultural_pillar = heritage_northern_adunaic
 					#has_cultural_pillar = heritage_southern_adunaic
-				}
+				#}
 			}
-			has_primary_title = title:e_adunaim 
+			has_title = title:e_adunaim 
 		}
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_arminalethor_02
 	type = special
@@ -2985,7 +2991,7 @@ wonder_arminalethor_02 = {
 				has_innovation = innovation_hoardings
 			}
 			culture = {	has_cultural_pillar = heritage_northern_adunaic	}
-			has_primary_title = title:e_adunaim 
+			has_title = title:e_adunaim 
 		}
 	}
 	county_modifier = {
@@ -3001,16 +3007,16 @@ wonder_arminalethor_02 = {
 	is_enabled = {
 		scope:holder = {
 			culture = {
-				OR = {
+				#OR = {
 					has_cultural_pillar = heritage_northern_adunaic
 					#has_cultural_pillar = heritage_southern_adunaic
-				}
+				#}
 			}
-			has_primary_title = title:e_adunaim 
+			has_title = title:e_adunaim 
 		}
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_arminalethor_03
 	type = special
@@ -3028,7 +3034,7 @@ wonder_arminalethor_03 = {
 				has_innovation = innovation_hoardings
 			}
 			culture = {	has_cultural_pillar = heritage_northern_adunaic	}
-			has_primary_title = title:e_adunaim 
+			has_title = title:e_adunaim 
 		}
 	}
 	county_modifier = {
@@ -3045,16 +3051,16 @@ wonder_arminalethor_03 = {
 	is_enabled = {
 		scope:holder = {
 			culture = {
-				OR = {
+				#OR = {
 					has_cultural_pillar = heritage_northern_adunaic
 					#has_cultural_pillar = heritage_southern_adunaic
-				}
+				#}
 			}
-			has_primary_title = title:e_adunaim 
+			has_title = title:e_adunaim 
 		}
 	}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_diplomatic
@@ -3135,8 +3141,8 @@ wonder_souk_mazharath = { #Great Souk of Mazharath
 	can_construct = {
 		scope:holder = {
 			culture = {
-					has_innovation = innovation_currency_01 
-					has_innovation = innovation_ledger 
+				has_innovation = innovation_currency_01 
+				has_innovation = innovation_ledger 
 			}
 		}
 	}
@@ -3427,13 +3433,13 @@ wonder_coves_irtil = { #Coves of Irtîl
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder = {
-			}
 		}
+	}
 	character_modifier = {
 		hostile_raid_time = 0.25
 		mercenary_hire_cost_mult = -0.2
 		monthly_income = 1
-			}
+	}
 	is_enabled = {
 		scope:holder.faith = faith:faith_corsair
 	}
@@ -3453,8 +3459,8 @@ wonder_beacon_sornomar = { #Beacon of Sornomar
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder = {
-			}
 		}
+	}
 	character_modifier = {
 		monthly_prestige = 0.2
 	}
@@ -3482,12 +3488,12 @@ wonder_shipyards_nykkea = { #Shipyards of Nykkea
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder = {
-			}
 		}
+	}
 	character_modifier = {
 		monthly_income = 2
 		embarkation_cost_mult = -0.25
-			}
+	}
 	#is_enabled = {
 	#	scope:holder = {
 	#	}
@@ -3508,8 +3514,8 @@ wonder_arch_ciryandur = { #Arch of Ciryandur
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder = {
-			}
 		}
+	}
 	character_modifier = {
 		monthly_prestige = 0.5
 		same_culture_opinion = 5
@@ -3533,8 +3539,8 @@ wonder_haven_korlea = { #Great Haven of Korlea
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder = {
-			}
 		}
+	}
 	character_modifier = {
 		tax_mult = 0.2
 		levy_size = 0.1
@@ -3560,8 +3566,8 @@ wonder_pillar_urez = { #Pillar of Ûrêzâyaneth
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder = {
-			}
 		}
+	}
 	character_modifier = {
 		monthly_piety = 0.5 # Made in respect to Manwe
 		monthly_prestige = 0.2
@@ -3686,7 +3692,7 @@ wonder_temple_city_of_pred_01 = {
 		tax_mult = 0.1
 	}
 	is_enabled = {
-		or = {
+		OR = {
 			scope:holder.culture = { has_cultural_pillar = heritage_druedain }
 			scope:holder.culture = { has_cultural_pillar = heritage_moriquendi }
 		}
@@ -3720,7 +3726,7 @@ wonder_temple_city_of_pred_02 = {
 		tax_mult = 0.2
 	}
 	is_enabled = {
-		or = {
+		OR = {
 			scope:holder.culture = { has_cultural_pillar = heritage_druedain }
 			scope:holder.culture = { has_cultural_pillar = heritage_moriquendi }
 		}
@@ -3757,7 +3763,7 @@ wonder_temple_city_of_pred_03 = {
 		development_growth_factor = 0.2
 	}
 	is_enabled = {
-		or = {
+		OR = {
 			scope:holder.culture = { has_cultural_pillar = heritage_druedain }
 			scope:holder.culture = { has_cultural_pillar = heritage_moriquendi }
 		}
@@ -3798,7 +3804,7 @@ wonder_marath_kharadune_01 = {
 	#}
 
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_marath_kharadune_02
 	type = special
@@ -3908,7 +3914,7 @@ wonder_lighthouse_of_adunazain = {
 	}
 
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_wonder
@@ -3942,7 +3948,7 @@ wonder_abaraglareth = {
 		garrison_size = 1
 	}
 	character_modifier = {
-        	dread_gain_mult = 0.2
+        dread_gain_mult = 0.2
 	}
 	county_modifier = {
 		development_growth = 0.3
@@ -3955,7 +3961,7 @@ wonder_abaraglareth = {
 	ai_value = {
 		base = 100
 	}
-		type = special
+	type = special
 }
 
 ### Abrakhan Wonders ###
@@ -4301,8 +4307,8 @@ wonder_hamat_maresh_01 = { # Refuge of Maresh
 	ai_value = {
 		base = 10
 	}
-	
 }
+
 wonder_hamat_maresh_02 = { # Refuge of Maresh
 	type_icon = "icon_building_plantations.dds"
 	construction_time = very_slow_construction_time
@@ -4325,8 +4331,8 @@ wonder_hamat_maresh_02 = { # Refuge of Maresh
 	ai_value = {
 		base = 10
 	}
-	
 }
+
 wonder_hamat_maresh_03 = { # Refuge of Maresh
 	type_icon = "icon_building_plantations.dds"
 	flag = fully_upgraded
@@ -4349,7 +4355,6 @@ wonder_hamat_maresh_03 = { # Refuge of Maresh
 	ai_value = {
 		base = 10
 	}
-	
 }
 
 ### Anduin Vale ###
@@ -4372,8 +4377,8 @@ wonder_beorns_hall = {
 	}
 	
 	character_modifier = {
-        	dread_gain_mult = 0.2
-			monthly_prestige = 0.5
+        dread_gain_mult = 0.2
+		monthly_prestige = 0.5
 	}
 
 	
@@ -4459,7 +4464,7 @@ wonder_melburg_walls = {
 	ai_value = {
 		base = 100
 	}
-		type = special
+	type = special
 	flag = travel_point_of_interest_martial_minor
 }
 
@@ -4475,17 +4480,17 @@ wonder_framsburg_01 = { #Framsburg
 	can_construct = {
 		#building_requirement_castle_city_church = { LEVEL = 02 }
 		scope:holder = {
-				culture = {
-					has_innovation = innovation_hoardings
-				}
-				#OR = {
-				#	culture = culture:eotheod
-				#	culture = { any_parent_culture_or_above = { this = culture:eotheod } }
-				#}
-				OR = {
-					culture = { has_cultural_pillar = heritage_northron }
-					culture = { has_cultural_pillar = heritage_hadorim }
-				}
+			culture = {
+				has_innovation = innovation_hoardings
+			}
+			#OR = {
+			#	culture = culture:eotheod
+			#	culture = { any_parent_culture_or_above = { this = culture:eotheod } }
+			#}
+			OR = {
+				culture = { has_cultural_pillar = heritage_northron }
+				culture = { has_cultural_pillar = heritage_hadorim }
+			}
 		}
 	}	
 	county_modifier = {
@@ -4541,7 +4546,7 @@ wonder_framsburg_02 = { #Ruins of Framsburg
 	}
 
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_framsburg_03	
 	type = special
@@ -4556,17 +4561,17 @@ wonder_framsburg_03 = { #Great Stables of Fram
 	can_construct = {
 		#building_requirement_castle_city_church = { LEVEL = 02 }
 		scope:holder = {
-				culture = {
-					has_innovation = innovation_battlements
-				}
-				#OR = {
-				#	culture = culture:eotheod
-				#	culture = { any_parent_culture_or_above = { this = culture:eotheod } }
-				#}
-				OR = {
-					culture = { has_cultural_pillar = heritage_northron }
-					culture = { has_cultural_pillar = heritage_hadorim }
-				}
+			culture = {
+				has_innovation = innovation_battlements
+			}
+			#OR = {
+			#	culture = culture:eotheod
+			#	culture = { any_parent_culture_or_above = { this = culture:eotheod } }
+			#}
+			OR = {
+				culture = { has_cultural_pillar = heritage_northron }
+				culture = { has_cultural_pillar = heritage_hadorim }
+			}
 		}
 	}	
 	county_modifier = {
@@ -4659,8 +4664,8 @@ wonder_amon_lanc_02 = { #Dol Guldur
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 02 }
 		scope:holder = {
-				faith_is_evil = yes 
-			}		
+			faith_is_evil = yes 
+		}		
 	}
 	province_modifier = {
 		fort_level = 2
@@ -4677,7 +4682,7 @@ wonder_amon_lanc_02 = { #Dol Guldur
 	}
 	is_enabled = {
 		scope:holder = {
-				faith_is_evil = yes 
+			faith_is_evil = yes 
 		}
 	}
 	
@@ -4707,8 +4712,8 @@ wonder_amon_lanc_03 = { #Amon Lanc Renewed
 	}
 	is_enabled = {
        scope:holder = {
-               is_eldar = yes
-       } 
+            is_eldar = yes
+		}
 	}
 	
 	ai_value = {
@@ -4724,7 +4729,7 @@ wonder_amarthrynd_01 = { # Amarthrynd
 	construction_time = slow_construction_time
 	cost_gold = 500
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		building_requirement_refuge = { LEVEL = 01 }
 		scope:holder = {
 		}
 	}
@@ -4757,8 +4762,8 @@ wonder_amarthrynd_02 = { #Ungolthrynd
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 02 }
 		scope:holder = {
-				faith_is_evil = yes 
-			}		
+			faith_is_evil = yes 
+		}		
 	}
 	province_modifier = {
 		fort_level = 1
@@ -4769,7 +4774,7 @@ wonder_amarthrynd_02 = { #Ungolthrynd
 	}
 	is_enabled = {
 		scope:holder = {
-				faith_is_evil = yes 
+			faith_is_evil = yes 
 		}
 	}
 	
@@ -4787,9 +4792,10 @@ wonder_amarthrynd_03 = { #Amarthrynd Renewed
 	construction_time = very_slow_construction_time
 	cost_gold = 500
 	can_construct = {
+		building_requirement_refuge = { LEVEL = 01 }
         scope:holder = {
-                is_eldar = yes
-            } 	
+            is_eldar = yes
+        } 	
 	}
 	character_modifier = {
 		development_growth = 0.1
@@ -4800,8 +4806,8 @@ wonder_amarthrynd_03 = { #Amarthrynd Renewed
 	}
 	is_enabled = {
        scope:holder = {
-               is_eldar = yes
-       } 
+            is_eldar = yes
+    	}
 	}
 	
 	ai_value = {
@@ -4926,7 +4932,7 @@ wonder_esgaroth = { # Lake-Town
 	#}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_economic
@@ -4974,7 +4980,7 @@ wonder_high_hall_alcisbaurg = { # The Royal Hall of Alcisbaurg
 	}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_martial
@@ -5013,7 +5019,7 @@ wonder_market_of_dale = { # Grand Royal Market of Dale
 	#}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_economic
@@ -5059,7 +5065,7 @@ wonder_szrel_kain = { # The seat of Tyrants
 	}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_martial
@@ -5098,7 +5104,7 @@ wonder_mistrand_01 = { # Ancient Metropole of Mistrand - the walls
 	#}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_learning
@@ -5139,7 +5145,7 @@ wonder_mistrand_02 = { # Ancient Metropole of Mistrand - University of Mistrand
 	#}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_learning
@@ -5182,10 +5188,62 @@ wonder_mistrand_03 = { # Ancient Metropole of Mistrand - Jewel of the Inland Sea
 	#}
 	
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_learning
+}
+
+wonder_lest_01 = { # Ancient Metropole of Mistrand - the walls
+	type_icon = "icon_structure_cologne_cathedral.dds"
+	
+	construction_time = very_slow_construction_time
+	cost_gold = 1000
+    cost_piety = 1000
+    cost_prestige = 1000
+	can_construct = {
+		OR = {
+			building_requirement_refuge = { LEVEL = 02 }
+			building_requirement_castle_city_church = { LEVEL = 02 }
+		}
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+	}
+
+	character_modifier = {
+		monthly_piety = 0.5
+		same_faith_opinion = 15
+		#monthly_income = 1
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		build_gold_cost = -0.20
+		tax_mult = 0.20
+	}
+
+
+    # Help to resist the stress to the fading effect
+    # Holder gain piety by month
+	
+	ai_value = {
+		base = 100
+	}
+	#next_building = wonder_temple_sulereb_02
+	type = special
+	flag = travel_point_of_interest_religious
 }
 
 ### Nelornieth ###
@@ -5493,7 +5551,7 @@ wonder_cameth_brin_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_cameth_brin_02
 	type = special
@@ -5519,7 +5577,7 @@ wonder_cameth_brin_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_cameth_brin_03
 	type = special
@@ -5627,7 +5685,7 @@ wonder_barrow_downs_01 = {
 	}
 
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_barrow_downs_02
 	type = special
@@ -5654,7 +5712,7 @@ wonder_barrow_downs_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_barrow_downs_03
 	type = special
@@ -5721,7 +5779,7 @@ wonder_thalion_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_thalion_02
 	type = special
@@ -5752,7 +5810,7 @@ wonder_thalion_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_thalion_03
 	type = special
@@ -5844,7 +5902,7 @@ wonder_argond_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_argond_02
 	type = special
@@ -5869,7 +5927,7 @@ wonder_argond_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_argond_03
 	type = special
@@ -5939,7 +5997,7 @@ wonder_lond_daer_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_lond_daer_02
 	type = special
@@ -5966,7 +6024,7 @@ wonder_lond_daer_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_lond_daer_03
 	type = special
@@ -6039,7 +6097,7 @@ wonder_tharbad_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_tharbad_02
 	type = special
@@ -6077,7 +6135,7 @@ wonder_tharbad_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_tharbad_03
 	type = special
@@ -6182,7 +6240,7 @@ wonder_mistalonde_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_mistalonde_02
 	type = special
@@ -6212,7 +6270,7 @@ wonder_mistalonde_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_mistalonde_03
 	type = special
@@ -6346,6 +6404,7 @@ wonder_barad_girithlin_01 = {
 
 # Annúminas 
 wonder_annuminas_01 = {
+	asset = { type = pdxmesh name = "annuminas_01_mesh" }
 	type_icon = "icon_wonder_minas_tirith.dds"
 	
 	construction_time = very_slow_construction_time
@@ -6377,13 +6436,14 @@ wonder_annuminas_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_annuminas_02
 	type = special
 	flag = travel_point_of_interest_diplomatic
 }	
 wonder_annuminas_02 = {
+	asset = { type = pdxmesh name = "annuminas_ruins_mesh" }
 	type_icon = "icon_wonder_minas_tirith.dds"
 	
 	construction_time = very_slow_construction_time
@@ -6404,13 +6464,14 @@ wonder_annuminas_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_annuminas_03
 	type = special
 	flag = travel_point_of_interest_diplomatic
 }
 wonder_annuminas_03 = {
+	asset = { type = pdxmesh name = "annuminas_01_mesh" }
 	type_icon = "icon_wonder_minas_tirith.dds"
 	
 	construction_time = very_slow_construction_time
@@ -6472,7 +6533,7 @@ wonder_fornost_01 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_fornost_02
 	type = special
@@ -6509,7 +6570,7 @@ wonder_fornost_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_fornost_03
 	type = special
@@ -6539,7 +6600,7 @@ wonder_fornost_03 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_fornost_04
 	type = special
@@ -6685,7 +6746,7 @@ wonder_amon_sul_02 = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
 	#}
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	next_building = wonder_amon_sul_03
 	type = special
@@ -7152,7 +7213,7 @@ wonder_azan_zaram_01 = {
 
 
 	ai_value = {
-	base = 100
+		base = 100
 	}
 	type = special
 	flag = travel_point_of_interest_learning

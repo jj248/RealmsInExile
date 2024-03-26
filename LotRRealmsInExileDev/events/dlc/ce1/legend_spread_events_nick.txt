@@ -3642,7 +3642,7 @@ legend_spread_events.5210 = {
 		}
 
 		promoted_legend = {
-			set_legend_chapter = { name = discovery localization_key = legend_chapter_discovery_befriended_cyclops }
+			set_legend_chapter = { name = discovery localization_key = legend_chapter_discovery_befriended_troll }
 		}
 
 		give_nickname = nick_the_cyclops
@@ -3673,7 +3673,7 @@ legend_spread_events.5210 = {
 		name = legend_spread_events.5210.b
 
 		promoted_legend = {
-			set_legend_chapter = { name = discovery localization_key = legend_chapter_discovery_cyclops }
+			set_legend_chapter = { name = discovery localization_key = legend_chapter_discovery_troll }
 			change_legend_quality_effect = {
 				VALUE = minor_legend_quality_increase
 			}
@@ -6560,8 +6560,14 @@ legend_spread_events.5325 = {
 						this = root		
 					}
 				}
-				legend_owner = { is_within_diplo_range = { CHARACTER = root } }
+				legend_owner = {
+					is_within_diplo_range = { CHARACTER = root }
+					is_wastelands = no # LOTR
+					same_alignment = { TARGET = ROOT }
+				}
 			}
+			is_wastelands = no # LOTR
+			same_alignment = { TARGET = ROOT }
 		}
 	}
 
@@ -6577,7 +6583,13 @@ legend_spread_events.5325 = {
 							this = root		
 						}
 					}
+					legend_owner = {
+						is_wastelands = no # LOTR
+						same_alignment = { TARGET = ROOT }
+					}
 				}
+				is_wastelands = no # LOTR
+				same_alignment = { TARGET = ROOT }
 			}
 			save_scope_as = legend_person
 			random_legend = { #Grab the legend itself

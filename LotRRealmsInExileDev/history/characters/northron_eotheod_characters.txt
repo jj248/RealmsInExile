@@ -584,6 +584,7 @@ theodenswife = {
 	trait = cynical
 	trait = arrogant
 	trait = beauty_good_2
+	trait = widowed
 	6955.10.27 = {
 		birth = yes
 	}
@@ -899,6 +900,7 @@ theodensister3 = { # Sister of Théoden
 	trait = humble
 	trait = compassionate
 	trait = lifestyle_blademaster
+	trait = cannot_marry
 	7011.3.23 = {
 		birth = yes
 		effect = {

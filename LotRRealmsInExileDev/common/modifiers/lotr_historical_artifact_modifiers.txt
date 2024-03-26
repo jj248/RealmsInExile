@@ -193,7 +193,6 @@ silmaril_modifier = {
 	prowess_no_portrait = 50
 	monthly_prestige = 100
 	monthly_piety = 100
-	enemy_hostile_scheme_success_chance_add = -1000
 }
 
 athrad_gillith_harp_modifier = {
@@ -211,6 +210,13 @@ hyandolire_modifier = {
 	heavy_cavalry_toughness_mult = 0.10
 	enemy_hard_casualty_modifier = 0.10
 	monthly_prestige = 0.3
+}
+
+rop_modifier = {
+	adunai_religion_opinion = 10
+	elven_religion_opinion = -10
+	monthly_learning_lifestyle_xp_gain_mult = -0.05
+	monthly_prestige = 0.5
 }
 
 

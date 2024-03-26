@@ -327,6 +327,11 @@ isengard.0004 = { # The War for Rohan - Rohan Victory (Rohan Perspective)
 		
 		destroy_title = title:e_isengard_unleashed
 		destroy_title = title:k_isengard
+
+		if = { #Theodred can marry, if he's alive
+			limit = { character:6000034 = { has_trait = cannot_marry } }
+			character:6000034 = { remove_trait = cannot_marry }
+		}
 		
 		character:lineofsaruman = { # The King of Rohan seizes the Palantir
 			every_character_artifact = {
@@ -346,10 +351,20 @@ isengard.0004 = { # The War for Rohan - Rohan Victory (Rohan Perspective)
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
-		title:c_isengard = {
-			change_title_holder = {
-				holder = root
-				change = scope:change
+		if = {
+			limit = {
+				title:c_isengard.holder = {
+					OR = {
+						this = character:lineofsaruman
+						any_liege_or_above = { this = character:lineofsaruman }
+					}
+				}
+			}
+			title:c_isengard = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
 			}
 		}
 		resolve_title_and_vassal_change = scope:change
@@ -6872,7 +6887,7 @@ isengard.0508 = { # Council of the Wise - Elrond
 				stacks = 3
 			}
 			men_at_arms = {
-				type = noldor_archers
+				type = high_elven_archers
 				stacks = 3
 			}
 			men_at_arms = {
@@ -6943,7 +6958,7 @@ isengard.0509 = { # Council of the Wise - Cirdan
 				stacks = 3
 			}
 			men_at_arms = {
-				type = sindar_nobility
+				type = grey_elven_heavy_cavalry
 				stacks = 2
 			}
 			men_at_arms = {

@@ -2454,6 +2454,41 @@ empire_female_dorwinion = {
 	name_lists = { name_list_dorwinion }
 }
 
+free_city_dorwinion = {
+	type = title
+	#gender = male
+	special = title
+	tier = county
+	priority = 900
+	name_lists = { name_list_dorwinion }
+}
+
+league_dorwinion = {
+	type = title
+	#gender = male
+	special = title
+	tier = duchy
+	priority = 900
+	name_lists = { name_list_dorwinion }
+}
+
+realm_dorwinion = {
+	type = title
+	#gender = male
+	special = title
+	tier = kingdom
+	priority = 900
+	name_lists = { name_list_dorwinion }
+}
+
+assembly_of_realms_dorwinion = {
+	type = title
+	#gender = male
+	special = title
+	tier = empire
+	priority = 900
+	name_lists = { name_list_dorwinion }
+}
 
 #############
 ### ELVEN ###
@@ -2878,6 +2913,16 @@ empire_daen = {
 	only_holder = yes
 	heritages = { heritage_daen_coentis heritage_daen_lintis heritage_danan_lin heritage_druedain }
 	priority = 300
+}
+
+kingdom_nurn_free_slaves = {
+	type = title
+	tier = kingdom
+	heritages = { heritage_danan_lin }
+	faiths = { faith_nurn_good }
+	governments = { oligarchy_government }
+	titles = { k_nurn }
+	priority = 500
 }
 
 ### Goblin ###
@@ -3764,7 +3809,7 @@ king_oligarchy_male = {
 	gender = male
 	special = holder
 	tier = kingdom
-	priority = 460
+	priority = 290
 	top_liege = no
 	only_holder = no
 	governments = { oligarchy_government }
@@ -3774,7 +3819,7 @@ king_oligarchy_female = {
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 460
+	priority = 290
 	top_liege = no
 	only_holder = no
 	governments = { oligarchy_government }
@@ -3782,7 +3827,7 @@ king_oligarchy_female = {
 kingdom_oligarchy = {
 	type = title
 	tier = kingdom
-	priority = 460
+	priority = 290
 	top_liege = no
 	only_holder = no
 	governments = { oligarchy_government }
