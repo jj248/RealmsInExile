@@ -57,43 +57,7 @@ chance_for_random_nickname_effect = {
 						is_male = yes
 						is_elf = no
 						cannot_be_killed = no
-						OR = {
-							AND = {
-								is_orc = yes
-								age >= 230
-							}
-							AND = {
-								has_trait = blood_of_numenor_4
-								age >= 210
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age >= 150
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age >= 90
-							}
-							AND = {
-								has_trait = skinchanger
-								age >= 60
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age >= 50
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-									is_orc = yes
-								}
-								age >= 30
-							}
-						}
+						age > young_age
 						stress >= 100
 						NOT = { culture = { portrait_african_clothing_contents_trigger = yes } } # They have a chance to be bald normally; it's not weird or tease-worthy
 					}
@@ -1698,82 +1662,10 @@ chance_for_random_nickname_effect = {
 					trigger = {
 						is_elf = no
 						cannot_be_killed = no
-						OR = {
-							AND = {
-								is_orc = yes
-								age >= 260
-							}
-							AND = {
-								has_trait = blood_of_numenor_4
-								age >= 250
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age >= 180
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age >= 120
-							}
-							AND = {
-								has_trait = skinchanger
-								age >= 90
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age >= 80
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-									is_orc = yes
-								}
-								age >= 60
-							}
-						}
+						health_age_equivalent > 60
 					}
 					modifier = {
-						OR = {
-							AND = {
-								is_orc = yes
-								age >= 280
-							}
-							AND = {
-								has_trait = blood_of_numenor_4
-								age >= 270
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age >= 200
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age >= 140
-							}
-							AND = {
-								has_trait = skinchanger
-								age >= 110
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age >= 100
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-									is_orc = yes
-								}
-								age >= 80
-							}
-						}
+						health_age_equivalent > 80
 						factor = 5
 					}
 					give_nickname = nick_the_old
@@ -1798,47 +1690,7 @@ chance_for_random_nickname_effect = {
 				100 = {
 					trigger = {
 						prestige_level >= 4
-						OR = {
-							AND = {
-								is_elf = yes
-								age <= 500
-							}
-							AND = {
-								is_orc = yes
-								age <= 223
-							}
-							AND = {
-								has_trait = blood_of_numenor_4
-								age <= 213
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age <= 143
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age <= 83
-							}
-							AND = {
-								has_trait = skinchanger
-								age <= 53
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age <= 43
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-									is_orc = yes
-								}
-								age <= 23
-							}
-						}
+						age <= young_age
 					}
 					modifier = {
 						prestige_level >= 5
@@ -1922,39 +1774,7 @@ chance_for_random_nickname_effect = {
 						has_conventionally_attractive_trigger = yes
 						cannot_be_killed = no
 						is_orc = no
-						OR = {
-							is_elf = yes
-							AND = {
-								has_trait = blood_of_numenor_4
-								age <= 230
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age <= 160
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age <= 100
-							}
-							AND = {
-								has_trait = skinchanger
-								age <= 70
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age <= 60
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-								}
-								age <= 40
-							}
-						}
+						age <= middle_age
 						NOR = {
 							has_trait = disfigured
 							has_trait = leper
@@ -1979,39 +1799,7 @@ chance_for_random_nickname_effect = {
 						has_conventionally_attractive_trigger = yes
 						cannot_be_killed = no
 						is_orc = no
-						OR = {
-							is_elf = yes
-							AND = {
-								has_trait = blood_of_numenor_4
-								age <= 230
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age <= 160
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age <= 100
-							}
-							AND = {
-								has_trait = skinchanger
-								age <= 70
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age <= 60
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-								}
-								age <= 40
-							}
-						}
+						age <= middle_age
 						NOR = {
 							has_trait = disfigured
 							has_trait = leper
@@ -2063,39 +1851,7 @@ chance_for_random_nickname_effect = {
 						has_trait = beauty_good
 						cannot_be_killed = no
 						is_orc = no
-						OR = {
-							is_elf = yes
-							AND = {
-								has_trait = blood_of_numenor_4
-								age <= 230
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age <= 160
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age <= 100
-							}
-							AND = {
-								has_trait = skinchanger
-								age <= 70
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age <= 60
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-								}
-								age <= 40
-							}
-						}
+						age < middle_age
 						NOR = {
 							has_trait = disfigured
 							has_trait = leper
@@ -2429,6 +2185,9 @@ chance_for_random_nickname_effect = {
 							has_trait = pneumonic
 							has_trait = typhus
 							has_trait = smallpox
+							has_trait = measles
+							has_trait = dysentery
+							has_trait = ergotism
 							has_trait = bubonic_plague
 						}
 						prestige_level <= 1
@@ -2592,6 +2351,9 @@ chance_for_random_nickname_effect = {
 							has_trait = pneumonic
 							has_trait = typhus
 							has_trait = smallpox
+							has_trait = measles
+							has_trait = dysentery
+							has_trait = ergotism
 							has_trait = bubonic_plague
 						}
 						prestige_level <= 1
@@ -2690,8 +2452,14 @@ chance_for_random_nickname_effect = {
 							has_trait = blood_of_numenor_2
 							has_trait = blood_of_numenor_3
 							has_trait = blood_of_numenor_4
+							has_trait = blood_of_numenor_5
+							has_trait = blood_of_numenor_6
+							has_trait = blood_of_numenor_7
+							has_trait = blood_of_numenor_8
+							has_trait = blood_of_numenor_9
+							has_trait = blood_of_numenor_10
 						}
-						age >= 30
+						age >= young_age
 						learning >= 16
 						OR = {
 							has_trait = lifestyle_mystic
@@ -2790,43 +2558,7 @@ chance_for_random_nickname_effect = {
 					trigger = {
 						is_elf = no
 						cannot_be_killed = no
-						OR = {
-							AND = {
-								is_orc = yes
-								age >= 260
-							}
-							AND = {
-								has_trait = blood_of_numenor_4
-								age >= 250
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age >= 180
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age >= 120
-							}
-							AND = {
-								has_trait = skinchanger
-								age >= 90
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age >= 80
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-									is_orc = yes
-								}
-								age >= 60
-							}
-						}
+						age > old_age
 						health >= good_health
 					}
 					give_nickname = nick_the_undying
@@ -2922,43 +2654,7 @@ chance_for_random_nickname_effect = {
 					trigger = {
 						is_elf = no
 						cannot_be_killed = no
-						OR = {
-							AND = {
-								is_orc = yes
-								age >= 275
-							}
-							AND = {
-								has_trait = blood_of_numenor_4
-								age >= 265
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age >= 195
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age >= 135
-							}
-							AND = {
-								has_trait = skinchanger
-								age >= 105
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age >= 95
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-									is_orc = yes
-								}
-								age >= 75
-							}
-						}
+						health_age_equivalent > 75
 						piety_level >= 2
 					}
 					modifier = {
@@ -3176,43 +2872,7 @@ chance_for_random_nickname_effect = {
 					trigger = {
 						is_elf = no
 						cannot_be_killed = no
-						OR = {
-							AND = {
-								is_orc = yes
-								age >= 275
-							}
-							AND = {
-								has_trait = blood_of_numenor_4
-								age >= 265
-							}
-							AND = {
-								has_trait = blood_of_numenor_3
-								age >= 195
-							}
-							AND = {
-								has_trait = blood_of_numenor_2
-								age >= 135
-							}
-							AND = {
-								has_trait = skinchanger
-								age >= 105
-							}
-							AND = {
-								has_trait = blood_of_numenor_1
-								age >= 95
-							}
-							AND = {
-								NOR = {
-									has_trait = blood_of_numenor_1
-									has_trait = blood_of_numenor_2
-									has_trait = blood_of_numenor_3
-									has_trait = blood_of_numenor_4
-									has_trait = skinchanger
-									is_orc = yes
-								}
-								age >= 75
-							}
-						}
+						health_age_equivalent > 75
 					}
 					give_nickname = nick_the_elder
 					trigger_event = lifestyle_nicknames.1000
@@ -3573,6 +3233,21 @@ chance_for_random_nickname_effect = {
 						court_grandeur_current_level >= 9
 					}
 					give_nickname = nick_the_lover_of_elegance
+					trigger_event = lifestyle_nicknames.1000
+				}
+				100 = {
+					trigger = {
+						OR = {
+							has_trait = strong
+							has_trait = physique_good
+						}
+						NOR = {
+							has_trait = weak
+							has_trait = spindly
+							has_trait = physique_bad
+						}
+					}
+					give_nickname = nick_the_stout
 					trigger_event = lifestyle_nicknames.1000
 				}
 				10 = {

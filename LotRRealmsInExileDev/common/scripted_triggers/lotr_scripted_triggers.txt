@@ -244,6 +244,14 @@ lotr_steppe_cultures_trigger = {
 	}
 }
 
+lotr_has_sauron_faith = { # For destroy mordor religious effects
+	OR = {
+		faith = faith:lidless_eye
+		faith = faith:red_eye_cult
+		faith = faith:cult_of_zigur
+		faith = faith:faith_angmar_evil
+	}
+}
 ############################
 ### MEN-AT-ARMS TRIGGERS ###
 ############################
@@ -1846,5 +1854,41 @@ has_movie_sountracks = {
 		culture = { has_cultural_pillar = heritage_northron } # Dale & Laketown music
 		religion = { is_in_family = rf_forcesofevil } # Isengard and Mordor music
 		is_orc = yes
+	}
+}
+
+##########################
+### Diplomacy Triggers ###
+##########################
+
+# Checks whether the ROOT character has a defensive alliance with the RECIPIENT
+# Assumes || Character || scope
+is_defensive_allied_to = {
+	trigger_if = {
+		limit = { has_variable_list = defensive_allies }
+		is_target_in_variable_list = {
+			name = defensive_allies
+			target = $RECIPIENT$
+		}
+	}
+	trigger_else = { always = no }
+}
+
+has_defensive_alliance = {
+	has_variable_list = defensive_allies
+}
+
+has_numenorean_trait = {
+	OR = {
+		has_trait = blood_of_numenor_1
+		has_trait = blood_of_numenor_2
+		has_trait = blood_of_numenor_3
+		has_trait = blood_of_numenor_4
+		has_trait = blood_of_numenor_5
+		has_trait = blood_of_numenor_6
+		has_trait = blood_of_numenor_7
+		has_trait = blood_of_numenor_8
+		has_trait = blood_of_numenor_9
+		has_trait = blood_of_numenor_10
 	}
 }

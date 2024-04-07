@@ -521,6 +521,16 @@ travel_events.1001 = {
 		name = travel_events.1000.b
 		trigger = {
 			scope:shoeless_peasant = { is_landed = no }
+			NOR = {
+				AND = {
+					is_elf = no
+					scope:shoeless_peasant = { is_elf = yes }
+				}
+				AND = {
+					faith_is_evil = no
+					scope:shoeless_peasant = { is_orc = yes }
+				}
+			}
 		}
 		add_courtier = scope:shoeless_peasant
 		root.current_travel_plan = {
@@ -1088,7 +1098,7 @@ travel_events.1010 = {
 				gender_female_chance = root_soldier_female_chance
 				template_character = root
 				random_traits = yes
-				age = { 18 50 }
+				age = { nubile_age middle_age } # LotR racial age adjustment
 				martial = {
 					min_template_low_skill
 					max_template_average_skill
@@ -1143,7 +1153,7 @@ travel_events.1010 = {
 				gender_female_chance = root_soldier_female_chance
 				template_character = root
 				random_traits = yes
-				age = { 18 50 }
+				age = { nubile_age middle_age } # LotR racial age adjustment
 				martial = {
 					min_template_average_skill
 					max_template_decent_skill
@@ -1168,7 +1178,7 @@ travel_events.1010 = {
 			}
 			scope:great_travel_leader_option = {
 				# Add travel trait and randomized experience to both tracks
-				initialize_great_travel_leader_effect = yes 
+				initialize_great_travel_leader_effect = yes
 			}
 		}
 	}
@@ -1315,6 +1325,7 @@ travel_events.1020 = {
 			current_travel_plan = {
 				any_entourage_character = {
 					count >= 2
+					is_wastelands = no
 					can_be_employed_as = travel_leader_court_position
 				}
 			}
@@ -1329,13 +1340,14 @@ travel_events.1020 = {
 					any_entourage_character = {
 						count >= 2
 						can_be_employed_as = travel_leader_court_position
-
+						is_wastelands = no
 					}
 				}
 			}
 			current_travel_plan ?= {
 				ordered_entourage_character = {
 					limit = {
+						is_wastelands = no
 						can_be_employed_as = travel_leader_court_position
 						NOT = { has_court_position = travel_leader_court_position }
 					}
@@ -1345,6 +1357,7 @@ travel_events.1020 = {
 				ordered_entourage_character = {
 					order_by = stewardship 
 					limit = {
+						is_wastelands = no
 						NOT = { this = scope:temp_caravan_master_option_1 }
 						can_be_employed_as = travel_leader_court_position
 						NOT = { has_court_position = travel_leader_court_position }
@@ -1360,6 +1373,7 @@ travel_events.1020 = {
 					any_entourage_character = {
 						can_be_employed_as = travel_leader_court_position
 						NOT = { has_court_position = travel_leader_court_position }
+						is_wastelands = no
 					}
 				}
 			}
@@ -1368,6 +1382,7 @@ travel_events.1020 = {
 					limit = {
 						can_be_employed_as = travel_leader_court_position
 						NOT = { has_court_position = travel_leader_court_position }
+						is_wastelands = no
 					}
 					order_by = stewardship 
 					save_scope_as = temp_caravan_master_option_1
@@ -1408,7 +1423,7 @@ travel_events.1020 = {
 					random_traits = yes
 					culture = root.location.culture
 					faith = root.location.faith
-					age = { 18 50 }
+					age = { young_age middle_age }
 					martial = {
 						min_template_low_skill
 						max_template_average_skill
@@ -1442,7 +1457,7 @@ travel_events.1020 = {
 					gender_female_chance = root_soldier_female_chance
 					template_character = root
 					random_traits = yes
-					age = { 18 50 }
+					age = { young_age middle_age }
 					martial = {
 						min_template_low_skill
 						max_template_average_skill
@@ -1476,12 +1491,16 @@ travel_events.1020 = {
 				any_pool_character = {
 					province = root.location 
 					count >= 2
+					is_wastelands = no
 					can_be_employed_as = travel_leader_court_position
 				}
 			}
 			random_pool_character = {
 				province = root.location 
-				limit = { can_be_employed_as = travel_leader_court_position }
+				limit = { 
+					can_be_employed_as = travel_leader_court_position
+					is_wastelands = no
+				}
 				save_scope_as = temp_caravan_master_option_1
 			}
 			random_pool_character = {
@@ -1493,13 +1512,17 @@ travel_events.1020 = {
 		else_if = { # If there is one pool character, then we grab 'em then create a character
 			limit = {
 				any_pool_character = {
+					is_wastelands = no
 					province = root.location 
 					can_be_employed_as = travel_leader_court_position
 				}
 			}
 			random_pool_character = {
 				province = root.location 
-				limit = { can_be_employed_as = travel_leader_court_position }
+				limit = { 
+					is_wastelands = no
+					can_be_employed_as = travel_leader_court_position 
+				}
 				save_scope_as = temp_caravan_master_option_1
 			}
 			create_character = {
@@ -1507,7 +1530,7 @@ travel_events.1020 = {
 				gender_female_chance = root_soldier_female_chance
 				template_character = root
 				random_traits = yes
-				age = { 18 50 }
+				age = { young_age middle_age }
 				martial = {
 					min_template_low_skill
 					max_template_average_skill
@@ -1541,7 +1564,7 @@ travel_events.1020 = {
 				gender_female_chance = root_soldier_female_chance
 				template_character = root
 				random_traits = yes
-				age = { 18 50 }
+				age = { young_age middle_age }
 				martial = {
 					min_template_low_skill
 					max_template_average_skill
@@ -1573,7 +1596,7 @@ travel_events.1020 = {
 				gender_female_chance = root_soldier_female_chance
 				template_character = root
 				random_traits = yes
-				age = { 18 50 }
+				age = { young_age middle_age }
 				martial = {
 					min_template_low_skill
 					max_template_average_skill
@@ -1743,6 +1766,16 @@ travel_events.2200 = {
 			}
 		}
 		NOT = { location.culture = culture:wastelands }
+		NOR = {
+			AND = {
+				is_elf = no
+				location.culture = { is_elf_culture = yes }
+			}
+			AND = {
+				faith_is_evil = no
+				location.culture = { is_orc_culture = yes }
+			}
+		}
 	}
 
 	cooldown = { years = 10 }
@@ -2735,6 +2768,137 @@ travel_events.4050 = {
 		}
 		scope:friendly_child = {
 			remove_character_flag = singing_child
+		}
+	}
+}
+
+## CE1 Legend event
+# by Nick Meredith
+
+travel_events.5001 = { 
+	type = character_event
+	title = travel_events.5001.t
+	desc = travel_events.5001.desc
+	theme = travel_danger
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	override_background = { reference = wilderness_scope }
+	cooldown = { months = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		is_landed = yes
+		is_location_valid_for_travel_event_on_land = yes
+		location = {
+			any_province_legend = {
+				exists = legend_owner
+				NOT = {
+					legend_owner = root
+				}
+			}
+		}
+		current_travel_plan ?= {
+			any_entourage_character = {
+				is_available_travelling_adult = yes
+			}
+		}
+	}
+	immediate = {
+		location = {
+			save_scope_as = background_wilderness_scope
+			random_province_legend = {
+				limit = {
+					exists = legend_owner
+					NOT = {
+						legend_owner = root
+					}					
+				}
+				save_scope_as = potential_legend
+			}
+		}
+		current_travel_plan ?= {
+			random_entourage_character = {
+				limit = {
+					is_available_travelling_adult = yes
+				}
+				save_scope_as = travelling_character
+			}
+		}
+	}
+
+	# Take up the legend
+	option = { 
+		name = travel_events.5001.a
+
+		set_promoted_legend = scope:potential_legend
+
+		stress_impact = {
+			ambitious = miniscule_stress_impact_gain
+			humble = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = -0.5
+			}
+		}
+	}
+
+	#Carry it with you
+	option = { 
+		name = travel_events.5001.b
+
+		flavor = travel_events.5001.b.flavor
+
+		scope:potential_legend = {
+			add_legend_county_modifier = {
+				modifier = legend_secure_safe
+			}
+		}
+
+		stress_impact = {   
+			gregarious = miniscule_stress_impact_loss
+			shy = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = 1    
+			}
+		}
+	}
+
+	#Leave it
+	option = { 
+		name = travel_events.5001.c
+
+		if = {
+			limit = {
+				exists = promoted_legend
+				NOT = { promoted_legend = scope:potential_legend }
+			}
+			scope:potential_legend = {
+				change_legend_quality_effect = { VALUE = minor_legend_quality_increase }
+			}
+		}
+		else = {
+			add_prestige = minor_prestige_gain
+		}
+
+		stress_impact = {
+			ambitious = miniscule_stress_impact_loss
+			content = minor_stress_impact_gain
+			arrogant = miniscule_stress_impact_loss
+			humble = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = 1   
+			}
 		}
 	}
 }

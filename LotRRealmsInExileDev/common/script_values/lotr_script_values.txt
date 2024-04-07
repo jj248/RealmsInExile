@@ -189,6 +189,24 @@ colonise_cost = {
 	add = colonise_island_cost_val
 }
 
+ruined_holdings_count = {
+	value = 0
+
+	# every_held_title = { # On another branch, ftm
+	# 	limit = { 
+	# 		tier = tier_county
+	# 		title_province ?= { has_holding_type = settlement_holding } 
+	# 	}
+	# 	every_county_province = {
+	# 		limit = { 
+	# 			has_holding_type = ruined_holding
+	# 			is_county_capital = no 
+	# 		}
+	# 		add = 1
+	# 	}
+	# }
+}
+
 # Determines cost for colonisation for provinces on mainland.
 colonise_cost_val = { 
 	value = 0
@@ -249,7 +267,7 @@ colonise_cost_val = {
 	}
 	else_if = { # Adding cost for emporer if has special modifier
 		limit = { 
-			highest_held_title_tier = tier_empire 
+			highest_held_title_tier = tier_empire
 			dynasty = { has_dynasty_modifier = easy_arnor_settle }
 		}
 		add = {
@@ -511,45 +529,89 @@ chelkar_military_strength_times_two = {
 ### NÚMENÓREAN BLOOD VALUES ###
 get_numenorean_blood_tier = {
 	value = 0
-	if = {
+	if = { # Level 1 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 1
-			}
+			has_trait = blood_of_numenor_1
 		}
 		add = 1
 	}
-	else_if = {
+	else_if = { # Level 2 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 2
-			}
+			has_trait = blood_of_numenor_2
 		}
 		add = 2
 	}
-	else_if = {
+	else_if = { # Level 3 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 3
-			}
+			has_trait = blood_of_numenor_3
 		}
 		add = 3
 	}
-	else_if = {
+	else_if = { # Level 4 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 4
-			}
+			has_trait = blood_of_numenor_4
 		}
 		add = 4
+	}
+	else_if = { # Level 5 numenorean
+		limit = {
+			has_trait = blood_of_numenor_5
+		}
+		add = 5
+	}
+	else_if = { # Level 6 numenorean
+		limit = {
+			has_trait = blood_of_numenor_6
+		}
+		add = 6
+	}
+	else_if = { # Level 7 numenorean
+		limit = {
+			has_trait = blood_of_numenor_7
+		}
+		add = 7
+	}
+	else_if = { # Level 8 numenorean
+		limit = {
+			has_trait = blood_of_numenor_8
+		}
+		add = 8
+	}
+	else_if = { # Level 9 numenorean
+		limit = {
+			has_trait = blood_of_numenor_9
+		}
+		add = 9
+	}
+	else_if = { # Level 10 numenorean
+		limit = {
+			has_trait = blood_of_numenor_10
+		}
+		add = 10
 	}
 }
 
 numenorean_blood_tier = { value = get_numenorean_blood_tier }
+
+### Uses "scope:real_father" & "scope:mother" for the blood_of_numenor_events 
+get_numenorean_tier_difference = {
+	value = 0
+
+	if = {
+		limit = { scope:real_father.numenorean_blood_tier >= scope:mother.numenorean_blood_tier }
+		add = {
+			value = scope:real_father.numenorean_blood_tier
+			subtract = scope:mother.numenorean_blood_tier
+		}
+	}
+	else_if = {
+		limit = { scope:mother.numenorean_blood_tier >= scope:real_father.numenorean_blood_tier }
+		add = {
+			value = scope:mother.numenorean_blood_tier
+			subtract = scope:real_father.numenorean_blood_tier
+		}
+	}
+}
 
 ## MEN-AT-ARMS VALUES ###
 culture_ai_weight_monsters = {
@@ -633,27 +695,35 @@ tributary_gold_being_recieved = {
 	if = {
 		limit = {
 			exists = root
+			has_variable_list = non_permanent_tributaries
 			any_in_list = {
 				variable = non_permanent_tributaries
-				exists = this
+				count > 0
 			}
 		} 
 		every_in_list = {
 			variable = non_permanent_tributaries
-			add = var:tribute_gold_amount
+			if = {
+				limit = { has_variable = tribute_gold_amount }
+				add = var:tribute_gold_amount
+			}
 		}
 	}
 	if = {
 		limit = {
 			exists = root
+			has_variable_list = permanent_tributaries
 			any_in_list = {
 				variable = permanent_tributaries
-				exists = this
+				count > 0
 			}
 		}
 		every_in_list = {
 			variable = permanent_tributaries
-			add = var:tribute_gold_amount
+			if = {
+				limit = { has_variable = tribute_gold_amount }
+				add = var:tribute_gold_amount
+			}
 		}
 	}
 }
@@ -1039,5 +1109,211 @@ durins_helm_value = { # 5%
 			any_equipped_character_artifact = { has_variable = durins_helm }
 		}
 		add = 5
+	}
+}
+
+#############################
+### LotR Diplomacy Values ###
+#############################
+
+defensive_alliances = {
+	value = 0
+
+	if = {
+		limit = { 
+			trigger_if = {
+				limit = { is_alive = yes }
+				has_defensive_alliance = yes 
+			}
+			trigger_else = { always = no }
+		}
+		every_in_list = {
+			variable = defensive_allies
+			add = 1
+		}
+	}
+}
+
+################################
+### LotR Domain Limit Values ###
+################################
+
+character_domain_limit = {
+	value = 0
+
+	add = character_stewardship_domain_limit
+	add = character_rank_domain_limit
+	add = character_perks_domain_limit
+	add = character_domain_domain_limit
+	add = character_pacifism_domain_limit
+}
+
+character_rank_domain_limit = { # Done
+	value = 0
+
+	if = {
+		limit = { highest_held_title_tier = tier_empire }
+		add = 3
+	}
+	if = {
+		limit = { highest_held_title_tier = tier_kingdom }
+		add = 3
+	}
+	if = {
+		limit = { highest_held_title_tier = tier_duchy }
+		add = 2
+	}
+	if = {
+		limit = { highest_held_title_tier = tier_county }
+		add = 2
+	}
+}
+
+character_stewardship_domain_limit = { # Done
+	value = 0
+
+	add = {
+		value = stewardship
+		divide = 7
+		floor = yes
+	}
+}
+
+character_perks_domain_limit = {
+	value = 0
+
+	if = {
+		limit = { has_perk = divided_attention_perk }
+		value = 2
+	}
+}
+
+character_domain_domain_limit = {
+	value = 0
+
+	
+	every_held_title = {
+		limit = { tier = tier_county }
+		every_county_province = {
+			limit = { 
+				OR = {
+					has_building = economic_specialization_03
+					has_building = wonder_edhellond_02
+				}
+				barony.holder = root
+			}
+			add = 1
+		}
+	}
+}
+
+character_pacifism_domain_limit = {
+	value = 0
+	
+	if = {
+		limit = { faith = { has_doctrine = tenet_pacifism } }
+		add = 1
+	}
+}
+
+character_castles_held = {
+	value = 0
+
+	every_held_title = {
+		limit = { tier = tier_county }
+		every_county_province = {
+			limit = { 
+				has_holding_type = castle_holding
+				barony.holder = root
+			}
+			add = 1
+		}
+	}
+}
+
+character_cities_held = {
+	value = 0
+	
+	every_held_title = {
+		limit = { tier = tier_county }
+		every_county_province = {
+			limit = { 
+				has_holding_type = city_holding
+				barony.holder = root
+			}
+			add = 1
+		}
+	}
+}
+
+character_churches_held = {
+	value = 0
+	
+	every_held_title = {
+		limit = { tier = tier_county }
+		every_county_province = {
+			limit = { 
+				has_holding_type = church_holding
+				barony.holder = root
+			}
+			add = 1
+		}
+	}
+}
+
+character_elven_refuge_held = {
+	value = 0
+	
+	every_held_title = {
+		limit = { tier = tier_county }
+		every_county_province = {
+			limit = { 
+				has_holding_type = elven_holding
+				barony.holder = root
+			}
+			add = 1
+		}
+	}
+}
+
+character_delving_held = {
+	value = 0
+	
+	every_held_title = {
+		limit = { tier = tier_county }
+		every_county_province = {
+			limit = { 
+				has_holding_type = dwarven_holding
+				barony.holder = root
+			}
+			add = 1
+		}
+	}
+}
+
+character_tribe_held = {
+	value = 0
+	
+	every_held_title = {
+		limit = { tier = tier_county }
+		every_county_province = {
+			limit = { 
+				has_holding_type = tribal_holding
+				barony.holder = root
+			}
+			add = 1
+		}
+	}
+}
+
+character_settlement_amount = {
+	value = 0
+
+	every_held_title = {
+		limit = { 
+			title_province ?= { has_holding_type = settlement_holding } 
+			tier = tier_county
+		}
+		add = 1
 	}
 }

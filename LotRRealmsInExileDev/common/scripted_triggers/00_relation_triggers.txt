@@ -318,14 +318,14 @@ has_any_mild_good_relationship_with_character_trigger = {
 		has_relation_ward = $CHARACTER$
 		AND = {
 		betrothed = $CHARACTER$
-			reverse_opinion = {
+			opinion = {
 				target = $CHARACTER$
 				value >= 1
 			}
 		}
 		AND = {
 			is_spouse_of = $CHARACTER$
-			reverse_opinion = {
+			opinion = {
 				target = $CHARACTER$
 				value >= 1
 			}
@@ -339,7 +339,7 @@ has_any_moderate_good_relationship_with_character_trigger = {
 		has_relation_friend = $CHARACTER$
 		AND = {
 			is_spouse_of = $CHARACTER$
-			reverse_opinion = {
+			opinion = {
 				target = $CHARACTER$
 				value >= medium_positive_opinion
 			}
@@ -546,6 +546,7 @@ is_of_major_interest_trigger = {
 	NOT = { this = $CHARACTER$ }
 	OR = {
 		is_heir_of = $CHARACTER$
+		is_diarch_of_target = $CHARACTER$
 		AND = {
 			exists = $CHARACTER$.liege
 			this = $CHARACTER$.liege

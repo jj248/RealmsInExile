@@ -10,6 +10,7 @@
 
 # Events about Faramir
 #		gondor.0300-1	The Rangers of Ithilien - Introduction to Faramir.
+#		gondor.0305		The Princedom of Ithilien?
 
 # Events about Dol Amroth
 #		gondor.0400	The Princedom of Dol Amroth - Introduction to Dol Amroth.
@@ -168,22 +169,22 @@ gondor.0120 = { # Sauron's assault on Osgiliath begins
 	option = { 
 		name = gondor.0120.a # Man your posts!
 		add_stress = 25
-# 		spawn_army = { # Garrison of Osgiliath and Ithilien Rangers are mobilized
-# 			levies = 1000
-# 			men_at_arms = {
-# 				type = rangers_of_ithilien
-# 				stacks = 5
-# 			}	
-# 			men_at_arms = {
-# 				type = gondorian_footmen
-# 				stacks = 10
-# 			}
-# 			location = capital_province
-# #			war = war # optional. If set, the stack will disband after the war ends
-# 			inheritable = yes
-# 			uses_supply = no
-# 			name = garrisons_of_osgiliath		
-# 		}
+		# spawn_army = { # Garrison of Osgiliath and Ithilien Rangers are mobilized
+		# 	levies = 1000
+		# 	men_at_arms = {
+		# 		type = rangers_of_ithilien
+		# 		stacks = 5
+		# 	}	
+		# 	men_at_arms = {
+		# 		type = gondorian_footmen
+		# 		stacks = 10
+		# 	}
+		# 	location = capital_province
+		# 	war = war # optional. If set, the stack will disband after the war ends
+		# 	inheritable = yes
+		# 	uses_supply = no
+		# 	name = garrisons_of_osgiliath		
+		# }
 	}
 }
 
@@ -486,6 +487,170 @@ gondor.0304 = { # Eowyn marries Faramir
 	}
 }
 
+gondor.0305 = { # The Princedom of Ithilien
+	content_source = realms_dlc
+	type = character_event
+	title = gondor.0305.t
+	desc = gondor.0305.desc
+	theme = realm
+	override_background = {
+		reference = minas_tirith
+	}
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	right_portrait = {
+		character = scope:steward_of_gondor
+		animation = personality_compassionate
+	}
+	
+	lower_left_portrait = {
+		character = scope:earnur
+	}
+	
+	lower_right_portrait = {
+		character = scope:mardil
+	}
+	
+	immediate = {
+		title:k_gondor_steward.holder = { save_scope_as = steward_of_gondor }
+		character:lineofanarion51 = { save_scope_as = earnur }
+		character:linesteward4 = { save_scope_as = mardil }
+	}
+
+	option = { #The Stewards shall henceforth be Princes
+		name = gondor.0305.a
+		scope:steward_of_gondor = {
+			add_opinion = {
+				modifier = pleased_opinion
+				opinion = 50
+				target = root
+			}
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		scope:steward_of_gondor = {
+			if = {
+				limit = {
+					NOT = {
+						has_title = title:k_ithilien
+					}
+				}
+				title:k_ithilien = {
+					change_title_holder = {
+						holder = scope:steward_of_gondor
+						change = scope:change
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_title = title:d_emyn_arnen
+					}
+				}
+				title:d_emyn_arnen = {
+					change_title_holder = {
+						holder = scope:steward_of_gondor
+						change = scope:change
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_title = title:c_emyn_arnen
+					}
+				}
+				title:c_emyn_arnen = {
+					change_title_holder = {
+						holder = scope:steward_of_gondor
+						change = scope:change
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_held_title = {
+				limit = {
+					kingdom = title:k_ithilien
+					OR = {
+						tier = tier_county
+						tier = tier_duchy
+					}
+				}
+				this = {
+					change_title_holder = {
+						holder = scope:steward_of_gondor
+						change = scope:change
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_title = title:c_osgiliath
+				}
+			}
+			title:c_osgiliath = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+		dynasty:dynasty_ostomir ?= { add_dynasty_modifier = princely_house_of_ithilien }
+		ai_chance = {
+			base = 0 # LotR: This should be tied to WotR mode.
+
+			modifier = { # Game Rule
+				has_game_rule = default_ai_behavior
+				add = 100
+			}
+
+			modifier = { # Game Rule
+				has_game_rule = weighted_ai_behavior
+				add = 70
+			}
+
+			modifier = { # Game Rule
+				has_game_rule = random_ai_behavior
+				add = 50
+			}
+		}
+	}
+
+	option = { #Ithilien is my birthright
+		name = gondor.0305.b
+		ai_chance = {
+			base = 0 # LotR: This should be tied to WotR mode.
+
+			modifier = { # Game Rule
+				has_game_rule = default_ai_behavior
+				add = 0
+			}
+
+			modifier = { # Game Rule
+				has_game_rule = weighted_ai_behavior
+				add = 30
+			}
+
+			modifier = { # Game Rule
+				has_game_rule = random_ai_behavior
+				add = 50
+			}
+		}
+	}
+}
+
 #### Events about Dol Amroth
 
 gondor.0400 = { # Introduction to Dol Amroth.
@@ -519,287 +684,287 @@ gondor.0400 = { # Introduction to Dol Amroth.
 }
 
 # gondor.0401 = { # Reformation of the Order of the Swan
-	# title = gondor.0401.t
-	# desc = gondor.0401.desc
-	# theme = martial_chivalry_focus
-	# override_background = {
-		# reference = docks_dunedain
-	# }
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0401.t
+# 	desc = gondor.0401.desc
+# 	theme = martial_chivalry_focus
+# 	override_background = {
+# 		reference = docks_dunedain
+# 	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0401.a # There is much work to be done.
-	# }
+# 	option = { 
+# 		name = gondor.0401.a # There is much work to be done.
+# 	}
 # }
 
 # gondor.0402 = { # Expand the Amrothian Reserves
-	# title = gondor.0402.t
-	# desc = gondor.0402.desc
-	# theme = martial_chivalry_focus
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0402.t
+# 	desc = gondor.0402.desc
+# 	theme = martial_chivalry_focus
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0402.a # Sound the trumpets! Let every man know of his prince's needs!
-		# trigger_event = {
-			# id = gondor.0403
-			# days = 360
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0402.a # Sound the trumpets! Let every man know of his prince's needs!
+# 		trigger_event = {
+# 			id = gondor.0403
+# 			days = 360
+# 		}
+# 	}
 # }
 
 # gondor.0403 = { # Amrothian Reserves Recruited
-	# title = gondor.0403.t
-	# desc = gondor.0403.desc
-	# theme = martial_chivalry_focus
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0403.t
+# 	desc = gondor.0403.desc
+# 	theme = martial_chivalry_focus
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0403.a 
-		# spawn_army = {		 
-			# uses_supply = yes
-			# inheritable = yes
-			# name = amrothian_reserves
-			# levies = 50
-			# men_at_arms = {
-				# type = gondorian_bowmen
-				# stacks = 2
-			# }
-			# men_at_arms = {
-				# type = gondorian_footmen
-				# stacks = 3
-			# }
-			# location = capital_province
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0403.a 
+# 		spawn_army = {		 
+# 			uses_supply = yes
+# 			inheritable = yes
+# 			name = amrothian_reserves
+# 			levies = 50
+# 			men_at_arms = {
+# 				type = gondorian_bowmen
+# 				stacks = 2
+# 			}
+# 			men_at_arms = {
+# 				type = gondorian_footmen
+# 				stacks = 3
+# 			}
+# 			location = capital_province
+# 		}
+# 	}
 # }
 
 # gondor.0404 = { # Recruit the Men of Edhellond
-	# title = gondor.0404.t
-	# desc = gondor.0404.desc
-	# theme = martial_chivalry_focus
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0404.t
+# 	desc = gondor.0404.desc
+# 	theme = martial_chivalry_focus
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0404.a # Send our fastest rider to gather the men!
-		# trigger_event = {
-			# id = gondor.0405
-			# days = 270
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0404.a # Send our fastest rider to gather the men!
+# 		trigger_event = {
+# 			id = gondor.0405
+# 			days = 270
+# 		}
+# 	}
 # }
 
 # gondor.0405 = { # Men of Edhellond Recruited
-	# title = gondor.0405.t
-	# desc = gondor.0405.desc
-	# theme = martial_chivalry_focus
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0405.t
+# 	desc = gondor.0405.desc
+# 	theme = martial_chivalry_focus
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0405.a 
-		# spawn_army = {		 
-			# uses_supply = yes
-			# inheritable = yes
-			# name = edhellond_soldiers
-			# levies = 50
-			# men_at_arms = {
-				# type = nimrodel_rangers
-				# stacks = 3
-			# }
-			# men_at_arms = {
-				# type = edhellond_horse_archers
-				# stacks = 3
-			# }
-			# location = capital_province
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0405.a 
+# 		spawn_army = {		 
+# 			uses_supply = yes
+# 			inheritable = yes
+# 			name = edhellond_soldiers
+# 			levies = 50
+# 			men_at_arms = {
+# 				type = nimrodel_rangers
+# 				stacks = 3
+# 			}
+# 			men_at_arms = {
+# 				type = edhellond_horse_archers
+# 				stacks = 3
+# 			}
+# 			location = capital_province
+# 		}
+# 	}
 # }
 
 # gondor.0406 = { # Expanding the Sea-ward Regiments
-	# title = gondor.0406.t
-	# desc = gondor.0406.desc
-	# theme = martial_chivalry_focus
-	# override_background = {
-		# reference = docks_dunedain
-	# }
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0406.t
+# 	desc = gondor.0406.desc
+# 	theme = martial_chivalry_focus
+# 	override_background = {
+# 		reference = docks_dunedain
+# 	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0406.a # Begin the training at once!
-		# trigger_event = {
-			# id = gondor.0407
-			# days = 460
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0406.a # Begin the training at once!
+# 		trigger_event = {
+# 			id = gondor.0407
+# 			days = 460
+# 		}
+# 	}
 # }
 
 # gondor.0407 = { # The Sea-ward Regiments Expanded
-	# title = gondor.0407.t
-	# desc = gondor.0407.desc
-	# theme = martial_chivalry_focus
-	# override_background = {
-		# reference = docks_dunedain
-	# }
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0407.t
+# 	desc = gondor.0407.desc
+# 	theme = martial_chivalry_focus
+# 	override_background = {
+# 		reference = docks_dunedain
+# 	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0407.a 
-		# spawn_army = {		 
-			# uses_supply = yes
-			# inheritable = yes
-			# name = seaward_soldiers
-			# levies = 50
-			# men_at_arms = {
-				# type = seaward_footmen
-				# stacks = 4
-			# }
-			# men_at_arms = {
-				# type = seaward_spearmen
-				# stacks = 3
-			# }
-		    # men_at_arms = {
-				# type = haven_guard
-				# stacks = 2
-			# }
-			# location = capital_province
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0407.a 
+# 		spawn_army = {		 
+# 			uses_supply = yes
+# 			inheritable = yes
+# 			name = seaward_soldiers
+# 			levies = 50
+# 			men_at_arms = {
+# 				type = seaward_footmen
+# 				stacks = 4
+# 			}
+# 			men_at_arms = {
+# 				type = seaward_spearmen
+# 				stacks = 3
+# 			}
+# 		    men_at_arms = {
+# 				type = haven_guard
+# 				stacks = 2
+# 			}
+# 			location = capital_province
+# 		}
+# 	}
 # }
 
 # gondor.0408 = { # Reforging the Tirith Aear
-	# title = gondor.0408.t
-	# desc = gondor.0408.desc
-	# theme = martial_chivalry_focus
-	# override_background = {
-		# reference = docks_dunedain
-	# }
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0408.t
+# 	desc = gondor.0408.desc
+# 	theme = martial_chivalry_focus
+# 	override_background = {
+# 		reference = docks_dunedain
+# 	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0408.a # The old oaths shall be spoken once again.
-		# trigger_event = {
-			# id = gondor.0409
-			# days = 600
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0408.a # The old oaths shall be spoken once again.
+# 		trigger_event = {
+# 			id = gondor.0409
+# 			days = 600
+# 		}
+# 	}
 # }
 
 # gondor.0409 = { # The Oaths Reforged
-	# title = gondor.0409.t
-	# desc = gondor.0409.desc
-	# theme = martial_chivalry_focus
-	# override_background = {
-		# reference = docks_dunedain
-	# }
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0409.t
+# 	desc = gondor.0409.desc
+# 	theme = martial_chivalry_focus
+# 	override_background = {
+# 		reference = docks_dunedain
+# 	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0409.a 
-		# spawn_army = {		 
-			# uses_supply = no
-			# inheritable = yes
-			# name = tirith_aear_soldiers
-			# levies = 50
-			# men_at_arms = {
-				# type = tirith_aear_knights
-				# stacks = 3
-			# }
-			# location = capital_province
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0409.a 
+# 		spawn_army = {		 
+# 			uses_supply = no
+# 			inheritable = yes
+# 			name = tirith_aear_soldiers
+# 			levies = 50
+# 			men_at_arms = {
+# 				type = tirith_aear_knights
+# 				stacks = 3
+# 			}
+# 			location = capital_province
+# 		}
+# 	}
 # }
 
 # gondor.0410 = { # Reform the Swan-guard
-	# title = gondor.0410.t
-	# desc = gondor.0410.desc
-	# theme = martial_chivalry_focus
-	# override_background = {
-		# reference = docks_dunedain
-	# }
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0410.t
+# 	desc = gondor.0410.desc
+# 	theme = martial_chivalry_focus
+# 	override_background = {
+# 		reference = docks_dunedain
+# 	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0410.a # Only the noblest, most virtuous of knights shall be given membership.
-		# trigger_event = {
-			# id = gondor.0411
-			# days = 760
-		# }
-	# }
+# 	option = { 
+# 		name = gondor.0410.a # Only the noblest, most virtuous of knights shall be given membership.
+# 		trigger_event = {
+# 			id = gondor.0411
+# 			days = 760
+# 		}
+# 	}
 # }
 
 # gondor.0411 = { # The Royal Swan-guard Reformed
-	# title = gondor.0411.t
-	# desc = gondor.0411.desc
-	# theme = martial_chivalry_focus
-	# override_background = {
-		# reference = docks_dunedain
-	# }
-	# left_portrait = {
-		# character = root
-		# animation = war_defender
-	# }
+# 	title = gondor.0411.t
+# 	desc = gondor.0411.desc
+# 	theme = martial_chivalry_focus
+# 	override_background = {
+# 		reference = docks_dunedain
+# 	}
+# 	left_portrait = {
+# 		character = root
+# 		animation = war_defender
+# 	}
 	
-	# option = { 
-		# name = gondor.0411.a 
-		# spawn_army = {		 
-			# uses_supply = no
-			# inheritable = yes
-			# name = royal_swan_guard_troops
-			# levies = 50
-			# men_at_arms = {
-				# type = swan_squires
-				# stacks = 2
-			# }
-			# men_at_arms = {
-				# type = swan_knights
-				# stacks = 1
-			# }
-			# men_at_arms = {
-				# type = royal_swan_guard
-				# stacks = 4
-			# }
-			# men_at_arms = {
-				# type = talon_knights
-				# stacks = 3
-			# }
-			# location = capital_province
-		# }
-		# culture = { 
-			# add_innovation = innovation_silver_swan
-		# }
-		# add_piety = 500
-		# add_diplomacy_skill = 1
-		# add_martial_skill = 2
-	# }
+# 	option = { 
+# 		name = gondor.0411.a 
+# 		spawn_army = {		 
+# 			uses_supply = no
+# 			inheritable = yes
+# 			name = royal_swan_guard_troops
+# 			levies = 50
+# 			men_at_arms = {
+# 				type = swan_squires
+# 				stacks = 2
+# 			}
+# 			men_at_arms = {
+# 				type = swan_knights
+# 				stacks = 1
+# 			}
+# 			men_at_arms = {
+# 				type = royal_swan_guard
+# 				stacks = 4
+# 			}
+# 			men_at_arms = {
+# 				type = talon_knights
+# 				stacks = 3
+# 			}
+# 			location = capital_province
+# 		}
+# 		culture = { 
+# 			add_innovation = innovation_silver_swan
+# 		}
+# 		add_piety = 500
+# 		add_diplomacy_skill = 1
+# 		add_martial_skill = 2
+# 	}
 # }
 
 
@@ -820,8 +985,40 @@ gondor.0500 = {
 		animation = personality_honorable
 	}
 	
-	option = { 
-		name = gondor.0500.a # It is time...
+	option = { # It is time...
+		name = gondor.0500.a 
+		trigger = {
+			custom_tooltip = { 
+				text = gondor.0500.a.tt
+				OR = {
+					AND = {
+						exists = title:e_gondor_steward.holder
+						title:e_gondor_steward.holder = { faith_is_good = yes }
+						title:c_minas_tirith.holder = title:e_gondor_steward.holder
+					}
+					AND = {
+						title:c_minas_tirith.holder = { faith_is_good = yes }
+						title:c_minas_tirith.holder = title:e_gondor_steward.holder
+						title:c_minas_tirith.holder.top_liege ?= { faith_is_good = yes }
+					}
+				}
+			}
+		}
+		show_as_unavailable = {
+			NOR = {
+				AND = {
+					exists = title:e_gondor_steward.holder
+					title:e_gondor_steward.holder = { faith_is_good = yes }
+					title:c_minas_tirith.holder = title:e_gondor_steward.holder
+				}
+				AND = {
+					title:c_minas_tirith.holder = { faith_is_good = yes }
+					title:c_minas_tirith.holder = title:e_gondor_steward.holder
+					title:c_minas_tirith.holder.top_liege ?= { faith_is_good = yes }
+				}
+			}
+		}
+
 		title:e_gondor_steward.holder = { # Denethor reacts
 			trigger_event = {
 				id = gondor.0501
@@ -921,8 +1118,8 @@ gondor.0501 = { # Denethor reacts to Aragorn's return
 		title:e_gondor_steward.holder = { save_scope_as = steward_of_gondor }
 	}
 
-	option = { 
-		name = gondor.0501.a # I have no choice but to accept.
+	option = {  # I have no choice but to accept.
+		name = gondor.0501.a
 		custom_tooltip = gondor.0501.a.tt1
 		custom_tooltip = gondor.0501.a.tt2
 		character:lineisildur42 = { # Aragorn is allowed into Minas Tirith
@@ -947,7 +1144,6 @@ gondor.0501 = { # Denethor reacts to Aragorn's return
 			}
 		}
 
-
 		hidden_effect = {
 			if = {
 				limit = {
@@ -962,6 +1158,7 @@ gondor.0501 = { # Denethor reacts to Aragorn's return
 				get_title = title:c_osgiliath
 			}
 		}
+
 		ai_chance = {
 			base = 0 # LotR: This should be tied to WotR mode.
 
@@ -981,10 +1178,11 @@ gondor.0501 = { # Denethor reacts to Aragorn's return
 			}
 		}
 	}
-	option = { 
-		name = gondor.0501.b # Steward refuses
+	option = {  # Steward refuses
+		name = gondor.0501.b
 		custom_tooltip = gondor.0501.b.tt1
 		custom_tooltip = gondor.0501.b.tt2
+		add_legitimacy = massive_legitimacy_loss
 		title:k_belfalas.holder = { # The Prince of Dol Amroth calls a meeting
 			trigger_event = {
 				id = gondor.0550
@@ -1101,7 +1299,7 @@ gondor.0502 = { # Aragorn is allowed into Minas Tirith and is coronated
 			}
 		}
 		title:e_gondor_steward.holder = { # Aragorn inherits the royal artifacts from the steward and the Steward gets his Black Chair Replica
-#			create_artifact_black_chair_replica_effect = { OWNER = this }
+			# create_artifact_black_chair_replica_effect = { OWNER = this }
 			every_character_artifact = {
 				limit = {
 					OR = {
@@ -1171,7 +1369,9 @@ gondor.0502 = { # Aragorn is allowed into Minas Tirith and is coronated
 		title:e_gondor_steward.holder = {
 			every_held_title = {
 				limit = { 
-					NOT = { this = title:c_osgiliath }
+					NOT = { 
+						this = title:c_osgiliath
+					}
 				}
 				change_title_holder = {
 					holder = root
@@ -1210,7 +1410,6 @@ gondor.0502 = { # Aragorn is allowed into Minas Tirith and is coronated
 					add_to_list = transfer_list
 				}	
 			}
-
 			if = {
 				limit = {
 					OR = {
@@ -1285,7 +1484,6 @@ gondor.0502 = { # Aragorn is allowed into Minas Tirith and is coronated
 								has_holding_type = settlement_holding
 							}			
 						}
-						ai_colonisation_effect = { WASTELANDS = this }
 						set_holding_type = castle_holding
 					}
 					
@@ -1361,7 +1559,7 @@ gondor.0502 = { # Aragorn is allowed into Minas Tirith and is coronated
 			}
 		}
 		hidden_effect = {
-			IF = {
+			if = {
 				limit = { is_ai = yes } 
 			
 				add_character_modifier = {
@@ -1391,23 +1589,24 @@ gondor.0502 = { # Aragorn is allowed into Minas Tirith and is coronated
 		}
 	}
 }
+
 gondor.0503 = { # Vassalization offers are sent to the people of Arnor
 	type = letter_event
 	sender = scope:sender
-#	content_source = realms_dlc
+	# content_source = realms_dlc
 	opening = {
 		desc = gondor.0503.opening
 	}
 	desc = gondor.0503.desc
-#	theme = diplomacy_majesty_focus
-#	left_portrait = {
-#		character = root
-#		animation = personality_honorable
-#	}
-#	right_portrait = {
-#		character = character:lineisildur42
-#		animation = personality_honorable
-#	}
+	# theme = diplomacy_majesty_focus
+	# left_portrait = {
+	# 	character = root
+	# 	animation = personality_honorable
+	# }
+	# right_portrait = {
+	# 	character = character:lineisildur42
+	# 	animation = personality_honorable
+	# }
 	on_trigger_fail = { #Trigger invitation again if it was blocked because the character was handling another invitation
 		trigger_event = {
 			id = gondor.0503
@@ -1424,12 +1623,12 @@ gondor.0503 = { # Vassalization offers are sent to the people of Arnor
 		}
 	}
 
-	option = { 
-		name = gondor.0503.a # I accept vassalization to Aragorn.
-#		trigger_event = {
-#			id = gondor.0506 
-#			days = 50
-#		}
+	option = {  # I accept vassalization to Aragorn.
+		name = gondor.0503.a
+		# trigger_event = {
+		# 	id = gondor.0506 
+		# 	days = 50
+		# }
 
 		create_title_and_vassal_change = {
 			type = swear_fealty
@@ -1519,12 +1718,12 @@ gondor.0503 = { # Vassalization offers are sent to the people of Arnor
 		}
 	}
 
-	option = { 
-		name = gondor.0503.b # I will remain independent
-#		trigger_event = {
-#			id = gondor.0506 
-#			days = 50
-#		}
+	option = {  # I will remain independent
+		name = gondor.0503.b 
+		# trigger_event = {
+		# 	id = gondor.0506 
+		# 	days = 50
+		# }
 		if = {
 			limit = { is_ai = yes }
 			lotr_get_aggressive = yes
@@ -1578,29 +1777,6 @@ gondor.0503 = { # Vassalization offers are sent to the people of Arnor
 		}
 	}
 }
-
-#gondor.0503 = { # Denethor is overthrown by the citizens of Minas Tirith - effectively defunct now due to civil war chain...
-#	title = gondor.0503.t
-#	desc = gondor.0503.desc
-#	theme = stewardship_duty_focus
-#	left_portrait = {
-#		character = root
-#		animation = rage
-#	}
-#	
-#	option = { 
-#		name = gondor.0503.a 
-#		character:lineisildur42 = { # Aragorn is allowed into Minas Tirith
-#			trigger_event = {
-#				id = gondor.0502
-#				days = 2
-#			}
-#		}
-#		hidden_effect = { 
-#			get_title = title:c_osgiliath
-#		}
-#	}
-#}
 
 gondor.0504 = { # Elessar, Aragorn, or Nimruzimir? 
 	content_source = realms_dlc
@@ -2222,48 +2398,52 @@ gondor.0517 = { #Aragorn wedding if he was too stupid to do it himself
 	type = character_event
 	hidden = yes
 	
-	trigger = {
-		is_betrothed = yes
-	}
-	
 	immediate = {
 		if = {
-			limit = { root.betrothed = character:linefinwe30 } #Arwen marriage handling
-			
-			#So Aragorn doesn't have multiple lovers/soulmates
-			every_relation = {
-				type = lover
-				remove_relation_lover = root
+			limit = {
+				has_character_flag = aragorn_gw
 			}
-			every_relation = {
-				type = soulmate
-				remove_relation_soulmate = root
-			}	
 			
-			set_relation_lover = character:linefinwe30
-			set_relation_friend = character:linefinwe30
-			set_relation_soulmate = character:linefinwe30
-			
-			character:linefinwe36 = { # Galadriel sends a royal gift
-				trigger_event = {
-					id = elven.0103
-					days = 1
+			if = {
+				limit = { root.betrothed = character:linefinwe30 } #Arwen marriage handling
+				
+				#So Aragorn doesn't have multiple lovers/soulmates
+				every_relation = {
+					type = lover
+					remove_relation_lover = root
+				}
+				every_relation = {
+					type = soulmate
+					remove_relation_soulmate = root
+				}	
+				
+				set_relation_lover = character:linefinwe30
+				set_relation_friend = character:linefinwe30
+				set_relation_soulmate = character:linefinwe30
+				
+				character:linefinwe36 = { # Galadriel sends a royal gift
+					trigger_event = {
+						id = elven.0103
+						days = 1
+					}
 				}
 			}
+			marry = root.betrothed
+			remove_character_flag = aragorn_gw
 			
-			trigger_event = { #Incepting Eldarion
-				id = gondor.0508 
-				days = 100
+			if = { #So Aragorn doesn't get married twice to the same person
+				limit = {
+					has_variable = promised_grand_wedding_marriage_countdown
+				}
+				remove_variable = promised_grand_wedding_marriage_countdown
 			}
 		}
-		marry = root.betrothed
-		remove_character_flag = aragorn_gw
-		
-		if = { #So Aragorn doesn't get married twice to the same person
-			limit = {
-				has_variable = promised_grand_wedding_marriage_countdown
-			}
-			remove_variable = promised_grand_wedding_marriage_countdown
+	}
+	
+	after = {
+		trigger_event = { #Incepting Eldarion
+			id = gondor.0508 
+			days = 100
 		}
 	}
 }
@@ -2416,12 +2596,12 @@ gondor.0509 = { # First Child of Arwen and Aragorn - Eldarion
 			mother = character:linefinwe30
 			father = character:lineisildur42
 			employer = character:lineisildur42
-			trait = blood_of_numenor_3
+			trait = blood_of_numenor_6
 			
 			save_scope_as = eldarion
 			after_creation = {
 				add_character_flag = is_eldarion
-				copy_inheritable_appearance_from = character:eldariondna 
+				copy_inheritable_appearance_from = character:eldariondna
 			}
 		}
 		character:linefinwe30 = {
@@ -2510,7 +2690,7 @@ gondor.0511 = { # Second Child of Arwen and Aragorn - Lúthien
 			mother = character:linefinwe30
 			father = character:lineisildur42
 			employer = character:lineisildur42
-			trait = blood_of_numenor_3
+			trait = blood_of_numenor_6
 			
 			save_scope_as = luthien
 			after_creation = {
@@ -2604,7 +2784,7 @@ gondor.0513 = { # Third Child of Arwen and Aragorn - Indis
 			mother = character:linefinwe30
 			father = character:lineisildur42
 			employer = character:lineisildur42
-			trait = blood_of_numenor_3
+			trait = blood_of_numenor_6
 			
 			save_scope_as = indis
 			after_creation = {
@@ -2698,7 +2878,7 @@ gondor.0515 = { # Fourth Child of Arwen and Aragorn - Altáriel
 			mother = character:linefinwe30
 			father = character:lineisildur42
 			employer = character:lineisildur42
-			trait = blood_of_numenor_3
+			trait = blood_of_numenor_6
 			
 			save_scope_as = altariel
 			after_creation = {
@@ -2822,6 +3002,7 @@ gondor.0519 = { #Arwen dies one year after Aragorn if spouse
 		death = { death_reason = death_faded_grief }
 	}
 }
+
 gondor.0520 = { # Aragorn decides whether or not to claim Arnor
 	content_source = realms_dlc
 	type = character_event
@@ -3297,7 +3478,6 @@ gondor.0520 = { # Aragorn decides whether or not to claim Arnor
 								has_holding_type = settlement_holding
 							}			
 						}
-						ai_colonisation_effect = { WASTELANDS = this }
 						set_holding_type = castle_holding
 					}
 					
@@ -3387,23 +3567,24 @@ gondor.0520 = { # Aragorn decides whether or not to claim Arnor
 		}
 	}
 }
+
 gondor.0521 = { # Vassalization offers are sent to the people of Arnor aragorn stays north edition
 	type = letter_event
 	sender = scope:sender
-#	content_source = realms_dlc
+	# content_source = realms_dlc
 	opening = {
 		desc = gondor.0521.opening
 	}
 	desc = gondor.0521.desc
-#	theme = diplomacy_majesty_focus
-#	left_portrait = {
-#		character = root
-#		animation = personality_honorable
-#	}
-#	right_portrait = {
-#		character = character:lineisildur42
-#		animation = personality_honorable
-#	}
+	# theme = diplomacy_majesty_focus
+	# left_portrait = {
+	# 	character = root
+	# 	animation = personality_honorable
+	# }
+	# right_portrait = {
+	# 	character = character:lineisildur42
+	# 	animation = personality_honorable
+	# }
 	on_trigger_fail = { #Trigger invitation again if it was blocked because the character was handling another invitation
 		trigger_event = {
 			id = gondor.0521
@@ -3420,12 +3601,12 @@ gondor.0521 = { # Vassalization offers are sent to the people of Arnor aragorn s
 		}
 	}
 
-	option = { 
-		name = gondor.0521.a # I accept vassalization to Aragorn. (buffed for aragorn because he stayed north)
-#		trigger_event = {
-#			id = gondor.0506 
-#			days = 50
-#		}
+	option = {  # I accept vassalization to Aragorn. (buffed for aragorn because he stayed north)
+		name = gondor.0521.a
+		# trigger_event = {
+		# 	id = gondor.0506 
+		# 	days = 50
+		# }
 
 		create_title_and_vassal_change = {
 			type = swear_fealty
@@ -3517,10 +3698,10 @@ gondor.0521 = { # Vassalization offers are sent to the people of Arnor aragorn s
 
 	option = { 
 		name = gondor.0521.b # I will remain independent
-#		trigger_event = {
-#			id = gondor.0506 
-#			days = 50
-#		}
+		# trigger_event = {
+		# 	id = gondor.0506 
+		# 	days = 50
+		# }
 		if = {
 			limit = { is_ai = yes }
 			lotr_get_aggressive = yes
@@ -3565,7 +3746,7 @@ gondor.0521 = { # Vassalization offers are sent to the people of Arnor aragorn s
 	}
 }
 
-gondor.0522 = { # holder of annuminas gets an event
+gondor.0522 = { # holder of annuminas decides whether or not to cede the land to aragorn
 	content_source = realms_dlc
 	type = character_event
 	title = gondor.0522.t
@@ -3622,6 +3803,9 @@ gondor.0522 = { # holder of annuminas gets an event
 		if = {
 			limit = { is_ai = yes }
 			lotr_get_aggressive = yes
+		}
+		title:e_arnor.holder = {
+			add_pressed_claim = title:c_annuminas
 		}
 		ai_chance = {
 			base = 0
@@ -4318,7 +4502,6 @@ gondor.0562 = { # Royalist victory - Aragorn is crowned
 								has_holding_type = settlement_holding
 							}			
 						}
-						ai_colonisation_effect = { WASTELANDS = this }
 						set_holding_type = castle_holding
 					}
 					
@@ -6091,6 +6274,7 @@ gondor.2105 = { #Event that handles unexpected sauron death effects
 				}
 			}
 		}
+		nurnoth_slaves_openly_convert = yes
 		
 		character:mouthofsauron = {
 			hidden_effect = {
@@ -6147,6 +6331,12 @@ gondor.2105 = { #Event that handles unexpected sauron death effects
 		#juke note: moved nazgul to scripted effect
 		kill_nazgul_effect = yes
 		
+		title:c_minas_tirith.holder = {
+			trigger_event = {
+				id = nurnoth.0002
+				days = 9
+			}
+		}
 		every_living_character = {
 			trigger_event = {
 				id = gondor.2104
@@ -8678,27 +8868,94 @@ gondor.2900 = { # Maintenance event to start the combination of Bellakar x Gondo
 			name = unavailable_unique_decisions
 			target = flag:mordor_is_destroyed_by_gondor
 		}
-		title:e_bellakar.holder = {
-			is_allied_to = title:e_gondor.holder
+		trigger_if = {
+			limit = {
+				exists = title:e_pharazain.holder
+			}
+			title:e_pharazain.holder = {
+				OR = {
+					is_allied_to = title:e_gondor.holder
+					is_allied_to = title:e_reunitedkingdom.holder
+				}
+			}
 		}
-		title:e_gondor.holder ?= { 
-			OR = {
-				primary_heir = { 
-					any_parent = {
-						even_if_dead = yes
-						dynasty ?=  dynasty:dynasty_tumakveh 
+		trigger_else = {
+			title:e_bellakar.holder = {
+				OR = {
+					is_allied_to = title:e_gondor.holder
+					is_allied_to = title:e_reunitedkingdom.holder
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				AND = {
+					exists = title:e_reunitedkingdom.holder
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_solidify_reunited_kingdom
 					}
 				}
-				any_ancestor = { 
-					even_if_dead = yes  
-					dynasty ?= dynasty:dynasty_tumakveh
+			}
+			title:e_reunitedkingdom.holder ?= { 
+				OR = {
+					primary_heir = { 
+						any_parent = {
+							even_if_dead = yes
+							dynasty ?=  dynasty:dynasty_tumakveh 
+						}
+					}
+					any_ancestor = { 
+						even_if_dead = yes  
+						dynasty ?= dynasty:dynasty_tumakveh
+					}
+				}
+			}
+		}
+		trigger_else = {
+			title:e_gondor.holder ?= { 
+				OR = {
+					primary_heir = { 
+						any_parent = {
+							even_if_dead = yes
+							dynasty ?=  dynasty:dynasty_tumakveh 
+						}
+					}
+					any_ancestor = { 
+						even_if_dead = yes  
+						dynasty ?= dynasty:dynasty_tumakveh
+					}
 				}
 			}
 		}
 	}
 
 	immediate = {
-		title:e_bellakar.holder = { trigger_event = bellakar.0200 }
+		if = {
+			limit = {
+				AND = {
+					exists = title:e_reunitedkingdom.holder
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_solidify_reunited_kingdom
+					}
+				}
+			}
+			title:e_reunitedkingdom = { save_scope_as = gondor_title }
+		}
+		else = {
+			title:e_gondor = { save_scope_as = gondor_title }
+		}
+		if = {
+			limit = {
+				exists = title:e_pharazain.holder
+			}
+			title:e_pharazain = { save_scope_as = bellakar_title }
+		}
+		else = {
+			title:e_bellakar = { save_scope_as = bellakar_title }
+		}
+		scope:bellakar_title.holder = { trigger_event = bellakar.0200 }
 
 		add_to_global_variable_list = { # To stop this event chain from happening again
 			name = unavailable_unique_decisions
@@ -8727,12 +8984,12 @@ gondor.2901 = { # Initial event in Uniting Faithful realms chain
 	override_background = { reference = minas_tirith }
 
 	right_portrait = {
-		character = title:e_gondor.holder
+		character = scope:gondor_title.holder
 		animation = personality_honorable
 	}
 
 	left_portrait = {
-		character = title:e_bellakar.holder
+		character = scope:bellakar_title.holder
 		animation = personality_content
 	}
 
@@ -8741,7 +8998,7 @@ gondor.2901 = { # Initial event in Uniting Faithful realms chain
 	option = { # Gives Bellakar choice on whether it wants to unite
 		name = gondor.2901.a
 
-		title:e_bellakar.holder = {
+		scope:bellakar_title.holder = {
 			trigger_event = {
 				id = bellakar.0202
 				days = { 15 30 }
@@ -8771,7 +9028,7 @@ gondor.2901 = { # Initial event in Uniting Faithful realms chain
 	option = { # Nothing happens, Gondor rescinds its claim on bellakar
 		name = gondor.2901.b
 		
-		title:e_bellakar.holder = {
+		scope:bellakar_title.holder = {
 			trigger_event = {
 				id = bellakar.0203
 				days = { 15 30 }
@@ -8909,8 +9166,23 @@ gondor.2950 = { # Bellakar receives message about making alliance with Gondor
 		animation = personality_content
 	}
 
-	immediate = { 
-		title:e_gondor.holder = { save_scope_as = high_king_of_gondor }
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					exists = title:e_reunitedkingdom.holder
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_solidify_reunited_kingdom
+					}
+				}
+			}
+			title:e_reunitedkingdom = { save_scope_as = gondor_title }
+		}
+		else = {
+			title:e_gondor = { save_scope_as = gondor_title }
+		}
+		scope:gondor_title.holder = { save_scope_as = high_king_of_gondor }
 		play_music_cue = lotr_cue_gondor
 	}
 
@@ -8968,7 +9240,16 @@ gondor.2951 = { # Bellakar accepts alliance offer
 	}
 
 	immediate = { 
-		title:e_bellakar.holder = { save_scope_as = high_king_of_bellakar } 
+		if = {
+			limit = {
+				exists = title:e_pharazain.holder
+			}
+			title:e_pharazain = { save_scope_as = bellakar_title }
+		}
+		else = {
+			title:e_bellakar = { save_scope_as = bellakar_title }
+		}
+		scope:bellakar_title.holder ?= { save_scope_as = high_king_of_bellakar }
 		play_music_cue = lotr_cue_gondor
 	}
 
@@ -8995,7 +9276,7 @@ gondor.2951 = { # Bellakar accepts alliance offer
 					target = flag:bellakar_x_gondor
 				}
 			}
-			title:e_bellakar.holder = {
+			scope:bellakar_title.holder = {
 				trigger_event = {
 					id = gondor.2952
 					days = { 15 30 }
@@ -9028,7 +9309,18 @@ gondor.2952 = { # Bellakar declines alliance offer # Bellakar recieves message o
 		animation = stress
 	}
 
-	immediate = { title:e_bellakar.holder = { save_scope_as = high_king_of_bellakar } }
+	immediate = { 
+		if = {
+			limit = {
+				exists = title:e_pharazain.holder
+			}
+			title:e_pharazain = { save_scope_as = bellakar_title }
+		}
+		else = {
+			title:e_bellakar = { save_scope_as = bellakar_title }
+		}
+		scope:bellakar_title.holder ?= { save_scope_as = high_king_of_bellakar }
+	}
 
 	option = {
 		name = gondor.2952.a
@@ -9062,7 +9354,16 @@ gondor.2953 = { # Gondor received message that Bellakar ruler died, renew allian
 	}
 
 	immediate = {
-		title:e_bellakar.holder = { save_scope_as = high_king_of_bellakar }
+		if = {
+			limit = {
+				exists = title:e_pharazain.holder
+			}
+			title:e_pharazain = { save_scope_as = bellakar_title }
+		}
+		else = {
+			title:e_bellakar = { save_scope_as = bellakar_title }
+		}
+		scope:bellakar_title.holder ?= { save_scope_as = high_king_of_bellakar }
 		scope:high_king_of_bellakar = { add_character_flag = bellakar_x_gondor_alliance }
 		scope:high_king_of_bellakar.primary_title.previous_holder = { save_scope_as = dead_high_king_of_bellakar } 
 	}

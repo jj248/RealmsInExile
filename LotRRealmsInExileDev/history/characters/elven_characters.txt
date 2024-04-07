@@ -26,6 +26,8 @@
 # Dynasty of Glennodad
 #
 # Courtiers 
+#
+# Legend Seed Characters
 
 # 7033 = T.A. 3000			
 
@@ -1328,7 +1330,7 @@ linefinwe26 = {
 	trait = just			
 	trait = lifestyle_blademaster			
 		
-	trait = mariner_3
+	trait = lifestyle_mariner
 				
 	505.1.1 = {			
 		birth = yes
@@ -1340,7 +1342,11 @@ linefinwe26 = {
 		add_spouse = lineofelwe9
 		effect = {
 			set_relation_soulmate = character:lineofelwe9
-		}
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 100
+			}
+        }
 	}
 	542.9.10 = {
 		give_nickname = nick_ardamire
@@ -1406,7 +1412,7 @@ linefinwe27 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofelros1
+					dead_relation = character:lineofelros1
 				}
 			}
 		}
@@ -1415,6 +1421,14 @@ linefinwe27 = {
 		effect = {
 			learn_language = language_adunaic
 		}
+	}
+	2182.1.1 = { 
+		give_nickname = nick_halfelven
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
 	}
 	2289.1.1 = {
 		effect = {
@@ -1811,7 +1825,7 @@ linefinwe36 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:linefinwe34
+					dead_relation = character:linefinwe34
 				}
 			}
 		}
@@ -1821,7 +1835,7 @@ linefinwe36 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:linefinwe35
+					dead_relation = character:linefinwe35
 				}
 			}
 		}
@@ -2745,7 +2759,7 @@ lineofcirdan = { # Cirdan the Shipwright
 	trait = content
 	trait = humble
 	
-	trait = mariner_3
+	trait = lifestyle_mariner
 			
 	2.1.1 = {	#-4255.1.1		
 		birth = yes
@@ -2755,7 +2769,18 @@ lineofcirdan = { # Cirdan the Shipwright
 			add_character_flag = no_auto_family							
 		}
 	}
-	
+	2.3.4 = {
+        give_nickname = nick_the_shipwright
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 100
+			}
+        }
+    }	
 }
 
 #####################################
@@ -2936,7 +2961,7 @@ lineoforopher3 = { # Thranduil the Elvenking
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineoforopher2
+					dead_relation = character:lineoforopher2
 				}
 			}
 			add_trait_xp = {
@@ -2971,7 +2996,7 @@ lineoforopher3 = { # Thranduil the Elvenking
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineoforopher1
+					dead_relation = character:lineoforopher1
 				}
 			}
 			create_character_memory = {
@@ -3268,20 +3293,25 @@ lineofbeleg = { # Beleg Cúthalion, the Iron Bow of Doriath
 	culture = sindar
 	dna = beleg_dna
 	
-	
-	trait = physique_good_2
-	trait = beauty_good_1
-	trait = strong
-	trait = lifestyle_hunter
-		
 	trait = education_martial_3
 	trait = forest_fighter
 	trait = brave
 	trait = gregarious
 	trait = trusting
 	
+	trait = physique_good_2
+	trait = beauty_good_1
+	trait = strong
+	trait = lifestyle_hunter	
+	
+	
 	2.9.12 = {
 		birth = yes
+	}
+	486.1.1 = { #Beleg befriends Turin
+		effect = {
+			set_relation_friend = character:lineofhador7
+		}
 	}
 	489.1.1 = {
 		death = {
@@ -3658,7 +3688,7 @@ lineofaenarion4 = { # Findobar
 	trait = content
 	trait = gregarious
 	trait = intellect_good_1
-	trait = mariner_3
+	trait = lifestyle_mariner
 
 	1144.10.21 = {
 		birth = yes
@@ -3671,7 +3701,11 @@ lineofaenarion4 = { # Findobar
 		add_spouse = lineofaenarion4wife
 		effect = {
 			set_relation_soulmate = character:lineofaenarion4wife
-		}
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
 	}
 }
 
@@ -5295,6 +5329,37 @@ lineoflamril4 = {
 	}
 }
 
+lineofvakuankka1 = {
+	name = Belegommor
+	dynasty = dynasty_belegommor
+	
+	religion = faith_eldar
+	culture = sindar
+	dna = lotr_vanity_vakuankka_dna
+
+	sexuality = heterosexual
+
+	trait = just
+	trait = diligent
+	trait = shy
+	
+	diplomacy = 8
+	martial = 5
+	stewardship = 5
+	intrigue = 3
+	learning = 7
+	prowess = 10
+
+	trait = education_learning_4
+	trait = intellect_good_2
+	trait = beauty_good_1
+	trait = depressed_1
+
+	2004.7.4 = {
+		birth = yes
+	}
+}
+
 ### Laiquendi Elves ###
 
 lineofmenelrana1 = { 
@@ -6799,5 +6864,820 @@ lineofmoriel1 = { # Good friend of Lanthir
 	}
 	2007.1.1 = {
 		give_council_position = councillor_chancellor
+	}
+}
+
+##############################
+### Legend Seed Characters ###
+##############################
+
+lindonlegend1 = {
+	name = Eariel
+	female = yes
+	
+	dynasty = dynasty_eariel
+	religion = faith_eldar
+	culture = noldor
+	
+	trait = brave
+	trait = fickle
+	trait = patient
+	
+	trait = lifestyle_mariner
+	
+	diplomacy = 5
+	martial = 9
+	stewardship = 4
+	intrigue = 7
+	learning = 5
+	prowess = 10
+	
+	trait = education_martial_3
+	
+	1320.10.20 = {
+		birth = yes
+		employer = lineofpenlod3
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
+	}
+	
+	6479.3.12 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+lindonlegend2 = {
+	name = Meldir
+	
+	dynasty = dynasty_meldir
+	religion = faith_eldar
+	culture = sindar
+	
+	trait = just
+	trait = stubborn
+	trait = content
+	
+	trait = shrewd
+	
+	diplomacy = 7
+	martial = 3
+	stewardship = 9
+	intrigue = 2
+	learning = 7
+	prowess = 6
+	
+	trait = education_stewardship_2
+	
+	3420.1.17 = {
+		birth = yes
+		employer = linefinwe41
+	}
+	
+	6784.6.19 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+lindonlegend3 = {
+	name = Ilinsor
+	
+	dynasty = dynasty_ilinsor
+	religion = faith_eldar
+	culture = noldor
+	
+	trait = brave
+	trait = stubborn
+	trait = wrathful
+	
+	trait = strong
+	
+	diplomacy = 4
+	martial = 8
+	stewardship = 3
+	intrigue = 5
+	learning = 4
+	prowess = 9
+	
+	trait = education_martial_4
+	
+	976.5.7 = {
+		birth = yes
+	}
+	
+	2014.5.15 = {
+		add_spouse = lindonlegend31
+		employer = linefinwe41
+	}
+	
+	4033.7.12 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+lindonlegend31 = {
+	name = Iliniel
+	female = yes
+	
+	religion = faith_eldar
+	culture = noldor
+	
+	trait = gregarious
+	trait = zealous
+	trait = impatient
+	
+	trait = beauty_good_1
+	
+	diplomacy = 6
+	martial = 3
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+	prowess = 4
+	
+	trait = education_diplomacy_2
+	
+	1576.7.4 = {
+		birth = yes
+		employer = linefinwe41
+	}
+	
+	4069.8.1 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+lindonlegend32 = {
+	name = Bornmir
+	
+	dynasty = dynasty_ilinsor
+	religion = faith_eldar
+	culture = noldor
+	
+	father = lindonlegend3
+	mother = lindonlegend31
+	
+	trait = brave
+	trait = temperate
+	trait = content
+	
+	trait = beauty_good_1
+	
+	diplomacy = 4
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 4
+	prowess = 7
+	
+	trait = education_martial_3
+	
+	2176.3.14 = {
+		birth = yes
+		employer = linefinwe41
+	}
+	
+	4033.7.12 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+lindonlegend4 = {
+	name = Lhachglin
+	
+	dynasty = dynasty_lhachglin
+	religion = faith_eldar
+	culture = sirrandrai
+	
+	trait = gregarious
+	trait = generous
+	trait = content
+	
+	trait = intellect_good_1
+	
+	diplomacy = 10
+	martial = 2
+	stewardship = 7
+	intrigue = 4
+	learning = 8
+	prowess = 3
+	
+	trait = education_diplomacy_3
+	
+	3769.8.12 = {
+		birth = yes
+	}
+	
+	6756.4.23 = {
+		death = { death_reason = death_sailed_west }
+	}
+	
+}
+
+lindonlegend5 = {
+	name = Ostiel
+	female = yes
+	
+	dynasty = dynasty_ostiel
+	religion = faith_eldar
+	culture = sindar
+	
+	trait = patient
+	trait = content
+	trait = shy
+	
+	trait = lifestyle_archivist
+	
+	diplomacy = 4
+	martial = 3
+	stewardship = 5
+	intrigue = 3
+	learning = 7
+	prowess = 2
+	
+	trait = education_learning_2
+	
+	2981.6.23 = {
+		birth = yes
+	}
+	
+	5663.8.19 = {
+		add_trait_xp = {
+			trait = lifestyle_archivist
+			track = historian
+			value = 50
+		}
+	}
+	
+	6641.1.14 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+lindonlegend6 = {
+	name = Airalin
+	
+	dynasty = dynasty_airalin
+	religion = faith_eldar
+	culture = laiquendi
+	
+	trait = paranoid
+	trait = eccentric
+	trait = vengeful
+	
+	diplomacy = 5
+	martial = 3
+	stewardship = 6
+	intrigue = 9
+	learning = 4
+	prowess = 4
+	
+	trait = education_intrigue_4
+	
+	1304.7.18 = {
+		birth = yes
+	}
+	
+	5987.10.7 = {
+		death = { death_reason = death_vanished }
+	}
+}
+
+lorienlegend1 = {
+	name = Firiel
+	female = yes
+	
+	dynasty = dynasty_firiel
+	religion = faith_eldar
+	culture = galadhrim
+	
+	trait = temperate
+	trait = just
+	trait = honest
+	trait = shrewd
+	
+	trait = education_stewardship_2
+	
+	2145.9.12 = {
+		birth = yes
+	}
+	
+	6457.3.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+lorienlegend2 = {
+	name = S_Ulimo
+	
+	dynasty = dynasty_sulimo
+	religion = faith_eldar
+	culture = noldor
+	
+	trait = brave
+	trait = diligent
+	trait = stubborn
+	
+	trait = strong
+	trait = lifestyle_artifact_crafting
+	
+	diplomacy = 3
+	martial = 7
+	stewardship = 9
+	intrigue = 4
+	learning = 5
+	prowess = 8
+	
+	789.5.16 = {
+		birth = yes
+	}
+	
+	1552.10.9 = {
+		employer = linefinwe18
+		add_trait_xp = {
+			trait = lifestyle_artifact_crafting
+			track = jewel_smith
+			value = 65
+		}
+		add_trait_xp = {
+			trait = lifestyle_artifact_crafting
+			track = enchanting_smith
+			value = 30
+		}
+	}
+	
+	2289.4.14 = {
+		employer = linefinwe36
+#		set_culture = culture:galadhrim
+	}
+	
+	6471.5.16 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+lorienlegend3 = {
+	name = Belatar
+	
+	dynasty = dynasty_belatar
+	religion = faith_eldar
+	culture = galadhrim
+	
+	trait = brave
+	trait = just
+	trait = wrathful
+	
+	trait = physique_good_2
+	
+	martial = 7
+	prowess = 11
+	
+	trait = education_martial_3
+	
+	416.8.29 = {
+		birth = yes
+	}
+	
+	4026.1.1 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+lorienlegend4 = {
+	name = Lothwen
+	female = yes
+	
+	dynasty = dynasty_lothwen
+	religion = faith_eldar
+	culture = galadhrim
+	
+	trait = patient
+	trait = just
+	trait = content
+	
+	stewardship = 8
+	intrigue = 6
+	
+	trait = education_stewardship_4
+	
+	765.9.10 = {
+		birth = yes
+	}
+	
+	6559.12.21 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+edhellondlegend1 = {
+	name = Tindrien
+	female = yes
+	
+	dynasty = dynasty_tindrien
+	religion = faith_eldar
+	culture = silvan
+	
+	trait = gregarious
+	trait = brave
+	trait = fickle
+	
+	trait = lifestyle_mariner
+	
+	diplomacy = 6
+	martial = 6
+	prowess = 5
+	
+	trait = education_diplomacy_3
+	
+	1253.7.19 = {
+		birth = yes
+	}
+	
+	2478.9.10 = {
+		add_trait_xp = {
+			trait = lifestyle_mariner
+			value = 50
+		}
+	}
+	
+	6312.4.15 = {
+		death = { death_reason = death_drowned }
+	}
+}
+
+edhellondlegend2 = {
+	name = Nathir
+	
+	dynasty = dynasty_nathir
+	religion = faith_eldar
+	culture = silvan
+	
+	trait = diligent
+	trait = just
+	trait = arrogant
+	
+	trait = depressed_1
+	
+	martial = 4
+	stewardship = 8
+	intrigue = 7
+	learning = 7
+	
+	trait = education_learning_3
+	
+	997.10.23 = {
+		birth = yes
+	}
+	
+	6354.10.12 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+drellegend1 = {
+	name = Artano
+	
+	dynasty = dynasty_artano
+	religion = faith_moriquendi
+	culture = cuind
+	
+	trait = brave
+	trait = gregarious
+	trait = ambitious
+	
+	trait = lifestyle_traveler
+	trait = adventurer
+	
+	martial = 6
+	stewardship = 5
+	diplomacy = 9
+	intrigue = 5
+	learning = 6
+	
+	trait = education_diplomacy_3
+	
+	1297.7.9 = {
+		birth = yes
+	}
+	
+	6001.10.12 = {
+		death = { death_reason = death_vanished }
+	}
+}
+
+drellegend2 = {
+	name = Axandil
+	
+	dynasty = dynasty_axandil
+	religion = faith_moriquendi
+	culture = cuind
+	
+	trait = wrathful
+	trait = brave
+	trait = stubborn
+	
+	trait = lifestyle_blademaster
+	trait = scarred
+	
+	martial = 10
+	stewardship = 6
+	diplomacy = 3
+	intrigue = 2
+	learning = 5
+	
+	trait = education_martial_4
+	
+	4927.4.7 = {
+		birth = yes
+	}
+	
+	5793.10.12 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+drellegend3 = {
+	name = Ethetariel
+
+	female = yes
+	
+	dynasty = dynasty_ethetariel
+	religion = faith_moriquendi
+	culture = cuind
+	
+	trait = forgiving
+	trait = honest
+	trait = gregarious
+	
+	trait = beauty_good_3
+	trait = poet
+	trait = depressed_1
+	
+	martial = 4
+	stewardship = 9
+	diplomacy = 11
+	intrigue = 4
+	learning = 7
+	
+	trait = education_learning_4
+	
+	996.5.3 = {
+		birth = yes
+	}
+	
+	5003.1.7 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+drellegend4 = {
+	name = Galas
+	female = yes
+	
+	dynasty = dynasty_galas
+	religion = faith_moriquendi
+	culture = cuind
+	
+	trait = patient
+	trait = stubborn
+	trait = vengeful
+	
+	trait = beauty_good_2
+	
+	diplomacy = 7
+	martial = 2
+	stewardship = 4
+	intrigue = 9
+	learning = 5
+	prowess = 3
+	
+	trait = education_intrigue_3
+	
+	2794.7.19 = {
+		birth = yes
+	}
+	
+	6574.3.2 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+lasgalendrimlegend1 = {
+	name = Earedur
+	
+	dynasty = dynasty_earedur
+	religion = faith_eldar
+	culture = lasgalendrim
+	
+	trait = honest
+	trait = arrogant
+	trait = paranoid
+	
+	trait = lifestyle_mystic
+	
+	martial = 4
+	stewardship = 8
+	diplomacy = 2
+	intrigue = 11
+	learning = 7
+	
+	trait = education_intrigue_2
+	
+	2297.7.9 = {
+		birth = yes
+	}
+	
+	5311.10.12 = {
+		death = { death_reason = death_drowned }
+	}
+}
+
+lasgalendrimlegend2 = {
+	name = Elan
+	
+	dynasty = dynasty_elan
+	religion = faith_eldar
+	culture = lasgalendrim
+	
+	trait = ambitious
+	trait = stubborn
+	trait = trusting
+	
+	trait = lifestyle_hunter
+	
+	martial = 7
+	stewardship = 2
+	diplomacy = 5
+	intrigue = 1
+	learning = 7
+	
+	trait = education_martial_2
+	
+	2921.1.9 = {
+		birth = yes
+	}
+	
+	6093.10.12 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+lasgalendrimlegend3 = {
+	name = Rian
+
+	female = yes
+	
+	dynasty = dynasty_rian
+	religion = faith_eldar
+	culture = lasgalendrim
+	
+	trait = brave
+	trait = trusting
+	trait = gregarious
+	
+	trait = beauty_good_3
+	trait = lifestyle_traveler
+	trait = scarred
+	
+	martial = 1
+	stewardship = 6
+	diplomacy = 9
+	intrigue = 1
+	learning = 11
+	
+	trait = education_learning_2
+	
+	3001.3.4 = {
+		birth = yes
+	}
+	
+	5003.1.7 = {
+		death = { death_reason = death_wounds }
+	}
+}
+
+lasgalendrimlegend4 = {
+	name = Ninaer
+	female = yes
+	
+	dynasty = dynasty_ninaer
+	religion = faith_moriquendi
+	culture = lasgalendrim
+	
+	trait = just
+	trait = diligent
+	trait = patient
+	
+	trait = shrewd
+	
+	diplomacy = 4
+	martial = 4
+	stewardship = 7
+	intrigue = 2
+	learning = 6
+	prowess = 5
+	
+	trait = education_stewardship_2
+	
+	3321.8.2 = {
+		birth = yes
+	}
+	
+	6692.5.12 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+nelorniethlegend1 = {
+	name = Toril
+	female = yes
+	
+	dynasty = dynasty_toril
+	religion = faith_moriquendi
+	culture = penni
+	
+	trait = gregarious
+	trait = diligent
+	trait = eccentric
+	
+	diplomacy = 6
+	martial = 4
+	stewardship = 3
+	intrigue = 5
+	learning = 4
+	prowess = 2
+	
+	trait = education_diplomacy_2
+	
+	121.1.10 = {
+		birth = yes
+	}
+	
+	6233.6.27 = {
+		death = { death_reason = death_sailed_west }
+	}
+}
+
+nelorniethlegend2 = {
+	name = Valhad
+	
+	dynasty = dynasty_valhad
+	religion = faith_moriquendi
+	culture = penni
+	
+	trait = shy
+	trait = patient
+	trait = just
+	
+	diplomacy = 6
+	martial = 3
+	stewardship = 7
+	intrigue = 4
+	learning = 10
+	prowess = 3
+	
+	trait = education_learning_3
+	
+	2915.7.3 = {
+		birth = yes
+	}
+	
+	6549.7.9 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+nelorniethlegend3 = {
+	name = Pelilas
+	
+	dynasty = dynasty_pelilas
+	religion = faith_moriquendi
+	culture = penni
+	
+	trait = brave
+	trait = content
+	trait = temperate
+	
+	trait = veteran_of_palisor
+	trait = physique_good_2
+	
+	diplomacy = 5
+	martial = 8
+	stewardship = 3
+	intrigue = 4
+	learning = 6
+	prowess = 9
+	
+	trait = education_martial_3
+	
+	211.9.13 = {
+		birth = yes
+	}
+	
+	6104.6.7 = {
+		death = { death_reason = death_battle }
 	}
 }

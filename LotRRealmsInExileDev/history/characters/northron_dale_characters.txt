@@ -923,7 +923,7 @@ lineofdale48 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:bardwife
+					dead_relation = character:bardwife
 				}
 			}
 		}
@@ -965,10 +965,14 @@ lineofdale48 = {
 	
 	7010.1.1 = {
 		effect = {
+			add_to_variable_list = {
+				name = defensive_allies
+				target = character:lineofdurin90
+			}
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofdale46
+					dead_relation = character:lineofdale46
 				}
 			}
 			create_character_memory = {
@@ -15683,14 +15687,14 @@ linefloki105 = {
     trait = gluttonous
     trait = cynical
 
-    diplomacy = 23
-    martial = 12
-    stewardship = 29
-    intrigue = 11
-    learning = 23
-    prowess = 25
+    diplomacy = 7
+    martial = 2
+    stewardship = 9
+    intrigue = 1
+    learning = 8
+    prowess = 9
 
-    trait = education_stewardship_4
+    trait = bossy
 
     7019.7.7 = {
         birth = yes
@@ -21766,6 +21770,11 @@ linefortinbras27 = {
 
     6991.1.14 = {
         birth = yes
+        effect = {
+            make_character_crypto_religionist_effect = {
+				CRYPTO_RELIGION = faith:faith_red_sect
+			}
+        }
     }
 
     7053.8.7 = {
@@ -24004,7 +24013,8 @@ lineoffrygar3 = {
     }
 
     7020.1.1 = { 
-        add_realm_law_skip_effects = male_preference_law 
+#        add_realm_law_skip_effects = male_preference_law
+# Already has law
         give_council_position = councillor_steward
     }
 
@@ -24140,7 +24150,12 @@ lineoffrygar7 = {
 	prowess = 5
 						
 	7017.1.1 = {				
-		birth = yes			
+		birth = yes	
+        effect = {
+            make_character_crypto_religionist_effect = {
+				CRYPTO_RELIGION = faith:faith_red_sect
+			}
+        }		
 	}
 	7052.1.1 = {				
 		death = { death_reason = death_drowned }	

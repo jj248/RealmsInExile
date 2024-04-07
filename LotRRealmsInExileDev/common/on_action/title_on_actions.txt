@@ -301,6 +301,48 @@ on_title_gain = {
 			}
 			abrakhan_transfer_rewards_effect = yes
 		}
+		
+		#Event to give Stewards Ithilien
+		if = {
+			limit = {
+				game_start_date >= 6083 # After line of Kings fails in Gondor
+				OR = {
+					has_title = title:e_gondor
+					has_title = title:e_castamir
+					has_title = title:e_reunitedkingdom
+					has_title = title:e_numenor_in_exile
+				}
+				dynasty = dynasty:dynasty_elros
+				dynasty:dynasty_ostomir = {
+					any_dynasty_member = {
+						is_alive = yes
+					}
+					NOT = {
+						has_dynasty_modifier = princely_house_of_ithilien
+					}
+				}
+				exists = title:k_gondor_steward.holder
+				title:k_gondor_steward.holder = { dynasty = dynasty:dynasty_ostomir }
+				completely_controls = title:d_minas_ithil
+				completely_controls = title:d_emyn_arnen
+				completely_controls = title:d_harithilien
+				completely_controls = title:d_forithilien
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:princedom_of_ithilien_event
+					}
+				}
+			}
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:princedom_of_ithilien_event
+			}
+			trigger_event = {
+				id = gondor.0305
+				days = 3
+			}
+		}
 
 		if = { # Message to Gondor | Bellakar ruler died
 			limit = {
@@ -777,6 +819,10 @@ on_title_gain = {
 				scope:title ?= {
 					this = title:e_khand
 				}
+    			OR = {
+					culture = culture:variag
+					culture = { any_parent_culture_or_above = { this = culture:variag } }
+    			}
 			}
 			trigger_event = {
 				id = khand.0001
@@ -1081,6 +1127,92 @@ on_title_gain = {
 			}
 		}
 		
+		# Special Legitimacy gain for being elected
+		if = {
+			limit = {
+				scope:title = {
+					has_order_of_succession = election
+				}
+			}
+			save_scope_value_as = {
+				name = title_tier_minus_2
+				value = {
+					value = scope:title.tier
+					subtract = 2
+				}
+			}
+			send_interface_toast = {
+				type = event_toast_effect_good
+				title = legitimacy_gain_toast
+				left_icon = root
+				right_icon = scope:title
+				add_legitimacy = {
+					value = {
+						value = major_legitimacy_gain
+						multiply = scope:title_tier_minus_2
+					}
+				}
+			}
+		}
+		
+		### CE1 LEGITIMACY SETUP ###
+		if = {
+			limit = { # Catch new landed rulers
+				exists = dynasty
+				# Exclude unplayable for now
+				NOR = {
+					government_has_flag = government_is_republic
+					government_has_flag = government_is_theocracy
+				}
+				legitimacy = 0
+				days_as_ruler < 1
+				OR = {
+					scope:title.tier = tier_county
+					any_held_title = { tier = tier_county }
+				}
+			}
+			add_legitimacy = succession_legitimacy_value
+		}
+
+		# Did I conquer a place with holy order leases not of my faith?
+		if = {
+			limit = {
+				scope:title = {
+					any_in_de_jure_hierarchy = {
+						tier = tier_barony
+						is_under_holy_order_lease = yes
+						county.holder = {
+							any_liege_or_above = { this = root }
+						}
+						lessee = {
+							NAND = { # Only for leases of people who are not of your faith or the holder's faith
+								faith = root.faith
+								faith = prev.county.holder.faith
+							}
+						}
+					}
+				}
+			}
+			scope:title = {
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_barony
+						is_under_holy_order_lease = yes
+						county.holder = {
+							any_liege_or_above = { this = root }
+						}
+						lessee = {
+							NAND = { # Only for leases of people who are not of your faith or the holder's faith
+								faith = root.faith
+								faith = prev.county.holder.faith
+							}
+						}
+					}
+					revoke_lease = yes
+				}
+			}
+		}
+		
 		correct_wastelands_tracker = yes
 		scope:previous_holder ?= { correct_wastelands_tracker = yes }
 	}
@@ -1118,9 +1250,9 @@ on_title_gain_inheritance = {
 		delay = { days = 1 }
 		# Try to end inherited entrenched regencies automatically — we need to launder this by a day to make sure the AI realises they've inherited a diarchy.
 		diarchy.0113
+		lotr_interaction_events.0002
 	}
 	effect = {
-
 		### WILDERNESS ###
 		if = {
 			limit = {
@@ -1695,6 +1827,32 @@ on_title_lost = {
 					set_variable = {
 						name = landed_title
 						value = scope:title
+					}
+				}
+			}
+		}
+		
+		# LEGITIMACY LOSS FROM USURPATION
+		if = {
+			limit = { scope:transfer_type ?= flag:usurped }
+			# Minus 2, since we want Duchy to be 1, and it's normally 3
+			save_scope_value_as = {
+				name = title_tier_minus_2
+				value = {
+					value = scope:title.tier
+					subtract = 2
+				}
+			}
+			send_interface_toast = {
+				type = event_toast_effect_bad
+				title = legitimacy_loss_toast
+				left_icon = root
+				right_icon = scope:title
+				custom_tooltip = legitimacy_loss_usurpation_tt
+				add_legitimacy = {
+					value = {
+						value = miniscule_legitimacy_loss
+						multiply = scope:title_tier_minus_2
 					}
 				}
 			}

@@ -33,7 +33,9 @@
  tenet_primacy_of_nessa_desc:0 "In this faith, the Valie [nessacharacter|E] inspires a spirit of festivity and rejoycing. Emulating [nessacharacter|E], the faithful dance joyfully, embracing the fullness of life and the gift of peace to the beat of the drum." #Old Desc: Nessa the Dancer is the wife of Tulkas and sister to Oromë. She is fleet-footed as a deer, and is a dancer without peer, dancing with the Eldar upon the plains of Valimar. She and those that venerate her rejoice in peace and the festival, the dance and the drum.
  tenet_elven_meditation_name:0 "Grace of the Firstborn" #placeholder
  tenet_elven_meditation_desc:0 "The [elves|E], were the first and eldest of the Children of Ilúvatar, considered the fairest and wisest of the earthly race of [ardaconcept|E]. They hold a great reverence for nature and life and see it as their duty to protect it."  #placeholder
- 
+ tenet_birthright_eldar_name:0 "Birthright of the Eldar"
+ tenet_birthright_eldar_desc:0 "The [eldar|E], first and eldest of the Children of Ilúvatar, are the guardians of the natural order of the world. They are to be the guides - and chastisers if need be - of the Aftercomers. They shall not abandon the lands of their birth, nor their birthright."
+ INCOMPATIBLE_TENET_ELVEN_MEDITATION_TRIGGER:1 "Incompatible with the [core_tenet|E] [GetFaithDoctrine('tenet_elven_meditation').GetName( GetPlayer.GetFaith )]"
  doctrine_parameter_adunaic_propaganda_active_desc:0 "Followers may improve their [skills|E] and manipulate history by #high Sponsoring Adûnaic Propaganda#!"
 
  # Free Peoples Tenets 
@@ -86,6 +88,7 @@
  tenet_corsairs_desc:0 "On the shores of the Belegaer, many are forced to turn to piracy to sustain themselves. The life of a corsair is a rough one upon the high seas. But for those who know how to swiftly strike and retreat back into the shadows, great opportunities await."
  doctrine_parameter_faith_can_raid_overseas:0 "Unlocks the ability to [raid|E] overseas, if you can already [raid|E]"
  doctrine_parameter_lotr_extra_raid_loot:0 "Gain 20% of your loot in [piety|E] when [raiding|E]"
+ doctrine_parameter_lotr_harder_to_convert:0 "More difficult to [demand_conversion|E] from adherents"
 
 # Forces of Evil Tenets
  tenet_dark_tower_subjugation_name:0 "Subjugation Beneath the Dark Tower"

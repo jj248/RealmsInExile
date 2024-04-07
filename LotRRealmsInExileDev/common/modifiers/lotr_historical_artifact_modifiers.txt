@@ -193,7 +193,6 @@ silmaril_modifier = {
 	prowess_no_portrait = 50
 	monthly_prestige = 100
 	monthly_piety = 100
-	enemy_hostile_scheme_success_chance_add = -1000
 }
 
 athrad_gillith_harp_modifier = {
@@ -211,6 +210,20 @@ hyandolire_modifier = {
 	heavy_cavalry_toughness_mult = 0.10
 	enemy_hard_casualty_modifier = 0.10
 	monthly_prestige = 0.3
+}
+
+ringil_modifier = {
+	knight_limit = 1
+	monthly_dynasty_prestige = 0.5
+	monthly_prestige = 1
+	martial = 1
+}
+
+rop_modifier = {
+	adunai_religion_opinion = 10
+	elven_religion_opinion = -10
+	monthly_learning_lifestyle_xp_gain_mult = -0.05
+	monthly_prestige = 0.5
 }
 
 
@@ -1113,4 +1126,13 @@ galadhrim_bow_modifier = {
 	mallorn_forest_advantage = 5
 	archers_damage_mult = 0.1
 	archers_toughness_mult = 0.1
+}
+
+elven_sword_modifier = {
+	prowess_no_portrait = 12
+	knight_effectiveness_mult = 0.08
+	forest_advantage = 5
+	plains_advantage = 5
+	heavy_infantry_damage_mult = 0.1
+	heavy_infantry_toughness_mult = 0.1
 }

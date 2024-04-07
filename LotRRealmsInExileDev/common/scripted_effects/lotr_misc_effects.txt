@@ -20,20 +20,6 @@ decrease_variable = { # From Tobbzn
     }
 }
 
-durins_bane_province_modifier_effect = {
-    title:k_khazad_dum = {
-        every_de_jure_county = {
-            limit = {
-                NOR = {
-                    this = title:c_dimrill_dale
-                    this = title:c_caradhras_pass
-                }
-            }
-            # title_province = { add_province_modifier = durins_bane_modifier }
-        }
-    }
-}
-
 set_every_county_wilderness = {
 	create_title_and_vassal_change = {
 		type = granted
@@ -112,6 +98,7 @@ set_every_county_wilderness = {
 					change = scope:change
 					take_baronies = yes
 				}
+				change_development_level = -100
 			}
 		}
 		
@@ -158,8 +145,10 @@ set_every_county_wilderness = {
 				change = scope:change
 				take_baronies = yes
 			}
+			change_development_level = -100
 		}
 		set_color_from_title = title:k_invisible_title
+		set_title_name = k_wastelands
 	}
 
 	resolve_title_and_vassal_change = scope:change
@@ -178,7 +167,7 @@ set_every_county_wilderness = {
 					this = character:nazgul5
 					this = character:nazgul6
 					this = character:nazgul7
-					this = character:nazgul7
+					this = character:nazgul8
 					this = character:nazgul9
 					this = character:lineofsaruman
 					this = character:lineofgandalf
@@ -202,6 +191,7 @@ set_every_county_wilderness = {
 		every_held_county = {
 			set_county_faith = faith:faith_wastelands_pagan
 			set_county_culture = culture:wastelands
+			change_development_level = -100
 			generate_coa = yes
 
 			if = {
@@ -223,7 +213,10 @@ set_every_county_wilderness = {
 						NOT = { kingdom = title:k_eregion }
 					}
 				}
-				kingdom = { set_color_from_title = title:k_invisible_title } 
+				kingdom = { 
+					set_color_from_title = title:k_invisible_title 
+					set_title_name = k_wastelands
+				} 
 			}
 		}
 		

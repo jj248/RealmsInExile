@@ -71,7 +71,8 @@
  
  ## NUMENOR ##
 
- emperor_feudal_numenorean:0 "Tar"
+ emperor_feudal_male_numenorean:0 "[CHARACTER.Custom('emperor_feudal_male_numenorean')]"
+ emperor_feudal_female_numenorean:0 "[CHARACTER.Custom('emperor_feudal_female_numenorean')]"
  
  ## GONDORIAN ##
 
@@ -167,7 +168,7 @@
  duke_feudal_male_adunaic:0 "Bārunkhôr"
  duke_feudal_female_adunaic:0 "Bārunkhôr"
  duchy_feudal_adunaic:0 "Bāruthâni"
- kingdom_feudal_adunaic:0 "thâni"
+ kingdom_feudal_adunaic:0 "Thâni"
  king_feudal_female_adunaic:0 "Arkhôr"
  king_feudal_male_adunaic:0 "Arkhôr"
  emperor_feudal_male_adunaic:0 "Ar"
@@ -290,14 +291,25 @@
  kingdom_female_dorwinion:0 "[CHARACTER.Custom('kingdom_female_dorwinion')]"
  empire_male_dorwinion:0 "[CHARACTER.Custom('empire_male_dorwinion')]"
  empire_female_dorwinion:0 "[CHARACTER.Custom('empire_female_dorwinion')]"
+
+ free_city_dorwinion:0 "[CHARACTER.Custom('free_city_dorwinion')]"
+ free_city_dorwinion_title:0 "Free City"
+ viscounty_dorwinion_title:0 "Vincounty"
+ league_dorwinion:0 "[CHARACTER.Custom('league_dorwinion')]"
+ league_dorwinion_title:0 "League"
+ marquessate_dorwinion_title:0 "Marquessate"
+ realm_dorwinion:0 "[CHARACTER.Custom('realm_dorwinion')]"
+ realm_dorwinion_title:0 "Realm"
+ assembly_of_realms_dorwinion:0 "[CHARACTER.Custom('assembly_of_realms_dorwinion')]"
+ empire_dorwinion_title:0 "Confederated Realms"
  
- dorwinion_winelord_male_count_title:0 "Count"
+ dorwinion_winelord_male_count_title:0 "Vincount"
  dorwinion_master_merchant_male_count_title:0 "Patrician"
- dorwinion_winelord_female_count_title:0 "Countess"
+ dorwinion_winelord_female_count_title:0 "Vincountess"
  dorwinion_master_merchant_female_count_title:0 "Patrician"
- dorwinion_winelord_male_duke_title:0 "Duke"
+ dorwinion_winelord_male_duke_title:0 "Margrave"
  dorwinion_master_merchant_male_duke_title:0 "Grand Patrician"
- dorwinion_winelord_female_duke_title:0 "Duchess"
+ dorwinion_winelord_female_duke_title:0 "Margravine"
  dorwinion_master_merchant_female_duke_title:0 "Grand Patrician"
  dorwinion_male_realm_master_title:0 "Realm-Master"
  dorwinion_female_realm_master_title:0 "Realm-Master"
@@ -343,9 +355,8 @@
  ## NURNIAG ##
  
  ### Easterlings ###
- count_igath_male:0 "Is'tada"
- count_igath_female:0 "Is'tada"
- duke_igath_male:0 "Shazada"
+ count_igath:0 "Is'tada"
+ duke_igath:0 "Shazada"
  duke_igath_female:0 "Shazada"
  king_igath_male:0 "Tiqaia"
  king_igath_female:0 "Tiqaia"
@@ -356,9 +367,39 @@
  duchy_igath:0 "Titrarka"
  kingdom_igath:0 "A'thra"
  empire_igath:0 "Ukhdana"
+ 
+ ## Dragon Knights
+ king_dragon_knights:0 "Black Dragon"
+ kingdom_dragon_knights:0 "Order"
+ count_vassal_dragon_knights_male:0 "Dragon-Knight"
+ duke_vassal_dragon_knights_male:0 "Chapter Master"
 
- duke_dragon_knights:0 "Chapter Master"
- duchy_dragon_knights:0 "Chapter"
+ county_vassal_dragon_knights:0 "Company"
+ duchy_vassal_dragon_knights:0 "Chapter"
+ 
+ custom_dragon_knight_loremaster:0 "Librarian"
+
+ count_igath_male:0 "[CHARACTER.Custom('easterling_count')]"
+ count_igath_female:0 "[CHARACTER.Custom('easterling_count')]"
+ duke_igath_male:0 "[CHARACTER.Custom('easterling_duke')]"
+ duke_igath_female_2:0 "[CHARACTER.Custom('easterling_duke')]"
+
+ duchy_easterling:0 "[CHARACTER.Custom('easterling_duchy')]"
+ county_easterling:0 "[CHARACTER.Custom('easterling_county')]"
+
+ # vassal titles #
+ count_oligarchy_male:0 "[CHARACTER.Custom('count_oligarchy_male')]"
+ count_oligarchy_male_vassal:0 "Councilman"
+ count_oligarchy_female:0 "[CHARACTER.Custom('count_oligarchy_female')]"
+ count_oligarchy_female_vassal:0 "Councilwoman"
+ duke_oligarchy_male:0 "[CHARACTER.Custom('duke_oligarchy_male')]"
+ duke_oligarchy_male_vassal:0 "Upper Councilman"
+ duke_oligarchy_female:0 "[CHARACTER.Custom('duke_oligarchy_female')]"
+ duke_oligarchy_female_vassal:0 "Upper Councilwoman"
+ king_oligarchy_male:0 "[CHARACTER.Custom('king_oligarchy_male')]"
+ king_oligarchy_male_vassal:0 "Representative"
+ king_oligarchy_female:0 "[CHARACTER.Custom('king_oligarchy_female')]"
+ king_oligarchy_female_vassal:0 "Representative"
 
  count_feudal_male_ioriag:0 "Ôsvodeg"
  count_feudal_female_ioriag:0 "Ôsvodegah"
@@ -444,26 +485,12 @@
  duchy_oligarchy:0 "District"
  kingdom_oligarchy:0 "Oligarchy"
  independant_king_oligarch:0 "Oligarch"
- emperor_oligarchy_male:0 "Chairman"
- emperor_oligarchy_female:0 "Chairwoman"
- empire_oligarchy:0 "Grand Assembly"
+ emperor_oligarchy_male:0 "High Custodian"
+ emperor_oligarchy_female:0 "High Custodian"
+ empire_oligarchy:0 "Freehold"
 
  independant_oligarchy_council_master:0 "Council Master"
  oligarch:0 "Council Master"
- 
- # vassal titles #
- count_oligarchy_male:0 "[CHARACTER.Custom('count_oligarchy_male')]"
- count_oligarchy_male_vassal:0 "Councilman"
- count_oligarchy_female:0 "[CHARACTER.Custom('count_oligarchy_female')]"
- count_oligarchy_female_vassal:0 "Councilwoman"
- duke_oligarchy_male:0 "[CHARACTER.Custom('duke_oligarchy_male')]"
- duke_oligarchy_male_vassal:0 "Upper Councilman"
- duke_oligarchy_female:0 "[CHARACTER.Custom('duke_oligarchy_female')]"
- duke_oligarchy_female_vassal:0 "Upper Councilwoman"
- king_oligarchy_male:0 "[CHARACTER.Custom('king_oligarchy_male')]"
- king_oligarchy_male_vassal:0 "Representative"
- king_oligarchy_female:0 "[CHARACTER.Custom('king_oligarchy_female')]"
- king_oligarchy_female_vassal:0 "Representative"
 
  ## Daen ##
  baron_daen_male:0 "Ardhi"
@@ -481,6 +508,8 @@
  duchy_daen:0 "Kadochydd"
  kingdom_daen:0 "Teyrn"
  empire_daen:0 "Tir Gwals"
+ 
+ kingdom_nurn_free_slaves:0 "Free Lands"
 
  ### Hobbits ###
 

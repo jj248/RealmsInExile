@@ -92,7 +92,7 @@ uvatha_ring = {
 
 staff_saruman = { # The Staff of Saruman
 	icon = "artifact_icons_unique_staff_saruman.dds"
-	asset = ep1_mediterranean_box_medium_fancy_02_a_entity
+	asset = saruman_staff_portrait_entity
 }
 
 palantir = { # Palantiri
@@ -113,7 +113,7 @@ glamdring = { # Foe-hammer The blade of Gandalf
 
 staff_radagast_the_brown = { # The Staff of Radagast The Brown
 	icon = "artifact_icons_unique_staff_radagast_the_brown.dds"
-	asset = ep1_mediterranean_box_medium_fancy_02_a_entity
+	asset = gandalf_staff_portrait_entity
 }
 
 
@@ -179,6 +179,11 @@ athrad_gillith_harp = { #Athrad Gillith's Harp
 hyandolire = {
 	icon = "artifact_icons_unique_anguirel.dds"
 	asset = elven_sword_01_portrait_entity
+}
+
+ringil = { # Fingolfin's sword
+	icon = "artifact_icons_unique_hadhafang.dds"
+	asset = ep1_western_sword_02_a_entity
 }
 
 ## Dwarven ##
@@ -685,7 +690,7 @@ kine_drinking_horn = {
 	asset = fp3_artifact_persian_drinking_vessel_01_c_entity
 }
 
-walrus_tooth = {
+walrus_tooth_horn = {
 	icon = "artifact_regalia.dds"
 	asset = ep1_olifant_entity
 	pedestal = "tall_pillow"
@@ -820,7 +825,7 @@ azaghal_helmet = {
 }
 
 nimphelos = {
-	icon = "artifact_brooch.dds"
+	icon = "artifact_icons_unique_nimphelos.dds"
 	asset = ep2_western_pillow_chain_01_a_entity
 	pedestal = "short_pillow"
 }

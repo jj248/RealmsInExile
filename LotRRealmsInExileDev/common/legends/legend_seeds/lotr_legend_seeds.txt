@@ -1,0 +1,1021 @@
+﻿## Ancestral Glory Variants
+# Legitimizing
+castamir = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = castamir_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_northern_adunaic }
+			dynasty = dynasty:dynasty_kamal # Kamalaka
+		}
+		game_start_date >= 5481
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = must_own_umbar_or_gondor_tt
+			OR = {
+				has_title = title:k_umbar
+				has_title = title:e_umbar
+				has_title = title:e_castamir
+				has_title = title:e_gondor
+				has_title = title:e_gondor_steward
+				has_title = title:e_numenor_in_exile
+				has_title = title:e_reunitedkingdom
+			}
+		}
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofanarion53 # "Castamir - the Usurper"
+		title = title:e_gondor
+	}
+}
+anarion = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = anarion_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_dunedain
+			NOR = {
+				any_parent_culture_or_above = { this = culture:dunedain_ranger }
+				this = culture:dunedain_ranger
+			}
+		}
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = must_be_a_king_in_greater_gondor_tt
+			capital_province = { geographical_region = custom_greater_gondor }
+			highest_held_title_tier >= tier_kingdom
+		}
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofanarion1 # "Anarion"
+		title = title:e_gondor
+	}
+}
+isildur = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = isildur_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_dunedain
+			OR = {
+				any_parent_culture_or_above = { this = culture:arnorian }
+				this = culture:arnorian
+				this = culture:dunedain
+			}
+		}
+		game_start_date >= 4035
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = must_hold_an_arnorian_kingdom_tt
+			OR = {
+				has_title = title:k_arthedain
+				has_title = title:k_cardolan
+				has_title = title:k_rhudaur
+				has_title = title:e_arnor
+				has_title = title:e_numenor_in_exile
+				has_title = title:e_reunitedkingdom
+			}
+		}
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineisildur0 # "Isildur"
+		title = title:e_arnor
+	}
+}
+vidugavia = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = vidugavia_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_northron
+			OR = {
+				this = culture:rhovannic
+				any_parent_culture_or_above = {
+					this = culture:rhovannic
+				}
+			}
+		}
+		game_start_date >= 5301
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:linerhovanion1 # "Vidugavia"
+		title = title:e_rhovanion
+	}
+}
+zimrebal = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = zimrebal_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_bellakari
+		}
+		game_start_date >= 4428
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineoftumakveh1 # "Zimrêbal Ironhand"
+		title = title:e_bellakar
+	}
+}
+azruben = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = azruben_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_southern_adunaic
+		}
+		game_start_date >= 4428
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofazruben1
+		title = title:k_an_balkumagan
+	}
+}
+pezar = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = pezar_legend
+		}
+		OR = {
+			culture = culture:pezarsani
+			culture = { any_parent_culture_or_above = { this = culture:pezarsani } }
+			dynasty = dynasty:dynasty_pesasikka
+		}
+		game_start_date >= 5243
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = must_be_just_august_administrator_tt
+			OR = {
+				has_trait = just
+				has_trait = august
+				has_trait = administrator
+			}
+		}
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:linepesasikka1 # "Pezar"
+		title = title:k_pezarsan
+	}
+}
+shoreborn = { # Born from the Sea itself - Malíciam and Uyuninêz
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = shoreborn_legend
+		}
+		any_realm_province = {
+			is_coastal = yes
+		}
+		faith = faith:faith_corsair
+		#OR = {
+		#	culture = { has_cultural_tradition = tradition_corsairs_of_umbar }
+		#	culture = { has_cultural_tradition = tradition_practiced_pirates }
+		#	culture = { has_cultural_tradition = tradition_fp1_coastal_warriors }
+		#	culture = { has_cultural_tradition = tradition_seafaring }
+		#}
+	}
+	is_valid = {
+		is_landed = yes
+		highest_held_title_tier >= tier_kingdom
+		prestige_level >= high_prestige_level
+		has_trait = viking
+	}
+
+	chronicle = godly_descent
+	chronicle_properties = {
+		god = flag:darkness_god_maliciam
+		title = title:k_mardruak
+	}
+}
+serkhoz = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = pezar_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_igath }
+			dynasty = dynasty:dynasty_szrel
+		}
+		game_start_date >=  4030
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		highest_held_title_tier >= tier_empire
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofszrel1 #Surakhariz, Founder of the Szrel
+		title = title:e_szreldor
+	}
+}
+durin1 = { # Durin the Deathless
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = durin1_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_longbeard }
+			dynasty = dynasty:dynasty_durin
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofdurin1 # Durin the Deathless
+		title = title:e_misty_mountains
+	}
+}
+dwalin = { # Dwalin the Wise
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = durin1_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_broadbeam }
+			dynasty = dynasty:dynasty_dwalin
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofdwalin0 # Dwalin the Wise
+		title = title:e_blue_mountains
+	}
+}
+uri = { # Uri the Scarred
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = durin1_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_firebeard }
+			dynasty = dynasty:dynasty_uri
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofuri0 # Uri the Scarred
+		title = title:e_blue_mountains
+	}
+}
+durin1 = { # Durin the Deathless
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = durin1_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_longbeard }
+			dynasty = dynasty:dynasty_durin
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofdurin1 # Durin the Deathless
+		title = title:e_misty_mountains
+	}
+}
+gerontius = { # Old Took
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = gerontius_legend
+		}
+		any_ancestor = {
+			even_if_dead = yes
+			this = character:lineoftook6 # Old Took
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineoftook6 # Old Took
+		title = title:k_shire
+	}
+}
+bahharkan = { # Bahharkân
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = bahharkan_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_northern_apysaic }
+			#culture = { has_cultural_pillar = heritage_middle_apysaic }
+			#culture = { has_cultural_pillar = heritage_southern_apysaic }
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:bahharkan
+		title = title:e_harad
+	}
+}
+blanco = { # Blanco
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = blanco_legend
+		}
+		culture = { has_cultural_pillar = heritage_periannath }
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:blanco
+		title = title:k_shire
+	}
+}
+
+# Heroic
+joam_tuv = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = joam_tuv_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_tedjin
+		}
+		game_start_date >= 4930
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofjoamtuv1 # "Joam-Tuv"
+		title = title:e_bellakar
+	}
+}
+bandobras = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = bandobras_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_periannath
+		}
+		game_start_date >= 6839
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineoftook4 # "Bandobras Took"
+		title = title:k_shire
+	}
+}
+wulf = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = wulf_legend
+		}
+		dynasty = dynasty:dynasty_freca
+		game_start_date >= 6792
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineoffreca3 # "Wulf, son of Freca"
+		title = title:k_rohan
+	}
+}
+tedjin_iorag = { # Tedjin claim to originate from the Iorags of Rhûn
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = tedjin_iorag_legend
+		}
+		culture = {
+			has_cultural_pillar = heritage_tedjin
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	chronicle = ancient_people
+	chronicle_properties = {
+		culture = culture:iorag
+		title = title:k_tedja
+		original_region = geographical_region:middleearth_rhun
+	}
+}
+bard_bowman = { # Bard the Bowman
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = bard_legend
+		}
+		this.house = house:house_bard
+		game_start_date >= 6974
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofdale46 # "Bard the Bowman"
+		title = title:k_dale
+	}
+}
+eorl = { # Eorl the Young
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = eorl_legend
+		}
+		culture = { has_cultural_pillar = heritage_hadorim }
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:6000000 # Eorl the Young
+		title = title:e_calenardhon
+	}
+}
+azaghal = { # Azaghâl
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = azaghal_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_broadbeam }
+			dynasty = dynasty:dynasty_dwalin
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofdwalin5 # Azaghâl
+		title = title:k_belegost
+	}
+}
+
+turin = { # Turin Turambar
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = turin_legend
+		}
+		has_character_flag = read_turin_legend
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:lineofhador7 # Turin Turambar
+		antagonist = flag:glaurung
+	}
+}
+tuor = { # Tuor
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = tuor_legend
+		}
+		has_character_flag = read_tuor_legend
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:lineofhador10 # Tuor
+		antagonist = flag:forcesofmorgoth
+	}
+}
+beren = { # Beren Erchamion
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = beren_legend
+		}
+		has_character_flag = read_beren_legend
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:lineofbeor32 # Beren Erchamion
+		antagonist = flag:carcharoth
+	}
+}
+elendil = { # Elendil the Tall
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = elendil_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_dunedain }
+			is_elf = yes
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:lineofelendil # Elendil the Tall
+		antagonist = flag:sauron
+	}
+}
+fingolfin = { # Fingolfin
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = fingolfin_legend
+		}
+		OR = {
+			#culture = { has_cultural_pillar = heritage_dunedain }
+			culture = { has_cultural_pillar = heritage_calaquendi }
+			is_elf = yes
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:linefinwe4 # Fingolfin
+		antagonist = flag:morgoth
+	}
+}
+pharazon = { # Pharazôn the Golden
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = pharazon_legend
+		}
+		lotr_numenor_culture_trigger = yes
+		faith_is_good = no
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:lineofelros28 # Pharazôn
+		antagonist = flag:thevalar
+	}
+}
+thorin = { # Thorin
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = thorin_legend
+		}
+		culture = { has_cultural_pillar = heritage_longbeard }
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:lineofdurin83 # Thorin Oakeshield
+		antagonist = flag:bolg
+	}
+}
+helm = { # Helm Hammerhand
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = helm_legend
+		}
+		has_title = title:c_helmsdeep
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+		OR = {
+			culture = { 
+				OR = {
+					has_cultural_pillar = heritage_hadorim 
+					any_parent_culture_or_above = { this = culture:rohirrim }
+				}
+			}
+			dynasty = dynasty:100 #Eorling
+		}
+	}
+
+	chronicle = inspiring_hero
+	chronicle_properties = {
+		ancestor = character:6000008 #Helm Hammerhand
+		antagonist = flag:wulf
+	}
+}
+faderda = { # Faderda
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = faderda_legend
+		}
+		culture = {
+			has_cultural_pillar = heritage_northron
+			OR = {
+				this = culture:woodmen
+				any_parent_culture_or_above = { this = culture:woodmen }
+			}
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineoffaderda1 # Faderda
+		title = title:e_greenwood
+	}
+}
+	
+
+# Holy
+iunast_haradrim = { # Descendant of Iunást, legendary haradrim hero
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = iunast_legend
+		}
+		faith.religion = religion:far_harad_religion
+	}
+	is_valid = {
+		is_landed = yes
+		highest_held_title_tier >= tier_kingdom
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_descent
+	chronicle_properties = {
+		ancestor_flag = flag:iunast # this felt very weird to type out
+		religion = religion:far_harad_religion
+	}
+}
+iunast_bellakari = { # Descendant of Iunást, legendary haradrim hero
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = iunast_legend
+		}
+		faith.religion = religion:bellakari_religion
+	}
+	is_valid = {
+		is_landed = yes
+		highest_held_title_tier >= tier_kingdom
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_descent
+	chronicle_properties = {
+		ancestor_flag = flag:iunast # this felt very weird to type out
+		religion = religion:bellakari_religion
+	}
+}
+earendil_dunedain = { # Earendil
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = earendil_legend
+		}
+		religion = religion:dunedain_religion
+	}
+	is_valid = {
+		is_landed = yes
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_deed
+	chronicle_properties = {
+		ancestor = character:linefinwe26 # Earendil
+		religion = religion:dunedain_religion
+	}
+}
+earendil_elven = { # Earendil
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = earendil_legend
+		}
+		religion = religion:elven_religion
+	}
+	is_valid = {
+		is_landed = yes
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_deed
+	chronicle_properties = {
+		ancestor = character:linefinwe26 # Earendil
+		religion = religion:elven_religion
+	}
+}
+earendil_bellakari = { # Earendil
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = earendil_legend
+		}
+		religion = religion:bellakari_religion
+	}
+	is_valid = {
+		is_landed = yes
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_deed
+	chronicle_properties = {
+		ancestor = character:linefinwe26 # Earendil
+		religion = religion:bellakari_religion
+	}
+}
+mithrellas = { # Mithrellas
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = mithrellas_legend
+		}
+		dynasty = dynasty:dynasty_dol_amroth
+	}
+	is_valid = {
+		is_landed = yes
+		piety_level >= high_piety_level
+	}
+
+	chronicle = elven_descent
+	chronicle_properties = {
+		ancestor = character:dolamroth0 # Mithrellas
+	}
+}
+durinIII = { # Durin III
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = durinIII_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_longbeard }
+			dynasty = dynasty:dynasty_durin
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		piety_level >= high_piety_level
+		has_title = title:k_khazad_dum
+	}
+
+	chronicle = saintly_deed
+	chronicle_properties = {
+		ancestor = character:lineofdurinIII # Durin III
+		religion = religion:dwarven_religion
+	}
+}
+telchar = { # Telchar
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = telchar_legend
+		}
+		religion = religion:dwarven_religion
+		OR = {
+			capital_province = { geographical_region = middleearth_blue_mountains }
+			culture = { has_cultural_pillar = heritage_broadbeam }
+			culture = { has_cultural_pillar = heritage_firebeard }
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_deed
+	chronicle_properties = {
+		ancestor = character:lineoftelchar1 # Telchar
+		religion = religion:dwarven_religion
+	}
+}
+narvi = { # Narvi
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = narvi_legend
+		}
+		religion = religion:dwarven_religion
+		OR = {
+			capital_province = { geographical_region = middleearth_misty_mountains }
+			culture = { has_cultural_pillar = heritage_longbeard }
+		}
+	}
+	is_valid = {
+		is_landed = yes
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_deed
+	chronicle_properties = {
+		ancestor = character:lineofnarvi # Telchar
+		religion = religion:dwarven_religion
+	}
+}

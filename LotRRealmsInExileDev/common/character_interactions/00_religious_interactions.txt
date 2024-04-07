@@ -637,6 +637,11 @@ demand_conversion_interaction = {
 			}
 			desc = ASK_FOR_CONVERSION_CAN_CREATE_CADET_BRANCH
 		}
+		modifier = {
+			add = -100
+			scope:recipient.faith = { has_doctrine_parameter = lotr_harder_to_convert }
+			desc = LOTR_ASK_FOR_CONVERSION_HARDER_TO_CONVERT
+		}
 		religion_demand_conversion_default_modifier = yes
 	}
 	
@@ -1091,6 +1096,11 @@ demand_conversion_vassal_ruler_interaction = {
 		modifier = {
 			add = 50
 			desc = EDUCATE_CHILD_ACTOR_IS_MY_LIEGE
+		}
+		modifier = {
+			add = -100
+			scope:recipient.faith = { has_doctrine_parameter = lotr_harder_to_convert }
+			desc = LOTR_ASK_FOR_CONVERSION_HARDER_TO_CONVERT
 		}
 		religion_demand_conversion_default_modifier = yes
 
@@ -2728,6 +2738,26 @@ send_to_holy_order_interaction = {
 				use_hook = scope:recipient
 			}
 
+			# Legitimacy loss if you're doing this to your children
+			if = {
+				limit = {
+					scope:recipient = { is_primary_heir_of = scope:actor }
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
+				}
+			}
+			else_if = {
+				limit = {
+					scope:recipient = { is_child_of = scope:actor }
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
+				}
+			}
+
 			trigger_event = holy_order.0001
 			show_as_tooltip = {
 				send_child_to_holy_order_tooltip_effect = yes
@@ -3322,7 +3352,10 @@ take_vows_interaction = {
 
 	is_shown = {
 		scope:recipient = {
+			OR = {
 			is_courtier_of = scope:actor
+				is_child_of = scope:actor
+			}
 			NOR = { 
 				has_trait = devoted 
 				has_trait = order_member 
@@ -3396,6 +3429,26 @@ take_vows_interaction = {
 			if = {
 				limit = { scope:hook = yes }
 				use_hook = scope:recipient
+			}
+			
+			# Legitimacy loss if you're doing this to your children
+			if = {
+				limit = {
+					scope:recipient = { is_primary_heir_of = scope:actor }
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
+				}
+			}
+			else_if = {
+				limit = {
+					scope:recipient = { is_child_of = scope:actor }
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
+				}
 			}
 			
 			show_as_tooltip = {
@@ -4025,6 +4078,17 @@ take_vows_interaction = {
 	ai_will_do = {
 		base = 0
 		
+		modifier = {
+			add = -50
+			scope:actor = {
+				OR = {
+					legitimacy_level = 0
+					legitimacy_level = 1
+				}
+			}
+			scope:recipient = { is_primary_heir_of = scope:actor }
+		}
+		
 		modifier = { # The AI will always use a Hook
 			scope:hook = yes
 			add = 1
@@ -4165,6 +4229,11 @@ take_vows_interaction = {
 					is_close_or_extended_family_of = scope:actor
 				}
 			}
+		}
+		
+		modifier = {
+			factor = 0
+			scope:recipient.liege ?= { is_ai = no }
 		}
 	}
 }
@@ -5215,7 +5284,7 @@ hof_ask_for_claim_interaction = {
 		base = 0 # Should be 0 for all interactions
 
 		modifier = {
-			scope:claim_hook = yes
+			scope:claim_hook ?= yes
 			add = 100
 			desc = SCHEME_WEAK_HOOK_USED
 		}
@@ -5266,12 +5335,15 @@ hof_ask_for_claim_interaction = {
 				}
 			}
 		}
-		
-		opinion_modifier = { # Unlikely if Recipient likes Secondary Recipient
-			who = scope:recipient
-			opinion_target = scope:secondary_recipient
-			multiplier = -1
-			desc = AI_OPINION_REASON
+		modifier = { # Unlikely if recipient likes Secondary Recipient
+			add = {
+				if = {
+					limit = {
+						NOT = { scope:recipient = scope:secondary_recipient }
+					}
+					subtract = "scope:recipient.opinion(scope:secondary_recipient)"
+				}
+			}
 		}
 		
 		modifier = { # Less likely the lower their tier is compared to you

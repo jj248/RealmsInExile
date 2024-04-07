@@ -3,6 +3,21 @@
 on_building_completed = {
 	effect = {
 		root = {
+			############
+			### LotR ###
+			############
+			if = { ### spider_nest_cleared
+				limit = { has_building_with_flag = obstacle }
+				county.holder = {
+					trigger_event = {
+						id = wasteland_blocker.9000
+						days = 1
+					}
+				}
+			}
+			############
+			### LotR ###
+			############
 			# Hard working Tradition
 			if = {
 				limit = {
@@ -260,6 +275,9 @@ on_building_completed = {
 							involvement = involved
 							phase_has_catalyst = catalyst_new_building_in_holdings
 						}
+						NOT = {
+							has_character_flag = immune_from_balrog_building_anger
+						}
 					}
 				}
 				county.holder = {
@@ -384,7 +402,6 @@ on_building_completed = {
 				}
 			}
 		}
-		
 	}
 }
 

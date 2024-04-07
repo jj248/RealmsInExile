@@ -3531,6 +3531,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Di_i_nak:0 "Dînak" # Gwathiurim Unsorted
  Di_i_yilaz:0 "Dîyilaz" # Gwathiurim Unsorted
  Diagero:0 "Diagero" # Unsorted Unsorted
+ Diamond:0 "Diamond" # Hobbit Female
  Dianac:0 "Dianac" # Gwathiurim Unsorted
  Dianach:0 "Dianach" # Unsorted Unsorted
  Dianagh:0 "Dianagh" # Gwathiurim Unsorted
@@ -3685,6 +3686,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Dreceld:0 "Dreceld" # Orc Unsorted
  Dregani:0 "Dregani" # Igath Female
  Dregorn:0 "Dregorn" # Sindarin Male
+ Belegommor:0 "Belegommor" #Sindarin Male
  Drek:0 "Drek" # Orc Unsorted
  Dreka:0 "Dreka" # Orc Unsorted
  Dremidudd:0 "Dremidudd" # Gwathiurim Unsorted
@@ -6978,7 +6980,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Klalshi:0 "Klalshi" # Igath Female
  Klalu_u_g:0 "Klalûg" # Orc Unsorted
  Klenmo:0 "Klenmo" # Gwathiurim Unsorted
- Kleopatra:0 "Kleopatra" # Unsorted Unsorted
+#  Kleopatra:0 "Kleopatra" # Unsorted Unsorted # Already in vanilla
  Ko_o_lit:0 "Kôlit" # New Apysaic Male
  Ko_o_n_Alinus:0 "Kôn Alinus" # Unsorted Unsorted
  Ko_o_n_Natayana:0 "Kôn Natayana" # Unsorted Unsorted
@@ -8732,6 +8734,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Nard_u_:0 "Nardû" # Adunaic Male
  Naruthirdes:0 "Naruthirdes" # Sindarin Female
  Naru_u_phe_e_l:0 "Narûphêl" # Adunaic Female
+ Narvi:0 "Narvi" # Dwarven Male
  Narwayaz:0 "Narwayaz" # Orc Unsorted
  Narzug:0 "Narzug" # Orc Unsorted
  Nashak:0 "Nashak" # Khyan Male
@@ -11058,7 +11061,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Taurendil:0 "Taurendil" # Quenya Male
  Tauressar:0 "Tauressar" # Quenya Male
  Tauriel:0 "Tauriel" # Quenya Female
- Taurion:0 "Taurion" # Quenya Male
+ # Taurion:0 "Taurion" # Quenya Male # Already in vanilla
  Taurmoresar:0 "Taurmoresar" # Quenya Male
  Taurnil:0 "Taurnil" # Sindarin Male
  Tauron:0 "Tauron" # Quenya Male
@@ -13121,7 +13124,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Delet:0 "Delet"
  Dinadan:0 "Dinadan"
  Diodicias:0 "Diodicias"
- Dion:0 "Dion"
+ # Dion:0 "Dion"  # Already defined in vanilla
  Dodinel:0 "Dodinel"
  Dondinello:0 "Dondinello"
  Dormadat:0 "Dormadat"

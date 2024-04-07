@@ -9438,6 +9438,15 @@ court.4701 = {
 				10 = {
 					trigger = { NOT = { has_trait = scarred } }
 					add_trait = scarred
+					add_trait_xp = {
+		                trait = scarred
+		                value = {
+		                    integer_range = {
+		                        min = 5
+		                        max = 25
+		                    }
+		                }
+		            }
 					add_character_flag = scarred_physical_injury
 				}
 				10 = {
@@ -21825,7 +21834,9 @@ court.8040 = {
 	        any_held_title = {
 	        	count >= 4
 	        	tier = tier_county
-	        	
+				NOT = {
+					any_county_province = { has_holding_type = settlement_holding }
+				}
 	        }
 	    }
 	    domain_limit_available = 0
@@ -21896,6 +21907,9 @@ court.8040 = {
 	        	limit = {
 	        		tier = tier_county
 	        		NOT = { THIS = ROOT.capital_county }
+					NOT = {
+						any_county_province = { has_holding_type = settlement_holding }
+					}
 	        	}
 	        	order_by = {
 	        		value = 0

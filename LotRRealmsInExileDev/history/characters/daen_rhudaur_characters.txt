@@ -2,6 +2,97 @@
 ### THE HILLMEN OF RHUDAUR ###
 ##############################
 
+### Thúir tribe
+# Legendary first King of Rhudaur
+linethuir0 = {
+	name = Leu
+
+	religion = faith_hillmen
+	culture = daen_lintis
+
+	trait = patient
+	trait = fickle
+	trait = shy
+	trait = education_stewardship_1
+
+	3139.2.5 = {
+		birth = yes
+	}
+
+	3165.11.2 = {
+		add_spouse = linethuir0b
+	}
+
+	3197.12.5 = {
+		death = { death_reason = death_raid }
+	}
+}
+linethuir0b = {
+	name = Terhi
+	female = yes
+
+	religion = faith_angmar_balsha
+	culture = balsharim
+
+	trait = chaste
+	trait = gregarious
+	trait = ambitious
+	trait = education_diplomacy_2
+
+	3145.7.2 = {
+		birth = yes
+	}
+
+	3197.12.5 = {
+		death = { death_reason = death_raid }
+	}
+}
+linethuir1 = { # Legendary Hillmen King, united the Nine Tribes and founded the culture
+	name = Cuag
+
+	dynasty = dynasty_thuir
+	religion = faith_hillmen
+	culture = hillmen
+	
+	father = linethuir0
+	mother = linethuir0b
+
+	trait = ambitious
+	trait = brave
+	trait = gregarious
+	
+	trait = education_intrigue_4
+	trait = august
+	trait = diplomat
+	trait = lifestyle_reveler
+	trait = shrewd
+	trait = lifestyle_blademaster
+	trait = education_martial_prowess_4
+	
+	diplomacy = 8
+	martial = 9
+	stewardship = 5
+	intrigue = 6
+	learning = 3
+
+	3168.2.5 = {
+		birth = yes
+	}
+
+	3201.1.1 = {
+		give_nickname = nick_nine_chief
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+	}
+
+	3257.6.12 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
 ### Braighir Tribe
 linebraighir1 = {
 	name = Br_ach
@@ -712,6 +803,30 @@ linebraighir30 = {
     }
 }
 
+linedeirach15 = { # Intermarried
+    name = Muirne
+    female = yes
+
+    dynasty = dynasty_braighir
+    religion = faith_hillmen
+    culture = hillmen
+
+    father = linebraighir27
+    mother = linebraighir28
+
+    trait = wrathful
+    trait = just
+    trait = cynical
+
+    5276.8.15 = {
+        birth = yes
+    }
+
+    5344.4.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 linebraighir31 = {
     name = Moctallan
 
@@ -757,6 +872,31 @@ linebraighir32 = {
     5381.10.3 = {
         death = { death_reason = death_natural_causes }
     }
+}
+
+lineormoch4 = { # Intermarried
+	name = Fingel
+	female = yes
+
+
+    dynasty = dynasty_braighir
+	religion = faith_hillmen
+	culture = hillmen
+
+    father = linebraighir29
+    mother = linebraighir30
+
+	trait = sadistic
+	trait = lazy
+	trait = content
+
+	5307.2.15 = {
+		birth = yes
+	}
+
+	5378.1.22 = {
+		death = { death_reason = death_natural_causes }
+	}
 }
 
 linebraighir33 = {
@@ -1131,12 +1271,15 @@ linearamir1 = {
 	trait = diligent
 	
 	trait = education_diplomacy_3
-	trait = blood_of_numenor_2
+	
 	trait = bastard_founder
 	trait = beauty_good_2
 	
+
+	trait = blood_of_numenor_6
 	5012.8.16 = {
 		birth = yes
+        
 	}
 	
 	5051.1.3 = {
@@ -1179,9 +1322,11 @@ linearamir3 = {
 	trait = patient
 	
 	trait = education_stewardship_1
-	trait = blood_of_numenor_2
+	
 	trait = beauty_good_1
 	
+
+	trait = blood_of_numenor_5
 	5067.2.4 = {
 		birth = yes
 	}
@@ -1228,10 +1373,12 @@ linearamir5a = { # never married, celibate
 	trait = just
 	
 	trait = education_learning_2
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_1
 	trait = celibate
 	
+
+	trait = blood_of_numenor_2
 	5094.2.3 = {
 		birth = yes
 	}
@@ -1256,9 +1403,11 @@ linearamir5 = {
 	trait = patient
 	
 	trait = education_stewardship_2
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_1
 	
+
+	trait = blood_of_numenor_2
 	5099.12.18 = {
 		birth = yes
 	}
@@ -1303,8 +1452,10 @@ linearamir7 = {
 	trait = greedy
 	
 	trait = education_diplomacy_1
-	trait = blood_of_numenor_1
 	
+	
+
+	trait = blood_of_numenor_2
 	5142.11.5 = {
 		birth = yes
 	}
@@ -1395,8 +1546,10 @@ linearamir11 = {
     trait = forgiving
     trait = just
 	
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
     5181.5.9 = {
         birth = yes
     }
@@ -1444,8 +1597,10 @@ linearamir13 = {
     trait = diligent
     trait = gluttonous
 	
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
     5216.8.25 = {
         birth = yes
     }
@@ -1853,7 +2008,7 @@ lineruadcara = { # Usurper-King of Rhudaur, Ruadcara was of part-Dúnedain desce
 	father = linearamir7
 	mother = linearamir8
 
-	trait = blood_of_numenor_1
+	
 	trait = aggressive_attacker	
 	trait = education_martial_4	
 	
@@ -1864,6 +2019,8 @@ lineruadcara = { # Usurper-King of Rhudaur, Ruadcara was of part-Dúnedain desce
 	trait = giant
 	trait = disloyal
 		
+
+	trait = blood_of_numenor_2
 	5181.1.1 = {	
 		birth = yes
 	}
@@ -1900,7 +2057,7 @@ lineruadcara1 = {
 	father = lineruadcara
 	mother = lineendril35b
 
-	trait = blood_of_numenor_1
+	
 	
 	trait = education_learning_2
 	
@@ -1908,6 +2065,8 @@ lineruadcara1 = {
 	trait = just
 	trait = arrogant
 		
+
+	trait = blood_of_numenor_2
 	5224.2.7 = {	
 		birth = yes
 	}
@@ -1930,7 +2089,7 @@ lineruadcara2 = {
 	father = lineruadcara
 	mother = lineendril35b
 
-	trait = blood_of_numenor_2
+	
 	
 	trait = education_diplomacy_3
 	
@@ -1938,6 +2097,8 @@ lineruadcara2 = {
 	trait = ambitious
 	trait = chaste
 		
+
+	trait = blood_of_numenor_5
 	5229.11.25 = {	
 		birth = yes
 	}
@@ -1964,7 +2125,7 @@ lineruadcara3 = {
 	father = lineruadcara
 	mother = lineendril35b
 
-	trait = blood_of_numenor_1
+	
 	
 	trait = education_intrigue_1
 	
@@ -1972,6 +2133,8 @@ lineruadcara3 = {
 	trait = lazy
 	trait = chaste
 		
+
+	trait = blood_of_numenor_2
 	5236.8.14 = {	
 		birth = yes
 	}
@@ -2193,26 +2356,6 @@ linedeirach14 = {
     }
 
     5347.7.18 = {
-        death = { death_reason = death_natural_causes }
-    }
-}
-
-linedeirach15 = {
-    name = Muirne
-    female = yes
-
-    religion = faith_hillmen
-    culture = hillmen
-
-    trait = wrathful
-    trait = just
-    trait = cynical
-
-    5276.8.15 = {
-        birth = yes
-    }
-
-    5344.4.21 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -2705,26 +2848,6 @@ lineormoch3 = {
 
 	5344.3.1 = {
 		death = { death_reason = death_dog_attack  }
-	}
-}
-
-lineormoch4 = {
-	name = Fingel
-	female = yes
-
-	religion = faith_hillmen
-	culture = hillmen
-
-	trait = sadistic
-	trait = lazy
-	trait = content
-
-	5307.2.15 = {
-		birth = yes
-	}
-
-	5378.1.22 = {
-		death = { death_reason = death_natural_causes }
 	}
 }
 

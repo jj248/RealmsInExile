@@ -72,6 +72,7 @@
 	nick_the_spearmaster = {}
 	nick_gilded_star = {}
 	nick_the_restless_flame = {}
+	nick_the_lord_of_blades_unique = {}
 	
 	# Dunlending Nicknames
 	nick_the_secretive = {}
@@ -91,6 +92,7 @@
 	nick_the_mountainfather = {}
 
 	# Hillmen
+	nick_nine_chief = {}
 	nick_chief_of_chiefs = {}
 
 	# Lossoth
@@ -204,6 +206,7 @@
 	nick_the_axe_that_walks_unique = {}
 	nick_the_generous_unique = {}
 	nick_bravesoul_unique = {}
+	nick_durin_bane_bane = {}
 	
 	# Maia
 	nick_lord_of_the_rings = {}
@@ -239,6 +242,7 @@
 	nick_the_serpents_shade = {}
 	nick_the_old_viper = {}
 	nick_the_clawless = {}
+	nick_the_arbiter_pezar = {}
 	nick_the_cunning_pezar = {}
 	
 	# Dune Sea
@@ -327,7 +331,6 @@
 	nick_archivist = {}
 	
 	# Mountain Orcs / Goblins (Scripted)
-
 	# nick_one_hand = {} # Already in vanilla
 	nick_the_lesser = {}
 	#nick_the_ruthless = {}
@@ -363,10 +366,14 @@
 	nick_bateater = {}
 	nick_dwarfflayer = {}
 	nick_the_outcast_mazog = {}
+	nick_the_knowing_orc = {}
+	nick_rotback = {}
+	nick_brittlebrains = {}
 
 
 	# Orcs
 	nick_flamesworn = {}
+	nick_flame_of_moria = {}
 	nick_ash_skin = {}
 	nick_red_eyes = {}
 	nick_blood_eyes = {}

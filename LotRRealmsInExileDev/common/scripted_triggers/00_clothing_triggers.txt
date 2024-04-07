@@ -632,6 +632,7 @@ portrait_french_clothing_spouse_trigger = {
 }
 
 portrait_french_clothing_contents_trigger = {
+	always = no #LotR - TODO - nothing for now
 	portrait_french_proxy_clothing_contents_trigger = yes
 	NOR = {
 		portrait_northern_proxy_clothing_contents_trigger = yes #LotR
@@ -1606,6 +1607,7 @@ portrait_sickness_trigger = {
 		has_short_disease_trigger = yes #affliction that would plausibly leave them bedridden for treatment
 		has_character_flag = use_sickness_clothes
 	}
+	NOT = { has_dead_character_flag = ignore_sickness_clothes }
 	portrait_ep2_wedding_clothes_trigger = no
 }
 
@@ -2054,6 +2056,7 @@ portrait_western_proxy_clothing_contents_trigger = {
 		has_clothing_gfx = adunai_clothing_gfx
 		has_clothing_gfx = numenorean_clothing_gfx
 		has_clothing_gfx = dorwinion_clothing_gfx
+		has_clothing_gfx = dunedain_clothing_gfx
 	}
 }
 
@@ -2311,6 +2314,38 @@ portrait_gondorian_clothing_spouse_trigger = {
 
 portrait_gondorian_clothing_contents_trigger = {
 	has_clothing_gfx = gondorian_clothing_gfx
+}
+
+## Dunedain (ranger) ##
+
+portrait_dunedain_clothing_trigger = {
+	scope:culture = { portrait_dunedain_clothing_contents_trigger = yes }
+}
+
+portrait_dunedain_clothing_spouse_trigger = {
+	culture = {
+		portrait_dunedain_clothing_contents_trigger = yes
+	}
+}
+
+portrait_dunedain_clothing_contents_trigger = {
+	has_clothing_gfx = dunedain_clothing_gfx
+}
+
+## Uialdain ##
+
+portrait_uialdain_clothing_trigger = {
+	scope:culture = { portrait_uialdain_clothing_contents_trigger = yes }
+}
+
+portrait_uialdain_clothing_spouse_trigger = {
+	culture = {
+		portrait_uialdain_clothing_contents_trigger = yes
+	}
+}
+
+portrait_uialdain_clothing_contents_trigger = {
+	has_clothing_gfx = uialdain_clothing_gfx
 }
 
 ## Harondorim (Outhame) ##

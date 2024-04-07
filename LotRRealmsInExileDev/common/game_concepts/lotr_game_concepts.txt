@@ -554,7 +554,7 @@ tareg = {
 ### The Dwarves ###
 dwarffathers = {
 	parent = conceptmajorcharacter
-	alias = { dwarffathersshort }
+	alias = { dwarffathersshort dwarffathershort dwarffather}
 }
 durin = {
 	parent = conceptmajorcharacter
@@ -761,6 +761,14 @@ nurn = {
 erebor = {
 	parent = conceptplace
 	alias = { lonelymountain }
+}
+belegost = {
+	parent = conceptplace
+	alias = { }
+}
+nogrod = {
+	parent = conceptplace
+	alias = { }
 }
 dolguldur = {
 	parent = conceptplace
@@ -996,7 +1004,7 @@ conceptrace = {
 ### Men ###
 conceptracemen = {
 	parent = conceptrace
-	alias = { conceptmankind conceptcapmankind men mannish }
+	alias = { conceptmankind conceptcapmankind men mannish man }
 }	
 # Numenorean
 numenoreans = {
@@ -1151,16 +1159,19 @@ dwarves = {
 }
 longbeards = {
 	parent = dwarves
-	alias = { durinsfolk }
+	alias = { longbeard durinsfolk }
 }
 firebeards = {
 	parent = dwarves
+	alias = { firebeard }
 }
 broadbeams = {
 	parent = dwarves
+	alias = { broadbeam }
 }
 ironfists = {
 	parent = dwarves
+	alias = { ironfist }
 }
 stiffbeards = {
 	parent = dwarves
@@ -1168,9 +1179,11 @@ stiffbeards = {
 }
 blacklocks = {
 	parent = dwarves
+	alias = { blacklock }
 }
 stonefoots = {
 	parent = dwarves
+	alias = { stonefoot }
 }
 
 ### Hobbits ###
@@ -1445,7 +1458,7 @@ axesofnargubraz = {
 ###################################
 nazgulcharacter = {
 	parent = conceptmajorloreidea
-	alias = { ringwraith ringwraiths }
+	alias = { ringwraith ringwraiths nazgul }
 }
 ninenazgul = {
 	parent = conceptmajorloreidea
@@ -1588,6 +1601,8 @@ oiolare = {
 	parent = conceptplant
 	alias = { oiolare_tree oiolare_trees }
 }
+
+defensive_alliance = { }
 
 ###########################
 #### Artifact Crafting ####

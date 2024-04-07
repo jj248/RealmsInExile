@@ -97,7 +97,7 @@ noldor_dagger = {
 
 gundabad_orc_spear = { 
 	icon = { reference = artifact_gundabad_orc_spear.dds } 
-	asset = { reference = ep1_western_spear_01_a_portrait_entity }
+	asset = { reference = isengard_spear_01_portrait_entity }
 }
 dalish_spear = { 
 	icon = { reference = artifact_dalish_spear.dds } 
@@ -105,19 +105,19 @@ dalish_spear = {
 }
 avari_spear = { 
 	icon = { reference = artifact_avari_spear.dds } 
-	asset = { reference = ep1_western_spear_01_a_portrait_entity }
+	asset = { reference = noldor_spear_01_portrait_entity }
 }
 silvan_spear = { 
 	icon = { reference = artifact_silvan_spear.dds } 
-	asset = { reference = ep1_western_spear_01_a_portrait_entity }
+	asset = { reference = noldor_spear_01_portrait_entity }
 }
 rohirrim_spear = { 
 	icon = { reference = artifact_rohirrim_spear.dds } 
-	asset = { reference = ep1_mena_spear_01_a_portrait_entity }
+	asset = { reference = rohan_spear_01_portrait_entity }
 }
 noldor_spear = { 
 	icon = { reference = artifact_noldor_spear.dds } 
-	asset = { reference = ep1_western_spear_01_a_portrait_entity }
+	asset = { reference = noldor_spear_01_portrait_entity }
 }
 default_spear = { 
 	icon = { reference = artifact_spear.dds }
@@ -125,11 +125,11 @@ default_spear = {
 }
 gondorian_spear = { 
 	icon = { reference = artifact_gondorian_spear.dds } 
-	asset = { reference = ep1_western_spear_01_a_portrait_entity }
+	asset = { reference = gondor_spear_01_portrait_entity }
 }
 isengard_urukhai_spear = { 
 	icon = { reference = artifact_isengard_urukhai_spear.dds } 
-	asset = { reference = ep1_western_spear_01_a_portrait_entity }
+	asset = { reference = isengard_spear_01_portrait_entity }
 }
 
 ############
@@ -276,6 +276,20 @@ dwarven_helmet = {
 	asset = { 
 		trigger = { is_female = yes } 
 		reference = female_headgear_dwarf_war_01_steel_entity
+	}
+}
+noldor_helmet = {
+	icon = { reference  = noldor_helmet.dds }
+	asset = { 
+		trigger = { is_elf = yes } 
+		reference = male_headgear_elven_war_02_entity
+	}
+}
+silvan_helmet = {
+	icon = { reference  = silvan_helmet.dds }
+	asset = { 
+		trigger = { is_elf = yes } 
+		reference = male_headgear_elven_war_01_entity
 	}
 }
 

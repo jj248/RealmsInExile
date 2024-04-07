@@ -264,6 +264,10 @@ hold_court.0021 = {
 
 	option = { 
 		name = hold_court.0021.a
+		# Guaranteed small grandeur reward, in addition to any from events
+		change_current_court_grandeur = minor_court_grandeur_gain
+		# LEGITIMACY GAIN FROM HOLDING COURT
+		add_legitimacy = minor_legitimacy_gain
 	}
 }
 
@@ -966,7 +970,10 @@ hold_court.1041 = {
 		faith = { has_doctrine = doctrine_theocracy_temporal }
 		any_held_title = {
 			tier = tier_county
-			NOT = { this = root.capital_county}
+			NOT = { this = root.capital_county }
+			NOT = {
+				any_county_province = { has_holding_type = settlement_holding }
+			}
 		}
 	}
 
@@ -991,7 +998,10 @@ hold_court.1041 = {
 		random_held_title = {
 			limit = {
 				tier = tier_county
-				NOT = { this = root.capital_county}
+				NOT = { this = root.capital_county }
+				NOT = {
+					any_county_province = { has_holding_type = settlement_holding }
+				}
 			}
 			save_scope_as = selected_title
 		}
@@ -3293,7 +3303,7 @@ hold_court.3070 = {
 			template = servant_character
 			location = root.capital_province
 			gender = female
-			age = { 25 40 }
+			age = { young_age middle_age }
 			dynasty = none
 			save_scope_as = possible_mother_oldest	
 		}
@@ -3301,7 +3311,7 @@ hold_court.3070 = {
 			template = servant_character
 			location = root.capital_province
 			gender = female
-			age = { 18 24 } #So that she's always the younger woman
+			age = { nubile_age young_age } #So that she's always the younger woman
 			dynasty = none
 			save_scope_as = possible_mother_youngest	
 		}
@@ -7108,6 +7118,8 @@ scripted_trigger cannibal_follow_up_trigger = {
 	scope:possible_cannibal_ruler = { 
 		is_alive = yes
 		is_cannibal_trigger = no
+		cannot_be_killed = no
+		is_elf = no
 	}
 	scope:cannibal_vassal = {
 		is_alive = yes
@@ -7326,6 +7338,9 @@ hold_court.4600 = {
 		name = hold_court.4600.c
 		flavor = hold_court.4600.c.tt
 		add_dread = major_dread_loss
+		trigger = { # LOTR
+			cannot_be_killed = No
+		}
 		stress_impact = {
 				confider = medium_stress_loss
 			}
@@ -9452,17 +9467,9 @@ hold_court.5010 = {
 
 # Dancing mania has gripped one of your provinces
 scripted_trigger hold_court_5020_province_trigger = {
-	OR = {
-		has_holding_type = castle_holding
-		has_holding_type = city_holding
-		has_holding_type = tribal_holding
-	}
-	county = {
-		NOR = {
-			has_county_modifier = dance_plague_modifier
-			has_county_modifier = contained_dance_plague_modifier
-			has_county_modifier = fanning_the_dancing_flames_modifier
-		}
+	any_province_epidemic = {
+		epidemic_type = epidemic_type:ergotism
+		outbreak_intensity < apocalyptic
 	}
 }
 hold_court.5020 = {
@@ -9536,7 +9543,7 @@ hold_court.5020 = {
 		roles = {
 			scope:peasant = {
 				group = petitioners_group
-				animation = sadness
+				animation = dancing_plague
 			}
 			scope:portrait_2 = {
 				group = petitioners_group
@@ -9552,148 +9559,19 @@ hold_court.5020 = {
 	}
 	
 	trigger = {
-		NOT = { has_character_flag = had_event_hold_court_5020 }
+		NOT = { has_character_flag = had_event_dancing_plague }
 		any_realm_province = {
 			hold_court_5020_province_trigger = yes
 		}
 	}
 
-	weight_multiplier = {
-		base = 0.25
-		modifier = {
-			add = {
-				if = { #Since a big outbreak occurred in Aachen 1374
-					limit = {
-						always = no
-#						any_sub_realm_county = { 
-#							this = title:c_aachen
-#							any_county_province = {
-#								hold_court_5020_province_trigger = yes
-#							}
-#						}
-					}
-					add = {
-						if = {
-							limit = {
-								current_date >= 1374.1.1
-								current_date <= 1375.1.1
-							}
-							add = 1
-						}
-						else = {
-							add = 0.5
-						}
-					}
-				}
-				else_if = { #Since an outbreak occurred in Erfurt 1247
-					limit = {
-						always = no
-#						any_sub_realm_county = { 
-#							duchy = title:d_thuringia
-#							any_county_province = {
-#								hold_court_5020_province_trigger = yes
-#							}
-#						}
-					}
-					add = {
-						if = {
-							limit = {
-								current_date >= 1247.1.1
-								current_date <= 1248.1.1
-							}
-							add = 1
-						}
-						else = {
-							add = 0.5
-						}
-					}
-				}
-				else_if = { #Since an outbreak occurred in Kolbigk 1021
-					limit = {
-						always = no
-#						capital_province = {
-#							geographical_region = ghw_region_saxony
-#							hold_court_5020_province_trigger = yes
-#						}
-					}
-					add = {
-						if = {
-							limit = {
-								current_date >= 1021.1.1
-								current_date <= 1022.1.1
-							}
-							add = 1
-						}
-						else = {
-							add = 0.5
-						}
-					}
-				}
-				else = { #Since it historically occurred in Europe
-					add = 0.25
-				}
-			}
-#			capital_province = {
-#				geographical_region = world_europe
-#				hold_court_5020_province_trigger = yes
-#			}
-		}
-
-		# No court weighting, since no court would make this more likely.
-	}
-
 	immediate = {
-		add_character_flag = {
-			flag = had_event_hold_court_5020
-			years = 10
-		}
+		add_character_flag = had_event_dancing_plague
 		random_realm_province = {
 			limit = {
-				always = yes
-#				hold_court_5020_province_trigger = yes
-#				OR = {
-#					AND = {
-#						county = { this = title:c_aachen }
-#						current_date >= 1374.1.1
-#						current_date <= 1375.1.1
-#					}
-#					AND = {
-#						duchy = { this = title:d_thuringia }
-#						current_date >= 1247.1.1
-#						current_date <= 1248.1.1
-#					}
-#					AND = {
-#						county.title_province = {
-#							geographical_region = ghw_region_saxony
-#						}
-#						current_date >= 1021.1.1
-#						current_date <= 1022.1.1
-#					}
-#				}
+				always = no
+				# hold_court_5020_province_trigger = yes
 			}
-#			alternative_limit = {
-#				hold_court_5020_province_trigger = yes
-#				county = { this = title:c_aachen }
-#			}
-#			alternative_limit = {
-#				hold_court_5020_province_trigger = yes
-#				duchy = { this = title:d_thuringia }
-#			}
-#			alternative_limit = {
-#				hold_court_5020_province_trigger = yes
-#				county.title_province = {
-#					geographical_region = ghw_region_saxony
-#				}
-#			}
-#			alternative_limit = {
-#				hold_court_5020_province_trigger = yes
-#				county.title_province = {
-#					geographical_region = world_europe
-#				}
-#			}
-#			alternative_limit = {
-#				hold_court_5020_province_trigger = yes
-#			}
 			save_scope_as = province
 		}
 		create_character = {
@@ -9779,6 +9657,7 @@ hold_court.5020 = {
 			#	}
 			#}
 		}
+
 		# Trigger next event in chain.
 		hold_court_queue_next_event_effect = yes
 	}
@@ -9838,6 +9717,16 @@ hold_court.5020 = {
 			}
 		}
 
+		scope:province = {
+			random = {
+				chance = 25
+				create_epidemic_outbreak = {
+					type = ergotism
+					intensity = minor
+				}
+			}
+		}
+
 		stress_impact = {
 			zealous = medium_stress_impact_loss
 			cynical = medium_stress_impact_gain
@@ -9857,7 +9746,7 @@ hold_court.5020 = {
 		scope:province = {	
 			county = {
 				add_county_modifier = {
-					modifier = contained_dance_plague_modifier
+					modifier = physician_dance_plague_modifier
 					days = 3650
 				}
 			}
@@ -9874,6 +9763,17 @@ hold_court.5020 = {
 				}
 			}
 		}
+
+		scope:province = {
+			random = {
+				chance = 25
+				create_epidemic_outbreak = {
+					type = ergotism
+					intensity = minor
+				}
+			}
+		}
+
 		add_learning_lifestyle_xp = medium_lifestyle_xp
 	}
 
@@ -9881,6 +9781,7 @@ hold_court.5020 = {
 		name = hold_court.5020.d
 		trigger = {
 			employs_court_position = court_musician_court_position
+			has_trait = eccentric
 			any_court_position_holder = {
 		        type = court_musician_court_position
 		        is_physically_able_adult = yes
@@ -9906,8 +9807,20 @@ hold_court.5020 = {
 				}
 			}
 		}
+
+		scope:province = {
+			random = {
+				chance = 90
+				create_epidemic_outbreak = {
+					type = ergotism
+					intensity = minor
+				}
+			}
+		}
+
 		stress_impact = {
 			lifestyle_reveler = major_stress_impact_loss
+			eccentric = major_stress_impact_loss
 		}
 	}
 	
@@ -12351,6 +12264,9 @@ hold_court.6051 = {		#Hidden event to create the saint
 		any_realm_province = {
 			has_holding = no
 			hold_court_6050_religion_trigger = yes
+			NOT = {
+				county = { any_county_province = { has_holding_type = settlement_holding } }
+			}
 		}
 		exists = cp:councillor_court_chaplain
 		cp:councillor_court_chaplain = {
@@ -12364,6 +12280,9 @@ hold_court.6051 = {		#Hidden event to create the saint
 			limit = {
 				has_holding = no
 				hold_court_6050_religion_trigger = yes
+				NOT = {
+					county = { any_county_province = { has_holding_type = settlement_holding } }
+				}
 			}
 			save_scope_as = 6050_tomb
 		}
@@ -12454,6 +12373,9 @@ hold_court.6060 = {
 	
 	trigger = {
 		any_held_county = {
+			NOT = {
+				any_county_province = { has_holding_type = settlement_holding }
+			}
 			any_county_province = {
 				hold_court_6060_valid_county_trigger = yes
 			}
@@ -12490,6 +12412,9 @@ hold_court.6060 = {
 	immediate = {
 		random_held_county = {
 			limit = {
+				NOT = {
+					any_county_province = { has_holding_type = settlement_holding }
+				}
 				any_county_province = {
 					hold_court_6060_valid_county_trigger = yes
 				}
@@ -13449,6 +13374,9 @@ scripted_trigger hold_court_6080_valid_county_trigger = {
 		NOT = {
 			this = root.culture
 		}
+	}
+	NOT = {
+		any_county_province = { has_holding_type = settlement_holding }
 	}
 }
 
@@ -21783,6 +21711,9 @@ hold_court.7010 = {
 					}
 				}
 				NOT = { this = root.capital_county }
+				NOT = {
+					any_county_province = { has_holding_type = settlement_holding }
+				}
 			}
 			save_scope_as = frontier_hero_county
 			holder = {
@@ -24102,7 +24033,10 @@ hold_court.7060 = {
 		NOT = { has_character_flag = had_hold_court_event_7060 }
 		is_married = no
 		#LotR
-		NOT = { has_trait = widowed }
+		NOR = {
+			has_trait = widowed
+			has_trait = cannot_marry
+		}
 		lotr_is_immortal_culture_trigger = no
 		
 		# Eligible vassal spouse exists
@@ -25686,6 +25620,9 @@ hold_court.8010 = {
 
 scripted_trigger hold_court_8020_county_trigger = {
 	NOT = { this = root.capital_county }
+	NOT = {
+		any_county_province = { has_holding_type = settlement_holding }
+	}
 	any_county_province = {
 		barony = { is_holy_site_of = root.faith }
 	}
@@ -25941,7 +25878,7 @@ hold_court.8020 = {
 			}
 		}
 		create_character = {
-			age = { 30 50 }
+			age = { young_age middle_age }
 			template = priest_character_template
 			location = root.capital_province
 			trait = devoted
@@ -31854,7 +31791,7 @@ hold_court.8110 = {
 				tier = tier_county
 				county = {
 					county_control > 80
-					any_province = { has_holding = yes }
+					any_county_province = { has_holding = yes }
 				}
 			}
 			random_county_province = {
@@ -33527,6 +33464,9 @@ hold_court.8150 = {
 				limit = {
 					tier = tier_county
 					NOT = { this = root.capital_county }
+					NOT = {
+						any_county_province = { has_holding_type = settlement_holding }
+					}
 				}
 				order_by = {
 					value = 0
@@ -36056,6 +35996,9 @@ scripted_trigger hold_court_8170_barony_trigger = {
 scripted_trigger hold_court_8170_county_trigger = {
 	tier = tier_county
 	NOT = { this = root.capital_county }
+	NOT = {
+		any_county_province = { has_holding_type = settlement_holding }
+	}
 }
 
 scripted_trigger hold_court_8170_vassal_barony_trigger = {

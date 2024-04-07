@@ -1,0 +1,168 @@
+﻿######################
+# Epidemics
+######################
+
+#### OUTBREAK CHANCE ###
+# Chance for an outbreak of this intensity to spawn on a province per year
+# % from 0-100 inclusive
+# root = potential province
+
+### CONTROL VALUES ###
+# These should be enough to change the balance of epidemics 
+
+lotr_race_outbreak_chance_epidemics_mult_value = {
+	value = 1
+	# outbreaks chance for elves and wastelands (wasteland holdings)
+	if = {			
+		limit = {
+			OR = {
+				has_holding_type = wastelands_holding
+				county.culture = { is_elf_culture = yes }
+			}
+		}
+		multiply = 0
+	}
+	# outbreaks chance for dwarves
+	else_if = {		
+		limit = {
+			county.culture = { is_dwarf_culture = yes }
+		}
+		multiply = 0.5
+	}
+	# outbreaks chance for orcs and goblins	
+	else_if = {		
+		limit = {
+			county.culture = {is_orc_culture = yes }
+		}
+		multiply = 1.5
+	}
+	# dwarves immune in lore
+	if = {
+		limit = {
+			AND = {
+				county.culture = { is_dwarf_culture = yes }
+				has_game_rule = default_ai_behavior
+			}
+		}
+		multiply = 0
+	}
+}
+
+lotr_race_dwarf_outbreak_chance_epidemics_mult_value = {
+	value = 0
+	# outbreaks chance for dwarves
+	if = {		
+		limit = {
+			and = {
+				county.culture = { is_dwarf_culture = yes }
+				NOT = { has_game_rule = default_ai_behavior }
+			}	
+		}
+		add = 1
+	}
+}
+
+lotr_black_plague_rule_outbreak_chance_epidemics_mult_value = {
+	value = 0
+	# outbreaks chance for dwarves
+	if = {		
+		limit = {
+			NOT = { has_game_rule = default_ai_behavior }
+		}
+		add = 1
+	}
+}
+
+#### SPREAD CHANCE ###
+#Controls the spread of the epidemic
+#root = potential_province
+
+lotr_race_spread_chance_epidemics_mult_value = {
+	value = 1
+	# spread chance for elves and wastelands (wasteland holdings)
+	if = {
+		limit = {
+			OR = {
+				has_holding_type = wastelands_holding
+				county.culture = { is_elf_culture = yes }
+			}
+		}
+		multiply = 0
+	}
+	# spread chance for dwarves
+	else_if = {		
+		limit = {
+			county.culture = { is_dwarf_culture = yes }
+		}
+		multiply = 0.5
+	}
+	# spread chance for orcs and goblins	
+	else_if = {
+		limit = {
+			county.culture = { is_orc_culture = yes }
+		}
+		multiply = 2
+	}
+	# spread chance for wastelands (baronies holded by wastelands holder)
+	else_if = {
+		limit = {
+			county.holder = character:k_wastelands_holder
+		}
+		multiply = 0.7
+	}	
+	# dwarves immune in lore
+	if = {
+		limit = {
+			AND = {
+				county.culture = { is_dwarf_culture = yes }
+				has_game_rule = default_ai_behavior
+			}
+		}
+		multiply = 0
+	}
+}	
+
+lotr_race_dwarf_spread_chance_epidemics_mult_value = {
+	value = 1
+	# spread chance for wastelands (baronies holded by wastelands holder)
+	if = {
+		limit = {
+			AND = {
+				county.culture = { is_dwarf_culture = no }
+				NOT = { county.holder = character:k_wastelands_holder }
+			}	
+		}
+		multiply = 0
+	}
+	# spread chance for wastelands (wasteland holdings)
+	else_if = {
+		limit = {
+			has_holding_type = wastelands_holding
+		}
+		multiply = 0.05
+	}
+	
+	# spread chance for wastelands (baronies holded by wastelands holder)
+	else_if = {
+		limit = {
+			county.holder = character:k_wastelands_holder
+		}
+		multiply = 0.2		
+	}	
+}
+
+#### CHARACTER INFECTION CHANCE ###
+#Monthly chance for an epidemic to infect a character in the province
+
+lotr_character_dwarf_infection_chance_mult_value = {
+	value = 1
+	if = {
+		limit = {
+			OR = {
+				is_dwarf = no
+				has_game_rule = default_ai_behavior
+			}
+		}
+		multiply = 0
+	}
+}

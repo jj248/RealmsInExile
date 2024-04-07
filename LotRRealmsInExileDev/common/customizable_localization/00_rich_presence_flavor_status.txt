@@ -383,11 +383,7 @@
 	
 	text = { # "Dreaming of lost Númenor as"
 		trigger = {
-			OR = {
-				has_trait = blood_of_numenor_4
-				has_trait = blood_of_numenor_3
-				has_trait = blood_of_numenor_2
-			}
+			numenorean_blood_tier >= 3
 			NOT = { has_title = title:e_numenor }
 		}
 		localization_key = rich_presence_numenorean_blood
@@ -404,7 +400,7 @@
 	
 	text = {
 		trigger = {
-			age >= age_equivalent_90
+			health_age_equivalent >= 90
 			is_elf = no
 			cannot_be_killed = no
 		}
@@ -486,6 +482,82 @@
 			gold >= 1000
 		}
 		localization_key = rich_presence_hoarding_gold
+	}
+	
+	#text = {
+	#	trigger = {
+	#		has_trait = sayyid
+	#	}
+	#	localization_key = rich_presence_sayyid
+	#}
+	
+	text = {
+		trigger = {
+			any_sub_realm_county = {
+				title_province = {
+					any_province_legend = {
+						legend_protagonist = root
+					}
+				}
+			}
+		}
+		localization_key = rich_presence_legend
+	}
+
+	text = {
+		trigger = {
+			any_sub_realm_county = {
+				any_county_province = {
+					any_province_epidemic = {
+						count >= 1
+						outbreak_intensity >= major
+					}
+				}
+			}
+		}
+		localization_key = rich_presence_epidemic
+	}
+
+	text = {
+		trigger = {
+			has_trait = consumption
+		}
+		localization_key = rich_presence_epidemic_consumption
+	}
+
+	text = {
+		trigger = {
+			has_trait = typhus
+		}
+		localization_key = rich_presence_epidemic_typhus
+	}
+
+	text = {
+		trigger = {
+			has_trait = bubonic_plague
+		}
+		localization_key = rich_presence_epidemic_bubonic_plague
+	}
+
+	text = {
+		trigger = {
+			has_trait = smallpox
+		}
+		localization_key = rich_presence_epidemic_smallpox
+	}
+
+	text = {
+		trigger = {
+			has_trait = dysentery
+		}
+		localization_key = rich_presence_epidemic_dysentery
+	}
+
+	text = {
+		trigger = {
+			has_trait = ergotism
+		}
+		localization_key = rich_presence_epidemic_ergotism
 	}
 	
 	text = {

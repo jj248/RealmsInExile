@@ -11,7 +11,7 @@ nazgul1 = {
 
 	father = lineofelros13
 
-	trait = blood_of_numenor_4
+	
 	trait = education_martial_4
 	trait = sorcerer_3
 	trait = torturer
@@ -20,10 +20,20 @@ nazgul1 = {
 	trait = greedy
 	trait = aggressive_attacker
 
+	diplomacy = 0
+	martial = 5
+	stewardship = 4
+	intrigue = 6
+	learning = 8
+	prowess = 9
+
 	disallow_random_traits = yes
 
+
+	trait = blood_of_numenor_9
 	2412.1.1 = {
 		birth = yes
+		
 	}
 
 	2590.1.1 = {
@@ -42,7 +52,7 @@ nazgul1 = {
 					type = abrazanim_legion
 					stacks = 3
 				}
-#				origin = c_minas_ithil
+				# origin = c_minas_ithil
 				location = capital_province
 			}
 			character:lineofsauron = {
@@ -59,7 +69,7 @@ nazgul1 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofelros13
+					dead_relation = character:lineofelros13
 				}
 			}
 		}
@@ -70,8 +80,11 @@ nazgul1 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofelros14
+					dead_relation = character:lineofelros14
 				}
+			}
+			dynasty:dynasty_witchking = {
+				add_dynasty_modifier = { modifier = witch_king_xp_boost }
 			}
 		}
 	}
@@ -210,11 +223,14 @@ goldenking1 = {
 	trait = lifestyle_physician
 	trait = desert_warrior
 	trait = reclusive
-	trait = blood_of_numenor_3
+	
 	disallow_random_traits = yes
 
+
+	trait = blood_of_numenor_8
 	2498.12.3 = {
 		birth = yes
+		
 	}
 	
 	2521.6.2 = {
@@ -222,7 +238,7 @@ goldenking1 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:saphanirofamrun
+					dead_relation = character:saphanirofamrun
 				}
 			}
 		}
@@ -233,7 +249,7 @@ goldenking1 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:ruxoalendil2
+					dead_relation = character:ruxoalendil2
 				}
 			}
 		}
@@ -312,7 +328,7 @@ goldenking1 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:ruxoalendil4
+					dead_relation = character:ruxoalendil4
 				}
 			}
 		}
@@ -385,7 +401,7 @@ nazgul5 = {
 	father = lineofciryamir1
 	mother = lineofciryamir2
 
-	trait = blood_of_numenor_3
+	
 	trait = intellect_good_2
 	trait = education_stewardship_4
 	trait = sorcerer_2
@@ -399,6 +415,8 @@ nazgul5 = {
 
 	disallow_random_traits = yes
 
+
+	trait = blood_of_numenor_8
 	2480.1.1 = {
 		birth = yes
 	}

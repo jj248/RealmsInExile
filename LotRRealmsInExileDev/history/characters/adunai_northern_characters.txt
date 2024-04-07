@@ -41,8 +41,10 @@ lineofcastamir1 = {
 	father = lineofanarion53
 	mother = linetelemnarion7
 
-	trait = blood_of_numenor_3
+	
 
+
+	trait = blood_of_numenor_7
 	5446.1.1 = {
 		birth = yes
 	}
@@ -62,10 +64,12 @@ lineofcastamir2 = { # Son of Castamir
 	father = lineofanarion53
 	mother = linetelemnarion7
 
-	trait = blood_of_numenor_3
-	trait = mariner_1
+	
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_7
 	5442.1.1 = {
 		birth = yes
 	}
@@ -84,10 +88,12 @@ lineofcastamir3 = { # Grandson of Castamir
 
 	father = lineofcastamir2
 
-	trait = blood_of_numenor_3
-	trait = mariner_1
+	
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_7
 	5483.1.1 = {
 		birth = yes
 	}
@@ -105,14 +111,16 @@ lineofcastamir4 = { # Great-grandson of Castamir
 	culture = umbaredain
 
 	father = lineofcastamir3
-
-	trait = blood_of_numenor_3
 	trait = education_intrigue_3
 	trait = overseer
 	trait = arrogant
 	trait = callous
 	trait = patient
 
+	
+
+
+	trait = blood_of_numenor_7
 	5584.1.1 = {
 		birth = yes
 		give_nickname = nick_the_iron_handed
@@ -132,16 +140,24 @@ lineofcastamir5 = { # Great-grandson of Castamir
 
 	father = lineofcastamir3
 
-	trait = blood_of_numenor_3
-	trait = mariner_2
+	
+	trait = lifestyle_mariner
 	trait = education_martial_3
 	trait = ambitious 
 	trait = fickle
 	trait = diligent
 
+
+	trait = blood_of_numenor_7
 	5593.1.1 = {
 		birth = yes
 		give_nickname = nick_throng_cleaver
+		effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+		}
 	}
 
 	5669.1.1 = {
@@ -158,10 +174,12 @@ lineofcastamir6 = {
 
 	father = lineofcastamir5
 
-	trait = blood_of_numenor_2
-	trait = mariner_1
+	
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_6
 	5641.1.1 = {
 		birth = yes
 	}
@@ -185,8 +203,8 @@ lineofcastamir7 = {
 	father = lineofcastamir6
 	mother = linearzagar5
 
-	trait = blood_of_numenor_2
-	trait = mariner_1
+	
+	trait = lifestyle_mariner
 	
 
 	5674.1.1 = {
@@ -213,18 +231,24 @@ lineofcastamir44 = {
 	father = lineofanarion53
 	mother = linetelemnarion7
 
-	trait = blood_of_numenor_3
+	
 	trait = beauty_good_2
-	trait = mariner_2
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_7
 	5480.1.1 = {
 		birth = yes
-		give_nickname = nick_the_ship_born
-        effect = {
+		effect = {
             add_character_flag = {
                 flag = had_nickname_event
             }
+            give_nickname = nick_the_ship_born
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
         }
 	}
 	5611.1.1 = {
@@ -248,8 +272,10 @@ lineofcastamir45 = {
 
 	father = lineofcastamir1
 
-	trait = blood_of_numenor_3
+	
 
+
+	trait = blood_of_numenor_7
 	5515.1.1 = {
 		birth = yes
 	}
@@ -270,8 +296,10 @@ lineofcastamir46 = {
 	father = lineofanarion58
 	mother = lineofcastamir44
 
-	trait = blood_of_numenor_3
+	
 
+
+	trait = blood_of_numenor_7
 	5615.1.1 = {
 		birth = yes
 	}
@@ -293,8 +321,10 @@ lineofcastamir47 = {
 	father = lineofanarion58
 	mother = lineofcastamir44
 
-	trait = blood_of_numenor_3
+	
 
+
+	trait = blood_of_numenor_7
 	5630.1.1 = {
 		birth = yes
 	}
@@ -339,10 +369,12 @@ lineofcastamir50 = {
 
 	father = lineofcastamir46
 
-	trait = blood_of_numenor_3
-	trait = mariner_1
+	
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_7
 	5706.1.1 = {
 		birth = yes
 	}
@@ -363,8 +395,10 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 
 	father = lineofcastamir46
 
-	trait = blood_of_numenor_3
+	
 
+
+	trait = blood_of_numenor_7
 	5732.1.1 = {
 		birth = yes
 	}
@@ -390,8 +424,8 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 #
 #	#father = lineofcassimir9
 #
-#	trait = blood_of_numenor_2
-#	trait = mariner_1
+#	
+#	trait = lifestyle_mariner
 #	
 #
 #	6171.1.1 = {
@@ -412,8 +446,8 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 #
 #	father = lineofcassimir10
 #
-#	trait = blood_of_numenor_2
-#	trait = mariner_1
+#	
+#	trait = lifestyle_mariner
 #	
 #
 #	6223.1.1 = {
@@ -434,8 +468,8 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 #
 #	father = lineofcassimir11
 #
-#	trait = blood_of_numenor_2
-#	trait = mariner_1
+#	
+#	trait = lifestyle_mariner
 #	
 #
 #	6284.1.1 = {
@@ -456,7 +490,7 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 #
 #	father = lineofcassimir12
 #
-#	trait = blood_of_numenor_1
+#	
 #
 #	6356.1.1 = {
 #		birth = yes
@@ -476,8 +510,8 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 #
 #	father = lineofcassimir13
 #
-#	trait = blood_of_numenor_1
-#	trait = mariner_1
+#	
+#	trait = lifestyle_mariner
 #	
 #
 #	6430.1.1 = {
@@ -498,7 +532,7 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 #
 #	father = lineofcassimir14
 #
-#	trait = blood_of_numenor_1
+#	
 #
 #	6495.1.1 = {
 #		birth = yes
@@ -518,7 +552,7 @@ lineofcastamir51 = { # Last Castamiri King, Killed by the Telumehtar Umbardacil
 #
 #	father = lineofcassimir15
 #
-#	trait = blood_of_numenor_1
+#	
 #
 #	6581.1.1 = {
 #		birth = yes
@@ -541,7 +575,7 @@ lineofcassimir17 = {	# Cassimir II, New Umbar Conqueror, Cassimiri founder
 	father = lineofkamal10
 	mother = linesarekori11b # daughter of the haradrim king of umbar
 
-	trait = blood_of_numenor_1
+	
 	trait = ambitious
 	trait = callous
 	trait = impatient
@@ -550,6 +584,8 @@ lineofcassimir17 = {	# Cassimir II, New Umbar Conqueror, Cassimiri founder
 	trait = strategist
 	
 
+
+	trait = blood_of_numenor_1
 	6637.1.1 = {
 		birth = yes
 	}
@@ -570,8 +606,10 @@ lineofcassimir18 = {
 
 	father = lineofcassimir17
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
 	6695.1.1 = {
 		birth = yes
 	}
@@ -590,10 +628,12 @@ lineofcassimir19 = { # Lord of Umbar, father of Calmacil founder
 
 	father = lineofcassimir18
 
-	trait = blood_of_numenor_1
-	trait = mariner_1
+	
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_1
 	6765.1.1 = {
 		birth = yes
 	}
@@ -617,10 +657,12 @@ lineofcassimir20 = {  # During his reign Umbar gained independence as Harwan col
 	father = lineofcassimir19
 	mother = lineofabarzagar31
 
-	trait = blood_of_numenor_1
-	trait = mariner_1
+	
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_1
 	6860.1.1 = {
 		birth = yes
 	}
@@ -639,17 +681,25 @@ lineofcassimir21 = {
 
 	father = lineofcassimir20
 
-	trait = blood_of_numenor_1
+	
 	trait = lifestyle_blademaster
 	trait = education_martial_3
 	trait = vengeful
 	trait = callous
 	trait = ambitious
-	trait = mariner_2
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_1
 	6910.1.1 = {
 		birth = yes
+		effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+		}
 	}
 	6928.3.6 = {
 		add_spouse = lineofcassimir21wife
@@ -682,18 +732,20 @@ lineofcassimir22 = {
 	trait = ambitious
 	trait = wrathful
 	trait = arrogant
-	trait = blood_of_numenor_1
+	
 	trait = lifestyle_blademaster
 	trait = education_diplomacy_2
 	trait = august
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 
+
+	trait = blood_of_numenor_1
 	6931.9.5 = {
 		birth = yes
 		effect = {
 			add_pressed_claim = title:e_umbar
-			add_trait_xp = {
+			add_trait_xp = { 
 				trait = lifestyle_blademaster
 				value = 55
 			}
@@ -704,7 +756,7 @@ lineofcassimir22 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofcassimir20
+					dead_relation = character:lineofcassimir20
 				}
 			}
 		}
@@ -714,7 +766,7 @@ lineofcassimir22 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofcassimir21wife
+					dead_relation = character:lineofcassimir21wife
 				}
 			}
 		}
@@ -755,7 +807,7 @@ lineofcassimir22 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofcassimir21
+					dead_relation = character:lineofcassimir21
 				}
 			}
 			create_character_memory = {
@@ -801,12 +853,14 @@ lineofcassimir23 = {
 	trait = paranoid
 	trait = vengeful
 	trait = callous
-	trait = blood_of_numenor_1
+	
 	trait = education_intrigue_4
 	trait = physique_good_1
 	trait = diplomat
 	trait = lifestyle_blademaster
 
+
+	trait = blood_of_numenor_1
 	6997.2.5 = {
 		birth = yes
 	}
@@ -815,7 +869,7 @@ lineofcassimir23 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofcassimir21
+					dead_relation = character:lineofcassimir21
 				}
 			}
 			add_trait_xp = {
@@ -880,13 +934,15 @@ lineofcassimir24 = {
 	trait = wrathful
 	trait = ambitious
 	trait = brave
-	trait = blood_of_numenor_1
+	
 	trait = education_martial_4
 	trait = physique_good_3
 	trait = torturer
 	trait = lifestyle_blademaster
-	trait = mariner_3
+	trait = lifestyle_mariner
 
+
+	trait = blood_of_numenor_1
 	6998.7.10 = {
 		birth = yes
 	}
@@ -895,14 +951,18 @@ lineofcassimir24 = {
 			create_character_memory = {
 				type = relative_died			
 				participants = {
-					dead_relative = character:lineofcassimir21
+					dead_relation = character:lineofcassimir21
 				}
 			}
 			add_trait_xp = {
 				trait = lifestyle_blademaster
 				value = 100
 			}
-		}
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 100
+			}
+        }
 	}
 	7017.1.1 = {
 		effect = {
@@ -949,8 +1009,10 @@ lineofcassimir25 = {
 	father = lineofcassimir21
 	mother = lineofcassimir21wife
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6939.1.1 = {
 		birth = yes
 	}
@@ -975,8 +1037,10 @@ lineofcassimir26 = {
 
 	father = lineofcassimir20
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6888.1.1 = {
 		birth = yes
 	}
@@ -995,8 +1059,10 @@ lineofcassimir27 = {
 
 	father = lineofcassimir20
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6891.1.1 = {
 		birth = yes
 	}
@@ -1015,8 +1081,10 @@ lineofcassimir28 = {
 
 	father = lineofcassimir27
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6922.1.1 = {
 		birth = yes
 	}
@@ -1037,8 +1105,10 @@ lineofcassimir29 = {
 
 	father = lineofcassimir27
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6927.1.1 = {
 		birth = yes
 	}
@@ -1057,12 +1127,14 @@ lineofcassimir30 = {
 
 	father = lineofcassimir28
 
-	trait = blood_of_numenor_1
+	
 	trait = education_intrigue_3
 	trait = callous
 	trait = ambitious
 	trait = vengeful
 
+
+	trait = blood_of_numenor_1
 	6975.1.1 = {
 		birth = yes
 	}
@@ -1084,8 +1156,10 @@ lineofcassimir31 = {
 
 	father = lineofcassimir28
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6979.1.1 = {
 		birth = yes
 	}
@@ -1110,8 +1184,10 @@ lineofcassimir32 = {
 	father = lineofcassimir19
 	mother = lineofabarzagar31
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6828.1.1 = {
 		birth = yes
 	}
@@ -1130,8 +1206,10 @@ lineofcassimir33 = {
 
 	father = lineofcassimir18
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6760.1.1 = {
 		birth = yes
 	}
@@ -1150,10 +1228,16 @@ lineofcassimir34 = {
 
 	father = lineofcassimir17
 
-	#trait = blood_of_numenor_1
+	# 
 
 	6700.1.1 = {
 		birth = yes
+		# effect = {
+		# 	add_trait_xp = {
+	    #        
+	    #        value = 20
+	    #     }
+		# }
 	}
 
 	6783.1.1 = {
@@ -1172,8 +1256,10 @@ lineofcassimir35 = {
 
 	father = lineofcassimir34
 
-	#trait = blood_of_numenor_1
+	# 
 
+
+	trait = blood_of_numenor_2
 	6760.1.1 = {
 		birth = yes
 	}
@@ -1194,8 +1280,10 @@ lineofcassimir36 = {
 
 	father = lineofcassimir17
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6708.1.1 = {
 		birth = yes
 	}
@@ -1217,7 +1305,7 @@ lineofcassimir37 = {
 
 	father = lineofcassimir30
 
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_2
 	trait = education_intrigue_2
 	trait = chaste
@@ -1225,6 +1313,8 @@ lineofcassimir37 = {
 	trait = cynical
 	trait = gregarious
 
+
+	trait = blood_of_numenor_1
 	7010.1.1 = {
 		birth = yes
 	}
@@ -1249,7 +1339,7 @@ lineofcassimir38 = {
 
 	father = lineofcassimir30
 
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_3
 	trait = education_intrigue_3
 	trait = lustful
@@ -1257,6 +1347,8 @@ lineofcassimir38 = {
 	trait = cynical
 	trait = paranoid
 
+
+	trait = blood_of_numenor_1
 	7013.1.1 = {
 		birth = yes
 		effect = {
@@ -1278,9 +1370,11 @@ lineofcassimirwife22 = {
 
 	female = yes
 
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_2
 
+
+	trait = blood_of_numenor_1
 	6974.4.21 = {
 		birth = yes
 	}
@@ -1330,8 +1424,10 @@ lineofcassimir42 = {
 
 	father = lineofcassimir1
 
-	trait = blood_of_numenor_2
+	
 
+
+	trait = blood_of_numenor_3
 	5907.1.1 = {
 		birth = yes
 	}
@@ -1350,8 +1446,10 @@ lineofcassimir43 = {
 
 	father = lineofcassimir42
 
-	trait = blood_of_numenor_2
+	
 
+
+	trait = blood_of_numenor_3
 	6025.1.1 = {
 		birth = yes
 	}
@@ -1370,8 +1468,10 @@ lineofcassimir44 = {
 
 	father = lineofcassimir42
 
-	trait = blood_of_numenor_2
+	
 
+
+	trait = blood_of_numenor_3
 	6032.1.1 = {
 		birth = yes
 	}
@@ -1391,8 +1491,10 @@ lineofcassimir45 = {
 
 	#father = lineofcassimir44
 	#
-	#trait = blood_of_numenor_2
+	#
 
+
+	trait = blood_of_numenor_4
 	6124.1.1 = {
 		birth = yes
 	}
@@ -1413,7 +1515,7 @@ lineofcassimir47 = {
 	father = lineofcassimir25
 	mother = lineofabarzagar45
 
-	trait = blood_of_numenor_1
+	
 
 	trait = beauty_good_2
 	trait = education_intrigue_2
@@ -1428,6 +1530,8 @@ lineofcassimir47 = {
     learning = 8
     prowess = 2
 
+
+	trait = blood_of_numenor_1
 	7010.1.5 = {
 		birth = yes
 	}
@@ -1457,7 +1561,7 @@ lineofcassimir47 = {
 #
 #	#father = lineofcassimir9
 #
-#	trait = blood_of_numenor_2
+#	
 #
 #	6177.1.1 = {
 #		birth = yes
@@ -1477,7 +1581,7 @@ lineofcassimir47 = {
 #
 #	father = lineofcassimir46
 #
-#	trait = blood_of_numenor_2
+#	
 #
 #	6285.1.1 = {
 #		birth = yes
@@ -1497,7 +1601,7 @@ lineofcassimir47 = {
 #
 #	father = lineofcalmacil1
 #
-#	trait = blood_of_numenor_2
+#	
 #
 #	6383.1.1 = {
 #		birth = yes
@@ -1517,7 +1621,7 @@ lineofcassimir47 = {
 #
 #	father = lineofcalmacil2
 #
-#	trait = blood_of_numenor_2
+#	
 #
 #	6488.1.1 = {
 #		birth = yes
@@ -1537,7 +1641,7 @@ lineofcassimir47 = {
 #
 #	father = lineofcalmacil3
 #
-#	trait = blood_of_numenor_2
+#	
 #
 #	6582.1.1 = {
 #		birth = yes
@@ -1557,7 +1661,7 @@ lineofcassimir47 = {
 #
 #	father = lineofcalmacil4
 #
-#	trait = blood_of_numenor_2
+#	
 #
 #	6675.1.1 = {
 #		birth = yes
@@ -1581,7 +1685,7 @@ lineofcassimir47 = {
 #
 #	father = lineofcalmacil4
 #
-#	trait = blood_of_numenor_2
+#	
 #
 #	6684.1.1 = {
 #		birth = yes
@@ -1605,7 +1709,7 @@ lineofcalmacil7 = {	#son of king of umbar, installed as ruler of mirlond and ram
 	#father = lineofcalmacil5
 	#mother = lineofcassimir36
 
-	trait = blood_of_numenor_1
+	
 	
 	trait = ambitious
 	trait = fickle
@@ -1615,6 +1719,8 @@ lineofcalmacil7 = {	#son of king of umbar, installed as ruler of mirlond and ram
 	trait = torturer
 	trait = lifestyle_blademaster
 	
+
+	trait = blood_of_numenor_1
 	6820.1.1 = {
 		birth = yes
 	}
@@ -1628,7 +1734,7 @@ lineofcalmacil8 = {
 	name = Almarien
 
 	female = yes
-	dynasty_house = house_calmacil
+	dynasty_house = house_cassimir
 	religion = faith_kings_men_castamir
 	culture = umbarean
 
@@ -1636,8 +1742,10 @@ lineofcalmacil8 = {
 	#father = lineofcalmacil5
 	#mother = lineofcassimir36
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6916.1.1 = {
 		birth = yes
 	}
@@ -1656,8 +1764,10 @@ lineofcalmacil9 = {
 
 	father = lineofcalmacil7
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6859.1.1 = {
 		birth = yes
 	}
@@ -1676,8 +1786,10 @@ lineofcalmacil10 = {
 
 	father = lineofcalmacil9
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6940.1.1 = {
 		birth = yes
 	}
@@ -1686,26 +1798,6 @@ lineofcalmacil10 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-#
-#lineofcalmacil11 = {
-#	name = Imrakho_o_r
-#
-#	dynasty_house = house_calmacil
-#	religion = faith_kings_men_castamir
-#	culture = umbarean
-#
-#	father = lineofcalmacil6
-#
-#	trait = blood_of_numenor_1
-#
-#	6765.1.1 = {
-#		birth = yes
-#	}
-#
-#	6904.1.1 = {
-#		death = { death_reason = death_natural_causes }
-#	}
-#}
 
 lineofcalmacil12 = {
 	name = Sapazi_i_r
@@ -1717,8 +1809,10 @@ lineofcalmacil12 = {
 	#father = lineofcalmacil11
 	father = lineofcalmacil7
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6843.1.1 = {
 		birth = yes
 	}
@@ -1737,8 +1831,10 @@ lineofcalmacil13 = {
 
 	father = lineofcalmacil12
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6911.1.1 = {
 		birth = yes
 	}
@@ -1757,8 +1853,10 @@ lineofcalmacil14 = {
 
 	father = lineofcalmacil13
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6975.1.1 = {
 		birth = yes
 	}
@@ -1782,13 +1880,15 @@ lineblackqueen1 = {
 
 	father = lineofcassimir18
 
-	trait = blood_of_numenor_1
+	
 	trait = intellect_good_3
 	trait = education_martial_4
 	trait = brave
 	trait = ambitious
 	trait = zealous
 
+
+	trait = blood_of_numenor_2
 	6799.1.1 = {
 		birth = yes
 	}
@@ -1806,8 +1906,10 @@ lineblackqueen2 = {
 
 	father = lineblackqueen1
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
 	6860.1.1 = {
 		birth = yes
 	}
@@ -1825,8 +1927,10 @@ lineblackqueen3 = {
 
 	father = lineblackqueen1
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6867.1.1 = {
 		birth = yes
 	}
@@ -1846,8 +1950,10 @@ lineblackqueen4 = {
 
 	father = lineblackqueen1
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6872.1.1 = {
 		birth = yes
 	}
@@ -1865,8 +1971,10 @@ lineblackqueen5 = {
 
 	father = lineblackqueen2
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
 	6920.1.1 = {
 		birth = yes
 	}
@@ -1884,8 +1992,10 @@ lineblackqueen6 = {
 
 	father = lineblackqueen5
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
 	6972.1.1 = {
 		birth = yes
 	}
@@ -1907,8 +2017,10 @@ lineblackqueen7 = {
 
 	father = lineblackqueen5
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
 	6979.1.1 = {
 		birth = yes
 	}
@@ -1926,9 +2038,11 @@ lineblackqueen8 = {
 
 	female = yes
 
-	trait = blood_of_numenor_2	#why lvl 2? so beruthiel can have it?
+		#why lvl 2? so beruthiel can have it?
 	trait = beauty_good_3
 
+
+	trait = blood_of_numenor_2
 	6984.1.1 = {
 		birth = yes
 	}
@@ -1956,16 +2070,18 @@ lineblackqueeneldersister1 = {
 	learning = 8
 	diplomacy = 6
 	intrigue = 3
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_2
 	trait = education_stewardship_3
 	trait = greedy
 	trait = gregarious
 	trait = content
 
+
+	trait = blood_of_numenor_2
 	7000.7.21 = {
 		birth = yes
-		}
+	}
 
 	7081.4.22 = {
 		death = { death_reason = death_natural_causes }
@@ -1988,16 +2104,18 @@ lineblackqueeneldersister2 = {
 	learning = 3
 	diplomacy = 10
 	intrigue = 7
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_3
 	trait = education_diplomacy_3
 	trait = patient
 	trait = humble
 	trait = fickle
 
+
+	trait = blood_of_numenor_2
 	7001.10.2 = {
 		birth = yes
-		}
+	}
 
 	7084.2.12 = {
 		death = { death_reason = death_natural_causes }
@@ -2022,7 +2140,7 @@ lineblackqueen9 = {
 	learning = 11
 	diplomacy = 9
 	intrigue = 13
-	trait = blood_of_numenor_2
+	
 	trait = beauty_good_3
 	trait = education_intrigue_4
 	trait = seducer
@@ -2030,6 +2148,8 @@ lineblackqueen9 = {
 	trait = ambitious
 	trait = callous
 
+
+	trait = blood_of_numenor_2
 	7002.9.22 = {
 		birth = yes
 		effect = {
@@ -2041,7 +2161,7 @@ lineblackqueen9 = {
 		create_character_memory = {
             type = relative_died			
             participants = {
-                dead_relative = character:lineblackqueen6
+                dead_relation = character:lineblackqueen6
             }
         }
 	}
@@ -2076,7 +2196,7 @@ lineblackqueen9 = {
 		create_character_memory = {
             type = relative_died			
             participants = {
-                dead_relative = character:lineblackqueen8
+                dead_relation = character:lineblackqueen8
             }
         }
 	}
@@ -2137,8 +2257,10 @@ lineblackqueen10 = {
 
 	father = lineblackqueen3
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6902.1.1 = {
 		birth = yes
 	}
@@ -2157,13 +2279,15 @@ lineblackqueen11 = {
 	
 	father = lineblackqueen3
 
-	#trait = blood_of_numenor_1
+	
 	trait = sodomite
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = viking
 	trait = education_intrigue_2
 	
 	
+
+	trait = blood_of_numenor_1
 	6909.1.1 = {
 		birth = yes
 	}
@@ -2183,8 +2307,10 @@ lineblackqueen12 = {
 
 	father = lineblackqueen10
 
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6940.1.1 = {
 		birth = yes
 	}
@@ -2204,8 +2330,10 @@ lineblackqueen13 = {
 
 	father = lineblackqueen10
 
-	#trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_1
 	6945.1.1 = {
 		birth = yes
 	}
@@ -2433,7 +2561,7 @@ linerothpharaz1 = {
 	religion = faith_corsair
 	culture = corsair
 
-	trait = mariner_3
+	trait = lifestyle_mariner
 	
 	6943.1.1 = {
 		birth = yes
@@ -2452,7 +2580,7 @@ linerothpharaz2 = {
 
 	father = linerothpharaz1
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	6972.1.1 = {
 		birth = yes
@@ -2480,12 +2608,18 @@ linerothpharaz2brother = {	# Minor Corsair in Andrast
 	
 	trait = bastard
 	trait = education_martial_2
-	trait = mariner_2
+	trait = lifestyle_mariner
 	trait = reaver
 	
 	6985.1.1 = {
 		birth = yes
-	}						
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
+	}
 	7032.1.1 = {			
 		employer = lineeruholion11		
 	}	
@@ -2509,7 +2643,7 @@ linerothpharaz3 = {
 	trait = brave
 	trait = content
 	trait = greedy
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	6995.1.1 = {
 		birth = yes
@@ -2656,7 +2790,7 @@ lineshakalzori1 = {
 	religion = faith_corsair
 	culture = corsair
 
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = education_martial_3
 	trait = brave
 	trait = just
@@ -2703,7 +2837,7 @@ lineshakalzori2 = {
 	mother = lineshakalzori1wife
 	
 	trait = physique_good_1
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = education_intrigue_2
 
 	6940.1.1 = {
@@ -2724,7 +2858,7 @@ lineshakalzori3 = {
 	father = lineshakalzori1
 	mother = lineshakalzori1wife
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = physique_good_1
 	
 	6942.1.1 = {
@@ -2801,7 +2935,7 @@ lineshakalzori7 = {
 
 	mother = lineshakalzori5
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	6980.1.1 = {
 		birth = yes
@@ -2823,7 +2957,7 @@ lineshakalzori8 = {
 
 	father = lineshakalzori7
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	7008.1.1 = {
 		birth = yes
@@ -2883,10 +3017,16 @@ linesakalbar1 = {
 	religion = faith_corsair
 	culture = corsair
 
-	trait = mariner_2
+	trait = lifestyle_mariner
 	
 	6913.1.1 = {
 		birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
 	}
 	6992.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -2919,7 +3059,7 @@ linesakalbar3 = {
 
 	father = linesakalbar2
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	6973.1.1 = {
 		birth = yes
@@ -2942,7 +3082,7 @@ linesakalbar4 = {
 	trait = arbitrary
 	trait = ambitious
 	trait = education_martial_2
-	trait = mariner_2
+	trait = lifestyle_mariner
 	trait = viking
 	
 	7002.1.1 = {
@@ -2952,7 +3092,11 @@ linesakalbar4 = {
 		add_spouse = linesakalbar4wife
 		effect = {
 			set_relation_lover = character:linesakalbar4wife
-		}
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
 	}
 	7067.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -3034,7 +3178,7 @@ linesakalbar7 = {
 	trait = chaste
 	trait = callous
 	trait = education_martial_3
-	trait = mariner_1
+	trait = lifestyle_mariner
 
 	7028.1.1 = {
 		birth = yes
@@ -3071,7 +3215,7 @@ linesakalbar9 = {
 
 	father = linesakalbar3
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	7009.1.1 = {
 		birth = yes
@@ -3218,11 +3362,17 @@ lineeruholion1 = {
 	religion = faith_corsair
 	culture = corsair
 
-	trait = mariner_2
+	trait = lifestyle_mariner
 	trait = reaver
 	
 	6912.1.1 = {
 		birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
 	}
 	6970.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -3238,7 +3388,7 @@ lineeruholion2 = {
 
 	father = lineeruholion1
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	6935.1.1 = {
 		birth = yes
@@ -3257,10 +3407,16 @@ lineeruholion3 = {
 
 	father = lineeruholion2
 	
-	trait = mariner_2
+	trait = lifestyle_mariner
 	
 	6955.1.1 = {
 		birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
 	}
 	7020.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -3277,7 +3433,7 @@ lineeruholion4 = {
 
 	father = lineeruholion3
 	
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = viking
 	
 	6973.10.31 = {
@@ -3344,7 +3500,7 @@ lineeruholion7 = {
 
 	father = lineeruholion4
 	
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	7021.1.1 = {
 		birth = yes
@@ -3402,7 +3558,7 @@ lineeruholion10 = {
 	father = lineeruholion2
 
 	trait = viking
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = reaver
 	trait = education_martial_2
 	
@@ -3436,12 +3592,19 @@ lineeruholion11 = {	# Corsair count of Úlond in Andrast
 
     trait = education_diplomacy_2
 	trait = reaver
-	trait = mariner_2
+	trait = lifestyle_mariner
 	trait = reckless
+    trait = athletic
 	
 
 	7001.1.1 = {
 		birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 75
+			}
+        }
 	}
 	7021.1.1 = {
         give_nickname = nick_andrake
@@ -3514,7 +3677,7 @@ linethrothdanas1 = {
 	religion = faith_corsair
 	culture = corsair
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	6903.1.1 = {
 		birth = yes
@@ -3552,7 +3715,7 @@ linethrothdanas3 = {
 
 	trait = education_martial_3
 	trait = viking
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	trait = brave
 	trait = arrogant
@@ -3596,7 +3759,7 @@ linethrothdanas4 = {
 	mother = linethrothdanas3wife
 
 	trait = ambitious
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	6990.1.1 = {
 		birth = yes
@@ -3710,7 +3873,7 @@ linepharazon1 = {
 	trait = zealous
 	trait = lifestyle_blademaster
 	trait = pure_blooded
-
+	
 	6790.1.1 = {
 		birth = yes
 		effect = {
@@ -3724,7 +3887,8 @@ linepharazonwife = {
 	name = Inzilbe_e_th
 	religion = melkorite
 	culture = black_numenorean
-
+    female = yes
+	
 	trait = beauty_good_3
 	trait = blood_of_numenor_2
 	trait = education_martial_4
@@ -3733,9 +3897,10 @@ linepharazonwife = {
 	trait = calm
 	trait = pure_blooded
 
-        female = yes
 
-	6787.1.3 = { birth = yes}
+	6787.1.3 = { 
+		birth = yes
+	}
 	6992.9.2 = { death = { death_reason = death_natural_causes }  }
 }
 linepharazon2 = {
@@ -3743,21 +3908,19 @@ linepharazon2 = {
 	dna = lotr_gimilkhad
 	dynasty = dynasty_pharazon
 	father = linepharazon1
-        mother = linepharazonwife
+	mother = linepharazonwife
 	religion = melkorite
 	culture = black_numenorean
-
-	trait = physique_good_2
-	trait = blood_of_numenor_2
+	
 	trait = education_martial_3
 	trait = wrathful
 	trait = zealous
-	trait = diligent
 	trait = ambitious
 	trait = pure_blooded
-	martial = 10
+	trait = blood_of_numenor_2
+	martial = 8
 
-	6970.1.1 = {
+	6950.1.1 = {
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
@@ -3769,22 +3932,22 @@ linepharazon2 = {
 			set_relation_lover = character:linepharazon3
 		}
 	}
+
 	7104.1.1 = { death = { death_reason = death_natural_causes }  }
 }
 
 linepharazon3 = {
 	name = M_iriel
 	dna = lotr_miriel
-        dynasty = dynasty_pharazon
-        father = linepharazon1
-        mother = linepharazonwife
+	dynasty = dynasty_pharazon
+	father = linepharazon1
+	mother = linepharazonwife
 	religion = faith_kings_men_castamir
 	culture = black_numenorean
 
-	trait = intellect_good_2
-	trait = beauty_good_3
+	trait = beauty_good_2
 	trait = blood_of_numenor_2
-	trait = education_diplomacy_4
+	trait = education_diplomacy_3
 	trait = compassionate
 	trait = content
 	trait = just
@@ -3792,14 +3955,14 @@ linepharazon3 = {
 
 	female = yes
 
-	6972.1.1 = {
+	6944.1.1 = {
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
 		}
 	}
 	6990.1.1 = { add_spouse = linepharazon2 }
-	7112.1.1 = { death = { death_reason = death_natural_causes }  }
+	7100.1.1 = { death = { death_reason = death_natural_causes }  }
 }
 
 linepharazon4 = {
@@ -3810,7 +3973,6 @@ linepharazon4 = {
 	religion = melkorite
 	culture = black_numenorean
 
-	trait = physique_good_2
 	trait = blood_of_numenor_2
 	trait = education_martial_2
 	trait = arbitrary
@@ -3822,7 +3984,9 @@ linepharazon4 = {
 
 	trait = lifestyle_blademaster
 
-	6991.1.1 = { birth = yes }
+	6991.1.1 = { 
+		birth = yes
+	}
 	7023.1.1 = {
 		effect = {
 			set_relation_rival = character:linepharazon5
@@ -3839,14 +4003,13 @@ linepharazon5 = {
 	religion = melkorite
 	culture = black_numenorean
 
-	trait = intellect_good_2
-	trait = beauty_good_2
-	trait = blood_of_numenor_2
+	trait = beauty_good_1
 	trait = education_martial_3
 	trait = arbitrary
 	trait = deceitful
 	trait = cynical
 	trait = pure_blooded
+	trait = blood_of_numenor_2
 	martial = 8
 
 	trait = lifestyle_blademaster
@@ -3863,11 +4026,11 @@ linepharazon6 = {
 	mother = linepharazon3
 	religion = melkorite
 	culture = black_numenorean
-	trait = blood_of_numenor_2
+	
 	trait = twin
-	trait = intellect_good_2
 	trait = beauty_good_2
-	trait = education_intrigue_3
+	trait = blood_of_numenor_2
+	trait = education_intrigue_2
 	trait = ambitious
 	trait = callous
 	trait = vengeful
@@ -3894,15 +4057,15 @@ linepharazon7 = {
 	religion = melkorite
 	culture = black_numenorean
 
-	trait = blood_of_numenor_2
+	
 	trait = twin
-	trait = intellect_good_1
 	trait = beauty_good_2
 	trait = education_diplomacy_3
 	trait = compassionate
 	trait = just
 	trait = chaste
 	trait = pure_blooded
+	trait = blood_of_numenor_2
 	female = yes
 
 	7012.1.1 = {
@@ -3922,26 +4085,30 @@ linepharazon7 = {
 
 linepharazon8 = {
 	name = Arphaze_e_l
+    dna = lotr_adunaim_witch
 	dynasty = dynasty_pharazon
 	father = linepharazon2
 	mother = linepharazon3
 	religion = melkorite
 	culture = black_numenorean
+	
+    stewardship = 8
 	intrigue = 8
 	learning = 8
-
+	
 	trait = blood_of_numenor_2
 	trait = sorcerer_1
-	trait = beauty_good_2
-	trait = education_learning_3
+	trait = intellect_good_2
+	trait = education_learning_4
 	trait = ambitious
-	trait = patient
-	trait = deceitful
+	trait = stubborn
+	trait = diligent
 	trait = pure_blooded
-#	trait = celibate # For now
 	female = yes
 
-	7014.1.1 = { birth = yes }
+	7014.1.1 = { 
+	birth = yes
+	}
 	7022.1.1 = {
 		effect = {
 			set_relation_friend = character:linepharazon6
@@ -3961,18 +4128,22 @@ linepharazon9 = {
 	name = Imrazo_o_r # Khâd's Brother
 	dynasty = dynasty_pharazon
 	father = linepharazon1
-        mother = linepharazonwife
+    mother = linepharazonwife
 	religion = melkorite
 	culture = black_numenorean
-	trait = physique_good_2
-	trait = pure_blooded
-
+	
 	trait = blood_of_numenor_2
+	trait = pure_blooded
+    trait = education_diplomacy_3
+    trait = humble
+    trait = diligent
+    trait = content
 
-	6978.1.1 = {
+	
+
+	6953.1.1 = {
 		birth = yes
 	}
-
 	7080.1.1 = { death = { death_reason = death_natural_causes }  }
 }
 
@@ -3981,14 +4152,19 @@ linepharazon10 = {
 	female = yes
 	dynasty = dynasty_pharazon
 	father = linepharazon1
-        mother = linepharazonwife
+    mother = linepharazonwife
 	religion = melkorite
 	culture = black_numenorean
-	trait = pure_blooded
-
+	
 	trait = blood_of_numenor_2
+	trait = pure_blooded
+    trait = education_learning_3
+    trait = shy
+    trait = just
+    trait = zealous
 
-	6986.1.1 = {
+
+	6957.1.1 = {
 		birth = yes
 	}
 	7006.1.1 = { add_spouse = linepharazon9 }
@@ -4001,7 +4177,7 @@ varkanmelkorpriest = {
 	religion = melkorite
 	culture = black_numenorean
 
-	trait = blood_of_numenor_2
+	
 	trait = sorcerer_1
 	trait = beauty_bad_2
 	trait = education_learning_4
@@ -4011,7 +4187,9 @@ varkanmelkorpriest = {
 	trait = theologian
 	trait = strong
 
-	6815.1.1 = { birth = yes }
+	6815.1.1 = {
+		birth = yes
+	}
 	7013.1.1 = {
 		employer = linepharazon2
 		give_council_position = councillor_court_chaplain
@@ -4044,7 +4222,7 @@ lineadunapharaz1 = {
         trait = ambitious
         trait = brave
         trait = greedy
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
         diplomacy = 2
         martial = 4
@@ -4099,7 +4277,7 @@ lineadunapharaz3 = {
     trait = greedy
     trait = gregarious
     trait = zealous
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
     diplomacy = 3
     martial = 4
@@ -4127,7 +4305,7 @@ lineadunapharaz4 = {
     trait = ambitious
     trait = brave
     trait = callous
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
     diplomacy = 3
     martial = 4
@@ -4213,7 +4391,7 @@ linetamarzir1 = {
 	trait = education_martial_3
 	
 	trait = viking
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = adventurer
 	
     6321.7.28 = {
@@ -5204,7 +5382,7 @@ lineerukath21 = { # awesome pirate lady
     trait = ambitious
 	
 	trait = education_stewardship_4
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = adventurer
 	trait = viking
 	trait = physique_good_2
@@ -5646,8 +5824,8 @@ lineoffakecastamir1 = { # corsair ruler of Umbar, falsely claimed descent from c
 	mother = lineoffakecastamir0
 	
 	
-	trait = blood_of_numenor_1
-	trait = mariner_2
+	
+	trait = lifestyle_mariner
 	trait = bastard
 	trait = education_martial_2
 	trait = brave
@@ -5655,8 +5833,16 @@ lineoffakecastamir1 = { # corsair ruler of Umbar, falsely claimed descent from c
 	trait = ambitious
 	trait = viking
 	
+
+	trait = blood_of_numenor_2
 	6072.1.1 = {
 		birth = yes
+		effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+		}
 	}
 
 	6112.1.1 = {
@@ -5673,7 +5859,7 @@ lineazrahilion1 = { # corsair ruler of Umbar
 	religion = faith_corsair
 	culture = umbarean
 	
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = education_stewardship_2
 	trait = sadistic
 	trait = arrogant
@@ -5700,7 +5886,7 @@ lineazrahilion2 = { # corsair ruler of Umbar
 	religion = faith_corsair
 	culture = umbarean
 	
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = education_stewardship_2
 	trait = sadistic
 	trait = arrogant
@@ -5735,12 +5921,12 @@ lineofabarzagar1 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = ambitious
     trait = brave
     trait = gluttonous
-	trait = mariner_2
+	trait = lifestyle_mariner
 	
     diplomacy = 9
     martial = 4
@@ -5751,8 +5937,16 @@ lineofabarzagar1 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_6
     5415.1.7 = {
         birth = yes
+		effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
     }
 
     5528.11.1 = {
@@ -5773,7 +5967,7 @@ lineofabarzagar1concubine = { # Taken when it becomes apparent his Castamiri bri
     sexuality = heterosexual
 	female = yes
 
-    trait = blood_of_numenor_3
+    
 
     trait = content
     trait = compassionate
@@ -5789,6 +5983,8 @@ lineofabarzagar1concubine = { # Taken when it becomes apparent his Castamiri bri
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_6
     5450.1.7 = {
         birth = yes
     }
@@ -5810,7 +6006,7 @@ lineofabarzagar2 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = callous
     trait = paranoid
@@ -5819,7 +6015,7 @@ lineofabarzagar2 = {
 
 	trait = twin
 	trait = intellect_bad_1
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
     diplomacy = 4
     martial = 6
@@ -5830,6 +6026,8 @@ lineofabarzagar2 = {
 
     trait = education_martial_4
 
+
+	trait = blood_of_numenor_6
     5534.3.9 = {
         birth = yes
     }
@@ -5856,7 +6054,7 @@ lineofabarzagar3 = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_3
+    
 	
     trait = lustful
     trait = vengeful
@@ -5871,6 +6069,8 @@ lineofabarzagar3 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_5
     5608.4.8 = {
         birth = yes
     }
@@ -5892,12 +6092,12 @@ lineofabarzagar4 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = forgiving
     trait = craven
     trait = cynical
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 
     diplomacy = 6
@@ -5909,6 +6109,8 @@ lineofabarzagar4 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_6
     5642.3.9 = {
         birth = yes
     }
@@ -5931,7 +6133,7 @@ lineofabarzagar5 = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = humble
     trait = calm
@@ -5946,6 +6148,8 @@ lineofabarzagar5 = {
 
     trait = education_diplomacy_1
 
+
+	trait = blood_of_numenor_6
     5704.4.8 = {
         birth = yes
     }
@@ -5967,7 +6171,7 @@ lineofabarzagar6 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = deceitful
     trait = compassionate
@@ -5982,6 +6186,8 @@ lineofabarzagar6 = {
 
     trait = education_martial_1
 
+
+	trait = blood_of_numenor_6
     5759.1.22 = {
         birth = yes
     }
@@ -6006,7 +6212,7 @@ lineofabarzagar7 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = just
     trait = gregarious
@@ -6024,6 +6230,8 @@ lineofabarzagar7 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_6
     5534.3.9 = {
         birth = yes
     }
@@ -6046,7 +6254,7 @@ lineofabarzagar8 = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = compassionate
     trait = shy
@@ -6061,6 +6269,8 @@ lineofabarzagar8 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_6
     5544.4.8 = {
         birth = yes
     }
@@ -6082,7 +6292,7 @@ lineofabarzagar9 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = humble
     trait = just
@@ -6097,6 +6307,8 @@ lineofabarzagar9 = {
 
     trait = education_martial_4
 
+
+	trait = blood_of_numenor_6
     5617.3.9 = {
         birth = yes
     }
@@ -6119,7 +6331,7 @@ lineofabarzagar10 = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = impatient
     trait = shy
@@ -6134,6 +6346,8 @@ lineofabarzagar10 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_6
     5650.4.8 = {
         birth = yes
     }
@@ -6155,7 +6369,7 @@ lineofabarzagar11 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = calm
     trait = shy
@@ -6170,6 +6384,8 @@ lineofabarzagar11 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_6
     5712.3.9 = {
         birth = yes
     }
@@ -6192,7 +6408,7 @@ lineofabarzagar12 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = wrathful
     trait = greedy
@@ -6207,6 +6423,8 @@ lineofabarzagar12 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_6
     5746.12.24 = {
         birth = yes
     }
@@ -6228,7 +6446,7 @@ lineofabarzagar13 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = paranoid
     trait = vengeful
@@ -6243,6 +6461,8 @@ lineofabarzagar13 = {
 
     trait = education_intrigue_4
 
+
+	trait = blood_of_numenor_6
     5817.12.25 = {
         birth = yes
     }
@@ -6265,7 +6485,7 @@ lineofabarzagar14 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = honest
     trait = trusting
@@ -6280,6 +6500,8 @@ lineofabarzagar14 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_5
     5887.4.14 = {
         birth = yes
     }
@@ -6301,7 +6523,7 @@ lineofabarzagar15 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = temperate
     trait = zealous
@@ -6316,6 +6538,8 @@ lineofabarzagar15 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_5
     5979.7.1 = {
         birth = yes
     }
@@ -6338,7 +6562,7 @@ lineofabarzagar16 = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = content
     trait = lazy
@@ -6353,6 +6577,8 @@ lineofabarzagar16 = {
 
     trait = education_diplomacy_1
 
+
+	trait = blood_of_numenor_4
     6023.7.28 = {
         birth = yes
     }
@@ -6374,7 +6600,7 @@ lineofabarzagar17 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = chaste
     trait = cynical
@@ -6389,6 +6615,8 @@ lineofabarzagar17 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_4
     6072.8.7 = {
         birth = yes
     }
@@ -6411,7 +6639,7 @@ lineofabarzagar18 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = humble
     trait = calm
@@ -6426,6 +6654,8 @@ lineofabarzagar18 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_4
     6118.2.13 = {
         birth = yes
     }
@@ -6447,7 +6677,7 @@ lineofabarzagar19 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = honest
     trait = diligent
@@ -6462,6 +6692,8 @@ lineofabarzagar19 = {
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_4
     6209.2.11 = {
         birth = yes
     }
@@ -6487,7 +6719,7 @@ lineofabarzagar21 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = arbitrary
     trait = generous
@@ -6502,6 +6734,8 @@ lineofabarzagar21 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_4
     6261.10.1 = {
         birth = yes
     }
@@ -6524,7 +6758,7 @@ lineofabarzagar22 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = wrathful
     trait = greedy
@@ -6539,6 +6773,8 @@ lineofabarzagar22 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_4
     6284.1.28 = {
         birth = yes
     }
@@ -6560,7 +6796,7 @@ lineofabarzagar23 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = gluttonous
     trait = calm
@@ -6575,6 +6811,8 @@ lineofabarzagar23 = {
 
     trait = education_learning_4
 
+
+	trait = blood_of_numenor_4
     6339.8.7 = {
         birth = yes
     }
@@ -6597,7 +6835,7 @@ lineofabarzagar24 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = forgiving
     trait = just
@@ -6612,6 +6850,8 @@ lineofabarzagar24 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_3
     6359.3.4 = {
         birth = yes
     }
@@ -6633,7 +6873,7 @@ lineofabarzagar25 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = diligent
     trait = gluttonous
@@ -6648,6 +6888,8 @@ lineofabarzagar25 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_3
     6465.7.24 = {
         birth = yes
     }
@@ -6704,7 +6946,7 @@ lineofabarzagar27 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = arbitrary
     trait = trusting
@@ -6719,6 +6961,8 @@ lineofabarzagar27 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_3
     6514.12.22 = {
         birth = yes
     }
@@ -6741,7 +6985,7 @@ lineofabarzagar28 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = temperate
     trait = gregarious
@@ -6756,6 +7000,8 @@ lineofabarzagar28 = {
 
     trait = education_martial_1
 
+
+	trait = blood_of_numenor_3
     6536.1.7 = {
         birth = yes
     }
@@ -6777,7 +7023,7 @@ lineofabarzagar29 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = humble
     trait = sadistic
@@ -6792,6 +7038,8 @@ lineofabarzagar29 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_3
     6628.5.7 = {
         birth = yes
     }
@@ -6814,7 +7062,7 @@ lineofabarzagar30 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = trusting
     trait = temperate
@@ -6829,6 +7077,8 @@ lineofabarzagar30 = {
 
     trait = education_learning_3
 
+
+	trait = blood_of_numenor_2
     6642.10.25 = {
         birth = yes
     }
@@ -6851,7 +7101,7 @@ lineofabarzagar31 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = arrogant
     trait = content
@@ -6866,6 +7116,8 @@ lineofabarzagar31 = {
 
     trait = education_learning_2
 
+
+	trait = blood_of_numenor_2
     6749.10.28 = {
         birth = yes
     }
@@ -6887,7 +7139,7 @@ lineofabarzagar32 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = chaste
     trait = shy
@@ -6902,6 +7154,8 @@ lineofabarzagar32 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_2
     6723.4.22 = {
         birth = yes
     }
@@ -6923,7 +7177,7 @@ lineofabarzagar33 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = craven
     trait = lazy
@@ -6938,6 +7192,8 @@ lineofabarzagar33 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_2
     6631.3.19 = {
         birth = yes
     }
@@ -6960,7 +7216,7 @@ lineofabarzagar34 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = shy
     trait = greedy
@@ -6975,6 +7231,8 @@ lineofabarzagar34 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_2
     6659.12.14 = {
         birth = yes
     }
@@ -6996,7 +7254,7 @@ lineofabarzagar35 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = humble
     trait = chaste
@@ -7011,6 +7269,8 @@ lineofabarzagar35 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_1
     6691.2.14 = {
         birth = yes
     }
@@ -7033,7 +7293,7 @@ lineofabarzagar36 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = gregarious
     trait = patient
@@ -7048,6 +7308,8 @@ lineofabarzagar36 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     6708.11.5 = {
         birth = yes
     }
@@ -7069,7 +7331,7 @@ lineofabarzagar37 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = cynical
     trait = gregarious
@@ -7084,6 +7346,8 @@ lineofabarzagar37 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_1
     6731.10.11 = {
         birth = yes
     }
@@ -7106,7 +7370,7 @@ lineofabarzagar38 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = stubborn
     trait = gluttonous
@@ -7121,6 +7385,8 @@ lineofabarzagar38 = {
 
     trait = education_stewardship_1
 
+
+	trait = blood_of_numenor_1
     6759.12.19 = {
         birth = yes
     }
@@ -7142,7 +7408,7 @@ lineofabarzagar39 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = cynical
     trait = stubborn
@@ -7157,6 +7423,8 @@ lineofabarzagar39 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_1
     6783.1.4 = {
         birth = yes
     }
@@ -7179,7 +7447,7 @@ lineofabarzagar40 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = compassionate
     trait = paranoid
@@ -7194,6 +7462,8 @@ lineofabarzagar40 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_1
     6813.11.18 = {
         birth = yes
     }
@@ -7215,7 +7485,7 @@ lineofabarzagar41 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = chaste
     trait = paranoid
@@ -7230,6 +7500,8 @@ lineofabarzagar41 = {
 
     trait = education_intrigue_1
 
+
+	trait = blood_of_numenor_1
     6838.9.20 = {
         birth = yes
     }
@@ -7252,7 +7524,7 @@ lineofabarzagar42 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = brave
     trait = compassionate
@@ -7267,6 +7539,8 @@ lineofabarzagar42 = {
 
     trait = education_martial_1
 
+
+	trait = blood_of_numenor_1
     6847.7.25 = {
         birth = yes
     }
@@ -7288,7 +7562,7 @@ lineofabarzagar43 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = wrathful
     trait = ambitious
@@ -7303,6 +7577,8 @@ lineofabarzagar43 = {
 
     trait = education_stewardship_1
 
+
+	trait = blood_of_numenor_1
     6880.5.23 = {
         birth = yes
     }
@@ -7325,7 +7601,7 @@ lineofabarzagar44 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = generous
     trait = fickle
@@ -7340,6 +7616,8 @@ lineofabarzagar44 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_1
     6889.4.6 = {
         birth = yes
     }
@@ -7361,7 +7639,7 @@ lineofabarzagar45 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = compassionate
     trait = calm
@@ -7376,6 +7654,8 @@ lineofabarzagar45 = {
 
     trait = education_martial_4
 
+
+	trait = blood_of_numenor_1
     6914.11.9 = {
         birth = yes
     }
@@ -7397,7 +7677,7 @@ lineofabarzagar46 = {
 
     sexuality = asexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = trusting
     trait = forgiving
@@ -7412,6 +7692,8 @@ lineofabarzagar46 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_1
     6915.1.1 = {
         birth = yes
     }
@@ -7434,7 +7716,7 @@ lineofabarzagar47 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = brave
     trait = sadistic
@@ -7449,6 +7731,8 @@ lineofabarzagar47 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_1
     6935.1.26 = {
         birth = yes
     }
@@ -7470,7 +7754,7 @@ lineofabarzagar48 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = forgiving
     trait = arrogant
@@ -7485,6 +7769,8 @@ lineofabarzagar48 = {
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_1
     6917.8.1 = {
         birth = yes
     }
@@ -7541,7 +7827,7 @@ lineofabarzagar50 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = just
     trait = paranoid
@@ -7556,6 +7842,8 @@ lineofabarzagar50 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_1
     6889.9.5 = {
         birth = yes
     }
@@ -7577,7 +7865,7 @@ lineofabarzagar51 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = content
     trait = arrogant
@@ -7592,6 +7880,8 @@ lineofabarzagar51 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_1
     6847.9.26 = {
         birth = yes
     }
@@ -7613,7 +7903,7 @@ lineofabarzagar52 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = paranoid
     trait = forgiving
@@ -7628,6 +7918,8 @@ lineofabarzagar52 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_1
     6848.9.4 = {
         birth = yes
     }
@@ -7650,7 +7942,7 @@ lineofabarzagar53 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = patient
     trait = lustful
@@ -7665,6 +7957,8 @@ lineofabarzagar53 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_1
     6869.5.24 = {
         birth = yes
     }
@@ -7686,7 +7980,7 @@ lineofabarzagar54 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = craven
     trait = ambitious
@@ -7701,6 +7995,8 @@ lineofabarzagar54 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_1
     6894.8.17 = {
         birth = yes
     }
@@ -7722,7 +8018,7 @@ lineofabarzagar56 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = diligent
     trait = temperate
@@ -7737,6 +8033,8 @@ lineofabarzagar56 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     6904.1.2 = {
         birth = yes
     }
@@ -7759,7 +8057,7 @@ lineofabarzagar57 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = patient
     trait = calm
@@ -7774,6 +8072,8 @@ lineofabarzagar57 = {
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_1
     6932.1.24 = {
         birth = yes
     }
@@ -7803,6 +8103,8 @@ lineofabarzagar58 = {
     trait = shy
     trait = trusting
 
+    
+
     diplomacy = 4
     martial = 8
     stewardship = 5
@@ -7812,6 +8114,8 @@ lineofabarzagar58 = {
 
     trait = education_martial_1
 
+
+	trait = blood_of_numenor_1
     6955.10.12 = {
         birth = yes
     }
@@ -7833,6 +8137,8 @@ lineofabarzagar59 = {
     culture = umbarean
 
     sexuality = heterosexual
+
+    
 
     trait = greedy
     trait = forgiving
@@ -7868,6 +8174,8 @@ lineofabarzagar60 = {
 
     sexuality = heterosexual
 
+    
+
     trait = lustful
     trait = arrogant
     trait = calm
@@ -7881,6 +8189,8 @@ lineofabarzagar60 = {
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_1
     6974.8.1 = {
         birth = yes
     }
@@ -7939,7 +8249,7 @@ linearzagar1 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = paranoid
     trait = brave
@@ -7954,6 +8264,8 @@ linearzagar1 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_5
     5501.8.1 = {
         birth = yes
     }
@@ -7976,7 +8288,7 @@ linearzagar2 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = honest
     trait = zealous
@@ -7991,6 +8303,8 @@ linearzagar2 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_5
     5548.9.3 = {
         birth = yes
     }
@@ -8012,7 +8326,7 @@ linearzagar3 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = sadistic
     trait = arrogant
@@ -8029,6 +8343,8 @@ linearzagar3 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_5
     5602.8.1 = {
         birth = yes
     }
@@ -8041,6 +8357,7 @@ linearzagar3 = {
         death = { death_reason = death_depressed }
     }
 }
+
 arzagarwife = {
     name = Arkha_a_de_e_th
     female = yes
@@ -8050,10 +8367,12 @@ arzagarwife = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_4
     5608.4.8 = {
         birth = yes
     }
@@ -8062,6 +8381,7 @@ arzagarwife = {
         death = { death_reason = death_depressed }
     }
 }
+
 linearzagar4 = {
 	name = Narakhi_i_n
 
@@ -8074,7 +8394,7 @@ linearzagar4 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = sadistic
     trait = arrogant
@@ -8091,6 +8411,8 @@ linearzagar4 = {
 
     trait = education_intrigue_4
 
+
+	trait = blood_of_numenor_5
     5602.8.1 = {
         birth = yes
     }
@@ -8115,7 +8437,7 @@ linearzagar5 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = forgiving
     trait = trusting
@@ -8132,6 +8454,8 @@ linearzagar5 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_5
     5654.8.1 = {
         birth = yes
     }
@@ -8153,7 +8477,7 @@ linearzagar6 = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = zealous
     trait = content
@@ -8168,6 +8492,8 @@ linearzagar6 = {
 
     trait = education_stewardship_4
 
+
+	trait = blood_of_numenor_5
     5656.6.17 = {
         birth = yes
     }
@@ -8197,7 +8523,7 @@ linearzagar7 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_3
+    
 
     trait = trusting
     trait = sadistic
@@ -8212,6 +8538,8 @@ linearzagar7 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_5
     5685.9.18 = {
         birth = yes
     }
@@ -8233,7 +8561,7 @@ linearzagar8 = { # Claims to be the son of Burodapan, but there's little to back
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = temperate
     trait = ambitious
@@ -8249,6 +8577,8 @@ linearzagar8 = { # Claims to be the son of Burodapan, but there's little to back
 
     trait = education_intrigue_4
 
+
+	trait = blood_of_numenor_4
     5799.5.23 = {
         birth = yes
     }
@@ -8280,7 +8610,7 @@ linearzagar9 = {
 
     sexuality = asexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = callous
     trait = lazy
@@ -8295,6 +8625,8 @@ linearzagar9 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_4
     5859.5.18 = {
         birth = yes
     }
@@ -8316,7 +8648,7 @@ linearzagar10 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = chaste
     trait = forgiving
@@ -8331,6 +8663,8 @@ linearzagar10 = {
 
     trait = education_learning_1
 
+
+	trait = blood_of_numenor_4
     5969.11.23 = {
         birth = yes
     }
@@ -8353,7 +8687,7 @@ linearzagar11 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = forgiving
     trait = humble
@@ -8368,6 +8702,8 @@ linearzagar11 = {
 
     trait = education_intrigue_4
 
+
+	trait = blood_of_numenor_4
     6005.2.20 = {
         birth = yes
     }
@@ -8389,7 +8725,7 @@ linearzagar12 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = forgiving
     trait = calm
@@ -8404,6 +8740,8 @@ linearzagar12 = {
 
     trait = education_learning_2
 
+
+	trait = blood_of_numenor_4
     6112.4.5 = {
         birth = yes
     }
@@ -8426,7 +8764,7 @@ linearzagar13 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = brave
     trait = vengeful
@@ -8441,6 +8779,8 @@ linearzagar13 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_4
     6127.7.3 = {
         birth = yes
     }
@@ -8462,7 +8802,7 @@ linearzagar14 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = fickle
     trait = arbitrary
@@ -8477,6 +8817,8 @@ linearzagar14 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_3
     6183.11.6 = {
         birth = yes
     }
@@ -8499,7 +8841,7 @@ linearzagar15 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = lazy
     trait = wrathful
@@ -8514,6 +8856,8 @@ linearzagar15 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_2
     6214.3.13 = {
         birth = yes
     }
@@ -8535,7 +8879,7 @@ linearzagar16 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = gregarious
     trait = stubborn
@@ -8550,6 +8894,8 @@ linearzagar16 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_2
     6306.9.9 = {
         birth = yes
     }
@@ -8572,7 +8918,7 @@ linearzagar17 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = vengeful
     trait = greedy
@@ -8587,6 +8933,8 @@ linearzagar17 = {
 
     trait = education_intrigue_1
 
+
+	trait = blood_of_numenor_2
     6322.9.22 = {
         birth = yes
     }
@@ -8608,7 +8956,7 @@ linearzagar18 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = zealous
     trait = wrathful
@@ -8623,6 +8971,8 @@ linearzagar18 = {
 
     trait = education_learning_2
 
+
+	trait = blood_of_numenor_2
     6357.5.22 = {
         birth = yes
     }
@@ -8648,7 +8998,7 @@ linearzagar20 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_2
+    
 
     trait = callous
     trait = forgiving
@@ -8663,6 +9013,8 @@ linearzagar20 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_2
     6430.2.8 = {
         birth = yes
     }
@@ -8685,7 +9037,7 @@ linearzagar21 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = patient
     trait = ambitious
@@ -8700,6 +9052,8 @@ linearzagar21 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_2
     6451.7.14 = {
         birth = yes
     }
@@ -8721,7 +9075,7 @@ linearzagar22 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = lazy
     trait = generous
@@ -8736,6 +9090,8 @@ linearzagar22 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_2
     6548.5.10 = {
         birth = yes
     }
@@ -8758,7 +9114,7 @@ linearzagar23 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = gregarious
     trait = greedy
@@ -8773,6 +9129,8 @@ linearzagar23 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_2
     6564.8.11 = {
         birth = yes
     }
@@ -8794,7 +9152,7 @@ linearzagar24 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = deceitful
     trait = greedy
@@ -8809,6 +9167,8 @@ linearzagar24 = {
 
     trait = education_diplomacy_2
 
+
+	trait = blood_of_numenor_2
     6595.8.15 = {
         birth = yes
     }
@@ -8831,7 +9191,7 @@ linearzagar25 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = vengeful
     trait = deceitful
@@ -8846,6 +9206,8 @@ linearzagar25 = {
 
     trait = education_diplomacy_3
 
+
+	trait = blood_of_numenor_2
     6611.11.16 = {
         birth = yes
     }
@@ -8867,8 +9229,8 @@ linearzagar26 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
-	trait = mariner_1
+    
+	trait = lifestyle_mariner
     trait = patient
     trait = lustful
     trait = vengeful
@@ -8882,6 +9244,8 @@ linearzagar26 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_1
     6672.9.28 = {
         birth = yes
     }
@@ -8904,7 +9268,7 @@ linearzagar27 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = trusting
     trait = humble
@@ -8919,6 +9283,8 @@ linearzagar27 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_1
     6689.12.5 = {
         birth = yes
     }
@@ -8940,12 +9306,12 @@ linearzagar28 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = cynical
     trait = arrogant
     trait = stubborn
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
     diplomacy = 4
     martial = 6
@@ -8956,6 +9322,8 @@ linearzagar28 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     6738.5.12 = {
         birth = yes
     }
@@ -8978,7 +9346,7 @@ linearzagar29 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = compassionate
     trait = chaste
@@ -8993,6 +9361,8 @@ linearzagar29 = {
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_1
     6758.5.20 = {
         birth = yes
     }
@@ -9014,7 +9384,7 @@ linearzagar30 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = gregarious
     trait = impatient
@@ -9029,6 +9399,8 @@ linearzagar30 = {
 
     trait = education_diplomacy_1
 
+
+	trait = blood_of_numenor_1
     6792.10.7 = {
         birth = yes
     }
@@ -9051,7 +9423,7 @@ linearzagar31 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = wrathful
     trait = callous
@@ -9066,6 +9438,8 @@ linearzagar31 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_1
     6814.1.10 = {
         birth = yes
     }
@@ -9087,7 +9461,7 @@ linearzagar32 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = brave
     trait = chaste
@@ -9102,6 +9476,8 @@ linearzagar32 = {
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_1
     6842.5.26 = {
         birth = yes
     }
@@ -9123,7 +9499,7 @@ linearzagar33 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = chaste
     trait = deceitful
@@ -9138,6 +9514,8 @@ linearzagar33 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_1
     6849.3.20 = {
         birth = yes
     }
@@ -9160,7 +9538,7 @@ linearzagar34 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = chaste
     trait = honest
@@ -9175,6 +9553,8 @@ linearzagar34 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_1
     6862.6.4 = {
         birth = yes
     }
@@ -9197,7 +9577,7 @@ linearzagar35 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = lazy
     trait = shy
@@ -9212,6 +9592,8 @@ linearzagar35 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_1
     6939.10.8 = {
         birth = yes
     }
@@ -9244,7 +9626,7 @@ linearzagar36 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = lazy
     trait = impatient
@@ -9259,6 +9641,8 @@ linearzagar36 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     6952.3.20 = {
         birth = yes
     }
@@ -9280,7 +9664,7 @@ linearzagar37 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = lazy
     trait = impatient
@@ -9295,6 +9679,8 @@ linearzagar37 = {
 
     trait = education_stewardship_3
 
+
+	trait = blood_of_numenor_1
     7001.11.26 = {
         birth = yes
     }
@@ -9316,7 +9702,7 @@ linearzagar38 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = temperate
     trait = fickle
@@ -9331,6 +9717,8 @@ linearzagar38 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_1
     7004.9.2 = {
         birth = yes
     }
@@ -9352,7 +9740,7 @@ linearzagar39 = {
 
     sexuality = bisexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = ambitious
     trait = arrogant
@@ -9367,6 +9755,8 @@ linearzagar39 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_1
     7006.12.5 = {
         birth = yes
     }
@@ -9392,7 +9782,7 @@ linearzagar41 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = humble
     trait = forgiving
@@ -9407,6 +9797,8 @@ linearzagar41 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_1
     6861.12.13 = {
         birth = yes
     }
@@ -9429,7 +9821,7 @@ linearzagar42 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = content
     trait = lustful
@@ -9444,6 +9836,8 @@ linearzagar42 = {
 
     trait = education_intrigue_3
 
+
+	trait = blood_of_numenor_1
     6874.2.18 = {
         birth = yes
     }
@@ -9465,7 +9859,7 @@ linearzagar50 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = diligent
     trait = just
@@ -9480,6 +9874,8 @@ linearzagar50 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_1
     6920.4.16 = {
         birth = yes
     }
@@ -9501,7 +9897,7 @@ linearzagar51 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = temperate
     trait = lustful
@@ -9516,6 +9912,8 @@ linearzagar51 = {
 
     trait = education_diplomacy_1
 
+
+	trait = blood_of_numenor_1
     6925.4.22 = {
         birth = yes
     }
@@ -9538,7 +9936,7 @@ linearzagar52 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = callous
     trait = diligent
@@ -9553,6 +9951,8 @@ linearzagar52 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     6943.6.5 = {
         birth = yes
     }
@@ -9574,7 +9974,7 @@ linearzagar53 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = cynical
     trait = humble
@@ -9589,6 +9989,8 @@ linearzagar53 = {
 
     trait = education_diplomacy_1
 
+
+	trait = blood_of_numenor_1
     6994.6.10 = {
         birth = yes
     }
@@ -9610,7 +10012,7 @@ linearzagar54 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = forgiving
     trait = sadistic
@@ -9625,6 +10027,8 @@ linearzagar54 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_1
     6990.4.9 = {
         birth = yes
     }
@@ -9647,7 +10051,7 @@ linearzagar55 = {
 
     sexuality = homosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = forgiving
     trait = lazy
@@ -9662,6 +10066,8 @@ linearzagar55 = {
 
     trait = education_martial_3
 
+
+	trait = blood_of_numenor_1
     7009.9.1 = {
         birth = yes
     }
@@ -9683,7 +10089,7 @@ linearzagar56 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = temperate
     trait = honest
@@ -9698,6 +10104,8 @@ linearzagar56 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_1
     6992.9.1 = {
         birth = yes
     }
@@ -9720,7 +10128,7 @@ linearzagar57 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = paranoid
     trait = stubborn
@@ -9735,6 +10143,8 @@ linearzagar57 = {
 
     trait = education_martial_1
 
+
+	trait = blood_of_numenor_1
     7015.12.28 = {
         birth = yes
     }
@@ -9756,7 +10166,7 @@ linearzagar58 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = callous
     trait = arbitrary
@@ -9771,6 +10181,8 @@ linearzagar58 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     6930.12.12 = {
         birth = yes
     }
@@ -9793,7 +10205,7 @@ linearzagar59 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = honest
     trait = trusting
@@ -9808,6 +10220,8 @@ linearzagar59 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_1
     6943.1.10 = {
         birth = yes
     }
@@ -9833,8 +10247,10 @@ linearzagar60 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
+
+	trait = blood_of_numenor_1
     7022.8.25 = {
         birth = yes
     }
@@ -9861,7 +10277,7 @@ linearzagar61 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = patient
     trait = calm
@@ -9876,6 +10292,8 @@ linearzagar61 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     7036.4.9 = {
         birth = yes
     }
@@ -9897,7 +10315,7 @@ linearzagar62 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = humble
     trait = craven
@@ -9912,6 +10330,8 @@ linearzagar62 = {
 
     trait = education_intrigue_1
 
+
+	trait = blood_of_numenor_1
     6870.6.6 = {
         birth = yes
     }
@@ -9934,7 +10354,7 @@ linearzagar63 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = craven
     trait = generous
@@ -9949,6 +10369,8 @@ linearzagar63 = {
 
     trait = education_intrigue_2
 
+
+	trait = blood_of_numenor_1
     6885.12.5 = {
         birth = yes
     }
@@ -9970,7 +10392,7 @@ linearzagar64 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = brave
     trait = lustful
@@ -9985,6 +10407,8 @@ linearzagar64 = {
 
     trait = education_learning_3
 
+
+	trait = blood_of_numenor_1
     6916.3.25 = {
         birth = yes
     }
@@ -10007,7 +10431,7 @@ linearzagar65 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = gregarious
     trait = wrathful
@@ -10022,6 +10446,8 @@ linearzagar65 = {
 
     trait = education_stewardship_2
 
+
+	trait = blood_of_numenor_1
     6936.4.18 = {
         birth = yes
     }
@@ -10043,7 +10469,7 @@ linearzagar66 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = ambitious
     trait = arbitrary
@@ -10058,6 +10484,8 @@ linearzagar66 = {
 
     trait = education_diplomacy_4
 
+
+	trait = blood_of_numenor_1
     6997.3.22 = {
         birth = yes
     }
@@ -10079,7 +10507,7 @@ linearzagar67 = {
 
     sexuality = homosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = impatient
     trait = just
@@ -10094,6 +10522,8 @@ linearzagar67 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_1
     6991.11.13 = {
         birth = yes
     }
@@ -10116,7 +10546,7 @@ linearzagar68 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = chaste
     trait = brave
@@ -10131,6 +10561,8 @@ linearzagar68 = {
 
     trait = education_learning_3
 
+
+	trait = blood_of_numenor_1
     7008.12.13 = {
         birth = yes
     }
@@ -10152,7 +10584,7 @@ linearzagar69 = {
 
     sexuality = heterosexual
 
-    trait = blood_of_numenor_1
+    
 
     trait = diligent
     trait = craven
@@ -10167,6 +10599,8 @@ linearzagar69 = {
 
     trait = education_martial_2
 
+
+	trait = blood_of_numenor_1
     6929.3.20 = {
         birth = yes
     }
@@ -10203,7 +10637,7 @@ lineofbelphegor1 = {
     trait = education_martial_3
 	trait = strong
 	trait = intellect_good_2
-	trait = mariner_3
+	trait = lifestyle_mariner
 	
 	father = lineofbelphegor7
 	
@@ -10241,7 +10675,7 @@ lineofbelphegor2 = {
 	trait = arbitrary
 	trait = arrogant
 	trait = education_stewardship_2
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	father = lineofbelphegor1
 	mother = lineofbelphegor6
@@ -10275,10 +10709,16 @@ lineofbelphegor3 = {
 	trait = ambitious
 	trait = gregarious
 	trait = wrathful
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
     7007.1.1 = {
         birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 25
+			}
+        }
     }
 	7028.1.1 = {
 		set_relation_rival = character:lineofbelphegor5
@@ -10298,7 +10738,7 @@ lineofbelphegor4 = {
 	father = lineofbelphegor1
 	mother = lineofbelphegor6
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
     7010.1.1 = {
         birth = yes
@@ -10317,12 +10757,18 @@ lineofbelphegor5 = {
 	
 	trait = bastard_founder
 	trait = strong
-	trait = mariner_2
+	trait = lifestyle_mariner
 	
 	father = lineofbelphegor1
 
     7008.1.1 = {
         birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
     }
 }
 
@@ -10367,7 +10813,7 @@ mardruakcaptain1 = { # mardruak pirate, former liege of belphegor, killed by bel
     culture = mardrukan
 
     trait = reaver
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = comfort_eater
 	trait = dull
     trait = content
@@ -10412,7 +10858,7 @@ mardruakcaptain2 = { #mardruak pirate, bastard of a felayan noble, killed by bel
     culture = felayan
 
     trait = torturer
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = reaver
 	trait = bastard
 	
@@ -10458,7 +10904,7 @@ mardruakcaptain3 = { # mardruak pirate, handsome but not handsome enough to avoi
     religion = faith_corsair
     culture = mardrukan
 
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = reaver
 	trait = beauty_good_2
 	trait = intellect_bad_1

@@ -15,6 +15,20 @@
 	can_start_showing_failures_only = {
 		is_available_adult = yes
 		activity_witch_ritual_valid_trigger = yes
+		trigger_if = {
+			limit = {
+				NOR = {
+					has_trait = witch
+					any_secret = {
+						secret_type = secret_witch
+					}
+				}
+			}
+			custom_tooltip = {
+				text = REASON_NOT_A_WITCH
+				always = no
+			}
+		}
 	}
 
 	is_valid = {
@@ -210,6 +224,73 @@
 			}
 			add = -50
 		}
+		# Plague
+		if = {
+        	limit = {
+        	    any_sub_realm_county = {
+        	        any_county_province = {
+        	            any_province_epidemic = {
+        	                count >= 1
+        	                outbreak_intensity < apocalyptic
+        	            }
+        	        }
+        	    }
+        	    would_follow_social_distancing_value >= -1
+        	}
+        	add = {
+        	    value = -60
+        	    desc = "Plague in Realm"
+        	}
+    	}
+    	else_if = {
+    	    limit = {
+    	        any_realm_county = {
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity < apocalyptic
+    	                }
+    	            }
+    	        }
+    	        would_follow_social_distancing_value >= -1
+    	    }
+    	    add = {
+    	        value = -40
+    	        desc = "Plague in Top Realm"
+    	    }
+    	}
+    	if = {
+    	    limit = {
+    	        any_sub_realm_county = {
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity = apocalyptic
+    	                }
+    	            }
+    	        }
+    	    }
+    	    add = {
+    	        value = -200
+    	        desc = "Apocalyptic Plague in Realm"
+    	    }
+    	}
+    	else_if = {
+    	    limit = {
+    	        any_realm_county = {
+    	            any_county_province = {
+    	                any_province_epidemic = {
+    	                    count >= 1
+    	                    outbreak_intensity = apocalyptic
+    	                }
+    	            }
+    	        }
+    	    }
+    	    add = {
+    	        value = -100
+    	        desc = "Apocalyptic Plague in Top Realm"
+    	    }
+    	}
 	}
 
 	ai_check_interval = 60
@@ -680,7 +761,7 @@
 	window_characters = {
 
 		guest = {
-			camera = camera_body
+			camera = camera_event_center
 			
 			effect = {
 				every_attending_character = {
@@ -705,7 +786,7 @@
 		}
 
 		guest = {
-			camera = camera_body
+			camera = camera_event_center
 			
 			effect = {
 				every_attending_character = {
@@ -730,7 +811,7 @@
 		}
 		
 		host = {
-			camera = camera_body
+			camera = camera_event_center
 			
 			effect = {
 				if = {
@@ -753,7 +834,7 @@
 		}
 		
 		travel_host = {
-			camera = camera_body
+			camera = camera_event_center
 			
 			effect = {
 				if = {
@@ -784,7 +865,7 @@
 		}
 
 		guest = {
-			camera = camera_body
+			camera = camera_event_center
 			
 			effect = {
 				every_attending_character = {
@@ -805,7 +886,7 @@
 		}
 
 		guest = {
-			camera = camera_body
+			camera = camera_event_center
 			
 			effect = {
 				every_attending_character = {

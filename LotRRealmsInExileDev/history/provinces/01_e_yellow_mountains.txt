@@ -147,7 +147,7 @@
 ## c_sakhurkhas
 # b_sakhurkhas
 5290 = {
-	culture = roofsleeper_goblin
+	culture = echomaker_goblin
 	religion = way_of_strength
 	holding = dwarven_holding
 }
@@ -155,7 +155,7 @@
 ## c_sullun_ad
 # b_sullun_ad
 5291 = {
-	culture = roofsleeper_goblin
+	culture = echomaker_goblin
 	religion = way_of_strength
 	holding = dwarven_holding
 }
@@ -163,9 +163,9 @@
 ## c_urku_n_ala
 # b_urku_n_ala
 5292 = {
-	culture = roofsleeper_goblin
-	religion = way_of_strength
-	holding = dwarven_holding
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = wastelands_holding
 }
 
 ## c_taklutatk_at
@@ -187,7 +187,7 @@
 ## c_shath_urgathol
 # b_shath_urgathol
 5295 = {
-	culture = roofsleeper_goblin
+	culture = echomaker_goblin
 	religion = way_of_strength
 	holding = dwarven_holding
 }

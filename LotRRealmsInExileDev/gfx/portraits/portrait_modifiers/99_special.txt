@@ -285,6 +285,21 @@ additive_headgears = {
 				mode = add
 				gene = gene_bs_additive_headgears
 				template = additive_headgears
+				value = 1 
+			}
+		}
+	}
+}
+
+cloak_offset = {
+
+	usage = game
+	cloak_offset = {
+			dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_bs_cloak_offset
+				template = cloak_offset
 				value = 1 # For the randomness to work correctly
 			}
         }
@@ -557,6 +572,30 @@ lotr_special = {
 				is_hobbit = yes
 			}
 		}		
+	}
+	
+	twotreeslight = {
+		dna_modifiers = {
+			accessory = {
+				mode = modify				
+				gene = eye_accessory
+				template = ainur_eyes
+				value = 1.0
+			}
+			morph = {
+				mode = replace				
+				gene = gene_age
+				template = no_aging
+				value = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1500
+				has_trait = twotreeslight
+			}
+		}	
 	}
 }
 

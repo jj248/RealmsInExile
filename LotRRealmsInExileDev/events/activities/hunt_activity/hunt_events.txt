@@ -2825,10 +2825,12 @@ hunt.1002 = {
 	left_portrait = {
 		character = root
 		animation = jockey_gallop
+		camera = camera_event_horse_left
 	}
 	right_portrait = {
 		character = scope:hunt_participant
 		animation = jockey_gallop
+		camera = camera_event_horse_right
 	}
 
 	trigger = {
@@ -10296,6 +10298,12 @@ hunt.2510 = {
 			dynasty ?= { has_dynasty_perk = ep2_activities_legacy_4 }
 		}
 		modifier = {
+			add = 5
+			any_held_county ?= {
+				any_county_province = { has_building_or_higher = legendary_hunting_lodge }
+			}
+		}
+		modifier = {
 			add = 75
 			has_character_flag = had_mystical_animal_story
 			any_owned_story = { story_type = story_cycle_hunt_mystical_animal }
@@ -14463,7 +14471,7 @@ hunt.4008 = {
 		} 
 		#To create the peasant
 		create_character = {
-			age = { 20 35 }
+			age = { young_age middle_age }
 			random_traits = yes
 			gender_female_chance = 50
 			dynasty = none
@@ -22864,7 +22872,7 @@ hunt.7001 = {
 		}
 		#To create Shrek
 		create_character = {
-			age = { 20 35 }
+			age = { young_age middle_age }
 			trait = giant
 			trait = cynical
 			trait = brave
@@ -25740,7 +25748,7 @@ hunt.7300 = {
 		ai_chance = {
 			base = 25
 			opinion_modifier = {
-				opinion_target = scope:hunt_participant
+				opinion_target = scope:befriend_target
 				multiplier = 0.5
 			}
 			ai_value_modifier = {
@@ -27754,6 +27762,8 @@ hunt.9001 = {
 		hunt_intent_outcome_tooltip_effect = yes
 		# Save scopes for trophy recipient
 		hunt_trophy_recipient_scope_effect = yes
+		# Special legend stuff
+		disburse_hunt_legend_seeds = yes
 	}
 
 	option = { # Nothing
@@ -27955,7 +27965,9 @@ hunt.9001 = {
 			}
 		}
 		else = {
-			show_as_tooltip = { add_prestige = hunt_prestige_guest_gain_value }
+			show_as_tooltip = {
+				add_prestige = hunt_prestige_guest_gain_value
+			}
 		}
 		if = { # Fallback for Fawning Doe etc.
 			limit = { exists = scope:activity }

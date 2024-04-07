@@ -914,7 +914,7 @@ sauron.3001 = { # A Dark Messenger
 	option = { #Go back to your master!
 		name = sauron.3001.a
 		
-		add_prestige = medium_prestige_gain
+		add_legitimacy = medium_legitimacy_gain
 		add_piety = medium_piety_gain
 		
 		character:lineofsauron = {
@@ -979,14 +979,23 @@ sauron.3001 = { # A Dark Messenger
 	option = { #I, for one, welcome our new master !
 		name = sauron.3001.c
 		custom_tooltip = sauron.3001.c.tt
-		
+		custom_tooltip = {
+			text = sauron.3001.c.tt.1
+			every_in_list = {
+				variable = all_tributaries
+				free_tributary = yes
+			}
+		}
+
 		add_tyranny = 100
+		add_legitimacy = -2000
 		set_character_faith = faith:faith_gold_worship
 		make_tributary = {
             TYPE = tributary_permanent
             SUZERAIN = title:e_mordor.holder
             TRIBUTARY = root
         }
+		
 		
 		every_ally = {
 			limit = {

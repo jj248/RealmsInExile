@@ -326,8 +326,7 @@ tournament_events.0700 = { # AI Accidental Death
 		modifier = {
 			factor = 0.5
 			OR = {
-				has_trait = blood_of_numenor_1
-				has_trait = blood_of_numenor_2
+				numenorean_blood_tier < 5
 				is_hobbit = yes
 			}
 		}
@@ -338,8 +337,7 @@ tournament_events.0700 = { # AI Accidental Death
 		modifier = {
 			factor = 0.25
 			OR = {
-				has_trait = blood_of_numenor_3
-				has_trait = blood_of_numenor_4
+				numenorean_blood_tier >= 5
 				is_dwarf = yes
 			}
 		}
@@ -846,6 +844,22 @@ tournament_events.0150 = {
 				}
 				desc = tournament_events.0150.winsuccess
 			}
+			triggered_desc = { #CE1 legend seed drop
+				trigger = {
+					has_activity_intent = win_contest_intent 
+					scope:activity = {
+						any_guest_subset = {
+							name = winner
+							this = root
+						}
+					}
+					AND = {
+						has_variable = tournaments_won_count
+						var:tournaments_won_count = 3
+					}
+				}
+				desc = tournament_events.0150.legendseeddrop
+			}
 			triggered_desc = {
 				trigger = { has_activity_intent = win_contest_intent }
 				desc = tournament_events.0150.winfailure
@@ -919,6 +933,82 @@ tournament_events.0150 = {
 			}
 			add_character_modifier = { modifier = tournament_contest_spectator_modifier years = 5 }
 		}
+		if = { #win tracker for legend seeds
+			limit = {
+				has_activity_intent = win_contest_intent 
+				scope:activity = {
+					any_guest_subset = {
+						name = winner
+						this = root
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_variable = tournaments_won_count
+				}
+				change_variable = {
+					name = tournaments_won_count
+					add = 1
+				}
+			}
+			else = {
+				set_variable = {
+					name = tournaments_won_count
+					value = 1
+				}
+			}
+		}
+		if = { #CE1 legend seed drop
+			limit = {
+				has_variable = tournaments_won_count
+				var:tournaments_won_count = 3
+				NOT = { has_character_flag = tournament_won_legend }
+			}
+			create_legend_seed = {
+				type = heroic
+				quality = famed
+				chronicle = tournament_won
+
+				properties = {
+					winner = root
+					location = root.location
+				}
+			}
+			add_character_flag = tournament_won_legend
+		}
+		# We change your extra cool thing to be a Tournament Win
+		if = {
+			limit = {
+				has_legend_chapter_trigger = { CHAPTER = extra_deed }	
+				NOT = {
+					promoted_legend = { has_legend_chronicle = tournament_won }
+				}
+				NOT = {
+					promoted_legend ?= {
+						has_legend_chapter = {
+							name = extra_deed
+							localization_key = legend_chapter_extra_deed_recent_tournament
+						}
+					}
+				}
+			}
+			random = {
+				chance = 50
+				send_interface_toast = {
+					title = legend_chapter_change_toast
+					left_icon = root
+					promoted_legend = {
+						set_legend_chapter = {
+							name = extra_deed
+							localization_key = legend_chapter_extra_deed_recent_tournament
+						}
+					}
+				}
+			}
+		}
+		# LEGITIMACY GAIN FOR GRAND ACTIVITY PARTICIPATION - TOURNAMENT
+		grand_activity_participation_legitimacy_effect = yes
 	}
 
 	option = { #Celebrate the end 
@@ -8416,6 +8506,7 @@ tournament_events.1311 = {
 			scope:activity = {
 				every_attending_character = {
 					limit = {
+						NOT = { this = root }
 						has_trait = compassionate				
 					}
 
@@ -8933,11 +9024,24 @@ tournament_events.1321 = {
 
 	trigger = {
 		has_character_flag = red_coin_flag
+		scope:activity = {
+			any_attending_character = {
+				has_character_flag = red_coin_origin
+			}
+		}
 	}
 
 	immediate = {
 		scope:activity.activity_location.county = {
 			save_scope_as = county
+		}
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					has_character_flag = red_coin_origin 
+				}
+				save_scope_as = unusual_stranger
+			}
 		}
 	}
 

@@ -183,6 +183,9 @@ lineofdurin8 = { # Brísingr, Father of Durin II, a great smith under whom the f
 
     1024.2.18 = {		
         birth = yes
+		effect = {
+			add_character_flag = historically_conceived_dorfdad # Much more likely to sire dwarven father
+		}
     }			
     1299.4.29 = { # S.A. 707
         death = { death_reason = death_natural_causes }	
@@ -356,6 +359,9 @@ lineofdurin17 = {
 
     1998.12.25 = {		
         birth = yes
+		effect = {
+			add_character_flag = historically_conceived_dorfdad # Much more likely to sire dwarven father
+		}
     }
     2250.4.22 = { # S.A. 1658
         death = { death_reason = death_natural_causes }	
@@ -1310,6 +1316,9 @@ lineofdurin44 = {
 
     3729.12.15 = {
         birth = yes
+		effect = {
+			add_character_flag = historically_conceived_dorfdad # Much more likely to sire dwarven father
+		}
     }
 
     3901.1.11 = {
@@ -2321,6 +2330,9 @@ lineofdurin72 = {
 
     5720.3.17 = {
         birth = yes
+		effect = {
+			add_character_flag = historically_conceived_dorfdad # Much more likely to sire dwarven father
+		}
     }
     5952.12.20 = {
         death = { death_reason = death_natural_causes }
@@ -2808,7 +2820,17 @@ lineofdurin90 = {
             }
             give_nickname = nick_ironfoot
         }
-	}			
+	}	
+
+    7010.1.1 = { 
+        effect = {
+			add_to_variable_list = {
+				name = defensive_allies
+				target = character:lineofdale48
+			}
+        }
+    }
+
 	7052.1.13 = {
 		death = { death_reason = death_battle } # succumbed to his wounds after killing Huz-Margoz and defending Bain's body
 	}
@@ -2841,6 +2863,9 @@ lineofdurin91 = {
 	6899.4.4 = {		
 		birth = yes		
         give_nickname = nick_stonehelm
+		effect = {
+			add_character_flag = historically_conceived_dorfdad # Much more likely to sire dwarven father
+		}
 	}			
 	#Fourth age = {
 		#death = { death_reason = unknown }	
@@ -13001,6 +13026,66 @@ lineofbomfur2 = {
 		birth = yes
 	}
 	6839.7.11 = {
+		employer = lineofdurin90
+	}
+	7122.5.17 = {
+		death = { death_reason = death_natural_causes }	
+	}						
+}
+lineofnorin1 = {				
+	name = N_Orin 			
+	religion = faith_khazad			
+	culture = longbeards
+
+	sexuality = heterosexual
+	
+	diplomacy = 5
+    martial = 7
+    stewardship = 6
+    intrigue = 4
+    learning = 6
+    prowess = 8
+	
+	trait = ambitious
+    trait = vengeful
+    trait = gregarious
+		
+	trait = education_martial_2
+  			
+	6714.9.15 = {
+		birth = yes
+	}
+	6985.5.5 = {
+		death = { death_reason = death_natural_causes }	
+	}						
+}
+lineofnorin2 = {				
+	name = Farin 			
+	religion = faith_khazad			
+	culture = longbeards
+	dna = farin_dna
+
+	sexuality = heterosexual
+	
+	father = lineofnorin1
+	
+	diplomacy = 6
+    martial = 8
+    stewardship = 5
+    intrigue = 3
+    learning = 4
+    prowess = 12
+	
+	trait = content
+    trait = stubborn
+    trait = gregarious
+		
+	trait = education_martial_3
+  			
+	6879.7.11 = {
+		birth = yes
+	}
+	7000.7.11 = {
 		employer = lineofdurin90
 	}
 	7122.5.17 = {
@@ -33988,3 +34073,33 @@ lineofzabadith94 = {
     }
 }
 
+### Narvi, legendary smith and frind to Celebrimbor
+
+lineofnarvi = {
+    name = Narvi
+	
+    religion = faith_khazad	
+    culture = longbeards
+
+    sexuality = asexual
+
+    diplomacy = 4
+    martial = 3
+    stewardship = 6
+    intrigue = 1
+    learning = 10
+    prowess = 5
+
+    trait = education_learning_5
+
+	
+	2085.5.7 = {
+        birth = yes
+		effect = {
+            add_trait = lifestyle_artifact_crafting
+        }
+    }
+    2355.1.2 = {
+        death = { death_reason = death_natural_causes }	
+    }	
+}

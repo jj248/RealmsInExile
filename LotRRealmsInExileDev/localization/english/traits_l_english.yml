@@ -11,13 +11,13 @@
  TRAIT_LEVEL_TRACK_HEADER:0 "#V #bold [TraitLevelTrack.GetName]#!#!\n#flavor [TraitLevelTrack.GetDescription]#!\n"
 
 #Reasons
- ALREADY_CONTAINTS_TRAIT:2 "@warning_icon!#X $CHARACTER_NAME$ already has the trait [TRAIT.GetName( CHARACTER.Self )]#!"
- CONTAINTS_OPPOSITE_TRAIT:2 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the opposite trait [TRAIT_2.GetName( CHARACTER.Self )]#!"
- IS_POTENTIAL_TRAIT_FALSE:2 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is blocked from possessing it#!"
- TRAIT_AGE_NOT_IN_RANGE_TOO_YOUNG:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is younger than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
- TRAIT_AGE_NOT_IN_RANGE_TOO_OLD:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is older than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
- TRAIT_SEX_NOT_MATCHING:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is not $TRAIT_SEX$#!"
- ALREADY_HAS_TRAIT_IN_GROUP:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the a trait in the [TRAIT_GROUP.GetName] group #weak ([TRAIT_2.GetName( CHARACTER.Self )])#!#!"
+ ALREADY_CONTAINTS_TRAIT:2 "@warning_icon! #X $CHARACTER_NAME$ already has the trait [TRAIT.GetName( CHARACTER.Self )]#!"
+ CONTAINTS_OPPOSITE_TRAIT:2 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the opposite trait [TRAIT_2.GetName( CHARACTER.Self )]#!"
+ IS_POTENTIAL_TRAIT_FALSE:2 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is blocked from possessing it#!"
+ TRAIT_AGE_NOT_IN_RANGE_TOO_YOUNG:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is younger than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
+ TRAIT_AGE_NOT_IN_RANGE_TOO_OLD:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is older than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
+ TRAIT_SEX_NOT_MATCHING:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is not $TRAIT_SEX$#!"
+ ALREADY_HAS_TRAIT_IN_GROUP:0 "@warning_icon! #X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the a trait in the [TRAIT_GROUP.GetName] group #weak ([TRAIT_2.GetName( CHARACTER.Self )])#!#!"
  SEX_MALE:0 "Male"
  SEX_FEMALE:0 "Female"
 
@@ -486,15 +486,15 @@
  trait_gout_ridden_desc:0 "This character is plagued by swollen joints, making movement painful and the skin tender and red."
  trait_gout_ridden_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is plagued by swollen joints, making movement painful and the skin tender and red."
  trait_consumption:0 "Consumption"
- trait_consumption_desc:0 "Wracked with a bloody cough caused by cold humors in the lungs, this character suffers a terrible plague."
- trait_consumption_character_desc:0 "Wracked with a bloody cough caused by cold humors in the lungs, [ROOT.GetCharacter.GetFirstNameNoTooltip] suffers a terrible plague."
+ trait_consumption_desc:0 "Wracked with a bloody cough caused by cold humors in the lungs, this character suffers a terrible plague." #LOTR
+ trait_consumption_character_desc:0 "Wracked with a bloody cough caused by cold humors in the lungs, [ROOT.GetCharacter.GetFirstNameNoTooltip] suffers a terrible plague." #LOTR
  trait_cancer:0 "Cancer"
  trait_cancer_desc:0 "Cancer has spread through this character's body, draining the life out of them."
  trait_cancer_character_desc:0 "Cancer has spread through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] body, draining the life out of [ROOT.GetCharacter.GetHerHim]."
  trait_typhus:0 "Typhus"
  trait_typhus_desc:0 "This character suffers from camp fever and is plagued by rashes, fever, and coughs."
  trait_typhus_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] suffers from camp fever and is plagued by rashes, fever, and coughs."
- trait_bubonic_plague:0 "The Plague"
+ trait_bubonic_plague:0 "The Plague" #LOTR
  trait_bubonic_plague_desc:0 "This character is beset by black patches of skin and multiple buboes; they are not long for this world."
  trait_bubonic_plague_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is beset by black patches of skin and multiple buboes; [ROOT.GetCharacter.GetSheHe] is not long for this world."
  trait_smallpox:0 "Smallpox"
@@ -504,8 +504,12 @@
  trait_sickly_desc:0 "This character is suffering from a sickly disposition."
  trait_sickly_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is suffering from a sickly disposition."
  trait_scarred:0 "Scarred"
+ trait_scarred_2: "Gnarled"
+ trait_scarred_3: "Mangled"
  trait_scarred_desc:0 "Visibly wearing the memories of battles or accidents, this character is noticeably scarred."
  trait_scarred_character_desc:0 "Visibly wearing the memories of battles or accidents, [ROOT.GetCharacter.GetFirstNameNoTooltip] is noticeably scarred."
+ trait_track_scarred: "Scarred"
+ trait_track_scarred_desc: "A scar is often seen as a sign of bravery, but there is always a tipping point to that allure..."
  trait_eunuch:0 "Eunuch"
  trait_eunuch_desc:0 "This character has been intentionally castrated."
  trait_eunuch_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has been intentionally castrated."
@@ -717,8 +721,12 @@
  trait_faith_warrior_desc:0 "This character has participated in a Great Holy War."
  trait_faith_warrior_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has participated in a Great Holy War."
  trait_saint:0 "Saint"
- trait_saint_desc:0 "Exceptionally holy; the saint is a beacon of light for everyone religious."
- trait_saint_character_desc:0 "Exceptionally holy; the saint is a beacon of light for everyone religious."
+ trait_venerated_ancestor: "Venerated Ancestor"
+ trait_saint_desc:1 "Exceptionally holy; this character is venerated for their pious actions."
+ trait_saint_character_desc:1 "Exceptionally holy; [ROOT.GetCharacter.GetFirstNameNoTooltip] is venerated for [ROOT.GetCharacter.GetHerHis] pious actions."
+ trait_legend: "Living Legend"
+ trait_legend_character_desc: "Renowned for [ROOT.GetCharacter.GetHerHis] heroic life, [ROOT.GetCharacter.GetFirstNameNoTooltip] is known to all as a living legend."
+ trait_legend_desc: "Renowned for their heroic life, this character is known to all as a living legend."
  trait_order_member:0 "Order Member"
  trait_order_member_desc:0 "This character serves in a militarized Holy Order."
  trait_order_member_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] serves in a militarized Holy Order."
@@ -790,7 +798,7 @@
  trait_varangian_desc:0 "This character has served in the Byzantine Army as part of the Varangian Guard."
  trait_varangian_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has served in the Byzantine Army as part of the Varangian Guard."
  trait_viking_has_longships:0 "Viking"
- trait_viking_corsair:0 "Corsair"
+ trait_viking_corsair:0 "Corsair" #LOTR
  trait_viking_fallback:0 "Raider"
  trait_viking_desc:0 "This character is a well-known plunderer of foreign settlements."
  trait_viking_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a well-known plunderer of foreign settlements."
@@ -929,7 +937,7 @@
  TRAIT_INHERITANCE_POSSIBLE_BOTH:0 "" #LotR
  TRAIT_INHERITANCE_UPGRADE_POSSIBLE:0 "" #LotR
 
- trait_durin_unify:0 "Ukhzâd"
+ trait_durin_unify:0 "Ukhzâd" #LOTR
  trait_durin_unify_desc:0 "This character is the current ruler of the High Kingdom of Durin's Folk and commands the respect an office of such magnitude is due."
  trait_durin_unify_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is the current ruler of the High Kingdom of Durin's Folk and commands the respect an office of such magnitude is due."
 

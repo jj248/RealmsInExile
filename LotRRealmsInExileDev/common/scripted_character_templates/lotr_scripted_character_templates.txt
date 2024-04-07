@@ -26,7 +26,9 @@ lotr_corsair_traveler_template = {
 			5 = { set_character_faith = faith:faith_edain_ulmo }
 		}
 		random_list = {
-			10 = { add_trait = blood_of_numenor_1 }
+			10 = { 
+				add_trait = blood_of_numenor_1 
+			}
 			90 = { }
 		}
 	}
@@ -45,8 +47,12 @@ lotr_dunedain_traveler_template = {
 			# 5 = { set_culture = culture:dunedain } # Arnor remnant
 		}
 		random_list = {
-			5 = { add_trait = blood_of_numenor_2 }
-			95 = { add_trait = blood_of_numenor_1 }
+			5 = { 
+				add_trait = blood_of_numenor_3
+			}
+			95 = { 
+				add_trait = blood_of_numenor_1
+			}
 		}
 		random_list = {
 			70 = { set_character_faith = faith:faith_edain }

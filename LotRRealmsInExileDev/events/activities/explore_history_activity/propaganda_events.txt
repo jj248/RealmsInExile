@@ -196,17 +196,27 @@ propaganda.0010 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
 					years = 5
-				} 
+				}
 			}
 		}
 		trigger_event = {
@@ -225,12 +235,22 @@ propaganda.0010 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -259,12 +279,22 @@ propaganda.0010 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -317,12 +347,22 @@ propaganda.0011 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -352,17 +392,21 @@ propaganda.0011 = {
 	option = { # Anadune must prevail
 		name = propaganda.0011.b
 		if = {
-			limit = {
-				has_trait = lifestyle_mystic
-			}		
-			add_trait = holy_warrior		
+			limit = { has_trait = lifestyle_mystic }
+			random = {
+				chance = 50
+				add_trait_xp = {
+					trait = lifestyle_mystic
+					value = 10
+				}
+			}
 		}	
 		else = {
 			random = {
 				chance = 25
 				add_trait = lifestyle_mystic
 			}
-		}	
+		}
 		duel = {
 			skill = diplomacy 
 			value = 12
@@ -370,12 +414,22 @@ propaganda.0011 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = angry_servants_modifier
@@ -399,17 +453,27 @@ propaganda.0011 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = unsavoury_ideas_modifier
 					years = 5
-				} 
+				}
 			}
 		}
 		trigger_event = {
@@ -470,12 +534,22 @@ propaganda.0012 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_prestige = minor_prestige_loss 
 			}
@@ -499,17 +573,27 @@ propaganda.0012 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
 					years = 5
-				} 
+				}
 			}
 		}
 		trigger_event = {
@@ -541,14 +625,24 @@ propaganda.0012 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
 				}
-				add_piety = minor_piety_loss 
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
+				}
+				add_piety = minor_piety_loss
 			}
 		}
 		trigger_event = {
@@ -601,12 +695,22 @@ propaganda.0013 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = greedy_retainers_modifier
@@ -633,12 +737,22 @@ propaganda.0013 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -664,12 +778,22 @@ propaganda.0013 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_tyranny = 10
 			}
@@ -728,12 +852,22 @@ propaganda.0014 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -752,13 +886,14 @@ propaganda.0014 = {
 	option = { # Adunai prowess
 		name = propaganda.0014.b
 		if = {
-			limit = {
-				has_trait = lifestyle_blademaster
-			}		
+			limit = { has_trait = lifestyle_blademaster }
 			random = {
 				chance = 50
-				add_prowess_skill = 1
-			}			
+				add_trait_xp = {
+					trait = lifestyle_blademaster
+					value = 10
+				}
+			}
 		}	
 		else = {
 			random = {
@@ -773,12 +908,22 @@ propaganda.0014 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -807,12 +952,22 @@ propaganda.0014 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
@@ -854,29 +1009,24 @@ propaganda.0020 = {
 	option = { # Great Vessels
 		name = propaganda.0020.a
 		if = {
+			limit = { has_trait = lifestyle_mariner }
+			random = {
+				chance = 50
+				add_trait_xp = {
+					trait = lifestyle_mariner
+					value = 10
+				}
+			}
+		}	
+		ELSE_IF = {
 			limit = {
-				OR = { 
-					has_trait = mariner_1
-					has_trait = mariner_2
-					has_trait = mariner_3
+				NOT = { 
+					has_trait = lifestyle_mariner
 				}
 			}		
 			random = {
 				chance = 50
-				add_prowess_skill = 1
-			}			
-		}	
-		ELSE_IF = {
-			limit = {
-				NOR = { 
-					has_trait = mariner_1
-					has_trait = mariner_2
-					has_trait = mariner_3
-				}
-			}		
-			random = {
-				chance = 25
-				add_trait = mariner_1
+				add_trait = lifestyle_mariner
 			}
 		}
 		duel = {
@@ -886,12 +1036,22 @@ propaganda.0020 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = greedy_retainers_modifier
@@ -919,12 +1079,22 @@ propaganda.0020 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -953,12 +1123,22 @@ propaganda.0020 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1025,12 +1205,22 @@ propaganda.0021 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_piety = minor_piety_loss
 			}
@@ -1058,12 +1248,22 @@ propaganda.0021 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = angry_servants_modifier
@@ -1086,12 +1286,22 @@ propaganda.0021 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = angered_soldiers_modifier
@@ -1143,12 +1353,22 @@ propaganda.0022 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = greedy_retainers_modifier
@@ -1175,12 +1395,22 @@ propaganda.0022 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = unsavoury_ideas_modifier
@@ -1217,12 +1447,22 @@ propaganda.0022 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_tyranny = 10
 			}
@@ -1272,12 +1512,22 @@ propaganda.0023 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1306,12 +1556,22 @@ propaganda.0023 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1339,12 +1599,22 @@ propaganda.0023 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
@@ -1400,12 +1670,22 @@ propaganda.0024 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1444,12 +1724,22 @@ propaganda.0024 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1478,12 +1768,22 @@ propaganda.0024 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				#scope:unhappy_county = {
 					add_character_modifier = {
@@ -1552,12 +1852,22 @@ propaganda.0030 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_tyranny = 10
 			}
@@ -1581,12 +1891,22 @@ propaganda.0030 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1612,12 +1932,22 @@ propaganda.0030 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				#scope:unhappy_county = {
 					add_character_modifier = {
@@ -1670,12 +2000,22 @@ propaganda.0031 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = greedy_retainers_modifier
@@ -1692,13 +2032,14 @@ propaganda.0031 = {
 	option = { # Unmatched prowess
 		name = propaganda.0031.b
 		if = {
-			limit = {
-				has_trait = lifestyle_blademaster
-			}		
+			limit = { has_trait = lifestyle_blademaster }
 			random = {
 				chance = 50
-				add_prowess_skill = 1
-			}			
+				add_trait_xp = {
+					trait = lifestyle_blademaster
+					value = 10
+				}
+			}
 		}	
 		else = {
 			random = {
@@ -1713,12 +2054,22 @@ propaganda.0031 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1744,12 +2095,22 @@ propaganda.0031 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_prestige = minor_prestige_loss
 			}
@@ -1795,29 +2156,24 @@ propaganda.0032 = {
 	option = { # Call my shipwrights
 		name = propaganda.0032.a	
 		if = {
+			limit = { has_trait = lifestyle_mariner }
+			random = {
+				chance = 50
+				add_trait_xp = {
+					trait = lifestyle_mariner
+					value = 10
+				}
+			}
+		}	
+		ELSE_IF = {
 			limit = {
-				OR = { 
-					has_trait = mariner_1
-					has_trait = mariner_2
-					has_trait = mariner_3
+				NOT = { 
+					has_trait = lifestyle_mariner
 				}
 			}		
 			random = {
 				chance = 50
-				add_prowess_skill = 1
-			}			
-		}	
-		ELSE_IF = {
-			limit = {
-				NOR = { 
-					has_trait = mariner_1
-					has_trait = mariner_2
-					has_trait = mariner_3
-				}
-			}		
-			random = {
-				chance = 25
-				add_trait = mariner_1
+				add_trait = lifestyle_mariner
 			}
 		}
 		duel = {
@@ -1827,12 +2183,22 @@ propaganda.0032 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
@@ -1859,12 +2225,22 @@ propaganda.0032 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = angry_servants_modifier
@@ -1891,12 +2267,22 @@ propaganda.0032 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = unsavoury_ideas_modifier
@@ -1950,12 +2336,22 @@ propaganda.0033 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -1981,12 +2377,22 @@ propaganda.0033 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2005,10 +2411,14 @@ propaganda.0033 = {
 	option = { # Swords in the morning
 		name = propaganda.0033.c
 		if = {
-			limit = {
-				has_trait = lifestyle_mystic
-			}		
-			add_trait = holy_warrior		
+			limit = { has_trait = lifestyle_mystic }
+			random = {
+				chance = 50
+				add_trait_xp = {
+					trait = lifestyle_mystic
+					value = 10
+				}
+			}
 		}	
 		else = {
 			random = {
@@ -2023,12 +2433,22 @@ propaganda.0033 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_piety = minor_piety_loss
 			}
@@ -2084,12 +2504,22 @@ propaganda.0034 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
@@ -2113,12 +2543,22 @@ propaganda.0034 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = greedy_retainers_modifier
@@ -2142,12 +2582,22 @@ propaganda.0034 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2194,29 +2644,24 @@ propaganda.0040 = {
 	option = { # Unparalleled sailors
 		name = propaganda.0040.a
 		if = {
+			limit = { has_trait = lifestyle_mariner }
+			random = {
+				chance = 50
+				add_trait_xp = {
+					trait = lifestyle_mariner
+					value = 10
+				}
+			}
+		}	
+		ELSE_IF = {
 			limit = {
-				OR = { 
-					has_trait = mariner_1
-					has_trait = mariner_2
-					has_trait = mariner_3
+				NOT = { 
+					has_trait = lifestyle_mariner
 				}
 			}		
 			random = {
 				chance = 50
-				add_prowess_skill = 1
-			}			
-		}	
-		ELSE_IF = {
-			limit = {
-				NOR = { 
-					has_trait = mariner_1
-					has_trait = mariner_2
-					has_trait = mariner_3
-				}
-			}		
-			random = {
-				chance = 25
-				add_trait = mariner_1
+				add_trait = lifestyle_mariner
 			}
 		}
 		duel = {
@@ -2226,12 +2671,22 @@ propaganda.0040 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = greedy_retainers_modifier
@@ -2258,12 +2713,22 @@ propaganda.0040 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2292,12 +2757,22 @@ propaganda.0040 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2349,12 +2824,22 @@ propaganda.0041 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
@@ -2391,12 +2876,22 @@ propaganda.0041 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = angry_servants_modifier
@@ -2433,12 +2928,22 @@ propaganda.0041 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2504,12 +3009,22 @@ propaganda.0042 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = angry_servants_modifier
@@ -2533,12 +3048,22 @@ propaganda.0042 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = insulted_population_modifier
@@ -2562,12 +3087,22 @@ propaganda.0042 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_tyranny = 10
 			}
@@ -2607,19 +3142,20 @@ propaganda.0043 = {
 	option = { # Wonders for table
 		name = propaganda.0043.a
 		if = {
-			limit = {
-				has_trait = lifestyle_reveler
-			}		
+			limit = { has_trait = lifestyle_reveler }
 			random = {
 				chance = 50
-				add_diplomacy_skill = 1
-			}			
+				add_trait_xp = {
+					trait = lifestyle_reveler
+					value = 10
+				}
+			}
 		}	
-		else = {	
+		else = {
 			random = {
 				chance = 25
 				add_trait = lifestyle_reveler
-			}			
+			}
 		}
 		duel = {
 			skill = diplomacy 
@@ -2628,12 +3164,22 @@ propaganda.0043 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2659,12 +3205,22 @@ propaganda.0043 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_prestige = minor_prestige_loss
 		    }
@@ -2685,12 +3241,22 @@ propaganda.0043 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2745,12 +3311,22 @@ propaganda.0044 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_piety = minor_piety_loss
 		    }
@@ -2771,12 +3347,22 @@ propaganda.0044 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				#scope:unhappy_county = {
 					add_character_modifier = {
@@ -2805,12 +3391,22 @@ propaganda.0044 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2865,12 +3461,22 @@ propaganda.0045 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = angry_servants_modifier
@@ -2897,12 +3503,22 @@ propaganda.0045 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				scope:unhappy_county = {
 					add_county_modifier = {
@@ -2921,13 +3537,15 @@ propaganda.0045 = {
 	option = { # Left alone
 		name = propaganda.0045.c
 		if = {
-			limit = {
-				has_trait = lifestyle_hunter
-			}		
+			limit = { has_trait = lifestyle_hunter }
 			random = {
 				chance = 50
-				add_prowess_skill = 1
-			}			
+				add_trait_xp = {
+					trait = lifestyle_hunter
+					track = hunter
+					value = 10
+				}
+			}
 		}	
 		else = {
 			random = {
@@ -2942,12 +3560,22 @@ propaganda.0045 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = 1
+					max = 15
+				}
+				add_legitimacy = {
+					value = miniscule_legitimacy_gain
+					multiply = scope:actor.primary_title.tier
 				}
 			}
 			20 = {
 				compare_modifier = {
 					value = scope:duel_value
 					multiplier = -1
+					min = -15
+				}
+				add_legitimacy = {
+					value = minor_legitimacy_loss
+					multiply = scope:actor.primary_title.tier
 				}
 				add_character_modifier = {
 					modifier = greedy_retainers_modifier
