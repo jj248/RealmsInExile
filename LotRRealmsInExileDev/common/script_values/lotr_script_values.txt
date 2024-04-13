@@ -529,45 +529,89 @@ chelkar_military_strength_times_two = {
 ### NÚMENÓREAN BLOOD VALUES ###
 get_numenorean_blood_tier = {
 	value = 0
-	if = {
+	if = { # Level 1 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 1
-			}
+			has_trait = blood_of_numenor_1
 		}
 		add = 1
 	}
-	else_if = {
+	else_if = { # Level 2 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 2
-			}
+			has_trait = blood_of_numenor_2
 		}
 		add = 2
 	}
-	else_if = {
+	else_if = { # Level 3 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 3
-			}
+			has_trait = blood_of_numenor_3
 		}
 		add = 3
 	}
-	else_if = {
+	else_if = { # Level 4 numenorean
 		limit = {
-			has_trait_rank = {
-				trait = blood_of_numenor
-				rank = 4
-			}
+			has_trait = blood_of_numenor_4
 		}
 		add = 4
+	}
+	else_if = { # Level 5 numenorean
+		limit = {
+			has_trait = blood_of_numenor_5
+		}
+		add = 5
+	}
+	else_if = { # Level 6 numenorean
+		limit = {
+			has_trait = blood_of_numenor_6
+		}
+		add = 6
+	}
+	else_if = { # Level 7 numenorean
+		limit = {
+			has_trait = blood_of_numenor_7
+		}
+		add = 7
+	}
+	else_if = { # Level 8 numenorean
+		limit = {
+			has_trait = blood_of_numenor_8
+		}
+		add = 8
+	}
+	else_if = { # Level 9 numenorean
+		limit = {
+			has_trait = blood_of_numenor_9
+		}
+		add = 9
+	}
+	else_if = { # Level 10 numenorean
+		limit = {
+			has_trait = blood_of_numenor_10
+		}
+		add = 10
 	}
 }
 
 numenorean_blood_tier = { value = get_numenorean_blood_tier }
+
+### Uses "scope:real_father" & "scope:mother" for the blood_of_numenor_events 
+get_numenorean_tier_difference = {
+	value = 0
+
+	if = {
+		limit = { scope:real_father.numenorean_blood_tier >= scope:mother.numenorean_blood_tier }
+		add = {
+			value = scope:real_father.numenorean_blood_tier
+			subtract = scope:mother.numenorean_blood_tier
+		}
+	}
+	else_if = {
+		limit = { scope:mother.numenorean_blood_tier >= scope:real_father.numenorean_blood_tier }
+		add = {
+			value = scope:mother.numenorean_blood_tier
+			subtract = scope:real_father.numenorean_blood_tier
+		}
+	}
+}
 
 ## MEN-AT-ARMS VALUES ###
 culture_ai_weight_monsters = {
@@ -1076,7 +1120,13 @@ defensive_alliances = {
 	value = 0
 
 	if = {
-		limit = { has_defensive_alliance = yes }
+		limit = { 
+			trigger_if = {
+				limit = { is_alive = yes }
+				has_defensive_alliance = yes 
+			}
+			trigger_else = { always = no }
+		}
 		every_in_list = {
 			variable = defensive_allies
 			add = 1

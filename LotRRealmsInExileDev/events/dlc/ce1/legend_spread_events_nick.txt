@@ -3598,8 +3598,8 @@ legend_spread_events.5205 = {
 # by Nick Meredith
 legend_spread_events.5210 = {
 	type = character_event
-	title = legend_spread_events.5210.t
-	desc = legend_spread_events.5210.desc
+	title = lotr_legend_spread_events.5210.t
+	desc = lotr_legend_spread_events.5210.desc
 	theme = legend
 
 	left_portrait = {
@@ -3632,7 +3632,7 @@ legend_spread_events.5210 = {
 	}
 
 	option = { # And he thought I was a cyclops too!
-		name = legend_spread_events.5210.a
+		name = lotr_legend_spread_events.5210.a
 
 		trigger = {
 			has_trait = one_eyed
@@ -6551,7 +6551,7 @@ legend_spread_events.5325 = {
 	trigger = {
 		#You have a neighbour who has a legend
 		any_neighboring_top_liege_realm_owner = {
-			any_legend = {
+			promoted_legend ?= {
 				NOR = { #You are not promoting that legend or the owner
 					any_legend_promoter = {
 						this = root		
@@ -6572,7 +6572,7 @@ legend_spread_events.5325 = {
 	}
 
 	immediate = {
-		random_neighboring_realm_same_rank_owner = { #Grab neighbouring ruler with a legend
+		random_neighboring_top_liege_realm_owner = { #Grab neighbouring ruler with a legend
 			limit = {
 				any_legend = {
 					NOR = {

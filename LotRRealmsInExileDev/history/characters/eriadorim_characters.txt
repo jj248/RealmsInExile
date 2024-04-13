@@ -27,12 +27,14 @@ lineofarnethor1 = { # Arnethor the Adjudicator, also known as 'Arnethor the Wand
 	religion = faith_edain
 	culture = eriadorim
 
-	trait = blood_of_numenor_2
+	
 	trait = education_diplomacy_4 
 	trait = just
 	trait = brave
 	trait = diligent
  
+
+	trait = blood_of_numenor_6
 	3528.12.22 = {
 		birth = yes		
 		effect = {
@@ -68,12 +70,14 @@ lineofarnethor2 = { # Sion the Elf-friend, he reigned but scant years after his 
 
 	father = lineofarnethor1
 
-	trait = blood_of_numenor_2
+	
 	trait = education_learning_3 
 	trait = just
 	trait = zealous
 	trait = calm
  
+
+	trait = blood_of_numenor_6
 	3550.12.18 = {
 		birth = yes		
 		effect = {

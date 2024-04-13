@@ -996,6 +996,9 @@ legend_spread_events.8040 = {
 			exists = legend_property:ancestor
 			exists = legend_property:ancestor.culture # Make sure the ancestor is a character, not a flag
 			legend_property:ancestor = { # There is a sinful trait your ancestor *doesn't* have
+				NOT = {
+					this = root
+				}
 				any_trait_in_category = {
 					category = personality
 					NOT = { prev = { has_trait = prev } }
@@ -1399,6 +1402,8 @@ legend_spread_events.8060 = {
 			exists = legend_property:ancestor.religion # Make sure the ancestor is a character, not a flag
 			legend_property:ancestor = {
 				NOT = { religion = root.religion }
+				culture_conversion_to_allowed = { TARGET = root }
+				is_alive = no
 			}
 		}
 		is_available_adult = yes

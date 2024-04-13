@@ -1498,10 +1498,7 @@ hunt_animal_melee_kill_effect = {
 			}
 			modifier = {
 				factor = 0.5
-				OR = {
-					has_trait = blood_of_numenor_1
-					has_trait = blood_of_numenor_2
-				}
+				numenorean_blood_tier >= 5
 			}
 			modifier = {
 				factor = 0.5
@@ -1510,8 +1507,7 @@ hunt_animal_melee_kill_effect = {
 			modifier = {
 				factor = 0.25
 				OR = {
-					has_trait = blood_of_numenor_3
-					has_trait = blood_of_numenor_4
+					numenorean_blood_tier < 5
 					is_dwarf = yes
 				}
 			}
@@ -1596,10 +1592,7 @@ hunt_animal_melee_kill_effect = {
 			}
 			modifier = {
 				factor = 0.5
-				OR = {
-					has_trait = blood_of_numenor_1
-					has_trait = blood_of_numenor_2
-				}
+				numenorean_blood_tier >= 5
 			}
 			modifier = {
 				factor = 0.5
@@ -1608,8 +1601,7 @@ hunt_animal_melee_kill_effect = {
 			modifier = {
 				factor = 0.25
 				OR = {
-					has_trait = blood_of_numenor_3
-					has_trait = blood_of_numenor_4
+					numenorean_blood_tier < 5
 					is_dwarf = yes
 				}
 			}
@@ -1731,10 +1723,7 @@ hunt_animal_melee_kill_group_effect = {
 			modifier = {
 				factor = 0.5
 				scope:injury_target = {
-					OR = {
-						has_trait = blood_of_numenor_1
-						has_trait = blood_of_numenor_2
-					}
+					numenorean_blood_tier < 5
 				}
 			}
 			modifier = {
@@ -1744,10 +1733,7 @@ hunt_animal_melee_kill_group_effect = {
 			modifier = {
 				factor = 0.25
 				scope:injury_target = {
-					OR = {
-						has_trait = blood_of_numenor_3
-						has_trait = blood_of_numenor_4
-					}
+					numenorean_blood_tier >= 5
 				}
 			}
 			modifier = {
@@ -1812,10 +1798,7 @@ hunt_animal_melee_kill_group_effect = {
 			modifier = {
 				factor = 0.5
 				scope:injury_target = {
-					OR = {
-						has_trait = blood_of_numenor_1
-						has_trait = blood_of_numenor_2
-					}
+					numenorean_blood_tier < 5
 				}
 			}
 			modifier = {
@@ -1825,10 +1808,7 @@ hunt_animal_melee_kill_group_effect = {
 			modifier = {
 				factor = 0.25
 				scope:injury_target = {
-					OR = {
-						has_trait = blood_of_numenor_3
-						has_trait = blood_of_numenor_4
-					}
+					numenorean_blood_tier >= 5
 				}
 			}
 			modifier = {
@@ -1984,10 +1964,7 @@ hunt_animal_bow_kill_effect = {
 				modifier = {
 					factor = 0.5
 					scope:injury_target = {
-						OR = {
-							has_trait = blood_of_numenor_1
-							has_trait = blood_of_numenor_2
-						}
+						numenorean_blood_tier < 5
 					}
 				}
 				modifier = {
@@ -1997,10 +1974,7 @@ hunt_animal_bow_kill_effect = {
 				modifier = {
 					factor = 0.25
 					scope:injury_target = {
-						OR = {
-							has_trait = blood_of_numenor_3
-							has_trait = blood_of_numenor_4
-						}
+						numenorean_blood_tier >= 5
 					}
 				}
 				modifier = {

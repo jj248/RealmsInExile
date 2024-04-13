@@ -814,7 +814,7 @@ education_learning_5 = {
 
 	culture_modifier = {
 		parameter = innovation_from_learning_traits
-		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_mult = 0.25
 	}
 
 	culture_modifier = {
@@ -2936,6 +2936,11 @@ deceitful = {
 		parameter = jungle_trait_bonuses
 		jungle_advantage = 2
 	}
+
+	culture_modifier = { #LotR
+		parameter = deceitful_trait_gives_extra_hostile_scheme
+		max_hostile_schemes_add = 1
+	}
 	
 	opposite_opinion = -10
 
@@ -3178,6 +3183,7 @@ shy = {
 	personal_scheme_power_mult = -0.2
 	learn_language_scheme_power_mult = 0.3
 	character_travel_safety_mult = 0.25
+	epidemic_resistance = 5
 	
 	attraction_opinion = -5
 	same_opinion = 10
@@ -3241,6 +3247,11 @@ gregarious = {
 	# 	parameter = trait_county_opinion_modifiers
 	# 	county_opinion_add = 5
 	# }
+
+	culture_modifier = { #LotR
+		parameter = gregarious_trait_gives_extra_personal_scheme
+		max_personal_schemes_add = 1
+	}
 	
 	culture_modifier = {
 		parameter = gregarious_trait_gives_bonuses
@@ -4694,6 +4705,7 @@ reclusive = { # Hides away from relationships and responsibilities.
 	diplomacy = -2
 	stewardship = -1
 	stress_loss_mult = 0.2
+	epidemic_resistance = 10
 	
 	ruler_designer_cost = -5
 
@@ -7558,7 +7570,7 @@ inbred = {
 		}
 	}
 
-	flag = TRAIT_FLAG_DESC_initial_legitimacy_nerf
+	flag = initial_legitimacy_nerf
 
 	ai_rationality = -50
 	ai_energy = -75
@@ -9438,6 +9450,7 @@ born_in_the_purple = {
 
 	category = fame
 	# culture_succession_prio = children_can_be_born_in_the_purple #LotR
+	flag = initial_legitimacy_boost
 	
 	ruler_designer_cost = 40
 	
@@ -9471,30 +9484,6 @@ augustus = {
 				desc = trait_augustus_desc
 			}
 			desc = trait_augustus_character_desc
-		}
-	}
-}
-
-durin_unify = {
-	category = fame
-
-	monthly_dynasty_prestige = 1
-	monthly_dynasty_prestige_mult = 0.25
-	same_culture_opinion = 30
-	development_growth_factor = 0.5
-	development_growth = 0.2
-	
-	shown_in_ruler_designer = no
-
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_durin_unify_desc
-			}
-			desc = trait_durin_unify_character_desc
 		}
 	}
 }

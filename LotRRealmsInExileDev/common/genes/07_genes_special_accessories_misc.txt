@@ -1204,9 +1204,27 @@ special_genes = {
 			}
 			
 			isengard_spear_left_hand = {
-				index = 88
+				index = 42
 				male = {
 					1 = isengard_spear_left_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			noldor_spear_left_hand = {
+					1 = noldor_spear_left_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			harad_spear_left_hand = {
+				index = 44
+				male = {
+					1 = harad_spear_left_hand
 				}
 				female = male
 				boy = male
@@ -1215,7 +1233,6 @@ special_genes = {
 		}
 
 		#####################################
-		#									#
 		# 		   Right handed props	    #
 		#									#
 		#####################################
@@ -2061,6 +2078,36 @@ special_genes = {
 				index = 88
 				male = {
 					1 = isengard_spear_right_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			noldor_spear_right_hand = {
+				index = 89
+				male = {
+					1 = noldor_spear_right_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			gondor_dagger = {
+				index = 90
+				male = {
+					1 = gondor_dagger
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			harad_spear_right_hand = {
+				index = 91
+				male = {
+					1 = harad_spear_right_hand
 				}
 				female = male
 				boy = male

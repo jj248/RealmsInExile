@@ -24,6 +24,32 @@
 }
 
 beast_slayer = {
+	name = {
+		first_valid = {
+			# Triggered seeds
+			triggered_desc = { #LotR
+				trigger = {
+					scope:beast = flag:balrog
+				}
+				desc = legend_balrog_slayer_name
+			}
+			desc = legend_chronicle_beast_slayer
+		}
+	}
+	description = {
+		first_valid = {
+			# Triggered seeds
+			triggered_desc = { #LotR
+				trigger = {
+					scope:beast = flag:balrog
+				}
+				desc = legend_balrog_slayer_desc
+			}
+			desc = legend_chronicle_beast_slayer_desc
+		}
+	}
+	portrait_animation = hunting_horn
+
 	properties = {
 		beast = flag #bear, dragon, huge_beast (indetermined), ferocious_beast (lion, tiger, leopard), unicorn
 		location = province
@@ -140,9 +166,27 @@ ancestral_glory = {
 			}
 			triggered_desc = { #LotR
 				trigger = {
+					scope:ancestor = character:lineofdwalin0 # Dwalin the Wise
+				}
+				desc = legend_dwalin
+			}
+			triggered_desc = { #LotR
+				trigger = {
+					scope:ancestor = character:lineofuri0 # Uri the Scarred
+				}
+				desc = legend_uri
+			}
+			triggered_desc = { #LotR
+				trigger = {
 					scope:ancestor = character:lineofdwalin5 #Azaghâl
 				}
 				desc = legend_azaghal
+			}
+			triggered_desc = { #LotR
+				trigger = {
+					scope:ancestor = character:lineoftook6 #Old Took
+				}
+				desc = legend_gerontius
 			}
 			random_valid = {
 				desc = legend_history
@@ -252,15 +296,35 @@ ancestral_glory = {
 			}
 			triggered_desc = { #LotR
 				trigger = {
+					scope:ancestor = character:lineofdwalin0 # Dwalin the Wise
+				}
+				desc = legend_dwalin_desc
+			}
+			triggered_desc = { #LotR
+				trigger = {
+					scope:ancestor = character:lineofuri0 # Uri the Scarred
+				}
+				desc = legend_uri_desc
+			}
+			triggered_desc = { #LotR
+				trigger = {
 					scope:ancestor = character:lineofdwalin5 #Azaghâl
 				}
 				desc = legend_azaghal_desc
+			}
+			triggered_desc = { #LotR
+				trigger = {
+					scope:ancestor = character:lineoftook6 #Old Took
+				}
+				desc = legend_gerontius_desc
 			}
 			random_valid = {
 				desc = legend_chronicle_ancestral_glory_desc
 			}
 		}
 	}
+
+	portrait_animation = personality_honorable
 
 	properties = {
 		ancestor = character
@@ -333,39 +397,15 @@ inspiring_hero = { #LotR heroes of the past
 			# Seed names
 			triggered_desc = {
 				trigger = {
-					scope:ancestor = character:lineofhador7 #Turin
+					scope:ancestor_flag = flag:bahharkan
 				}
-				desc = legend_turin
+				desc = legend_bahharkan
 			}
 			triggered_desc = {
 				trigger = {
-					scope:ancestor = character:lineofelendil # Elendil the Tall
+					scope:ancestor_flag = flag:blanco
 				}
-				desc = legend_elendil
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:linefinwe4 # Fingolfin
-				}
-				desc = legend_fingolfin
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:lineofelros28 # Pharazôn
-				}
-				desc = legend_pharazon
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:lineofdurin83 # Thorin Oakeshield
-				}
-				desc = legend_thorin
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:6000008 #Helm Hammerhand
-				}
-				desc = legend_helm
+				desc = legend_blanco
 			}
 		}
 	}
@@ -374,42 +414,20 @@ inspiring_hero = { #LotR heroes of the past
 			# Seed names
 			triggered_desc = {
 				trigger = {
-					scope:ancestor = character:lineofhador7 #Turin
+					scope:ancestor_flag = flag:bahharkan
 				}
-				desc = legend_turin_desc
+				desc = legend_bahharkan_desc
 			}
 			triggered_desc = {
 				trigger = {
-					scope:ancestor = character:lineofelendil # Elendil the Tall
+					scope:ancestor_flag = flag:blanco
 				}
-				desc = legend_elendil_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:linefinwe4 # Fingolfin
-				}
-				desc = legend_fingolfin_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:lineofelros28 # Pharazôn
-				}
-				desc = legend_pharazon_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:lineofdurin83 # Thorin Oakeshield
-				}
-				desc = legend_thorin_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:ancestor = character:6000008 #Helm Hammerhand
-				}
-				desc = legend_helm_desc
+				desc = legend_blanco_desc
 			}
 		}
 	}
+
+	portrait_animation = personality_honorable
 
 	properties = {
 		ancestor = character
@@ -595,6 +613,8 @@ ancient_people = {
 		}
 	}
 
+	portrait_animation = page_flipping
+
 	properties = {
 		culture = culture
 		title = landed_title
@@ -613,24 +633,46 @@ ancient_people = {
 saintly_deed = {
 	name = {
 		first_valid = {
-			# triggered_desc = { #LotR
-			# 	trigger = {
-			# 		scope:ancestor = character:7627
-			# 	}
-			# 	desc = legend_alfred_of_wessex
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:ancestor = character:168130
-			# 	}
-			# 	desc = legend_william_gellones
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:ancestor = character:99
-			# 	}
-			# 	desc = legend_edward_the_martyr
-			# }
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = {
+						dynasty = {
+							has_variable_list = legend_mithril_finders
+							is_target_in_variable_list = {
+								name = legend_mithril_finders
+								target = prev
+							}
+						}
+					}
+					religion = religion:dwarven_religion
+				}
+				desc = legend_mithril_finder_name
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:linefinwe26 # Earendil
+					religion = religion:bellakari_religion
+				}
+				desc = legend_earendil_bellakari
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:linefinwe26 # Earendil
+				}
+				desc = legend_earendil
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineoftelchar1 # Telchar
+				}
+				desc = legend_telchar
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofnarvi # Narvi
+				}
+				desc = legend_narvi
+			}
 			triggered_desc = {
 				trigger = {
 					scope:ancestor = {
@@ -683,29 +725,57 @@ saintly_deed = {
 				}
 				desc = pilgrim_legend_name
 			}
+			triggered_desc = { #LotR
+				trigger = {
+					scope:ancestor = character:lineofdurinIII #Durin III
+				}
+				desc = legend_durinIII
+			}
 			desc = legend_saintly_deed_name
 		}
 	}
 	description = {
 		first_valid = {
-			# triggered_desc = { #LotR
-			# 	trigger = {
-			# 		scope:ancestor = character:7627
-			# 	}
-			# 	desc = legend_alfred_of_wessex_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:ancestor = character:168130
-			# 	}
-			# 	desc = legend_william_gellones_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:ancestor = character:99
-			# 	}
-			# 	desc = legend_edward_the_martyr_desc
-			# }
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = {
+						dynasty = {
+							has_variable_list = legend_mithril_finders
+							is_target_in_variable_list = {
+								name = legend_mithril_finders
+								target = prev
+							}
+						}
+					}
+					religion = religion:dwarven_religion
+				}
+				desc = legend_mithril_finder_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:linefinwe26 # Earendil
+					religion = religion:bellakari_religion
+				}
+				desc = legend_earendil_bellakari_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:linefinwe26 # Earendil
+				}
+				desc = legend_earendil_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineoftelchar1 # Telchar
+				}
+				desc = legend_telchar_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofnarvi # Narvi
+				}
+				desc = legend_narvi_desc
+			}
 			triggered_desc = {
 				trigger = {
 					scope:ancestor = {
@@ -758,9 +828,17 @@ saintly_deed = {
 				}
 				desc = pilgrim_legend_desc
 			}
+			triggered_desc = { #LotR
+				trigger = {
+					scope:ancestor = character:lineofdurinIII #Durin III
+				}
+				desc = legend_durinIII_desc
+			}
 			desc = legend_saintly_deed_desc
 		}
 	}
+
+	portrait_animation = prayer
 
 	properties = {
 		ancestor = character
@@ -770,7 +848,7 @@ saintly_deed = {
 	chapters = {
 		opening = legend_chapter_opening_saintly_life
 		motivation = legend_chapter_motivation_saintly_deed
-		famous_deed = legend_chapter_famous_deed_generic
+		famous_deed = legend_chapter_famous_deed_saintly_deed
 		extra_deed = legend_chapter_extra_deed_saintly_deed
 		conclusion = legend_chapter_conclusion_saintly_deed
 	}
@@ -784,6 +862,8 @@ holy_warrior = { # Crusader King
 		desc = legend_crusader_desc
 	}
 
+	portrait_animation = marshal
+
 	properties = {
 		ancestor = character
 		religion = religion
@@ -792,7 +872,7 @@ holy_warrior = { # Crusader King
 	chapters = {
 		opening = legend_chapter_opening_holy_warrior
 		motivation = legend_chapter_motivation_saintly_deed
-		famous_deed = legend_chapter_famous_deed_generic
+		famous_deed = legend_chapter_famous_deed_holy_warrior
 		extra_deed = legend_chapter_extra_deed_saintly_deed
 		conclusion = legend_chapter_conclusion_saintly_deed
 	}
@@ -805,6 +885,8 @@ saintly_location = { # Holy Site
 	description = {
 		desc = legend_saintly_location_desc
 	}
+
+	portrait_animation = personality_zealous
 
 	properties = {
 		location = province
@@ -829,6 +911,8 @@ saintly_building = {
 		desc = legend_saintly_building_desc
 	}
 
+	portrait_animation = personality_rational
+
 	properties = {
 		location = province
 		religion = religion
@@ -851,7 +935,9 @@ saintly_life = {
 	description = {
 		desc = legend_saintly_life_desc
 	}
-	
+
+	portrait_animation = prayer
+
 	properties = {
 		religion = religion
 	}
@@ -859,7 +945,7 @@ saintly_life = {
 	chapters = {
 		opening = legend_chapter_opening_saintly_life
 		motivation = legend_chapter_motivation_saintly_deed
-		famous_deed = legend_chapter_famous_deed_generic
+		famous_deed = legend_chapter_famous_deed_saintly_deed
 		extra_deed = legend_chapter_extra_deed_saintly_deed
 		conclusion = legend_chapter_conclusion_saintly_deed
 	}
@@ -871,14 +957,16 @@ saintly_descent = {
 			triggered_desc = {
 				trigger = {
 					scope:ancestor_flag = flag:iunast
+					scope:religion = religion:far_harad_religion
 				}
-				desc = legend_iunast_name
+				desc = legend_iunast_haradrim_name
 			}
-			triggered_desc = { #LotR
+			triggered_desc = {
 				trigger = {
-					scope:ancestor = character:lineofdurinIII #Durin III
+					scope:ancestor_flag = flag:iunast
+					scope:religion = religion:bellakari_religion
 				}
-				desc = legend_durinIII
+				desc = legend_iunast_bellakari_name
 			}
 			desc = legend_saintly_descent_name
 		}
@@ -888,18 +976,22 @@ saintly_descent = {
 			triggered_desc = {
 				trigger = {
 					scope:ancestor_flag = flag:iunast
+					scope:religion = religion:far_harad_religion
 				}
-				desc = legend_iunast_desc
+				desc = legend_iunast_haradrim_desc
 			}
-			triggered_desc = { #LotR
+			triggered_desc = {
 				trigger = {
-					scope:ancestor = character:lineofdurinIII #Durin III
+					scope:ancestor_flag = flag:iunast
+					scope:religion = religion:bellakari_religion
 				}
-				desc = legend_durinIII_desc
+				desc = legend_iunast_bellakari_desc
 			}
 			desc = legend_saintly_descent_desc
 		}
 	}
+
+	portrait_animation = prayer
 
 	properties = {
 		ancestor_flag = flag
@@ -950,6 +1042,8 @@ mythical_descent = {
 			desc = legend_mythical_descent_desc
 		}
 	}
+
+	portrait_animation = hero_flex
 
 	properties = {
 		beast = flag
@@ -1028,19 +1122,6 @@ godly_descent = {
 	}
 	description = {
 		first_valid = {
-			# triggered_desc = { #LotR
-			# 	trigger = {
-			# 		scope:god = flag:germanic_high_god_name
-			# 		scope:title = title:k_norway
-			# 	}
-			# 	desc = legend_hieros_gamos_skirnismal_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:god = flag:hinduism_high_god_name
-			# 	}
-			# 	desc = legend_descendants_of_brahman_desc
-			# }
 			triggered_desc = { #LotR
 				trigger = {
 					scope:god = flag:darkness_god_maliciam
@@ -1050,6 +1131,8 @@ godly_descent = {
 			desc = legend_godly_descent_desc
 		}
 	}
+
+	portrait_animation = personality_zealous
 
 	properties = {
 		god = flag
@@ -1072,11 +1155,12 @@ war_won_chronicle = {
 		loser = character
 	}
 
+	portrait_animation = war_over_win
+
 	chapters = {
-		opening = legend_chapter_opening_great_deed
+		opening = legend_chapter_opening_legendary_battle
 		motivation = legend_chapter_motivation_generic
 		battle = legend_chapter_battle_generic
-		famous_deed = legend_chapter_famous_deed_war_won
 		extra_deed = legend_chapter_extra_deed_generic
 		conclusion = legend_chapter_conclusion_war_won
 	}
@@ -1085,42 +1169,6 @@ war_won_chronicle = {
 new_title = {
 	name = {
 		first_valid = {
-			# triggered_desc = { #LotR
-			# 	trigger = {
-			# 		scope:title = title:e_roman_empire
-			# 	}
-			# 	desc = legend_of_rome_name
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:k_israel
-			# 	}
-			# 	desc = legend_of_israel_name
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:e_slavia
-			# 	}
-			# 	desc = legend_of_slavia_name
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:e_north_sea
-			# 	}
-			# 	desc = legend_of_n_sea_name
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:k_mann_the_isles
-			# 	}
-			# 	desc = legend_of_mann_name
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:e_mongol_empire
-			# 	}
-			# 	desc = legend_of_genghis_name
-			# }
 			triggered_desc = {
 				trigger = {
 					scope:title = title:e_khand
@@ -1144,42 +1192,6 @@ new_title = {
 	}
 	description = {
 		first_valid = {
-			# triggered_desc = { #LotR
-			# 	trigger = {
-			# 		scope:title = title:e_roman_empire
-			# 	}
-			# 	desc = legend_of_rome_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:k_israel
-			# 	}
-			# 	desc = legend_of_israel_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:e_slavia
-			# 	}
-			# 	desc = legend_of_slavia_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:e_north_sea
-			# 	}
-			# 	desc = legend_of_n_sea_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:k_mann_the_isles
-			# 	}
-			# 	desc = legend_of_mann_desc
-			# }
-			# triggered_desc = {
-			# 	trigger = {
-			# 		scope:title = title:e_mongol_empire
-			# 	}
-			# 	desc = legend_of_genghis_desc
-			# }
 			triggered_desc = {
 				trigger = {
 					scope:title = title:e_khand
@@ -1201,6 +1213,9 @@ new_title = {
 			desc = new_title_desc
 		}
 	}
+
+	portrait_animation = throne_room_writer
+
 	properties = {
 		title = landed_title
 		founder = character
@@ -1220,6 +1235,46 @@ great_deed_dynasty = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
+					scope:founder = {
+						has_character_flag = reached_numenor_flag
+						culture = {
+							OR = {
+								has_cultural_pillar = language_westron
+							}
+						}
+					}
+				}
+				desc = reached_westernesse_legend
+			}
+			triggered_desc = {
+				trigger = {
+					scope:founder = {
+						has_character_flag = reached_numenor_flag
+						culture = {
+							OR = {
+								has_cultural_pillar = language_adunaic
+							}
+						}
+					}
+				}
+				desc = reached_anadune_legend
+			}
+			triggered_desc = {
+				trigger = {
+					scope:founder = {
+						has_character_flag = reached_numenor_flag
+					}
+				}
+				desc = reached_numenor_legend
+			}
+			triggered_desc = {
+				trigger = {
+					scope:founder = { has_character_flag = climbed_meneltarma_flag }
+				}
+				desc = climbed_meneltarma_legend
+			}
+			triggered_desc = {
+				trigger = {
 					scope:founder = { has_character_flag = con_blood_leg }
 				}
 				desc = consecrated_blood_legend
@@ -1237,6 +1292,18 @@ great_deed_dynasty = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
+					scope:founder = { has_character_flag = reached_numenor_flag }
+				}
+				desc = reached_numenor_legend_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:founder = { has_character_flag = climbed_meneltarma_flag }
+				}
+				desc = climbed_meneltarma_legend_desc
+			}
+			triggered_desc = {
+				trigger = {
 					scope:founder = { has_character_flag = con_blood_leg }
 				}
 				desc = consecrated_blood_legend_desc
@@ -1250,6 +1317,9 @@ great_deed_dynasty = {
 			desc = legend_chronicle_great_deed_dynasty_desc
 		}
 	}
+
+	portrait_animation = chess_cocky
+
 	properties = {
 		founder = character
 		dynasty = dynasty
@@ -1270,6 +1340,8 @@ great_deed_region = {
 		founder = character
 		legend_region = geographical_region
 	}
+	
+	portrait_animation = personality_honorable
 
 	chapters = {
 		opening = legend_chapter_opening_great_deed
@@ -1285,6 +1357,8 @@ great_deed_title = {
 		founder = character
 		title = landed_title
 	}
+
+	portrait_animation = throne_room_writer
 
 	chapters = {
 		opening = legend_chapter_opening_great_deed
@@ -1302,6 +1376,8 @@ great_deed_faith = {
 		old_faith = faith
 		new_faith = faith
 	}
+	
+	portrait_animation = personality_zealous
 
 	chapters = {
 		opening = legend_chapter_opening_great_deed
@@ -1313,6 +1389,9 @@ great_deed_faith = {
 }
 
 valiant_defense = {
+
+	portrait_animation = personality_bold
+	
 	properties = {
 		attacker = character
 		defender = character
@@ -1329,6 +1408,8 @@ valiant_defense = {
 
 raised_by_animals = {
 
+	portrait_animation = personality_irrational
+
 	properties = {
 		beast = flag
 	}
@@ -1336,7 +1417,7 @@ raised_by_animals = {
 	chapters = {
 		opening = legend_chronicle_opening_raised_by_animals
 		motivation = legend_chapter_motivation_raised_by_animals
-		famous_deed = legend_chapter_famous_deed_generic
+		famous_deed = legend_chapter_famous_deed_raised_by_animals
 		extra_deed = legend_chapter_extra_deed_generic
 		conclusion = legend_chapter_conclusion_raised_by_animals
 	}
@@ -1377,6 +1458,8 @@ sacred_birth = {
 			desc = legend_sacred_birth_desc
 		}
 	}
+	
+	portrait_animation = prayer
 
 	properties = {
 		reason = flag
@@ -1403,6 +1486,8 @@ divine_intervention = {
 		}
 	}
 
+	portrait_animation = personality_zealous
+
 	properties = {
 		god = flag
 	}
@@ -1427,6 +1512,8 @@ fought_devil = {
 			desc = legend_fought_devil_desc
 		}
 	}
+
+	portrait_animation = celebrate_sword
 
 	properties = {
 		faith = faith
@@ -1453,6 +1540,8 @@ exotic_backstory = {
 		}
 	}
 
+	portrait_animation = happy_teacher
+
 	properties = {
 		location = flag
 	}
@@ -1472,6 +1561,8 @@ tournament_won = {
 		location = province
 	}
 
+	portrait_animation = wrestling_victory
+
 	chapters = {
 		opening = legend_chapter_opening_great_deed
 		motivation = legend_chapter_motivation_generic
@@ -1487,6 +1578,8 @@ accolade_chronicle = {
 		first_accolade = accolade
 		first_accolade_knight = character
 	}
+	
+	portrait_animation = sword_coup_degrace
 
 	chapters = {
 		opening = legend_chapter_opening_great_deed
@@ -1512,6 +1605,12 @@ priesthood_restoration = {
 			# 	}
 			# 	desc = zoroast_priesthood_name
 			# }
+			triggered_desc = {
+				trigger = {
+					scope:faith = faith:faith_balrog_cult
+				}
+				desc = legend_balrog_warlord_name
+			}
 			desc = priesthood_restoration_name
 		}
 	}
@@ -1529,6 +1628,12 @@ priesthood_restoration = {
 			# 	}
 			# 	desc = zoroast_priesthood_desc
 			# }
+			triggered_desc = {
+				trigger = {
+					scope:faith = faith:faith_balrog_cult
+				}
+				desc = legend_balrog_warlord_desc
+			}
 			desc = priesthood_restoration_desc
 		}
 	}
@@ -1537,6 +1642,8 @@ priesthood_restoration = {
 		faith = faith
 		religion = religion
 	}
+	
+	portrait_animation = prayer
 
 	chapters = {
 		opening = legend_chapter_opening_priesthood_restoration
@@ -1576,6 +1683,9 @@ struggle_conclusion = {
 			desc = struggle_conclusion_desc
 		}
 	}
+	
+	portrait_animation = war_over_win
+	
 	properties = {
 		struggle_ender = character
 		struggle = flag
@@ -1613,6 +1723,9 @@ legendary_battle = {
 			desc = legendary_battle_desc
 		}
 	}
+	
+	portrait_animation = hero_flex
+	
 	properties = {
 		winner = character
 		loser = character
@@ -1620,10 +1733,9 @@ legendary_battle = {
 	}
 
 	chapters = {
-		opening = legend_chapter_opening_great_deed
+		opening = legend_chapter_opening_legendary_battle
 		motivation = legend_chapter_motivation_generic
 		battle = legend_chapter_battle_legendary_battle
-		famous_deed = legend_chapter_famous_deed_generic
 		extra_deed = legend_chapter_extra_deed_generic
 		conclusion = legend_chapter_conclusion_great_deed
 	}
@@ -1652,6 +1764,8 @@ new_faith_legend = {
 			desc = new_faith_legend_desc
 		}
 	}
+	
+	portrait_animation = personality_zealous
 
 	properties = {
 		reformer = character
@@ -1666,5 +1780,241 @@ new_faith_legend = {
 		famous_deed = legend_chapter_famous_deed_new_faith
 		extra_deed = legend_chapter_extra_deed_new_faith
 		conclusion = legend_chapter_conclusion_new_faith
+	}
+}
+
+### LotR - Chronicles
+
+inspiring_hero = { #LotR heroes of the past
+	
+	name = {
+		first_valid = {
+			# Seed names
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofhador7 #Turin
+				}
+				desc = legend_turin
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofhador10 # Tuor
+				}
+				desc = legend_tuor
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofbeor32 # Beren Erchamion
+				}
+				desc = legend_beren
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofelendil # Elendil the Tall
+				}
+				desc = legend_elendil
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:linefinwe4 # Fingolfin
+				}
+				desc = legend_fingolfin
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofelros28 # Pharazôn
+				}
+				desc = legend_pharazon
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofdurin83 # Thorin Oakeshield
+				}
+				desc = legend_thorin
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:6000008 #Helm Hammerhand
+				}
+				desc = legend_helm
+			}
+		}
+	}
+	description = {
+		first_valid = {
+			# Seed names
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofhador7 #Turin
+				}
+				desc = legend_turin_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofhador10 # Tuor
+				}
+				desc = legend_tuor_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofbeor32 # Beren Erchamion
+				}
+				desc = legend_beren_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofelendil # Elendil the Tall
+				}
+				desc = legend_elendil_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:linefinwe4 # Fingolfin
+				}
+				desc = legend_fingolfin_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofelros28 # Pharazôn
+				}
+				desc = legend_pharazon_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:lineofdurin83 # Thorin Oakeshield
+				}
+				desc = legend_thorin_desc
+			}
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:6000008 #Helm Hammerhand
+				}
+				desc = legend_helm_desc
+			}
+		}
+	}
+	
+	portrait_animation = personality_honorable
+
+	properties = {
+		ancestor = character
+		antagonist = flag
+	}
+
+	chapters = {
+		opening = legend_chapter_opening_inspiring_hero
+		motivation = legend_chapter_motivation_inspiring_hero
+		famous_deed = legend_chapter_famous_deed_ancestral_glory
+		extra_deed = legend_chapter_extra_deed_inspiring_hero
+		conclusion = legend_chapter_conclusion_inspiring_hero
+	}
+}
+
+elven_descent = { # Claim descent from x historical elf
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:dolamroth0 #Mithrellas
+				}
+				desc = legend_mithrellas
+			}
+			desc = legend_elven_descent_name
+		}
+	}
+	description = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:ancestor = character:dolamroth0 #Mithrellas
+				}
+				desc = legend_mithrellas_desc
+			}
+			desc = legend_elven_descent_desc
+		}
+	}
+	
+	portrait_animation = hero_flex
+
+	properties = {
+		ancestor = character
+	}
+
+	chapters = {
+		opening = legend_chapter_opening_elven_descent
+		motivation = legend_chapter_motivation_generic
+		famous_deed = legend_chapter_famous_deed_elven_descent
+		extra_deed = legend_chapter_extra_deed_elven_descent
+		conclusion = legend_chapter_conclusion_generic
+	}
+}
+
+sailed_to_numenor = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:founder = {
+						culture = {
+							OR = {
+								has_cultural_pillar = language_westron
+							}
+						}
+					}
+				}
+				desc = reached_westernesse_legend
+			}
+			triggered_desc = {
+				trigger = {
+					scope:founder = {
+						culture = {
+							OR = {
+								has_cultural_pillar = language_adunaic
+							}
+						}
+					}
+				}
+				desc = reached_anadune_legend
+			}
+			desc = reached_numenor_legend
+		}
+	}
+	description = reached_numenor_legend_desc
+
+	portrait_animation = personality_rational
+
+	properties = {
+		founder = character
+		dynasty = dynasty
+		title = landed_title
+	}
+
+	chapters = {
+		opening = legend_chapter_opening_sailed_to_numenor
+		motivation = legend_chapter_motivation_sailed_to_numenor
+		lotr_adventure = legend_chapter_famous_deed_sailed_to_numenor
+		extra_deed = legend_chapter_extra_deed_sailed_to_numenor
+		conclusion = legend_chapter_conclusion_sailed_to_numenor
+	}
+}
+
+climbed_the_meneltarma = {
+	name = climbed_meneltarma_legend
+	description = climbed_meneltarma_legend_desc
+
+	portrait_animation = personality_rational
+
+	properties = {
+		founder = character
+		dynasty = dynasty
+		title = landed_title
+	}
+
+	chapters = {
+		opening = legend_chapter_opening_sailed_to_numenor
+		motivation = legend_chapter_motivation_sailed_to_numenor
+		lotr_adventure = legend_chapter_famous_deed_climbed_the_meneltarma
+		extra_deed = legend_chapter_extra_deed_sailed_to_numenor
+		conclusion = legend_chapter_conclusion_sailed_to_numenor
 	}
 }

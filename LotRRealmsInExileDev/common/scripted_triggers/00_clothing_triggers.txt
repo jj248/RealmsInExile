@@ -524,22 +524,22 @@ portrait_fp3_turkic_clothing_contents_trigger = {
 portrait_afr_berber_clothing_trigger = {
 	has_afr_dlc_trigger = yes
 	scope:culture = { portrait_afr_berber_clothing_contents_trigger = yes }
-	trigger_if = {
-		limit = { exists = this	}
-		NAND = {
-			is_landed = yes
-			# capital_province = { geographical_region = world_europe_west_iberia	}
-		}
-	}
+	# trigger_if = {
+	# 	limit = { exists = this	}
+	# 	NAND = {
+	# 		is_landed = yes
+	# 		# capital_province = { geographical_region = world_europe_west_iberia	}
+	# 	}
+	# }
 }
 
 portrait_afr_berber_clothing_spouse_trigger = {
 	has_afr_dlc_trigger = yes
 	culture = {	portrait_afr_berber_clothing_contents_trigger = yes }
-	NAND = {
-		is_landed = yes
-		# capital_province = { geographical_region = world_europe_west_iberia }
-	}
+	# NAND = {
+	# 	is_landed = yes
+	# 	# capital_province = { geographical_region = world_europe_west_iberia }
+	# }
 }
 
 portrait_afr_berber_clothing_contents_trigger = {
@@ -1607,6 +1607,7 @@ portrait_sickness_trigger = {
 		has_short_disease_trigger = yes #affliction that would plausibly leave them bedridden for treatment
 		has_character_flag = use_sickness_clothes
 	}
+	NOT = { has_dead_character_flag = ignore_sickness_clothes }
 	portrait_ep2_wedding_clothes_trigger = no
 }
 
@@ -2569,6 +2570,22 @@ portrait_rayan_clothing_spouse_trigger = {
 
 portrait_rayan_clothing_contents_trigger = {
 	has_clothing_gfx = rayan_clothing_gfx
+}
+
+## Thani-Hazad ##
+
+portrait_thani_hazad_clothing_trigger = {
+	scope:culture = { portrait_thani_hazad_clothing_contents_trigger = yes }
+}
+
+portrait_thani_hazad_clothing_spouse_trigger = {
+	culture = {
+		portrait_thani_hazad_clothing_contents_trigger = yes
+	}
+}
+
+portrait_thani_hazad_clothing_contents_trigger = {
+	has_clothing_gfx = thani_hazad_clothing_gfx
 }
 
 ## Variag ##

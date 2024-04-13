@@ -124,6 +124,9 @@ e_gondor_steward = {
 	color = { 245 245 247 }
 	cultural_names = {
 		name_list_druedain = cn_gondor_druedain
+		name_list_rohirrim = cn_gondor_rohirrim
+		name_list_quenya = cn_gondor_quenya
+		name_list_adunaic = cn_gondor_adunaic
 	}
 
 	capital = c_minas_tirith
@@ -148,7 +151,10 @@ e_reunitedkingdom = {
 # The Kingdom of Arnor
 e_arnor = {
 	color = { 0 40 90 }
-	
+	cultural_names = {
+		name_list_quenya = cn_arnor_quenya
+		name_list_adunaic = cn_arnor_adunaic
+	}
 	capital = c_annuminas
 	
 	k_arthedain = {
@@ -531,17 +537,47 @@ e_arnor = {
 				#color = { 20 96 151 }
 				color= { 168 96 96 }
 				
+				cultural_names = {
+				name_list_dunedain = cn_bree_dunedain
+				name_list_ranger = cn_bree_dunedain
+				name_list_quenya = cn_bree_dunedain
+				name_list_sindarin = cn_bree_dunedain
+				name_list_nandorin = cn_bree_dunedain
+				name_list_elven = cn_bree_dunedain
+				
+				name_list_wastelands = cn_bree_wastelands
+			    }
+			
 				b_bree = {
 					province = 4749
 					
 					color = { 129 107 122 }
-					
+				cultural_names = {
+				name_list_dunedain = cn_b_bree_dunedain
+				name_list_ranger = cn_b_bree_dunedain
+				name_list_quenya = cn_b_bree_dunedain
+				name_list_sindarin = cn_b_bree_dunedain
+				name_list_nandorin = cn_b_bree_dunedain
+				name_list_elven = cn_b_bree_dunedain
+				
+				name_list_wastelands = cn_b_bree_wastelands
+			    }	
 				}
 				
 				b_staddle = {
 					province = 4750
 					
 					color = { 34 105 33 }
+				cultural_names = {
+				name_list_dunedain = cn_b_staddle_dunedain
+				name_list_ranger = cn_b_staddle_dunedain
+				name_list_quenya = cn_b_staddle_dunedain
+				name_list_sindarin = cn_b_staddle_dunedain
+				name_list_nandorin = cn_b_staddle_dunedain
+				name_list_elven = cn_b_staddle_dunedain
+				
+				name_list_wastelands = cn_b_staddle_wastelands
+			    }	
 					
 				}
 				
@@ -549,7 +585,16 @@ e_arnor = {
 					province = 4751
 					
 					color = { 249 246 91 }
-					
+				cultural_names = {
+				name_list_dunedain = cn_b_chetwood_dunedain
+				name_list_ranger = cn_b_chetwood_dunedain
+				name_list_quenya = cn_b_chetwood_dunedain
+				name_list_sindarin = cn_b_chetwood_dunedain
+				name_list_nandorin = cn_b_chetwood_dunedain
+				name_list_elven = cn_b_chetwood_dunedain
+				
+				name_list_wastelands = cn_b_chetwood_wastelands
+			    }	
 				}
 				
 			}
@@ -1227,6 +1272,10 @@ e_arnor = {
 				b_lelmoth = {
 					province = 4818
 					
+					cultural_names = {
+						name_list_hobbit = cn_lelmoth_hobbit #Undertowers
+					}
+					
 					color = { 48 205 154 }
 					
 				}
@@ -1417,6 +1466,11 @@ e_arnor = {
 
 			cultural_names = {
 				name_list_dunedain = cn_shire_dunedain
+				name_list_ranger = cn_shire_dunedain
+				name_list_quenya = cn_shire_dunedain
+				name_list_sindarin = cn_shire_dunedain
+				name_list_nandorin = cn_shire_dunedain
+				name_list_elven = cn_shire_dunedain
 			}
 			
 			c_westfarthing = {
@@ -1424,19 +1478,43 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_westfarthing_dunedain
+					name_list_ranger = cn_westfarthing_dunedain
+					name_list_quenya = cn_westfarthing_dunedain
+				    name_list_sindarin = cn_westfarthing_dunedain
+				    name_list_nandorin = cn_westfarthing_dunedain
+				    name_list_elven = cn_westfarthing_dunedain
 				}
 				
 				b_michel_delving = {
 					province = 4681
 					
 					color = { 40 34 158 }
-					
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_michel_delving_dunedain
+					name_list_ranger = cn_b_michel_delving_dunedain
+					name_list_quenya = cn_b_michel_delving_dunedain
+				    name_list_sindarin = cn_b_michel_delving_dunedain
+				    name_list_nandorin = cn_b_michel_delving_dunedain
+				    name_list_elven = cn_b_michel_delving_dunedain
+				}
 				}
 				
-				b_white_downs = {
+				b_white_downs = {                #Tighfield
 					province = 4682
 					
 					color = { 255 198 253 }
+					
+				cultural_names = {
+					name_list_dunedain = cn_white_downs
+					name_list_ranger = cn_white_downs
+					name_list_quenya = cn_white_downs
+				    name_list_sindarin = cn_white_downs
+				    name_list_nandorin = cn_white_downs
+				    name_list_elven = cn_white_downs
+					
+					name_list_wastelands = cn_b_white_downs_wastelands
+				}
 					
 				}
 				
@@ -1444,21 +1522,49 @@ e_arnor = {
 					province = 4683
 					
 					color = { 232 171 12 }
-					
+				
+                cultural_names = {
+					name_list_dunedain = cn_b_greenholm_dunedain
+					name_list_ranger = cn_b_greenholm_dunedain
+					name_list_quenya = cn_b_greenholm_dunedain
+				    name_list_sindarin = cn_b_greenholm_dunedain
+				    name_list_nandorin = cn_b_greenholm_dunedain
+				    name_list_elven = cn_b_greenholm_dunedain
 				}
 				
-				b_little_delving = {
+				}
+				
+				b_little_delving = { 
 					province = 4684
 					
 					color = { 109 56 90 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_little_delving_dunedain
+					name_list_ranger = cn_b_little_delving_dunedain
+					name_list_quenya = cn_b_little_delving_dunedain
+				    name_list_sindarin = cn_b_little_delving_dunedain
+				    name_list_nandorin = cn_b_little_delving_dunedain
+				    name_list_elven = cn_b_little_delving_dunedain
 					
+					name_list_wastelands = cn_b_little_delving_wastelands
+				}
 				}
 				
 				b_nobottle = {
 					province = 4685
 					
 					color = { 95 166 106 }
-					
+				
+                cultural_names = {
+					name_list_dunedain = cn_b_nobottle_dunedain
+					name_list_ranger = cn_b_nobottle_dunedain
+					name_list_quenya = cn_b_nobottle_dunedain
+				    name_list_sindarin = cn_b_nobottle_dunedain
+				    name_list_nandorin = cn_b_nobottle_dunedain
+				    name_list_elven = cn_b_nobottle_dunedain
+				}
+				
 				}
 				
 			}
@@ -1468,26 +1574,62 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_hobbiton_dunedain
+					name_list_ranger = cn_hobbiton_dunedain
+					name_list_quenya = cn_hobbiton_dunedain
+				    name_list_sindarin = cn_hobbiton_dunedain
+				    name_list_nandorin = cn_hobbiton_dunedain
+				    name_list_elven = cn_hobbiton_dunedain
+					
+					name_list_wastelands = cn_hobbiton_wastelands
 				}
 				
 				b_hobbiton = {
 					province = 4686
 					
 					color = { 238 171 120 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_hobbiton_dunedain
+					name_list_ranger = cn_b_hobbiton_dunedain
+					name_list_quenya = cn_b_hobbiton_dunedain
+				    name_list_sindarin = cn_b_hobbiton_dunedain
+				    name_list_nandorin = cn_b_hobbiton_dunedain
+				    name_list_elven = cn_b_hobbiton_dunedain
 					
+					name_list_wastelands = cn_hobbiton_wastelands
+				}	
 				}
 				
 				b_bywater = {
 					province = 4687
 					
 					color = { 111 172 156 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_bywater_dunedain
+					name_list_ranger = cn_b_bywater_dunedain
+					name_list_quenya = cn_b_bywater_dunedain
+				    name_list_sindarin = cn_b_bywater_dunedain
+				    name_list_nandorin = cn_b_bywater_dunedain
+				    name_list_elven = cn_b_bywater_dunedain
 					
+					name_list_wastelands = cn_b_bywater_wasteland
+				}	
 				}
 				
 				b_waymeet = {
 					province = 4688
 					
 					color = { 152 90 69 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_waymeet_dunedain
+					name_list_ranger = cn_b_waymeet_dunedain
+					name_list_quenya = cn_b_waymeet_dunedain
+				    name_list_sindarin = cn_b_waymeet_dunedain
+				    name_list_nandorin = cn_b_waymeet_dunedain
+				    name_list_elven = cn_b_waymeet_dunedain
+				}
 					
 				}
 				
@@ -1495,6 +1637,15 @@ e_arnor = {
 					province = 4689
 					
 					color = { 72 198 192 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_needlehole_dunedain
+					name_list_ranger = cn_b_needlehole_dunedain
+					name_list_quenya = cn_b_needlehole_dunedain
+				    name_list_sindarin = cn_b_needlehole_dunedain
+				    name_list_nandorin = cn_b_needlehole_dunedain
+				    name_list_elven = cn_b_needlehole_dunedain
+				}
 					
 				}
 				
@@ -1505,33 +1656,74 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_tookland_dunedain
+					name_list_ranger = cn_tookland_dunedain
+					name_list_quenya = cn_tookland_dunedain
+				    name_list_sindarin = cn_tookland_dunedain
+				    name_list_nandorin = cn_tookland_dunedain
+				    name_list_elven = cn_tookland_dunedain
 				}
 				
-				b_tookborough = {
+				b_tookborough = {            #Tuckborough
 					province = 4690
 					
 					color = { 84 254 39 }
-					
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_tookborough_dunedain
+					name_list_ranger = cn_b_tookborough_dunedain
+					name_list_quenya = cn_b_tookborough_dunedain
+				    name_list_sindarin = cn_b_tookborough_dunedain
+				    name_list_nandorin = cn_b_tookborough_dunedain
+				    name_list_elven = cn_b_tookborough_dunedain
+				}	
 				}
 				
 				b_tookbank = {
 					province = 4691
 					
 					color = { 222 180 206 }
-					
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_tookbank_dunedain
+					name_list_ranger = cn_b_tookbank_dunedain
+					name_list_quenya = cn_b_tookbank_dunedain
+				    name_list_sindarin = cn_b_tookbank_dunedain
+				    name_list_nandorin = cn_b_tookbank_dunedain
+				    name_list_elven = cn_b_tookbank_dunedain
+				}	
 				}
 				
 				b_pincup = {
 					province = 4692
 					
 					color = { 142 43 32 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_pincup_dunedain
+					name_list_ranger = cn_b_pincup_dunedain
+					name_list_quenya = cn_b_pincup_dunedain
+				    name_list_sindarin = cn_b_pincup_dunedain
+				    name_list_nandorin = cn_b_pincup_dunedain
+				    name_list_elven = cn_b_pincup_dunedain
+				}
 					
 				}
 				
-				b_greenhills = {
+				b_greenhills = {            #Narrowcleeve
 					province = 4693
 					
 					color = { 63 31 158 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_greenhills_dunedain
+					name_list_ranger = cn_b_greenhills_dunedain
+					name_list_quenya = cn_b_greenhills_dunedain
+				    name_list_sindarin = cn_b_greenhills_dunedain
+				    name_list_nandorin = cn_b_greenhills_dunedain
+				    name_list_elven = cn_b_greenhills_dunedain
+					
+					name_list_wastelands = cn_b_greenhills_wastelands
+				}
 					
 				}
 				
@@ -1542,19 +1734,43 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_eastfarthing_dunedain
+					name_list_ranger = cn_eastfarthing_dunedain
+					name_list_quenya = cn_eastfarthing_dunedain
+				    name_list_sindarin = cn_eastfarthing_dunedain
+				    name_list_nandorin = cn_eastfarthing_dunedain
+				    name_list_elven = cn_eastfarthing_dunedain
 				}
 								
 				b_budgeford = {
 					province = 4695
 					
 					color = { 147 26 48 }
-					
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_budgeford_dunedain
+					name_list_ranger = cn_b_budgeford_dunedain
+					name_list_quenya = cn_b_budgeford_dunedain
+				    name_list_sindarin = cn_b_budgeford_dunedain
+				    name_list_nandorin = cn_b_budgeford_dunedain
+				    name_list_elven = cn_b_budgeford_dunedain
+				}	
 				}
 
-				b_the_marish = {
+				b_the_marish = {               #Stock
 					province = 4694
 					
 					color = { 209 40 100 }
+				
+				    cultural_names = {
+					name_list_dunedain = cn_b_the_marish_dunedain
+					name_list_ranger = cn_b_the_marish_dunedain
+					name_list_quenya = cn_b_the_marish_dunedain
+				    name_list_sindarin = cn_b_the_marish_dunedain
+				    name_list_nandorin = cn_b_the_marish_dunedain
+				    name_list_elven = cn_b_the_marish_dunedain
+					
+					name_list_wastelands = cn_b_the_marish_wastelands
+				}
 					
 				}
 				
@@ -1562,14 +1778,34 @@ e_arnor = {
 					province = 4696
 					
 					color = { 244 149 174 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_brockenborings_dunedain
+					name_list_ranger = cn_b_brockenborings_dunedain
+					name_list_quenya = cn_b_brockenborings_dunedain
+				    name_list_sindarin = cn_b_brockenborings_dunedain
+				    name_list_nandorin = cn_b_brockenborings_dunedain
+				    name_list_elven = cn_b_brockenborings_dunedain
+
+				}
 					
 				}
 				
-				b_woody_end = {
+				b_woody_end = {                 #Woodhall
 					province = 4697
 					
 					color = { 179 220 104 }
+				
+                cultural_names = {
+					name_list_dunedain = cn_b_woody_end_dunedain
+					name_list_ranger = cn_b_woody_end_dunedain
+					name_list_quenya = cn_b_woody_end_dunedain
+				    name_list_sindarin = cn_b_woody_end_dunedain
+				    name_list_nandorin = cn_b_woody_end_dunedain
+				    name_list_elven = cn_b_woody_end_dunedain
 					
+					name_list_wastelands = cn_b_woody_end_wastelands
+				}				
 				}
 				
 			}
@@ -1579,19 +1815,41 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_southfarthing_dunedain
+					name_list_ranger = cn_southfarthing_dunedain
+					name_list_quenya = cn_southfarthing_dunedain
+				    name_list_sindarin = cn_southfarthing_dunedain
+				    name_list_nandorin = cn_southfarthing_dunedain
+				    name_list_elven = cn_southfarthing_dunedain
 				}
 				
 				b_longbottom = {
 					province = 4698
 					
 					color = { 104 119 233 }
-					
+				
+                 cultural_names = {
+					name_list_dunedain = cn_b_longbottom_dunedain
+					name_list_ranger = cn_b_longbottom_dunedain
+					name_list_quenya = cn_b_longbottom_dunedain
+				    name_list_sindarin = cn_b_longbottom_dunedain
+				    name_list_nandorin = cn_b_longbottom_dunedain
+				    name_list_elven = cn_b_longbottom_dunedain
+				}				
 				}
 				
 				b_sackville = {
 					province = 4699
 					
 					color = { 172 251 95 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_sackville
+					name_list_ranger = cn_sackville
+					name_list_quenya = cn_sackville
+				    name_list_sindarin = cn_sackville
+				    name_list_nandorin = cn_sackville
+				    name_list_elven = cn_sackville
+				}
 					
 				}
 				
@@ -1599,21 +1857,44 @@ e_arnor = {
 					province = 4700
 					
 					color = { 51 15 77 }
-					
+				
+                cultural_names = {
+					name_list_dunedain = cn_b_whitwell_dunedain
+					name_list_ranger = cn_b_whitwell_dunedain
+					name_list_quenya = cn_b_whitwell_dunedain
+				    name_list_sindarin = cn_b_whitwell_dunedain
+				    name_list_nandorin = cn_b_whitwell_dunedain
+				    name_list_elven = cn_b_whitwell_dunedain
+				}				
 				}
 				
 				b_whibbleham = {
 					province = 4701
 					
 					color = { 25 91 64 }
-					
+				cultural_names = {
+					name_list_dunedain = cn_b_whibbleham_dunedain
+					name_list_ranger = cn_b_whibbleham_dunedain
+					name_list_quenya = cn_b_whibbleham_dunedain
+				    name_list_sindarin = cn_b_whibbleham_dunedain
+				    name_list_nandorin = cn_b_whibbleham_dunedain
+				    name_list_elven = cn_b_whibbleham_dunedain
+				}	
 				}
 				
 				b_overbourn_marshes = {
 					province = 4702
 					
 					color = { 72 249 35 }
-					
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_overbourn_marshes_dunedain
+					name_list_ranger = cn_b_overbourn_marshes_dunedain
+					name_list_quenya = cn_b_overbourn_marshes_dunedain
+				    name_list_sindarin = cn_b_overbourn_marshes_dunedain
+				    name_list_nandorin = cn_b_overbourn_marshes_dunedain
+				    name_list_elven = cn_b_overbourn_marshes_dunedain
+				}	
 				}
 				
 			}
@@ -1623,6 +1904,11 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_northfarthing_dunedain
+					name_list_ranger = cn_northfarthing_dunedain
+					name_list_quenya = cn_northfarthing_dunedain
+				    name_list_sindarin = cn_northfarthing_dunedain
+				    name_list_nandorin = cn_northfarthing_dunedain
+				    name_list_elven = cn_northfarthing_dunedain
 				}
 
 				b_longcleeve = {
@@ -1630,12 +1916,30 @@ e_arnor = {
 					
 					color = { 44 173 198 }
 					
+				cultural_names = {
+					name_list_dunedain = cn_longcleeve
+					name_list_ranger = cn_longcleeve
+					name_list_quenya = cn_longcleeve
+				    name_list_sindarin = cn_longcleeve
+				    name_list_nandorin = cn_longcleeve
+				    name_list_elven = cn_longcleeve
+				}
+					
 				}
 				
 				b_greenfields = {
 					province = 4703
 					
 					color = { 63 156 185 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_greenfields
+					name_list_ranger = cn_greenfields
+					name_list_quenya = cn_greenfields
+				    name_list_sindarin = cn_greenfields
+				    name_list_nandorin = cn_greenfields
+				    name_list_elven = cn_greenfields
+				}
 					
 				}
 				
@@ -1643,6 +1947,15 @@ e_arnor = {
 					province = 4704
 					
 					color = { 7 102 23 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_oatbarton_dunedain
+					name_list_ranger = cn_b_oatbarton_dunedain
+					name_list_quenya = cn_b_oatbarton_dunedain
+				    name_list_sindarin = cn_b_oatbarton_dunedain
+				    name_list_nandorin = cn_b_oatbarton_dunedain
+				    name_list_elven = cn_b_oatbarton_dunedain
+				}
 					
 				}
 				
@@ -1650,6 +1963,16 @@ e_arnor = {
 					province = 4705
 					
 					color = { 183 150 116 }
+					cultural_names = {
+					name_list_dunedain = cn_b_bindbole_dunedain
+					name_list_ranger = cn_b_bindbole_dunedain
+					name_list_quenya = cn_b_bindbole_dunedain
+				    name_list_sindarin = cn_b_bindbole_dunedain
+				    name_list_nandorin = cn_b_bindbole_dunedain
+				    name_list_elven = cn_b_bindbole_dunedain
+					
+					name_list_wastelands = cn_b_bindbole_wastelands
+				}
 					
 				}
 				
@@ -1657,6 +1980,15 @@ e_arnor = {
 					province = 4707
 					
 					color = { 219 137 215 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_b_hardbottle_dunedain
+					name_list_ranger = cn_b_hardbottle_dunedain
+					name_list_quenya = cn_b_hardbottle_dunedain
+				    name_list_sindarin = cn_b_hardbottle_dunedain
+				    name_list_nandorin = cn_b_hardbottle_dunedain
+				    name_list_elven = cn_b_hardbottle_dunedain
+				}
 					
 				}
 				
@@ -2749,12 +3081,12 @@ e_arnor = {
 					color = { 95 112 54 }
 				
 					cultural_names = {
-						name_list_hobbit		= cn_old_forest
-						name_list_breemen		= cn_old_forest
-						name_list_wastelands	= cn_old_forest
-						name_list_orc			= cn_old_forest
-						name_list_mountain_orc	= cn_old_forest
-						name_list_goblin		= cn_old_forest
+						name_list_hobbit		= cn_b_lavanbad_hobbit
+						name_list_breemen		= cn_b_lavanbad_hobbit
+						name_list_wastelands	= cn_b_lavanbad
+						name_list_orc			= cn_b_lavanbad
+						name_list_mountain_orc	= cn_b_lavanbad
+						name_list_goblin		= cn_b_lavanbad
 					}
 					
 				}
@@ -2762,8 +3094,15 @@ e_arnor = {
 				b_arafrad = {
 					province = 4643
 					
-					color = { 149 21 54 }
-					
+				color = { 149 21 54 }
+				cultural_names = {
+						name_list_hobbit		= cn_b_arafrad
+						name_list_breemen		= cn_b_arafrad
+						name_list_wastelands	= cn_b_arafrad
+						name_list_orc			= cn_b_arafrad
+						name_list_mountain_orc	= cn_b_arafrad
+						name_list_goblin		= cn_b_arafrad
+					}
 				}
 				
 			}
@@ -2773,13 +3112,33 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_buckland_dunedain
+					name_list_ranger = cn_buckland_dunedain
+					name_list_quenya = cn_buckland_dunedain
+				    name_list_sindarin = cn_buckland_dunedain
+				    name_list_nandorin = cn_buckland_dunedain
+				    name_list_elven = cn_buckland_dunedain
+					
+					name_list_orc = cn_buckland_blackspeech
+			        name_list_mountain_orc = cn_buckland_blackspeech
+			        name_list_goblin = cn_buckland_blackspeech
+					name_list_wastelands = cn_buckland_wastelands
 				}
 
 				b_bucklebury = {
 					province = 4644
 
 					cultural_names = {
-						name_list_dunedain = cn_buckland_dunedain
+						name_list_dunedain = cn_b_bucklebury_dunedain
+						name_list_ranger = cn_b_bucklebury_dunedain
+						name_list_quenya = cn_b_bucklebury_dunedain
+				        name_list_sindarin = cn_b_bucklebury_dunedain
+				        name_list_nandorin = cn_b_bucklebury_dunedain
+				        name_list_elven = cn_b_bucklebury_dunedain
+						
+						name_list_orc = cn_b_bucklebury_blackspeech
+			            name_list_mountain_orc = cn_b_bucklebury_blackspeech
+			            name_list_goblin = cn_b_bucklebury_blackspeech
+					    name_list_wastelands = cn_b_bucklebury_wastelands
 					}
 					
 					color = { 255 113 59 }
@@ -3152,6 +3511,11 @@ e_arnor = {
 
 			cultural_names = {
 				name_list_dunedain = cn_cameth_brin_dunedain
+				name_list_ranger = cn_cameth_brin_dunedain
+				name_list_quenya = cn_cameth_brin_dunedain
+				name_list_sindarin = cn_cameth_brin_dunedain
+				name_list_nandorin = cn_cameth_brin_dunedain
+				name_list_elven = cn_cameth_brin_dunedain
 			}
 			
 			capital = c_cameth_brin
@@ -3161,6 +3525,11 @@ e_arnor = {
 
 				cultural_names = {
 					name_list_dunedain = cn_cameth_brin_dunedain
+					name_list_ranger = cn_cameth_brin_dunedain
+					name_list_quenya = cn_cameth_brin_dunedain
+				    name_list_sindarin = cn_cameth_brin_dunedain
+				    name_list_nandorin = cn_cameth_brin_dunedain
+				    name_list_elven = cn_cameth_brin_dunedain
 				}
 				
 				b_cameth_brin = {
@@ -3170,6 +3539,11 @@ e_arnor = {
 
 					cultural_names = {
 						name_list_dunedain = cn_cameth_brin_dunedain
+						name_list_ranger = cn_cameth_brin_dunedain
+						name_list_quenya = cn_cameth_brin_dunedain
+				        name_list_sindarin = cn_cameth_brin_dunedain
+				        name_list_nandorin = cn_cameth_brin_dunedain
+				        name_list_elven = cn_cameth_brin_dunedain
 					}
 					
 				}
@@ -4101,6 +4475,16 @@ e_blue_mountains = {
 
 		cultural_names = {
 			name_list_dwarven = cn_belegost_dwarven
+		    name_list_firebeards = cn_belegost_dwarven
+		    name_list_blacklocks = cn_belegost_dwarven
+			
+			name_list_dunedain = cn_belegost_sindarin
+			name_list_ranger = cn_belegost_sindarin
+			name_list_sindarin = cn_belegost_sindarin
+			name_list_nandorin = cn_belegost_sindarin
+		    name_list_elven = cn_belegost_sindarin
+			
+			name_list_quenya = cn_belegost_quenya
 		}
 		
 		d_belegost = {
@@ -4109,7 +4493,17 @@ e_blue_mountains = {
 			capital = c_azelanduzur
 
 			cultural_names = {
-				name_list_dwarven = cn_belegost_dwarven
+		    name_list_dwarven = cn_belegost_dwarven
+		    name_list_firebeards = cn_belegost_dwarven
+		    name_list_blacklocks = cn_belegost_dwarven
+			
+			name_list_dunedain = cn_belegost_sindarin
+			name_list_ranger = cn_belegost_sindarin
+			name_list_sindarin = cn_belegost_sindarin
+			name_list_nandorin = cn_belegost_sindarin
+		    name_list_elven = cn_belegost_sindarin
+			
+			name_list_quenya = cn_belegost_quenya
 			}
 			
 			c_azelanduzur = {
@@ -4454,6 +4848,16 @@ e_blue_mountains = {
 
 		cultural_names = {
 			name_list_dwarven = cn_nogrod_dwarven
+		    name_list_firebeards = cn_nogrod_dwarven
+		    name_list_blacklocks = cn_nogrod_dwarven
+			
+			name_list_dunedain = cn_nogrod_sindarin
+			name_list_ranger = cn_nogrod_sindarin
+			name_list_sindarin = cn_nogrod_sindarin
+			name_list_nandorin = cn_nogrod_sindarin
+		    name_list_elven = cn_nogrod_sindarin
+			
+			name_list_quenya = cn_nogrod_quenya
 		}
 		
 		d_nogrod = {
@@ -4462,7 +4866,17 @@ e_blue_mountains = {
 			capital = c_luznakuz
 
 			cultural_names = {
-				name_list_dwarven = cn_nogrod_dwarven
+			name_list_dwarven = cn_nogrod_dwarven
+		    name_list_firebeards = cn_nogrod_dwarven
+		    name_list_blacklocks = cn_nogrod_dwarven
+			
+			name_list_dunedain = cn_nogrod_sindarin
+			name_list_ranger = cn_nogrod_sindarin
+			name_list_sindarin = cn_nogrod_sindarin
+			name_list_nandorin = cn_nogrod_sindarin
+		    name_list_elven = cn_nogrod_sindarin
+			
+			name_list_quenya = cn_nogrod_quenya
 			}
 			
 			c_luznakuz = {
@@ -5031,6 +5445,9 @@ e_gondor = {
 	capital = c_minas_tirith
 	cultural_names = {
 		name_list_druedain = cn_gondor_druedain
+		name_list_rohirrim = cn_gondor_rohirrim
+		name_list_quenya = cn_gondor_quenya
+		name_list_adunaic = cn_gondor_adunaic
 	}
 	k_anorien = {
 		color = { 198 198 198 }
@@ -5593,6 +6010,10 @@ e_gondor = {
 			name_list_eredrim = cn_ithilien_daen
 			name_list_andrastrim = cn_ithilien_daen
 			name_list_donan = cn_ithilien_daen
+			
+			name_list_orc = cn_ithilien_blackspeech
+			name_list_mountain_orc = cn_ithilien_blackspeech
+			name_list_goblin = cn_ithilien_blackspeech
 		}
 		
 		d_minas_ithil = {
@@ -5600,18 +6021,43 @@ e_gondor = {
 			capital = c_minas_ithil
 			cultural_names = {
 				name_list_dunedain = cn_minas_ithil
+				name_list_ranger = cn_minas_ithil
+				name_list_quenya = cn_minas_ithil
+				name_list_sindarin = cn_minas_ithil
+			    name_list_nandorin = cn_minas_ithil
+				name_list_elven = cn_minas_ithil
+				
+				name_list_mountain_orc = cn_minas_ithil_black_speech
+			    name_list_goblin = cn_minas_ithil_black_speech
+				
 			}
 			
 			c_minas_ithil = {
 				color = { 23 18 80 }
 				cultural_names = {
 					name_list_dunedain = cn_minas_ithil
+					name_list_ranger = cn_minas_ithil
+					name_list_quenya = cn_minas_ithil
+				    name_list_sindarin = cn_minas_ithil
+			        name_list_nandorin = cn_minas_ithil
+				    name_list_elven = cn_minas_ithil
+					
+					name_list_mountain_orc = cn_minas_ithil_black_speech
+			        name_list_goblin = cn_minas_ithil_black_speech
 				}
 				
 				b_minas_ithil = {
 					province = 226
 					cultural_names = {
 						name_list_dunedain = cn_minas_ithil
+						name_list_ranger = cn_minas_ithil
+						name_list_quenya = cn_minas_ithil
+				        name_list_sindarin = cn_minas_ithil
+			            name_list_nandorin = cn_minas_ithil
+				        name_list_elven = cn_minas_ithil
+						
+						name_list_mountain_orc = cn_minas_ithil_black_speech
+			            name_list_goblin = cn_minas_ithil_black_speech
 					}
 					color = { 70 211 186 }
 					
@@ -5621,14 +6067,23 @@ e_gondor = {
 					province = 227
 					
 					color = { 189 240 153 }
-					
+				    
+				cultural_names = {
+					name_list_orc = cn_b_imlad_ithil_black_speech
+			        name_list_mountain_orc = cn_b_imlad_ithil_black_speech
+			        name_list_goblin = cn_b_imlad_ithil_black_speech
+				}	
 				}
 
 				b_thamas_neldor = {
 					province = 2730
 					
 					color = { 143 226 154 }
-					
+				cultural_names = {
+					name_list_orc = cn_b_thamas_neldor_black_speech
+			        name_list_mountain_orc = cn_b_thamas_neldor_black_speech
+			        name_list_goblin = cn_b_thamas_neldor_black_speech
+				}
 				}
 				
 			}
@@ -5648,6 +6103,10 @@ e_gondor = {
 				name_list_eredrim = cn_emyn_arnen_daen
 				name_list_andrastrim = cn_emyn_arnen_daen
 				name_list_donan = cn_emyn_arnen_daen
+				
+				name_list_orc = cn_emyn_arnen_blackspeech
+			    name_list_mountain_orc = cn_emyn_arnen_blackspeech
+			    name_list_goblin = cn_emyn_arnen_blackspeech
 			}
 
 			c_emyn_arnen = {
@@ -5661,6 +6120,10 @@ e_gondor = {
 					name_list_eredrim = cn_emyn_arnen_daen
 					name_list_andrastrim = cn_emyn_arnen_daen
 					name_list_donan = cn_emyn_arnen_daen
+					
+					name_list_orc = cn_emyn_arnen_blackspeech
+			        name_list_mountain_orc = cn_emyn_arnen_blackspeech
+			        name_list_goblin = cn_emyn_arnen_blackspeech
 				}
 			
 				b_emyn_arnen = {
@@ -5676,6 +6139,10 @@ e_gondor = {
 						name_list_eredrim = cn_emyn_arnen_daen
 						name_list_andrastrim = cn_emyn_arnen_daen
 						name_list_donan = cn_emyn_arnen_daen
+						
+						name_list_orc = cn_b_emyn_arnen_black_speech
+			            name_list_mountain_orc = cn_b_emyn_arnen_black_speech
+			            name_list_goblin = cn_b_emyn_arnen_black_speech
 					}
 					
 				}
@@ -5827,6 +6294,11 @@ e_gondor = {
 				name_list_eredrim = cn_harithilien_daen
 				name_list_andrastrim = cn_harithilien_daen
 				name_list_donan = cn_harithilien_daen
+				
+		        name_list_orc = cn_harithilien_blackspeech
+			    name_list_mountain_orc = cn_harithilien_blackspeech
+			    name_list_goblin = cn_harithilien_blackspeech
+		
 			}
 			
 			c_alagdor = {
@@ -6014,6 +6486,10 @@ e_gondor = {
 				name_list_eredrim = cn_forithilien_daen
 				name_list_andrastrim = cn_forithilien_daen
 				name_list_donan = cn_forithilien_daen
+			
+			    name_list_orc = cn_forithilien_blackspeech
+			    name_list_mountain_orc = cn_forithilien_blackspeech
+			    name_list_goblin = cn_forithilien_blackspeech
 			}
 			
 			c_henneth_anun = {
@@ -7682,7 +8158,9 @@ e_gondor = {
 		color = { 56 73 77 }
 		
 		capital = c_langstrand
-		
+		cultural_names = {
+			name_list_quenya = cn_anfalas_quenya
+		}
 		d_anfalas = {
 			color = { 44 78 98 }
 			
@@ -8343,6 +8821,11 @@ e_gondor = {
 		capital = c_isengard
 		cultural_names = {
 			name_list_dunedain = cn_isengard
+			name_list_ranger = cn_isengard
+			name_list_quenya = cn_isengard
+			name_list_sindarin = cn_isengard
+			name_list_nandorin = cn_isengard
+			name_list_elven = cn_isengard
 			
 			name_list_adornaen = cn_isengard_dunlending
 			name_list_dunlending = cn_isengard_dunlending
@@ -8359,6 +8842,12 @@ e_gondor = {
 			capital = c_isengard
 			cultural_names = {
 				name_list_dunedain = cn_isengard
+				name_list_ranger = cn_isengard
+				name_list_quenya = cn_isengard
+			    name_list_sindarin = cn_isengard
+			    name_list_nandorin = cn_isengard
+			    name_list_elven = cn_isengard
+				
 				name_list_adornaen = cn_isengard_dunlending
 				name_list_dunlending = cn_isengard_dunlending
 				name_list_danaine = cn_isengard_dunlending
@@ -8372,7 +8861,12 @@ e_gondor = {
 				color = "black"
 				cultural_names = {
 					name_list_dunedain = cn_isengard
-			
+			        name_list_ranger = cn_isengard
+					name_list_quenya = cn_isengard
+		         	name_list_sindarin = cn_isengard
+		         	name_list_nandorin = cn_isengard
+		        	name_list_elven = cn_isengard
+					
 					name_list_dunlending = cn_isengard_dunlending
 					name_list_danaine = cn_isengard_dunlending
 					name_list_enedhwaithrim = cn_isengard_dunlending
@@ -8400,6 +8894,7 @@ e_gondor = {
 		
 		cultural_names = {
 			name_list_northern_apysaic = cn_harondor_haradrim
+			
 			name_list_dunlending = cn_harondor_daen
 			name_list_danaine = cn_harondor_daen
 			name_list_enedhwaithrim = cn_harondor_daen
@@ -8407,6 +8902,11 @@ e_gondor = {
 			name_list_eredrim = cn_harondor_daen
 			name_list_andrastrim = cn_harondor_daen
 			name_list_donan = cn_harondor_daen
+			
+			name_list_quenya = cn_harondor_sindarin
+			name_list_sindarin = cn_harondor_sindarin
+			name_list_nandorin = cn_harondor_sindarin
+			name_list_elven = cn_harondor_sindarin
 		}
 		
 		d_forethir = {
@@ -9723,6 +10223,11 @@ e_enedhwaith = {
 		capital = c_frecalund
 		cultural_names = {
 			name_list_dunedain = cn_dunland_dunedain
+			name_list_ranger = cn_dunland_dunedain
+			name_list_quenya = cn_dunland_dunedain
+			name_list_sindarin = cn_dunland_dunedain
+			name_list_nandorin = cn_dunland_dunedain
+			name_list_elven = cn_dunland_dunedain
 		}
 		ai_primary_priority = {
 			if = {
@@ -9787,6 +10292,11 @@ e_enedhwaith = {
 					color = { 72 14 14 }
 					cultural_names = {
 						name_list_dunedain = cn_amonsindh
+						name_list_ranger = cn_amonsindh
+						name_list_quenya = cn_amonsindh
+			            name_list_sindarin = cn_amonsindh
+			            name_list_nandorin = cn_amonsindh
+			            name_list_elven = cn_amonsindh
 						name_list_adunaic = cn_amonsindh
 						name_list_umbarean = cn_amonsindh
 						name_list_mardrukan = cn_amonsindh
@@ -10533,7 +11043,7 @@ e_enedhwaith = {
 		
 		d_perth_maiwin = {
 			color = { 200 219 205 }
-			
+	
 			capital = c_ulond
 			
 			c_ulond = {
@@ -10760,6 +11270,11 @@ e_calenardhon = {
 			name_list_rohirrim = cn_riddermark
 			
 			name_list_dunedain = cn_calenardhon
+			name_list_ranger = cn_calenardhon
+			name_list_quenya = cn_calenardhon
+			name_list_sindarin = cn_calenardhon
+			name_list_nandorin = cn_calenardhon
+			name_list_elven = cn_calenardhon
 			
 			name_list_adornaen = cn_rohan_dunlending
 			name_list_dunlending = cn_rohan_dunlending
@@ -10787,18 +11302,33 @@ e_calenardhon = {
 
 			cultural_names = {
 				name_list_dunedain = cn_folde_dunedain
+				name_list_ranger = cn_folde_dunedain
+				name_list_quenya = cn_folde_dunedain
+			    name_list_sindarin = cn_folde_dunedain
+			    name_list_nandorin = cn_folde_dunedain
+			    name_list_elven = cn_folde_dunedain
 			}
 
 			c_kingstead = {
 				color = { 24 71 53 }
 				cultural_names = {
 					name_list_dunedain = cn_edoras_dunedain
+					name_list_ranger = cn_edoras_dunedain
+					name_list_quenya = cn_edoras_dunedain
+			        name_list_sindarin = cn_edoras_dunedain
+			        name_list_nandorin = cn_edoras_dunedain
+			        name_list_elven = cn_edoras_dunedain
 				}
 				b_edoras = {
 					province = 1
 					color = { 85 140 30 }
 					cultural_names = {
 						name_list_dunedain = cn_edoras_dunedain
+						name_list_ranger = cn_edoras_dunedain
+						name_list_quenya = cn_edoras_dunedain
+			            name_list_sindarin = cn_edoras_dunedain
+			            name_list_nandorin = cn_edoras_dunedain
+			            name_list_elven = cn_edoras_dunedain
 					}
 				}
 				b_middlemead = {
@@ -10822,12 +11352,22 @@ e_calenardhon = {
 				color = { 38 84 45 }
 				cultural_names = {
 					name_list_dunedain = cn_foldbourn_dunedain
+					name_list_ranger = cn_foldbourn_dunedain
+					name_list_quenya = cn_foldbourn_dunedain
+			        name_list_sindarin = cn_foldbourn_dunedain
+			        name_list_nandorin = cn_foldbourn_dunedain
+			        name_list_elven = cn_foldbourn_dunedain
 				}
 				b_eamund = {
 					province = 8
 					color = { 227 121 183 }
 					cultural_names = {
 						name_list_dunedain = cn_foldbourn_dunedain
+						name_list_ranger = cn_foldbourn_dunedain
+						name_list_quenya = cn_foldbourn_dunedain
+			            name_list_sindarin = cn_foldbourn_dunedain
+			            name_list_nandorin = cn_foldbourn_dunedain
+			            name_list_elven = cn_foldbourn_dunedain
 					}
 				}
 				b_grenewaet = {
@@ -10903,12 +11443,22 @@ e_calenardhon = {
 
 			cultural_names = {
 				name_list_dunedain = cn_westfold_dunedain
+				name_list_ranger = cn_westfold_dunedain
+				name_list_quenya = cn_westfold_dunedain
+			    name_list_sindarin = cn_westfold_dunedain
+			    name_list_nandorin = cn_westfold_dunedain
+			    name_list_elven = cn_westfold_dunedain
 			}
 
 			c_helmsdeep = {
 				color = { 80 100 50 }
 				cultural_names = {
 					name_list_dunedain = b_aglarond
+					name_list_ranger = b_aglarond
+				    name_list_quenya = b_aglarond
+			        name_list_sindarin = b_aglarond
+			        name_list_nandorin = b_aglarond
+			        name_list_elven = b_aglarond
 				}
 
 				b_deepingcoomb = {
@@ -10916,6 +11466,11 @@ e_calenardhon = {
 					color = { 28 42 71 }
 					cultural_names = {
 						name_list_dunedain = cn_deepingcoomb_dunedain
+						name_list_ranger = cn_deepingcoomb_dunedain
+						name_list_quenya = cn_deepingcoomb_dunedain
+			            name_list_sindarin = cn_deepingcoomb_dunedain
+			            name_list_nandorin = cn_deepingcoomb_dunedain
+			            name_list_elven = cn_deepingcoomb_dunedain
 					}		
 				}
 				b_helmham = {
@@ -10928,12 +11483,22 @@ e_calenardhon = {
 				definite_form = yes
 				cultural_names = {
 					name_list_dunedain = cn_gap_of_rohan_dunedain
+					name_list_ranger = cn_gap_of_rohan_dunedain
+					name_list_quenya = cn_gap_of_rohan_dunedain
+			        name_list_sindarin = cn_gap_of_rohan_dunedain
+			        name_list_nandorin = cn_gap_of_rohan_dunedain
+			        name_list_elven = cn_gap_of_rohan_dunedain
 				}
 				b_fordsofisen = {
 					province = 26
 					color = { 166 100 128 } 
 					cultural_names = {
-						name_list_dunedain = cn_fordsofisen_dunedain
+					name_list_dunedain = cn_fordsofisen_dunedain
+					name_list_ranger = cn_fordsofisen_dunedain
+					name_list_quenya = cn_fordsofisen_dunedain
+			        name_list_sindarin = cn_fordsofisen_dunedain
+			        name_list_nandorin = cn_fordsofisen_dunedain
+			        name_list_elven = cn_fordsofisen_dunedain
 					}
 				}
 				b_fowlmere = {
@@ -11007,12 +11572,22 @@ e_calenardhon = {
 				color = { 154 193 77 } 
 				cultural_names = {
 					name_list_dunedain = cn_grimsdale_dunedain
+					name_list_ranger = cn_grimsdale_dunedain
+					name_list_quenya = cn_grimsdale_dunedain
+			        name_list_sindarin = cn_grimsdale_dunedain
+			        name_list_nandorin = cn_grimsdale_dunedain
+			        name_list_elven = cn_grimsdale_dunedain
 				}
 				b_grimslade = {
 					province = 41
 					color = { 107 154 104 }
 					cultural_names = {
-						name_list_dunedain = cn_grimsdale_dunedain
+					name_list_dunedain = cn_grimsdale_dunedain
+					name_list_ranger = cn_grimsdale_dunedain
+					name_list_quenya = cn_grimsdale_dunedain
+			        name_list_sindarin = cn_grimsdale_dunedain
+			        name_list_nandorin = cn_grimsdale_dunedain
+			        name_list_elven = cn_grimsdale_dunedain
 					}
 				}
 				b_brimlad = {
@@ -11031,18 +11606,33 @@ e_calenardhon = {
 			capital = c_aldburg
 			cultural_names = {
 				name_list_dunedain = cn_eastfold_dunedain
+				name_list_ranger = cn_eastfold_dunedain
+				name_list_quenya = cn_eastfold_dunedain
+			    name_list_sindarin = cn_eastfold_dunedain
+			    name_list_nandorin = cn_eastfold_dunedain
+			    name_list_elven = cn_eastfold_dunedain
 			}
 
 			c_aldburg = {
 				color = { 55 100 35 }
 				cultural_names = {
-					name_list_dunedain = cn_aldburg_dunedain
+				name_list_dunedain = cn_aldburg_dunedain
+				name_list_ranger = cn_aldburg_dunedain
+				name_list_quenya = cn_aldburg_dunedain
+			    name_list_sindarin = cn_aldburg_dunedain
+			    name_list_nandorin = cn_aldburg_dunedain
+			    name_list_elven = cn_aldburg_dunedain
 				}
 				b_aldburg = {
 					province = 7
 					color = { 150 123 246 }
 					cultural_names = {
-						name_list_dunedain = cn_aldburg_dunedain
+				name_list_dunedain = cn_aldburg_dunedain
+				name_list_ranger = cn_aldburg_dunedain
+				name_list_quenya = cn_aldburg_dunedain
+			    name_list_sindarin = cn_aldburg_dunedain
+			    name_list_nandorin = cn_aldburg_dunedain
+			    name_list_elven = cn_aldburg_dunedain
 					}
 				}
 				b_stingstead = {
@@ -11057,7 +11647,12 @@ e_calenardhon = {
 					province = 49
 					color = { 101 101 232 }
 					cultural_names = {
-						name_list_dunedain = cn_schephurst_dunedain
+				name_list_dunedain = cn_schephurst_dunedain
+				name_list_ranger = cn_schephurst_dunedain
+				name_list_quenya = cn_schephurst_dunedain
+			    name_list_sindarin = cn_schephurst_dunedain
+			    name_list_nandorin = cn_schephurst_dunedain
+			    name_list_elven = cn_schephurst_dunedain
 					}
 				}
 				b_steinburg = {
@@ -11084,7 +11679,12 @@ e_calenardhon = {
 				color = { 20 65 55 }
 				
 				cultural_names = {
-					name_list_dunedain = cn_halifirien_dunedain
+				name_list_dunedain = cn_halifirien_dunedain
+				name_list_ranger = cn_halifirien_dunedain
+				name_list_quenya = cn_halifirien_dunedain
+			    name_list_sindarin = cn_halifirien_dunedain
+			    name_list_nandorin = cn_halifirien_dunedain
+			    name_list_elven = cn_halifirien_dunedain
 				}
 				
 				b_halifirien = {
@@ -11092,7 +11692,12 @@ e_calenardhon = {
 					color = { 176 151 91 }
 				
 					cultural_names = {
-						name_list_dunedain = cn_halifirien_dunedain
+				name_list_dunedain = cn_halifirien_dunedain
+				name_list_ranger = cn_halifirien_dunedain
+				name_list_quenya = cn_halifirien_dunedain
+			    name_list_sindarin = cn_halifirien_dunedain
+			    name_list_nandorin = cn_halifirien_dunedain
+			    name_list_elven = cn_halifirien_dunedain
 					}
 				}
 				b_everholt = {
@@ -11126,6 +11731,11 @@ e_calenardhon = {
 			capital = c_sutwold
 			cultural_names = {
 				name_list_dunedain = cn_wold_dunedain
+				name_list_ranger = cn_wold_dunedain
+				name_list_quenya = cn_wold_dunedain
+			    name_list_sindarin = cn_wold_dunedain
+			    name_list_nandorin = cn_wold_dunedain
+			    name_list_elven = cn_wold_dunedain
 			}
 
 			c_sutwold = {
@@ -11184,10 +11794,15 @@ e_calenardhon = {
 					province = 98
 					color = { 140 183 33 }
 					cultural_names = {
-						name_list_dunedain = cn_ostcelebrant
-						name_list_adunaic = cn_ostcelebrant
-						name_list_umbarean = cn_ostcelebrant
-						name_list_mardrukan = cn_ostcelebrant
+				name_list_dunedain = cn_ostcelebrant
+				name_list_ranger = cn_ostcelebrant
+				name_list_quenya = cn_ostcelebrant
+			    name_list_sindarin = cn_ostcelebrant
+			    name_list_nandorin = cn_ostcelebrant
+			    name_list_elven = cn_ostcelebrant
+				name_list_adunaic = cn_ostcelebrant
+				name_list_umbarean = cn_ostcelebrant
+				name_list_mardrukan = cn_ostcelebrant
 					}
 				}
 				b_northundeep = {
@@ -11221,18 +11836,33 @@ e_calenardhon = {
 			capital = c_steornemark
 			cultural_names = {
 				name_list_dunedain = cn_eastemnet_dunedain
+				name_list_ranger = cn_eastemnet_dunedain
+				name_list_quenya = cn_eastemnet_dunedain
+			    name_list_sindarin = cn_eastemnet_dunedain
+			    name_list_nandorin = cn_eastemnet_dunedain
+			    name_list_elven = cn_eastemnet_dunedain
 			}
 			
 			c_steornemark = {
 				color = { 30 85 50 }
 				cultural_names = {
-					name_list_dunedain = cn_steornemark_dunedain
+				name_list_dunedain = cn_steornemark_dunedain
+				name_list_ranger = cn_steornemark_dunedain
+				name_list_quenya = cn_steornemark_dunedain
+			    name_list_sindarin = cn_steornemark_dunedain
+			    name_list_nandorin = cn_steornemark_dunedain
+			    name_list_elven = cn_steornemark_dunedain
 				}
 				b_holtfold = {
 					province = 58
 					color = { 150 176 85 }
 					cultural_names = {
-						name_list_dunedain = cn_steornemark_dunedain
+				name_list_dunedain = cn_steornemark_dunedain
+				name_list_ranger = cn_steornemark_dunedain
+				name_list_quenya = cn_steornemark_dunedain
+			    name_list_sindarin = cn_steornemark_dunedain
+			    name_list_nandorin = cn_steornemark_dunedain
+			    name_list_elven = cn_steornemark_dunedain
 					}
 				}
 				b_stotfold = {
@@ -11265,7 +11895,13 @@ e_calenardhon = {
 					name_list_rohirrim = cnr_theeasternwall #Eastweall
 					name_list_leofring = cnr_theeasternwall #Eastweall
 					name_list_framling = cnr_theeasternwall #Eastweall
-					name_list_dunedain = cnd_theeasternwall #Rhúneram-i-Calenardhon						
+					
+					name_list_dunedain = cnd_theeasternwall #Rhúneram-i-Calenardhon		
+                    name_list_ranger = cnd_theeasternwall #Rhúneram-i-Calenardhon
+                    name_list_quenya = cnd_theeasternwall #Rhúneram-i-Calenardhon
+			        name_list_sindarin = cnd_theeasternwall #Rhúneram-i-Calenardhon
+			        name_list_nandorin = cnd_theeasternwall #Rhúneram-i-Calenardhon
+			        name_list_elven = cnd_theeasternwall #Rhúneram-i-Calenardhon					
 				}
 				b_floodwend = {
 					province = 101
@@ -11332,6 +11968,11 @@ e_calenardhon = {
 				color = { 41 90 62 }
 				cultural_names = {
 					name_list_dunedain = cn_hartalf_dunedain
+					name_list_ranger = cn_hartalf_dunedain
+					name_list_quenya = cn_hartalf_dunedain
+			        name_list_sindarin = cn_hartalf_dunedain
+			        name_list_nandorin = cn_hartalf_dunedain
+			        name_list_elven = cn_hartalf_dunedain
 				}
 				b_gwanlend = {
 					province = 111
@@ -11394,6 +12035,12 @@ e_mordor = {
 	k_gorgoroth = {
 		color = { 167 18 18 }
 		
+		cultural_names = {
+		            name_list_orc = cn_gorgoroth_black_speech
+			        name_list_mountain_orc = cn_gorgoroth_black_speech
+			        name_list_goblin = cn_gorgoroth_black_speech
+				}
+				
 		capital = c_barad_dur
 		cultural_names = {
 			name_list_adunaic = cn_gorgoroth_adunaic
@@ -11408,28 +12055,35 @@ e_mordor = {
 			
 			c_morannon = {
 				color = { 157 49 65 }
+			cultural_names = {
+			    name_list_dunedain = cn_morannon_sindarin
+			    name_list_ranger = cn_morannon_sindarin
+			    name_list_quenya = cn_morannon_sindarin
+				name_list_sindarin = cn_morannon_sindarin
+			    name_list_nandorin = cn_morannon_sindarin
+			    name_list_elven = cn_morannon_sindarin
+		        }	
 				
 				b_cirith_gorgor = {
 					province = 614
-					
 					color = { 32 104 9 }
-					
+				
+				cultural_names = {
+				    name_list_orc = cn_b_cirith_gorgor_black_speech
+			        name_list_mountain_orc = cn_b_cirith_gorgor_black_speech
+			        name_list_goblin = cn_b_cirith_gorgor_black_speech
+				}	
 				}
 				
 				b_carchost = {
 					province = 613
-					
-					color = { 137 15 170 }
-					
+					color = { 137 15 170 }	
 				}
 				
 				b_narchost = {
 					province = 612
-					
-					color = { 221 197 13 }
-					
+					color = { 221 197 13 }	
 				}
-				
 			}
 			
 			c_udun = {
@@ -11439,13 +12093,30 @@ e_mordor = {
 					province = 616
 					
 					color = { 32 191 49 }
-					
+				cultural_names = {
+			    name_list_dunedain = cn_b_carach_angren_sindarin
+			    name_list_ranger = cn_b_carach_angren_sindarin
+			    name_list_quenya = cn_b_carach_angren_sindarin
+				name_list_sindarin = cn_b_carach_angren_sindarin
+			    name_list_nandorin = cn_b_carach_angren_sindarin
+			    name_list_elven = cn_b_carach_angren_sindarin
+		        }	
 				}
 				
 				b_udun = {
 					province = 615
 					
 					color = { 136 142 105 }
+				cultural_names = {
+			    name_list_dunedain = cn_b_udun_sindarin
+			    name_list_ranger = cn_b_udun_sindarin
+			    name_list_quenya = cn_b_udun_sindarin
+				name_list_sindarin = cn_b_udun_sindarin
+			    name_list_nandorin = cn_b_udun_sindarin
+			    name_list_elven = cn_b_udun_sindarin
+				
+				name_list_wastelands = cn_b_udun_wastelands
+		        }
 					
 				}
 				
@@ -11453,10 +12124,18 @@ e_mordor = {
 			
 			c_durthang = {
 				color = { 133 27 46 }
-				
+			
+			cultural_names = {
+			        name_list_mountain_orc = cn_durthang_black_speech
+			        name_list_goblin = cn_durthang_black_speech
+				}	
 				b_durthang = {
 					province = 651
 					
+				cultural_names = {
+			        name_list_mountain_orc = cn_durthang_black_speech
+			        name_list_goblin = cn_durthang_black_speech
+				}		
 					color = { 110 251 185 }
 					
 				}
@@ -11470,99 +12149,194 @@ e_mordor = {
 			
 			capital = c_barad_dur
 			
+			cultural_names = {
+					name_list_adunaic = cn_baraddur_adunaic
+					name_list_umbarean = cn_baraddur_adunaic
+					name_list_mardrukan = cn_baraddur_adunaic
+					
+					name_list_orc = cn_baraddur_black_speech
+			        name_list_mountain_orc = cn_baraddur_black_speech
+			        name_list_goblin = cn_baraddur_black_speech
+					
+					name_list_quenya = cn_baraddur_quenya
+				}
+			
 			c_barad_dur = {
 				color = { 188 16 4 }
 				cultural_names = {
 					name_list_adunaic = cn_baraddur_adunaic
 					name_list_umbarean = cn_baraddur_adunaic
 					name_list_mardrukan = cn_baraddur_adunaic
+					
+			        name_list_mountain_orc = cn_baraddur_black_speech
+			        name_list_goblin = cn_baraddur_black_speech
+					
+					name_list_quenya = cn_baraddur_quenya
 				}
 				
 				b_barad_dur = {
 					province = 620
 					color = { 89 187 174 }
 					cultural_names = {
-						name_list_adunaic = cn_baraddur_adunaic
-						name_list_umbarean = cn_baraddur_adunaic
-						name_list_mardrukan = cn_baraddur_adunaic
-					}
+					name_list_adunaic = cn_baraddur_adunaic
+					name_list_umbarean = cn_baraddur_adunaic
+					name_list_mardrukan = cn_baraddur_adunaic
+					
+			        name_list_mountain_orc = cn_baraddur_black_speech
+			        name_list_goblin = cn_baraddur_black_speech
+					
+					name_list_quenya = cn_baraddur_quenya
+				}
 				}	
 			}
 			
 			c_orodruin = {
 				color = { 212 1 1 }
-				
+			
+			cultural_names = {   
+					name_list_orc = cn_baraddur_westron
+			        name_list_mountain_orc = cn_baraddur_westron
+			        name_list_goblin = cn_baraddur_westron
+				}	
 				b_orodruin = {
 					province = 621
 					
 					color = { 96 241 78 }
-					
+				cultural_names = {   
+					name_list_orc = cn_baraddur_westron
+			        name_list_mountain_orc = cn_baraddur_westron
+			        name_list_goblin = cn_baraddur_westron
+				}	
 				}
 				
 			}
 			
 			c_mordath = {
 				color = { 201 1 1 }
+			
+			cultural_names = {
+					name_list_orc = cn_mordath_black_speech
+			        name_list_mountain_orc = cn_mordath_black_speech
+			        name_list_goblin = cn_mordath_black_speech
+				}	
 				
 				b_mordath = {
 					province = 618
 					
 					color = { 28 149 151 }
-					
+				
+				cultural_names = {
+					name_list_orc = cn_mordath_black_speech
+			        name_list_mountain_orc = cn_mordath_black_speech
+			        name_list_goblin = cn_mordath_black_speech
+				}	
 				}
 				
 				b_dor_amarth = {
 					province = 617
 					
 					color = { 228 181 29 }
-					
+				
+				cultural_names = {
+					name_list_orc = cn_b_dor_amarth_black_speech
+			        name_list_mountain_orc = cn_b_dor_amarth_black_speech
+			        name_list_goblin = cn_b_dor_amarth_black_speech
+				}	
 				}
 
 				b_mabri_ghash = {
 					province = 2576
 					
 					color = { 179 16 235 }
-					
+				
+				cultural_names = {
+			    name_list_dunedain = cn_b_mabri_ghash_sindarin
+			    name_list_ranger = cn_b_mabri_ghash_sindarin
+			    name_list_quenya = cn_b_mabri_ghash_sindarin
+				name_list_sindarin = cn_b_mabri_ghash_sindarin
+			    name_list_nandorin = cn_b_mabri_ghash_sindarin
+			    name_list_elven = cn_b_mabri_ghash_sindarin
+		        }	
 				}
 				
 				b_fhauga = {
 					province = 619
 					
 					color = { 54 117 222 }
-					
+				cultural_names = {
+			    name_list_dunedain = cn_b_fhauga_sindarin
+			    name_list_ranger = cn_b_fhauga_sindarin
+			    name_list_quenya = cn_b_fhauga_sindarin
+				name_list_sindarin = cn_b_fhauga_sindarin
+			    name_list_nandorin = cn_b_fhauga_sindarin
+			    name_list_elven = cn_b_fhauga_sindarin
+		        }	
 				}
 				
 			}
 			
 			c_baugatsor_i_sauron = {
 				color = { 182 22 21 }
+			
+			cultural_names = {
+			    name_list_orc = cn_baugatsor_i_sauron_blackspeech
+			    name_list_mountain_orc = cn_baugatsor_i_sauron_blackspeech
+			    name_list_goblin = cn_baugatsor_i_sauron_blackspeech
+				
+				name_list_dunedain = cn_baugatsor_i_sauron_sindarin
+			    name_list_ranger = cn_baugatsor_i_sauron_sindarin
+			    name_list_quenya = cn_baugatsor_i_sauron_sindarin
+				name_list_sindarin = cn_baugatsor_i_sauron_sindarin
+			    name_list_nandorin = cn_baugatsor_i_sauron_sindarin
+			    name_list_elven = cn_baugatsor_i_sauron_sindarin
+		        }
 				
 				b_lugshar = {
 					province = 646
 					
 					color = { 135 242 149 }
-					
+				cultural_names = {		
+				name_list_dunedain = cn_b_lugshar_sindarin
+			    name_list_ranger = cn_b_lugshar_sindarin
+			    name_list_quenya = cn_b_lugshar_sindarin
+				name_list_sindarin = cn_b_lugshar_sindarin
+			    name_list_nandorin = cn_b_lugshar_sindarin
+			    name_list_elven = cn_b_lugshar_sindarin
+		        }	
 				}
 				
 				b_daelanc = {
 					province = 649
 					
 					color = { 144 106 78 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_daelanc_blackspeech
+			    name_list_mountain_orc = cn_b_daelanc_blackspeech
+			    name_list_goblin = cn_b_daelanc_blackspeech
+		        }	
 				}
 				
-				b_lithlad = {
+				b_lithlad = {            #Morboth
 					province = 648
-					
 					color = { 63 151 154 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_lithlad_blackspeech
+			    name_list_mountain_orc = cn_b_lithlad_blackspeech
+			    name_list_goblin = cn_b_lithlad_blackspeech
+		        }	
 				}
 				
 				b_zayarzot = {
 					province = 647
-					
 					color = { 191 239 194 }
-					
+				cultural_names = {		
+				name_list_dunedain = cn_b_zayarzot_sindarin
+			    name_list_ranger = cn_b_zayarzot_sindarin
+			    name_list_quenya = cn_b_zayarzot_sindarin
+				name_list_sindarin = cn_b_zayarzot_sindarin
+			    name_list_nandorin = cn_b_zayarzot_sindarin
+			    name_list_elven = cn_b_zayarzot_sindarin
+		        }	
 				}
 				
 			}
@@ -11573,28 +12347,53 @@ e_mordor = {
 			
 			capital = c_cirith_ungol
 			
+            cultural_names = {
+			    name_list_orc = cn_ephel_duath_blackspeech
+			    name_list_mountain_orc = cn_ephel_duath_blackspeech
+			    name_list_goblin = cn_ephel_duath_blackspeech
+		        }	
+				
 			c_cirith_ungol = {
 				color = { 144 80 69 }
+			
+			cultural_names = {
+			    name_list_mountain_orc = cn_cirith_ungol_black_speech
+			    name_list_goblin = cn_cirith_ungol_black_speech
+		        }	
 				
 				b_cirith_ungol = {
 					province = 654
 					
 					color = { 72 172 212 }
-					
+			cultural_names = {
+			    name_list_mountain_orc = cn_cirith_ungol_black_speech
+			    name_list_goblin = cn_cirith_ungol_black_speech
+		        }		
 				}
 				
 				b_barad_ungol = {
 					province = 655
 					
 					color = { 130 165 136 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_barad_ungol_black_speech
+			    name_list_mountain_orc = cn_b_barad_ungol_black_speech
+			    name_list_goblin = cn_b_barad_ungol_black_speech
+		        }	
 				}
 				
 				b_kra_burzum = {
 					province = 653
 					
 					color = { 254 4 195 }
-					
+				cultural_names = {
+			    name_list_dunedain = cn_b_kra_burzum_sindarin
+			    name_list_ranger = cn_b_kra_burzum_sindarin
+			    name_list_quenya = cn_b_kra_burzum_sindarin
+				name_list_sindarin = cn_b_kra_burzum_sindarin
+			    name_list_nandorin = cn_b_kra_burzum_sindarin
+			    name_list_elven = cn_b_kra_burzum_sindarin
+		        }	
 				}
 				
 			}
@@ -11602,17 +12401,35 @@ e_mordor = {
 			c_lhingris = {
 				color = { 177 76 73 }
 				
+			cultural_names = {
+			    name_list_orc = cn_lhingris_blackspeech
+			    name_list_mountain_orc = cn_lhingris_blackspeech
+			    name_list_goblin = cn_lhingris_blackspeech	
+				}
+				
 				b_barad_perras = {
 					province = 650
 					
 					color = { 90 29 69 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_barad_perras_blackspeech
+			    name_list_mountain_orc = cn_b_barad_perras_blackspeech
+			    name_list_goblin = cn_b_barad_perras_blackspeech	
 				}
-				
+				}
 				b_kala_murg = {
 					province = 652
 					
 					color = { 213 72 86 }
+					
+				cultural_names = {
+			    name_list_dunedain = cn_b_kala_murg_sindarin
+			    name_list_ranger = cn_b_kala_murg_sindarin
+			    name_list_quenya = cn_b_kala_murg_sindarin
+				name_list_sindarin = cn_b_kala_murg_sindarin
+			    name_list_nandorin = cn_b_kala_murg_sindarin
+			    name_list_elven = cn_b_kala_murg_sindarin
+		        }	
 					
 				}
 				
@@ -11621,24 +12438,55 @@ e_mordor = {
 			c_kam_lagurz = {
 				color = { 205 52 40 }
 				
+				cultural_names = {
+			    name_list_dunedain = cn_c_kam_lagurz_sindarin
+			    name_list_ranger = cn_c_kam_lagurz_sindarin
+			    name_list_quenya = cn_c_kam_lagurz_sindarin
+				name_list_sindarin = cn_c_kam_lagurz_sindarin
+			    name_list_nandorin = cn_c_kam_lagurz_sindarin
+			    name_list_elven = cn_c_kam_lagurz_sindarin
+		        }
+				
 				b_kam_lagurz = {
 					province = 657
 					
 					color = { 225 25 218 }
-					
+				cultural_names = {
+			    name_list_dunedain = cn_c_kam_lagurz_sindarin
+			    name_list_ranger = cn_c_kam_lagurz_sindarin
+			    name_list_quenya = cn_c_kam_lagurz_sindarin
+				name_list_sindarin = cn_c_kam_lagurz_sindarin
+			    name_list_nandorin = cn_c_kam_lagurz_sindarin
+			    name_list_elven = cn_c_kam_lagurz_sindarin
+		        }	
 				}
 
 				b_mamshar = {
 					province = 2585
 					
 					color = { 126 194 205 }
-					
+				cultural_names = {
+			    name_list_dunedain = cn_b_mamshar_sindarin
+			    name_list_ranger = cn_b_mamshar_sindarin
+			    name_list_quenya = cn_b_mamshar_sindarin
+				name_list_sindarin = cn_b_mamshar_sindarin
+			    name_list_nandorin = cn_b_mamshar_sindarin
+			    name_list_elven = cn_b_mamshar_sindarin
+		        }	
 				}
 				
 				b_digturrmar = {
 					province = 656
 					
 					color = { 174 205 65 }
+				cultural_names = {
+			    name_list_dunedain = cn_b_digturrmar_sindarin
+			    name_list_ranger = cn_b_digturrmar_sindarin
+			    name_list_quenya = cn_b_digturrmar_sindarin
+				name_list_sindarin = cn_b_digturrmar_sindarin
+			    name_list_nandorin = cn_b_digturrmar_sindarin
+			    name_list_elven = cn_b_digturrmar_sindarin
+		        }
 					
 				}
 				
@@ -11648,37 +12496,66 @@ e_mordor = {
 		
 		d_perth_ulmyn = {
 			color = { 84 1 1 }
-			
+		cultural_names = {
+			    name_list_orc = cn_perth_ulmyn_blackspeech
+			    name_list_mountain_orc = cn_perth_ulmyn_blackspeech
+			    name_list_goblin = cn_perth_ulmyn_blackspeech
+		        }	
 			capital = c_barad_wath
 			
 			c_barad_wath = {
 				color = { 123 31 1 }
-				
+			cultural_names = {
+			    name_list_orc = cn_barad_wath_blackspeech
+			    name_list_mountain_orc = cn_barad_wath_blackspeech
+			    name_list_goblin = cn_barad_wath_blackspeech
+		        }	
 				b_barad_wath = {
 					province = 640
 					
 					color = { 91 146 254 }
-					
+				cultural_names = {
+			    name_list_orc = cn_barad_wath_blackspeech
+			    name_list_mountain_orc = cn_barad_wath_blackspeech
+			    name_list_goblin = cn_barad_wath_blackspeech
+		        }	
 				}
 				
 				b_morigost = {
 					province = 641
 					
 					color = { 253 200 60 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_morigost_blackspeech
+			    name_list_mountain_orc = cn_b_morigost_blackspeech
+			    name_list_goblin = cn_b_morigost_blackspeech
+		        }	
 				}
 				
 				b_orodir = {
 					province = 644
 					
 					color = { 29 95 79 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_orodir_blackspeech
+			    name_list_mountain_orc = cn_b_orodir_blackspeech
+			    name_list_goblin = cn_b_orodir_blackspeech
+		        }	
 				}
 				
 			}
 			
 			c_lugashbur = {
 				color = { 120 30 1 }
+				
+				cultural_names = {
+			    name_list_dunedain = cn_lugashbur_sindarin
+			    name_list_ranger = cn_lugashbur_sindarin
+			    name_list_quenya = cn_lugashbur_sindarin
+				name_list_sindarin = cn_lugashbur_sindarin
+			    name_list_nandorin = cn_lugashbur_sindarin
+			    name_list_elven = cn_lugashbur_sindarin
+		        }
 
 				b_burzumshar = {
 					province = 2589
@@ -11705,12 +12582,22 @@ e_mordor = {
 			
 			c_dath_nethryn = {
 				color = { 140 1 1 }
-				
+			
+            cultural_names = {
+			    name_list_orc = cn_dath_nethryn_blackspeech
+			    name_list_mountain_orc = cn_dath_nethryn_blackspeech
+			    name_list_goblin = cn_dath_nethryn_blackspeech
+		    }
+		
 				b_dath_nethryn = {
 					province = 643
 					
 					color = { 173 46 97 }
-					
+				cultural_names = {
+			    name_list_orc = cn_dath_nethryn_blackspeech
+			    name_list_mountain_orc = cn_dath_nethryn_blackspeech
+			    name_list_goblin = cn_dath_nethryn_blackspeech
+		    }	
 				}
 
 				b_baulabad = {
@@ -11724,33 +12611,62 @@ e_mordor = {
 					province = 645
 					
 					color = { 171 143 10 }
-					
+				cultural_names = {
+			    name_list_dunedain = cn_b_flaksharbtur_sindarin
+			    name_list_ranger = cn_b_flaksharbtur_sindarin
+			    name_list_quenya = cn_b_flaksharbtur_sindarin
+				name_list_sindarin = cn_b_flaksharbtur_sindarin
+			    name_list_nandorin = cn_b_flaksharbtur_sindarin
+			    name_list_elven = cn_b_flaksharbtur_sindarin
+		        }	
 				}
 				
 				b_gwathiraug = {
 					province = 642
 					
 					color = { 193 177 236 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_gwathiraug_blackspeech
+			    name_list_mountain_orc = cn_b_gwathiraug_blackspeech
+			    name_list_goblin = cn_b_gwathiraug_blackspeech
+		    }	
 				}
 				
 			}
 			
 			c_mulburz = {
-				color = { 121 1 25 }
+				color = { 121 1 25 }	
 				
+				cultural_names = {
+					name_list_dunedain = cn_mulburz_sindarin
+					name_list_ranger = cn_mulburz_sindarin
+					name_list_quenya = cn_mulburz_sindarin
+		            name_list_sindarin = cn_mulburz_sindarin
+			        name_list_nandorin = cn_mulburz_sindarin
+			        name_list_elven = cn_mulburz_sindarin
+				}
 				b_mulburz = {
 					province = 729
-					
 					color = { 72 146 8 }
-					
+					cultural_names = {
+					name_list_dunedain = cn_mulburz_sindarin
+					name_list_ranger = cn_mulburz_sindarin
+					name_list_quenya = cn_mulburz_sindarin
+		            name_list_sindarin = cn_mulburz_sindarin
+			        name_list_nandorin = cn_mulburz_sindarin
+			        name_list_elven = cn_mulburz_sindarin
+				}
 				}
 				
 				b_naerband = {
 					province = 728
 					
 					color = { 167 24 22 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_naerband_blackspeech
+			    name_list_mountain_orc = cn_b_naerband_blackspeech
+			    name_list_goblin = cn_b_naerband_blackspeech
+		}	
 				}
 				
 			}
@@ -11761,42 +12677,95 @@ e_mordor = {
 			color = { 153 2 39 }
 			
 			capital = c_seregost
-
+        cultural_names = {
+			    name_list_orc = cn_seregost_blackspeech
+			    name_list_mountain_orc = cn_seregost_blackspeech
+			    name_list_goblin = cn_seregost_blackspeech
+		    }
 			c_seregost = {
+			cultural_names = {
+			    name_list_orc = cn_seregost_blackspeech
+			    name_list_mountain_orc = cn_seregost_blackspeech
+			    name_list_goblin = cn_seregost_blackspeech
+		    }	
 				color = { 151 14 23 }
+				
 				b_khagukhor = {
 					province = 634
 					color = { 143 158 215 }
+			
+			cultural_names = {
+			     	name_list_dunedain = cn_b_khagukhor_sindarin
+					name_list_ranger = cn_b_khagukhor_sindarin
+					name_list_quenya = cn_b_khagukhor_sindarin
+		            name_list_sindarin = cn_b_khagukhor_sindarin
+			        name_list_nandorin = cn_b_khagukhor_sindarin
+			        name_list_elven = cn_b_khagukhor_sindarin
+				}
 				}
 				b_ostigurth = {
 					province = 635
 					color = { 19 169 20 }
+				cultural_names = {
+			    name_list_orc = cn_b_ostigurth_blackspeech
+			    name_list_mountain_orc = cn_b_ostigurth_blackspeech
+			    name_list_goblin = cn_b_ostigurth_blackspeech
+		        }
 				}
 				b_nargroth = {
 					province = 638
 					color = { 198 133 192 }
+				cultural_names = {
+			    name_list_orc = cn_b_nargroth_blackspeech    
+			    name_list_mountain_orc = cn_b_nargroth_blackspeech
+			    name_list_goblin = cn_b_nargroth_blackspeech
+		        }
 				}
 				b_mithram_gap = {
 					province = 1448
 					color = { 147 152 211 }
+				cultural_names = {
+			    name_list_orc = cn_b_mithram_gap_blackspeech
+			    name_list_mountain_orc = cn_b_mithram_gap_blackspeech
+			    name_list_goblin = cn_b_mithram_gap_blackspeech
+		        }
 				}
 			}
 			
 			c_minas_durlith = {
 				color = { 160 38 57 }
+			cultural_names = {
+			    name_list_orc = cn_minas_durlith_blackspeech
+			    name_list_mountain_orc = cn_minas_durlith_blackspeech
+			    name_list_goblin = cn_minas_durlith_blackspeech
+		        }
 				
 				b_minas_durlith = {
 					province = 622
-					
-					color = { 113 197 47 }
-					
+				cultural_names = {
+			    name_list_orc = cn_minas_durlith_blackspeech
+			    name_list_mountain_orc = cn_minas_durlith_blackspeech
+			    name_list_goblin = cn_minas_durlith_blackspeech
+		        }	
+					color = { 113 197 47 }	
 				}
 				
 				b_gaer_durlith = {
 					province = 633
 					
 					color = { 155 143 137 }
-					
+				cultural_names = {
+			    name_list_orc = cn_b_gaer_durlith_blackspeech
+			    name_list_mountain_orc = cn_b_gaer_durlith_blackspeech
+			    name_list_goblin = cn_b_gaer_durlith_blackspeech
+				
+				name_list_dunedain = cn_b_gaer_durlith_sindarin
+				name_list_ranger = cn_b_gaer_durlith_sindarin
+				name_list_quenya = cn_b_gaer_durlith_sindarin
+		        name_list_sindarin = cn_b_gaer_durlith_sindarin
+			    name_list_nandorin = cn_b_gaer_durlith_sindarin
+			    name_list_elven = cn_b_gaer_durlith_sindarin
+		        }	
 				}
 				
 				b_shubat_enilil = {
@@ -11817,38 +12786,63 @@ e_mordor = {
 						
 			c_kirithgal = {
 				color = { 156 1 52 }
-				
+			cultural_names = {
+			name_list_orc = cn_kirithgal_blackspeech
+			name_list_mountain_orc = cn_kirithgal_blackspeech
+			name_list_goblin = cn_kirithgal_blackspeech
+		}	
 				b_kirithgal = {
 					province = 637
 					
 					color = { 57 87 72 }
-					
+				cultural_names = {
+			name_list_orc = cn_kirithgal_blackspeech
+			name_list_mountain_orc = cn_kirithgal_blackspeech
+			name_list_goblin = cn_kirithgal_blackspeech
+		}	
 				}
 				
 				b_ennyn_ur = {
 					province = 636
 					
-					color = { 160 96 145 }
-					
+					color = { 160 96 145 
+					}
+			cultural_names = {
+			name_list_orc = cn_b_ennyn_ur_blackspeech
+			name_list_mountain_orc = cn_b_ennyn_ur_blackspeech
+			name_list_goblin = cn_b_ennyn_ur_blackspeech
+		}		
 				}
 				
 			}
 			
 		}
 		
-		d_rhunen_ered_lithui = {
+		d_rhunen_ered_lithui = {   #Ered Angûrath
 			color = { 152 50 9 }
 			
+			cultural_names = {
+			name_list_orc = cn_agarnaith_blackspeech
+			name_list_mountain_orc = cn_agarnaith_blackspeech
+			name_list_goblin = cn_agarnaith_blackspeech
+		    }
 			capital = c_agarnaith
 			
 			c_agarnaith = {
 				color = { 152 43 1 }
-				
+			cultural_names = {
+			name_list_orc = cn_agarnaith_blackspeech
+			name_list_mountain_orc = cn_agarnaith_blackspeech
+			name_list_goblin = cn_agarnaith_blackspeech
+		    }	
 				b_agarnaith = {
 					province = 629
-					
 					color = { 81 152 108 }
-					
+					cultural_names = {
+			        name_list_orc = cn_agarnaith_blackspeech
+			        name_list_mountain_orc = cn_agarnaith_blackspeech
+			        name_list_goblin = cn_agarnaith_blackspeech
+		            }	
 				}
 				
 				b_bozorg = {
@@ -11921,7 +12915,11 @@ e_mordor = {
 					province = 630
 					
 					color = { 250 33 208 }
-					
+				cultural_names = {
+			name_list_orc = cn_b_cirith_graug_blackspeech
+			name_list_mountain_orc = cn_b_cirith_graug_blackspeech
+			name_list_goblin = cn_b_cirith_graug_blackspeech
+		    }		
 				}
 				
 			}
@@ -12944,6 +13942,7 @@ e_haradwaith = {
 	color = { 215 130 0 }
 	cultural_names = {
 		name_list_northern_apysaic = cn_haradwaith_haradrim
+		
 		name_list_adunaic = cn_haruzan_adunaic
 		name_list_umbarean = cn_haruzan_adunaic
 		name_list_mardrukan = cn_haruzan_adunaic
@@ -12954,6 +13953,12 @@ e_haradwaith = {
 		color = { 214 141 0 }
 		cultural_names = {
 			name_list_dunedain = cn_haruzan_dunedain
+			name_list_ranger = cn_haruzan_dunedain
+			name_list_quenya = cn_haruzan_dunedain
+		    name_list_sindarin = cn_haruzan_dunedain
+			name_list_nandorin = cn_haruzan_dunedain
+			name_list_elven = cn_haruzan_dunedain
+			
 			name_list_adunaic = cn_haruzan_adunaic
 			name_list_umbarean = cn_haruzan_adunaic
 			name_list_mardrukan = cn_haruzan_adunaic
@@ -13456,8 +14461,15 @@ e_haradwaith = {
 				cultural_names = {
 					name_list_adunaic = cn_anacalimon_adunaic
 					name_list_umbarean = cn_anacalimon_adunaic
-					name_list_dunedain = cn_anacalimon_sindarin
 					name_list_mardrukan = cn_anacalimon_adunaic
+					
+					name_list_dunedain = cn_anacalimon_sindarin
+					name_list_ranger = cn_anacalimon_sindarin
+					name_list_quenya = cn_anacalimon_sindarin
+		            name_list_sindarin = cn_anacalimon_sindarin
+			        name_list_nandorin = cn_anacalimon_sindarin
+			        name_list_elven = cn_anacalimon_sindarin
+					
 					name_list_northern_apysaic = cn_anacalimon_haradrim
 				}
 				
@@ -13466,10 +14478,17 @@ e_haradwaith = {
 					
 					color = { 237 115 124 }
 					cultural_names = {
-					name_list_adunaic = cn_anacalimon_adunaic
+					name_list_quenya = cn_anacalimon_sindarin
+		            name_list_sindarin = cn_anacalimon_sindarin
+			        name_list_nandorin = cn_anacalimon_sindarin
+			        name_list_elven = cn_anacalimon_sindarin
 					name_list_dunedain = cn_anacalimon_sindarin
+					name_list_ranger = cn_anacalimon_sindarin
+					
+					name_list_adunaic = cn_anacalimon_adunaic
 					name_list_umbarean = cn_anacalimon_adunaic
 					name_list_mardrukan = cn_anacalimon_adunaic
+					
 					name_list_northern_apysaic = cn_anacalimon_haradrim
 					}
 				}
@@ -13679,7 +14698,14 @@ e_haradwaith = {
 			name_list_adunaic = cn_chelkar_adunaic
 			name_list_umbarean = cn_chelkar_adunaic
 			name_list_mardrukan = cn_chelkar_adunaic
+			
 			name_list_dunedain = cn_chelkar_sindarin
+			name_list_ranger = cn_chelkar_sindarin
+			name_list_quenya = cn_chelkar_sindarin
+		    name_list_sindarin = cn_chelkar_sindarin
+			name_list_nandorin = cn_chelkar_sindarin
+			name_list_elven = cn_chelkar_sindarin
+			
 			name_list_variag = cn_chelkar_khand
 		}
 		capital = c_muzeida
@@ -14014,7 +15040,13 @@ e_haradwaith = {
 			name_list_adunaic = cn_pezarsan_adunaic
 			name_list_umbarean = cn_pezarsan_adunaic
 			name_list_mardrukan = cn_pezarsan_adunaic
+			
 			name_list_dunedain = cn_pezarsan_sindarin
+			name_list_ranger = cn_pezarsan_sindarin
+			name_list_quenya = cn_pezarsan_sindarin
+		    name_list_sindarin = cn_pezarsan_sindarin
+			name_list_nandorin = cn_pezarsan_sindarin
+			name_list_elven = cn_pezarsan_sindarin
 		}			
 		capital = c_hannan
 		
@@ -14024,7 +15056,13 @@ e_haradwaith = {
 				name_list_adunaic = cn_pezarsan_adunaic
 				name_list_umbarean = cn_pezarsan_adunaic
 				name_list_mardrukan = cn_pezarsan_adunaic
+				
 				name_list_dunedain = cn_pezarsan_sindarin
+				name_list_ranger = cn_pezarsan_sindarin
+				name_list_quenya = cn_pezarsan_sindarin
+		        name_list_sindarin = cn_pezarsan_sindarin
+			    name_list_nandorin = cn_pezarsan_sindarin
+			    name_list_elven = cn_pezarsan_sindarin
 			}
 			capital = c_hannan
 			
@@ -14843,7 +15881,13 @@ e_umbar = {
 				name_list_adunaic = cn_tol_uialgaer_BN
 				name_list_umbarean = cn_tol_uialgaer_BN
 				name_list_mardrukan = cn_tol_uialgaer_BN
+				
 				name_list_dunedain = cn_tol_uialgaer_dunedain
+				name_list_ranger = cn_tol_uialgaer_dunedain
+				name_list_quenya = cn_tol_uialgaer_dunedain
+		        name_list_sindarin = cn_tol_uialgaer_dunedain
+			    name_list_nandorin = cn_tol_uialgaer_dunedain
+			    name_list_elven = cn_tol_uialgaer_dunedain
 			}
 				
 			c_tol_uialgaer = {
@@ -14852,7 +15896,13 @@ e_umbar = {
 					name_list_adunaic = cn_tol_uialgaer_BN
 					name_list_umbarean = cn_tol_uialgaer_BN
 					name_list_mardrukan = cn_tol_uialgaer_BN
+					
 					name_list_dunedain = cn_tol_uialgaer_dunedain
+					name_list_ranger = cn_tol_uialgaer_dunedain
+					name_list_quenya = cn_tol_uialgaer_dunedain
+		            name_list_sindarin = cn_tol_uialgaer_dunedain
+			        name_list_nandorin = cn_tol_uialgaer_dunedain
+			        name_list_elven = cn_tol_uialgaer_dunedain
 				}
 				b_tol_uialgaer = {
 					province = 1018
@@ -14860,7 +15910,13 @@ e_umbar = {
 						name_list_adunaic = cn_tol_uialgaer_BN
 						name_list_umbarean = cn_tol_uialgaer_BN
 						name_list_mardrukan = cn_tol_uialgaer_BN
+						
 						name_list_dunedain = cn_tol_uialgaer_dunedain
+						name_list_ranger = cn_tol_uialgaer_dunedain
+						name_list_quenya = cn_tol_uialgaer_dunedain
+		                name_list_sindarin = cn_tol_uialgaer_dunedain
+			            name_list_nandorin = cn_tol_uialgaer_dunedain
+			            name_list_elven = cn_tol_uialgaer_dunedain
 					}
 					color = "yellowish_grey"
 				}
@@ -14932,6 +15988,12 @@ e_umbar = {
 			color = { 101 80 32 }
 			cultural_names = {
 				name_list_dunedain = cn_dusalanduchy
+				name_list_ranger = cn_dusalanduchy
+				name_list_quenya = cn_dusalanduchy
+		        name_list_sindarin = cn_dusalanduchy
+			    name_list_nandorin = cn_dusalanduchy
+			    name_list_elven = cn_dusalanduchy
+						
 				name_list_northern_apysaic = cn_dusalanharadrim
 				name_list_middle_apysaic = cn_dusalanharadrim
 				name_list_tedjin = cn_dusalanharadrim
@@ -14943,6 +16005,12 @@ e_umbar = {
 				color = { 120 83 41 }
 				cultural_names = {
 					name_list_dunedain = cn_dusalandunedain
+					name_list_ranger = cn_dusalandunedain
+					name_list_quenya = cn_dusalandunedain
+		            name_list_sindarin = cn_dusalandunedain
+			        name_list_nandorin = cn_dusalandunedain
+			        name_list_elven = cn_dusalandunedain
+				
 					name_list_adunaic = cn_dusalanadunaic
 					name_list_umbarean = cn_dusalanadunaic
 					name_list_mardrukan = cn_dusalanadunaic
@@ -14951,10 +16019,16 @@ e_umbar = {
 					province = 1450
 					color = { 255 58 225 }
 					cultural_names = {
-						name_list_dunedain = cn_dusalandunedain
-						name_list_adunaic = cn_dusalanadunaic
-						name_list_umbarean = cn_dusalanadunaic
-						name_list_mardrukan = cn_dusalanadunaic
+					name_list_dunedain = cn_dusalandunedain
+					name_list_ranger = cn_dusalandunedain
+					name_list_quenya = cn_dusalandunedain
+		            name_list_sindarin = cn_dusalandunedain
+			        name_list_nandorin = cn_dusalandunedain
+			        name_list_elven = cn_dusalandunedain
+					
+					name_list_adunaic = cn_dusalanadunaic
+					name_list_umbarean = cn_dusalanadunaic
+					name_list_mardrukan = cn_dusalanadunaic
 					}
 				}
 				b_bedanir = {
@@ -15063,7 +16137,7 @@ e_bellakar = {
 
 				}
 
-				b_gimileth = {
+				b_gimilethost = {
 					province = 1468
 
 					color = { 50 88 255 }
@@ -15177,18 +16251,33 @@ e_bellakar = {
 			color = { 62 34 17 }
 			cultural_names = {
 				name_list_dunedain = cn_narik_zadan_quenya
+				name_list_ranger = cn_narik_zadan_quenya
+				name_list_quenya = cn_narik_zadan_quenya
+		        name_list_sindarin = cn_narik_zadan_quenya
+			    name_list_nandorin = cn_narik_zadan_quenya
+			    name_list_elven = cn_narik_zadan_quenya
 			}
 			capital = c_narik_zadan
 
 			c_narik_zadan = {
 				color = { 70 31 1 }
 				cultural_names = {
-					name_list_dunedain = cn_narik_zadan_quenya
+				name_list_dunedain = cn_narik_zadan_quenya
+				name_list_ranger = cn_narik_zadan_quenya
+				name_list_quenya = cn_narik_zadan_quenya
+		        name_list_sindarin = cn_narik_zadan_quenya
+			    name_list_nandorin = cn_narik_zadan_quenya
+			    name_list_elven = cn_narik_zadan_quenya
 				}
 				b_narik_zadan = {
 					province = 1481
 					cultural_names = {
-						name_list_dunedain = cn_narik_zadan_quenya
+				name_list_dunedain = cn_narik_zadan_quenya
+				name_list_ranger = cn_narik_zadan_quenya
+				name_list_quenya = cn_narik_zadan_quenya
+		        name_list_sindarin = cn_narik_zadan_quenya
+			    name_list_nandorin = cn_narik_zadan_quenya
+			    name_list_elven = cn_narik_zadan_quenya
 					}
 					color = { 54 51 135 }
 
@@ -17223,18 +18312,33 @@ e_bellakar = {
 
 			cultural_names = {
 				name_list_dunedain = cn_urezayan_quenya
+				name_list_ranger = cn_urezayan_quenya
+				name_list_quenya = cn_urezayan_quenya
+		        name_list_sindarin = cn_urezayan_quenya
+			    name_list_nandorin = cn_urezayan_quenya
+			    name_list_elven = cn_urezayan_quenya
 			}
 
 			c_urezayan = {
 				color = { 138 1 66 }
 				cultural_names = {
-					name_list_dunedain = cn_urezayan_quenya
+				name_list_dunedain = cn_urezayan_quenya
+				name_list_ranger = cn_urezayan_quenya
+				name_list_quenya = cn_urezayan_quenya
+		        name_list_sindarin = cn_urezayan_quenya
+			    name_list_nandorin = cn_urezayan_quenya
+			    name_list_elven = cn_urezayan_quenya
 				}
 
 				b_urezayan = {
 					province = 1731
 					cultural_names = {
-						name_list_dunedain = cn_urezayan_quenya
+				name_list_dunedain = cn_urezayan_quenya
+				name_list_ranger = cn_urezayan_quenya
+				name_list_quenya = cn_urezayan_quenya
+		        name_list_sindarin = cn_urezayan_quenya
+			    name_list_nandorin = cn_urezayan_quenya
+			    name_list_elven = cn_urezayan_quenya
 					}
 					color = { 54 80 147 }
 
@@ -17771,19 +18875,34 @@ e_bellakar = {
 		capital = c_nilulonde
 		cultural_names = {
 			name_list_dunedain = cn_nilulonde_quenya
+			name_list_ranger = cn_nilulonde_quenya
+			name_list_quenya = cn_nilulonde_quenya
+		    name_list_sindarin = cn_nilulonde_quenya
+			name_list_nandorin = cn_nilulonde_quenya
+			name_list_elven = cn_nilulonde_quenya
 		}
 
 		d_nilulonde = {
 			color = { 155 48 129 }
 			cultural_names = {
-				name_list_dunedain = cn_nilulonde_quenya
+			name_list_dunedain = cn_nilulonde_quenya
+			name_list_ranger = cn_nilulonde_quenya
+		    name_list_quenya = cn_nilulonde_quenya
+		    name_list_sindarin = cn_nilulonde_quenya
+			name_list_nandorin = cn_nilulonde_quenya
+			name_list_elven = cn_nilulonde_quenya
 			}
 			capital = c_nilulonde
 
 			c_nilulonde = {
 				color = { 162 48 164 }
 				cultural_names = {
-					name_list_dunedain = cn_nilulonde_quenya
+			name_list_dunedain = cn_nilulonde_quenya
+			name_list_ranger = cn_nilulonde_quenya
+			name_list_quenya = cn_nilulonde_quenya
+		    name_list_sindarin = cn_nilulonde_quenya
+			name_list_nandorin = cn_nilulonde_quenya
+			name_list_elven = cn_nilulonde_quenya
 				}
 
 				b_nilulonde = {
@@ -17791,7 +18910,12 @@ e_bellakar = {
 
 					color = { 146 40 40 }
 					cultural_names = {
-						name_list_dunedain = cn_nilulonde_quenya
+			name_list_dunedain = cn_nilulonde_quenya
+			name_list_ranger = cn_nilulonde_quenya
+			name_list_quenya = cn_nilulonde_quenya
+		    name_list_sindarin = cn_nilulonde_quenya
+			name_list_nandorin = cn_nilulonde_quenya
+			name_list_elven = cn_nilulonde_quenya
 					}
 				}
 
@@ -25867,7 +26991,2413 @@ e_dune_sea = {
 e_thani_hazad = {
 	color = { 0 0 40 }
 			  
-	capital = c_tariketh_an_kharat
+	capital = c_mispir
+
+		cultural_names = {
+			name_list_dunedain = cn_otsonore
+			name_list_ranger = cn_otsonore
+		}
+    
+    k_zimrathani = {
+		color = { 60 80 180 }
+        
+        capital = c_mispir
+		
+		cultural_names = {
+			name_list_dunedain = cn_mirenore
+			name_list_ranger = cn_mirenore
+		}
+        
+        d_zayanuri = {
+			color = { 114 72 225 }
+            
+            capital = c_mispir
+            
+            c_mispir = {
+				color = { 71 49 233 }
+                
+                b_mispir = {
+                    province = 5317
+                    
+                    color = { 24 178 196 }
+                    
+                }
+                
+                b_tharazarul = {
+                    province = 5318
+                    
+                    color = { 23 134 134 }
+                    
+                }
+                
+                b_meneluri = {
+                    province = 5319
+                    
+                    color = { 146 222 114 }
+                    
+                }
+                
+                b_baladursalan = {
+                    province = 5320
+                    
+                    color = { 101 189 254 }
+                    
+                }
+                
+            }
+            
+            c_baranagath = {
+				color = { 130 86 230 }
+                
+                b_baranagath = {
+                    province = 5321
+                    
+                    color = { 83 151 223 }
+                    
+                }
+                
+                b_kadulantharkan = {
+                    province = 5322
+                    
+                    color = { 203 65 20 }
+                    
+                }
+                
+                b_nuzadun = {
+                    province = 5323
+                    
+                    color = { 207 4 172 }
+                    
+                }
+                
+            }
+            
+            c_arurabad = {
+				color = { 148 66 244 }
+                
+                b_arurabad = {
+                    province = 5324
+                    
+                    color = { 254 81 104 }
+                    
+                }
+                
+                b_akhasroth = {
+                    province = 5325
+                    
+                    color = { 189 36 172 }
+                    
+                }
+                
+                b_ziralaziran = {
+                    province = 5326
+                    
+                    color = { 138 1 143 }
+                    
+                }
+                
+                b_lomanrathun = {
+                    province = 5327
+                    
+                    color = { 29 32 151 }
+                    
+                }
+                
+            }
+            
+            c_mikurideluk = {
+				color = { 138 50 228 }
+                
+                b_mikurideluk = {
+                    province = 5328
+                    
+                    color = { 40 31 7 }
+                    
+                }
+                
+                b_nimrothazar = {
+                    province = 5329
+                    
+                    color = { 179 204 195 }
+                    
+                }
+                
+                b_khabaran = {
+                    province = 5330
+                    
+                    color = { 167 122 25 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_alsarias = {
+			color = { 55 53 173 }
+            
+            capital = c_alsarias
+            
+            c_alsarias = {
+				color = { 48 66 135 }
+                
+                b_alsarias = {
+                    province = 5331
+                    
+                    color = { 235 23 23 }
+                    
+                }
+                
+                b_kamataban = {
+                    province = 5332
+                    
+                    color = { 116 29 139 }
+                    
+                }
+                
+                b_thumidar = {
+                    province = 5333
+                    
+                    color = { 34 226 24 }
+                    
+                }
+                
+                b_durakil = {
+                    province = 5334
+                    
+                    color = { 138 220 143 }
+                    
+                }
+                
+                b_gathilim = {
+                    province = 5354
+                    
+                    color = { 149 206 51 }
+                    
+                }
+                
+            }
+            
+            c_inzilanur = {
+				color = { 89 74 196 }
+                
+                b_inzilanur = {
+                    province = 5335
+                    
+                    color = { 123 41 218 }
+                    
+                }
+                
+                b_zarakil = {
+                    province = 5336
+                    
+                    color = { 5 132 30 }
+                    
+                }
+                
+                b_naruthal = {
+                    province = 5337
+                    
+                    color = { 173 129 157 }
+                    
+                }
+                
+            }
+            
+            c_khoran = {
+				color = { 7 35 155 }
+                
+                b_khoran = {
+                    province = 5338
+                    
+                    color = { 88 248 218 }
+                    
+                }
+                
+                b_hamalun = {
+                    province = 5339
+                    
+                    color = { 122 228 98 }
+                    
+                }
+                
+                b_bashuzim = {
+                    province = 5340
+                    
+                    color = { 133 229 168 }
+                    
+                }
+                
+                b_rukaban = {
+                    province = 5341
+                    
+                    color = { 198 147 99 }
+                    
+                }
+                
+            }
+            
+            c_zairanak = {
+				color = { 46 70 145 }
+                
+                b_zairanak = {
+                    province = 5353
+                    
+                    color = { 61 92 18 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_karasalas = {
+			color = { 1 58 118 }
+            
+            capital = c_karasalas
+            
+            c_karasalas = {
+				color = { 26 51 82 }
+                
+                b_karasalas = {
+                    province = 5342
+                    
+                    color = { 97 20 171 }
+                    
+                }
+                
+                b_tharadun = {
+                    province = 5343
+                    
+                    color = { 141 16 242 }
+                    
+                }
+                
+                b_sulumarzolu = {
+                    province = 5344
+                    
+                    color = { 252 205 28 }
+                    
+                }
+                
+                b_ganathun = {
+                    province = 5345
+                    
+                    color = { 223 25 79 }
+                    
+                }
+                
+            }
+            
+            c_rothkadarest = {
+				color = { 1 44 168 }
+                
+                b_rothkadarest = {
+                    province = 5346
+                    
+                    color = { 122 133 252 }
+                    
+                }
+                
+                b_baluthim = {
+                    province = 5347
+                    
+                    color = { 118 21 38 }
+                    
+                }
+                
+                b_kanathar = {
+                    province = 5348
+                    
+                    color = { 254 192 208 }
+                    
+                }
+                
+                b_thulunak = {
+                    province = 5349
+                    
+                    color = { 236 20 92 }
+                    
+                }
+                
+            }
+            
+            c_kadar_an_ninroth = {
+				color = { 1 41 110 }
+                
+                b_kadar_an_ninroth = {
+                    province = 5350
+                    
+                    color = { 248 111 138 }
+                    
+                }
+                
+                b_khazara = {
+                    province = 5351
+                    
+                    color = { 102 71 159 }
+                    
+                }
+                
+                b_huraban = {
+                    province = 5352
+                    
+                    color = { 162 148 92 }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    k_drel = {
+		color = { 20 100 150 }
+        
+        capital = c_ainglad
+        
+        d_chelayana = {
+			color = { 1 88 137 }
+            
+            capital = c_ainglad
+            
+            c_ainglad = {
+				color = { 1 85 198 }
+                
+                b_ainglad = {
+                    province = 5355
+                    
+                    color = { 88 183 57 }
+                    
+                }
+                
+                b_taurengille = {
+                    province = 5356
+                    
+                    color = { 243 3 197 }
+                    
+                }
+                
+                b_ornekylepe = {
+                    province = 5357
+                    
+                    color = { 104 254 111 }
+                    
+                }
+                
+                b_nenlicuis = {
+                    province = 5358
+                    
+                    color = { 156 163 245 }
+                    
+                }
+                
+            }
+            
+            c_elenka = {
+				color = { 1 88 160 }
+                
+                b_elenka = {
+                    province = 5359
+                    
+                    color = { 148 90 87 }
+                    
+                }
+                
+                b_chemenalata = {
+                    province = 5360
+                    
+                    color = { 17 85 200 }
+                    
+                }
+                
+                b_rembinanya = {
+                    province = 5361
+                    
+                    color = { 242 128 240 }
+                    
+                }
+                
+            }
+            
+            c_ornekara = {
+				color = { 1 82 171 }
+                
+                b_ornekara = {
+                    province = 5362
+                    
+                    color = { 129 188 219 }
+                    
+                }
+                
+                b_galadartaure = {
+                    province = 5363
+                    
+                    color = { 27 214 174 }
+                    
+                }
+                
+            }
+            
+            c_alabgarda = {
+				color = { 1 90 186 }
+                
+                b_alabgarda = {
+                    province = 5364
+                    
+                    color = { 83 35 252 }
+                    
+                }
+                
+                b_thonogarda = {
+                    province = 5365
+                    
+                    color = { 44 111 93 }
+                    
+                }
+                
+                b_magitigondo = {
+                    province = 5366
+                    
+                    color = { 120 90 50 }
+                    
+                }
+                
+                b_tambokas = {
+                    province = 5367
+                    
+                    color = { 40 96 125 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_cuindore = {
+			color = { 1 78 209 }
+            
+            capital = c_omengoren
+            
+            c_omengoren = {
+				color = { 20 99 202 }
+                
+                b_omengoren = {
+                    province = 5368
+                    
+                    color = { 149 185 110 }
+                    
+                }
+                
+                b_pedbara = {
+                    province = 5369
+                    
+                    color = { 33 7 119 }
+                    
+                }
+                
+                b_lawkandore = {
+                    province = 5370
+                    
+                    color = { 68 77 140 }
+                    
+                }
+                
+            }
+            
+            c_cuinen = {
+				color = { 48 90 181 }
+                
+                b_cuinen = {
+                    province = 5371
+                    
+                    color = { 200 236 129 }
+                    
+                }
+                
+                b_laikataw = {
+                    province = 5372
+                    
+                    color = { 152 117 41 }
+                    
+                }
+                
+                b_nyeleka = {
+                    province = 5373
+                    
+                    color = { 208 123 148 }
+                    
+                }
+                
+            }
+            
+            c_galadutor = {
+				color = { 12 65 180 }
+                
+                b_galadutor = {
+                    province = 5374
+                    
+                    color = { 33 136 89 }
+                    
+                }
+                
+                b_turuktalam = {
+                    province = 5375
+                    
+                    color = { 205 34 183 }
+                    
+                }
+                
+                b_arinarat = {
+                    province = 5376
+                    
+                    color = { 58 113 22 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_metkharan = {
+			color = { 46 101 199 }
+            
+            capital = c_mekhrad
+            
+            c_mekhrad = {
+				color = { 31 84 189 }
+                
+                b_kharas_mekhrad = {
+                    province = 5377
+                    
+                    color = { 150 65 12 }
+                    
+                }
+                
+                b_shaloka = {
+                    province = 5378
+                    
+                    color = { 224 78 167 }
+                    
+                }
+                
+                b_likhota = {
+                    province = 5379
+                    
+                    color = { 137 67 110 }
+                    
+                }
+                
+            }
+            
+            c_mitharin = {
+				color = { 1 94 199 }
+                
+                b_kharas_mitharin = {
+                    province = 5380
+                    
+                    color = { 248 3 174 }
+                    
+                }
+                
+                b_obal_mitharmin = {
+                    province = 5381
+                    
+                    color = { 57 188 160 }
+                    
+                }
+                
+                b_kumbosi = {
+                    province = 5382
+                    
+                    color = { 16 209 241 }
+                    
+                }
+                
+            }
+            
+            c_thambara = {
+				color = { 1 86 239 }
+                
+                b_thambara = {
+                    province = 5383
+                    
+                    color = { 177 146 101 }
+                    
+                }
+                
+                b_bajaro = {
+                    province = 5384
+                    
+                    color = { 31 52 31 }
+                    
+                }
+                
+            }
+            
+            c_rukwala = {
+				color = { 1 82 176 }
+                
+                b_rukwala = {
+                    province = 5385
+                    
+                    color = { 53 150 154 }
+                    
+                }
+                
+                b_wajisa = {
+                    province = 5386
+                    
+                    color = { 163 50 120 }
+                    
+                }
+                
+            }
+            
+            c_gidwama = {
+				color = { 65 100 168 }
+                
+                b_gidwama = {
+                    province = 5387
+                    
+                    color = { 197 97 118 }
+                    
+                }
+                
+                b_rafumi = {
+                    province = 5388
+                    
+                    color = { 73 164 140 }
+                    
+                }
+                
+                b_sawida = {
+                    province = 5389
+                    
+                    color = { 244 160 81 }
+                    
+                }
+                
+            }
+            
+            c_lumgira = {
+				color = { 1 108 188 }
+                
+                b_lumgira = {
+                    province = 5390
+                    
+                    color = { 254 224 136 }
+                    
+                }
+                
+                b_mabaro = {
+                    province = 5391
+                    
+                    color = { 237 195 136 }
+                    
+                }
+                
+                b_wamaja = {
+                    province = 5392
+                    
+                    color = { 215 20 70 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_galadartaure = {
+			color = { 58 91 208 }
+            
+            capital = c_delanda
+            
+            c_delanda = {
+				color = { 74 95 221 }
+                
+                b_delanda = {
+                    province = 5393
+                    
+                    color = { 170 205 135 }
+                    
+                }
+                
+                b_arnangur = {
+                    province = 5394
+                    
+                    color = { 36 13 144 }
+                    
+                }
+                
+                b_malbaras = {
+                    province = 5395
+                    
+                    color = { 125 72 65 }
+                    
+                }
+                
+            }
+            
+            c_taw_morna = {
+				color = { 1 87 254 }
+                
+                b_taw_morna = {
+                    province = 5396
+                    
+                    color = { 99 85 236 }
+                    
+                }
+                
+                b_usukway = {
+                    province = 5397
+                    
+                    color = { 46 138 55 }
+                    
+                }
+                
+            }
+            
+            c_paladwath = {
+				color = { 78 105 245 }
+                
+                b_paladwath = {
+                    province = 5398
+                    
+                    color = { 230 183 240 }
+                    
+                }
+                
+                b_malenda = {
+                    province = 5399
+                    
+                    color = { 76 69 228 }
+                    
+                }
+                
+            }
+            
+            c_cuirissin = {
+				color = { 66 96 156 }
+                
+                b_cuirissin = {
+                    province = 5400
+                    
+                    color = { 243 142 34 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_gimileth = {
+			color = { 70 86 109 }
+            
+            capital = c_gimileth
+            
+            c_gimileth = {
+				color = { 47 92 136 }
+                
+                b_gimileth = {
+                    province = 5401
+                    
+                    color = { 105 164 147 }
+                    
+                }
+                
+                b_kharadukal = {
+                    province = 5402
+                    
+                    color = { 118 53 143 }
+                    
+                }
+                
+                b_nimranuth = {
+                    province = 5403
+                    
+                    color = { 123 15 17 }
+                    
+                }
+                
+            }
+            
+            c_ro_mollo = {
+				color = { 86 87 106 }
+                
+                b_ro_mollo = {
+                    province = 5404
+                    
+                    color = { 108 38 67 }
+                    
+                }
+                
+                b_zarukhal = {
+                    province = 5405
+                    
+                    color = { 192 47 14 }
+                    
+                }
+                
+                b_thalabeth = {
+                    province = 5406
+                    
+                    color = { 179 161 100 }
+                    
+                }
+                
+            }
+            
+            c_gulurath = {
+				color = { 40 67 94 }
+                
+                b_gulurath = {
+                    province = 5407
+                    
+                    color = { 140 18 165 }
+                    
+                }
+                
+                b_ezalan = {
+                    province = 5408
+                    
+                    color = { 226 164 77 }
+                    
+                }
+                
+            }
+            
+            c_nimiphurus = {
+				color = { 78 90 105 }
+                
+                b_nimiphurus = {
+                    province = 5409
+                    
+                    color = { 17 231 76 }
+                    
+                }
+                
+                b_ezalanarizar = {
+                    province = 5410
+                    
+                    color = { 193 163 24 }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    k_pel = {
+		color = { 70 50 100 }
+        
+        capital = c_arpel
+        
+        d_pel = {
+			color = { 62 72 127 }
+            
+            capital = c_arpel
+            
+            c_arpel = {
+				color = { 64 68 146 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_hisielonde
+					name_list_ranger = cn_hisielonde
+					name_list_adunaic = cn_hisekhor
+					name_list_umbarean = cn_hisekhor
+					name_list_mardrukan = cn_hisekhor
+					name_list_south_adunaic = cn_hisekhor
+				}
+                
+                b_arpel = {
+                    province = 5411
+					
+					cultural_names = {
+						name_list_dunedain = cn_hisielonde
+						name_list_ranger = cn_hisielonde
+						name_list_adunaic = cn_hisekhor
+						name_list_umbarean = cn_hisekhor
+						name_list_mardrukan = cn_hisekhor
+						name_list_south_adunaic = cn_hisekhor
+					}
+                    
+                    color = { 187 108 79 }
+                    
+                }
+                
+                b_miremba = {
+                    province = 5412
+                    
+                    color = { 237 66 24 }
+                    
+                }
+                
+                b_ashayo = {
+                    province = 5413
+                    
+                    color = { 56 152 94 }
+                    
+                }
+                
+                b_nwamala = {
+                    province = 5414
+                    
+                    color = { 160 194 42 }
+                    
+                }
+                
+            }
+            
+            c_mujua = {
+				color = { 79 79 134 }
+                
+                b_mujua = {
+                    province = 5415
+                    
+                    color = { 153 11 79 }
+                    
+                }
+                
+                b_akwase = {
+                    province = 5416
+                    
+                    color = { 186 81 13 }
+                    
+                }
+                
+                b_jengozi = {
+                    province = 5417
+                    
+                    color = { 232 163 244 }
+                    
+                }
+                
+            }
+            
+            c_kwawiri = {
+				color = { 42 53 159 }
+                
+                b_kwawiri = {
+                    province = 5418
+                    
+                    color = { 37 119 119 }
+                    
+                }
+                
+                b_odunjo = {
+                    province = 5419
+                    
+                    color = { 167 215 145 }
+                    
+                }
+                
+                b_luluma = {
+                    province = 5420
+                    
+                    color = { 48 170 71 }
+                    
+                }
+                
+            }
+            
+            c_omutano = {
+				color = { 65 82 158 }
+                
+                b_omutano = {
+                    province = 5421
+                    
+                    color = { 201 77 223 }
+                    
+                }
+                
+                b_irawo = {
+                    province = 5422
+                    
+                    color = { 106 31 15 }
+                    
+                }
+                
+                b_kibadili = {
+                    province = 5423
+                    
+                    color = { 107 63 55 }
+                    
+                }
+                
+            }
+            
+            c_igiza = {
+				color = { 79 62 160 }
+                
+                b_igiza = {
+                    province = 5424
+                    
+                    color = { 78 42 225 }
+                    
+                }
+                
+                b_iremide = {
+                    province = 5425
+                    
+                    color = { 202 132 131 }
+                    
+                }
+                
+                b_babayemi = {
+                    province = 5426
+                    
+                    color = { 3 155 119 }
+                    
+                }
+                
+            }
+            
+            c_mokuba = {
+				color = { 39 55 90 }
+                
+                b_mokuba = {
+                    province = 5427
+                    
+                    color = { 121 13 220 }
+                    
+                }
+                
+                b_nyota = {
+                    province = 5428
+                    
+                    color = { 13 249 201 }
+                    
+                }
+                
+                b_adunni = {
+                    province = 5429
+                    
+                    color = { 95 9 66 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_oshwari = {
+			color = { 82 25 115 }
+            
+            capital = c_kwazuru
+            
+            c_kwazuru = {
+				color = { 118 1 140 }
+                
+                b_kwazuru = {
+                    province = 5430
+                    
+                    color = { 151 81 203 }
+                    
+                }
+                
+                b_busara = {
+                    province = 5431
+                    
+                    color = { 146 121 142 }
+                    
+                }
+                
+                b_orunmila = {
+                    province = 5432
+                    
+                    color = { 3 160 147 }
+                    
+                }
+                
+            }
+            
+            c_ojua = {
+				color = { 73 44 136 }
+                
+                b_ojua = {
+                    province = 5433
+                    
+                    color = { 253 8 252 }
+                    
+                }
+                
+                b_ilewíde = {
+                    province = 5434
+                    
+                    color = { 116 219 201 }
+                    
+                }
+                
+                b_ayanfe = {
+                    province = 5435
+                    
+                    color = { 232 105 201 }
+                    
+                }
+                
+            }
+            
+            c_bwakuta = {
+				color = { 98 8 128 }
+                
+                b_bwakuta = {
+                    province = 5436
+                    
+                    color = { 66 152 25 }
+                    
+                }
+                
+                b_ifedayo = {
+                    province = 5437
+                    
+                    color = { 118 14 38 }
+                    
+                }
+                
+                b_isimbi = {
+                    province = 5438
+                    
+                    color = { 175 189 194 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_barasi = {
+			color = { 72 21 128 }
+            
+            capital = c_shalala
+            
+            c_shalala = {
+				color = { 108 21 151 }
+                
+                b_shalala = {
+                    province = 5439
+                    
+                    color = { 37 173 97 }
+                    
+                }
+                
+                b_omolara = {
+                    province = 5440
+                    
+                    color = { 45 109 187 }
+                    
+                }
+                
+                b_kijaniro = {
+                    province = 5441
+                    
+                    color = { 38 181 235 }
+                    
+                }
+                
+            }
+            
+            c_kwambiri = {
+				color = { 91 1 134 }
+                
+                b_kwambiri = {
+                    province = 5442
+                    
+                    color = { 203 50 244 }
+                    
+                }
+                
+                b_osogbo = {
+                    province = 5443
+                    
+                    color = { 215 203 197 }
+                    
+                }
+                
+                b_idowu = {
+                    province = 5444
+                    
+                    color = { 48 4 213 }
+                    
+                }
+                
+            }
+            
+            c_sukukita = {
+				color = { 35 1 99 }
+                
+                b_sukukita = {
+                    province = 5445
+                    
+                    color = { 163 203 206 }
+                    
+                }
+                
+                b_mazingira = {
+                    province = 5446
+                    
+                    color = { 5 123 47 }
+                    
+                }
+                
+            }
+            
+            c_arokwanza = {
+				color = { 91 1 178 }
+                
+                b_arokwanza = {
+                    province = 5447
+                    
+                    color = { 164 51 191 }
+                    
+                }
+                
+                b_ileke = {
+                    province = 5448
+                    
+                    color = { 41 232 151 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_shanwo = {
+			color = { 26 45 91 }
+            
+            capital = c_igwanja
+            
+            c_igwanja = {
+				color = { 1 42 118 }
+                
+                b_igwanja = {
+                    province = 5449
+                    
+                    color = { 75 53 209 }
+                    
+                }
+                
+                b_olumirin = {
+                    province = 5450
+                    
+                    color = { 13 244 157 }
+                    
+                }
+                
+                b_mirembe = {
+                    province = 5451
+                    
+                    color = { 108 143 141 }
+                    
+                }
+                
+            }
+            
+            c_majidodo = {
+				color = { 20 26 96 }
+                
+                b_majidodo = {
+                    province = 5452
+                    
+                    color = { 137 50 35 }
+                    
+                }
+                
+                b_ngwafa = {
+                    province = 5453
+                    
+                    color = { 169 29 36 }
+                    
+                }
+                
+                b_adebisi = {
+                    province = 5454
+                    
+                    color = { 166 206 8 }
+                    
+                }
+                
+            }
+            
+            c_obishamba = {
+				color = { 1 28 108 }
+                
+                b_obishamba = {
+                    province = 5455
+                    
+                    color = { 244 135 124 }
+                    
+                }
+                
+                b_maridadi = {
+                    province = 5456
+                    
+                    color = { 64 37 37 }
+                    
+                }
+                
+                b_isimbiro = {
+                    province = 5457
+                    
+                    color = { 228 67 178 }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+	
+	k_gimilthani = {
+		color = { 30 40 168 }
+        
+        capital = c_uruloni
+
+		cultural_names = {
+			name_list_dunedain = cn_elorna
+			name_list_ranger = cn_elorna
+		}
+        
+        d_kor_bawiba = {
+			color = { 38 1 204 }
+            
+            capital = c_uruloni
+            
+            c_uruloni = {
+				color = { 1 9 163 }
+				
+				cultural_names = {
+					name_list_dunedain = cn_analonde
+					name_list_ranger = cn_analonde
+				}
+                
+                b_uruloni = {
+                    province = 5458
+				
+					cultural_names = {
+						name_list_dunedain = cn_analonde
+						name_list_ranger = cn_analonde
+					}
+                    
+                    color = { 97 22 22 }
+                    
+                }
+                
+                b_urulomik = {
+                    province = 5459
+                    
+                    color = { 124 197 50 }
+                    
+                }
+                
+                b_mizamul = {
+                    province = 5460
+                    
+                    color = { 45 167 253 }
+                    
+                }
+                
+                b_durukan = {
+                    province = 5461
+                    
+                    color = { 203 171 248 }
+                    
+                }
+                
+            }
+            
+            c_tol_turgul = {
+				color = { 16 4 145 }
+                
+                b_tol_turgul = {
+                    province = 5462
+                    
+                    color = { 135 75 189 }
+                    
+                }
+                
+            }
+            
+            c_urland = {
+				color = { 1 24 200 }
+                
+                b_urland = {
+                    province = 5463
+                    
+                    color = { 39 162 188 }
+                    
+                }
+                
+                b_izinduthani = {
+                    province = 5464
+                    
+                    color = { 251 139 156 }
+                    
+                }
+                
+                b_buzakam = {
+                    province = 5465
+                    
+                    color = { 223 164 244 }
+                    
+                }
+                
+                b_nakhashan = {
+                    province = 5466
+                    
+                    color = { 99 192 210 }
+                    
+                }
+                
+            }
+            
+            c_khorphazan = {
+				color = { 1 1 185 }
+                
+                b_khorphazan = {
+                    province = 5467
+                    
+                    color = { 196 144 169 }
+                    
+                }
+                
+                b_azrakalab = {
+                    province = 5468
+                    
+                    color = { 170 81 245 }
+                    
+                }
+                
+                b_kibarat = {
+                    province = 5469
+                    
+                    color = { 38 14 239 }
+                    
+                }
+                
+            }
+            
+            c_nimiranthani = {
+				color = { 56 34 159 }
+                
+                b_nimiranthani = {
+                    province = 5470
+                    
+                    color = { 250 222 81 }
+                    
+                }
+                
+                b_zaramuk = {
+                    province = 5471
+                    
+                    color = { 139 242 171 }
+                    
+                }
+                
+                b_khiruzan = {
+                    province = 5472
+                    
+                    color = { 56 90 191 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_mikrazor = {
+			color = { 1 44 147 }
+            
+            capital = c_ninegatan
+            
+            c_ninegatan = {
+				color = { 1 25 111 }
+                
+                b_ninegatan = {
+                    province = 5473
+                    
+                    color = { 174 134 153 }
+                    
+                }
+                
+                b_badurin = {
+                    province = 5474
+                    
+                    color = { 104 213 175 }
+                    
+                }
+                
+                b_kadushan = {
+                    province = 5475
+                    
+                    color = { 37 251 144 }
+                    
+                }
+                
+            }
+            
+            c_belhim = {
+				color = { 1 38 177 }
+                
+                b_belhim = {
+                    province = 5476
+                    
+                    color = { 208 192 101 }
+                    
+                }
+                
+                b_turmakhur = {
+                    province = 5477
+                    
+                    color = { 9 37 251 }
+                    
+                }
+                
+            }
+            
+            c_urgirush = {
+				color = { 1 38 160 }
+                
+                b_urgirush = {
+                    province = 5478
+                    
+                    color = { 163 162 216 }
+                    
+                }
+                
+                b_shakhbal = {
+                    province = 5479
+                    
+                    color = { 109 96 169 }
+                    
+                }
+                
+            }
+            
+            c_zairazor = {
+				color = { 60 47 154 }
+                
+                b_zairazor = {
+                    province = 5480
+                    
+                    color = { 202 196 59 }
+                    
+                }
+                
+                b_duramur = {
+                    province = 5481
+                    
+                    color = { 122 187 169 }
+                    
+                }
+                
+                b_nakhbiran = {
+                    province = 5482
+                    
+                    color = { 198 77 221 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_gimilurush = {
+			color = { 21 42 88 }
+            
+            capital = c_kalabanad
+            
+            c_kalabanad = {
+				color = { 1 15 66 }
+                
+                b_kalabanad = {
+                    province = 5492
+                    
+                    color = { 255 223 174 }
+                    
+                }
+                
+                b_zarulin = {
+                    province = 5493
+                    
+                    color = { 35 88 11 }
+                    
+                }
+                
+                b_khuramat = {
+                    province = 5494
+                    
+                    color = { 189 47 98 }
+                    
+                }
+                
+                b_saibethadan = {
+                    province = 5495
+                    
+                    color = { 75 18 34 }
+                    
+                }
+                
+            }
+            
+            c_nashun = {
+				color = { 44 48 138 }
+                
+                b_nashun = {
+                    province = 5483
+                    
+                    color = { 134 75 6 }
+                    
+                }
+                
+                b_shurakal = {
+                    province = 5484
+                    
+                    color = { 40 252 178 }
+                    
+                }
+                
+                b_zaghul = {
+                    province = 5485
+                    
+                    color = { 229 210 161 }
+                    
+                }
+                
+            }
+            
+            c_gulzur = {
+				color = { 1 38 114 }
+                
+                b_gulzur = {
+                    province = 5486
+                    
+                    color = { 59 147 6 }
+                    
+                }
+                
+                b_azghana = {
+                    province = 5487
+                    
+                    color = { 202 217 35 }
+                    
+                }
+                
+            }
+            
+            c_khasharun = {
+				color = { 1 33 76 }
+                
+                b_khasharun = {
+                    province = 5488
+                    
+                    color = { 228 103 79 }
+                    
+                }
+                
+                b_bethazra = {
+                    province = 5489
+                    
+                    color = { 33 46 32 }
+                    
+                }
+                
+            }
+            
+            c_izmathar = {
+				color = { 5 35 118 }
+                
+                b_izmathar = {
+                    province = 5490
+                    
+                    color = { 186 224 37 }
+                    
+                }
+                
+                b_ishlun = {
+                    province = 5491
+                    
+                    color = { 166 223 205 }
+                    
+                }
+                
+                b_dumaz = {
+                    province = 5496
+                    
+                    color = { 250 127 99 }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+	k_kharadune = {
+		color = { 48 65 103 }
+        
+        capital = c_inzilloni
+		
+		cultural_names = {
+			name_list_dunedain = cn_hyarnumente
+			name_list_ranger = cn_hyarnumente
+		}
+        
+        d_inzilloni = {
+			color = { 49 40 78 }
+            
+            capital = c_inzilloni
+			
+			cultural_names = {
+				name_list_dunedain = cn_lotelonde
+				name_list_ranger = cn_lotelonde
+			}
+            
+            c_inzilloni = {
+				color = { 54 26 75 }
+
+				cultural_names = {
+					name_list_dunedain = cn_lotelonde
+					name_list_ranger = cn_lotelonde
+				}
+                
+                b_inzilloni = {
+                    province = 5497
+					
+					cultural_names = {
+						name_list_dunedain = cn_lotelonde
+						name_list_ranger = cn_lotelonde
+					}
+                    
+                    color = { 150 35 215 }
+                    
+                }
+                
+                b_barunam = {
+                    province = 5498
+                    
+                    color = { 147 118 86 }
+                    
+                }
+                
+                b_dadurin = {
+                    province = 5499
+                    
+                    color = { 159 174 171 }
+                    
+                }
+                
+                b_curdun = {
+                    province = 5500
+                    
+                    color = { 191 138 106 }
+                    
+                }
+                
+            }
+            
+            c_indilzarest = {
+				color = { 39 34 78 }
+                
+                b_indilzarest = {
+                    province = 5501
+                    
+                    color = { 139 38 115 }
+                    
+                }
+                
+                b_karaburuth = {
+                    province = 5502
+                    
+                    color = { 172 210 104 }
+                    
+                }
+                
+                b_enuzan = {
+                    province = 5503
+                    
+                    color = { 19 17 213 }
+                    
+                }
+                
+                b_fulaz = {
+                    province = 5504
+                    
+                    color = { 236 46 98 }
+                    
+                }
+                
+            }
+            
+            c_ziranad = {
+				color = { 66 59 107 }
+                
+                b_ziranad = {
+                    province = 5505
+                    
+                    color = { 98 23 205 }
+                    
+                }
+                
+                b_harukin = {
+                    province = 5506
+                    
+                    color = { 4 218 220 }
+                    
+                }
+                
+                b_izgur = {
+                    province = 5507
+                    
+                    color = { 161 151 80 }
+                    
+                }
+                
+            }
+            
+            c_azrathon = {
+				color = { 69 44 86 }
+                
+                b_azrathon = {
+                    province = 5508
+                    
+                    color = { 214 85 56 }
+                    
+                }
+                
+                b_kurzal = {
+                    province = 5509
+                    
+                    color = { 98 112 31 }
+                    
+                }
+                
+                b_lazrug = {
+                    province = 5510
+                    
+                    color = { 90 95 193 }
+                    
+                }
+                
+            }
+            
+            c_anatharik = {
+				color = { 36 43 94 }
+                
+                b_anatharik = {
+                    province = 5511
+                    
+                    color = { 141 160 240 }
+                    
+                }
+                
+                b_oruman = {
+                    province = 5512
+                    
+                    color = { 224 90 31 }
+                    
+                }
+                
+                b_ruzdul = {
+                    province = 5513
+                    
+                    color = { 127 153 61 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_rotharana = {
+			color = { 90 58 155 }
+            
+            capital = c_rotharana
+			
+			cultural_names = {
+				name_list_south_west_native = cn_rotharana
+				name_list_southern_apysaic = cn_rotharana
+				name_list_nafarati = cn_rotharana
+			}
+            
+            c_rotharana = {
+				color = { 79 44 145 }
+
+				cultural_names = {
+					name_list_south_west_native = cn_rotharana
+					name_list_southern_apysaic = cn_rotharana
+					name_list_nafarati = cn_rotharana
+				}
+                
+                b_rotharana = {
+                    province = 5514
+					
+					cultural_names = {
+						name_list_south_west_native = cn_rotharana
+						name_list_southern_apysaic = cn_rotharana
+						name_list_nafarati = cn_rotharana
+					}
+                    
+                    color = { 139 54 244 }
+                    
+                }
+                
+                b_uzgulin = {
+                    province = 5515
+                    
+                    color = { 25 132 169 }
+                    
+                }
+                
+                b_buranim = {
+                    province = 5516
+                    
+                    color = { 175 220 61 }
+                    
+                }
+                
+            }
+            
+            c_tharonbal = {
+				color = { 103 54 206 }
+                
+                b_tharonbal = {
+                    province = 5517
+                    
+                    color = { 192 235 201 }
+                    
+                }
+                
+                b_enkur = {
+                    province = 5518
+                    
+                    color = { 207 168 147 }
+                    
+                }
+                
+                b_furzan = {
+                    province = 5519
+                    
+                    color = { 227 123 57 }
+                    
+                }
+                
+            }
+            
+            c_azulzani = {
+				color = { 82 75 183 }
+                
+                b_azulzani = {
+                    province = 5520
+                    
+                    color = { 254 123 191 }
+                    
+                }
+                
+                b_minaluri = {
+                    province = 5521
+                    
+                    color = { 121 146 46 }
+                    
+                }
+                
+                b_hazurin = {
+                    province = 5522
+                    
+                    color = { 37 216 175 }
+                    
+                }
+                
+            }
+            
+            c_azlokad = {
+				color = { 109 48 159 }
+                
+                b_azlokad = {
+                    province = 5523
+                    
+                    color = { 154 184 229 }
+                    
+                }
+                
+                b_sazarun = {
+                    province = 5524
+                    
+                    color = { 123 26 173 }
+                    
+                }
+                
+                b_kuzram = {
+                    province = 5525
+                    
+                    color = { 140 95 213 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_azarideth = {
+			color = { 1 47 132 }
+            
+            capital = c_azarideth
+			
+			cultural_names = {
+				name_list_south_west_native = cn_anskaven
+				name_list_southern_apysaic = cn_anskaven
+				name_list_nafarati = cn_anskaven
+			}
+            
+            c_azarideth = {
+				color = { 15 47 76 }
+
+				cultural_names = {
+					name_list_south_west_native = cn_anskaven
+					name_list_southern_apysaic = cn_anskaven
+					name_list_nafarati = cn_anskaven
+				}
+                
+                b_azarideth = {
+                    province = 5526
+					
+                    color = { 94 213 140 }
+
+					cultural_names = {
+						name_list_south_west_native = cn_anskaven
+						name_list_southern_apysaic = cn_anskaven
+						name_list_nafarati = cn_anskaven
+					}
+				}
+			}
+            
+            c_zoluran = {
+				color = { 1 42 165 }
+                
+                b_zoluran = {
+                    province = 5527
+                    
+                    color = { 124 172 236 }
+                    
+                }
+                
+                b_balanur = {
+                    province = 5528
+                    
+                    color = { 243 121 107 }
+                    
+                }
+                
+                b_kivran = {
+                    province = 5529
+                    
+                    color = { 57 223 69 }
+                    
+                }
+                
+            }
+            
+            c_thazlo = {
+				color = { 45 38 134 }
+                
+                b_thazlo = {
+                    province = 5530
+                    
+                    color = { 52 75 121 }
+                    
+                }
+                
+                b_zingur = {
+                    province = 5531
+                    
+                    color = { 167 64 168 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_holzoreth = {
+			color = { 53 62 189 }
+            
+            capital = c_holzoreth
+			
+			cultural_names = {
+				name_list_south_west_native = cn_hammerdal
+				name_list_southern_apysaic = cn_hammerdal
+				name_list_nafarati = cn_hammerdal
+			}
+            
+            c_holzoreth = {
+				color = { 43 56 161 }
+				
+				cultural_names = {
+					name_list_south_west_native = cn_hammerdal
+					name_list_southern_apysaic = cn_hammerdal
+					name_list_nafarati = cn_hammerdal
+				}
+                
+                b_holzoreth = {
+                    province = 5532
+					
+					cultural_names = {
+						name_list_south_west_native = cn_hammerdal
+						name_list_southern_apysaic = cn_hammerdal
+						name_list_nafarati = cn_hammerdal
+					}
+                    
+                    color = { 12 158 126 }
+                    
+                }
+                
+                b_zoluraneth = {
+                    province = 5533
+                    
+                    color = { 241 85 134 }
+                    
+                }
+                
+                b_tharonloz = {
+                    province = 5534
+                    
+                    color = { 8 6 149 }
+                    
+                }
+                
+                b_shuvan = {
+                    province = 5535
+                    
+                    color = { 197 153 94 }
+                    
+                }
+                
+            }
+            
+            c_sazaran = {
+				color = { 67 79 161 }
+                
+                b_sazaran = {
+                    province = 5536
+                    
+                    color = { 134 90 192 }
+                    
+                }
+                
+                b_zhilab = {
+                    province = 5537
+                    
+                    color = { 235 194 83 }
+                    
+                }
+                
+                b_nukhur = {
+                    province = 5538
+                    
+                    color = { 239 134 89 }
+                    
+                }
+                
+            }
+            
+            c_tharkadur = {
+				color = { 71 58 152 }
+                
+                b_tharkadur = {
+                    province = 5539
+                    
+                    color = { 79 1 11 }
+                    
+                }
+                
+                b_lothanth = {
+                    province = 5540
+                    
+                    color = { 135 211 113 }
+                    
+                }
+                
+                b_thakhadar = {
+                    province = 5541
+                    
+                    color = { 55 28 25 }
+                    
+                }
+                
+            }
+            
+            c_azulan = {
+				color = { 1 41 165 }
+                
+                b_azulan = {
+                    province = 5542
+                    
+                    color = { 171 44 8 }
+                    
+                }
+                
+                b_barhanra = {
+                    province = 5543
+                    
+                    color = { 202 184 45 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_azgathani = {
+			color = { 64 74 185 }
+            
+            capital = c_zairazgara
+            
+            c_zairazgara = {
+				color = { 68 75 215 }
+                
+                b_zairazgara = {
+                    province = 5544
+                    
+                    color = { 236 72 37 }
+                    
+                }
+                
+                b_ralorazon = {
+                    province = 5545
+                    
+                    color = { 13 106 223 }
+                    
+                }
+                
+                b_azankadulan = {
+                    province = 5546
+                    
+                    color = { 246 105 21 }
+                    
+                }
+                
+                b_zahiran = {
+                    province = 5547
+                    
+                    color = { 17 128 83 }
+                    
+                }
+                
+            }
+            
+            c_aganarukh = {
+				color = { 74 87 200 }
+                
+                b_aganarukh = {
+                    province = 5548
+                    
+                    color = { 22 198 87 }
+                    
+                }
+                
+                b_lomani = {
+                    province = 5549
+                    
+                    color = { 148 2 235 }
+                    
+                }
+                
+                b_iranthakh = {
+                    province = 5550
+                    
+                    color = { 46 48 245 }
+                    
+                }
+                
+            }
+            
+            c_anaduniakho = {
+				color = { 48 76 151 }
+                
+                b_anaduniakho = {
+                    province = 5551
+                    
+                    color = { 70 235 76 }
+                    
+                }
+                
+                b_sazakhar = {
+                    province = 5552
+                    
+                    color = { 111 252 180 }
+                    
+                }
+                
+                b_balazran = {
+                    province = 5553
+                    
+                    color = { 163 8 60 }
+                    
+                }
+                
+            }
+            
+            c_dolgunai = {
+				color = { 37 83 209 }
+                
+                b_dolgunai = {
+                    province = 5554
+                    
+                    color = { 62 148 77 }
+                    
+                }
+                
+                b_kadiltharon = {
+                    province = 5555
+                    
+                    color = { 247 211 41 }
+                    
+                }
+                
+                b_lozirul = {
+                    province = 5556
+                    
+                    color = { 132 151 186 }
+                    
+                }
+                
+            }
+            
+            c_zayanaglar = {
+				color = { 96 86 197 }
+                
+                b_zayanaglar = {
+                    province = 5557
+                    
+                    color = { 88 169 252 }
+                    
+                }
+                
+                b_thazganbalan = {
+                    province = 5558
+                    
+                    color = { 79 138 138 }
+                    
+                }
+                
+                b_balathzolu = {
+                    province = 5559
+                    
+                    color = { 44 183 52 }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
 			  
 	k_an_balkumagan = {
 		color = { 10 10 40 }
@@ -25875,24 +29405,44 @@ e_thani_hazad = {
 		
 		cultural_names = {
 			name_list_dunedain = cn_anbalukkhor_quenya
+			name_list_ranger = cn_anbalukkhor_quenya
+			name_list_quenya = cn_anbalukkhor_quenya
+		    name_list_sindarin = cn_anbalukkhor_quenya
+			name_list_nandorin = cn_anbalukkhor_quenya
+			name_list_elven = cn_anbalukkhor_quenya
 		}
 
 		d_aruzayan = { # Âruzâyan, land of the Kings of An-Balkumagan
 			color = { 56 1 172 }
 			cultural_names = {
-				name_list_dunedain = cn_aruzayan_quenya
+			name_list_dunedain = cn_aruzayan_quenya
+			name_list_ranger = cn_aruzayan_quenya
+			name_list_quenya = cn_aruzayan_quenya
+		    name_list_sindarin = cn_aruzayan_quenya
+			name_list_nandorin = cn_aruzayan_quenya
+			name_list_elven = cn_aruzayan_quenya
 			}
 			capital = c_tariketh_an_kharat
 								
 			c_tariketh_an_kharat = { # Târikêth an-Kharat, the 'Citadel of the South', seat of the Anballukhori Kings, home to Zadan an-Adûn, the House of the West
 				color = { 1 12 188 }
 				cultural_names = {
-					name_list_dunedain = cn_tariketh_an_kharat_quenya
+			name_list_dunedain = cn_tariketh_an_kharat_quenya
+			name_list_ranger = cn_tariketh_an_kharat_quenya
+			name_list_quenya = cn_tariketh_an_kharat_quenya
+		    name_list_sindarin = cn_tariketh_an_kharat_quenya
+			name_list_nandorin = cn_tariketh_an_kharat_quenya
+			name_list_elven = cn_tariketh_an_kharat_quenya
 				}
 				b_zadan_an_adun = {
 					province = 2493
 					cultural_names = {
-						name_list_dunedain = cn_zadan_an_adun_quenya
+			name_list_dunedain = cn_zadan_an_adun_quenya
+			name_list_ranger = cn_zadan_an_adun_quenya
+			name_list_quenya = cn_zadan_an_adun_quenya
+		    name_list_sindarin = cn_zadan_an_adun_quenya
+			name_list_nandorin = cn_zadan_an_adun_quenya
+			name_list_elven = cn_zadan_an_adun_quenya
 					} 
 					color = { 215 196 46 }
 
@@ -26051,19 +29601,34 @@ e_thani_hazad = {
 		d_urithani = { # Ûrîthâni, the coastal lands of An-Balkumagan - Adunaic equivalent to Anorien
 			color = { 1 47 187 }
 			cultural_names = {
-				name_list_dunedain = cn_kadar_an_kharadune_quenya
+			name_list_dunedain = cn_kadar_an_kharadune_quenya
+			name_list_ranger = cn_kadar_an_kharadune_quenya
+			name_list_quenya = cn_kadar_an_kharadune_quenya
+		    name_list_sindarin = cn_kadar_an_kharadune_quenya
+			name_list_nandorin = cn_kadar_an_kharadune_quenya
+			name_list_elven = cn_kadar_an_kharadune_quenya
 			}				
 			capital = c_adunazain
 										  
 			c_adunazain = { # Adûnazâin 
 				color = { 36 20 229 }
 				cultural_names = {
-					name_list_dunedain = cn_kadar_an_kharadune_quenya
+			name_list_dunedain = cn_kadar_an_kharadune_quenya
+			name_list_ranger = cn_kadar_an_kharadune_quenya
+			name_list_quenya = cn_kadar_an_kharadune_quenya
+		    name_list_sindarin = cn_kadar_an_kharadune_quenya
+			name_list_nandorin = cn_kadar_an_kharadune_quenya
+			name_list_elven = cn_kadar_an_kharadune_quenya
 				}
 				b_kadar_an_kharadun = {
 					province = 2513
 					cultural_names = {
-						name_list_dunedain = cn_kadar_an_kharadune_quenya
+			name_list_dunedain = cn_kadar_an_kharadune_quenya
+			name_list_ranger = cn_kadar_an_kharadune_quenya
+			name_list_quenya = cn_kadar_an_kharadune_quenya
+		    name_list_sindarin = cn_kadar_an_kharadune_quenya
+			name_list_nandorin = cn_kadar_an_kharadune_quenya
+			name_list_elven = cn_kadar_an_kharadune_quenya
 					}		  
 					color = { 208 101 129 }
 												  
@@ -27384,8 +30949,12 @@ e_anduin_vale = {
 					province = 3141
 					color = { 114 172 193 }
 					cultural_names = {
-						name_list_elven = cn_arimalant_northron
-						name_list_dunedain = cn_arimalant_northron
+			name_list_elven = cn_arimalant_northron
+			name_list_dunedain = cn_arimalant_northron
+			name_list_ranger = cn_arimalant_northron
+			name_list_quenya = cn_arimalant_northron
+		    name_list_sindarin = cn_arimalant_northron
+			name_list_nandorin = cn_arimalant_northron
 						
 					}
 				}
@@ -27593,14 +31162,22 @@ e_anduin_vale = {
 			color = { 152 146 45 }
 			capital = c_thorlorien
 			cultural_names = {
-				name_list_elven = cn_thorlorien
-				name_list_dunedain = cn_thorlorien
+			name_list_elven = cn_thorlorien
+			name_list_dunedain = cn_thorlorien
+			name_list_ranger = cn_thorlorien
+			name_list_quenya = cn_thorlorien
+		    name_list_sindarin = cn_thorlorien
+			name_list_nandorin = cn_thorlorien
 			}
 			c_thorlorien = {
 				color = { 137 131 33 }
 				cultural_names = {
-					name_list_elven = cn_thorlorien
-					name_list_dunedain = cn_thorlorien
+			name_list_elven = cn_thorlorien
+			name_list_dunedain = cn_thorlorien
+			name_list_ranger = cn_thorlorien
+			name_list_quenya = cn_thorlorien
+		    name_list_sindarin = cn_thorlorien
+			name_list_nandorin = cn_thorlorien
 				}
 				b_tirnhirion = {
 					province = 760
@@ -27610,6 +31187,10 @@ e_anduin_vale = {
 					cultural_names = {
 						name_list_elven = cn_tirnhirion
 						name_list_dunedain = cn_tirnhirion
+						name_list_ranger = cn_tirnhirion
+						name_list_quenya = cn_tirnhirion
+		                name_list_sindarin = cn_tirnhirion
+			            name_list_nandorin = cn_tirnhirion
 					}
 					
 				}
@@ -28670,9 +32251,13 @@ e_greenwood = {
 		
 		d_nivrim = {
 			color = { 50 166 10 }
-			cultural_names = {
-				name_list_elven = cn_nivrim
+			cultural_names = {		
 				name_list_dunedain = cn_nivrim
+				name_list_ranger = cn_nivrim
+				name_list_quenya = cn_nivrim
+		        name_list_sindarin = cn_nivrim
+			    name_list_nandorin = cn_nivrim
+				name_list_elven = cn_nivrim
 			}			
 			capital = c_girchirion
 
@@ -28750,16 +32335,25 @@ e_greenwood = {
 		d_dundaedelu = {
 			color = { 38 117 1 }
 			cultural_names = {
-				name_list_elven = cn_dundaedelu
 				name_list_dunedain = cn_dundaedelu
+				name_list_ranger = cn_dundaedelu
+				name_list_quenya = cn_dundaedelu
+		        name_list_sindarin = cn_dundaedelu
+			    name_list_nandorin = cn_dundaedelu
+				name_list_elven = cn_dundaedelu
+				
 			}
 			capital = c_taurongobel
 			
 			c_taurongobel = {
 				color = { 68 116 39 }
 				cultural_names = {
-					name_list_elven = cn_taurongobel
-					name_list_dunedain = cn_taurongobel
+				name_list_dunedain = cn_taurongobel
+				name_list_ranger = cn_taurongobel
+				name_list_quenya = cn_taurongobel
+		        name_list_sindarin = cn_taurongobel
+			    name_list_nandorin = cn_taurongobel
+				name_list_elven = cn_taurongobel
 				}
 				
 				b_taurongobel = {
@@ -28767,8 +32361,12 @@ e_greenwood = {
 					
 					color = { 69 129 121 }
 					cultural_names = {
-						name_list_elven = cn_taurongobel
-						name_list_dunedain = cn_taurongobel
+				name_list_dunedain = cn_taurongobel
+				name_list_ranger = cn_taurongobel
+				name_list_quenya = cn_taurongobel
+		        name_list_sindarin = cn_taurongobel
+			    name_list_nandorin = cn_taurongobel
+				name_list_elven = cn_taurongobel
 					}					
 					
 				}
@@ -28792,8 +32390,12 @@ e_greenwood = {
 			c_dunmen_i_naugrim = {
 				color = { 1 124 1 }
 				cultural_names = {
-					name_list_elven = cn_dunmen_i_naugrim
-					name_list_dunedain = cn_dunmen_i_naugrim
+				name_list_dunedain = cn_dunmen_i_naugrim
+				name_list_ranger = cn_dunmen_i_naugrim
+				name_list_quenya = cn_dunmen_i_naugrim
+		        name_list_sindarin = cn_dunmen_i_naugrim
+			    name_list_nandorin = cn_dunmen_i_naugrim
+				name_list_elven = cn_dunmen_i_naugrim
 				}
 				
 				b_dunmen_i_naugrim = {
@@ -28801,8 +32403,12 @@ e_greenwood = {
 					
 					color = { 79 89 24 }
 					cultural_names = {
-						name_list_elven = cn_dunmen_i_naugrim
-						name_list_dunedain = cn_dunmen_i_naugrim
+				name_list_dunedain = cn_dunmen_i_naugrim
+				name_list_ranger = cn_dunmen_i_naugrim
+				name_list_quenya = cn_dunmen_i_naugrim
+		        name_list_sindarin = cn_dunmen_i_naugrim
+			    name_list_nandorin = cn_dunmen_i_naugrim
+				name_list_elven = cn_dunmen_i_naugrim
 					}
 					
 				}
@@ -28819,8 +32425,12 @@ e_greenwood = {
 			c_tauronrad = {
 				color = { 45 129 58 }
 				cultural_names = {
-					name_list_elven = cn_tauronrad
-					name_list_dunedain = cn_tauronrad
+				name_list_dunedain = cn_tauronrad
+				name_list_ranger = cn_tauronrad
+				name_list_quenya = cn_tauronrad
+		        name_list_sindarin = cn_tauronrad
+			    name_list_nandorin = cn_tauronrad
+				name_list_elven = cn_tauronrad
 				}			
 				
 				b_tauronrad = {
@@ -28828,8 +32438,12 @@ e_greenwood = {
 					
 					color = { 143 157 216 }
 					cultural_names = {
-						name_list_elven = cn_tauronrad
-						name_list_dunedain = cn_tauronrad
+				name_list_dunedain = cn_tauronrad
+				name_list_ranger = cn_tauronrad
+				name_list_quenya = cn_tauronrad
+		        name_list_sindarin = cn_tauronrad
+			    name_list_nandorin = cn_tauronrad
+				name_list_elven = cn_tauronrad
 					}				
 					
 				}
@@ -28846,8 +32460,12 @@ e_greenwood = {
 			c_talan_pengron = {
 				color = { 80 119 1 }
 				cultural_names = {
-					name_list_elven = cn_talan_pengron
-					name_list_dunedain = cn_talan_pengron
+				name_list_dunedain = cn_talan_pengron
+				name_list_ranger = cn_talan_pengron
+				name_list_quenya = cn_talan_pengron
+		        name_list_sindarin = cn_talan_pengron
+			    name_list_nandorin = cn_talan_pengron
+				name_list_elven = cn_talan_pengron
 				}				
 				
 				b_talan_pengron = {
@@ -28855,8 +32473,12 @@ e_greenwood = {
 					
 					color = { 155 103 160 }
 					cultural_names = {
-						name_list_elven = cn_talan_pengron
-						name_list_dunedain = cn_talan_pengron
+				name_list_dunedain = cn_talan_pengron
+				name_list_ranger = cn_talan_pengron
+				name_list_quenya = cn_talan_pengron
+		        name_list_sindarin = cn_talan_pengron
+			    name_list_nandorin = cn_talan_pengron
+				name_list_elven = cn_talan_pengron
 					}						
 					
 				}
@@ -28880,8 +32502,12 @@ e_greenwood = {
 			c_cor_tauraglor = {
 				color = { 21 107 38 }
 				cultural_names = {
-					name_list_elven = cn_cor_tauraglor
-					name_list_dunedain = cn_cor_tauraglor
+				name_list_dunedain = cn_cor_tauraglor
+				name_list_ranger = cn_cor_tauraglor
+				name_list_quenya = cn_cor_tauraglor
+		        name_list_sindarin = cn_cor_tauraglor
+			    name_list_nandorin = cn_cor_tauraglor
+				name_list_elven = cn_cor_tauraglor
 				}
 				
 				b_cor_tauraglor = {
@@ -28889,8 +32515,12 @@ e_greenwood = {
 					
 					color = { 133 209 65 }
 					cultural_names = {
-						name_list_elven = cn_cor_tauraglor
-						name_list_dunedain = cn_cor_tauraglor
+				name_list_dunedain = cn_cor_tauraglor
+				name_list_ranger = cn_cor_tauraglor
+				name_list_quenya = cn_cor_tauraglor
+		        name_list_sindarin = cn_cor_tauraglor
+			    name_list_nandorin = cn_cor_tauraglor
+				name_list_elven = cn_cor_tauraglor
 					}
 					
 				}
@@ -28916,16 +32546,24 @@ e_greenwood = {
 		d_angaladh_rhunen = {
 			color = { 1 125 13 }
 			cultural_names = {
-				name_list_elven = cn_angaladh_rhunen
 				name_list_dunedain = cn_angaladh_rhunen
+				name_list_ranger = cn_angaladh_rhunen
+				name_list_quenya = cn_angaladh_rhunen
+		        name_list_sindarin = cn_angaladh_rhunen
+			    name_list_nandorin = cn_angaladh_rhunen
+				name_list_elven = cn_angaladh_rhunen
 			}
 			capital = c_eryn_aelin
 			
 			c_eryn_aelin = {
 				color = { 58 124 1 }
 				cultural_names = {
-					name_list_elven = cn_eryn_aelin
-					name_list_dunedain = cn_eryn_aelin
+				name_list_dunedain = cn_eryn_aelin
+				name_list_ranger = cn_eryn_aelin
+				name_list_quenya = cn_eryn_aelin
+		        name_list_sindarin = cn_eryn_aelin
+			    name_list_nandorin = cn_eryn_aelin
+				name_list_elven = cn_eryn_aelin
 				}
 				
 				b_eryn_aelin = {
@@ -28933,8 +32571,12 @@ e_greenwood = {
 					
 					color = { 144 167 193 }
 					cultural_names = {
-						name_list_elven = cn_eryn_aelin
-						name_list_dunedain = cn_eryn_aelin
+				name_list_dunedain = cn_eryn_aelin
+				name_list_ranger = cn_eryn_aelin
+				name_list_quenya = cn_eryn_aelin
+		        name_list_sindarin = cn_eryn_aelin
+			    name_list_nandorin = cn_eryn_aelin
+				name_list_elven = cn_eryn_aelin
 					}
 					
 				}
@@ -28958,8 +32600,12 @@ e_greenwood = {
 			c_minas_thoron = {
 				color = { 1 128 1 }
 				cultural_names = {
-					name_list_elven = cn_minas_thoron
-					name_list_dunedain = cn_minas_thoron
+				name_list_dunedain = cn_minas_thoron
+				name_list_ranger = cn_minas_thoron
+				name_list_quenya = cn_minas_thoron
+		        name_list_sindarin = cn_minas_thoron
+			    name_list_nandorin = cn_minas_thoron
+				name_list_elven = cn_minas_thoron
 				}
 				
 				b_minas_thoron = {
@@ -28967,8 +32613,12 @@ e_greenwood = {
 					
 					color = { 133 211 127 }
 					cultural_names = {
-						name_list_elven = cn_minas_thoron
-						name_list_dunedain = cn_minas_thoron
+				name_list_dunedain = cn_minas_thoron
+				name_list_ranger = cn_minas_thoron
+				name_list_quenya = cn_minas_thoron
+		        name_list_sindarin = cn_minas_thoron
+			    name_list_nandorin = cn_minas_thoron
+				name_list_elven = cn_minas_thoron
 					}			
 					
 				}
@@ -29011,8 +32661,12 @@ e_greenwood = {
 			c_gond_bangath = {
 				color = { 76 130 35 }
 				cultural_names = {
-					name_list_elven = cn_gond_bangath
-					name_list_dunedain = cn_gond_bangath
+				name_list_dunedain = cn_gond_bangath
+				name_list_ranger = cn_gond_bangath
+				name_list_quenya = cn_gond_bangath
+		        name_list_sindarin = cn_gond_bangath
+			    name_list_nandorin = cn_gond_bangath
+				name_list_elven = cn_gond_bangath
 				}			
 				
 				b_gond_bangath = {
@@ -29020,8 +32674,12 @@ e_greenwood = {
 					
 					color = { 34 190 103 }
 					cultural_names = {
-						name_list_elven = cn_gond_bangath
-						name_list_dunedain = cn_gond_bangath
+				name_list_dunedain = cn_gond_bangath
+				name_list_ranger = cn_gond_bangath
+				name_list_quenya = cn_gond_bangath
+		        name_list_sindarin = cn_gond_bangath
+			    name_list_nandorin = cn_gond_bangath
+				name_list_elven = cn_gond_bangath
 					}						
 					
 				}
@@ -29047,16 +32705,24 @@ e_greenwood = {
 		d_men_i_naugrim = {
 			color = { 73 112 1 }
 			cultural_names = {
-				name_list_elven = cn_men_i_naugrim
 				name_list_dunedain = cn_men_i_naugrim
+				name_list_ranger = cn_men_i_naugrim
+				name_list_quenya = cn_men_i_naugrim
+		        name_list_sindarin = cn_men_i_naugrim
+			    name_list_nandorin = cn_men_i_naugrim
+				name_list_elven = cn_men_i_naugrim
 			}			
 			capital = c_senn_i_naugrim
 			
 			c_senn_i_naugrim = {
 				color = { 70 123 45 }
 				cultural_names = {
-					name_list_elven = cn_senn_i_naugrim
-					name_list_dunedain = cn_senn_i_naugrim
+				name_list_dunedain = cn_senn_i_naugrim
+				name_list_ranger = cn_senn_i_naugrim
+				name_list_quenya = cn_senn_i_naugrim
+		        name_list_sindarin = cn_senn_i_naugrim
+			    name_list_nandorin = cn_senn_i_naugrim
+				name_list_elven = cn_senn_i_naugrim
 				}				
 				
 				b_ost_ilmaryen = {
@@ -29071,8 +32737,12 @@ e_greenwood = {
 					
 					color = { 50 156 63 }
 					cultural_names = {
-						name_list_elven = cn_senn_i_naugrim
-						name_list_dunedain = cn_senn_i_naugrim
+				name_list_dunedain = cn_senn_i_naugrim
+				name_list_ranger = cn_senn_i_naugrim
+				name_list_quenya = cn_senn_i_naugrim
+		        name_list_sindarin = cn_senn_i_naugrim
+			    name_list_nandorin = cn_senn_i_naugrim
+				name_list_elven = cn_senn_i_naugrim
 					}					
 				}
 				
@@ -29088,8 +32758,12 @@ e_greenwood = {
 			c_medelarnis = {
 				color = { 48 98 17 }
 				cultural_names = {
-					name_list_elven = cn_medelarnis
-					name_list_dunedain = cn_medelarnis
+				name_list_dunedain = cn_medelarnis
+				name_list_ranger = cn_medelarnis
+				name_list_quenya = cn_medelarnis
+		        name_list_sindarin = cn_medelarnis
+			    name_list_nandorin = cn_medelarnis
+				name_list_elven = cn_medelarnis
 				}			
 				
 				b_medelarnis = {
@@ -29097,8 +32771,12 @@ e_greenwood = {
 					
 					color = { 238 94 152 }
 					cultural_names = {
-						name_list_elven = cn_medelarnis
-						name_list_dunedain = cn_medelarnis
+				name_list_dunedain = cn_medelarnis
+				name_list_ranger = cn_medelarnis
+				name_list_quenya = cn_medelarnis
+		        name_list_sindarin = cn_medelarnis
+			    name_list_nandorin = cn_medelarnis
+				name_list_elven = cn_medelarnis
 					}	
 					
 				}
@@ -29115,8 +32793,12 @@ e_greenwood = {
 			c_rhumen_i_naugrim = {
 				color = { 29 114 1 }
 				cultural_names = {
-					name_list_elven = cn_rhumen_i_naugrim
-					name_list_dunedain = cn_rhumen_i_naugrim
+				name_list_dunedain = cn_rhumen_i_naugrim
+				name_list_ranger = cn_rhumen_i_naugrim
+				name_list_quenya = cn_rhumen_i_naugrim
+		        name_list_sindarin = cn_rhumen_i_naugrim
+			    name_list_nandorin = cn_rhumen_i_naugrim
+				name_list_elven = cn_rhumen_i_naugrim
 				}			
 				
 				b_rhumen_i_naugrim = {
@@ -29124,8 +32806,12 @@ e_greenwood = {
 					
 					color = { 126 166 193 }
 					cultural_names = {
-						name_list_elven = cn_rhumen_i_naugrim
-						name_list_dunedain = cn_rhumen_i_naugrim
+				name_list_dunedain = cn_rhumen_i_naugrim
+				name_list_ranger = cn_rhumen_i_naugrim
+				name_list_quenya = cn_rhumen_i_naugrim
+		        name_list_sindarin = cn_rhumen_i_naugrim
+			    name_list_nandorin = cn_rhumen_i_naugrim
+				name_list_elven = cn_rhumen_i_naugrim
 					}				
 					
 				}
@@ -29142,16 +32828,24 @@ e_greenwood = {
 			c_enedhmen_i_naugrim = {
 				color = { 83 99 40 }
 				cultural_names = {
-					name_list_elven = cn_enedhmen_i_naugrim
-					name_list_dunedain = cn_enedhmen_i_naugrim
+				name_list_dunedain = cn_enedhmen_i_naugrim
+				name_list_ranger = cn_enedhmen_i_naugrim
+				name_list_quenya = cn_enedhmen_i_naugrim
+		        name_list_sindarin = cn_enedhmen_i_naugrim
+			    name_list_nandorin = cn_enedhmen_i_naugrim
+				name_list_elven = cn_enedhmen_i_naugrim
 				}
 				
 				b_enedhmen_i_naugrim = {
 					province = 3327
 					color = { 37 154 158 }
 					cultural_names = {
-						name_list_elven = cn_enedhmen_i_naugrim
-						name_list_dunedain = cn_enedhmen_i_naugrim
+				name_list_dunedain = cn_enedhmen_i_naugrim
+				name_list_ranger = cn_enedhmen_i_naugrim
+				name_list_quenya = cn_enedhmen_i_naugrim
+		        name_list_sindarin = cn_enedhmen_i_naugrim
+			    name_list_nandorin = cn_enedhmen_i_naugrim
+				name_list_elven = cn_enedhmen_i_naugrim
 					}
 					
 				}
@@ -29192,8 +32886,12 @@ e_greenwood = {
 			c_nidurn = {
 				color = { 90 111 53 }
 				cultural_names = {
-					name_list_elven = cn_nidurn
-					name_list_dunedain = cn_nidurn
+				name_list_dunedain = cn_nidurn
+				name_list_ranger = cn_nidurn
+				name_list_quenya = cn_nidurn
+		        name_list_sindarin = cn_nidurn
+			    name_list_nandorin = cn_nidurn
+				name_list_elven = cn_nidurn
 				}
 				
 				b_nidurn = {
@@ -29201,8 +32899,12 @@ e_greenwood = {
 					
 					color = { 221 178 62 }
 					cultural_names = {
-						name_list_elven = cn_nidurn
-						name_list_dunedain = cn_nidurn
+				name_list_dunedain = cn_nidurn
+				name_list_ranger = cn_nidurn
+				name_list_quenya = cn_nidurn
+		        name_list_sindarin = cn_nidurn
+			    name_list_nandorin = cn_nidurn
+				name_list_elven = cn_nidurn
 					}
 					
 				}
@@ -29226,8 +32928,12 @@ e_greenwood = {
 			c_carag_thoroth = {
 				color = { 90 107 1 }
 				cultural_names = {
-					name_list_elven = cn_carag_thoroth
-					name_list_dunedain = cn_carag_thoroth
+				name_list_dunedain = cn_carag_thoroth
+				name_list_ranger = cn_carag_thoroth
+				name_list_quenya = cn_carag_thoroth
+		        name_list_sindarin = cn_carag_thoroth
+			    name_list_nandorin = cn_carag_thoroth
+				name_list_elven = cn_carag_thoroth
 				}
 				
 				b_carag_thoroth = {
@@ -29235,8 +32941,12 @@ e_greenwood = {
 					
 					color = { 182 147 41 }
 					cultural_names = {
-						name_list_elven = cn_carag_thoroth
-						name_list_dunedain = cn_carag_thoroth
+				name_list_dunedain = cn_carag_thoroth
+				name_list_ranger = cn_carag_thoroth
+				name_list_quenya = cn_carag_thoroth
+		        name_list_sindarin = cn_carag_thoroth
+			    name_list_nandorin = cn_carag_thoroth
+				name_list_elven = cn_carag_thoroth
 					}
 					
 				}
@@ -29457,8 +33167,12 @@ e_greenwood = {
 		d_gwath_anglennol = {
 			color = { 1 44 1 }
 			cultural_names = {
-				name_list_elven = cn_gwath_anglennol
 				name_list_dunedain = cn_gwath_anglennol
+				name_list_ranger = cn_gwath_anglennol
+				name_list_quenya = cn_gwath_anglennol
+		        name_list_sindarin = cn_gwath_anglennol
+			    name_list_nandorin = cn_gwath_anglennol
+				name_list_elven = cn_gwath_anglennol
 			}			
 			capital = c_gwathrad
 			
@@ -29491,8 +33205,12 @@ e_greenwood = {
 			c_thon_gwaeren = {
 				color = { 29 59 10 }
 				cultural_names = {
-					name_list_elven = cn_thon_gwaeren
-					name_list_dunedain = cn_thon_gwaeren
+				name_list_dunedain = cn_thon_gwaeren
+				name_list_ranger = cn_thon_gwaeren
+				name_list_quenya = cn_thon_gwaeren
+		        name_list_sindarin = cn_thon_gwaeren
+			    name_list_nandorin = cn_thon_gwaeren
+				name_list_elven = cn_thon_gwaeren
 				}
 				
 				b_thon_gwaeren = {
@@ -29500,8 +33218,12 @@ e_greenwood = {
 					
 					color = { 19 119 134 }
 					cultural_names = {
-						name_list_elven = cn_thon_gwaeren
-						name_list_dunedain = cn_thon_gwaeren
+				name_list_dunedain = cn_thon_gwaeren
+				name_list_ranger = cn_thon_gwaeren
+				name_list_quenya = cn_thon_gwaeren
+		        name_list_sindarin = cn_thon_gwaeren
+			    name_list_nandorin = cn_thon_gwaeren
+				name_list_elven = cn_thon_gwaeren
 					}
 				}
 				
@@ -29552,8 +33274,12 @@ e_greenwood = {
 		d_taur_e_ndaedlos = {
 			color = { 1 68 1 }
 			cultural_names = {
-				name_list_elven = cn_taur_e_ndaedlos
 				name_list_dunedain = cn_taur_e_ndaedlos
+				name_list_ranger = cn_taur_e_ndaedlos
+				name_list_quenya = cn_taur_e_ndaedlos
+		        name_list_sindarin = cn_taur_e_ndaedlos
+			    name_list_nandorin = cn_taur_e_ndaedlos
+				name_list_elven = cn_taur_e_ndaedlos
 			}			
 			capital = c_galbrethin
 			
@@ -29586,8 +33312,12 @@ e_greenwood = {
 			c_barad_dolni = {
 				color = { 38 79 37 }
 				cultural_names = {
-					name_list_elven = cn_barad_dolni
-					name_list_dunedain = cn_barad_dolni
+				name_list_dunedain = cn_barad_dolni
+				name_list_ranger = cn_barad_dolni
+				name_list_quenya = cn_barad_dolni
+		        name_list_sindarin = cn_barad_dolni
+			    name_list_nandorin = cn_barad_dolni
+				name_list_elven = cn_barad_dolni
 				}			
 				
 				b_barad_dolni = {
@@ -29595,8 +33325,12 @@ e_greenwood = {
 					
 					color = { 35 154 198 }
 					cultural_names = {
-						name_list_elven = cn_barad_dolni
-						name_list_dunedain = cn_barad_dolni
+				name_list_dunedain = cn_barad_dolni
+				name_list_ranger = cn_barad_dolni
+				name_list_quenya = cn_barad_dolni
+		        name_list_sindarin = cn_barad_dolni
+			    name_list_nandorin = cn_barad_dolni
+				name_list_elven = cn_barad_dolni
 					}				
 					
 				}
@@ -31844,7 +35578,13 @@ e_rhovanion = {
 		cultural_names = {
 			name_list_ioriag = cn_south_rhovanion_easterling
 			name_list_igath = cn_south_rhovanion_easterling
+			
 			name_list_dunedain = cn_south_rhovanion_gondorian
+			name_list_ranger = cn_south_rhovanion_gondorian
+			name_list_quenya = cn_south_rhovanion_gondorian
+		    name_list_sindarin = cn_south_rhovanion_gondorian
+			name_list_nandorin = cn_south_rhovanion_gondorian
+			name_list_elven = cn_south_rhovanion_gondorian
 		}
 		
 		capital = c_thoron
@@ -32468,18 +36208,33 @@ e_rhovanion = {
 					province = 609
 					
 					color = { 227 13 91 }
+				cultural_names = {
+			    name_list_orc = cn_b_tirith_nindor_orc
+			    name_list_mountain_orc = cn_b_tirith_nindor_orc
+			    name_list_goblin = cn_b_tirith_nindor_orc
+		        }	
 				}
 				
 				b_lag_dagur = {
 					province = 608
 					
 					color = { 162 60 105 }
+				cultural_names = {
+			    name_list_orc = cn_b_lag_dagur_orc
+			    name_list_mountain_orc = cn_b_lag_dagur_orc
+			    name_list_goblin = cn_b_lag_dagur_orc
+		        }	
 				}
 				
 				b_tol_dagor = {
 					province = 610
 					
 					color = { 64 24 15 }
+				cultural_names = {
+			    name_list_orc = cn_b_tol_dagor_orc
+			    name_list_mountain_orc = cn_b_tol_dagor_orc
+			    name_list_goblin = cn_b_tol_dagor_orc
+		        }
 				}
 				
 			}
@@ -40503,6 +44258,8 @@ e_misty_mountains = {
 	
 	cultural_names = {
 		name_list_dwarven = cn_khazad_dum_dwarven
+		name_list_firebeards = cn_khazad_dum_dwarven
+		name_list_blacklocks = cn_khazad_dum_dwarven
 	}
 
 	capital = c_durins_hall
@@ -40511,7 +44268,10 @@ e_misty_mountains = {
 		color = { 80 80 100 }
 
 		cultural_names = {
-			name_list_dwarven = cn_khazad_dum_dwarven
+		name_list_dwarven = cn_khazad_dum_dwarven
+		name_list_firebeards = cn_khazad_dum_dwarven
+		name_list_blacklocks = cn_khazad_dum_dwarven
+			
 		}
 		
 		capital = c_durins_hall
@@ -40521,6 +44281,8 @@ e_misty_mountains = {
 
 			cultural_names = {
 				name_list_dwarven = cn_zirakzigil_dwarven
+		        name_list_firebeards = cn_zirakzigil_dwarven
+		        name_list_blacklocks = cn_zirakzigil_dwarven
 			}
 			
 			capital = c_durins_hall
@@ -40743,6 +44505,8 @@ e_misty_mountains = {
 
 			cultural_names = {
 				name_list_dwarven = cn_barazinbar_dwarven
+		        name_list_firebeards = cn_barazinbar_dwarven
+		        name_list_blacklocks = cn_barazinbar_dwarven
 			}
 			
 			c_etharul_nula = {
@@ -40981,6 +44745,8 @@ e_misty_mountains = {
 
 			cultural_names = {
 				name_list_dwarven = cn_bundushathur_dwarven
+		        name_list_firebeards = cn_bundushathur_dwarven
+		        name_list_blacklocks = cn_bundushathur_dwarven
 			}
 			
 			c_durins_way = {
@@ -41494,6 +45260,8 @@ e_misty_mountains = {
 
 		cultural_names = {
 			name_list_dwarven = cn_gundubad_dwarven
+		    name_list_firebeards = cn_gundubad_dwarven
+		    name_list_blacklocks = cn_gundubad_dwarven
 		}
 		
 		d_gundabad = {
@@ -41513,6 +45281,8 @@ e_misty_mountains = {
 
 				cultural_names = {
 					name_list_dwarven = cn_mattugard_dwarven
+		            name_list_firebeards = cn_mattugard_dwarven
+		            name_list_blacklocks = cn_mattugard_dwarven
 				}
 				
 				b_mattugard = {
@@ -41818,7 +45588,9 @@ e_misty_mountains = {
 		cultural_names = {
 			name_list_orc = d_orc_town
 			name_list_mountain_orc = d_orc_town
+			
 			name_list_goblin = d_goblin_town
+			
 			name_list_dwarven = d_dwarven_goblin_town
 			name_list_blacklocks = d_dwarven_goblin_town
 			name_list_firebeards = d_dwarven_goblin_town
@@ -41917,6 +45689,7 @@ e_misty_mountains = {
 			cultural_names = {
 				name_list_orc = d_orc_town
 				name_list_mountain_orc = d_orc_town
+				
 				name_list_dwarven = d_dwarven_goblin_town
 				name_list_blacklocks = d_dwarven_goblin_town
 				name_list_firebeards = d_dwarven_goblin_town
@@ -41928,6 +45701,7 @@ e_misty_mountains = {
 				cultural_names = {
 					name_list_orc = d_orc_town
 					name_list_mountain_orc = d_orc_town
+					
 					name_list_dwarven = d_dwarven_goblin_town
 					name_list_blacklocks = d_dwarven_goblin_town
 					name_list_firebeards = d_dwarven_goblin_town
@@ -41941,6 +45715,7 @@ e_misty_mountains = {
 					cultural_names = {
 						name_list_orc = d_orc_town
 						name_list_mountain_orc = d_orc_town
+						
 						name_list_dwarven = d_dwarven_goblin_town
 						name_list_blacklocks = d_dwarven_goblin_town
 						name_list_firebeards = d_dwarven_goblin_town
@@ -43657,5 +47432,160 @@ e_yellow_mountains = {
 			}
 		}
 	}
+
+	k_blackflame = {
+		color = { 250 120 60 }
+        
+        capital = c_mablad_dum
+        
+        d_kurdurasi = {
+			color = { 201 95 34 }
+            
+            capital = c_mablad_dum
+            
+            c_mablad_dum = {
+				color = { 237 60 1 }
+                
+                b_mablad_dum = {
+                    province = 5560
+                    
+                    color = { 140 28 21 }
+                    
+                }
+                
+            }
+            
+            c_khebabarsa = {
+				color = { 217 87 1 }
+                
+                b_khebabarsa = {
+                    province = 5561
+                    
+                    color = { 101 175 212 }
+                    
+                }
+                
+            }
+            
+            c_nudmekhem = {
+				color = { 224 95 50 }
+                
+                b_nudmekhem = {
+                    province = 5562
+                    
+                    color = { 196 36 10 }
+                    
+                }
+                
+            }
+            
+            c_buzraminam = {
+				color = { 225 78 1 }
+                
+                b_buzraminam = {
+                    province = 5563
+                    
+                    color = { 9 52 10 }
+                    
+                }
+                
+            }
+            
+            c_zelemekhem = {
+				color = { 205 74 35 }
+                
+                b_zelemekhem = {
+                    province = 5564
+                    
+                    color = { 158 208 90 }
+                    
+                }
+                
+            }
+            
+            c_hailin = {
+				color = { 181 104 43 }
+                
+                b_ze_nurtazhar = {
+                    province = 5569
+                    
+                    color = { 4 178 166 }
+                    
+                }
+                
+                b_nuttashmur = {
+                    province = 5570
+                    
+                    color = { 81 160 142 }
+                    
+                }
+                
+                b_lakhdamanar = {
+                    province = 5565
+                    
+                    color = { 94 31 206 }
+                    
+                }
+                
+            }
+            
+        }
+        
+        d_naradumu = {
+			color = { 226 115 94 }
+            
+            capital = c_azaghazahar
+            
+            c_azaghazahar = {
+				color = { 254 126 84 }
+                
+                b_azaghazahar = {
+                    province = 5568
+                    
+                    color = { 215 43 57 }
+                    
+                }
+                
+            }
+            
+            c_amdaruadad = {
+				color = { 236 132 103 }
+                
+                b_amdaruadad = {
+                    province = 5566
+                    
+                    color = { 125 90 109 }
+                    
+                }
+                
+            }
+            
+            c_libokhafush = {
+				color = { 254 111 98 }
+                
+                b_libokhafush = {
+                    province = 5567
+                    
+                    color = { 194 251 125 }
+                    
+                }
+                
+            }
+            
+            c_lubrugarith = {
+				color = { 248 134 124 }
+                
+                b_lubrugarith = {
+                    province = 5571
+                    
+                    color = { 99 17 138 }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
 }
 

@@ -679,6 +679,15 @@ e_haradwaith = {
 	}
 }
 
+e_harad = {
+	item = {
+		trigger = { coa_switch_to_nadimanye_trigger = yes}
+		coat_of_arms = e_good_harad
+	}
+}
+
+
+
 d_imladris = {
 	item = {
 		trigger = { coa_switch_to_gobbo_trigger = yes}
@@ -992,6 +1001,13 @@ k_rhudaur = {
 	}		
 }
 
+d_nan_turath = {
+	item = {
+		trigger = {coa_switch_to_native_trigger = yes}
+		coat_of_arms = d_nan_turath_bree
+	}
+}
+
 #Wholesome#
 k_angmar = {
 	item = {
@@ -1012,5 +1028,13 @@ k_forochel = {
 	item = {
 		trigger = {coa_switch_to_dunedain_trigger = yes}
 		coat_of_arms = k_dunedain_forochel
+	}
+}
+
+#Thani-Hazad
+e_thani_hazad = {
+	item = {
+		trigger = { coa_switch_to_elf_trigger =  yes }
+		coat_of_arms = e_thani_hazad_cuind
 	}
 }

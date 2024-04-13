@@ -3364,8 +3364,9 @@ lineofcastamir48 = { # Kamal, bastard grandson of Castamir, lived in Haruzan
 	father = lineofcastamir49
 	mother = lineofcastamir44
 
-	trait = blood_of_numenor_2
+	
 	trait = bastard_founder
+    trait = blood_of_numenor_6
 
 	5640.1.1 = {
 		birth = yes
@@ -3389,7 +3390,7 @@ lineofcassimir2 = { # Kamal's lowborn wife
 	religion = faith_haruze
 	culture = haruze
 
-	# trait = blood_of_numenor_2 #nope
+	#  #nope
 	#trait = bastard
 
 	5783.1.1 = {
@@ -3413,9 +3414,9 @@ lineofcassimir1 = { # Adûm, first son of Kamal, didnt accomplish anything
 	father = lineofcastamir48
 	mother = lineofcassimir2
 
-	trait = blood_of_numenor_2
-	trait = mariner_1
 	
+	trait = lifestyle_mariner
+	trait = blood_of_numenor_5
 
 	5817.1.1 = {
 		birth = yes
@@ -3437,8 +3438,8 @@ lineofcassimir3 = { # Second son of Kamal, became close advisor of the King of H
 
 	father = lineofcastamir48
 	mother = lineofcassimir2
-
-	trait = blood_of_numenor_2
+    trait = blood_of_numenor_5
+	
 
 	5822.1.1 = {
 		birth = yes
@@ -3486,8 +3487,8 @@ lineofcassimir40 = {
 
 	father = lineofcassimir3
 	mother = lineofcassimir4
-
-	trait = blood_of_numenor_2
+    trait = blood_of_numenor_5
+	
 
 	5898.1.1 = {
 		birth = yes
@@ -3505,8 +3506,8 @@ lineofcassimir41 = { # Kamal, Old founder of Kamalakä dynasty
 	culture = haruze
 
 	father = lineofcassimir40
-
-	trait = blood_of_numenor_2
+    trait = blood_of_numenor_4
+	
 
 	5973.1.1 = {
 		birth = yes
@@ -3525,8 +3526,8 @@ lineofcassimir5 = {
 	culture = haruze
 
 	father = lineofcassimir1
-
-	trait = blood_of_numenor_2
+    trait = blood_of_numenor_4
+	
 
 	5894.1.1 = {
 		birth = yes
@@ -3548,9 +3549,9 @@ lineofcassimir6 = {
 
 	father = lineofcassimir5
 
-	trait = blood_of_numenor_2
-	trait = mariner_1
 	
+	trait = lifestyle_mariner
+	trait = blood_of_numenor_4
 
 	5981.1.1 = {
 		birth = yes
@@ -3595,8 +3596,8 @@ lineofcassimir8 = {
 	father = lineofcassimir6
 	mother = lineofcassimir7
 
-	trait = blood_of_numenor_2
-
+	
+    trait = blood_of_numenor_4
 	6069.1.1 = {
 		birth = yes
 	}
@@ -3615,8 +3616,8 @@ lineofcassimir9 = {
 	culture = haruze
 
 	father = lineofcassimir8
-
-	trait = blood_of_numenor_2
+    trait = blood_of_numenor_4
+	
 
 	6101.1.1 = {
 		birth = yes
@@ -3636,7 +3637,7 @@ lineofkamal1 = {
 
 	father = lineofcassimir41
 
-	trait = blood_of_numenor_2
+	trait = blood_of_numenor_4
 
 	6047.1.1 = {
 		birth = yes
@@ -3656,7 +3657,7 @@ lineofkamal2 = {
 
 	father = lineofkamal1
 
-	trait = blood_of_numenor_2
+	trait = blood_of_numenor_4
 
 	6115.1.1 = {
 		birth = yes
@@ -3681,7 +3682,7 @@ lineofkamal3 = {
 	father = lineofkamal2
 	mother = lineofcassimir45
 
-	trait = blood_of_numenor_2
+	trait = blood_of_numenor_3
 
 	6190.1.1 = {
 		birth = yes
@@ -3701,7 +3702,7 @@ lineofkamal4 = {
 
 	father = lineofkamal3
 
-	trait = blood_of_numenor_1
+	trait = blood_of_numenor_3
 
 	6256.1.1 = {
 		birth = yes
@@ -3721,7 +3722,7 @@ lineofkamal5 = {
 
 	father = lineofkamal4
 
-	trait = blood_of_numenor_1
+	trait = blood_of_numenor_3
 
 	6313.1.1 = {
 		birth = yes
@@ -3741,7 +3742,7 @@ lineofkamal6 = {
 
 	father = lineofkamal5
 
-	trait = blood_of_numenor_1
+	trait = blood_of_numenor_2
 
 	6384.1.1 = {
 		birth = yes
@@ -3765,9 +3766,9 @@ lineofkamal7 = { # granted duchy of Harondor by Haruzan
 	trait = just
 	trait = arrogant
 	trait = education_diplomacy_3
-	trait = blood_of_numenor_1
+	
 	trait = loyal
-
+    trait = blood_of_numenor_2
 	6466.1.1 = {
 		birth = yes
 	}
@@ -3786,7 +3787,7 @@ lineofkamal8 = {
 
 	father = lineofkamal7
 
-	trait = blood_of_numenor_1
+	trait = blood_of_numenor_2
 
 	6530.1.1 = {
 		birth = yes
@@ -3831,11 +3832,12 @@ lineofkamal10 = {
 	father = lineofkamal8
 	mother = lineofafalku8b
 
-	trait = blood_of_numenor_1
+	
 	trait = ambitious
 	trait = diligent
 	trait = patient
 	trait  = education_intrigue_4
+    trait = blood_of_numenor_2
 
 	6601.1.1 = {
 		birth = yes
@@ -3949,9 +3951,11 @@ lineofcassimir21wife = {	#intermarried
 	
 	father = lineofkamal14
 	
-	trait = blood_of_numenor_1
+	
 	trait = education_diplomacy_3
 	trait = physique_good_2
+
+    trait = blood_of_numenor_1
 	
 	6914.1.1 = {
 		birth = yes
@@ -3975,9 +3979,9 @@ lineofkamal15 = {
 
 	6959.1.1 = {
 		birth = yes
-		effect = {
+        effect = {
 			add_pressed_claim = title:d_harnendor
-		}
+        }
 	}
 
 	7061.1.1 = {
@@ -4061,9 +4065,9 @@ lineofkamal19 = {
 
 	6992.1.1 = {
 		birth = yes
-		effect = {
+        effect = {
 			add_pressed_claim = title:d_harnendor
-		}
+        }
 	}
 
 	7096.1.1 = {
@@ -7260,7 +7264,7 @@ linesarekori5 = {
 	trait = education_stewardship_3
 	trait = viking
 	trait = reaver
-	trait = mariner_1
+	trait = lifestyle_mariner
 
     6522.8.11 = {
         birth = yes
@@ -7308,7 +7312,7 @@ linesarekori7 = {
     trait = chaste
     trait = just
     trait = arrogant
-	trait = mariner_1
+	trait = lifestyle_mariner
 
     6541.12.16 = {
         birth = yes

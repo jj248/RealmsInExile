@@ -19083,7 +19083,7 @@ lineadara0b = { # An unknown  Black Numenorean from Mordor, in service of Sauron
 	
 	trait = education_martial_3
 	trait = reaver
-	trait = blood_of_numenor_2
+	
 	
 	trait = sadistic
 	trait = wrathful
@@ -19092,6 +19092,8 @@ lineadara0b = { # An unknown  Black Numenorean from Mordor, in service of Sauron
 	trait = torturer
 	trait = overseer
 	
+
+	trait = blood_of_numenor_6
     6624.11.25 = {
         birth = yes
     }
@@ -19116,9 +19118,11 @@ lineadara1 = { # son of Adya, killed after birth
 	father = lineadara0b
 	mother = lineadara0
 	
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_1
 	
+
+	trait = blood_of_numenor_3
     6693.11.13 = {
         birth = yes
     }

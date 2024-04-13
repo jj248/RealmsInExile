@@ -867,6 +867,101 @@ emperor_feudal_female_adunaic_bellakar = {
 	name_lists = { name_list_bellakaze }
 }
 
+# Thani Hazad Princes
+
+count_male_thani_hazad = {
+	type = character
+	special = holder
+	tier = county
+	priority = 300
+	top_liege = yes
+	only_holder = yes
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+}
+count_female_thani_hazad = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 300
+	top_liege = yes
+	only_holder = yes
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+}
+county_thani_hazad = {
+	type = title
+	tier = county
+	top_liege = yes
+	only_holder = yes
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+	priority = 300
+}
+
+duke_male_thani_hazad = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 400
+	top_liege = yes
+	only_holder = no
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+}
+duke_female_thani_hazad = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 400
+	top_liege = yes
+	only_holder = no
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+}
+duchy_thani_hazad = {
+	type = title
+	tier = duchy
+	top_liege = yes
+	only_holder = yes
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+	priority = 400
+}
+king_female_thani_hazad = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 600
+	top_liege = yes
+	only_holder = no
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+}
+king_male_thani_hazad = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 600
+	top_liege = yes
+	only_holder = no
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+}
+kingdom_thani_hazad = {
+	type = title
+	tier = kingdom
+	top_liege = yes
+	only_holder = yes
+	heritages = { heritage_northern_adunaic heritage_southern_adunaic heritage_bellakari heritage_tulwangi }
+	faiths = { faith_thani_hazad }
+	priority = 400
+}
 
 # Umbarean
 
@@ -1498,8 +1593,20 @@ king_feudal_male_k_isengard = {
 
 ### Numenorean Titles
 
-emperor_feudal_numenorean = {
+emperor_feudal_male_numenorean = {
 	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 800
+	top_liege = no
+	only_holder = no
+	titles = { e_numenor }
+}
+
+emperor_feudal_female_numenorean = {
+	type = character
+	gender = female
 	special = holder
 	tier = empire
 	priority = 800
@@ -2619,6 +2726,28 @@ d_special_male_felaya = {
 	top_liege = no
 	only_holder = yes
 	titles = { d_felaya }
+}
+
+baron_archet_male = {  #Forrester of Archet
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	top_liege = no
+	only_holder = yes
+	priority = 100
+	titles = { b_chetwood }
+}
+
+baron_archet_female = {  #Forrester of Archet
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	top_liege = no
+	only_holder = yes
+	priority = 100
+	titles = { b_chetwood }
 }
 
 baron_hobbit_male = {

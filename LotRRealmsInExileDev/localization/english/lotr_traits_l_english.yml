@@ -2,15 +2,31 @@
  
  ### BLOOD OF NÚMENOR ###
  trait_blood_of_numenor:0 "Blood of Númenor"
- trait_blood_of_numenor_4:0 "Númenórean"
- trait_blood_of_numenor_4_desc:0 "#Z Uses the [bloodofnumenor|E] trait inheritance mechanics.#!\n\n@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 100.#!#!\n\nThis character is a full, pure-blooded [numenorean|E] from before the [downfallofnumenor|E]."
- trait_blood_of_numenor_3:0 "Pure Númenórean Blood"
- trait_blood_of_numenor_3_desc:0 "#Z Uses the [bloodofnumenor|E] trait inheritance mechanics.#!\n\n@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 40.#!#!\n\nThis character possesses a pure form of [numenorean|E] blood, guaranteeing a life thrice as long as the normal [conceptracemen|E] of [middleearth|E]. But although they carry in their veins the blessing of [eonwecharacter|E] and the knowledge of the [eldar|E], they can still be felled in battle or by other causes of violent harm."
- trait_blood_of_numenor_2:0 "Strong Númenórean Blood"
- trait_blood_of_numenor_2_desc:0 "#Z Uses the [bloodofnumenor|E] trait inheritance mechanics.#!\n\n@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 30.#!#!\n\nThis character possesses a lesser form of [numenorean|E] blood, allowing them to live a prolonged life."
- trait_blood_of_numenor_1:0 "Remnant Númenórean Blood"
- trait_blood_of_numenor_1_desc:0 "#Z Uses the [bloodofnumenor|E] trait inheritance mechanics.#!\n\n@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 20.#!#!\n\nThis character possesses a very diluted form of [numenorean|E] blood. Whilst they will not live into the centuries, they can still expect a few decades of longer life."
- 
+ trait_blood_of_numenor_desc:0 "#Z Uses the [bloodofnumenor|E] trait inheritance mechanics.#!\n\nIn this character flows the [bloodofnumenor|E], in greater or lesser measure.\n"
+ blessing_strength_desc:0 "A spiritual blessing granting long life associated with those of [numenorean|E] descent. The gift was stronger and more common among those whose ancestry was primarily Númenórean, but was a heritage of spirit and nobility as well as of blood. Its association with the Elvish way of life and dedication to the [valargods|E] meant that the power of the blessing could vary regardless of purity of descent, even among siblings. The gift was gradually withdrawn as Númenor fell into darkness, and waned further as the memory of [numenor|E] faded after the [downfall|E]."
+
+ trait_blood_of_numenor_1:0 "Blood of Númenor (I)"
+ trait_blood_of_numenor_2:0 "Blood of Númenor (II)"
+ trait_blood_of_numenor_3:0 "Blood of Númenor (III)"
+ trait_blood_of_numenor_4:0 "Blood of Númenor (IV)"
+ trait_blood_of_numenor_5:0 "Blood of Númenor (V)"
+ trait_blood_of_numenor_6:0 "Blood of Númenor (VI)"
+ trait_blood_of_numenor_7:0 "Blood of Númenor (VII)"
+ trait_blood_of_numenor_8:0 "Blood of Númenor (VIII)"
+ trait_blood_of_numenor_9:0 "Blood of Númenor (IX)"
+ trait_blood_of_numenor_10:0 "Blood of Númenor (X)"
+
+ trait_blood_of_numenor_1_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 20.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_2_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 25.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_3_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 30.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_4_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 35.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_5_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 40.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_6_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 45.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_7_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 50.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_8_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 55.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_9_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 60.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+ trait_blood_of_numenor_10_desc:0 "@warning_icon! #N #italic Due to their increased [life_expectancy|E], AI characters with this trait will not seek [marriage|E] @arrange_marriage_icon! before age 65.#!#!\n\n$blessing_strength_desc$\n\n$trait_blood_of_numenor_desc$"
+
  ### NAZGÛL ###
  trait_nazgul:0 "Nazgûl"
  trait_nazgul_desc:0 "Fell and terrible, this character is one of the [nineringwraiths|E], the [nazgulcharacter|E]."
@@ -104,6 +120,8 @@
  trait_cannot_marry_dwarf_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has opted to shun romance and marriage, opting to focus on [ROOT.GetCharacter.GetHerHis] craft or other interests."
 
  trait_lifestyle_mariner:0 "Mariner"
+ trait_track_lifestyle_mariner:0 "Mariner"
+ trait_track_lifestyle_mariner_desc:0 "The Sea is always right!"
  trait_mariner_1:0 "Sailor"
  trait_mariner_1_desc:0 "An amateur naval enthusiast, the Sailor loves to spend their time learning to sail and manage a ship."
  trait_mariner_1_character_desc:0 "An amateur naval enthusiast, [ROOT.GetCharacter.GetFirstNameNoTooltip] loves to spend [ROOT.GetCharacter.GetHerHis] time learning to sail and manage a ship."

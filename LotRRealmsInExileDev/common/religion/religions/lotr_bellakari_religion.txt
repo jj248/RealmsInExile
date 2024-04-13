@@ -226,7 +226,7 @@ bellakari_religion = {
 		DeathDeityNamePossessive = lotr_death_deity_name_possessive
 		DeathDeitySheHe = CHARACTER_SHEHE_HE
 		DeathDeityHerHis = CHARACTER_HERHIS_HIS
-		
+		DeathDeityHerHim = CHARACTER_HERHIM_HIM
 		WitchGodName = lotr_witchcraft_god_tu
 		WitchGodNamePossessive = lotr_witchcraft_god_tu_possessive
 		WitchGodHerHis = CHARACTER_HERHIS_HER
@@ -322,7 +322,7 @@ bellakari_religion = {
 			doctrine = tenet_inner_journey
 			doctrine = tenet_bellakari_syncretism
 
-			doctrine = doctrine_theocracy_lay_clergy
+			doctrine = doctrine_theocracy_temporal
 			doctrine = doctrine_no_head # Until we can more properly implement one
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_witchcraft_shunned

@@ -1271,12 +1271,15 @@ linearamir1 = {
 	trait = diligent
 	
 	trait = education_diplomacy_3
-	trait = blood_of_numenor_2
+	
 	trait = bastard_founder
 	trait = beauty_good_2
 	
+
+	trait = blood_of_numenor_6
 	5012.8.16 = {
 		birth = yes
+        
 	}
 	
 	5051.1.3 = {
@@ -1319,9 +1322,11 @@ linearamir3 = {
 	trait = patient
 	
 	trait = education_stewardship_1
-	trait = blood_of_numenor_2
+	
 	trait = beauty_good_1
 	
+
+	trait = blood_of_numenor_5
 	5067.2.4 = {
 		birth = yes
 	}
@@ -1368,10 +1373,12 @@ linearamir5a = { # never married, celibate
 	trait = just
 	
 	trait = education_learning_2
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_1
 	trait = celibate
 	
+
+	trait = blood_of_numenor_2
 	5094.2.3 = {
 		birth = yes
 	}
@@ -1396,9 +1403,11 @@ linearamir5 = {
 	trait = patient
 	
 	trait = education_stewardship_2
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_1
 	
+
+	trait = blood_of_numenor_2
 	5099.12.18 = {
 		birth = yes
 	}
@@ -1443,8 +1452,10 @@ linearamir7 = {
 	trait = greedy
 	
 	trait = education_diplomacy_1
-	trait = blood_of_numenor_1
 	
+	
+
+	trait = blood_of_numenor_2
 	5142.11.5 = {
 		birth = yes
 	}
@@ -1535,8 +1546,10 @@ linearamir11 = {
     trait = forgiving
     trait = just
 	
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
     5181.5.9 = {
         birth = yes
     }
@@ -1584,8 +1597,10 @@ linearamir13 = {
     trait = diligent
     trait = gluttonous
 	
-	trait = blood_of_numenor_1
+	
 
+
+	trait = blood_of_numenor_2
     5216.8.25 = {
         birth = yes
     }
@@ -1993,7 +2008,7 @@ lineruadcara = { # Usurper-King of Rhudaur, Ruadcara was of part-Dúnedain desce
 	father = linearamir7
 	mother = linearamir8
 
-	trait = blood_of_numenor_1
+	
 	trait = aggressive_attacker	
 	trait = education_martial_4	
 	
@@ -2004,6 +2019,8 @@ lineruadcara = { # Usurper-King of Rhudaur, Ruadcara was of part-Dúnedain desce
 	trait = giant
 	trait = disloyal
 		
+
+	trait = blood_of_numenor_2
 	5181.1.1 = {	
 		birth = yes
 	}
@@ -2040,7 +2057,7 @@ lineruadcara1 = {
 	father = lineruadcara
 	mother = lineendril35b
 
-	trait = blood_of_numenor_1
+	
 	
 	trait = education_learning_2
 	
@@ -2048,6 +2065,8 @@ lineruadcara1 = {
 	trait = just
 	trait = arrogant
 		
+
+	trait = blood_of_numenor_2
 	5224.2.7 = {	
 		birth = yes
 	}
@@ -2070,7 +2089,7 @@ lineruadcara2 = {
 	father = lineruadcara
 	mother = lineendril35b
 
-	trait = blood_of_numenor_2
+	
 	
 	trait = education_diplomacy_3
 	
@@ -2078,6 +2097,8 @@ lineruadcara2 = {
 	trait = ambitious
 	trait = chaste
 		
+
+	trait = blood_of_numenor_5
 	5229.11.25 = {	
 		birth = yes
 	}
@@ -2104,7 +2125,7 @@ lineruadcara3 = {
 	father = lineruadcara
 	mother = lineendril35b
 
-	trait = blood_of_numenor_1
+	
 	
 	trait = education_intrigue_1
 	
@@ -2112,6 +2133,8 @@ lineruadcara3 = {
 	trait = lazy
 	trait = chaste
 		
+
+	trait = blood_of_numenor_2
 	5236.8.14 = {	
 		birth = yes
 	}

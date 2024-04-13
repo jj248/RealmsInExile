@@ -113,7 +113,7 @@
  balsharim_ethnicity:0 "Balsharim"
  balsharim_collective_noun:0 "Balsharim"
  balsharim_prefix:0 "Balsha"
- balsharim_desc:0 "#size:15    The Balsharim were followers of the human Balshan and the ancient natives of what would later become [angmar|E]. They were a tribal people, forever fighting for survival in the harsh lands of northeast [eriador|E] with noone to depend on, except for themselves.#"
+ balsharim_desc:0 "#size:15    The Balsharim were followers of the human Balshan and the ancient natives of what would later become [angmar|E]. They were a tribal people, forever fighting for survival in the harsh lands of northeast [eriador|E] with no one to depend on, except for themselves.#"
  
  angmarrim:0 "Angmarrim"
  angmarrim_ethnicity:0 "Angmarrim"
@@ -151,7 +151,7 @@
  dunedain_ranger:0 "Northern Dúnedain" # Lîrsain - 'They who range - Rangers'
  dunedain_ranger_collective_noun:0 "Northern Dúnedain"
  dunedain_ranger_prefix:0 "Northern Dúnedain"
- dunedain_ranger_desc:0 "#size:15    The [dunedainnorth|E], the [dunedain|E] Rangers, known in [sindarin|E] as the Lîrsain, are the remnants of the [arnorians|E] after the Battle of Fornost. A hidden and few people, the rangers seek safety in secrecy, their settlements hidden from all but their own and a few key friends. They await a day when they may finally reveal themselves to the world and rebuild the lost kingdom of [arnor|E].#"
+ dunedain_ranger_desc:0 "#size:15    The [dunedainnorth|E], the [dunedain|E] Rangers, known in [sindarin|E] as the Lîrsain, are the remnants of the [arnorians|E] who survived the Battle of Fornost. A hidden and dwindling people, the rangers seek safety in secrecy, their settlements hidden from all but their own and a few key friends. They await a day when they may finally reveal themselves to the world and rebuild the lost kingdom of [arnor|E].#"
 
  uialdain:0 "Uialdain"
  uialdain_collective_noun:0 "Uialdain"
@@ -182,7 +182,7 @@
  orodbedhrim:0 "Orodbedhrim"
  orodbedhrim_collective_noun:0 "Orodbedhrim"
  orodbedhrim_prefix:0 "Orodbedhri"
- orodbedhrim_desc:0 "#size:15    The Orodbedhrim (“Mountain-dwelling Folk”) have their roots in Tarannon Falastur's westerward expansion. The native men of the hills of central [gondor|E], the Danan Lin, came to embrace the Dúnedain as brothers and teachers, and the two peoples joined together. As generations passed, the Danan Lin increasingly intermarried with the Dúnedain, adopting Dúnedain clothing and mores, until there was not two cultures but one, the Orodbedhrim. \n\nEven to this day, signs of the [daen|E] heritage of the Orodbedhrim shine through, with the enduring nature of their family clans and stout loyalty.#"
+ orodbedhrim_desc:0 "#size:15    The Orodbedhrim (Sind.: Mountain-dwelling Folk) have their roots in Tarannon Falastur's westerward expansion. The native men of the hills of central [gondor|E], the Danan Lin, came to embrace the Dúnedain as brothers and teachers, and the two peoples joined together. As generations passed, the Danan Lin increasingly intermarried with the Dúnedain, adopting Dúnedain clothing and mores, until there was not two cultures but one, the Orodbedhrim. \n\nEven to this day, signs of the [daen|E] heritage of the Orodbedhrim shine through, with the enduring nature of their family clans and stout loyalty.#"
  
  ### Black Númenóreans ###
  # lotr_black_numenorean_group:0 "Northern Adûnai"
@@ -203,12 +203,11 @@
  old_umbarean_prefix:0 "Umbarnas"
  old_umbarean_desc:0 "#size:15    The Umbarnas (Adunaic: People of Umbar) were a result of intermingling between the Black [numenoreans|E] and the local Haradrim of the coasts, the Sakalai. They still considered themselves the [kingsmen|E] of [umbar|E], the closest realm of the loyalists of Ar-Pharazon to the realms of the Elendili, and inherited a strong feud with the [gondorians|E] as a result, viewing them as traitors to the rightful king.#"
 
- 
- umbaredain:0 "Umbaredain"
+  umbaredain:0 "Umbaredain"
  umbaredain_collective_noun:0 "Umbaredain"
  umbaredain_ethnicity:0 "Umbaredain"
  umbaredain_prefix:0 "Umbaredain"
- umbaredain_desc:0 "#size:15    After the conquest of [umbar|E] by Eärnil I in T.A. 933, the Adunaic and Haradrim populace of the haven found themselves suddenly supplemented by large amounts of [gondorian|E] settlers - traders, administrators, and those seeking a new life in the latest southern province of [gondor|E]. From this migration gave birth to a new Umbarean culture, one that heavily took after its [gondorian|E] overlords yet maintained some aspects of the ancient customs of the haven. These were the Umbaredain, and their melded history and heritage gave them a unique and somewhat rogue spirit compared to the other Dúnedain of the south. \n\nDuring the revolt of Castamir the Usurper, the Umbaredain wholly supported his claim, and after the death of Castamir at the Battle of the Crossings of Erui, helped to support his sons and dynasty thereafter. However, the skirmishing with Eldacar and his heirs and the lack of new settlers from [gondor|E] greatly sapped the strength of the Umbaredain, and they increasingly intermarried with the Haradrim they relied ever more upon to fill their armies and farms, setting the stage for the Umbareans of the later [thirdage|E].#"
+ umbaredain_desc:0 "#size:15    After the conquest of [umbar|E] by Eärnil I in T.A. 933, the Adunaic and Haradrim populace of the haven found themselves suddenly supplemented by large numbers of [gondorian|E] settlers - traders, administrators, and those seeking a new life in the latest southern province of [gondor|E]. From this migration gave birth to a new Umbarean culture, one that heavily took after its [gondorian|E] overlords yet maintained some aspects of the ancient customs of the haven. These were the Umbaredain, and their melded history and heritage gave them a unique and somewhat rogue spirit compared to the other Dúnedain of the south. \n\nDuring the revolt of Castamir the Usurper, the Umbaredain wholly supported his claim, and after the death of Castamir at the Battle of the Crossings of Erui, helped to support his sons and dynasty thereafter. However, the skirmishing with Eldacar and his heirs and the lack of new settlers from [gondor|E] greatly sapped the strength of the Umbaredain, and they increasingly intermarried with the Haradrim they relied ever more upon to fill their armies and farms, setting the stage for the Umbareans of the later [thirdage|E].#"
  
  umbarean:0 "Umbarean"
  umbarean_collective_noun:0 "Umbarean"
@@ -225,7 +224,7 @@
  corsair:0 "Umbaruz"
  corsair_collective_noun:0 "Umbaruze"
  corsair_prefix:0 "Umbaruz"
- corsair_desc:0 "#size:15    While some Umbareans (particularly those of noble heritage or dwelling in its ancient cities) vainly strove to preserve the lofty but much diminished legacy of their revered forefathers, many other Umbareans cared little for such pretenses. They knew who they were, and cared not for the ancient lords of Umbar or their legacy. Most of them had little blood connection to the Adûnai or Dunedain of Umbar of old, and were far more alike to the other Haradrim to whom they were kin. They are marked apart only by the enduring use of Westron as their tongue of choice."
+ corsair_desc:0 "#size:15    While some Umbareans (particularly those of noble heritage or dwelling in its ancient cities) vainly strove to preserve the lofty but much diminished legacy of their revered forefathers, many other Umbareans cared little for such pretenses. They knew who they were, and cared not for the ancient lords of Umbar or their legacy. Most of them had little blood connection to the Adûnai or Dúnedain of Umbar of old, and were far more alike to the other Haradrim to whom they were kin. They are marked apart only by the enduring use of Westron as their tongue of choice.#"
  
  
  ### The Southern Adunai ###
@@ -243,6 +242,11 @@
  anbalukkhori_collective_noun:0 "Anbalûkkhôri"
  anbalukkhori_prefix:0 "Anbalûkkhôri"
  anbalukkhori_desc:0 "#size:15    The Anbalûkkhôri are the Adûnai of the former [numenorean|E] province of [anbalkumagan|E], originally known as Ciryatanórë. Of the Adûnai of the south, they are the most capricious, ambitious, and proud, remembering the days of their dominance.#"
+
+ kharadunaim:0 "Kharadûnaim"
+ kharadunaim_collective_noun:0 "Kharadûnai"
+ kharadunaim_prefix:0 "Kharadûni"
+ kharadunaim_desc:0 "#size:15    The Kharadûnaim are the wealthy mixed-blooded descendants of the Númenórean settlers in the southern provinces of Thani Hazad. While only forming a majority in a few coastal enclaves, they have retained ascendancy over the squabbling states of the region through a mixture of high diplomacy and low cunning. \n\nThe Kharadûnaim believe that their noble heritage gives them a right to rule over lesser peoples, but that this should be done with some echo of the original Númenórean mission to educate and aid the benighted natives.#"
 
  south_adunai_colonial:0 "Kharat Ephalâim"
  south_adunai_colonial_collective_noun:0 "Kharat Ephalâim" 
@@ -300,8 +304,8 @@
  rhovannic_prefix:0 "Rhovani"
  rhovannic_desc:0 "#size:15    The [northmen|E] tribes of the windswept plains of [rhovanion|E] in the early [thirdage|E], the Rhovanorim first entered into the record of the West when many of their leaders served as auxiliaries of the [lastallianceshort|E]. Most of the Rhovanorim were considered to be part of the 'Aivathiuda', which were the six pre-eminent tribes of the plains. \n\nThe martial and loyal [conceptracemen|E] of [rhovanion|E] helped to bolster and sustain the eastern border of the westlands, reaching their apex under the leadership of Vidugavia and the [rhovanion_kingdom|E]. \n\nAfter the reign of Vidugavia and his heirs, the Great Plague and subsequent calamities such as the Wainrider and Balchoth invasions have resulted in a people whose breadth of domain is much reduced from their heights, when all of [rhovanion|E] was their oyster. But they still retain their old honor and skill on horseback.#"
  
- estarewas:0 "Estarewas"
- estarewas_collective_noun:0 "Estarewas"
+ estarewas:0 "Estanrewas"
+ estarewas_collective_noun:0 "Estanrewas"
  estarewas_prefix:0 "Est"
  estarewas_desc:0 "#size:15    Some [northmen|E] lived in the shadow of [angmar|E] and Mount [gundabad|E]. These hardy souls worked the infertile soil with primitive implements to eke out a miserable existence. Most clans of the Estanrewas (Éo."Eastern Rows") payed tribute to local [orcish|E] lords to avoid the constant raiding that took place in the northern [anduinvale|E], which at the time was often referred to as [eastangmar|E].\n\nProximity to such forces of evil had taken its toll on the Estarave spirit, for among them, fear and suspicion had taken the place of the valor and honor most commonly associated with the [northron|E].#"
 
@@ -347,6 +351,11 @@
  beffraen_prefix:0 "Beffra"
  beffraen_ethnicity:0 "Beffraen"
  beffraen_desc:0 "#size:15    The Beffraen are those Drúedain who dwelled in the lands of Minhiritiah and [enedhwaith|E], living among the [daen|E] of the region, just as the Drúedain of [beleriand|E] lived among the Haladin. Unlike most of their kind, the Beffraen in ancient times intermarried with their Daen neighbors not infrequently, resulting in a branch of the Drúedain that often is taller than the rest of their kind.\n\nHowever, on account of their location and their history, the Beffraen came into contact, and then conflict, with [numenor|E]. They developed the same distrust and hate towards the encroaching [numenoreans|E] as did the other natives of Minhiriath and Enedhwaith. They would forever distrust and pepper them with their poisoned arrows. \n\nAfter the [waroftheelvesandsauron|E], the few surviving Beffraen withdrew into the scattered forests of Enedhwaith and the Eryn Vorn, a furtive and hostile people. It is even rumored that some of them fell into the worship of the Dark, desiring vengeance upon those who took and destroyed their homelands.#"
+ chaialla:0 "Chaialla"
+ chaialla_collective_noun:0 "Chaialla"
+ chaialla_prefix:0 "Chaiallo"
+ chaialla_ethnicity:0 "Chaialla"
+ chaialla_desc:0 "#size:15    The Chaialla (or the "Old Ones") are a people of Wild Men akin to the mountains and forests of the Kharadûne Peninsula. They are of Drughu-stock and closely akin to the Honnin and Yatali-Gan.#"
 
 
 
@@ -356,22 +365,22 @@
  fallohides_collective_noun:0 "Fallohides"
  fallohides_prefix:0 "Fallohide"
  fallohides_ethnicity:0 "Fallohide"
- fallohides_desc:0 "#size:15    #TBD"
+ fallohides_desc:0 "#size:15    Fallohides constituted one of the three ancient breeds of [hobbits|E]. The Fallohides were the least numerous of the three branches, and originally roamed the northern parts of the [westlands|E]. They were taller and slimmer of build than the other Hobbits, with some growing to four feet or more in height. Both their skin and their hair tended to be fair, and no Fallohide ever grew a beard.\n\nAs Fallohidish culture was much more open to outside influence than that of the Stoors or Harfoots, they were friendlier with the other [conceptraces|E] of [middleearth|E] than their cousins, especially with the [elves|E]. This was consistent with their skill in both song and speech, and their love for trees and of woodlands.#"
  harfoots:0 "Harfoot"
  harfoots_collective_noun:0 "Harfoots"
  harfoots_prefix:0 "Harfoot"
  harfoots_ethnicity:0 "Harfoot"
- harfoots_desc:0 "#size:15    #TBD"
+ harfoots_desc:0 "#size:15    Harfoots constituted one of the three ancient breeds of [hobbits|E]. Within the Shire, the Harfoots' lineage prevailed as the most widespread. Characterized by their shorter stature and diminutive size compared to other breeds, they possessed a darker complexion, lacked facial hair, and eschewed footwear, boasting nimble and tidy hands and feet.\n\nLike their fellow Halflings, they inhabited the [anduinvale|E]. It was the Harfoots who initiated the westward migration into [eriador|E], thereby inaugurating the Wandering Days of the [hobbit|E] [conceptrace|E]. Their presence is first documented in [arnorian|E] records around T.A. 1050, and it was they who were initially dubbed Periannath by the [dunedainarnor|E].#"
  stoors:0 "Stoor"
  stoors_collective_noun:0 "Stoors"
  stoors_prefix:0 "Stoor"
  stoors_ethnicity:0 "Stoor"
- stoors_desc:0 "#size:15    "    #TBD
- breelander:0 "Breelander"
- breelander_collective_noun:0 "Breelanders"
- breelander_prefix:0 "Breelander"
- breelander_ethnicity:0 "Breelander"
- breelander_desc:0 "#size:15    #TBD"
+ stoors_desc:0 "#size:15    The Stoors constituted one of the three ancient breeds of [hobbits|E]. Like the other members of the Halfling kind, they used to inhabit the [anduinvale|E]. Predominantly residing in the Gladden Fields, they led a lifestyle centered around fishing. Differing from other Hobbits in physique, Stoors possessed broader bodies, large hands, and feet, bearing an uncanny resemblance to many [conceptracemen|E]. Notably, they were distinguished as the sole Hobbits known for their propensity to grow facial hair.\n\nIn addition to their unique physical characteristics, the Stoors developed their own variant of the Hobbitish dialect. This linguistic deviation stemmed from their time spent in Dunland before they settled parts of the Shire, where they assimilated numerous unfamiliar words and names. These linguistic influences persisted in the Shire, enduring even into the late [thirdage|E].#"
+ breelander:0 "Bree-hobbit"     #In game this culture is used to represent the Hobbits of Bree-land        
+ breelander_collective_noun:0 "Bree-hobbits"
+ breelander_prefix:0 "Bree"
+ breelander_ethnicity:0 "Bree-hobbit"
+ breelander_desc:0 "#size:15    The Bree-hobbits were the [hobbit|E] inhabitants of Bree and the surrounding Bree-land. Their interactions with the [conceptracemen|E], who also resided in the area, fostered a greater openness to the outside world compared to their more insular counterparts in the Shire. Initially comprised mainly of Fallohides and Harfoots, these Hobbits migrated to the region from the east around T.A. 1300, fleeing the threat of [angmar|E].\n\nThe majority of Bree-land's Hobbits resided in Staddle, a village nestled on the southeastern slopes of the Bree-hill. However, some also made their homes in Bree itself, inhabiting Hobbit-holes dug into the hill overlooking the houses of Men.#"
  hobbit:0 "Hobbit"
  hobbit_collective_noun:0 "Hobbits"
  hobbit_prefix:0 "Hobbit"
@@ -381,21 +390,21 @@
  bucklander_collective_noun:0 "Bucklanders"
  bucklander_prefix:0 "Bucklander"
  bucklander_ethnicity:0 "Bucklander"
- bucklander_desc:0 "#size:15    #TBD"
+ bucklander_desc:0 "#size:15    The Bucklanders were those [hobbits|E] who inhabited Buckland, on the eastern bank of river Brandywine. They were the descendants of families from the Marish who, under the leadership of Gorhendad Oldbuck crossed the River from the Eastfarthing and started the building of Brandy Hall in Buck Hill, in a land hitherto unpopulated by Hobbits, around the western eaves of the Old Forest.\n\nThe Bucklanders were known for their strong Stoor heritage and were considered peculiar by most of the Shire-hobbits for many could swim and most were fond of boats and fishing.#"
 
  ### MEN OF BREE ###
- breemen:0 "Breemen"
- breemen_collective_noun:0 "Breemen"
- breemen_prefix:0 "Breemen"
- breemen_ethnicity:0 "Breemen"
- breemen_desc:0 "#size:15    The Men of Bree, despite being one of the oldest groups of [conceptracemen|E] in [eriador|E], have few, if any, great songs or tales to tell. They have ever been a humble and simple folk, content to mind their own provincial problems and wary of strangers from beyond.\n\nIn origin the Breemen are descended from [daen|E] fleeing northwards from the Gwaltho during the [waroftheelvesandsauron|E]. In the aftermath of that war they largely abandoned their ancestral tongue, embracing that of the nearby Eriadorim and the colonizing [numenoreans|E], which endeared them to both parties.\n\nBreeland eventually became incorporated as a city under [arnor|E], granted a royal charter and maintaining great autonomy, which served the Breemen just fine. During this period the [hobbits|E] began to migrate into the region, which the Breemen discovered a kinship in outlook and lifestyle with. Breeland managed to avoid much of the devastation of the [angmar_wars|E], and after the dissolution of [arthedain|E], Bree was one of the largest settlements left in Eriador. Even into the [fourthage|E], the Breemen continued on much as they had before, content to live and let live.#"
+ breemen:0 "Bree-lander"   #The canon term is Bree-lander
+ breemen_collective_noun:0 "Bree-landers"
+ breemen_prefix:0 "Bree-folk"
+ breemen_ethnicity:0 "Bree-lander"
+ breemen_desc:0 "#size:15    The Bree-landers (also known as Men of Bree or Bree-folk), despite being one of the oldest groups of [conceptracemen|E] in [eriador|E], have few, if any, great songs or tales to tell. They have ever been a humble and simple folk, content to mind their own provincial problems and wary of strangers from beyond.\n\nIn origin the Men of Bree are descended from [daen|E] fleeing northwards from the Gwathló during the [waroftheelvesandsauron|E]. In the aftermath of that war they largely abandoned their ancestral tongue, embracing that of the nearby Eriadorim and the colonizing [numenoreans|E], which endeared them to both parties.\n\nBree-land eventually became incorporated as a region under [arnor|E], granted a royal charter and maintaining great autonomy, which served the Bree-folk just fine. During this period the [hobbits|E] began to migrate into the region, which the Men of Bree discovered a kinship in outlook and lifestyle with. Bree-land managed to avoid much of the devastation of the [angmar_wars|E], and after the dissolution of [arthedain|E], Bree was one of the largest settlements left in Eriador. Even into the [fourthage|E], the Bree-landers continued on much as they had before, content to live and let live.#"
  
  ### HILLMEN OF RHUDAUR ###
  hillmen:0 "Noi Trevan"
  hillmen_collective_noun:0 "Noi Trevan"
  hillmen_prefix:0 "Noi Trevan"
  hillmen_ethnicity:0 "Noi Trevan"
- hillmen_desc:0 "#size:15    The Hillmen of [rhudaur|E], known in their own tongue as the Noi Trevan (People of the Nine Tribes) and to the [dunedain|E] as the Emynedain, are a people with a contentious history.\n\nThe very birth of their people can be found in the crucible of war. In the early and middle [secondage|E], two sets of tribes migrated into [rhudaur|E], three from [angmar|E] and six from the lower Gwaltho river. Both sought land, and coming into contact made war upon each other. In time though peace prevailed, and they united to form a new people under the mythical first High-Chief, the Targadh-Arm.\n\nIn the later [secondage|E], the tribes of the Noi Trevan would be subjugated by [dunedain|E] petty-kingdoms, founded by ambitious adventurers who shattered the ancient kingdom of the nine-tribes. These petty-kings swore fealty to Elendil of [arnor|E], and so the Hillmen were bound up with the fate of the Northern Kingdom. For a time there was peace, but after Arnor shattered relations between the Dúnedain of Rhudaur and the Noi Trevan slowly degraded to the point of no return. Then the Hillmen, with the support of Angmar, rose up against the Dúnedain, claiming their ancient homeland for their own once more.\n\nBut the Hillmen had but exchanged the sceptre of Arnor for the iron chains of Angmar, who bled them white against the armies of Arnor and took their grain to feed its armies. By the end of the [angmar_wars|E], the Hillmen had been all but wiped out - not by the vengeance of Arnor, but by the callousness of Angmar.#"
+ hillmen_desc:0 "#size:15    The Hillmen of [rhudaur|E], known in their own tongue as the Noi Trevan (People of the Nine Tribes) and to the [dunedain|E] as the Emynedain, are a people with a contentious history.\n\nThe very birth of their people can be found in the crucible of war. In the early and middle [secondage|E], two sets of tribes migrated into [rhudaur|E], three from [angmar|E] and six from the lower Gwathló river. Both sought land, and coming into contact made war upon each other. In time though peace prevailed, and they united to form a new people under the mythical first High-Chief, the Targadh-Arm.\n\nIn the later [secondage|E], the tribes of the Noi Trevan would be subjugated by [dunedain|E] petty-kingdoms, founded by ambitious adventurers who shattered the ancient kingdom of the nine-tribes. These petty-kings swore fealty to Elendil of [arnor|E], and so the Hillmen were bound up with the fate of the Northern Kingdom. For a time there was peace, but after Arnor shattered relations between the Dúnedain of Rhudaur and the Noi Trevan slowly degraded to the point of no return. Then the Hillmen, with the support of Angmar, rose up against the Dúnedain, claiming their ancient homeland for their own once more.\n\nBut the Hillmen had but exchanged the sceptre of Arnor for the iron chains of Angmar, who bled them white against the armies of Arnor and took their grain to feed its armies. By the end of the [angmar_wars|E], the Hillmen had been all but wiped out - not by the vengeance of Arnor, but by the callousness of Angmar.#"
  ### FAR HARAD ###
  # Bellakarean
  #   Bellakarani
@@ -417,12 +426,12 @@
  bellakarani:0 "Bellakarani"
  bellakarani_collective_noun:0 "Bellakarani"
  bellakarani_prefix:0 "Bellakarano"
- bellakarani_desc:0 "#size:15    Bellakarani originally referred to the [numenorean|E] colonists of Bellakar and their mostly pure-blooded descendents, compared to the mixed-blood Bellakaze. However, the Bellakarani were not immune to the continuing intermarriages with the Bellakaze and indigenous Haradrim. Thus as the [thirdage|E] continued, the term instead became indicative of a more culturally conservative branch of the men of Bellakar who askewed the Haradric adoptions of the rest of the realm, rather than a substantively different ethnic composition. A small and dwindling group, they were primarily centered in the cities of Urezayan and Korlea.#"
+ bellakarani_desc:0 "#size:15    Bellakarani originally referred to the [numenorean|E] colonists of Bellakar and their mostly pure-blooded descendents, compared to the mixed-blood Bellakaze. However, the Bellakarani were not immune to the continuing intermarriages with the Bellakaze and indigenous [haradrim|E]. Thus as the [thirdage|E] continued, the term instead became indicative of a more culturally conservative branch of the men of Bellakar who askewed the [haradric|E] adoptions of the rest of the realm, rather than a substantively different ethnic composition. A small and dwindling group, they were primarily centered in the cities of Urezayan and Korlea.#"
  bellakaze:0 "Bellakaze"
  bellakaze_ethnicity:0 "Bellakaze"
  bellakaze_collective_noun:0 "Bellakaze"
  bellakaze_prefix:0 "Bellakaro"
- bellakaze_desc:0 "#size:15    The urbanite and mixed-blood faithful of [bellakar|E], the Bellakaze form the majority of the kingdom, melding [harad|E]rim and [numenorean|E] tradition and custom, though admittedly with a greater part Adûnaic than Haradric.#"
+ bellakaze_desc:0 "#size:15    The urbanite and mixed-blood faithful of [bellakar|E], the Bellakaze form the majority of the kingdom, melding [haradrim|E] and [numenorean|E] traditions and customs, though admittedly with a greater part [adunaic|E] than [haradric|E].#"
  felayan:0 "Felayan"
  felayan_collective_noun:0 "Felayans"
  felayan_prefix:0 "Felayo"
@@ -433,7 +442,7 @@
  bellanarud:0 "Bellanarûd"
  bellanarud_collective_noun:0 "Bellanarûd"
  bellanarud_prefix:0 "Bellanaro"
- bellanarud_desc:0 "#size:15    The [harad|E]ron native people of Bellakar, the Bellanarûd long ago culturally assimilated into the Adunaic culture of the Bellakareans, even if ethnically they remain a distinct group.#"
+ bellanarud_desc:0 "#size:15    The [harad|E]ron native people of Bellakar, the Bellanarûd long ago culturally assimilated into the [adunaic|E] culture of the Bellakareans, even if ethnically they remain a distinct group.#"
  
  ### Tedjin ###
  # lotr_tedjin_group:0 "Tedjin"
@@ -456,7 +465,7 @@
  qarsag:0 "Qarsag"
  qarsag_collective_noun:0 "Qarsag"
  qarsag_prefix:0 "Qarso"
- qarsag_desc:0 "#size:15    The Qarsag are a group of [harad|E]rim tribes usually counted among the Sandmen, nomads roaming the eastern borderlands of Southern Bellakar, the Kes Weza and Kes Arik. They formed one-half of the great Qarsag-Tedjin host which briefly subsumed [bellakar|E] in the Qadjajar Katajate, but since its fall have mostly contented themselves with their position on the eastern border of Bellakar.#"
+ qarsag_desc:0 "#size:15    The Qarsag are a group of [haradrim|E] tribes usually counted among the Sandmen, nomads roaming the eastern borderlands of Southern Bellakar, the Kes Weza and Kes Arik. They formed one-half of the great Qarsag-Tedjin host which briefly subsumed [bellakar|E] in the Qadjajar Katajate, but since its fall have mostly contented themselves with their position on the eastern border of Bellakar.#"
  aukuag:0 "Aukuag"
  aukuag_collective_noun:0 "Aukuag"
  aukuag_prefix:0 "Aukuagi"
@@ -469,7 +478,7 @@
  bozishnarud_collective_noun:0 "Bôzishnarûd"
  bozishnarud_prefix:0 "Bôzishno"
  bozishnarud_ethnicity:0 "Bôzishnarûd"
- bozishnarud_desc:0 "#size:15    The Bôzishnarûd are the Haradrim of the Bôzisha-Dâr and the larger Rây. They are by nature cosmopolitan, multicultural, and sophisticated, traders first and foremost above all else. You will find Bôzishnarûd traders throughout southern Endórë, peddling their wares and driving a hard bargain. They take pride in the ancient stature and sophistication of their civilization, one of the few to be recognized as, if not equal, at least sufficiently civilized, by [numenor|E].#"
+ bozishnarud_desc:0 "#size:15    The Bôzishnarûd are the [haradrim|E] of the Bôzisha-Dâr and the larger Rây. They are by nature cosmopolitan, multicultural, and sophisticated, traders first and foremost above all else. You will find Bôzishnarûd traders throughout southern Endórë, peddling their wares and driving a hard bargain. They take pride in the ancient stature and sophistication of their civilization, one of the few to be recognized as, if not equal, at least sufficiently civilized, by [numenor|E].#"
  narudbriyig:0 "Narûdbriyig"
  narudbriyig_collective_noun:0 "Narûdbriyig"
  narudbriyig_prefix:0 "Narûdi"
@@ -508,6 +517,35 @@
  tuloriyan_collective_noun:0 "Tulôriyans"
  tuloriyan_prefix:0 "Tulôri"
  tuloriyan_desc:0 "#size:15    Those of the Sôriyans who would not accept the lordship of [bellakar|E] fled south with the fleet of former Qadjajar, eventually seizing and settling some of the most defensible points of the Tûlwang peninsula. There they raised a new city, Sôriya, named after their people. But within a few generations, they had mingled much with the Tûladen, and in truth a new culture was born: the Tulôriyans, the Corsairs of Tûlwang.#"
+
+ ## Far Apysaic
+ adena:0 "Adena"
+ adena_collective_noun:0 "Adena"
+ adena_prefix:0 "Adeno"
+ adena_desc:0 "#size:15    The Adena are an Apysaic group who migrated into Thani-Hazad in the early Second Age. Conservative by nature, they maintain a rigid caste system and a strict matriarchal tradition. Once nomads, they now favour more urban and settled farming lifestyles than their other Far Apysaic brethren, but millennia of Kharadunaim rule has left them with a relatively weak elite.#"
+ pel:0 "Pél"
+ pel_collective_noun:0 "Pél"
+ pel_prefix:0 "Pélo"
+ pel_desc:0 "#size:15    An Apysaic group who migrated into Thani-Hazad in the early Second Age. Like the Adena on the other side of the Yellow Mountains they are matriarchal and cosmopolitan, but their caste system is much more flexible, and centuries of independence in the form of a mozaic of squabbling realms made them more politically sophisticated than some of their indigenous kin. However, they have long accepted the political and cultural dominance of the Kharadûnaim, not least as a means of preventing a return to conflict between the Pél clans.#"
+ drel:0 "Drêl"
+ drel_collective_noun:0 "Drêl"
+ drel_prefix:0 "Drêlo"
+ drel_desc:0 "#size:15    The Drêl are a mixed Apysaic group who migrated into Thani-Hazad in the early Second Age. Though patriarchal and primitive, with a rigid caste system, they have adopted many aspects of the dominant Kharadûnaim culture of Thani Hazad, and are even said to have dealings at times with the local Cuind.#"
+
+ #
+ sederi:0 "Sederi"
+ sederi_collective_noun:0 "Sederi"
+ sederi_prefix:0 "Sedero"
+ sederi_desc:0 "#size:15    Orginally a Kirani group who migrated across the Yellow Mountains to avoid strife, the Sederi are still semi-nomadic and fiercely tribal and militaristic. The Kharadunaim often recruit them as soldiers, while being careful never to allow them to become strong or united enough to pose a threat to the social order of the Thani Hazad.#"
+ mag:0 "Mag"
+ mag_collective_noun:0 "Magri"
+ mag_prefix:0 "Magro"
+ mag_desc:0 "#size:15    The Magri, a tribal people hailing from the remote reaches of the Utter South, inhabit the rugged lands of Mag and Tûmag. Diverse and fragmented, they are comprised of numerous clans and tribes, often at odds with one another. While many settle along the winding river valleys or picturesque coastlines, their existence is intertwined with the sea, where fishing and the craft of boat-building are revered skills. Yet, it is the specter of sea-raids that casts a shadow over their society, a testament to their inherently martial culture.\n\nDespite their penchant for conflict, the Magri are not without honor and virtue. Renowned for their loyalty and chivalry, they find themselves sought after as mercenaries by distant rulers and warlords. Indeed, it is not uncommon to encounter entire clans or tribes plying their trade far from their ancestral homes, lending their martial prowess to the highest bidder.\n\nYet, for all their martial prowess and renowned virtues, the Magri remain fragmented. Inter-tribal strife and internal divisions prevent them from coalescing into a unified force, ensuring that their potential as a regional power remains unrealized. It is in this delicate balance of loyalty and rivalry that the essence of Magri culture thrives, a tapestry woven with threads of honor, conflict, and the call of distant shores..#"
+ nafarati:0 "Nâfarati"
+ nafarati_collective_noun:0 "Nâfarati"
+ nafarati_prefix:0 "Nâfar"
+ nafarati_desc:0 "#size:15    Akin to the famed Mûmakani south of the Yellow Mountains, the Nafarati people live in the scrubland between the desert and the jungles of [ray|E], refusing to cross the mountains with the rest of their kin in the late [firstage|E], having judged the Nâfarat river as their sacred, prophesied homeland. Once their domains had been larger, but as the great jungle of Harad turned to waste after the War of Wrath, they increasingly became a constrained - and belligerent - people. The Nafarati are at their heart a warrior culture, and have often quarreled with the wealthy and settled Bôzishnarûd to their west. Despite their fractious nature they seem indifferent to who rules over them, so long as it gives them the excuse to live by the sword.#"
+
  
 ### THE DAEN ###
 
@@ -555,7 +593,7 @@
  dunmen:0 "Dunmen"
  dunmen_collective_noun:0 "Dunmen"
  dunmen_prefix:0 "Dun"
- dunmen_desc:0 "#size:15    The Dunmen are the ancient inhabitants of Dunland. They are a group of [conceptracemen|E] primarily descended from the [daen|E] who once dwelled around the Gwaltho river, but fled into [enedhwaith|E] in the wake of the [waroftheelvesandsauron|E], where they settled in the shadow of the [mistymountains|E]. In the years which came after, the Dunlendings remained a standoffish folk, though not without their own sense of honor and nobility. For a time they were, at least in name, subjects of the [dunedain|E] kingdoms of [arnor|E] and [gondor|E], but largely were content to leave alone, and were in turn left alone. They would eventually become the progenitors of the Dunlendings.#"
+ dunmen_desc:0 "#size:15    The Dunmen are the ancient inhabitants of Dunland. They are a group of [conceptracemen|E] primarily descended from the [daen|E] who once dwelled around the Gwathló river, but fled into [enedhwaith|E] in the wake of the [waroftheelvesandsauron|E], where they settled in the shadow of the [mistymountains|E]. In the years which came after, the Dunlendings remained a standoffish folk, though not without their own sense of honor and nobility. For a time they were, at least in name, subjects of the [dunedain|E] kingdoms of [arnor|E] and [gondor|E], but largely were content to leave alone, and were in turn left alone. They would eventually become the progenitors of the Dunlendings.#"
  
  dunlending:0 "Dunlending"
  dunlending_collective_noun:0 "Dunlendings"
@@ -574,8 +612,8 @@
  isengard_dunlending:0 "Isengarder"
  isengard_dunlending_collective_noun:0 "Isengarders"
  isengard_dunlending_prefix:0 "Isen"
- isengard_dunlending_desc:0 "#size:15    The [dunlendings|E] of [isengard|E] have either melded with the old [gondorian|E] garrison of [isengard|E] or settled there after [sarumancharacter|E] became its keeper. They adopted some Gondorian traditions and speak Westron, but are otherwise much closer to their kin in Dunland proper.#"
-
+ isengard_dunlending_desc:0 "#size:15    The [dunlendings|E] of [isengard|E] have either melded with the old [gondorian|E] garrison of the vale or settled there after [sarumancharacter|E] became its keeper. They adopted some Gondorian traditions and speak Westron, but are otherwise much closer to their kin in Dunland proper.#"
+ 
  calenardhon_gwathuirim_ethnicity:0 "Calenardhon Gwathuirim"
 
  daen_coentis:0 "Daen Coentis"

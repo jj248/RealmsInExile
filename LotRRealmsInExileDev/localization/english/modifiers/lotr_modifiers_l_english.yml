@@ -13,11 +13,13 @@
  TOO_YOUNG_TO_MARRY:0 "[secondary_recipient.GetShortUIName|U] is still too young to marry: $VALUE|=+0$"
 
  offer_vassalization_interaction_aibehavior_different_religion_tt:0 "You are of a different [religion|E]: $VALUE|=+0$"
-
+ offer_vassalization_interaction_aibehavior_different_race_tt:0 "You are a different [conceptrace|E]: $VALUE|=+0$"
+ offer_vassalization_interaction_aibehavior_dunedain_chief_tt:0 "The Chieftain of the [dunedain|E] will not kneel lightly: $VALUE|=+0$"
 
  offer_vassalization_khand_vracarath_tt:0 "You are the ruler of $e_khand$: $VALUE|=+0$"
  offer_vassalization_lower_khand_vracarath_tt:0 "You are the ruler of $k_lower_khand$: $VALUE|=+0$"
  offer_vassalization_upper_khand_vracarath_tt:0 "You are the ruler of $k_upper_khand$: $VALUE|=+0$"
+ 
  
  WESTRON_LINGUA_FRANCA:0 "The Common Tongue of the Westlands: $VALUE|=+0$"
 
@@ -530,3 +532,6 @@
  youthful_vigor_2_modifier_desc:0 "Though advanced in years, this character still weathers diseases like a youth"
  
  mothered_many_children_lotr_modifier:0 "$mothered_many_children_modifier$"
+
+ witch_king_xp_boost:0 "The Witch-King of Angmar"
+ witch_king_xp_boost_desc:0 "Come not between the Nazgûl and his prey! Or he will not slay thee in thy turn. He will bear thee away to the houses of lamentation, beyond all darkness, where thy flesh shall be devoured, and thy shriveled mind be left naked to the Lidless Eye!"

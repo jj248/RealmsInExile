@@ -4027,7 +4027,6 @@ lineofaldiana11 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 	
@@ -4824,7 +4823,7 @@ lineofjauf1 = {
 
     trait = education_martial_2
 	trait = adventurer
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = lifestyle_blademaster
 	trait = physique_good_1
 
@@ -5241,7 +5240,7 @@ lineofjauf13 = {
     prowess = 10
 
     trait = education_learning_3
-	trait = mariner_2
+	trait = lifestyle_mariner
 	trait = lifestyle_blademaster
 	trait = adventurer
 	trait = physique_good_2
@@ -5251,6 +5250,12 @@ lineofjauf13 = {
 	
 	7018.6.18 = {
 		set_relation_nemesis = character:lineofjauf22
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
 	}
 
     6934.2.4 = {
@@ -5317,7 +5322,7 @@ lineofjauf15 = {
     trait = paranoid
 	
 	#trait = lifestyle_blademaster
-	#trait = mariner_1
+	#trait = lifestyle_mariner
 	trait = confider
 	#trait = adventurer
 	trait = physique_good_2
@@ -5367,7 +5372,6 @@ lineofjauf15 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 	
@@ -5537,20 +5541,6 @@ lineofjauf21 = {
         
     }
 	
-	7030.1.1 = {	# Master Merchant
-		effect = {
-            vassal_contract_set_obligation_level = {
-                type = feudal_government_levies
-                level = 1
-            }
-			vassal_contract_set_obligation_level = {
-				type = feudal_government_taxes
-				level = 0
-            }
-			
-		}
-	}
-	
     7100.5.1 = {
         death = { death_reason = death_natural_causes }
     }
@@ -5585,7 +5575,7 @@ lineofjauf22 = {
 
     trait = education_intrigue_4
 	
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = lifestyle_herbalist
 	
 	7018.6.18 = {						
@@ -5611,7 +5601,6 @@ lineofjauf22 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 	
@@ -6039,7 +6028,7 @@ lineofjauf41 = {
 
     trait = education_diplomacy_3
 	trait = poet
-	trait = mariner_1
+	trait = lifestyle_mariner
 	
 	7018.6.18 = {						
 		set_relation_soulmate = character:lineofjauf42	
@@ -6146,7 +6135,7 @@ lineofjauf44 = {
     trait = deceitful
 	
 	trait = lifestyle_blademaster
-	#trait = mariner_3
+	trait = lifestyle_mariner
 	trait = adventurer
 	trait = beauty_good_1
 	trait = physique_bad_2
@@ -6293,7 +6282,7 @@ lineofjauf48 = {
     trait = lustful
     trait = deceitful
 	
-	trait = blood_of_numenor_1
+	
 	trait = albino
 	trait = physique_good_2
 	trait = intellect_good_3
@@ -6307,6 +6296,8 @@ lineofjauf48 = {
 
     trait = education_diplomacy_2
 	
+
+	trait = blood_of_numenor_3
     6988.11.11 = {
         birth = yes
     }
@@ -8396,7 +8387,7 @@ lineofpolovateli61 = {
     sexuality = heterosexual
 
     trait = humble
-    trait = sadistic
+    trait = cynical
     trait = compassionate
 
     diplomacy = 6
@@ -9335,7 +9326,6 @@ lineofilasarian9 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 
@@ -10735,7 +10725,6 @@ lineofcapariana25 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 	
@@ -11978,7 +11967,6 @@ lineofmontegian31 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 	
@@ -12166,7 +12154,6 @@ lineofmontegian40 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 
@@ -12342,7 +12329,6 @@ lineofmontegian45 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 
@@ -12732,7 +12718,6 @@ lineofgarmeniana5 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 	
@@ -12913,7 +12898,6 @@ lineofgarmeniana10 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
     7062.12.14 = {
@@ -15276,7 +15260,7 @@ lineofilian64 = {
     trait = deceitful
 	
 	trait = scaly
-	trait = mariner_3
+	trait = lifestyle_mariner
 
     diplomacy = 3
     martial = 4
@@ -15314,7 +15298,7 @@ lineofilian65 = {
 	
 	trait = possessed_genetic
 	trait = scaly
-	trait = mariner_2
+	trait = lifestyle_mariner
 
     diplomacy = 8
     martial = 4
@@ -15326,6 +15310,12 @@ lineofilian65 = {
     trait = education_learning_4
 
     6764.3.12 = {
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
         birth = yes
     }
 
@@ -15393,7 +15383,7 @@ lineofilian67 = {
     trait = vengeful
     trait = ambitious
 	
-	trait = mariner_1
+	trait = lifestyle_mariner
 
     diplomacy = 7
     martial = 3
@@ -15769,7 +15759,6 @@ lineofilian77 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 
@@ -16699,7 +16688,6 @@ lineofmaleniana11 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
     7036.7.15 = {
@@ -16958,7 +16946,7 @@ lineofvierling1 = { # Gwînaran Enterprising Gondorian Merchant
 	religion = faith_edain
     culture = gondorian
 
-    trait = blood_of_numenor_2
+    
 	trait = education_stewardship_4
 	trait = ambitious
 	trait = diligent
@@ -16966,8 +16954,10 @@ lineofvierling1 = { # Gwînaran Enterprising Gondorian Merchant
 	trait = bastard_founder
 	trait = intellect_good_3
 
+
+	trait = blood_of_numenor_5
     5250.1.1 = {
-		birth = yes			
+		birth = yes		
 	}
 	5301.1.1 = {
 		add_spouse = lineofvierling2		
@@ -17012,13 +17002,15 @@ lineofvierling3 = { # Grapeseed, son of Vierindur
 	father = lineofvierling1
 	mother = lineofvierling2
 
-    trait = blood_of_numenor_1
+    
 	trait = education_stewardship_3
 	trait = content
 	trait = diligent
 	trait = humble
 	trait = intellect_good_1
 
+
+	trait = blood_of_numenor_3
     5305.1.1 = {
 		birth = yes			
 	}
@@ -17040,15 +17032,17 @@ lineofvierling4 = { # second son of Vierindur
 	father = lineofvierling1
 	mother = lineofvierling2
 	
-	trait = blood_of_numenor_1
+	
 	trait = lifestyle_blademaster
 	trait = brave
 	trait = just
 	trait = zealous
 	prowess = 10
 
+
+	trait = blood_of_numenor_3
     5308.1.1 = {
-		birth = yes			
+		birth = yes		
 	}
 	5324.1.1 = {
 		give_nickname = nick_alphathel		
@@ -17068,9 +17062,11 @@ lineofvierling5 = { # third son of Vierindur
 	father = lineofvierling1
 	mother = lineofvierling2
 	
-	trait = blood_of_numenor_1
+	
 	trait = dwarf
 
+
+	trait = blood_of_numenor_3
     5309.1.1 = {
 		birth = yes			
 	}
@@ -17093,11 +17089,13 @@ lineofvierling6 = { # Anoriell Sunmaiden; first daughter of Vierindur
 	father = lineofvierling1
 	mother = lineofvierling2
 	
-	trait = blood_of_numenor_1
+	
 	trait = beauty_good_3
 
+
+	trait = blood_of_numenor_3
     5314.1.1 = {
-		birth = yes			
+		birth = yes		
 	}
 	5334.1.1 = {
 		give_nickname = nick_anoriell		
@@ -20656,7 +20654,6 @@ lineofvierwood101 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 	
@@ -25350,7 +25347,6 @@ lineofraudbarad103 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 	
@@ -26273,7 +26269,6 @@ lineofsteining15 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 	
@@ -26969,7 +26964,6 @@ lineofaldian7 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 	
@@ -27510,7 +27504,6 @@ lineofvariana9 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 	
@@ -28439,7 +28432,6 @@ lineoflogian11 = {
 				type = feudal_government_taxes
 				level = 1
             }
-			
 		}
 	}
 	
@@ -29965,7 +29957,6 @@ lineofbarvadinian35 = {
 				type = feudal_government_taxes
 				level = 0
             }
-			
 		}
 	}
 	
@@ -30491,7 +30482,7 @@ dorwinioncourtier1 = {	# Trader
     trait = greedy
 
     trait = education_stewardship_3
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = avaricious
 
     6989.1.12 = {
@@ -30542,11 +30533,17 @@ dorwinioncourtier3 = {	# A Sailor
     trait = impatient
 
     trait = education_diplomacy_2
-	trait = mariner_2
+	trait = lifestyle_mariner
 	trait = athletic
 
     7002.1.1 = {
         birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 50
+			}
+        }
     }
 
     7085.3.5 = {
@@ -30567,12 +30564,18 @@ dorwinioncourtier4 = {	# A Sailor
     trait = impatient
 
     trait = education_stewardship_3
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = administrator
 	trait = lifestyle_reveler
 
     7001.5.1 = {
         birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 100
+			}
+        }
     }
 
     7069.2.1 = {
@@ -30594,11 +30597,17 @@ dorwinioncourtier5 = {	# A Sailor
     trait = just
 
     trait = education_diplomacy_2
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = adventurer
 
     7001.5.1 = {
         birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 100
+			}
+        }
     }
 
     7069.2.1 = {
@@ -30618,7 +30627,7 @@ dorwinioncourtier6 = {	# A Fisher
     trait = patient
 
     trait = education_stewardship_2
-	trait = mariner_1
+	trait = lifestyle_mariner
 	trait = adventurer
 	trait = loyal
 
@@ -30644,13 +30653,19 @@ dorwinioncourtier7 = {	# A Blue Priest
     trait = impatient
 
     trait = education_learning_4
-	trait = mariner_3
+	trait = lifestyle_mariner
 	trait = theologian
 	trait = possessed_1
 	trait = adventurer
 
     7015.5.21 = {
         birth = yes
+        effect = {
+    		add_trait_xp = {
+				trait = lifestyle_mariner
+				value = 100
+			}
+        }
     }
 
     7052.7.6 = {
