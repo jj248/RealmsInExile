@@ -1,4 +1,8 @@
-﻿setup_dorwinion_council_members = {
+﻿#################################
+### Dorwinion Council Effects ###
+#################################
+
+setup_dorwinion_council_members = {
     remove_global_variable = dorinion_council_member_7
     remove_global_variable = dorinion_council_member_6
     remove_global_variable = dorinion_council_member_5
@@ -131,4 +135,104 @@ fire_events_for_de_jure_vassals = {
             target = root
         }
     }
+}
+
+#################################
+### Balan-Lai Council Effects ###
+#################################
+
+setup_balan_lai_council_members = {
+    remove_global_variable = balan_lai_council_member_7
+    remove_global_variable = balan_lai_council_member_6
+    remove_global_variable = balan_lai_council_member_5
+    remove_global_variable = balan_lai_council_member_4
+    remove_global_variable = balan_lai_council_member_3
+    remove_global_variable = balan_lai_council_member_2
+    remove_global_variable = balan_lai_council_member_1
+
+
+    every_county_in_region = { # Works
+		region = custom_balan_lai_regions
+        if = {
+            limit = { 
+                holder = { is_independent_ruler = yes } 
+                holder = { is_human = yes }
+            }
+            holder = { add_to_list = balan_lai_members }
+        }
+	}
+
+    ordered_in_list = {
+        list = balan_lai_members
+        max = 7
+        order_by = {
+            add = monthly_character_income
+            add = average_development_in_holdings
+            add = script_current_military_strength
+        }
+        
+        if = {
+            limit = { has_global_variable = balan_lai_council_member_1 }
+            set_global_variable = {
+                name = balan_lai_council_member_7
+                value = this
+            }
+        }
+        else_if = {
+            limit = { has_global_variable = balan_lai_council_member_6 }
+            set_global_variable = {
+                name = balan_lai_council_member_1
+                value = this
+            }
+        }
+        else_if = {
+            limit = { has_global_variable = balan_lai_council_member_2 }
+            set_global_variable = {
+                name = balan_lai_council_member_6
+                value = this
+            }
+        }
+        else_if = {
+            limit = { has_global_variable = balan_lai_council_member_5 }
+            set_global_variable = {
+                name = balan_lai_council_member_2
+                value = this
+            }
+        }
+        else_if = {
+            limit = { has_global_variable = balan_lai_council_member_3 }
+            set_global_variable = {
+                name = balan_lai_council_member_5
+                value = this
+            }
+        }
+        else_if = {
+            limit = { has_global_variable = balan_lai_council_member_4 }
+            set_global_variable = {
+                name = balan_lai_council_member_3
+                value = this
+            }
+        }
+        else = {
+            set_global_variable = {
+                name = balan_lai_council_member_4
+                value = this
+            }
+        }
+    }
+}
+
+fire_events_for_balan_lai_council_members = {
+    title:k_dorwinion.holder = {
+        clear_variable_list = positive_vote
+        clear_variable_list = negative_vote
+        set_variable = vote_is_being_held
+    }
+
+    every_lotr_council_member = {
+        limit = { target_is_liege_or_above = title:k_dorwinion.holder }
+        trigger_event = { id = $EVENT_ID$ days = { 1 5 } } # White Peace
+    }
+
+    title:k_dorwinion.holder = { trigger_event = { id = council_events.9998 days = 7 } }
 }

@@ -529,6 +529,48 @@ middleearth_yellow_mountains_barazimabul = {
 	}
 }
 
+middleearth_zimrathani = {
+	duchies = {
+		# k_zimrathani
+		d_zayanuri d_alsarias d_karasalas
+	}
+}
+
+middleearth_drel = {
+	duchies = {
+		# k_drel
+		d_chelayana d_cuindore d_metkharan d_galadartaure d_gimileth
+	}
+}
+
+middleearth_pel = {
+	duchies = {
+		# k_pel
+		d_pel d_oshwari d_barasi d_shanwo
+	}
+}
+
+middleearth_gimilthani = {
+	duchies = {
+		# k_gimilthani
+		d_kor_bawiba d_mikrazor d_gimilurush
+	}
+}
+
+middleearth_kharadune = {
+	duchies = {
+		# k_kharadune
+		d_inzilloni d_rotharana d_azarideth d_holzoreth d_azgathani
+	}
+}
+
+middleearth_an_balkumagan = {
+	duchies = {
+		# k_an_balkumagan
+		d_aruzayan d_urithani d_nardubarim d_benthani d_velashar d_dobaraka d_sakya
+	}
+}
+
 # regions
 middleearth_west_rhovanion = {
 	regions = {
@@ -581,7 +623,8 @@ middleearth_mordor = {
 }
 middleearth_thani_hazad = {
 	regions = {
-
+		middleearth_an_balkumagan middleearth_kharadune middleearth_gimilthani
+		middleearth_pel middleearth_drel middleearth_zimrathani
 	}
 }
 middleearth_rhun = {
@@ -1481,6 +1524,14 @@ custom_dune_sea = {
 		# e_dune_sea
 			# k_koanoz
 		d_koanoz d_jel_daniz d_sar_daniz d_hari_daniz
+	}
+}
+
+
+custom_balan_lai_regions = {
+	regions = {
+		middleearth_kharadune middleearth_gimilthani
+		middleearth_pel middleearth_drel middleearth_zimrathani
 	}
 }
 

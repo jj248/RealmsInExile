@@ -21,7 +21,7 @@ on_game_start = {
 			months = 3
 		}
 		
-		title:d_shire.holder ?= {
+		title:d_shire.holder ?= { #LotR
 			if = {
 				limit = {
 					is_independent_ruler = no
@@ -35,7 +35,7 @@ on_game_start = {
 			struggle_type = balrog_struggle
 			start_phase = struggle_balrog_phase_wandering
 		}
-		if = {
+		if = { #LotR
 			limit = { # Moria destroyed, Balrog calms down somewhat
 				game_start_date >= 6023.1.1
 			}
@@ -53,56 +53,57 @@ on_game_start = {
 		}
 		
 		### DW Code ###
-		add_empires_to_global_list = yes
-		add_kingdom_titles_to_list = yes
-		canon_area_empires = yes
+		add_empires_to_global_list = yes #LotR
+		add_kingdom_titles_to_list = yes #LotR
+		canon_area_empires = yes #LotR
 	
 		### Define Elven Homeland Counties
-		define_elven_homelands = yes
+		define_elven_homelands = yes #LotR
 
 		### Define Routes
-		define_trade_routes = yes
+		define_trade_routes = yes #LotR
 
 		### Define Ore and Jewel Deposits
-		define_existing_mining_resources = yes
+		define_existing_mining_resources = yes #LotR
 
 		### Set up Dorwinion Dynasty Factions ### - can move these to a scripted effect if needed later
-		dynasty:dynasty_koldana ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_garmeniana ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_ilian ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_maleniana ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_raudbarad ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_steining ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_aldian ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_variana ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_logian ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_aldiana ?= { add_dynasty_modifier = master_merchants }
-		# dynasty:dynasty_herian ?= { add_dynasty_modifier = master_merchants }
-		dynasty:dynasty_ilasarian ?= { add_dynasty_modifier = master_merchants }
-		dynasty:dynasty_capariana ?= { add_dynasty_modifier = master_merchants }
-		dynasty:dynasty_vieriana ?= { add_dynasty_modifier = winelords }
-		dynasty:dynasty_barvadinian ?= { add_dynasty_modifier = master_merchants }
-		dynasty:dynasty_polovateli ?= { add_dynasty_modifier = master_merchants }
+		dynasty:dynasty_koldana ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_garmeniana ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_ilian ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_maleniana ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_raudbarad ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_steining ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_aldian ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_variana ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_logian ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_aldiana ?= { add_dynasty_modifier = master_merchants } #LotR
+		# dynasty:dynasty_herian ?= { add_dynasty_modifier = master_merchants } #LotR
+		dynasty:dynasty_ilasarian ?= { add_dynasty_modifier = master_merchants } #LotR
+		dynasty:dynasty_capariana ?= { add_dynasty_modifier = master_merchants } #LotR
+		dynasty:dynasty_vieriana ?= { add_dynasty_modifier = winelords } #LotR
+		dynasty:dynasty_barvadinian ?= { add_dynasty_modifier = master_merchants } #LotR
+		dynasty:dynasty_polovateli ?= { add_dynasty_modifier = master_merchants } #LotR
 		### --------------------------------- ###
 		
 		### Set Up Dune Sea Witch Covens ###
 
-		house:house_shazares ?= { add_house_modifier = witch_coven }
-		house:house_mirakes ?= { add_house_modifier = witch_coven }
-		house:house_druages ?= { add_house_modifier = witch_coven }
-		house:house_zayares ?= { add_house_modifier = witch_coven }
+		house:house_shazares ?= { add_house_modifier = witch_coven } #LotR
+		house:house_mirakes ?= { add_house_modifier = witch_coven } #LotR
+		house:house_druages ?= { add_house_modifier = witch_coven } #LotR
+		house:house_zayares ?= { add_house_modifier = witch_coven } #LotR
 
 		### Appoint Princely Houses of the Dúnedain ###
-		dynasty:dynasty_dol_amroth ?= { add_dynasty_modifier = princely_house_of_dol_amroth }
-		dynasty:dynasty_caladir ?= { add_dynasty_modifier = princely_house_of_cardolan }
+		dynasty:dynasty_dol_amroth ?= { add_dynasty_modifier = princely_house_of_dol_amroth } #LotR
+		dynasty:dynasty_caladir ?= { add_dynasty_modifier = princely_house_of_cardolan } #LotR
 
 		
-		fire_intro_events = yes
-		generate_sorcery_list_on_start = yes
+		fire_intro_events = yes #LotR
+		generate_sorcery_list_on_start = yes #LotR
 
 		### Crafting Artifact Lists ###
-		artifact_crafting_on_game_start_effect = yes
-		setup_dorwinion_council_members = yes
+		artifact_crafting_on_game_start_effect = yes #LotR
+		setup_dorwinion_council_members = yes #LotR
+		setup_balan_lai_council_members = yes #LotR
 
 		if = { # The Establishment of the Ithilien Rangers
 			limit = { game_start_date > 2934.1.1 } # The year is after T.A. 2901, when Henneth Annun was built

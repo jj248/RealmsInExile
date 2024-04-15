@@ -1,5 +1,9 @@
 ﻿l_english:
 
+  #########################
+  ### Dorwinion Council ###
+  #########################
+
   HEADER_TEXT:0 "Council of Folyavuld"
   COUNCIL_WINDOW_ACTIONS:0 "Actions"
   COUNCIL_WINDOW_INFO:0 "Info"
@@ -58,4 +62,13 @@
   ###########
   ### HUD ###
   ###########
+
   LOTR_COUNCIL_HUD:0 "Council Chambers"
+
+  ############################
+  ### Thani-Hazada Council ###
+  ############################
+
+  HEADER_TEXT_BALAN_LAI:0 "Balan-Lai"
+
+  COUNCIL_WINDOW_BALAN_LAI_MEMBERS:0 "[Scope.Char.GetPrimaryTitle.GetNameNoTier]"

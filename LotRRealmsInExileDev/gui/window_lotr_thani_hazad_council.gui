@@ -1,0 +1,1087 @@
+﻿types LotRCouncilWindow { 
+    type lotr_thani_hazad_council_window = window { 
+        size = { 1300 900 } 
+        position = { 400 75 } 
+        layer = middle 
+        visible = "[GetVariableSystem.Exists('lotr_thani_hazad_council_window')]" 
+        
+        using = Window_Background 
+        using = Window_Decoration
+        using = Animation_ShowHide_Standard
+        allow_outside = yes
+
+        state = {
+            name = _show
+
+            on_finish = "[GetScriptedGui( 'set_starting_lists_on_character' ).Execute( GuiScope.SetRoot( GetTitleByKey('k_dorwinion').GetHolder.MakeScope ).End)]"
+        }
+
+        vbox = {
+            using = Window_Margins
+            restrictparent_min = yes 
+            allow_outside = yes
+
+            header_pattern = {
+                allow_outside = yes
+                layoutpolicy_horizontal = expanding
+
+                blockoverride "header_text" 
+                {
+                    text = "HEADER_TEXT_BALAN_LAI"
+                    default_format = "#high"
+                    fontsize = 25
+                }
+
+                blockoverride "button_close"
+                {
+                    onclick = "[GetVariableSystem.Clear( 'lotr_thani_hazad_council_window' )]"
+                }
+            }
+            expand = {}
+        }
+
+        widget = {
+            parentanchor = center
+            position = { 0 25 }
+            size = { 1230 820 } 
+            
+            background = {
+                name = "background"
+                texture = "gfx/interface/illustrations/frontend/credits.dds"
+        
+                modify_texture = {
+                    texture = "gfx/interface/component_masks/mask_rough_edges.dds"
+                    spriteType = Corneredtiled
+                    spriteborder = { 20 20 }
+                    blend_mode = alphamultiply
+                    texture_density = 1.5
+                }
+            }
+
+            hbox = {
+                allow_outside = yes
+                spacing = 5
+                position = { 10 -145 }
+                council_window_torso = {
+                    visible = "[GetScriptedGui( 'TH_Council_show_char_in_first_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_1')]"
+                    }
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 65 -55 }
+                    }
+                    blockoverride "position" {
+                        position = { 0 60 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 70 155 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 325 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 475 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 445 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 325 }
+                    }
+                    blockoverride "modify_lower_texture" { }
+                    blockoverride "modify_upper_texture" { }
+                    blockoverride "modify_lower_numerical_texture" { }
+                    blockoverride "modify_upper_numerical_texture" { }
+                    blockoverride "crown_position" {
+                        position = { 45 286 }
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    visible = "[GetScriptedGui( 'TH_Council_show_char_in_second_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_2')]"
+                    }
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 60 -105 }
+                    }
+                    blockoverride "position" {
+                        position = { 5 0 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 60 105 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 275 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 425 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 395 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 275 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    # blockoverride "upper_numerical_frame_position" {
+                    #     position = { 60 500 }
+                    # }
+                    # blockoverride "upper_numerical_mask_position" {
+                    #     position = { 60 500 }
+                    # }
+                    # blockoverride "lower_numerical_frame_position" {
+                    #     position = { 60 525 }
+                    # }
+                    # blockoverride "lower_numerical_mask_position" {
+                    #     position = { 60 525 }
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold.dds"
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold.dds"
+                    # }
+                    blockoverride "crown_position" {
+                        position = { 50 236 }
+                    }
+                    blockoverride "crown_texture" {
+                        texture = "gfx/interface/icons/duchy_crown.dds"
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    visible = "[GetScriptedGui( 'TH_Council_show_char_in_third_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_3')]"
+                    }
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 50 -155 }
+                    }
+                    blockoverride "position" {
+                        position = { 5 -50 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 50 55 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 225 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 375 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 345 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 225 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    # blockoverride "upper_numerical_frame_position" {
+                    #     position = { 60 450 }
+                    # }
+                    # blockoverride "upper_numerical_mask_position" {
+                    #     position = { 60 450 }
+                    # }
+                    # blockoverride "lower_numerical_frame_position" {
+                    #     position = { 60 475 }
+                    # }
+                    # blockoverride "lower_numerical_mask_position" {
+                    #     position = { 60 475 }
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/grey.dds"
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/grey.dds"
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree_alpha" {
+                    #     alpha = 2
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree_alpha" {
+                    #     alpha = 2
+                    # }
+                    blockoverride "crown_position" {
+                        position = { 45 180 }
+                    }
+                    blockoverride "crown_texture" {
+                        texture = "gfx/interface/icons/kingdom_crown.dds"
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                # Central Char
+                council_window_torso = {
+                    visible = "[GetScriptedGui( 'TH_Council_show_char_in_fourth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_4')]"
+                    }
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 65 -195 }
+                    }
+                    blockoverride "position" {
+                        position = { 5 -95 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 65 15 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 185 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 335 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 305 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 185 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
+                    # blockoverride "upper_numerical_frame_position" {
+                    #     position = { 60 410 }
+                    # }
+                    # blockoverride "upper_numerical_mask_position" {
+                    #     position = { 60 410 }
+                    # }
+                    # blockoverride "lower_numerical_frame_position" {
+                    #     position = { 60 435 }
+                    # }
+                    # blockoverride "lower_numerical_mask_position" {
+                    #     position = { 60 435 }
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold_darker.dds"
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold_darker.dds"
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree_alpha" {
+                    #     alpha = 2
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree_alpha" {
+                    #     alpha = 2.5
+                    # }
+                    blockoverride "crown_position" {
+                        position = { 50 140 }
+                    }
+                    blockoverride "crown_texture" {
+                        texture = "gfx/interface/icons/empire_crown.dds"
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    visible = "[GetScriptedGui( 'TH_Council_show_char_in_fith_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_5')]"
+                    }
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 60 -160 }
+                    }
+                    blockoverride "position" {
+                        position = { 5 -55 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 60 55 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 225 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 375 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 345 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 225 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/grey.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    # blockoverride "upper_numerical_frame_position" {
+                    #     position = { 60 450 }
+                    # }
+                    # blockoverride "upper_numerical_mask_position" {
+                    #     position = { 60 450 }
+                    # }
+                    # blockoverride "lower_numerical_frame_position" {
+                    #     position = { 60 475 }
+                    # }
+                    # blockoverride "lower_numerical_mask_position" {
+                    #     position = { 60 475 }
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/grey.dds"
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/grey.dds"
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree_alpha" {
+                    #     alpha = 2
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree_alpha" {
+                    #     alpha = 2
+                    # }
+                    blockoverride "crown_position" {
+                        position = { 50 180 }
+                    }
+                    blockoverride "crown_texture" {
+                        texture = "gfx/interface/icons/kingdom_crown.dds"
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    visible = "[GetScriptedGui( 'TH_Council_show_char_in_sixth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_6')]"
+                    }
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 78 -105 }
+                    }
+                    blockoverride "position" {
+                        position = { 0 5 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 50 105 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 275 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 425 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 395 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 275 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    # blockoverride "upper_numerical_frame_position" {
+                    #     position = { 60 500 }
+                    # }
+                    # blockoverride "upper_numerical_mask_position" {
+                    #     position = { 60 500 }
+                    # }
+                    # blockoverride "lower_numerical_frame_position" {
+                    #     position = { 60 525 }
+                    # }
+                    # blockoverride "lower_numerical_mask_position" {
+                    #     position = { 60 525 }
+                    # }
+                    # blockoverride "upper_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold.dds"
+                    # }
+                    # blockoverride "lower_numerical_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold.dds"
+                    # }
+                    blockoverride "crown_position" {
+                        position = { 50 236 }
+                    }
+                    blockoverride "crown_texture" {
+                        texture = "gfx/interface/icons/duchy_crown.dds"
+                    }
+                }
+                spacer = { size = { 150 0 } }
+                council_window_torso = {
+                    visible = "[GetScriptedGui( 'TH_Council_show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_7')]"
+                    }
+                    blockoverride "text_key" {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                    }
+                    blockoverride "heritage_position" {
+                        position = { 60 -55 }
+                    }
+                    blockoverride "position" {
+                        position = { 0 45 }
+                    }
+                    blockoverride "name_position" {
+                        position = { 65 155 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { 0 325 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { 0 475 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { 0 445 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { 0 325 }
+                    }
+                    blockoverride "modify_lower_texture" { }
+                    blockoverride "modify_upper_texture" { }
+                    blockoverride "modify_lower_numerical_texture" { }
+                    blockoverride "modify_upper_numerical_texture" { }
+                    
+                    blockoverride "crown_position" {
+                        position = { 53 286 }
+                    }
+                }
+                spacer = { size = { 180 0 } }
+            }
+            widget = {
+                using = Animation_ShowHide_Standard
+                visible = "[GetScriptedGui( 'TH_Council_show_progress_bar' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                parentanchor = center
+                allow_outside = yes
+                
+                progressbar_red_green = {
+                    size = { 300 30 }
+                    position = { 0 10 }
+                    parentanchor = hcenter
+                    mirror = horizontal
+
+                    min = 0
+                    max = "[EmptyScope.ScriptValue('total_votes')]"
+                    value = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.ScriptValue('positive_issue_vote')]"
+                    # tooltip = current_leading_white_peace_vote
+                    tooltip = "current_leading_white_peace_vote"
+                }
+
+                widget = {
+                    allow_outside = yes
+                    position = { 145 0 }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 -15 }
+                        mirror = vertical
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 15 }
+                        
+                        text_single = {
+                            text = "positive_vote_score"
+                            default_format = "#V"
+                            parentanchor = top|hcenter
+                            margin_top = 4
+                            tooltipwidget = {
+                                positive_vote_tooltip = {}
+                            }
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        mirror = vertical
+                        position = { 0 -15 }
+                        
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        position = { 0 15 }
+    
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4 # Needs to be brigther due to icon's alpha being lower
+                        }
+                    }
+                }
+                widget = {
+                    allow_outside = yes
+                    position = { -205 0 }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 -15 }
+                        mirror = vertical
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+                        texture_density = 2
+                        alpha = 0.9
+                        position = { 0 15 }
+                        
+                        text_single = {
+                            text = "negative_vote_score"
+                            default_format = "#V"
+                            parentanchor = top|hcenter
+                            margin_top = 4
+                            tooltipwidget = {
+                                negative_vote_tooltip = {}
+                            }
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        mirror = vertical
+                        position = { 0 -15 }
+                        
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4
+                        }
+                    }
+                    icon = {
+                        size = { 60 50 }
+                        spriteborder = { 30 30 }
+                        spriteType = corneredStretched
+                        texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+                        texture_density = 2
+                        position = { 0 15 }
+    
+                        modify_texture = {
+                            texture = "gfx/interface/colors/gold.dds"
+                            blend_mode = colordodge
+                            alpha = 0.4 # Needs to be brigther due to icon's alpha being lower
+                        }
+                    }
+                }
+
+            }
+            hbox = {
+                position = { 0 250 }
+                spacer = { size = { 10 0 } }
+                vbox = {
+                    spacing = 5
+                    icon = {
+                        texture = "gfx/interface/hud/toast_title_bg.dds"
+                        size = { 200 40 }
+                        position = { 0 0 }
+                        text_single = {
+                            text = "COUNCIL_WINDOW_ACTIONS"
+                            fontsize = 24
+                            default_format = "#color_black"
+                            parentanchor = center
+                        }
+                    }
+                    scrollbox = {
+                        allow_outside = yes
+                        size = { 420 250 }    
+                        background = {  using = Background_Area_ExtraDark }
+                        
+                        blockoverride "scrollbox_content" {
+                            spacer = { size = { 0 10 } }
+                            spacer = { size = { 0 10 } }
+                            text_single = { # No Actions are available
+                                margin_top = 100
+                                text = "no_actions_available"
+                                fontsize = 28
+                                default_format = "#high"
+                                visible = "[GetScriptedGui( 'TH_Council_show_no_policies_text' ).IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+                            }
+                        }
+                    }
+                }
+                vbox = {
+                    spacing = 5
+                    icon = {
+                        texture = "gfx/interface/hud/toast_title_bg.dds"
+                        size = { 200 40 }
+                        position = { 0 0 }
+                        text_single = {
+                            text = "COUNCIL_WINDOW_LAWS"
+                            fontsize = 24
+                            default_format = "#color_black"
+                            parentanchor = center
+                        }
+                    }
+                    spacer = { size = { 0 5 }}
+                    hbox = {
+                        spacing = 5
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                    }
+                    hbox = {
+                        spacing = 5
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                        button_primary = { # 'Downgrade' button
+                            raw_text = "Fun Button"
+                            size = { 200 50 }
+                        }
+                    }
+                }
+                spacer = { size = { 10 0 } }
+            }
+        }
+        widget = {
+            parentanchor = vcenter
+            allow_outside = yes
+            hbox = {
+                allow_outside = yes
+                spacing = 5
+                position = { 10 -170 }
+                spacer = { size = { 478 0 }}
+                council_window_torso = {
+                    visible = "[GetGlobalVariable('balan_lai_council_member_8').IsSet]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_4')]"
+                    }
+                    blockoverride "heritage_position" {
+                        position = { -40 170 }
+                    }
+                    blockoverride "position" {
+                        position = { -85 180 }
+                    }
+                    blockoverride "name_position" {
+                        position = { -25 380 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
+                }
+                spacer = { size = { 173 0 }}
+                council_window_torso = {
+                    visible = "[GetGlobalVariable('balan_lai_council_member_9').IsSet]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_5')]"
+                    }
+                    blockoverride "heritage_position" {
+                        position = { -40 130 }
+                    }
+                    blockoverride "position" {
+                        position = { -85 140 }
+                    }
+                    blockoverride "name_position" {
+                        position = { -25 340 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { -95 105 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { -95 225 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { -95 225 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { -95 105 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
+                }
+                spacer = { size = { 173 0 }}
+                council_window_torso = {
+                    visible = "[GetGlobalVariable('balan_lai_council_member_10').IsSet]"
+                    blockoverride "datacontext" {
+                        datacontext = "[GetGlobalVariable('balan_lai_council_member_1')]"
+                    }
+                    blockoverride "heritage_position" {
+                        position = { -40 170 }
+                    }
+                    blockoverride "position" {
+                        position = { -85 180 }
+                    }
+                    blockoverride "name_position" {
+                        position = { -25 380 }
+                    }
+                    blockoverride "upper_frame_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "lower_frame_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "lower_mask_position" {
+                        position = { -95 265 }
+                    }
+                    blockoverride "upper_mask_position" {
+                        position = { -95 145 }
+                    }
+                    blockoverride "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold_darker.dds"
+                    }
+                    blockoverride "upper_frame_filigree_alpha" {
+                        alpha = 2
+                    }
+                    blockoverride "lower_frame_filigree_alpha" {
+                        alpha = 2.5
+                    }
+                }
+            }
+        }
+    }
+
+    type council_window_torso = widget {
+        allow_outside = yes
+        block "datacontext" {
+            datacontext = "[GetGlobalVariable('balan_lai_council_member_1')]"
+        }
+        visible = "[GetScriptedGui( 'TH_Council_show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char ).End)]"
+
+        ### Crown
+        icon = {
+            size = { 75 60 }
+            spriteType = corneredStretched
+            block "crown_texture" {
+                texture = "gfx/interface/icons/county_crown.dds"
+            }
+            texture_density = 2
+            alpha = 0.9
+            block "crown_position" {
+                position = { 0 0 }
+            }
+        }
+
+        ### Dark portrait behind char
+        icon = {
+            size = { 170 150 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+            texture_density = 2
+            alpha = 0.9
+            block "lower_mask_position" {
+                position = { 0 30 }
+            }
+        }
+        icon = {
+            size = { 170 150 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+            texture_density = 2
+            alpha = 0.9
+            block "upper_mask_position" {
+                position = { 0 30 }
+            }
+            mirror = vertical
+        }
+        icon = {
+            size = { 170 150 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+            texture_density = 2
+            mirror = vertical
+            block "upper_frame_position" {
+                position = { 0 30 }
+            }
+            
+            block "modify_upper_texture" {
+                modify_texture = {
+                    block "upper_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blend_mode = colordodge
+                    block "upper_frame_filigree_alpha" {
+                        alpha = 0.4
+                    }
+                }
+            }
+        }
+        icon = {
+            size = { 170 120 }
+            spriteborder = { 30 30 }
+            spriteType = corneredStretched
+            texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+            texture_density = 2
+            position = { 0 30 }
+            alpha = 0.8
+            block "lower_frame_position" {
+                position = { 0 30 }
+            }
+            block "modify_lower_texture" {
+                modify_texture = {
+                    block "lower_frame_filigree" {
+                        texture = "gfx/interface/colors/gold.dds"
+                    }
+                    blend_mode = colordodge
+                    block "lower_frame_filigree_alpha" {
+                        alpha = 0.7 # Needs to be brigther due to icon's alpha being lower
+                    }
+                }
+            }
+        }
+			
+
+        ### Char and heritage
+        vbox = {
+            block "heritage_position" {
+                position = { 50 0 }
+            }
+            text_single = {
+                block "text_key" {
+                    text = "[Scope.Char.GetCulture.GetHeritage.GetNameNoTooltip]"
+                }
+                fontsize = 15
+                default_format = "#high"
+                parentanchor = top
+            }
+        }
+        vbox = {
+            block "position" {
+                position = { 0 0 }
+            }
+            
+            portrait_torso = {
+                datacontext = "[Scope.Char]"
+                blockoverride "opinion_box"{}
+            }
+        }
+
+        ### Numerical value of 'Power' on the council
+        # icon = {
+        #     size = { 60 50 }
+        #     spriteborder = { 30 30 }
+        #     spriteType = corneredStretched
+        #     texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+        #     texture_density = 2
+        #     alpha = 0.9
+        #     block "upper_numerical_mask_position" {
+        #         position = { 55 550 }
+        #     }
+        #     mirror = vertical
+        # }
+        # icon = {
+        #     size = { 60 50 }
+        #     spriteborder = { 30 30 }
+        #     spriteType = corneredStretched
+        #     texture = "gfx/interface/buttons/button_stone_glass_mask.dds"
+        #     texture_density = 2
+        #     alpha = 0.9
+        #     block "lower_numerical_mask_position" {
+        #         position = { 55 575 }
+        #     }
+            
+        #     text_single = {
+        #         text = "[Scope.ScriptValue('dorwinion_council_member_strength')]"
+        #         default_format = "#V"
+        #         parentanchor = top|hcenter
+        #         margin_top = 4
+        #         tooltip = "[Scope.GetScriptValueDesc('dorwinion_council_member_strength')]"
+        #     }
+        # }
+        # icon = {
+        #     size = { 60 50 }
+        #     spriteborder = { 30 30 }
+        #     spriteType = corneredStretched
+        #     texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+        #     texture_density = 2
+        #     mirror = vertical
+        #     block "upper_numerical_frame_position" {
+        #         position = { 55 550 }
+        #     }
+            
+        #     block "modify_upper_numerical_texture" {
+        #         modify_texture = {
+        #             block "upper_numerical_frame_filigree" {
+        #                 texture = "gfx/interface/colors/gold.dds"
+        #             }
+        #             blend_mode = colordodge
+        #             block "upper_numerical_frame_filigree_alpha" {
+        #                 alpha = 0.4
+        #             }
+        #         }
+        #     }
+        # }
+        # icon = {
+        #     size = { 60 50 }
+        #     spriteborder = { 30 30 }
+        #     spriteType = corneredStretched
+        #     texture = "gfx/interface/buttons/button_stone_glass_frame.dds"
+        #     texture_density = 2
+        #     position = { 0 30 }
+        #     block "lower_numerical_frame_position" {
+        #         position = { 55 575 }
+        #     }
+        #     block "modify_lower_numerical_texture" {
+        #         modify_texture = {
+        #             block "lower_numerical_frame_filigree" {
+        #                 texture = "gfx/interface/colors/gold.dds"
+        #             }
+        #             blend_mode = colordodge
+        #             block "lower_numerical_frame_filigree_alpha" {
+        #                 alpha = 0.4 # Needs to be brigther due to icon's alpha being lower
+        #             }
+        #         }
+        #     }
+        # }
+    }
+
+    type positive_vote_tooltip = container {
+		alwaystransparent = no
+        vbox = {
+            datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('positive_vote')]"
+            margin = { 15 15 }
+            using = Background_Tooltip
+            spacing = 5
+
+            item = {
+                hbox = {
+                    layoutpolicy_horizontal = expanding
+                    spacing = 5
+                    text_single = {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                        fontsize = 13
+                        default_format = "#high"
+                    }
+                    expand = {}
+                    text_single = {
+                        text = dorwinion_voter_strength
+                        fontsize = 13
+                        default_format = "#high;P"
+                    }
+                }
+            }
+        }
+    }
+
+    type negative_vote_tooltip = container {
+		alwaystransparent = no
+        vbox = {
+            datamodel = "[GetTitleByKey('k_dorwinion').GetHolder.MakeScope.GetList('negative_vote')]"
+            margin = { 15 15 }
+            using = Background_Tooltip
+            spacing = 5
+
+            item = {
+                hbox = {
+                    layoutpolicy_horizontal = expanding
+                    spacing = 5
+                    text_single = {
+                        text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
+                        fontsize = 13
+                        default_format = "#high"
+                    }
+                    expand = {}
+                    text_single = {
+                        text = dorwinion_voter_strength
+                        fontsize = 13
+                        default_format = "#high;P"
+                    }
+                }
+            }
+        }
+    }
+}

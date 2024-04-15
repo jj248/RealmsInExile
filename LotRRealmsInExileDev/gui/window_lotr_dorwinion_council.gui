@@ -1,9 +1,9 @@
 ﻿types LotRCouncilWindow { 
-    type lotr_council_window = window { 
+    type lotr_dorwinion_council_window = window { 
         size = { 1300 900 } 
         position = { 400 75 } 
         layer = middle 
-        visible = "[GetVariableSystem.Exists('lotr_council_window')]" 
+        visible = "[GetVariableSystem.Exists('lotr_dorwinion_council_window')]" 
         
         using = Window_Background 
         using = Window_Decoration
@@ -34,7 +34,7 @@
 
                 blockoverride "button_close"
                 {
-                    onclick = "[GetVariableSystem.Clear( 'lotr_council_window' )]"
+                    onclick = "[GetVariableSystem.Clear( 'lotr_dorwinion_council_window' )]"
                 }
             }
             expand = {}

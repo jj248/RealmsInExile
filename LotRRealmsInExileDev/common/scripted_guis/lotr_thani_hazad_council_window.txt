@@ -1,0 +1,82 @@
+﻿TH_Council_show_gui_button = {
+    is_shown = {
+        OR = {
+            root = global_var:balan_lai_council_member_1
+            root = global_var:balan_lai_council_member_2
+            root = global_var:balan_lai_council_member_3
+            root = global_var:balan_lai_council_member_4
+            root = global_var:balan_lai_council_member_5
+            root = global_var:balan_lai_council_member_6
+            root = global_var:balan_lai_council_member_7
+        }
+    }
+}
+
+TH_Council_show_char_in_first_window = {
+    is_valid = {
+        root = global_var:balan_lai_council_member_1
+    }
+}
+
+TH_Council_show_char_in_second_window = {
+    is_valid = {
+        root = global_var:balan_lai_council_member_2
+    }
+}
+
+TH_Council_show_char_in_third_window = {
+    is_valid = {
+        root = global_var:balan_lai_council_member_3
+    }
+}
+
+TH_Council_show_char_in_fourth_window = {
+    is_valid = {
+        root = global_var:balan_lai_council_member_4
+    }
+}
+
+TH_Council_show_char_in_fith_window = {
+    is_valid = {
+        root = global_var:balan_lai_council_member_5
+    }
+}
+
+TH_Council_show_char_in_sixth_window = {
+    is_valid = {
+        root = global_var:balan_lai_council_member_6
+    }
+}
+
+TH_Council_show_char_in_seventh_window = {
+    is_valid = {
+        root = global_var:balan_lai_council_member_7
+    }
+}
+
+TH_Council_show_char_ruling_window = {
+    is_valid = {
+        always = no
+    }
+}
+
+TH_Council_show_no_policies_text = {
+    is_shown = {
+        NOT = {
+            title:k_dorwinion.holder = { has_variable_list = active_wars }
+            title:k_dorwinion.holder = { has_variable_list = target_chars }
+        }
+    }
+}
+
+TH_Council_show_progress_bar = {
+    is_shown = {
+        title:k_dorwinion.holder = { has_variable = vote_is_being_held }
+    }
+}
+
+TH_Council_set_starting_lists_on_character = {
+    effect = {
+       
+    }
+}
