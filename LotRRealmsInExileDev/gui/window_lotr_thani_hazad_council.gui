@@ -65,7 +65,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'TH_Council_show_char_in_first_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_1')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_1')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
@@ -95,15 +95,15 @@
                     blockoverride "modify_upper_texture" { }
                     blockoverride "modify_lower_numerical_texture" { }
                     blockoverride "modify_upper_numerical_texture" { }
-                    blockoverride "crown_position" {
-                        position = { 45 286 }
-                    }
+                    # blockoverride "crown_position" {
+                    #     position = { 45 286 }
+                    # }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'TH_Council_show_char_in_second_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_2')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_2')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
@@ -153,18 +153,18 @@
                     # blockoverride "lower_numerical_frame_filigree" {
                     #     texture = "gfx/interface/colors/gold.dds"
                     # }
-                    blockoverride "crown_position" {
-                        position = { 50 236 }
-                    }
-                    blockoverride "crown_texture" {
-                        texture = "gfx/interface/icons/duchy_crown.dds"
-                    }
+                    # blockoverride "crown_position" {
+                    #     position = { 50 236 }
+                    # }
+                    # blockoverride "crown_texture" {
+                    #     texture = "gfx/interface/icons/duchy_crown.dds"
+                    # }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'TH_Council_show_char_in_third_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_3')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_3')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
@@ -226,19 +226,19 @@
                     # blockoverride "lower_numerical_frame_filigree_alpha" {
                     #     alpha = 2
                     # }
-                    blockoverride "crown_position" {
-                        position = { 45 180 }
-                    }
-                    blockoverride "crown_texture" {
-                        texture = "gfx/interface/icons/kingdom_crown.dds"
-                    }
+                    # blockoverride "crown_position" {
+                    #     position = { 45 180 }
+                    # }
+                    # blockoverride "crown_texture" {
+                    #     texture = "gfx/interface/icons/kingdom_crown.dds"
+                    # }
                 }
                 spacer = { size = { 150 0 } }
                 # Central Char
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'TH_Council_show_char_in_fourth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_4')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_4')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
@@ -300,18 +300,18 @@
                     # blockoverride "lower_numerical_frame_filigree_alpha" {
                     #     alpha = 2.5
                     # }
-                    blockoverride "crown_position" {
-                        position = { 50 140 }
-                    }
-                    blockoverride "crown_texture" {
-                        texture = "gfx/interface/icons/empire_crown.dds"
-                    }
+                    # blockoverride "crown_position" {
+                    #     position = { 50 140 }
+                    # }
+                    # blockoverride "crown_texture" {
+                    #     texture = "gfx/interface/icons/empire_crown.dds"
+                    # }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'TH_Council_show_char_in_fith_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_5')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_5')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
@@ -373,18 +373,18 @@
                     # blockoverride "lower_numerical_frame_filigree_alpha" {
                     #     alpha = 2
                     # }
-                    blockoverride "crown_position" {
-                        position = { 50 180 }
-                    }
-                    blockoverride "crown_texture" {
-                        texture = "gfx/interface/icons/kingdom_crown.dds"
-                    }
+                    # blockoverride "crown_position" {
+                    #     position = { 50 180 }
+                    # }
+                    # blockoverride "crown_texture" {
+                    #     texture = "gfx/interface/icons/kingdom_crown.dds"
+                    # }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'TH_Council_show_char_in_sixth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_6')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_6')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
@@ -434,18 +434,18 @@
                     # blockoverride "lower_numerical_frame_filigree" {
                     #     texture = "gfx/interface/colors/gold.dds"
                     # }
-                    blockoverride "crown_position" {
-                        position = { 50 236 }
-                    }
-                    blockoverride "crown_texture" {
-                        texture = "gfx/interface/icons/duchy_crown.dds"
-                    }
+                    # blockoverride "crown_position" {
+                    #     position = { 50 236 }
+                    # }
+                    # blockoverride "crown_texture" {
+                    #     texture = "gfx/interface/icons/duchy_crown.dds"
+                    # }
                 }
                 spacer = { size = { 150 0 } }
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'TH_Council_show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_7')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_7')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_BALAN_LAI_MEMBERS
@@ -471,14 +471,14 @@
                     blockoverride "upper_mask_position" {
                         position = { 0 325 }
                     }
-                    blockoverride "modify_lower_texture" { }
-                    blockoverride "modify_upper_texture" { }
-                    blockoverride "modify_lower_numerical_texture" { }
-                    blockoverride "modify_upper_numerical_texture" { }
+                    # blockoverride "modify_lower_texture" { }
+                    # blockoverride "modify_upper_texture" { }
+                    # blockoverride "modify_lower_numerical_texture" { }
+                    # blockoverride "modify_upper_numerical_texture" { }
                     
-                    blockoverride "crown_position" {
-                        position = { 53 286 }
-                    }
+                    # blockoverride "crown_position" {
+                    #     position = { 53 286 }
+                    # }
                 }
                 spacer = { size = { 180 0 } }
             }
@@ -712,7 +712,7 @@
                 council_window_torso = {
                     visible = "[GetGlobalVariable('balan_lai_council_member_8').IsSet]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_4')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_4')]"
                     }
                     blockoverride "heritage_position" {
                         position = { -40 170 }
@@ -752,7 +752,7 @@
                 council_window_torso = {
                     visible = "[GetGlobalVariable('balan_lai_council_member_9').IsSet]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_5')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_5')]"
                     }
                     blockoverride "heritage_position" {
                         position = { -40 130 }
@@ -775,24 +775,24 @@
                     blockoverride "upper_mask_position" {
                         position = { -95 105 }
                     }
-                    blockoverride "upper_frame_filigree" {
-                        texture = "gfx/interface/colors/gold_darker.dds"
-                    }
-                    blockoverride "lower_frame_filigree" {
-                        texture = "gfx/interface/colors/gold_darker.dds"
-                    }
-                    blockoverride "upper_frame_filigree_alpha" {
-                        alpha = 2
-                    }
-                    blockoverride "lower_frame_filigree_alpha" {
-                        alpha = 2.5
-                    }
+                    # blockoverride "upper_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold_darker.dds"
+                    # }
+                    # blockoverride "lower_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold_darker.dds"
+                    # }
+                    # blockoverride "upper_frame_filigree_alpha" {
+                    #     alpha = 2
+                    # }
+                    # blockoverride "lower_frame_filigree_alpha" {
+                    #     alpha = 2.5
+                    # }
                 }
                 spacer = { size = { 173 0 }}
                 council_window_torso = {
                     visible = "[GetGlobalVariable('balan_lai_council_member_10').IsSet]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('balan_lai_council_member_1')]"
+                        datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_1')]"
                     }
                     blockoverride "heritage_position" {
                         position = { -40 170 }
@@ -815,18 +815,18 @@
                     blockoverride "upper_mask_position" {
                         position = { -95 145 }
                     }
-                    blockoverride "upper_frame_filigree" {
-                        texture = "gfx/interface/colors/gold_darker.dds"
-                    }
-                    blockoverride "lower_frame_filigree" {
-                        texture = "gfx/interface/colors/gold_darker.dds"
-                    }
-                    blockoverride "upper_frame_filigree_alpha" {
-                        alpha = 2
-                    }
-                    blockoverride "lower_frame_filigree_alpha" {
-                        alpha = 2.5
-                    }
+                    # blockoverride "upper_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold_darker.dds"
+                    # }
+                    # blockoverride "lower_frame_filigree" {
+                    #     texture = "gfx/interface/colors/gold_darker.dds"
+                    # }
+                    # blockoverride "upper_frame_filigree_alpha" {
+                    #     alpha = 2
+                    # }
+                    # blockoverride "lower_frame_filigree_alpha" {
+                    #     alpha = 2.5
+                    # }
                 }
             }
         }
@@ -835,7 +835,7 @@
     type council_window_torso = widget {
         allow_outside = yes
         block "datacontext" {
-            datacontext = "[GetGlobalVariable('balan_lai_council_member_1')]"
+            datacontext = "[GetTitleByKey('e_thani_hazad').MakeScope.Var('thani_hazad_council_story').Story.MakeScope.Var('balan_lai_council_member_1')]"
         }
         visible = "[GetScriptedGui( 'TH_Council_show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char ).End)]"
 

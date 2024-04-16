@@ -3,13 +3,13 @@
 #################################
 
 setup_dorwinion_council_members = {
-    remove_global_variable = dorinion_council_member_7
-    remove_global_variable = dorinion_council_member_6
-    remove_global_variable = dorinion_council_member_5
-    remove_global_variable = dorinion_council_member_4
-    remove_global_variable = dorinion_council_member_3
-    remove_global_variable = dorinion_council_member_2
-    remove_global_variable = dorinion_council_member_1
+    remove_global_variable = dorwinion_council_member_7
+    remove_global_variable = dorwinion_council_member_6
+    remove_global_variable = dorwinion_council_member_5
+    remove_global_variable = dorwinion_council_member_4
+    remove_global_variable = dorwinion_council_member_3
+    remove_global_variable = dorwinion_council_member_2
+    remove_global_variable = dorwinion_council_member_1
 
 
     title:k_dorwinion = {
@@ -26,7 +26,7 @@ setup_dorwinion_council_members = {
             holder = { add_to_list = voters_in_dorwinion } 
         }
         set_global_variable = {
-            name = dorinion_council_member_4
+            name = dorwinion_council_member_4
             value = holder
         }
     }
@@ -48,43 +48,43 @@ setup_dorwinion_council_members = {
         }
         
         if = {
-            limit = { has_global_variable = dorinion_council_member_1 }
+            limit = { has_global_variable = dorwinion_council_member_1 }
             set_global_variable = {
-                name = dorinion_council_member_7
+                name = dorwinion_council_member_7
                 value = this
             }
         }
         else_if = {
-            limit = { has_global_variable = dorinion_council_member_6 }
+            limit = { has_global_variable = dorwinion_council_member_6 }
             set_global_variable = {
-                name = dorinion_council_member_1
+                name = dorwinion_council_member_1
                 value = this
             }
         }
         else_if = {
-            limit = { has_global_variable = dorinion_council_member_2 }
+            limit = { has_global_variable = dorwinion_council_member_2 }
             set_global_variable = {
-                name = dorinion_council_member_6
+                name = dorwinion_council_member_6
                 value = this
             }
         }
         else_if = {
-            limit = { has_global_variable = dorinion_council_member_5 }
+            limit = { has_global_variable = dorwinion_council_member_5 }
             set_global_variable = {
-                name = dorinion_council_member_2
+                name = dorwinion_council_member_2
                 value = this
             }
         }
         else_if = {
-            limit = { has_global_variable = dorinion_council_member_3 }
+            limit = { has_global_variable = dorwinion_council_member_3 }
             set_global_variable = {
-                name = dorinion_council_member_5
+                name = dorwinion_council_member_5
                 value = this
             }
         }
         else = {
             set_global_variable = {
-                name = dorinion_council_member_3
+                name = dorwinion_council_member_3
                 value = this
             }
         }

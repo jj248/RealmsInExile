@@ -1,0 +1,155 @@
+﻿story_dorwinion_council = {
+
+	on_setup = { # Story object
+		save_scope_as = this_story
+		title:k_dorwinion = {
+            set_variable = {
+                name = dorwinion_council_story
+                value = scope:this_story
+            }
+		}
+		set_variable = {
+			name = council_kingdom
+			value = title:k_dorwinion 
+		}
+		set_variable = {
+			name = dorwinion_council_member_4
+			value = var:council_kingdom.holder
+		}
+		var:council_kingdom = {
+			every_in_de_jure_hierarchy = {
+				limit = {
+					exists = holder
+					NOT = { holder = prev.holder }
+					holder.top_liege = title:k_dorwinion.holder
+					OR = {
+						tier = tier_county
+						tier = tier_duchy
+					}
+				}
+				holder = { save_scope_as = curr_holder }
+				scope:this_story = {
+					add_to_variable_list = {
+						name = voters_in_dorwinion
+						target = scope:curr_holder
+					}
+				}
+			}
+		}
+		scope:this_story = {
+			ordered_in_list = {
+				variable = voters_in_dorwinion
+				max = 7
+				order_by = {
+					add = monthly_character_income
+					add = average_development_in_holdings
+					if = {
+						limit = { dynasty ?= { has_dynasty_modifier = master_merchants } }
+						add = stewardship.div2
+					}
+					if = {
+						limit = { dynasty ?= { has_dynasty_modifier = winelords } }
+						add = number_of_held_holdings
+					}
+				}
+				save_scope_as = curr_ruler
+				
+				if = {
+					limit = { scope:this_story = { has_variable = dorwinion_council_member_1 } } 
+					scope:this_story = {
+						set_variable = {
+							name = dorwinion_council_member_7
+							value = scope:curr_ruler
+						}
+					}
+					scope:this_story = {
+						add_to_variable_list = {
+							name = on_council_in_dorwinion
+							target = scope:curr_ruler
+						}
+					}
+				}
+				else_if = {
+					limit = { scope:this_story = { has_variable = dorwinion_council_member_6 } }
+					scope:this_story = {
+						set_variable = {
+							name = dorwinion_council_member_1
+							value = scope:curr_ruler
+						}
+					}
+					scope:this_story = {
+						add_to_variable_list = {
+							name = on_council_in_dorwinion
+							target = scope:curr_ruler
+						}
+					}
+				}
+				else_if = {
+					limit = { scope:this_story = {has_variable = dorwinion_council_member_2 } }
+					scope:this_story = {
+						set_variable = {
+							name = dorwinion_council_member_6
+							value = scope:curr_ruler
+						}
+					}
+					scope:this_story = {
+						add_to_variable_list = {
+							name = on_council_in_dorwinion
+							target = scope:curr_ruler
+						}
+					}
+				}
+				else_if = {
+					limit = { scope:this_story = { has_variable = dorwinion_council_member_5 } }
+					scope:this_story = {
+						set_variable = {
+							name = dorwinion_council_member_2
+							value = scope:curr_ruler
+						}
+					}
+					scope:this_story = {
+						add_to_variable_list = {
+							name = on_council_in_dorwinion
+							target = scope:curr_ruler
+						}
+					}
+				}
+				else_if = {
+					limit = { scope:this_story = { has_variable = dorwinion_council_member_3 } }
+					scope:this_story = {
+						set_variable = {
+							name = dorwinion_council_member_5
+							value = scope:curr_ruler
+						}
+					}
+					scope:this_story = {
+						add_to_variable_list = {
+							name = on_council_in_dorwinion
+							target = scope:curr_ruler
+						}
+					}
+				}
+				else = {
+					scope:this_story = {
+						set_variable = {
+							name = dorwinion_council_member_3
+							value = scope:curr_ruler
+						}
+					}
+					scope:this_story = {
+						add_to_variable_list = {
+							name = on_council_in_dorwinion
+							target = scope:curr_ruler
+						}
+					}
+				}
+			}
+		}
+
+		scope:this_story = { clear_variable_list = voters_in_dorwinion }
+	}
+
+	on_end = { }
+
+	on_owner_death = { }
+}

@@ -124,19 +124,20 @@ targeted_title_ruler_is_nemesis = {
 
 character_is_on_a_council = {
 	OR = {
-		this = global_var:dorinion_council_member_1
-		this = global_var:dorinion_council_member_2
-		this = global_var:dorinion_council_member_3
-		this = global_var:dorinion_council_member_4
-		this = global_var:dorinion_council_member_5
-		this = global_var:dorinion_council_member_6
-		this = global_var:dorinion_council_member_7
-		this = global_var:balan_lai_council_member_7
-		this = global_var:balan_lai_council_member_6
-		this = global_var:balan_lai_council_member_5
-		this = global_var:balan_lai_council_member_4
-		this = global_var:balan_lai_council_member_3
-		this = global_var:balan_lai_council_member_2
-		this = global_var:balan_lai_council_member_1
+		this = title:k_dorwinion.var:dorwinion_council_story.var:dorwinion_council_member_7
+		this = title:k_dorwinion.var:dorwinion_council_story.var:dorwinion_council_member_6
+		this = title:k_dorwinion.var:dorwinion_council_story.var:dorwinion_council_member_5
+		this = title:k_dorwinion.var:dorwinion_council_story.var:dorwinion_council_member_4
+		this = title:k_dorwinion.var:dorwinion_council_story.var:dorwinion_council_member_3
+		this = title:k_dorwinion.var:dorwinion_council_story.var:dorwinion_council_member_2
+		this = title:k_dorwinion.var:dorwinion_council_story.var:dorwinion_council_member_1
+
+		this = title:e_thani_hazad.var:thani_hazad_council_story.var:balan_lai_council_member_7
+		this = title:e_thani_hazad.var:thani_hazad_council_story.var:balan_lai_council_member_6
+		this = title:e_thani_hazad.var:thani_hazad_council_story.var:balan_lai_council_member_5
+		this = title:e_thani_hazad.var:thani_hazad_council_story.var:balan_lai_council_member_4
+		this = title:e_thani_hazad.var:thani_hazad_council_story.var:balan_lai_council_member_3
+		this = title:e_thani_hazad.var:thani_hazad_council_story.var:balan_lai_council_member_2
+		this = title:e_thani_hazad.var:thani_hazad_council_story.var:balan_lai_council_member_1
 	}
 }

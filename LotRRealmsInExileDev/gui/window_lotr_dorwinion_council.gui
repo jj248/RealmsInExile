@@ -65,7 +65,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'show_char_in_first_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_1')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_1')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_DORWINION_FACTIONS
@@ -103,7 +103,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'show_char_in_second_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_2')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_2')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_DORWINION_FACTIONS
@@ -164,7 +164,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'show_char_in_third_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_3')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_3')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_DORWINION_FACTIONS
@@ -238,7 +238,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'show_char_in_fourth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_4')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_4')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_DORWINION_FACTIONS
@@ -311,7 +311,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'show_char_in_fith_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_5')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_5')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_DORWINION_FACTIONS
@@ -384,7 +384,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'show_char_in_sixth_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_6')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_6')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_DORWINION_FACTIONS
@@ -445,7 +445,7 @@
                 council_window_torso = {
                     visible = "[GetScriptedGui( 'show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char.MakeScope ).End)]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_7')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_7')]"
                     }
                     blockoverride "text_key" {
                         text = COUNCIL_WINDOW_DORWINION_FACTIONS
@@ -815,9 +815,9 @@
                 position = { 10 -170 }
                 spacer = { size = { 478 0 }}
                 council_window_torso = {
-                    visible = "[GetGlobalVariable('dorinion_council_member_8').IsSet]"
+                    visible = "[GetGlobalVariable('dorwinion_council_member_8').IsSet]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_4')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_4')]"
                     }
                     blockoverride "heritage_position" {
                         position = { -40 170 }
@@ -855,9 +855,9 @@
                 }
                 spacer = { size = { 173 0 }}
                 council_window_torso = {
-                    visible = "[GetGlobalVariable('dorinion_council_member_9').IsSet]"
+                    visible = "[GetGlobalVariable('dorwinion_council_member_9').IsSet]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_5')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_5')]"
                     }
                     blockoverride "heritage_position" {
                         position = { -40 130 }
@@ -895,9 +895,9 @@
                 }
                 spacer = { size = { 173 0 }}
                 council_window_torso = {
-                    visible = "[GetGlobalVariable('dorinion_council_member_10').IsSet]"
+                    visible = "[GetGlobalVariable('dorwinion_council_member_10').IsSet]"
                     blockoverride "datacontext" {
-                        datacontext = "[GetGlobalVariable('dorinion_council_member_1')]"
+                        datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_1')]"
                     }
                     blockoverride "heritage_position" {
                         position = { -40 170 }
@@ -940,7 +940,7 @@
     type council_window_torso = widget {
         allow_outside = yes
         block "datacontext" {
-            datacontext = "[GetGlobalVariable('dorinion_council_member_1')]"
+            datacontext = "[GetTitleByKey('k_dorwinion').MakeScope.Var('dorwinion_council_story').Story.MakeScope.Var('dorwinion_council_member_1')]"
         }
         visible = "[GetScriptedGui( 'show_char_in_seventh_window' ).IsValid( GuiScope.SetRoot( Scope.Char ).End)]"
 
