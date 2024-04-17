@@ -489,6 +489,23 @@
  king_ray_male:0 "Kralyi"
  king_ray_female:0 "Kralyi"
 
+ ## Thani Hazad Natives
+ baron_male_bandit:0 "Thief"
+ baron_female_bandit:0 "Thief"
+ barony_bandit:0 "Lair"
+ count_male_bandit:0 "Skulker"
+ count_female_bandit:0 "Skulker"
+ county_bandit:0 "Band"
+ duke_male_bandit:0 "Head Brigand"
+ duke_female_bandit:0 "Head Brigand"
+ duchy_bandit:0 "Gangs"
+ king_male_bandit:0 "Bandit-King"
+ king_female_bandit:0 "Bandit-Queen"
+ kingdom_bandit:0 "Outlaw Domain"
+ emperor_male_bandit:0 "Unfettered Master"
+ emperor_female_bandit:0 "Unfettered Mistress"
+ empire_bandit:0 "Insurgent Realm"
+
  ## Oligarchy ##
  baron_oligarchy_male:0 "Councilman"
  baron_oligarchy_female:0 "Councilwoman"

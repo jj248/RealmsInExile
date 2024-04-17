@@ -16,7 +16,7 @@ yearly_global_pulse = {
 			title:k_dorwinion.holder = { setup_dorwinion_council_members = yes }
 		}
 
-		every_living_character = {
+		every_unnplayable_race = {
 			trigger_event = {
 				id = race.0001
 				days = 1
@@ -397,6 +397,8 @@ yearly_playable_pulse = {
 
 		pagan_conversion_pulse
 		colonisation_random_events #LotR
+		ettenmoors_events #LotR
+		eregion_events # LotR
 
 		delay = { days = { 1 180 } }
 		balrog_events
