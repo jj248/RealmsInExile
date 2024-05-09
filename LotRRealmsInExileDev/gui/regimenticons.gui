@@ -19,9 +19,9 @@ texticon = {
 }
 
 texticon = {
-    icon = arnorian_infantry_icon
+    icon = arnorian_soldiers_icon
     iconsize = {
-        texture = "gfx/interface/icons/regimenttypes/arnorian_infantry.dds"
+        texture = "gfx/interface/icons/regimenttypes/arnorian_soldiers.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -910,6 +910,16 @@ texticon = {
 }
 
 texticon = {
+    icon = hasharin_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/hasharin.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = hillmen_skirmishers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/hillmen_skirmishers.dds"
@@ -1173,6 +1183,16 @@ texticon = {
     icon = longbeard_skirmishers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/longbeard_skirmishers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = lossoth_ski_hunters_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/lossoth_ski_hunters.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16

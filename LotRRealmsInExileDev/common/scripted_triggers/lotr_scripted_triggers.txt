@@ -105,6 +105,7 @@ lotr_gets_nicknames_trigger = {	#checks whether char is eligible to get a nickna
 		is_ai = yes
 	}
 }
+
 #lotr_cannot_get_disease_trigger = {
 #	OR = {
 #		culture = { has_cultural_pillar = heritage_ainur }
@@ -1837,6 +1838,12 @@ not_has_county_on_island_region = {
 		}
 	}
 } 
+
+maglor_aggresive_gondorian_knight_trigger = {
+	is_ruler = no
+	NOT = { is_primary_heir_of = scope:$SAVED_SCOPE$ }
+	dynasty = scope:$SAVED_SCOPE$.dynasty
+}
 
 is_underground_county = {
 	any_county_province = {

@@ -1,4 +1,11 @@
-﻿unnplayable_race = {
+#############################################
+#
+#	These are scripted lists. They allow us to make our own iterators that 
+#	can function with the 3 basic iterators, as far as I know
+#	i.e., every_XXX, any_XXX, random_XXX. Potentially ordered_XXX as-well, but not sure on thta
+#
+#############################################
+unplayable_race = {
 	base = living_character
 	conditions = { 
 		is_from_ruler_designer = no
@@ -9,6 +16,30 @@
 			not_istari_evil = yes
 			not_maiar = yes
 			not_maiar_fallen = yes
+		}
+	}
+}
+
+settlement_counties = {
+	base = county
+	conditions = { 
+		title_province ?= { has_holding_type = settlement_holding }
+		OR = {
+			title_province ?= { has_building = spider_nest_cleared }
+			title_province ?= { has_building = wolf_den_cleared }
+			title_province ?= { has_building = bear_den_cleared }
+			title_province ?= { has_building = troll_cave_cleared }
+			title_province ?= { has_building = ghosts_cleared }
+			title_province ?= { has_building = ghosts_eregion_cleared }
+			title_province ?= { has_building = dragon_attack_cleared }
+			title_province ?= { has_building = flooded_lands_cleared }
+			title_province ?= { has_building = bandits_cleared }
+			title_province ?= { has_building = dead_marshes_cleared }
+			title_province ?= { has_building = collapsed_ceiling_cleared }
+			title_province ?= { has_building = flooded_tunnels_cleared }
+			title_province ?= { has_building = flooded_tunnels_nogrod_cleared }
+			title_province ?= { has_building = stale_air_cleared }
+			title_province ?= { has_building = strange_creatures_cleared }
 		}
 	}
 }

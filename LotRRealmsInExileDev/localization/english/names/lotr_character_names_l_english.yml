@@ -20,6 +20,7 @@ Aed:0 "Aed" # Hillmen Male
 Aidhan:0 "Aidhan" # Hillmen Male
 Alldui:0 "Alldui" # Hillmen Male
 Amergin:0 "Amergin" # Hillmen Male
+Amethyst:0 "Amethyst" # Hobbit Female
 Aodha:0 "Aodha" # Hillmen Male
 Aonghas:0 "Aonghas" # Hillmen Male
 Artrach:0 "Artrach" # Hillmen Male
@@ -2326,6 +2327,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Bandomond:0 "Bandomond" # Hobbit Male
  Bandogar:0 "Bandogar" # Hobbit Male
  Beolain:0 "Beolain" # Unsorted Unsorted
+ Beogol:0 "Beogol" # Hobbit Male
  Beor:0 "Beor" # Dunedain Unsorted
  Beoraborn:0 "Beoraborn" # Nandorin Male
  Beoracer:0 "Beoracer" # Nandorin Male
@@ -2586,6 +2588,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Bozidarh:0 "Bozidarh" # Middle Apysaic Male
  Bozishar:0 "Bozishar" # Old Apysaic Male
  Bozisharh:0 "Bozisharh" # Middle Apysaic Male
+ Bowman:0 "Bowman" # Hobbit Male
  Br_Egon:0 "Brégon" # Sindarin Male
  Br_isingur:0 "Brísingur" # Dwarven Unsorted
  Branjegar:0 "Branjegar" # Dwarven Unsorted
@@ -2721,6 +2724,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Bronwe:0 "Bronwe" # Sindarin Male
  Bronweg:0 "Bronweg" # Sindarin Male
  Bronwega:0 "Bronwega" # Nandorin Male
+ Broomhild:0 "Broomhild" # Hobbit Female
  Brorn:0 "Brorn" # Gwathiurim Unsorted
  Broyasht:0 "Broyasht" # Orc Unsorted
  Bru_u_dhan:0 "Brûdhan" # Igath Male
@@ -2929,6 +2933,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Caraglin:0 "Caraglin" # Sindarin Male
  Carambo:0 "Carambo" # Quenya Male
  Carambor:0 "Carambor" # Sindarin Male
+ Caramella:0 "Caramella" # Hobbit Female
  Caramir:0 "Caramir" # Sindarin Male
  Caran:0 "Caran" # Sindarin Male
  Caran_Lambar:0 "Caran-Lambar" # Unsorted Unsorted
@@ -2961,6 +2966,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Carinn:0 "Carinn" # Gwathiurim Unsorted
  Caris:0 "Caris" # Gwathiurim Unsorted
  Cariz:0 "Cariz" # Gwathiurim Unsorted
+ Carl:0 "Carl" # Hobbit Male
  Carmagil:0 "Carmagil" # Sindarin Male
  Carmathir:0 "Carmathir" # Sindarin Male
  Carmendil:0 "Carmendil" # Quenya Male
@@ -3193,6 +3199,8 @@ Uirne:0 "Uirne" # Hillmen Female
  Corsech:0 "Corsech" # Unsorted Unsorted
  Corwen:0 "Corwen" # Dunedain Unsorted
  Cospindel:0 "Cospindel" # Nandorin Male
+ Cottar:0 "Cottar" # Hobbit Male
+ Cotman:0 "Cotman" # Hobbit Male
  Cr_o_:0 "Crô" # Orc Unsorted
  Crainoc:0 "Crainoc" # Gwathiurim Unsorted
  Cranoc:0 "Cranoc" # Gwathiurim Unsorted
@@ -3557,6 +3565,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Dimethor:0 "Dimethor" # Sindarin Male
  Dimitri:0 "Dimitri" # Unsorted Unsorted
  Din:0 "Din" # Sindarin Male
+#  Dina:0 "Dina" # Hobbit Female # Already defined in vanilla
  Dinbanu:0 "Dinbanu" # Khyan Female
  Dindal:0 "Dindal" # Sindarin Male
  Dinenthel:0 "Dinenthel" # Dunedain Unsorted
@@ -3722,6 +3731,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Dru_u_z:0 "Drûz" # Gwathiurim Unsorted
  Druagautin:0 "Druagautin" # Middle Apysaic Male
  Druagii:0 "Druagii" # Middle Apysaic Male
+ Druda:0 "Druda" # Hobbit Female
  Druha_a_r:0 "Druhâr" # Womarin Female
  Druleg:0 "Druleg" # Orc Unsorted
  Drulsavad:0 "Drulsavad" # Old Apysaic Male
@@ -4241,6 +4251,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Er_Mu_u_razo_o_r:0 "Er-Mûrazôr" # Unsorted Unsorted
  Er_Uda_A_Mor:0 "Erúdâmor" # Quenya Male
  Era:0 "Era" # Gwathiurim Unsorted
+ Erakho_o_r:0 "Erakhôr" # Numenorean Male
  Eradan:0 "Eradan" # Sindarin Male
  Eragad:0 "Eragad" # Gwathiurim Unsorted
  Eragol:0 "Eragol" # Sindarin Male
@@ -4312,6 +4323,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Erminga:0 "Erminga" # Dorwinion Female
  Ermithdin:0 "Ermithdin" # Sindarin Male
  Ermorn:0 "Ermorn" # Gwathiurim Unsorted
+ Ern:0 "Ern" # Hobbit Male
  Erna:0 "Erna" # Unsorted Unsorted
  Ernin:0 "Ernin" # Gwathiurim Unsorted
  Ernis:0 "Ernis" # Quenya Female
@@ -5948,6 +5960,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Henamarth:0 "Henamarth" #Q # Legacy Elves Unsorted
  Henan:0 "Henan" # Gwathiurim Unsorted
  Henderch:0 "Henderch" # Sindarin Male
+ Hending:0 "Hending" # Hobbit Male
  Hendolen:0 "Hendolen" # Sindarin Male
  Hendor:0 "Hendor" # Sindarin Male
  Henelena:0 "Henelena" # Nandorin Male
@@ -6084,6 +6097,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Holg:0 "Holg" # Orc Unsorted
  Holgeir:0 "Holgeir" # Dorwinion Male
  Holguin:0 "Holguin" # Orc Unsorted
+ Holman:0 "Holman" # Hobbit Male
  Homai:0 "Homai" # Khyan Female
  Hongwind:0 "Hongwind" # Nandorin Female
  Honn:0 "Honn" # Gwathiurim Unsorted
@@ -6253,6 +6267,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Ikuli:0 "Ikuli" # Igath Female
  Ilaesa:0 "Ilaesa" # Igath Female
  Ilandra:0 "Ilandra" # Adunaic Female
+ Ildra:0 "Ildra" # Hobbit Female
  Ildros:0 "Ildros" # Nandorin Male
  Ilfcarding:0 "Ilfcarding" # Unsorted Unsorted
  Ilfiniol:0 "Ilfiniol" # Sindarin Male
@@ -8985,6 +9000,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Nimruzimir:0 "Nimruzimir" # Adunaic Female
  Nimruzu_u_r:0 "Nimruzûr" # Adunaic Male
  Nin:0 "Nin" # Gwathiurim Unsorted
+ Nina:0 "Nina" # Hobbit Female
  Ninaer:0 "Ninaer" # Sindarin Female
  nindari:0 "Nindari" # Unsorted Unsorted
  nindarin:0 "Nindarin" # Unsorted Unsorted
@@ -9259,6 +9275,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Olguin:0 "Olguin" # Orc Unsorted
  Olindur:0 "Olindur" # Unsorted Unsorted
  Olius:0 "Olius" # Dwarven Unsorted
+ Olivia: "Olivia" # Hobbit Female
  Oliz:0 "Oliz" # Gwathiurim Unsorted
  Ollog:0 "Ollog" # Orc Unsorted
  Olofantur:0 "Olofantur" # Quenya Male
@@ -9309,6 +9326,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Ontolin:0 "Ontolin" # Quenya Male
  Oologg:0 "Oologg" # Orc Unsorted
  Oomaug:0 "Oomaug" # Orc Unsorted
+ Opal:0 "Opal" # Hobbit Female
  Opai:0 "Opai" # Orc Unsorted
  Opperith:0 "Opperith" # Nandorin Male
  Oppola:0 "Oppola" # Unsorted Unsorted
@@ -9555,6 +9573,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Perain:0 "Perain" # Gwathiurim Unsorted
  Percen:0 "Percen" # Gwathiurim Unsorted
  Percin:0 "Percin" # Gwathiurim Unsorted
+ Percy:0 "Percy" # Hobbit Male
  Perdido:0 "Perdido" # Nandorin Male
  Peregrin:0 "Peregrin" # Hobbit Male
  Perelion:0 "Perelion" # Sindarin Male
@@ -9617,7 +9636,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Pokhak:0 "Pokhak" # Orc Unsorted
  Poki:0 "Poki" # Orc Unsorted
  Pold_Orea:0 "Poldórea" # Quenya Male
- Poppy:0 "Poppy"
+ Poppy:0 "Poppy" #Hobbit Female
  Poldel:0 "Poldel" # Nandorin Female
  Polig:0 "Polig" # Igath Male
  Ponto:0 "Ponto" # Hobbit Male
@@ -9998,6 +10017,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Ririn:0 "Ririn" # Gwathiurim Unsorted
  Rirma:0 "Rirma" # Gwathiurim Unsorted
  Ristare:0 "Ristare" # Dunedain Unsorted
+ Rithregol:0 "Rithregol" # Hobbit Male
  Rivil:0 "Rivil" # Sindarin Female
  Riz:0 "Riz" # Gwathiurim Unsorted
  Rlaen:0 "Rlaen" # Gwathiurim Unsorted
@@ -10005,6 +10025,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Rlis:0 "Rlis" # Gwathiurim Unsorted
  Rmena:0 "Rmena" # Gwathiurim Unsorted
  Rmina:0 "Rmina" # Gwathiurim Unsorted
+ Roselda:0 "Roselda" # Hobbit Female
  Ro_o_thgimil:0 "Rôthgimil" # Adunaic Female
  Ro_o_thpharaz:0 "Rôthpharaz" # Adunaic Female
  Ro_o_zi:0 "Rôzi" # Igath Male
@@ -10084,6 +10105,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Rothel:0 "Rothel" # Nandorin Female
  Rothinel:0 "Rothinel" # Sindarin Female
  Rothni:0 "Rothni" # Nandorin Female
+ Rowan:0 "Rowan" # Hobbit Male
  Rousta:0 "Rousta" # New Apysaic Female
  Roustika:0 "Roustika" # New Apysaic Female
  Routniko:0 "Routniko" # New Apysaic Male
@@ -10295,6 +10317,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Saphanir:0 "Saphanir" # Unsorted Unsorted
  Sapthan:0 "Sapthan" # Adunaic Female
  Sapthe_e_th:0 "Sapthêth" # Adunaic Female
+ Sapphira:0 "Sapphira" # Hobbit Female
  Sarab:0 "Sarab" # Orc Unsorted
  Saradoc:0 "Saradoc" # Hobbit Male
  Sarador:0 "Sarador" # Sindarin Male
@@ -10886,6 +10909,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Syna:0 "Syna" # Gwathiurim Unsorted
  Synthra:0 "Synthra" # Gwathiurim Unsorted
  Szo_o_ranh:0 "Szôranh" # Womarin Male
+ Tansy:0 "Tansy" # Hobbit Female
  T_ari:0 "Tári" # Quenya Female
  T_ari_Laisi:0 "Tári-Laisi" # Quenya Female
  T_in_e_el_un:0 "Tínëlún" # Unsorted Unsorted
@@ -11539,6 +11563,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Torthurnion:0 "Torthurnion" # Sindarin Male
  Torwald:0 "Torwald" # Dorwinion Male
  Tossgwind:0 "Tossgwind" # Nandorin Female
+ Tosto:0 "Tosto" # Hobbit Male
  Totfrith:0 "Totfrith" # Gwathiurim Unsorted
  Tothfrith:0 "Tothfrith" # Gwathiurim Unsorted
  Tothren:0 "Tothren" # Gwathiurim Unsorted
@@ -11627,6 +11652,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Tulakar:0 "Tulakar" # Abrakhan Male
  Tulakar_Aulsa:0 "Tulakar-Aulsa" # Abrakhan Male
  Tulakzi:0 "Tulakzi" # Abrakhan Female
+ Tulip:0 "Tulip" # Hobbit Female
  Tulkandili:0 "Tulkandili" # Unsorted Unsorted
  Tulkas:0 "Tulkas" # Valar Unsorted
  Tulkasse:0 "Tulkasse" # Quenya Male
@@ -12255,6 +12281,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Vidusintha:0 "Vidusintha" # Dorwinion Female
  Vidusith:0 "Vidusith" # Dorwinion Male
  Vierindur:0 "Vierindur" # Unsorted Unsorted
+ Vigo:0 "Vigo" # Hobbit Male
  Vilan:0 "Vilan" # Gwathiurim Unsorted
  Vildalda:0 "Vildalda" # Gwathiurim Unsorted
  Vildjalah:0 "Vildjalah" # Gwathiurim Unsorted
@@ -12279,6 +12306,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Vinyaran:0 "Vinyaran" # Quenya Male
  Vinyarion:0 "Vinyarion" # Quenya Male
  Vinyawen:0 "Vinyawen" # Quenya Female
+ Violet:0 "Violet" # Hobbit Female
  Virataj:0 "Virataj" # Old Apysaic Male
  Viratay:0 "Viratay" # New Apysaic Male
  Viresse:0 "Viresse" # Dunedain Unsorted
@@ -12408,6 +12436,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Wigwack:0 "Wigwack" # Orc Unsorted
  Wil:0 "Wil" # Gwathiurim Unsorted
  Wili:0 "Wili" # Dwarven Unsorted
+ Wilcome:0 "Wilcome" # Hobbit Male
  Wilwarin:0 "Wilwarin" # Quenya Male
  Wilwarindil:0 "Wilwarindil" # Quenya Male
  Wina:0 "Wina" # Gwathiurim Unsorted
@@ -12854,10 +12883,12 @@ Uirne:0 "Uirne" # Hillmen Female
 #  Dudo:0 "Dudo" # Hobbit Male # Already defined in vanilla
  Frodo:0 "Frodo" # Hobbit Male
  Griffo:0 "Griffo" # Hobbit Male
+ Gruffo:0 "Gruffo" # Hobbit Male
  Saredic:0 "Saredic" # Hobbit Female
  Posco:0 "Posco" # Hobbit Male
  Doderic:0 "Doderic" # Hobbit Male
  Will:0 "Will" # Hobbit Male
+ Willie:0 "Willie" # Hobbit Male
  Caranmenil:0 "Caranmenil" #Dunedain Male 
  Silivnir:0 "Silivnir" #Dunedain Male 
 

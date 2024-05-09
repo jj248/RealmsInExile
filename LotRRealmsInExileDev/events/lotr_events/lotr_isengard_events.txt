@@ -657,16 +657,44 @@ isengard.0007 = { # A Marriage Offer from the King of Rohan
 	option = { # Accept
 		name = isengard.0007.a
 		remove_trait = cannot_marry
-		show_as_tooltip = {
-			marry = title:k_rohan.holder
-		}
 		title:k_rohan.holder = {
 			remove_trait = cannot_marry
-			send_interface_toast = {
-				left_icon = title:k_rohan.holder
-				right_icon = character:6000035
-				title = isengard.0007.a.toast
-				marry = character:6000035				
+		}
+		if = {
+			limit = {
+				is_nubile = yes
+			}
+			show_as_tooltip = {
+				marry = title:k_rohan.holder
+			}
+			title:k_rohan.holder = {
+				send_interface_toast = {
+					left_icon = title:k_rohan.holder
+					right_icon = character:6000035
+					title = isengard.0007.a.toast
+					marry = character:6000035				
+				}
+			}
+		}
+		else = {
+			save_scope_as = secondary_recipient
+			title:k_rohan.holder = {
+				save_scope_as = secondary_actor
+				create_betrothal = character:6000035
+				set_variable = {
+					name = hook_used_for_betrothal
+					value = character:6000035
+				}
+				send_interface_toast = {
+					left_icon = title:k_rohan.holder
+					right_icon = character:6000035
+					title = isengard.0007.a.toast
+					custom_tooltip  = arrange_marriage_interaction_accept_betrothal_toast_desc
+				}
+			}
+			set_variable = {
+				name = hook_used_for_betrothal
+				value = title:k_rohan.holder
 			}
 		}
 		ai_chance = {
@@ -3506,6 +3534,7 @@ isengard.0232 = { # The Pits of Isengard
 
 	option = { # ...and this is just the beginning!
 		name = isengard.0232.a
+		add_character_modifier = industrialised_isengard_1_character_modifier
 		title:c_isengard = {
 			add_county_modifier = industrialised_isengard_1_county_modifier
 			set_variable = { name = industry_level value = 1 }
@@ -3704,6 +3733,8 @@ isengard.0235 = { # The Forges of Isengard
 
 	option = { # ...and this is just the beginning!
 		name = isengard.0235.a
+		hidden_effect = { remove_character_modifier = industrialised_isengard_1_character_modifier }
+		add_character_modifier = industrialised_isengard_2_character_modifier
 		title:c_isengard = {
 			hidden_effect = {
 				remove_county_modifier = industrialised_isengard_1_county_modifier
@@ -3845,6 +3876,7 @@ isengard.0237 = { # An Ancient Horror Uncovered
 					add_trait = one_eyed
 					add_trait = one_legged
 					add_trait = scarred
+					remove_character_modifier = industrialised_isengard_2_character_modifier
 					title:c_isengard = {
 						remove_county_modifier = industrialised_isengard_2_county_modifier
 					}
@@ -3960,6 +3992,7 @@ isengard.0239 = { # The Horror Prevails
 		add_trait = one_eyed
 		add_trait = one_legged
 		add_trait = scarred
+		remove_character_modifier = industrialised_isengard_2_character_modifier
 		title:c_isengard = {
 			remove_county_modifier = industrialised_isengard_2_county_modifier
 		}
@@ -4012,6 +4045,8 @@ isengard.0240 = { # A Subterranean Complex
 
 	option = { # ...and this is just the beginning!
 		name = isengard.0240.a
+		hidden_effect = { remove_character_modifier = industrialised_isengard_2_character_modifier }
+		add_character_modifier = industrialised_isengard_3_character_modifier
 		title:c_isengard = {
 			hidden_effect = {
 				remove_county_modifier = industrialised_isengard_2_county_modifier

@@ -15,8 +15,8 @@
  
  dynnpat_map:0 "map"
  dynnpat_san:0 "sân "
- dynnpat_pre_ca:0 "Cád"
- dynnpat_pre_ce:0 "Cén"
+ dynnpat_pre_ca:0 "cád "
+ dynnpat_pre_ce:0 "cén "
 #  dynnpat_suf_son:0 "son" # Already defined in vanilla
  dynnpat_suf_zorn:0 "zorn"
 #  dynnpat_suf_sen:0 "sen" # Already defined in vanilla
@@ -66,7 +66,13 @@
  dynn_whitfoot:0 "Whitfoot"
  dynn_gollum:0 "Trahald"
  dynn_gamgee:0 "Gamgee"
- dynn_cotton:0 "Cotton"                      
+ dynn_cotton:0 "Cotton"   
+ dynn_brockhouse:0 "Brockhouse"
+ dynn_brown:0 "Brown" 
+ dynn_diggle:0 "Diggle" 
+ dynn_lightfoot:0 "Lightfoot"
+ dynn_greenhand:0 "Greenhand"
+ dynn_goodchild:0 "Goodchild"
  
 ### BREEMEN ###
  dynn_barleynook:0 "Barleynook"
@@ -454,12 +460,14 @@
  dynn_broccach:0 "Broccach"
  dynn_ormoch:0 "Ormoch"
  dynn_braighir:0 "Bráighir"
- dynn_merghach:0 ":0 "Merghach"
+ dynn_daurich:0 "Daurich"
+ dynn_merghach:0 "Merghach"
  dynn_taobach:0 "Taobach"
  dynn_moighir:0 "Móighir"
  dynn_laighannach:0 "Laighannach"
- dynn_cenndoch:0 "Cenndoch"
- dynn_hillman:0 "Caradach" # Follows above convention, sounds cool
+ dynn_ornuch:0 "Ornúch"
+ dynn_cenndoch:0 "Cénndoch"
+ dynn_caradach:0 "Caradach"
 
  ### DRUEDAIN ###
  dynn_aghanghu:0 "Aghanghu"
@@ -592,6 +600,7 @@
  dynn_gwedhduin:0 "Gwedhduin"
  dynn_pelglain:0 "Pelglain"
  dynn_rhudainor:0 "Rhudainor"
+ dynn_amdirach:0 "Amdirach"
 
  dynn_Elatanionath:0 "Elatanionath" 
  dynn_Ardamirionath:0 "Ardamirionath" 
@@ -734,6 +743,11 @@
  dynn_alsariaszimra:0 "Zimrathôni"
  dynn_alsariastwo:0 "Gimilthôr"
  dynn_azulhin:0 "Azûlhîn"
+ dynn_gimilurushone:0 "Gimilthâhîn"
+ dynn_gimilazari:0 "Azrudôn"
+ dynn_gimilurushonecadet:0 "Ûrjarkîr"
+ dynn_gimilurushonetwo:0 "Afanuzôn"
+ dynn_gimilazaribastard:0 "Imrahîd"
  
  ### Eriadorim ###
  dynn_reise_arnethor:0 "Reise Arnethor"
@@ -924,8 +938,9 @@
  dynn_toril:0 "Nos Toril"
  dynn_valhad:0 "Nos Valhad"
  dynn_pelilas:0 "Nos Pelilas"
+ dynn_lenwe:0 "Nos Lenwë"
  
-  ### MORDOR ###
+ ### MORDOR ###
  dynn_melkondili:0 "Melkondili"
  dynn_witchking:0 "Arnediadgae"
  dynn_goldenking:0 "Abrakhân"
@@ -937,7 +952,7 @@
  dynn_uvatha:0 "Ôvathanid"
  dynn_urd:0 "of Ûrd"
  
-  ### Variags ###
+ ### Variags ###
  dynn_vangaris:0 "Khûd Vangarid" # Kings of Vangaris's House
  dynn_skakali:0 "Skakali"
  dynn_keiseimu:0 "Ortogh"
@@ -1153,7 +1168,7 @@
  dynn_logian:0 "Logian"
  dynn_barvadinian:0 "Barvadinian"
  dynn_aicathin:0 "Aicathin"
- dynn_polovateli:0 "Polovateli"
+ dynn_avon:0 "Avon"
  dynn_jauffring:0 "Jauffring"
  dynn_blorchid:0 "Blorchid"
  dynn_tarkov:0 "Tarkov"
@@ -1302,3 +1317,10 @@
  dynn_inigi:0 "Inigi"
  dynn_arogwe:0 "Arogwe"
  dynn_awon:0 "Awọn"
+ dynn_sederivassalone:0 "Adégom"
+ dynn_sederivassalthree:0 "Brâlîmâri"
+ dynn_sederivassaltwo:0 "Krukwe"
+ dynn_azarisederione:0 "Âlogwa"
+ dynn_sederiholzvassalone:0 "Maybíl"
+ dynn_sederidolgvassal:0 "Dolsari"
+ dynn_sederidolgvassaltwo:0 "Zgarâl"

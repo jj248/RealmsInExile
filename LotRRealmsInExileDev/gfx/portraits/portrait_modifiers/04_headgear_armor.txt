@@ -1699,7 +1699,10 @@
 			modifier = {
 				add = 101
 				portrait_wear_helmet_trigger = yes
-				portrait_elven_clothing_trigger = yes
+				OR = {
+					portrait_elven_clothing_trigger = yes
+					portrait_lasgalendrim_clothing_trigger = yes
+				}
 			}
 		}
 	}
@@ -1838,6 +1841,24 @@
 				add = 105
 				portrait_wear_helmet_trigger = yes
 				portrait_dolguldur_orc_clothing_trigger = yes
+			}
+		}
+	}
+	
+	black_troll_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = uruk_war
+				accessory = male_headgear_uruk_isengard_1
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 105
+				portrait_black_troll_clothing_trigger = yes
 			}
 		}
 	}

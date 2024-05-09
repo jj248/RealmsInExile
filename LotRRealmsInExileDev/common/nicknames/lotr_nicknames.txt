@@ -18,6 +18,9 @@
 	nick_gaffer = {}
 	nick_roper = {}
 	nick_bombadil = {}
+	nick_flourdumpling = {}
+	nick_long_hom = {}
+	nick_the_greenhanded = {}
 	
 	# Eotheod Nicknames
 	nick_the_hapless = { is_bad = yes }
@@ -188,6 +191,7 @@
 	nick_the_pale_elf = {}
 	nick_the_garden_gnome = {}
 	nick_halfelven = {}
+	nick_the_duckwarrior = {}
 
 	# Dwarven
 	nick_the_deathless = {}

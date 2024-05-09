@@ -73,7 +73,23 @@ fire_intro_events = {
 			}
 		}
 		trigger_event = sauron.0501
-		add_dread = 100 
+		add_dread = 100
+		if = {
+			limit = { has_game_rule = weakened_sauron_strength }
+			add_character_modifier = sauron_weakened_modifier
+		}
+		else_if = {
+			limit = { has_game_rule = strong_sauron_strength }
+			add_character_modifier = sauron_strengthened_1_modifier
+		}
+		else_if = {
+			limit = { has_game_rule = apocalyptic_sauron_strength }
+			add_character_modifier = sauron_strengthened_2_modifier
+		}
+		trigger_event = {
+			id = sauron.4000
+			years = 19
+		}
 	}
 	
 	# Nazgul Introductions
@@ -105,6 +121,25 @@ fire_intro_events = {
 				id = nazgul.0051
 				years = 15
 			}
+		}
+	}
+
+	# The Witch King (provided by discord user xgoatbush)
+	character:nazgul1 = {
+		set_global_variable = {
+			name = witchking
+			value = this
+		}
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+			}
+			trigger_event = { 
+				id = nazgul.0060
+				days = 1
+			}
+			set_culture = culture:ringwraith
 		}
 	}
 	
@@ -537,6 +572,33 @@ fire_intro_events = {
 		}
 	}	
 	
+	# Vangaris of Khand (provided by discord user xgoatbush)
+	character:vangarisofkhand = { 
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+			}
+			trigger_event = { 
+				id = khand.400
+				days = 1
+			}
+		}
+	}	
+
+	# Keiseimu of Khand (provided by discord user xgoatbush)
+	character:keiseimuofkhand = { 
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+			}
+			trigger_event = { 
+				id = khand.500
+				days = 1
+			}
+		}
+	}
 	############################################
 	### Bellakar and Far Harad Introductions ###
 	############################################
@@ -830,6 +892,19 @@ fire_intro_events = {
 		}
 	}
 
+	character:linefinwe11 = {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+			}
+			trigger_event = { 
+				id = elven.1000
+				days = 1
+			}
+		}
+	}
+
 	character:lineoflanthir1 = { # Lanthir
 		if = {
 			limit = {
@@ -855,18 +930,6 @@ fire_intro_events = {
 		}
 	}
 
-	character:lineterilaen3 = { # Tirilaen
-		if = {
-			limit = {
-				is_alive = yes
-				is_landed = yes
-			}
-			trigger_event = { 
-				id = elven.0700
-				days = 1
-			}
-		}
-	}
 
 	#############################
 	### Dwarven Introductions ###

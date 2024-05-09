@@ -41,6 +41,8 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -55,6 +57,8 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -170,6 +174,8 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -184,6 +190,8 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -278,6 +286,12 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -311,6 +325,8 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -865,11 +881,7 @@
 					"key":	"Barad-dur"
 				}
 			},
-			"instances":	[{
-					"locked":	false
-				}, {
-					"locked":	false
-				}]
+			"instances":	[]
 		}, {
 			"object_ref":	{
 				"type":	"mesh",
@@ -882,9 +894,7 @@
 					"key":	"Barad-dur"
 				}
 			},
-			"instances":	[{
-					"locked":	false
-				}]
+			"instances":	[]
 		}, {
 			"object_ref":	{
 				"type":	"mesh",
@@ -897,15 +907,7 @@
 					"key":	"Barad-dur"
 				}
 			},
-			"instances":	[{
-					"locked":	false
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
-				}]
+			"instances":	[]
 		}, {
 			"object_ref":	{
 				"type":	"mesh",
@@ -919,8 +921,6 @@
 				}
 			},
 			"instances":	[{
-					"locked":	false
-				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -1721,6 +1721,12 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -1818,6 +1824,20 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -1863,6 +1883,10 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -1877,6 +1901,10 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -2482,6 +2510,47 @@
 		}, {
 			"object_ref":	{
 				"type":	"mesh",
+				"key":	"pelargir2"
+			},
+			"entry_state":	{
+				"locked":	false,
+				"base_type":	{
+					"type":	"mesh",
+					"key":	"pelargir2"
+				}
+			},
+			"instances":	[{
+					"locked":	false
+				}]
+		}, {
+			"object_ref":	{
+				"type":	"mesh",
+				"key":	"rammas_echor_intact"
+			},
+			"entry_state":	{
+				"locked":	false,
+				"base_type":	{
+					"type":	"mesh",
+					"key":	"rammas_echor_intact"
+				}
+			},
+			"instances":	[]
+		}, {
+			"object_ref":	{
+				"type":	"mesh",
+				"key":	"rammas_echor_ruined"
+			},
+			"entry_state":	{
+				"locked":	false,
+				"base_type":	{
+					"type":	"mesh",
+					"key":	"rammas_echor_ruined"
+				}
+			},
+			"instances":	[]
+		}, {
+			"object_ref":	{
+				"type":	"mesh",
 				"key":	"Ravenhill"
 			},
 			"entry_state":	{
@@ -2857,6 +2926,14 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -2918,6 +2995,16 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -2932,6 +3019,12 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -5910,6 +6003,12 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -5924,6 +6023,8 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -6510,6 +6611,18 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -6756,6 +6869,14 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -7141,6 +7262,19 @@
 		}, {
 			"object_ref":	{
 				"type":	"entity",
+				"key":	"horse"
+			},
+			"entry_state":	{
+				"locked":	false,
+				"base_type":	{
+					"type":	"entity",
+					"key":	"horse"
+				}
+			},
+			"instances":	[]
+		}, {
+			"object_ref":	{
+				"type":	"entity",
 				"key":	"volcano 01"
 			},
 			"entry_state":	{
@@ -7253,6 +7387,12 @@
 					"locked":	false
 				}, {
 					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
+				}, {
+					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -7267,6 +7407,8 @@
 				}
 			},
 			"instances":	[{
+					"locked":	false
+				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -7464,10 +7606,6 @@
 				}
 			},
 			"instances":	[{
-					"locked":	false
-				}, {
-					"locked":	false
-				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -27044,10 +27182,6 @@
 					"locked":	false
 				}, {
 					"locked":	false
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -30947,12 +31081,6 @@
 					"locked":	true
 				}, {
 					"locked":	true
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
 				}, {
 					"locked":	false
 				}, {
@@ -47287,10 +47415,6 @@
 					"locked":	false
 				}, {
 					"locked":	false
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
 				}]
 		}, {
 			"object_ref":	{
@@ -47305,10 +47429,6 @@
 				}
 			},
 			"instances":	[{
-					"locked":	false
-				}, {
-					"locked":	false
-				}, {
 					"locked":	false
 				}, {
 					"locked":	false
@@ -69781,12 +69901,6 @@
 					"locked":	true
 				}, {
 					"locked":	true
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
-				}, {
-					"locked":	false
 				}, {
 					"locked":	false
 				}, {

@@ -998,32 +998,33 @@ numenorean_elites = {
 dunedain_soldiers = {
 	type = heavy_infantry
 
-	damage = 110
+	damage = 80
 	toughness = 60
 	pursuit = 0
-	screen = 50
+	screen = 40
 	
 	counters = {
-		pikemen = 1
 		archers = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
 	}
 	
 	buy_cost = { gold = 250 }
 	low_maintenance_cost = { gold = 1 }
 	high_maintenance_cost = { gold = 3 }
 	
-	stack = 40
+	stack = 50
 	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = dunedain_sword
+	icon = arnorian_soldiers
 }
 
 dunedain_archers = {
 	type = archers
 	
-	damage = 75
-	toughness = 30
-	pursuit = 5
-	screen = 15
+	damage = 100
+	toughness = 40
+	pursuit = 10
+	screen = 10
 	
 	terrain_bonus = {
 		hills = { damage = 12 toughness = 4 }
@@ -1031,25 +1032,26 @@ dunedain_archers = {
 
 	counters = {
 		skirmishers = 1
-		heavy_cavalry = 1
+		heavy_infantry = 1
+		pikemen = 1
 	}
 
 	buy_cost = { gold = 200 }
 	low_maintenance_cost = { gold = 0.9 }
 	high_maintenance_cost = { gold = 2.7 }
 	
-	stack = 75
+	stack = 50
 	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = bowmen
+	icon = arnorian_bowmen
 }
 
 dunedain_knights = {
 	type = heavy_cavalry
 	
-	damage = 150
-	toughness = 50
-	pursuit = 20
-	screen = 10
+	damage = 200
+	toughness = 80
+	pursuit = 30
+	screen = 15
 	
 	terrain_bonus = {
 		plains = { damage = 30 }
@@ -1062,18 +1064,19 @@ dunedain_knights = {
 	}
 
 	counters = {
-		archers = 1
+		heavy_infantry = 1
+		monster = 1
 	}
 
 	buy_cost = { gold = 260 }
 	low_maintenance_cost = { gold = 1.3 }
 	high_maintenance_cost = { gold = 3.9 }
 	
-	stack = 40
+	stack = 25
 
 	allowed_in_hired_troops = no
 	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = dunedain_horse
+	icon = arnorian_cavalry
 }
 
 dunedain_elites = {
@@ -1086,13 +1089,14 @@ dunedain_elites = {
 	type = heavy_infantry
 	max_sub_regiments = 5
 
-	damage = 75
-	toughness = 40
+	damage = 100
+	toughness = 80
 	pursuit = 0
 	screen = 40
 	
 	counters = {
 		pikemen = 1
+		heavy_infantry = 1
 		archers = 1
 	}
 	
@@ -1100,9 +1104,9 @@ dunedain_elites = {
 	low_maintenance_cost = { gold = 1.1 }
 	high_maintenance_cost = { gold = 3.3 }
 	
-	stack = 60
+	stack = 50
 	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = dunedain_sword
+	icon = wardens_of_annuminas
 }
 
 ### ARNORIANS ###
@@ -1154,6 +1158,7 @@ arnorian_bowmen = { # Armored archers
 	counters = {
 		skirmishers = 1
 		heavy_infantry = 1
+		monster = 1
 	}
 
 	buy_cost = { gold = 75 }
@@ -1264,7 +1269,6 @@ dunedain_rangers = { #Longbowmen with increased damage and screen, bonus in fore
 
 	counters = {
 		skirmishers = 1
-		archers = 1
 		light_cavalry = 1
 		monster = 1
 	}
@@ -1316,10 +1320,10 @@ dunedain_wardens = { # Spear wielding rangers
 dunedain_outriders = {
 	type = light_cavalry
 	
-	damage = 35
-	toughness = 24
-	pursuit = 35
-	screen = 30
+	damage = 45
+	toughness = 30
+	pursuit = 42
+	screen = 35
 	
 	terrain_bonus = {
 		plains = { damage = 15 }
@@ -1332,6 +1336,7 @@ dunedain_outriders = {
 	
 	counters = {
 		archers = 1
+		skirmishers = 1
 	}
 
 	winter_bonus = {
@@ -1344,7 +1349,7 @@ dunedain_outriders = {
 	
 	allowed_in_hired_troops = no
 	
-	stack = 70
+	stack = 50
 	ai_quality = { value = 70 }
 	icon = dunedain_outriders
 }

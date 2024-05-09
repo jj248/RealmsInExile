@@ -51,6 +51,7 @@
  vale_woodmen_clothing_gfx:0 "Men of the Anduin"
  wastelands_clothing_gfx:0 "Wilderness"
  elven_clothing_gfx:0 "Elven"
+ lasgalendrim_clothing_gfx:0 "Lasgalendrim"
  rhunnic_clothing_gfx:0 "Rhûnnic"
  dale_clothing_gfx:0 "Dalish"
  dorwinion_clothing_gfx:0 "Dorwinionrim"
@@ -65,6 +66,8 @@
  dunedain_clothing_gfx:0 "Dunedain"
  uialdain_clothing_gfx:0 "Uialdain"
  thani_hazad_clothing_gfx:0 "Thâni-Hazâd"
+ snow_troll_clothing_gfx:0 "Snow Troll"
+ black_troll_clothing_gfx:0 "Black Troll"
 
 #Units
  orc_unit_gfx:0 "Black Uruk"

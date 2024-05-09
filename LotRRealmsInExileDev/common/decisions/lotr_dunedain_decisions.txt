@@ -36,7 +36,7 @@ decision_gondor_regnal_names = {
 		custom_tooltip = decision_gondor_regnal_names_tooltip
 		trigger_event = {
 			id = gondor.1100
-		}		
+		}	
 	}
 }
 
@@ -133,6 +133,9 @@ decision_gondorian_renaissance = { # Little Gondorian Renaissance post Mordor De
 				trigger_event = news_event.0024
 			}
 		}
+
+		trigger_event = gondor.3601 # Gondorian Renaissance flavour event
+
 		hidden_effect = {
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
@@ -364,6 +367,14 @@ decision_league_of_pelargir = {
 	}
 	
 	effect = {
+		if = { # Lebenexit | Achievement
+			limit = {
+				NOT = { exists = global_var:lotr_achievement_57 }
+				is_ai = no
+				primary_title = title:k_lebennin
+			}
+			set_global_variable = lotr_achievement_57
+		}
 		create_title_and_vassal_change = {
 			type = created
 			save_scope_as = change
@@ -694,7 +705,7 @@ decision_destroy_mordor_AI = {
 	is_shown = {
 		is_ai = yes
 		#always = no #JUKE NOTE: (temporarily) removing band-aid fix for gondor agression for testing purposes
-#		current_year > 7058
+		#current_year > 7058
 		is_ruler = yes
 		is_landed = yes
 		OR = {
@@ -723,7 +734,7 @@ decision_destroy_mordor_AI = {
 			subject = this
 			faith_is_evil = no
 		}
-#		lotr_armies_are_outnumbered = no
+		# lotr_armies_are_outnumbered = no
 	}
 	is_valid = {
 		completely_controls = title:d_emyn_arnen
@@ -735,11 +746,11 @@ decision_destroy_mordor_AI = {
 		completely_controls = title:k_lebennin
 		completely_controls = title:k_belfalas
 		
-#		can_declare_war = {
-#			casus_belli = minor_religious_war
-#			claimant = root
-#			defender = title:e_mordor.holder
-#		}
+		# can_declare_war = {
+		# 	casus_belli = minor_religious_war
+		# 	claimant = root
+		# 	defender = title:e_mordor.holder
+		# }
 	}
 	effect = {
 		custom_tooltip = destroy_mordor_decision
@@ -748,9 +759,9 @@ decision_destroy_mordor_AI = {
 		}
 		add_gold = 700
 	}
-#	cost = {
-#		gold = 300
-#	}
+	# cost = {
+	# 	gold = 300
+	# }
 }
 
 decision_search_orthanc = {
@@ -1312,11 +1323,24 @@ decision_gondor_x_bellakar = {
 				target = flag:gondor_x_bellakar
 			}
 		}
-
-		NOR = { 
-			is_allied_to = title:e_bellakar.holder
-			is_allied_to = title:e_pharazain.holder
-		} 
+		trigger_if = {
+			limit = {
+				exists = title:e_pharazain.holder
+			}
+			NOT = {
+				is_allied_to = title:e_pharazain.holder
+			}
+		}
+		trigger_else = {
+			trigger_if = {
+				limit = {
+					exists = title:e_bellakar.holder
+				}
+				NOT = {
+					is_allied_to = title:e_bellakar.holder
+				}
+			}
+		}
 	}
 
 	# IS VALID
@@ -1393,7 +1417,9 @@ decision_gondor_x_bellakar = {
 	}
 }
 
+################################################
 ### The Reunited Kingdom & Related Decisions ###
+################################################
 decision_reunited_kingdom = {
 	sort_order = 99
 	# TEXT
@@ -1449,6 +1475,8 @@ decision_reunited_kingdom = {
 	effect = {
 		get_title = title:e_reunitedkingdom
 		set_primary_title_to = title:e_reunitedkingdom
+
+		trigger_event = gondor.3602   # Proclaim the Reunited Kingdom flavour
 		
 		add_prestige = 1500
 		dynasty = { add_dynasty_prestige = 1000 }
@@ -1572,6 +1600,7 @@ decision_solidify_reunited_kingdom = {
 				set_de_jure_liege_title = title:e_reunitedkingdom
 			}
 		}
+		trigger_event = gondor.3603   # Solidify the Reunited Kingdom flavour
 
 		add_to_global_variable_list = {
 			name = unavailable_unique_decisions
@@ -1628,6 +1657,19 @@ decision_reunify_dunedain = {
 	
 	# EFFECT 
 	effect = {
+		if = {
+			limit = { 
+				NOT = { exists = global_var:lotr_achievement_26 }
+				is_ai = no
+				root = character:lineisildur42
+				age < 151
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:decision_destroy_mordor
+				}
+			}
+			set_global_variable = lotr_achievement_26
+		}
 		culture:dunedain = {
 			culture:dunedain = { save_temporary_scope_as = dunedain_culture }
 			culture:gondorian = { save_temporary_scope_as = gondorian_culture }
@@ -1640,6 +1682,7 @@ decision_reunify_dunedain = {
 				get_all_innovations_from = culture:arnorian
 			}
 		}
+		trigger_event = gondor.3604   # Restore Dunedain Identity flavour
 
 		set_culture = culture:dunedain
 		
@@ -2051,6 +2094,13 @@ decision_numenor_in_exile = {
 		is_at_war = no
 	}
 	effect = {
+		if = { # Heirs of Westernesse | Achievement
+			limit = { 
+				NOT = { exists = global_var:lotr_achievement_62 }
+				is_ai = no
+			}
+			set_global_variable = lotr_achievement_62
+		}
 		get_title = title:e_numenor_in_exile
 		
 		#every_realm_de_jure_empire = { #This needs to be looked at
@@ -3118,6 +3168,14 @@ decision_restore_gondor_province = {
 				}
 				trigger_event = gondor.2501
 			}
+			
+			if = {
+				limit = { 
+					NOT = { exists = global_var:lotr_achievement_09 }
+					is_ai = no
+				}
+				set_global_variable = lotr_achievement_09
+			}
 		}
 		else_if = {	# Dor Rhúnen
 			limit = {
@@ -3193,6 +3251,38 @@ decision_restore_gondor_province = {
 		
 		else = {
 			
+		}
+
+		if = { # Everydacil | Achievement 
+			limit = {
+				NOT = { exists = global_var:lotr_achievement_54 }
+				is_ai = no
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:integrate_calenardhon_decision
+				}
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:reclaim_dor_rhunen_decision
+				}
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:reclaim_umbar_decision
+				}
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:integrate_andrast_decision
+				}
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:reclaim_harnendor_decision
+				}
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:reclaim_harondor_decision
+				}
+			}
+			set_global_variable = lotr_achievement_54
 		}
 	}
 	
@@ -3492,4 +3582,91 @@ decision_adopt_arnorian_culture = {
 	ai_goal = no
 	ai_potential = { always = no }
 	ai_will_do = { base = 100 }
+}
+
+decision_integrate_the_northern_provinces = {
+	title = decision_integrate_the_northern_provinces
+	picture = "gfx/interface/illustrations/decisions/decision_rhudaur_02.dds"
+	major = yes
+	selection_tooltip = decision_integrate_the_northern_provinces_tooltip
+	desc = decision_integrate_the_northern_provinces_desc
+	confirm_text = decision_integrate_the_northern_provinces_confirm
+
+	
+	ai_goal = yes
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 100
+	}
+
+	is_shown = {
+		is_independent_ruler = yes
+		culture = { has_cultural_pillar = heritage_dunedain }
+		OR = {
+			has_title = title:e_arnor
+			AND = {
+				has_title = title:e_reunitedkingdom
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:decision_solidify_reunited_kingdom
+				}
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_integrate_the_northern_provinces
+			}
+		}
+	}
+
+	is_valid = {
+        completely_controls_region = custom_lowlands_angmar
+        completely_controls = title:k_forochel
+    }
+
+    is_valid_showing_failures_only = {
+        is_imprisoned = no
+        is_available_adult = yes
+        is_at_war = no
+    }
+
+	effect = {
+		trigger_event = {
+			id = gondor.3600
+			days = 1
+		}
+		dynasty = { add_dynasty_prestige = 500 }
+		hidden_effect = {
+			if = {
+				limit = {
+					has_title = title:e_reunitedkingdom
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_solidify_reunited_kingdom
+					}
+				}
+				title:k_angmar = { 
+					set_de_jure_liege_title = title:e_reunitedkingdom
+				}
+				title:k_forochel = {
+					set_de_jure_liege_title = title:e_reunitedkingdom
+				}
+			}
+			else = {
+				title:k_angmar = {
+					set_de_jure_liege_title = title:e_arnor
+				}
+				title:k_forochel = {
+					set_de_jure_liege_title = title:e_arnor
+				}
+			}	
+		}	
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:decision_integrate_the_northern_provinces
+		}
+	}	
 }

@@ -3,36 +3,6 @@
 # Maintenance event for various races, converting culture, adding traits, etc.
 #	race.0001	conversion for chaplains
 
-scripted_trigger not_nazgul = {
-	culture = culture:ringwraith
-	NOT = { has_trait = nazgul }
-}
-
-scripted_trigger not_istari = {
-	culture = culture:istari
-	NOT = { has_trait = istari }
-}
-
-scripted_trigger not_istari_evil = {
-	culture = culture:istari_evil
-	NOT = { has_trait = istari }
-}
-
-scripted_trigger not_maiar = {
-	culture = culture:maiar
-	NOT = { has_trait = maiar }
-}
-
-scripted_trigger not_maiar_fallen = {
-	culture = culture:maiar_fallen
-	NOT = { has_trait = maiar }
-}
-
-scripted_trigger not_valar = {
-	culture = culture:valar
-	NOT = { has_trait = valar }
-}
-
 race.0001 = {
 	hidden = yes
 
@@ -73,8 +43,8 @@ race.0001 = {
 						this = character:lineofgandalf
 					}
 				}
-				set_culture = root.capital_province.culture
-				set_character_faith = root.capital_province.faith
+				set_culture = location.culture
+				set_character_faith = location.faith
 			}
 		}
 		else_if = {
@@ -100,8 +70,8 @@ race.0001 = {
 						this = character:lineofgandalf
 					}
 				}
-				set_culture = root.capital_province.culture
-				set_character_faith = root.capital_province.faith
+				set_culture = location.culture
+				set_character_faith = location.faith
 			}
 		}
 		else_if = {
@@ -199,6 +169,7 @@ race.0005 = { #Removing courtiers from inappropriate courts
 	hidden = yes
 	
 	trigger = {
+		is_ruler = no
 		OR = {
 			AND = { # Elves will leave a Non-Elven court unless their host is a friend (elven healers excepted)
 				is_elf = yes
@@ -233,6 +204,7 @@ race.0005 = { #Removing courtiers from inappropriate courts
 			}
 		}
 	}
+	cooldown = { days = 1 }
 	
 	immediate = {
 	

@@ -3888,15 +3888,12 @@ d_gimileth = {
 		holder = lineofadunazir40
 	}
 	4754.1.1 = {
-		holder = lineofadunazir41
+		holder = lineofadunazir70
 	}
-	4797.1.1 = {
-		holder = lineofadunazir42
+	4851.1.1 = {
+		holder = lineofadunazir72
 	}
-	4848.1.1 = {
-		holder = lineofadunazir43
-	}
-	4882.1.1 = {
+	4902.1.1 = {
 		holder = lineofadunazir44
 	}
 	4922.1.1 = {
@@ -5095,38 +5092,750 @@ c_zairazor = {
 }
 
 # Duchy of Gimilurush
+d_gimilurush = {
+	3893.2.8 = {
+		holder = linegimilurush1
+		liege = k_gimilthani
+	}
+	4061.11.6 = {
+		holder = linegimilurush2
+	}
+	4086.10.26 = {
+		holder = linegimilurush3
+	}
+	4142.5.22 = {
+		holder = linegimilurush4
+	}
+	4248.3.22 = {
+		holder = linegimilurush5
+	}
+	4359.4.17 = {
+		holder = linegimilurush6
+	}
+	4473.5.16 = {
+		holder = linegimilurush7
+	}
+	4489.8.28 = {
+		holder = linegimilurush8
+	}
+	4629.2.18 = {
+		holder = linegimilurush9
+	}
+	4707.4.7 = {
+		holder = linegimilurush12 
+	}
+	4707.12.1 = {
+		holder = 0 # Split into Azarideth and Gimilthanian control
+	}
+}
+
 c_kalabanad = {
-	3770.1.1 = {
+	3893.2.8 = {
+		holder = linegimilurush1
 		change_development_level = 14
 	}
-	7004.1.1 = {
-		holder = lineazariroth75
+	4061.11.6 = {
+		holder = linegimilurush2
+	}
+	4086.10.26 = {
+		holder = linegimilurush3
+	}
+	4142.5.22 = {
+		holder = linegimilurush4
+	}
+	4248.3.22 = {
+		holder = linegimilurush5
+	}
+	4359.4.17 = {
+		holder = linegimilurush6
+	}
+	4473.5.16 = {
+		holder = linegimilurush7
+	}
+	4489.8.28 = {
+		holder = linegimilurush8
+	}
+	4629.2.18 = {
+		holder = linegimilurush9
+	}
+	4707.4.7 = {
+		holder = linegimilurush12 # Split into Azarideth and Gimilthanian control
+	}
+	4707.12.1 = {
+		holder = linegimilurush27
+	}
+	4709.5.24 = {
+		holder = linegimilurush28
+	}
+	4793.11.8 = {
+		holder = linegimilurush29
+	}
+	4895.4.13 = {
+		holder = linegimilurush30
+	}
+	4981.2.19 = {
+		holder = linegimilurush31
+	}
+	5094.6.27 = {
+		holder = linegimilurush32
+	}
+	5164.5.16 = {
+		holder = linegimilurush33
+	}
+	5259.12.9 = {
+		holder = linegimilurush34
+	}
+	5345.9.13 = {
+		holder = linegimilurush35
+		liege = d_azarideth
+	}
+	5451.5.4 = {
+		holder = linegimilurush36
+	}
+	5481.5.27 = {
+		holder = linegimilurush37
+	}
+	5508.5.27 = {
+		holder = linegimilurush39
+	}
+	5625.9.4 = {
+		holder = linegimilurush40
+	}
+	5719.10.30 = {
+		holder = linegimilurush41
+	}
+	5806.2.16 = {
+		holder = linegimilurush42
+	}
+	5909.5.19 = {
+		holder = linegimilurush43
+	}
+	5982.1.11 = {
+		holder = linegimilurush44
+	}
+	6070.4.6 = {
+		holder = linegimilurush45
+	}
+	6113.9.16 = {
+		holder = linegimilurush46
+	}
+	6204.8.4 = {
+		holder = linegimilurush47
+	}
+	6277.9.12 = {
+		holder = linegimilurush48
+	}
+	6356.11.3 = {
+		holder = linegimilurush49
+	}
+	6358.4.8 = {
+		holder = linegimilurush53
+	}
+	6424.11.4 = {
+		holder = linegimilurush54
+	}
+	6506.7.10 = {
+		holder = linegimilurush55
+	}
+	6573.2.1 = {
+		holder = linegimilazari3
+	}
+	6631.1.18 = {
+		holder = linegimilazari4
+	}
+	6674.3.29 = {
+		holder = linegimilazari5
+	}
+	6696.1.8 = {
+		holder = linegimilazari6
+	}
+	6739.4.9 = {
+		holder = linegimilazari7
+	}
+	6788.1.6 = {
+		holder = linegimilazari8
+	}
+	6841.2.20 = {
+		holder = linegimilazari9
+	}
+	6904.3.19 = {
+		holder = linegimilazari10
+	}
+	6952.5.10 = {
+		holder = linegimilazari11
+	}
+	7003.7.27 = {
+		holder = linegimilazari12
+		liege = d_azarideth
 	}
 }
 c_nashun = {
-	3770.1.1 = {
+	3893.2.8 = {
+		holder = linegimilurush1
 		change_development_level = 5
+	}
+	4061.11.6 = {
+		holder = linegimilurush2
+	}
+	4086.10.26 = {
+		holder = linegimilurush3
+	}
+	4142.5.22 = {
+		holder = linegimilurush4
+	}
+	4248.3.22 = {
+		holder = linegimilurush5
+	}
+	4359.4.17 = {
+		holder = linegimilurush6
+	}
+	4473.5.16 = {
+		holder = linegimilurush7
+	}
+	4489.8.28 = {
+		holder = linegimilurush8
+	}
+	4629.2.18 = {
+		holder = linegimilurush9
+	}
+	4707.4.7 = {
+		holder = linegimilurush12 # Split into Azarideth and Gimilthanian control
+	}
+	4707.12.1 = {
+		holder = linegimilurush13
+	}
+	4806.5.6 = {
+		holder = linegimilurush14
+	}
+	4906.11.2 = {
+		holder = linegimilurush15
+	}
+	5002.8.19 = {
+		holder = linegimilurush16
+	}
+	5100.6.15 = {
+		holder = linegimilurush17
+	}
+	5172.7.24 = {
+		holder = linegimilurush18
+	}
+	5261.3.12 = {
+		holder = linegimilurush19
+	}
+	5347.4.17 = {
+		holder = linegimilurush20
+		liege = k_gimilthani
+	}
+	5449.6.21  = {
+		holder = linegimilurush22
+	}
+	5451.11.28 = {
+		holder = linegimilurush21
+	}
+	5482.2.9 = {
+		holder = linegimilurush23
+	}
+	5537.3.20 = {
+		holder = linegimilgimil3
+	}
+	5578.1.6 = {
+		holder = linegimilgimil4
+	}
+	5598.9.7 = {
+		holder = linegimilgimil5
+	}
+	5632.2.22 = {
+		holder = linegimilgimil6
+	}
+	5729.6.26 = {
+		holder = linegimilgimil7
+	}
+	5817.4.9 = {
+		holder = linegimilgimil8
+	}
+	5900.11.9 = {
+		holder = linegimilgimil9
+	}
+	5970.7.27 = {
+		holder = linegimilgimil10
+	}
+	6063.2.5 = {
+		holder = linegimilgimil11
+	}
+	6132.7.16 = {
+		holder = linegimilgimil12
+	}
+	6215.2.9 = {
+		holder = linegimilgimil13
+	}
+	6289.5.14 = {
+		holder = linegimilgimil14
+	}
+	6350.9.8 = {
+		holder = linegimilgimil15
+	}
+	6408.1.19 = {
+		holder = linegimilgimil16
+	}
+	6476.6.17 = {
+		holder = linegimilgimil19
+	}
+	6480.4.2 = {
+		holder = linegimilgimil20
+	}
+	6530.6.9 = {
+		holder = linegimilgimil21
+	}
+	6603.5.16 = {
+		holder = linegimilgimil22
+	}
+	6673.12.9 = {
+		holder = linegimilgimil23
+	}
+	6737.2.23 = {
+		holder = linegimilgimil24
+	}
+	6789.8.16 = {
+		holder = linegimilgimil25
+	}
+	6850.4.9 = {
+		holder = linegimilgimil26
+	}
+	6908.9.4 = {
+		holder = linegimilgimil27
+	}
+	6962.3.17 = {
+		holder = linegimilgimil28
+	}
+	7025.4.27 = {
+		holder = linegimilgimil29
+		liege = k_gimilthani
 	}
 }
 c_gulzur = {
-	3770.1.1 = {
+	3893.2.8 = {
+		holder = linegimilurush1
 		change_development_level = 4
+	}
+	4061.11.6 = {
+		holder = linegimilurush2
+	}
+	4086.10.26 = {
+		holder = linegimilurush3
+	}
+	4142.5.22 = {
+		holder = linegimilurush4
+	}
+	4248.3.22 = {
+		holder = linegimilurush5
+	}
+	4359.4.17 = {
+		holder = linegimilurush6
+	}
+	4473.5.16 = {
+		holder = linegimilurush7
+	}
+	4489.8.28 = {
+		holder = linegimilurush8
+	}
+	4629.2.18 = {
+		holder = linegimilurush9
+	}
+	4707.4.7 = {
+		holder = linegimilurush12 # Split into Azarideth and Gimilthanian control
+	}
+	4707.12.1 = {
+		holder = linegimilurush13
+	}
+	4806.5.6 = {
+		holder = linegimilurush14
+	}
+	4906.11.2 = {
+		holder = linegimilurush15
+	}
+	5002.8.19 = {
+		holder = linegimilurush16
+	}
+	5100.6.15 = {
+		holder = linegimilurush17
+	}
+	5172.7.24 = {
+		holder = linegimilurush18
+	}
+	5261.3.12 = {
+		holder = linegimilurush19
+	}
+	5347.4.17 = {
+		holder = linegimilurush20
+		liege = k_gimilthani
+	}
+	5449.6.21  = {
+		holder = linegimilurush22
+	}
+	5451.11.28 = {
+		holder = linegimilurush21
+	}
+	5482.2.9 = {
+		holder = linegimilurush23
+	}
+	5537.3.20 = {
+		holder = linegimilgimil3
+	}
+	5578.1.6 = {
+		holder = linegimilgimil4
+	}
+	5598.9.7 = {
+		holder = linegimilgimil5
+	}
+	5632.2.22 = {
+		holder = linegimilgimil6
+	}
+	5729.6.26 = {
+		holder = linegimilgimil7
+	}
+	5817.4.9 = {
+		holder = linegimilgimil8
+	}
+	5900.11.9 = {
+		holder = linegimilgimil9
+	}
+	5970.7.27 = {
+		holder = linegimilgimil10
+	}
+	6063.2.5 = {
+		holder = linegimilgimil11
+	}
+	6132.7.16 = {
+		holder = linegimilgimil12
+	}
+	6215.2.9 = {
+		holder = linegimilgimil13
+	}
+	6289.5.14 = {
+		holder = linegimilgimil14
+	}
+	6350.9.8 = {
+		holder = linegimilgimil15
+	}
+	6408.1.19 = {
+		holder = linegimilgimil16
+	}
+	6476.6.17 = {
+		holder = linegimilgimil19
+	}
+	6480.4.2 = {
+		holder = linegimilgimil20
+	}
+	6530.6.9 = {
+		holder = linegimilgimil21
+	}
+	6603.5.16 = {
+		holder = linegimilgimil22
+	}
+	6673.12.9 = {
+		holder = linegimilgimil23
+	}
+	6737.2.23 = {
+		holder = linegimilgimil24
+	}
+	6789.8.16 = {
+		holder = linegimilgimil25
+	}
+	6850.4.9 = {
+		holder = linegimilgimil26
+	}
+	6908.9.4 = {
+		holder = linegimilgimil27
+	}
+	6962.3.17 = {
+		holder = linegimilgimil28
+	}
+	7025.4.27 = {
+		holder = linegimilgimil29
+		liege = k_gimilthani
 	}
 }
 c_khasharun = {
-	3770.1.1 = {
+	3893.2.8 = {
+		holder = linegimilurush1
 		change_development_level = 3
 	}
-	7015.1.1 = {
+	4061.11.6 = {
+		holder = linegimilurush2
+	}
+	4086.10.26 = {
+		holder = linegimilurush3
+	}
+	4142.5.22 = {
+		holder = linegimilurush4
+	}
+	4248.3.22 = {
+		holder = linegimilurush5
+	}
+	4359.4.17 = {
+		holder = linegimilurush6
+	}
+	4473.5.16 = {
+		holder = linegimilurush7
+	}
+	4489.8.28 = {
+		holder = linegimilurush8
+	}
+	4629.2.18 = {
+		holder = linegimilurush9
+	}
+	4707.4.7 = {
+		holder = linegimilurush12 # Split into Azarideth and Gimilthanian control
+	}
+	4707.12.1 = {
+		holder = linegimilurush13
+	}
+	4806.5.6 = {
+		holder = linegimilurush14
+	}
+	4906.11.2 = {
+		holder = linegimilurush15
+	}
+	5002.8.19 = {
+		holder = linegimilurush16
+	}
+	5100.6.15 = {
+		holder = linegimilurush17
+	}
+	5172.7.24 = {
+		holder = linegimilurush18
+	}
+	5261.3.12 = {
+		holder = linegimilurush19
+	}
+	5347.4.17 = {
+		holder = linegimilurush20
+		liege = k_gimilthani
+	}
+	5449.6.21  = {
+		holder = linegimilurush22
+	}
+	5451.11.28 = {
+		holder = linegimilurush21
+	}
+	5482.2.9 = {
+		holder = linegimilurush23
+	}
+	5537.3.20 = {
+		holder = linegimilgimil3
+	}
+	5578.1.6 = {
+		holder = linegimilgimil4
+	}
+	5598.9.7 = {
+		holder = linegimilgimil5
+	}
+	5632.2.22 = {
+		holder = linegimilgimil6
+	}
+	5729.6.26 = {
+		holder = linegimilgimil7
+	}
+	5817.4.9 = {
+		holder = linegimilgimil8
+	}
+	5900.11.9 = {
+		holder = linegimilgimil9
+	}
+	5970.7.27 = {
+		holder = linegimilgimil10
+	}
+	6063.2.5 = {
+		holder = linegimilgimil11
+	}
+	6132.7.16 = {
+		holder = linegimilgimil12
+	}
+	6215.2.9 = {
+		holder = linegimilgimil13
+	}
+	6289.5.14 = {
+		holder = linegimilgimil14
+	}
+	6350.9.8 = {
+		holder = linegimilgimil15
+	}
+	6408.1.19 = {
+		holder = linegimilgimil16
+	}
+	6476.6.17 = {
+		holder = linegimilgimil19
+	}
+	6480.4.2 = {
+		holder = linegimilgimil20
+	}
+	6530.6.9 = {
+		holder = linegimilgimil21
+	}
+	6603.5.16 = {
+		holder = linegimilgimil22
+	}
+	6673.12.9 = {
+		holder = linegimilgimil23
+	}
+	6737.2.23 = {
+		holder = linegimilgimil24
+	}
+	6789.8.16 = {
+		holder = linegimilgimil25
+	}
+	6850.4.9 = {
+		holder = linegimilgimil26
+	}
+	6908.9.4 = {
+		holder = linegimilgimil27
+	}
+	6962.3.17 = {
+		holder = linegimilgimil28
+	}
+	7029.2.19 = {
 		holder = lineofawon1
+		liege = k_gimilthani
 	}
 }
 c_izmathar = {
-	3770.1.1 = {
+	3893.2.8 = {
+		holder = linegimilurush1
 		change_development_level = 8
 	}
-	7004.1.1 = {
-		holder = lineazariroth75
+	4061.11.6 = {
+		holder = linegimilurush2
+	}
+	4086.10.26 = {
+		holder = linegimilurush3
+	}
+	4142.5.22 = {
+		holder = linegimilurush4
+	}
+	4248.3.22 = {
+		holder = linegimilurush5
+	}
+	4359.4.17 = {
+		holder = linegimilurush6
+	}
+	4473.5.16 = {
+		holder = linegimilurush7
+	}
+	4489.8.28 = {
+		holder = linegimilurush8
+	}
+	4629.2.18 = {
+		holder = linegimilurush9
+	}
+	4707.4.7 = {
+		holder = linegimilurush12 # Split into Azarideth and Gimilthanian control
+	}
+	4707.12.1 = {
+		holder = linegimilurush27
+	}
+	4709.5.24 = {
+		holder = linegimilurush28
+	}
+	4793.11.8 = {
+		holder = linegimilurush29
+	}
+	4895.4.13 = {
+		holder = linegimilurush30
+	}
+	4981.2.19 = {
+		holder = linegimilurush31
+	}
+	5094.6.27 = {
+		holder = linegimilurush32
+	}
+	5164.5.16 = {
+		holder = linegimilurush33
+	}
+	5259.12.9 = {
+		holder = linegimilurush34
+	}
+	5345.9.13 = {
+		holder = linegimilurush35
+		liege = d_azarideth
+	}
+	5451.5.4 = {
+		holder = linegimilurush36
+	}
+	5481.5.27 = {
+		holder = linegimilurush37
+	}
+	5508.5.27 = {
+		holder = linegimilurush39
+	}
+	5625.9.4 = {
+		holder = linegimilurush40
+	}
+	5719.10.30 = {
+		holder = linegimilurush41
+	}
+	5806.2.16 = {
+		holder = linegimilurush42
+	}
+	5909.5.19 = {
+		holder = linegimilurush43
+	}
+	5982.1.11 = {
+		holder = linegimilurush44
+	}
+	6070.4.6 = {
+		holder = linegimilurush45
+	}
+	6113.9.16 = {
+		holder = linegimilurush46
+	}
+	6204.8.4 = {
+		holder = linegimilurush47
+	}
+	6277.9.12 = {
+		holder = linegimilurush48
+	}
+	6356.11.3 = {
+		holder = linegimilurush49
+	}
+	6358.4.8 = {
+		holder = linegimilurush53
+	}
+	6424.11.4 = {
+		holder = linegimilurush54
+	}
+	6506.7.10 = {
+		holder = linegimilurush55
+	}
+	6573.2.1 = {
+		holder = linegimilazari3
+	}
+	6631.1.18 = {
+		holder = linegimilazari4
+	}
+	6674.3.29 = {
+		holder = linegimilazari5
+	}
+	6696.1.8 = {
+		holder = linegimilazari6
+	}
+	6739.4.9 = {
+		holder = linegimilazari7
+	}
+	6788.1.6 = {
+		holder = linegimilazari8
+	}
+	6841.2.20 = {
+		holder = linegimilazari9
+	}
+	6904.3.19 = {
+		holder = linegimilazari10
+	}
+	6952.5.10 = {
+		holder = linegimilazari11
+	}
+	7003.7.27 = {
+		holder = linegimilazari12
+		liege = d_azarideth
 	}
 }
 
@@ -5843,11 +6552,55 @@ c_azarideth = {
 c_zoluran = {
 	3770.1.1 = {
 		change_development_level = 6
+		}
+	6836.8.11 = {
+		holder = sedericharactertwo22
+	}
+	6900.11.15 = {
+		holder = sedericharactertwo26
+	}
+	6929.6.18 = {
+		holder = sedericharactertwo27
+	}
+	6955.11.2 = {
+		holder = sedericharactertwo28
+	}
+	6990.11.28 = {
+		holder = sedericharactertwo33
+	}
+	7014.3.17 = {
+		holder = sedericharactertwo35
+	}
+	7031.10.10 = {
+		holder = sedericharactertwo40
+		liege = d_azarideth
 	}
 }
 c_thazlo = {
 	3770.1.1 = {
 		change_development_level = 4
+	}
+	6836.8.11 = {
+		holder = sedericharactertwo22
+	}
+	6900.11.15 = {
+		holder = sedericharactertwo26
+	}
+	6929.6.18 = {
+		holder = sedericharactertwo30
+	}
+	6965.10.2 = {
+		holder = sedericharactertwo31
+	}
+	6989.3.18 = {
+		holder = sedericharactertwo34
+	}
+	7012.2.27 = {
+		holder = sedericharactertwo32
+	}
+	7018.10.3 = {
+		holder = sedericharactertwo37
+		liege = d_azarideth
 	}
 }
 
@@ -6144,15 +6897,306 @@ c_tharonbal = {
 	3770.1.1 = {
 		change_development_level = 6
 	}
+	6256.9.3 = {
+		holder = sedericharacterazarazar1
+	}
+	6306.2.7 = {
+		holder = sedericharacterazarazar2
+	}
+	6334.8.18 = {
+		holder = sedericharacterazarazar7
+	}
+	6355.2.10 = {
+		holder = sedericharacterazar9
+	}
+	6386.6.6 = {
+		holder = sedericharacterazar11
+	}
+	6408.7.19  = {
+		holder = sedericharacterazar13
+	}
+	6416.7.12 = {
+		holder = sedericharacterazar21
+	}
+	6435.7.7 = {
+		holder = sedericharacterazar23
+	}
+	6466.2.28 = {
+		holder = sedericharacterazar25
+	}
+	6467.10.13 = {
+		holder = sedericharacterazar30
+	}
+	6495.5.20 = {
+		holder = sedericharacterazar32
+	}
+	6526.12.10 = {
+		holder = sedericharacterazar36
+	}
+	6549.3.13 = {
+		holder = sedericharacterazar38
+	}
+	6577.3.17 = {
+		holder = sedericharacterazar41
+	}
+	6598.8.6 = {
+		holder = sedericharacterazar42
+	}
+	6630.11.15 = {
+		holder = sedericharacterazar51
+	}
+	6657.1.22 = {
+		holder = sedericharacterazar54
+	}
+	6686.11.13 = {
+		holder = sedericharacterazar53
+	}
+	6711.12.10 = {
+		holder = sedericharacterazar58
+	}
+	6739.4.2 = {
+		holder = sedericharacterazar59
+	}
+	6762.11.9 = {
+		holder = sedericharacterazar64
+	}
+	6795.6.28 = {
+		holder = sedericharacterazar67
+	}
+	6820.12.13 = {
+		holder = sedericharacterazar71
+	}
+	6845.9.7 = {
+		holder = sedericharacterazar72
+	}
+	6871.1.15 = {
+		holder = sedericharacterazar77
+	}
+	6872.3.17 = {
+		holder = sedericharacterazar82
+	}
+	6905.7.25 = {
+		holder = sedericharacterazar87
+	}
+	6928.2.23 = {
+		holder = sedericharacterazar88
+	}
+	6959.4.21 = {
+		holder = sedericharacterazar93
+	}
+	6985.3.24 = {
+		holder = sedericharacterazar98
+	}
+	7011.2.13 = {
+		holder = sedericharacterazar97
+	}
+	7016.1.9 = {
+		holder = sedericharacterazar99
+		liege = d_azarideth
+	}
 }
 c_azulzani = {
 	3770.1.1 = {
 		change_development_level = 5
 	}
+	6256.9.3 = {
+		holder = sedericharacterazarazar1
+	}
+	6306.2.7 = {
+		holder = sedericharacterazarazar2
+	}
+	6334.8.18 = {
+		holder = sedericharacterazarazar7
+	}
+	6355.2.10 = {
+		holder = sedericharacterazar9
+	}
+	6386.6.6 = {
+		holder = sedericharacterazar11
+	}
+	6408.7.19  = {
+		holder = sedericharacterazar13
+	}
+	6416.7.12 = {
+		holder = sedericharacterazar21
+	}
+	6435.7.7 = {
+		holder = sedericharacterazar23
+	}
+	6466.2.28 = {
+		holder = sedericharacterazar25
+	}
+	6467.10.13 = {
+		holder = sedericharacterazar30
+	}
+	6495.5.20 = {
+		holder = sedericharacterazar32
+	}
+	6526.12.10 = {
+		holder = sedericharacterazar36
+	}
+	6549.3.13 = {
+		holder = sedericharacterazar38
+	}
+	6577.3.17 = {
+		holder = sedericharacterazar41
+	}
+	6598.8.6 = {
+		holder = sedericharacterazar42
+	}
+	6630.11.15 = {
+		holder = sedericharacterazar51
+	}
+	6657.1.22 = {
+		holder = sedericharacterazar54
+	}
+	6686.11.13 = {
+		holder = sedericharacterazar53
+	}
+	6711.12.10 = {
+		holder = sedericharacterazar58
+	}
+	6739.4.2 = {
+		holder = sedericharacterazar59
+	}
+	6762.11.9 = {
+		holder = sedericharacterazar64
+	}
+	6795.6.28 = {
+		holder = sedericharacterazar67
+	}
+	6820.12.13 = {
+		holder = sedericharacterazar71
+	}
+	6845.9.7 = {
+		holder = sedericharacterazar72
+	}
+	6871.1.15 = {
+		holder = sedericharacterazar77
+	}
+	6872.3.17 = {
+		holder = sedericharacterazar82
+	}
+	6905.7.25 = {
+		holder = sedericharacterazar87
+	}
+	6928.2.23 = {
+		holder = sedericharacterazar88
+	}
+	6959.4.21 = {
+		holder = sedericharacterazar93
+	}
+	6985.3.24 = {
+		holder = sedericharacterazar98
+	}
+	7011.2.13 = {
+		holder = sedericharacterazar97
+	}
+	7016.1.9 = {
+		holder = sedericharacterazar99
+		liege = d_azarideth
+	}
 }
 c_azlokad = {
 	3770.1.1 = {
 		change_development_level = 5
+	}
+	6256.9.3 = {
+		holder = sedericharacterazarazar1
+	}
+	6306.2.7 = {
+		holder = sedericharacterazarazar2
+	}
+	6334.8.18 = {
+		holder = sedericharacterazarazar7
+	}
+	6355.2.10 = {
+		holder = sedericharacterazar9
+	}
+	6386.6.6 = {
+		holder = sedericharacterazar11
+	}
+	6408.7.19  = {
+		holder = sedericharacterazar13
+	}
+	6416.7.12 = {
+		holder = sedericharacterazar21
+	}
+	6435.7.7 = {
+		holder = sedericharacterazar23
+	}
+	6466.2.28 = {
+		holder = sedericharacterazar25
+	}
+	6467.10.13 = {
+		holder = sedericharacterazar30
+	}
+	6495.5.20 = {
+		holder = sedericharacterazar32
+	}
+	6526.12.10 = {
+		holder = sedericharacterazar36
+	}
+	6549.3.13 = {
+		holder = sedericharacterazar38
+	}
+	6577.3.17 = {
+		holder = sedericharacterazar41
+	}
+	6598.8.6 = {
+		holder = sedericharacterazar42
+	}
+	6630.11.15 = {
+		holder = sedericharacterazar51
+	}
+	6657.1.22 = {
+		holder = sedericharacterazar54
+	}
+	6686.11.13 = {
+		holder = sedericharacterazar53
+	}
+	6711.12.10 = {
+		holder = sedericharacterazar58
+	}
+	6739.4.2 = {
+		holder = sedericharacterazar59
+	}
+	6762.11.9 = {
+		holder = sedericharacterazar64
+	}
+	6795.6.28 = {
+		holder = sedericharacterazar67
+	}
+	6820.12.13 = {
+		holder = sedericharacterazar71
+	}
+	6845.9.7 = {
+		holder = sedericharacterazar72
+	}
+	6871.1.15 = {
+		holder = sedericharacterazar77
+	}
+	6872.3.17 = {
+		holder = sedericharacterazar82
+	}
+	6905.7.25 = {
+		holder = sedericharacterazar87
+	}
+	6928.2.23 = {
+		holder = sedericharacterazar88
+	}
+	6959.4.21 = {
+		holder = sedericharacterazar93
+	}
+	6985.3.24 = {
+		holder = sedericharacterazar98
+	}
+	7011.2.13 = {
+		holder = sedericharacterazar97
+	}
+	7016.1.9 = {
+		holder = sedericharacterazar99
+		liege = d_azarideth
 	}
 }
 
@@ -6527,15 +7571,153 @@ c_sazaran = {
 	3770.1.1 = {
 		change_development_level = 7
 	}
+	6674.5.9 = {
+		holder = sedericharacterthree25
+	}
+	6731.3.13 = {
+		holder = sedericharacterthree26
+	}
+	6759.1.4 = {
+		holder = sedericharacterthree28
+	}
+	6789.12.3 = {
+		holder = sedericharacterthree34
+	}
+	6815.11.23 = {
+		holder = sedericharacterthree37
+	}
+	6839.2.11 = {
+		holder = sedericharacterthree42
+	}
+	6870.4.7 = {
+		holder = sedericharacterthree44
+	}
+	6894.1.10 = {
+		holder = sedericharacterthree47
+	}
+	6922.9.4 = {
+		holder = sedericharacterthree51
+	}
+	6943.4.18 = {
+		holder = sedericharacterthree49
+	}
+	6949.8.17 = {
+		holder = sedericharacterthree53
+	}
+	6975.7.15 = {
+		holder = sedericharacterthree56
+	}
+	6994.11.10 = {
+		holder = sedericharacterthree60
+	}
+	7031.4.24 = {
+		holder = sedericharacterthree59
+	}
+	7032.5.15 = {
+		holder = sedericharacterthree63
+		liege = d_holzoreth
+	}
 }
 c_tharkadur = {
 	3770.1.1 = {
 		change_development_level = 6
 	}
+	6674.5.9 = {
+		holder = sedericharacterthree25
+	}
+	6731.3.13 = {
+		holder = sedericharacterthree26
+	}
+	6759.1.4 = {
+		holder = sedericharacterthree28
+	}
+	6789.12.3 = {
+		holder = sedericharacterthree34
+	}
+	6815.11.23 = {
+		holder = sedericharacterthree37
+	}
+	6839.2.11 = {
+		holder = sedericharacterthree42
+	}
+	6870.4.7 = {
+		holder = sedericharacterthree44
+	}
+	6894.1.10 = {
+		holder = sedericharacterthree47
+	}
+	6922.9.4 = {
+		holder = sedericharacterthree51
+	}
+	6943.4.18 = {
+		holder = sedericharacterthree49
+	}
+	6949.8.17 = {
+		holder = sedericharacterthree53
+	}
+	6975.7.15 = {
+		holder = sedericharacterthree56
+	}
+	6994.11.10 = {
+		holder = sedericharacterthree60
+	}
+	7031.4.24 = {
+		holder = sedericharacterthree59
+	}
+	7032.5.15 = {
+		holder = sedericharacterthree63
+		liege = d_holzoreth
+	}
 }
 c_azulan = {
 	3770.1.1 = {
 		change_development_level = 4
+	}
+	6674.5.9 = {
+		holder = sedericharacterthree25
+	}
+	6731.3.13 = {
+		holder = sedericharacterthree26
+	}
+	6759.1.4 = {
+		holder = sedericharacterthree28
+	}
+	6789.12.3 = {
+		holder = sedericharacterthree34
+	}
+	6815.11.23 = {
+		holder = sedericharacterthree37
+	}
+	6839.2.11 = {
+		holder = sedericharacterthree42
+	}
+	6870.4.7 = {
+		holder = sedericharacterthree44
+	}
+	6894.1.10 = {
+		holder = sedericharacterthree47
+	}
+	6922.9.4 = {
+		holder = sedericharacterthree51
+	}
+	6943.4.18 = {
+		holder = sedericharacterthree49
+	}
+	6949.8.17 = {
+		holder = sedericharacterthree53
+	}
+	6975.7.15 = {
+		holder = sedericharacterthree56
+	}
+	6994.11.10 = {
+		holder = sedericharacterthree60
+	}
+	7031.4.24 = {
+		holder = sedericharacterthree59
+	}
+	7032.5.15 = {
+		holder = sedericharacterthree63
+		liege = d_holzoreth
 	}
 }
 
@@ -6726,10 +7908,66 @@ c_zairazgara = {
 	3770.1.1 = {
 		change_development_level = 6
 	}
+	6743.10.22 = {
+		holder = sedericharacterfive1
+	}
+	6783.2.1 = {
+		holder = sedericharacterfive2
+	}
+	6818.11.11 = {
+		holder = sedericharacterfive4
+	}
+	6843.11.20 = {
+		holder = sedericharacterfive6
+	}
+	6845.7.7 = {
+		holder = sedericharacterfive7
+	}
+	6876.2.26 = {
+		holder = sedericharacterfive8
+	}
+	6894.8.26 = {
+		holder = sedericharacterfive10
+	}
+	6923.1.10 = {
+		holder = sedericharacterfive15
+	}
+	6950.11.25 = {
+		holder = sedericharacterfive20
+	}
+	6976.4.26 = {
+		holder = sedericharacterfive21
+	}
+	7010.10.25 = {
+		holder = sedericharacterfive23
+	}
+	7032.3.21 = {
+		holder = sedericharacterfive24
+		liege = d_holzoreth
+	}
 }
 c_aganarukh = {
 	3770.1.1 = {
 		change_development_level = 4
+	}
+	6843.9.2 = {
+		holder = sedericharacterfour1
+	}
+	6880.7.14 = {
+		holder = sedericharacterfour3
+	}
+	6911.2.8 = {
+		holder = sedericharacterfour8
+	}
+	6940.7.17 = {
+		holder = sedericharacterfour9
+	}
+	6967.6.7 = {
+		holder = sedericharacterfour15
+	}
+	7014.6.9 = {
+		holder = sedericharacterfour17
+		liege = d_holzoreth
 	}
 }
 c_anaduniakho = {
@@ -6740,6 +7978,25 @@ c_anaduniakho = {
 c_dolgunai = {
 	3770.1.1 = {
 		change_development_level = 3
+	}
+	6843.9.2 = {
+		holder = sedericharacterfour1
+	}
+	6880.7.14 = {
+		holder = sedericharacterfour3
+	}
+	6911.2.8 = {
+		holder = sedericharacterfour8
+	}
+	6940.7.17 = {
+		holder = sedericharacterfour9
+	}
+	6967.6.7 = {
+		holder = sedericharacterfour15
+	}
+	7014.6.9 = {
+		holder = sedericharacterfour17
+		liege = d_holzoreth
 	}
 }
 c_zayanaglar = {

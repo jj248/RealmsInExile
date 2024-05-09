@@ -2268,6 +2268,9 @@
 		religion = faith_hobbit
 		holding = none # Due to dunedain, castles/temples get built, doing this removes those buildings
 	}
+	6965.1.1 = { # Cottons of Bywater
+		holding = city_holding
+	}
 }
 
 4688 = {	#Waymeet (b_waymeet)
@@ -4233,40 +4236,6 @@
 		culture = wastelands
 		religion = faith_wastelands_pagan
 		holding = none
-	}
-}
-
-##	Eryn Iaur (c_eryn_iaur) [ OLD FOREST, now impassable! ]
-
-4642 = {	#Lavanbâd (b_lavanbad)
-	culture = dunedain
-	religion = faith_edain
-	holding = castle_holding
-	4035.1.1 = { # Split of Dunedain into Arnorian and Gondorian
-		culture = arnorian
-	}
-	6008.1.1 = { # Arthedain is disbanded
-		culture = wastelands
-		religion = faith_wastelands_pagan
-		#holding = wastelands_holding
-		#buildings = {
-		#	wolf_den
-		#	spider_nest
-		#}
-	}
-}
-
-4643 = {	#Arafrâd (b_arafrad)
-	culture = dunedain
-	religion = faith_edain
-	holding = none
-	4035.1.1 = { # Split of Dunedain into Arnorian and Gondorian
-		culture = arnorian
-	}
-	6008.1.1 = { # Arthedain is disbanded
-		culture = wastelands
-		religion = faith_wastelands_pagan
-		#holding = none
 	}
 }
 

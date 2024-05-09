@@ -16,11 +16,85 @@ yearly_global_pulse = {
 			title:k_dorwinion.holder = { setup_dorwinion_council_members = yes }
 		}
 
-		every_unnplayable_race = {
+		every_settlement_counties = {
+			if = { 
+				limit = { title_province ?= { has_building = spider_nest_cleared } }
+				title_province ?= { remove_building = spider_nest_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = wolf_den_cleared } }
+				title_province ?= { remove_building = wolf_den_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = bear_den_cleared } }
+				title_province ?= { remove_building = bear_den_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = ghosts_cleared } }
+				title_province ?= { remove_building = ghosts_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = troll_cave_cleared } }
+				title_province ?= { remove_building = troll_cave_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = ghosts_eregion_cleared } }
+				title_province ?= { remove_building = ghosts_eregion_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = dragon_attack_cleared } }
+				title_province ?= { remove_building = dragon_attack_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = flooded_lands_cleared } }
+				title_province ?= { remove_building = flooded_lands_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = bandits_cleared } }
+				title_province ?= { remove_building = bandits_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = dead_marshes_cleared } }
+				title_province ?= { remove_building = dead_marshes_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = collapsed_ceiling_cleared } }
+				title_province ?= { remove_building = collapsed_ceiling_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = flooded_tunnels_cleared } }
+				title_province ?= { remove_building = flooded_tunnels_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = flooded_tunnels_nogrod_cleared } }
+				title_province ?= { remove_building = flooded_tunnels_nogrod_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = stale_air_cleared } }
+				title_province ?= { remove_building = stale_air_cleared }
+			}
+			if = { 
+				limit = { title_province ?= { has_building = strange_creatures_cleared } }
+				title_province ?= { remove_building = strange_creatures_cleared }
+			}
+		}
+		every_unplayable_race = {
 			trigger_event = {
 				id = race.0001
 				days = 1
 			}
+		}
+		every_living_character = {
+			limit = {
+				is_from_ruler_designer = no
+				OR = {
+					culture = culture:vanyar
+					culture = culture:teleri
+					culture = { has_cultural_pillar = heritage_quendi }
+				}
+				is_in_valinor = no
+			}
+			set_culture = culture:sindar
 		}
 		every_living_character = {
 			limit = {
@@ -703,6 +777,18 @@ quarterly_playable_pulse = {
 		# EP1 maintenance pulses
 		inspiration_maintenance_quarterly_pulse
 	}
+	effect = {
+		if = { # Gold Beyond Grief | Achievement
+			limit = {
+				NOT = { exists = global_var:lotr_achievement_38 }
+				is_ai = no
+				is_dwarf = yes
+				faith = { has_doctrine = tenet_gold_veneration }
+				gold >= 10000
+			}
+			set_global_variable = lotr_achievement_38
+		}
+	}
 }
 
 # Called from code once a year for all "playable" characters, at a random point that year (individually for each character). Different time from the random_yearly_everyone_pulse (coincides by random 1 time out of 365)
@@ -1056,7 +1142,7 @@ on_yearly_events = {
 		orcs.0001 # Coming of Age
 		orcs.1001 # Flesh Feast
 		orcs.3001 # Rise of The Berserker
-#		orc_challenge.0101 # Guest Challenge
+		#orc_challenge.0101 # Guest Challenge
 		# gondor.2950
 	}
 	random_events = {

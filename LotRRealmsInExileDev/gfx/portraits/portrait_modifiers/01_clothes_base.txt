@@ -1269,8 +1269,16 @@ clothes_base = { # The lowest priority group of clothes with triggers based on r
             base = 0
             modifier = {
                 add = 41 # Slightly higher
-                portrait_commoner_no_mayors_trigger = {
-                    CULTURE_INPUT = pel
+                OR = {
+					portrait_low_nobles_clothing_trigger = {
+						CULTURE_INPUT = pel
+					}
+					portrait_mayor_trigger = {
+						CULTURE_INPUT = pel
+					}
+					portrait_commoner_no_mayors_trigger = {
+						CULTURE_INPUT = pel
+					}
                 }
             }
         }
@@ -1930,6 +1938,24 @@ fp3_iranian_high_nobles = {
 			}
 		}
 	}
+
+    snow_troll_clothes = { 
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = uruk_berserker_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				portrait_snow_troll_clothing_trigger = yes
+			}
+		}
+	}
 	
 	## Honnin ##
 	honnin_clothes = { 
@@ -1946,6 +1972,25 @@ fp3_iranian_high_nobles = {
 			modifier = {
 				add = 200
 				portrait_honnin_clothing_trigger = yes
+			}
+		}
+	}
+	
+	## BLACK TROLL ##
+	black_troll_clothes = { 
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = clothes
+                template = uruk_berserker_clothes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }   
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				portrait_black_troll_clothing_trigger = yes
 			}
 		}
 	}
@@ -2417,8 +2462,7 @@ fp3_iranian_high_nobles = {
 			}
 		}
 	}
-	
-	## Mag ##
+    ## Mag ##
 	mag_commoners = { 
         dna_modifiers = {
             accessory = {
@@ -2438,8 +2482,7 @@ fp3_iranian_high_nobles = {
 			}
 		}
 	}
-
-	mag_low_nobles = { 
+    mag_low_nobles = { 
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2447,7 +2490,7 @@ fp3_iranian_high_nobles = {
                 template = afr_low_nobility_clothes
                 range = { 0 1 } # For the randomness to work correctly
             }
-        }   
+        }  
 		weight = {
 			base = 0
 			modifier = {
@@ -2458,6 +2501,73 @@ fp3_iranian_high_nobles = {
 					}
 					portrait_high_nobles_clothing_trigger = {
 						CULTURE_INPUT = mag
+					}
+				}
+			}
+		}
+    }
+	
+	##SILVAN ELVES##	
+	silvan_commoners = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = silvan_commoner_clothes
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 50
+				OR = {
+					portrait_commoner_clothing_trigger = {
+						CULTURE_INPUT = lasgalendrim
+					}
+				}
+			}
+		}
+	}
+	
+	silvan_low_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = silvan_low_nobility_clothes
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 50
+				OR = {
+					portrait_low_nobles_clothing_trigger = {
+						CULTURE_INPUT = lasgalendrim
+					}
+				}
+			}
+		}
+	}
+
+	silvan_high_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = silvan_high_nobility_clothes
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}		
+		weight = {
+			base = 0
+			modifier = {
+				add = 50
+				OR = {
+					portrait_high_nobles_clothing_trigger = {
+						CULTURE_INPUT = lasgalendrim
 					}
 				}
 			}
