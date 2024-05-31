@@ -321,6 +321,36 @@ wonder_aglarond_03_dike = {
 		base = 100
 	}
 }
+wonder_glittering_caves = { # Glittering Caves
+	type_icon = "gibraltar.dds"
+
+	construction_time = slow_construction_time
+	cost_gold = 750
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		is_dwarf = yes
+	}
+	
+	province_terrain_modifier = {
+ 		tax_mult = -0.10
+ 	}
+
+	character_modifier = {
+		learning = 1
+		monthly_prestige = 1
+		stress_loss_mult = 0.4
+	}
+
+	is_enabled = {
+		is_orc = no
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_learning_minor
+}
 # Isengard
 wonder_angrenost_01 = {
 	type_icon = "icon_wonder_isengard.dds"
@@ -351,11 +381,10 @@ wonder_angrenost_01 = {
 		monthly_prestige = 0.1
 		prowess_per_piety_level = 1
 		supply_duration = 0.1
-		mercenary_hire_cost_mult = -0.1
 	}
 	province_modifier = {
 		# defender_advantage = normal_building_advantage_tier_1 # Matt note: cannot be used in province/county modifier.
-		fort_level = good_building_fort_level_tier_3
+		fort_level = good_building_fort_level_tier_4
 	}
 	county_modifier = {
 		levy_size = 0.2
@@ -398,7 +427,6 @@ wonder_angrenost_02_storehouses = {
 		monthly_prestige = 0.15
 		prowess_per_piety_level = 1
 		supply_duration = 0.15
-		mercenary_hire_cost_mult = -0.15
 	}
 	province_modifier = {
 		# defender_advantage = normal_building_advantage_tier_2 # Matt note: cannot be used in province/county modifier.
@@ -445,7 +473,6 @@ wonder_angrenost_03_palantir = {
 		monthly_prestige = 0.2
 		prowess_per_piety_level = 2
 		supply_duration = 0.2
-		mercenary_hire_cost_mult = -0.2
 	}
 	province_modifier = {
 		# defender_advantage = normal_building_advantage_tier_3 # Matt note: cannot be used in province/county modifier.
@@ -843,6 +870,7 @@ wonder_enie_iaur = {
 ### Gondor ###
 # Rammas Echor 
 wonder_rammas_echor_01 = { #Rammas Echor in disrepair
+	asset = { type = pdxmesh name = "rammas_echor_ruined_mesh" }	
 	type_icon = "icon_wonder_gate_01.dds"
 	
 	construction_time = slow_construction_time
@@ -876,6 +904,7 @@ wonder_rammas_echor_01 = { #Rammas Echor in disrepair
 }
 
 wonder_rammas_echor_02 = { #Rammas Echor restored
+	asset = { type = pdxmesh name = "rammas_echor_intact_mesh" }	
 	type_icon = "icon_structure_visby_ringmur.dds"
 	
 	construction_time = slow_construction_time
@@ -998,7 +1027,7 @@ wonder_minas_anor_03 = { #Houses of Healing
 		# health = 0.5
 	}
 	county_modifier = {
-		epidemic_resistance = 25
+		epidemic_resistance = 35
 	}
 	#is_enabled = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
@@ -1033,7 +1062,10 @@ wonder_minas_anor_04 = { #Minas Anor: Flowering of the White Tree
 	character_modifier = {
 		knight_limit = 5
 		vassal_opinion = 10
-		health = 0.5
+		# health = 0.5
+	}
+	county_modifier = {
+		epidemic_resistance = 35
 	}
 	#is_enabled = {
 	#	scope:holder.culture = { has_cultural_pillar = heritage_dunedain }
@@ -1086,15 +1118,21 @@ wonder_minas_ithil_02 = { #Minas Morgul
 	#		defender_advantage = good_building_fort_level_tier_4 # Matt note: cannot be used in province/county modifier.
 		fort_level = 4
 		supply_limit_mult = 0.5
+
 	}
 	
 	county_modifier = {
 		development_growth_factor = -0.8
 	}
+
+	levy = 500
 	
 	character_modifier = {
 		dread_gain_mult = 0.2
 		dread_baseline_add = 20
+		levy_maintenance = -0.25
+		
+		levy_reinforcement_rate = 0.25
 	}
 
 	ai_value = {
@@ -2066,13 +2104,22 @@ wonder_baraddur = {
 		defender_holding_advantage = good_building_fort_level_tier_7
 		fort_level = 10
 		levy_size = 2
-		monthly_income = 10
+		monthly_income = 23
 		stationed_skirmishers_damage_mult = 1
+
+		levy_reinforcement_rate = 0.50
 	}
 	max_garrison = good_building_max_garrison_tier_4
 	character_modifier = {
 		dread_baseline_add = 20
 		dread_decay_mult = -0.2
+		
+		levy_maintenance = -0.25
+		men_at_arms_maintenance = -0.25
+	}
+
+	county_modifier = { # Lots of space to build in Barad-dur!
+		building_slot_add = 2
 	}
 	
 	is_enabled = {
@@ -2106,6 +2153,7 @@ wonder_orodruin = { #Mount Doom
 	county_modifier = {
 		development_growth_factor = -0.7
 	}
+
 	character_modifier = {
 		dread_baseline_add = 20
 		dread_gain_mult = 0.3
@@ -2267,6 +2315,14 @@ wonder_black_gate = {
 	county_modifier = {
 		fort_level = 6
 #		defender_advantage = good_building_fort_level_tier_5 # Matt note: cannot be used in province/county modifier.
+	}
+
+	character_modifier = {
+		levy_maintenance = -0.25
+	}
+
+	province_modifier = {
+		levy_reinforcement_rate = 0.25
 	}
 	
 	#is_enabled = {
@@ -4671,9 +4727,11 @@ wonder_amon_lanc_02 = { #Dol Guldur
 		}		
 	}
 	province_modifier = {
-		fort_level = 2
+		fort_level = good_building_fort_level_tier_4
 		hostile_raid_time = 0.5
 		garrison_size = 0.25
+		
+		levy_reinforcement_rate = 0.25
 	}
 	
 	character_modifier = {
@@ -4682,6 +4740,8 @@ wonder_amon_lanc_02 = { #Dol Guldur
 		intimidated_vassal_levy_contribution_mult = 0.1
 		cowed_vassal_tax_contribution_mult = 0.25
 		cowed_vassal_levy_contribution_mult = 0.2
+		
+		levy_maintenance = -0.25
 	}
 	is_enabled = {
 		scope:holder = {
@@ -5249,6 +5309,37 @@ wonder_lest_01 = { # Ancient Metropole of Mistrand - the walls
 	flag = travel_point_of_interest_religious
 }
 
+wonder_iflenak = { # Iflênâk, Nurunkizdin Waterfall
+	type_icon = "icon_wonder_henneth_annun.dds"
+
+	construction_time = slow_construction_time
+	cost_gold = 750
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		is_dwarf = yes
+	}
+	
+	province_modifier = {
+		fort_level = 2
+		defender_holding_advantage = 10
+	}
+
+	character_modifier = {
+		monthly_prestige = 0.5
+		stress_loss_mult = 0.1
+	}
+
+	is_enabled = {
+		is_orc = no
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_learning_minor
+}
+
 ### Nelornieth ###
 wonder_quartz_hall = { # Royal hall of Nelornieth
 	type_icon = "icon_wonder_thranduil_hall.dds"
@@ -5530,6 +5621,73 @@ wonder_temple_sulereb_03 = { # Temple of Sulereb restored
 #############
 ### Arnor ###
 #############
+wonder_ettenmoors_01 = {
+	type_icon = "icon_wonder_ettenmoors.dds"
+	
+	construction_time = very_slow_construction_time
+	
+	can_construct = {
+		always = no
+	}
+	
+	county_modifier = {
+		development_growth_factor = -0.35
+		county_opinion_add = -10
+		travel_danger = 50
+	}
+
+	province_modifier = {		
+		build_gold_cost = 0.35
+		holding_build_speed = 0.35
+	}
+
+	ai_value = {
+		base = -100
+	}
+
+	type = special
+	next_building = wonder_ettenmoors_02
+	flag = travel_point_of_interest_natural_feature
+}
+
+wonder_ettenmoors_02 = {
+	type_icon = "icon_wonder_ettenmoors.dds"
+	
+	construction_time = very_slow_construction_time
+	
+	can_construct = {
+		NOT = {
+			culture = culture:wastelands
+		}
+	}
+	
+	province_modifier = {
+        garrison_size = 0.25
+		levy_size = 0.25
+	}
+
+	ai_value = {
+		base = -100
+	}
+	
+	on_complete = {
+		title:k_imladris = {
+			every_de_jure_county = {
+				limit = { NOT = { holder = character:k_wastelands_holder } }
+				holder = { trigger_event = colonisation_random.1007 }
+			}
+		}
+		title:k_rhudaur = {
+			every_de_jure_county = {
+				limit = { NOT = { holder = character:k_wastelands_holder } }
+				holder = { trigger_event = colonisation_random.1007 }
+			}
+		}
+	}
+
+	type = special
+	flag = travel_point_of_interest_natural_feature
+}
 
 wonder_cameth_brin_01 = {
 	type_icon = "icon_wonder_cameth_brin.dds"
@@ -7505,8 +7663,8 @@ wonder_belegost_rebuilt = { # Belegost (Broadbeam Capital)
 
 	province_modifier = {
 		monthly_income = 2
-		stationed_maa_damage_mult = 0.5
-		stationed_maa_toughness_mult = 0.5
+		stationed_heavy_infantry_damage_mult = 0.5
+		stationed_heavy_infantry_toughness_mult = 0.5
 	}
 	county_modifier = {
 		development_growth = 0.3
@@ -7541,8 +7699,8 @@ wonder_belegost_reborn = { # Belegost (Broadbeam Capital)
 
 	province_modifier = {
 		monthly_income = 5
-		stationed_maa_damage_mult = 1.5
-		stationed_maa_toughness_mult = 1.5
+		stationed_heavy_infantry_damage_mult = 1.5
+		stationed_heavy_infantry_toughness_mult = 1.5
 		fort_level = 3
 	}
 	county_modifier = {
@@ -7613,12 +7771,10 @@ wonder_nogrod_rebuilt = { # Nogrod (Firebeard Capital)
 
 	province_modifier = {
 		supply_limit_mult = 0.25
-		monthly_income = 2
-		stationed_maa_damage_mult = 0.5
-		stationed_maa_toughness_mult = 0.5
+		monthly_income = 3.5
 	}
 	county_modifier = {
-		development_growth = 0.3
+		development_growth = 0.4
 	}
 	character_modifier = {
 		monthly_prestige = 1
@@ -7649,8 +7805,8 @@ wonder_nogrod_reborn = { # Nogrod (Firebeard Capital)
 	province_modifier = {
 		supply_limit_mult = 0.5
 		monthly_income = 5
-		stationed_maa_damage_mult = 1.5
-		stationed_maa_toughness_mult = 1.5
+		stationed_monster_damage_mult = 1.5
+		stationed_monster_toughness_mult = 1.5
 		fort_level = 3
 	}
 	county_modifier = {
@@ -7732,6 +7888,40 @@ wonder_thorins_hall = { # Thorins Hall
 }
 
 ### Misty Mountain Wonders ###
+
+wonder_durin_throne = { # The Throne of Durin
+	type_icon = "icon_wonder_thranduil_hall.dds"
+
+	construction_time = slow_construction_time
+	cost_gold = 500
+	can_construct = {
+		has_building_or_higher = dwarven_depths_02
+		is_dwarf = yes
+	}
+
+	province_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.1
+		development_growth_factor = 0.1
+	}
+
+	character_modifier = {
+		monthly_prestige = 1
+		vassal_opinion = 15
+		vassal_levy_contribution_add = 0.10
+		vassal_tax_contribution_add = 0.10
+	}
+
+	is_enabled = {
+		is_dwarf = yes
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
 
 wonder_endless_stairs = { # Endless Stairs
 	type_icon = "icon_structure_walls_of_genoa.dds"

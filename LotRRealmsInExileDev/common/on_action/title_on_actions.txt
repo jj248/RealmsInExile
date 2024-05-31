@@ -99,6 +99,38 @@ on_title_gain = {
 	effect = {
 		scope:title ?= { update_dynamic_coa = yes }
 
+		if = {
+			limit = {
+				OR = {
+					scope:title ?= title:d_amon_lanc
+					scope:title ?= title:k_amon_lanc
+				}
+				root = character:linefinwe11
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:decision_annihilate_dol_guldur
+					}
+				}
+			}
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:decision_annihilate_dol_guldur
+			}
+			trigger_event = elven.1830
+		}
+
+		if = {
+			limit = { 
+				scope:title = title:d_balins_expedition
+				trigger_if = {
+					limit = { title:k_khazad_dum = { any_county_struggle = { this = struggle:balrog_struggle } } }
+					NOT = { any_held_county = { title_province = { geographical_region = middleearth_misty_mountains_balrog_struggle_region } } }
+				}
+			}
+			destroy_title = title:d_balins_expedition
+		}
+		
 		### Give title back to Tom if Tom tried to give a wastelands title away
 		if = {
 			limit = { 
@@ -238,6 +270,22 @@ on_title_gain = {
 			}
 			destroy_title = title:e_isengard_unleashed
 		}
+		
+		#LotR - Convert Elven barons to the correct government
+		if = {
+			limit = {
+				scope:title ?= {
+					tier = tier_barony
+					title_province = { has_holding_type = elven_holding }
+				}
+				root = {
+					is_elf = yes
+				}
+				scope:title.county.holder = { is_elf = yes }
+				NOT = { government_has_flag = government_is_elven }
+			}
+			root = { change_government = elven_government }
+		}
 
 		# LotR - If orc gains county with non-orc buildings, destroy invalid buildings
 		if = {
@@ -286,6 +334,43 @@ on_title_gain = {
 					remove_building_any_level = { BUILDING = stables }
 					remove_building_any_level = { BUILDING = smiths }
 					remove_building_any_level = { BUILDING = hillside_grazing }
+				}
+			}
+		}
+
+		# LotR - If non-orc gains county with orc buildings, destroy invalid buildings
+		if = {
+			limit = {
+				scope:title ?= {
+					tier = tier_county
+				}
+				root = {
+					lotr_orc_or_nurniag_buildings = no
+					is_ai = yes
+				}
+			}
+
+			scope:title ?= {
+				every_county_province = {
+					remove_building_any_level = { BUILDING = slave_farms }
+					remove_building_any_level = { BUILDING = logging_outposts }
+					remove_building_any_level = { BUILDING = raiding_camps }
+					remove_building_any_level = { BUILDING = slave_mines }
+					remove_building_any_level = { BUILDING = hunting_outposts }
+					remove_building_any_level = { BUILDING = uruk_pits }
+					remove_building_any_level = { BUILDING = furnaces }
+					remove_building_any_level = { BUILDING = warg_pits }
+					remove_building_any_level = { BUILDING = scouting_posts }
+					remove_building_any_level = { BUILDING = orc_siege_works }
+					remove_duchy_building_any_level = { BUILDING = liquor_stills }
+					remove_duchy_building_any_level = { BUILDING = orc_barracks }
+					remove_duchy_building_any_level = { BUILDING = loot_houses }
+					remove_duchy_building_any_level = { BUILDING = proving_ground }
+					remove_duchy_building_any_level = { BUILDING = tunnel_network }
+					remove_duchy_building_any_level = { BUILDING = slaughterhouses }
+					remove_duchy_building_any_level = { BUILDING = experimental_workshop }
+					remove_duchy_building_any_level = { BUILDING = heavy_armoury }
+					remove_duchy_building_any_level = { BUILDING = snaga_warrens }
 				}
 			}
 		}
@@ -1223,6 +1308,7 @@ on_title_gain = {
 		nordinbad.0300
 		nordinbad.0301
 		nordinbad.0400
+		enedwaith.0302
 		# roman_restoration.0005		#New Roman Emperor gets Augustus trait. (old holder, if still alive, loses it)
 		# roman_restoration.0199		#Restoring the Pentarchy.
 		religious_decision.0312		# Base game: new holder of a county with a runestone
@@ -1664,10 +1750,23 @@ on_title_gain_usurpation = {
 # scope:title = the title that changes hands
 # scope:new_holder = new holder.
 on_title_lost = {
-	events = {
-	}
-
 	effect = {
+		### LotR ###
+		if = {
+			limit = {
+				is_landed = no
+				has_variable_list = defensive_allies
+			}
+			every_in_list = {
+				variable = defensive_allies
+				save_scope_as = defensive_ally
+			}
+			clear_variable_list = defensive_allies
+			scope:defensive_ally = {
+				remove_list_variable = { name = defensive_allies target = root }
+			}
+		}
+
 		#Make sure nobody ever has only the Kingdom of Fashion
 		if = {
 			limit = {

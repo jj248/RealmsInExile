@@ -1689,7 +1689,7 @@
 				mode = add
 				gene = headgear
 				template = elven_war
-				range = { 0 1 } # For the randomness to work correctly
+				range = { 0.10 0.20 } # For the randomness to work correctly
 			}
 		}	
 		weight = {
@@ -1697,10 +1697,55 @@
 			modifier = {
 				add = 101
 				portrait_wear_helmet_trigger = yes
-				portrait_elven_clothing_trigger = yes
+				OR = {
+					portrait_elven_clothing_trigger = yes
+					portrait_lasgalendrim_clothing_trigger = yes
+				}
 			}
 		}
 	}
+	
+	elven_war_noldor = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = elven_war
+				range = { 0.50 0.60 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 102
+				portrait_wear_helmet_trigger = yes
+				portrait_elven_clothing_trigger = yes
+				culture = { has_cultural_pillar = heritage_calaquendi }
+			}		
+		}
+	}
+	
+	elven_war_galadhrim = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = elven_war
+				range = { 0.80 0.90 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 103
+				portrait_wear_helmet_trigger = yes
+				portrait_elven_clothing_trigger = yes
+				culture = { has_cultural_pillar = heritage_lomiquendi }
+				NOT = { portrait_lasgalendrim_clothing_trigger = yes }
+			}		
+		}
+	}
+	
 	
 	#dwarf_war = {
 	#	dna_modifiers = {
@@ -1836,6 +1881,24 @@
 				add = 105
 				portrait_wear_helmet_trigger = yes
 				portrait_dolguldur_orc_clothing_trigger = yes
+			}
+		}
+	}
+	
+	black_troll_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = uruk_war
+				accessory = male_headgear_uruk_isengard_1
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 105
+				portrait_black_troll_clothing_trigger = yes
 			}
 		}
 	}

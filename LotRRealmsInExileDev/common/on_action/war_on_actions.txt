@@ -214,6 +214,20 @@ on_war_started = {
 	}
 	effect = {
 		# Struggle catalyst #LotR
+		if = {
+			limit = { scope:attacker = { is_defensive_allied_to = { RECIPIENT = scope:defender } } }
+			if = {
+				limit = { scope:attacker = { has_variable_list = defensive_allies } }
+				scope:attacker = {
+					every_in_list = {
+						variable = defensive_allies
+						save_scope_as = defensive_ally
+					}
+				}
+				scope:attacker = { clear_variable_list = defensive_allies }
+				scope:defensive_ally = { remove_list_variable = { name = defensive_allies target = root } }
+			}
+		}
 		scope:attacker = {
 			if = {
 				limit = {
@@ -758,6 +772,35 @@ on_war_started = {
 						name = struggle_defender_tier
 						value = scope:defender.highest_held_title_tier
 					}
+				}
+			}
+		}
+
+		# Defensive alliance #LotR
+		if = {
+			limit = { scope:defender = { has_variable_list = defensive_allies } }
+			scope:defender = {
+				random_in_list = {
+					variable = defensive_allies
+					save_scope_as = defensive_ally
+				}
+			}
+			scope:defender = {
+				random_character_war = {
+					limit = {
+						primary_attacker = scope:attacker
+						primary_defender = scope:defender
+					}
+					save_scope_as = current_war
+				}
+			}
+			if = {
+				limit = {
+					scope:defensive_ally = { is_ai = yes }
+					scope:defender = { is_ai = yes }
+				}
+				scope:current_war = {
+					add_defender = scope:defensive_ally
 				}
 			}
 		}

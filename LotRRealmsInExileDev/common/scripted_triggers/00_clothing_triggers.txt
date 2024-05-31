@@ -2284,6 +2284,22 @@ portrait_elven_clothing_contents_trigger = {
 	has_clothing_gfx = elven_clothing_gfx
 }
 
+## Lasgalendrim ##
+
+portrait_lasgalendrim_clothing_trigger = {
+	scope:culture = { portrait_lasgalendrim_clothing_contents_trigger = yes }
+}
+
+portrait_lasgalendrim_clothing_spouse_trigger = {
+	culture = {
+		portrait_lasgalendrim_clothing_contents_trigger = yes
+	}
+}
+
+portrait_lasgalendrim_clothing_contents_trigger = {
+	has_clothing_gfx = lasgalendrim_clothing_gfx
+}
+
 ## Numenorean ##
 
 portrait_numenorean_clothing_trigger = {
@@ -2700,6 +2716,38 @@ portrait_goblin_clothing_contents_trigger = {
 	has_clothing_gfx = goblin_clothing_gfx
 }
 
+## Snow Troll ##
+
+portrait_snow_troll_clothing_trigger = {
+	scope:culture = { portrait_snow_troll_clothing_contents_trigger = yes }
+}
+
+portrait_snow_troll_clothing_spouse_trigger = {
+	culture = {
+		portrait_snow_troll_clothing_contents_trigger = yes
+	}
+}
+
+portrait_snow_troll_clothing_contents_trigger = {
+	has_clothing_gfx = snow_troll_clothing_gfx
+}
+
+## Black Troll ##
+
+portrait_black_troll_clothing_trigger = {
+	scope:culture = { portrait_black_troll_clothing_contents_trigger = yes }
+}
+
+portrait_black_troll_clothing_spouse_trigger = {
+	culture = {
+		portrait_black_troll_clothing_contents_trigger = yes
+	}
+}
+
+portrait_black_troll_clothing_contents_trigger = {
+	has_clothing_gfx = black_troll_clothing_gfx
+}
+
 ## Isengard Uruk ##
 
 portrait_isengard_uruk_clothing_trigger = {
@@ -2730,6 +2778,22 @@ portrait_uruk_clothing_spouse_trigger = {
 
 portrait_uruk_clothing_contents_trigger = {
 	has_clothing_gfx = uruk_clothing_gfx
+}
+
+## Circumpolar ##
+
+portrait_circumpolar_clothing_trigger = {
+	scope:culture = { portrait_circumpolar_clothing_contents_trigger = yes }
+}
+
+portrait_circumpolar_clothing_spouse_trigger = {
+	culture = {
+		portrait_circumpolar_clothing_contents_trigger = yes
+	}
+}
+
+portrait_circumpolar_clothing_contents_trigger = {
+	has_clothing_gfx = circumpolar_clothing_gfx
 }
 
 ## Wilderness ##

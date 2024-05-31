@@ -6,6 +6,8 @@
 #			dwarven.0300		Nordinbad Starting Event
 #			dwarven.0330		Axe that Walks Starting Event
 #			dwarven.0340		Eldberk Starting Event
+#           dwarven.0350        Uri the Generous Starting Event
+#           dwarven.0360        Brokkr Starting Event   
 
 #			dwarven.5000-5099	Dwarven Reincarnation Events
 #			dwaven.6001-6002	Durin's Folk Unifier events
@@ -14,6 +16,8 @@
 #			dwarven.9000		I shave someone
 #			dwarven.9001		I am shaved
 #			dwarven.9002		Bearded again !
+
+# 			dwarven.9500		Dwarven Marriage Choice
 
 
 
@@ -55,6 +59,10 @@ dwarven.0200 = { # Introduction to Balin
 	
 	immediate = {
 		play_music_cue = lotr_cue_dwarves
+		add_gold = 200
+		character:lineofdurin106 = { save_scope_as = companion_1 }
+		character:lineofdurin98 = { save_scope_as = companion_2 }
+		set_variable = cannot_cancel_travel
 	}
 	
 	right_portrait = {
@@ -62,9 +70,200 @@ dwarven.0200 = { # Introduction to Balin
 		animation = celebrate_axe
 	}
 	
-	option = { 
+	option = { # Take companions with you to Mirrormere
 		name = dwarven.0200.a
-		add_gold = 200
+
+		custom_tooltip = {
+			text = dwarven.0200.tt
+			start_travel_plan = { # Works
+				destination = province:4919
+				on_arrival_event = dwarven.0205
+				return_trip = no
+				players_use_planner = no
+				on_arrival_destinations = first
+				companion = scope:companion_1
+				companion = scope:companion_2
+			}
+		}
+		custom_tooltip = dwarven.0200.tt_1
+	}
+	
+	option = { # Go alone
+		name = dwarven.0200.b
+
+		custom_tooltip = {
+			text = dwarven.0200.tt
+			start_travel_plan = { # Works
+				destination = province:4919
+				on_arrival_event = dwarven.0205
+				return_trip = no
+				players_use_planner = no
+				on_arrival_destinations = first
+			}
+		}
+	}
+}
+
+dwarven.0205 = { # Arrive at Mirrormere
+	content_source = realms_dlc
+	type = character_event
+	title = dwarven.0205.t
+	theme = death
+	desc = dwarven.0205.desc.2
+
+	theme = martial_strategy_focus
+	
+	right_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	left_portrait = {
+		character = scope:companion_1
+		animation = personality_honorable
+		trigger = { exists = scope:companion_1 }
+	}
+
+	lower_left_portrait = {
+		character = scope:companion_2
+		animation = personality_honorable
+		trigger = { exists = scope:companion_2 }
+	}
+
+	cooldown = { years = 10 }
+
+	option = {
+		name = dwarven.0205.a
+		death = { death_reason = death_battle }
+		destroy_title = title:d_balins_expedition
+	}
+	
+	option = {
+		name = dwarven.0205.b
+
+		trigger = { 
+			exists = scope:companion_2 
+			exists = scope:companion_1 
+		}
+
+		random_list = {
+			85 = {
+				scope:companion_1 = { death = { death_reason = death_battle } }
+				scope:companion_2 = { death = { death_reason = death_battle } }
+				change_trait_rank = {
+					trait = wounded
+					rank = 2
+				}
+			}
+			15 = {
+				death = { death_reason = death_battle }
+				destroy_title = title:d_balins_expedition
+				scope:companion_1 = { 
+					change_trait_rank = {
+						trait = wounded
+						rank = 2
+					}
+				}
+				scope:companion_2 = { 
+					change_trait_rank = {
+						trait = wounded
+						rank = 1
+					}
+				}
+			}
+		}
+	}
+
+	after = { trigger_event = { id = dwarven.0210 days = 5 } }
+}
+
+dwarven.0210 = { # Arrive at Mirrormere
+	content_source = realms_dlc
+	type = character_event
+	title = dwarven.0210.t
+	theme = death
+	desc = dwarven.0210.desc
+
+	theme = martial_strategy_focus
+	
+	right_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	cooldown = { years = 10 }
+
+	immediate = {
+		random_county_in_region = {
+			region = middleearth_misty_mountains_balrog_struggle_region
+			limit = { 
+				holder = { 
+					is_orc = yes 
+					is_ai = yes 
+					is_independent_ruler = yes
+					NOT = { has_truce = root }
+				} 
+			}
+			holder = { save_scope_as = first_ruler }
+		}
+
+		random_county_in_region = {
+			region = middleearth_misty_mountains_balrog_struggle_region
+			limit = { 
+				holder = { 
+					is_orc = yes 
+					is_ai = yes 
+					is_independent_ruler = yes
+					NOT = { has_truce = root }
+					NOT = { this = scope:first_ruler }
+				} 
+			}
+			holder = { save_scope_as = second_ruler }
+		}
+
+		random_county_in_region = {
+			region = middleearth_misty_mountains_balrog_struggle_region
+			limit = { 
+				holder = { 
+					is_orc = yes 
+					is_ai = yes 
+					is_independent_ruler = yes
+					NOT = { has_truce = root }
+					NOR = { 
+						this = scope:first_ruler 
+						this = scope:second_ruler 
+					}
+				} 
+			}
+			holder = { save_scope_as = third_ruler }
+		}
+	}
+
+	option = {
+		name = dwarven.0210.a
+		remove_variable = cannot_cancel_travel
+		scope:first_ruler = {
+			start_war = {
+				casus_belli = county_conquest_cb
+				target = root
+				target_title = title:c_chamber_of_mazarbul
+			}
+		}
+
+		scope:second_ruler = {
+			start_war = {
+				casus_belli = county_conquest_cb
+				target = root
+				target_title = title:c_chamber_of_mazarbul
+			}
+		}
+		scope:third_ruler = {
+			start_war = {
+				casus_belli = county_conquest_cb
+				target = root
+				target_title = title:c_chamber_of_mazarbul
+			}
+		}
 	}
 }
 
@@ -142,7 +341,11 @@ dwarven.0330 = { # Introduction to Argan #The axe that walks
 
 		random_province = { # Works
 			limit = {
-				county_is_underground_wastelands = yes
+				OR = {
+					county_is_underground_wastelands = yes
+					county_is_overground_wastelands = yes
+				}
+				
 				surrounding_lands_empty = yes
 				NOT = { county.duchy = title:d_glittering_caves }
 			}
@@ -190,6 +393,8 @@ dwarven.0330 = { # Introduction to Argan #The axe that walks
 
 }
 
+
+
 dwarven.0331 = {
 	hidden = yes
 
@@ -217,6 +422,50 @@ dwarven.0340 = { # Introduction to Eldberk
 	
 	option = { 
 		name = dwarven.0340.a
+	}
+}
+
+dwarven.0350 = { # Introduction to Uri VI
+	content_source = realms_dlc
+	type = character_event
+	title = dwarven.0350.t
+	desc = dwarven.0350.desc
+	theme = stewardship_duty_focus
+	override_background = {
+		reference = throne_room_dwarf
+	}
+	
+	immediate = { play_music_cue = lotr_cue_dwarves }
+	
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	
+	option = { 
+		name = dwarven.0350.a
+	}
+}
+
+dwarven.0360 = { # Introduction to Brokkr
+	content_source = realms_dlc
+	type = character_event
+	title = dwarven.0360.t
+	desc = dwarven.0360.desc
+	theme = stewardship_duty_focus
+	override_background = {
+		reference = throne_room_dwarf
+	}
+	
+	immediate = { play_music_cue = lotr_cue_dwarves }
+	
+	right_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	
+	option = { 
+		name = dwarven.0360.a
 	}
 }
 
@@ -310,18 +559,86 @@ dwarven.5000 = { # Game Start Reincarnation System Setup Event
 		}
 		
 		debug_log = "Dorfdad Reincarnation System set up!"
+
+		# Make Uri VI into a proper reincarnate
+		if = {
+			limit = {
+				character:lineofuriVI ?= {
+					is_alive = yes
+				}
+			}
+			# Create the Story
+			character:lineofuriVI = {
+				create_story = story_dorfdad_reincarnation
+				dynasty = {
+#					set_variable = {
+#						name = current_reincarnation
+#						value = character:lineofuriVI
+#					}
+					set_variable = {
+						name = dorfdad_incarnations
+						value = 6
+					}
+				}
+				add_character_flag = scripted_appearance_uri
+				add_character_flag = no_headgear
+				give_nickname = nick_the_generous_unique
+
+	        	# Get the Name
+	        	change_first_name = _Uri
+	        	# Get the trait
+	        	add_trait = dwarf_father
+			}
+		}
 	}
 }
 
-# effect = { if = { limit = { any_owned_story = { story_type = story_dorfdad_reincarnation } } add_trait = education_martial_4 } }
+scripted_trigger dwarven.5001_direct_male_line = {
+	NOT = {
+		any_sibling = {
+			is_alive = yes
+			is_female = no
+			age >= prev.age
+			dynasty = ROOT.dynasty
+			NOR = {
+				has_trait = bastard
+				has_trait = bastard_founder 
+				
+			}
+			trigger_if = {
+				limit = {
+					exists = father
+				}
+				father = prev.father
+			}
+			trigger_if = {
+				limit = {
+					exists = scope:father
+					exists = scope:real_father
+				}
+				scope:father = scope:real_father
+			}
+		}
+	}
+}
+	
 
 dwarven.5001 = { # On childbirth: Random chance to be a reincarnation
 	type = character_event
 	hidden = yes
-
 	trigger = {
 		# Basic Stuff
-		NOT = { exists = scope:real_father }
+		trigger_if = {
+			limit = {
+				exists = scope:father
+				exists = scope:real_father
+			}
+			scope:father = scope:real_father
+		}
+		NOR = {
+			has_trait = bastard
+			has_trait = bastard_founder
+		}
 		is_female = no
 		is_lowborn = no
 		is_dwarf = yes
@@ -357,8 +674,17 @@ dwarven.5001 = { # On childbirth: Random chance to be a reincarnation
 				}
 			}
 		}
-		# No other unconfirmed reincarnations exist
-		NOT = { dynasty.var:current_reincarnation ?= { is_alive = yes } }
+		# No other reincarnations exist
+#		NOT = { dynasty.var:current_reincarnation ?= { is_alive = yes } }
+		NOT = {
+			dynasty = {
+				any_dynasty_member = {
+					any_owned_story = {
+						story_type = story_dorfdad_reincarnation
+					}
+				}
+			}
+		}
 	}
 	
 	immediate = {
@@ -387,68 +713,28 @@ dwarven.5001 = { # On childbirth: Random chance to be a reincarnation
 					dynasty = { current_year >= var:dorfdad_cooldown_year }
 				}
 				# Must be direct male-line descendant and oldest child
-				NOT = {
-					any_sibling = {
-						is_alive = yes
-						is_female = no
-						NOR = {
-							has_trait = bastard
-							exists = scope:real_father
-						}
-						age >= prev.age # Kind of redundant as I was just born
-					}
-				}
+				dwarven.5001_direct_male_line = yes
 				father = {
 					is_alive = yes
 					house = root.house
 					OR = {
 						is_dynast = yes
 						AND = {
-							NOT = {
-								any_sibling = {
-									is_alive = yes
-									is_female = no
-									NOR = {
-										has_trait = bastard
-										exists = scope:real_father
-									}
-									age >= prev.age
-								}
-							}
+							dwarven.5001_direct_male_line = yes
 							father = {
 								is_alive = yes
 								house = root.house
 								OR = {
 									is_dynast = yes
 									AND = {
-										NOT = {
-											any_sibling = {
-												is_alive = yes
-												is_female = no
-												NOR = {
-													has_trait = bastard
-													exists = scope:real_father
-												}
-												age >= prev.age
-											}
-										}
+										dwarven.5001_direct_male_line = yes
 										father = {
 											is_alive = yes
 											house = root.house
 											OR = {
 												is_dynast = yes
 												AND = {
-													NOT = {
-														any_sibling = {
-															is_alive = yes
-															is_female = no
-															NOR = {
-																has_trait = bastard
-																exists = scope:real_father
-															}
-															age >= prev.age
-														}
-													}
+													dwarven.5001_direct_male_line = yes
 													father = {
 														is_alive = yes
 														house = root.house
@@ -474,7 +760,43 @@ dwarven.5001 = { # On childbirth: Random chance to be a reincarnation
 			random = {
 				chance = {
 					value = 10
-					if = { # Player children get a higher chance, as a treat
+					if = { # Some characters historically sire incarnates
+						limit = {
+							father = {
+								is_alive = yes
+								house = root.house
+								has_character_flag = historically_conceived_dorfdad
+							}
+							has_game_rule = default_ai_behavior
+						}
+						add = 90
+					}
+					else_if = { # Some characters historically sire incarnates
+						limit = {
+							father = {
+								is_alive = yes
+								house = root.house
+								has_character_flag = historically_conceived_dorfdad
+							}
+							has_game_rule = weighted_ai_behavior
+						}
+						add = 65
+					}
+					else_if = { # Some characters historically sire incarnates
+						limit = {
+							father = {
+								is_alive = yes
+								house = root.house
+								has_character_flag = historically_conceived_dorfdad
+							}
+							NOR = {
+								has_game_rule = default_ai_behavior
+								has_game_rule = weighted_ai_behavior
+							}
+						}
+						add = 40
+					}
+					else_if = { # Player children get a higher chance, as a treat
 						limit = {
 							any_ancestor = {
 								is_alive = yes
@@ -483,18 +805,6 @@ dwarven.5001 = { # On childbirth: Random chance to be a reincarnation
 							}
 						}
 						add = 5
-					}
-					if = { # Some characters historically sire incarnates
-						limit = {
-							OR = {
-								father = {
-									is_alive = yes
-									house = root.house
-									has_character_flag = historically_conceived_dorfdad
-								}
-							}
-						}
-						add = 1000
 					}
 				}
 				# Create the Story
@@ -597,6 +907,7 @@ dwarven.5002 = { # I seem to be reflection of my dwarven father
 			}
 			add_character_modifier = reflection_of_bavor
 		}
+		dorfdad_one_personality_trait_effect = yes
 		add_learning_skill = 1
 		add_piety = 300
 	}
@@ -745,6 +1056,7 @@ dwarven.5002 = { # I seem to be reflection of my dwarven father
 		}
 	}
 }
+
 dwarven.5003 = { # Family informed of reflection of dwarven father
 	content_source = realms_dlc
 	type = character_event
@@ -814,6 +1126,7 @@ dwarven.5003 = { # Family informed of reflection of dwarven father
 					}
 					add_character_modifier = reflection_of_bavor
 				}
+				custom_tooltip = dwarven.5003.tt
 				add_learning_skill = 1
 				add_piety = 300
 			}
@@ -847,9 +1160,24 @@ dwarven.5100 = { # Upon turning 16: Reincarnate realized who they are, is confir
 		any_owned_story = {
 			story_type = story_dorfdad_reincarnation
 		}
-		dynasty = { var:current_reincarnation ?= root }
+		#dynasty = { var:current_reincarnation ?= root }
+	#	NOT = {
+	#		dynasty = {
+	#			any_dynasty_member = {
+	#				limit = {
+	#					NOT = { this = ROOT }
+	#				}
+	#				any_owned_story = {
+	#					story_type = story_dorfdad_reincarnation
+	#				}
+	#			}
+	#		}
+	#	}
+		
 		# Must still be of the correct dwarven clan
 		dynasty.var:dorfdad.culture = { has_same_culture_heritage = root.culture }
+		#scope:dorfdad.culture ?= { has_same_culture_heritage = root.culture }
+		
 		# He or his direct ancestor must be dynasty head
 		OR = {
 			is_dynast = yes
@@ -916,7 +1244,7 @@ dwarven.5100 = { # Upon turning 16: Reincarnate realized who they are, is confir
 			every_player = { #Global News Announcement
 				limit = { is_dwarf = yes }
 				trigger_event = {
-					id = dwarven.5101
+					id = news_event.0025
 					days = 5
 				}
 			}
@@ -1356,10 +1684,10 @@ dwarven.9500 = {
 
 	option = { # Gain dwarf_refuses_marriage modifiers
 		name = dwarven.9500.b
-		trigger = { 
-			NOT = {
-				is_ai = yes
-				dwarven_9500_youngest_brother_all_brothers_celibate_trigger = yes
+		trigger = {
+			OR = {
+				is_ai = no
+				dwarven_9500_youngest_brother_all_brothers_celibate_trigger = no
 			}
 		}
 

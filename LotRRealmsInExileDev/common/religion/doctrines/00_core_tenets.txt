@@ -1766,44 +1766,6 @@
 			believes_in_harmony_with_nature_invisible = yes
 		}
 	}
-	
-	tenet_sun_worship = {
-		icon = core_tenet_sun_worship
-
-		piety_cost = {
-			value = faith_tenet_cost_mid
-
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_sun_worship }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-
-		is_shown = {
-			OR = {
-				religion_tag = zunism_religion
-				has_doctrine = tenet_sun_worship #If you already have it
-				AND = {
-					religion_tag = hinduism_religion
-					this = faith:saura #If you're into Saurism
-				}
-				
-			}
-		}
-
-		parameters = {
-			summer_festivals_active = yes
-			trial_by_sun_active = yes
-		}
-
-		character_modifier = {
-			desert_attrition_mult = -0.25
-			desert_mountains_attrition_mult = -0.25
-		}
-
-		piety_cost = faith_tenet_cost_mid
-	}
 
 	tenet_sun_worship = {
 		icon = core_tenet_sun_worship
@@ -2879,11 +2841,9 @@
 	tenet_druedain_isolation = {
 		icon = core_tenet_sanctity_of_nature
 		is_shown = {
-			OR = {
-				religion = religion:dru_diaspora_religion
-				religion = religion:dru_diaspora_religion
-			}
+			religion = religion:dru_diaspora_religion
 		}
+		can_pick = { always = yes }
 
 		piety_cost = {
 			value = faith_tenet_cost_massive
@@ -2918,12 +2878,12 @@
 	tenet_gift_of_men = { #Create abdication decision
 		icon = core_tenet_consolamentum
 		is_shown = {
-				religion = { is_in_family = rf_eruhini }
-				NOR = {
-					religion = religion:elven_religion
-					religion = religion:dwarven_religion
-				}
+			religion = religion:dunedain_religion
 		}
+		can_pick = {
+			always = yes
+		}
+		
 		piety_cost = {
 			value = faith_tenet_cost_mid
 			# Multiplier for keeping same tenet
@@ -2964,24 +2924,40 @@
 		}
 
 		is_shown = {
-				religion = { is_in_family = rf_eruhini }
-				NOR = {
-					religion = religion:elven_religion
-					religion = religion:dwarven_religion
-				}
+			OR = {
+				religion = religion:dunedain_religion
+				religion = religion:adunai_religion
+				religion = religion:bellakari_religion
+			}
 		}
+		can_pick = {
+			custom_description = {
+				text = incompatible_tenet_adunaic_birthright_trigger
+				NOT = { doctrine:tenet_adunaic_birthright = { is_in_list = selected_doctrines } }
+			}
+			custom_description = {
+				text = incompatible_with_influence_trigger
+				NOR = { 
+					doctrine:doctrine_dominion_of_the_dark = { is_in_list = selected_doctrines }
+					doctrine:doctrine_a_people_apart = { is_in_list = selected_doctrines }
+				}
+			}
+		}
+		
 		character_modifier = {
 			monthly_learning_lifestyle_xp_gain_mult = 0.2
 		}
 
-		traits = {
-			virtues = { blood_of_numenor }
-		}
+		#traits = {
+		#	virtues = { blood_of_numenor }
+		#}
 		
 		parameters = {
+			lotr_numenor_blood_bonuses = yes #Boni for blood of numenor traits. Replaces use of it as a virtue
+			
 			increased_dynasty_prestige_birth_mult = 1
 			increased_dynasty_prestige_marriage_mult = 1
-			increased_dynasty_prestige_long_reign_mult = 0.5 
+			increased_dynasty_prestige_long_reign_mult = 0.5
 			#Eventually add a 'visit the ancient sites of the Dúnedain' activity?
 		}
 	}
@@ -3279,6 +3255,7 @@
 			NOT = { religion = { is_in_family = rf_eruhini } }
 			religion = religion:gwathuirim_religion
 		}
+		can_pick = { always = yes }
 
 		character_modifier = {
 			# Increase stress and dread gain if holding is coastal.
@@ -3313,6 +3290,7 @@
 		is_shown = {
 			religion = { is_in_family = rf_darkness }
 		}
+		can_pick = { always = yes }
 
 		parameters = {
 			increased_dynasty_prestige_birth_mult = 1
@@ -3524,14 +3502,20 @@
 					doctrine:doctrine_echoes_of_the_ainur = { is_in_list = selected_doctrines }
 				}
 			}
+			custom_description = {
+				text = incompatible_tenet_memory_of_akallabeth_trigger
+				NOT = { doctrine:tenet_memory_of_akallabeth = { is_in_list = selected_doctrines } }
+			}
 		}
 		
 		traits = {
-			virtues = { blood_of_numenor }
+			#virtues = { blood_of_numenor }
 			sins = { chaste }
 		}
 		
 		parameters = {
+			lotr_numenor_blood_bonuses = yes #Boni for blood of numenor traits. Replaces use of it as a virtue
+			
 			piety_from_feasts_active = yes
 			# Unlocks the 'Sponsor Adunaic Propaganda' activity option
 			adunaic_propaganda_active_desc = 0
@@ -3764,6 +3748,18 @@
 				religion = { is_in_family = rf_forcesofevil }
 			}
 		}
+		
+		can_pick = {
+			custom_description = {
+				text = incompatible_tenet_melkor_worship_trigger
+				NOT = { doctrine:tenet_melkor_worship = { is_in_list = selected_doctrines } }
+			}
+			# custom_description = {
+				# text = incompatible_tenet_dragon_boshfai_trigger
+				# NOT = { doctrine:tenet_dragon_boshfai = { is_in_list = selected_doctrines } }
+			# }
+		}
+		
 		traits = {
 			virtues = {
 				greedy
@@ -3856,6 +3852,18 @@
 				religion = { is_in_family = rf_forcesofevil }
 			}
 		}
+		can_pick = {
+			custom_description = {
+				text = incompatible_tenet_dark_tower_subjugation_trigger
+				NOT = { doctrine:tenet_dark_tower_subjugation = { is_in_list = selected_doctrines } }
+			}
+			# custom_description = {
+				# text = incompatible_tenet_dragon_boshfai_trigger
+				# NOT = { doctrine:tenet_dragon_boshfai = { is_in_list = selected_doctrines } }
+			# }
+		}
+		
+		
 		parameters = {
 			#raiding_active_desc = 0
 			warmonger = yes

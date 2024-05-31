@@ -484,7 +484,25 @@
 				portrait_goblin_clothing_trigger = yes
 			}
 		}
-	}				   
+	}
+
+	black_troll_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = uruk_berserker_legwear
+				range = { 0.8 1.0 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_black_troll_clothing_trigger = yes
+			}
+		}
+	}				
 
 	mountain_orc_legwear = {
 		dna_modifiers = {
@@ -724,12 +742,58 @@
 			modifier = {
 				add = 120
 				portrait_wear_armor_trigger = yes
-				portrait_elven_clothing_trigger = yes
+				OR = {
+					portrait_elven_clothing_trigger = yes
+					portrait_lasgalendrim_clothing_trigger = yes
+				}
 			}
 		}
 	}
 	
-## Hobbits ##
+	elven_war_noldor_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = elven_war_noldor_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				portrait_wear_armor_trigger = yes
+				portrait_elven_clothing_trigger = yes
+				culture = { has_cultural_pillar = heritage_calaquendi }
+			}		
+		}
+	}
+	
+	elven_war_galadhrim_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = elven_war_galadhrim_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				portrait_wear_armor_trigger = yes
+				portrait_elven_clothing_trigger = yes
+				culture = { has_cultural_pillar = heritage_lomiquendi }
+				NOT = { portrait_lasgalendrim_clothing_trigger = yes }
+			}		
+		}
+	}
+	
+	## Hobbits ##
 
 	hobbit_legwear = {
 
@@ -746,6 +810,27 @@
 			modifier = {
 				add = 100
 				portrait_hobbit_clothing_trigger = yes
+			}
+		}
+	}
+	
+	## Circumpolar ##
+
+	polar_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = fp1_common_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_circumpolar_clothing_trigger = yes
 			}
 		}
 	}

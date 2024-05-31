@@ -82,8 +82,9 @@ create_artifact_one_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = one_ring
 		set_variable = ring_of_power
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Isildur takes the Ring for himself
 			type = won_in_duel
 			date = 4033.7.12
@@ -145,8 +146,9 @@ create_artifact_nenya_effect = {
 		set_variable = nenya
 		set_variable = elven_ring
 		set_variable = ring_of_power
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Celebrimbor gives Nenya to Galadriel
 			type = given
 			date = 2285.1.1
@@ -188,10 +190,11 @@ create_artifact_vilya_effect = {
 		set_variable = vilya
 		set_variable = elven_ring
 		set_variable = ring_of_power
+		set_variable = lotr_unique
 		save_scope_as = epic
 		equip_artifact_to_owner = yes
-		
-		
+
+
 		add_artifact_history = { # Celebrimbor gives Narya to Gil-galad
 			type = given
 			date = 2285.1.1
@@ -238,9 +241,10 @@ create_artifact_narya_effect = {
 		set_variable = narya
 		set_variable = elven_ring
 		set_variable = ring_of_power
+		set_variable = lotr_unique
 		save_scope_as = epic
 		equip_artifact_to_owner = yes
-		
+
 		add_artifact_history = { # Celebrimbor gives Narya to Gil-galad
 			type = given
 			date = 2285.1.1
@@ -285,7 +289,7 @@ create_artifact_ring_of_longbeards_effect = {
 			recipient = character:linefinwe18  #Celebrimbor
 			location = province:4351 #Ost-in-Edhil
 		}
-		modifier = ring_of_mortals_sauron_modifier
+		modifier = ring_of_mortals_dwarves_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
@@ -296,8 +300,9 @@ create_artifact_ring_of_longbeards_effect = {
 		set_variable = ring_of_dwarves
 		set_variable = ring_of_mortals
 		set_variable = ring_of_power
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Celebrimbor gives Durin III a Ring (allegedly)
 			type = given
 			date = 2200.1.1
@@ -471,14 +476,14 @@ create_artifact_ring_of_longbeards_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 6322.5.21
-			recipient = character:lineofdurin76 # Glóin 
+			recipient = character:lineofdurin76 # Glóin
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 6418.6.2
 			recipient = character:lineofdurin77 # Óin
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = inherited
 			date = 6521.3.30
 			recipient = character:lineofdurin78 # Náin II
@@ -529,7 +534,7 @@ create_artifact_ring_of_firebeards_effect = {
 			recipient = character:linefinwe18  #Celebrimbor
 			location = province:4351 #Ost-in-Edhil
 		}
-		modifier = ring_of_mortals_sauron_modifier
+		modifier = ring_of_mortals_dwarves_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
@@ -540,8 +545,9 @@ create_artifact_ring_of_firebeards_effect = {
 		set_variable = ring_of_dwarves
 		set_variable = ring_of_mortals
 		set_variable = ring_of_power
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Seven
 			type = taken_in_siege
 			date = 2289.1.1
@@ -660,7 +666,7 @@ create_artifact_ring_of_broadbeams_effect = {
 			recipient = character:linefinwe18  #Celebrimbor
 			location = province:4351 #Ost-in-Edhil
 		}
-		modifier = ring_of_mortals_sauron_modifier
+		modifier = ring_of_mortals_dwarves_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
@@ -671,8 +677,9 @@ create_artifact_ring_of_broadbeams_effect = {
 		set_variable = ring_of_dwarves
 		set_variable = ring_of_mortals
 		set_variable = ring_of_power
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Seven
 			type = taken_in_siege
 			date = 2289.1.1
@@ -807,8 +814,10 @@ create_artifact_ring_of_men_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -845,10 +854,12 @@ create_artifact_witchking_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -896,10 +907,12 @@ create_artifact_khamul_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -947,10 +960,12 @@ create_artifact_goldenking_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -998,10 +1013,12 @@ create_artifact_yi_indur_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -1049,10 +1066,12 @@ create_artifact_blindsorceror_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -1100,10 +1119,12 @@ create_artifact_mauhoshat_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -1115,7 +1136,7 @@ create_artifact_mauhoshat_ring_effect = {
 			type = given
 			date = 2560.1.1
 			recipient = character:nazgul6 #Mauhoshat
-		}	
+		}
 	}
 }
 
@@ -1151,10 +1172,12 @@ create_artifact_dendra_dwar_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -1202,10 +1225,12 @@ create_artifact_ren_iey_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -1253,10 +1278,12 @@ create_artifact_uvatha_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Sauron takes the Nine
 			type = taken_in_siege
 			date = 2289.1.1
@@ -1307,6 +1334,7 @@ create_artifact_ring_saruman_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_saruman
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -1343,128 +1371,9 @@ create_artifact_staff_saruman_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = staff_saruman
 		set_variable = wizard_staff
+		set_variable = lotr_unique
 		save_scope_as = epic
 		equip_artifact_to_owner = yes
-	}
-}
-
-create_artifact_palantir_orthanc_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = palantir_orthanc_name
-		description = palantir_orthanc_description
-		type = pedestal
-		visuals = palantir
-		creator = character:linefinwe2 #Fëanor
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 2.2.1
-			actor = character:linefinwe2 #Fëanor
-			recipient = character:linefinwe2 #Fëanor
-			location = province:3900 #Tirion
-		}
-		modifier = palantir_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = palantir_orthanc
-		set_variable = palantir
-		save_scope_as = epic
-		
-		add_artifact_history = { # Elendil, Landed in ME with faithful
-			type = given
-			date = 3912.1.1
-			recipient = character:lineofelendil
-		}
-		add_artifact_history = { # Anarion, King of Gondor
-			type = inherited
-			date = 3912.1.1
-			recipient = character:lineofanarion1
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4035.10.5
-			recipient = character:lineofanarion5 # Meneldil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4191.8.2
-			recipient = character:lineofanarion7 # Cemendur 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4271.11.20
-			recipient = character:lineofanarion8 # Eärendil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4357.8.23
-			recipient = character:lineofanarion9 # Anardil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4444.2.23
-			recipient = character:lineofanarion10 # Ostoher 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4525.7.7
-			recipient = character:lineofanarion11 # Tarostar/Rómendacil I
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4574.8.17
-			recipient = character:lineofanarion12 # Turambar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4700.8.14
-			recipient = character:lineofanarion13 # Atanatar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4781.5.15
-			recipient = character:lineofanarion14 # Siriondil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4863.1.1
-			recipient = character:lineofanarion15 # Tarannon Falastur 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4946.1.1
-			recipient = character:lineofanarion18 # Eärnil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4969.1.1
-			recipient = character:lineofanarion19 # Ciryandil 
-		}
-		add_artifact_history = { # Anarion, King of Gondor
-			type = inherited
-			date = 5048.1.1
-			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5182.1.1
-			recipient = character:lineofanarion21 # Atanatar Alcarin 
-		}
-		add_artifact_title_history = {
-			target = title:d_isengard
-			date = 5200.1.1
-		}
 	}
 }
 
@@ -1499,6 +1408,7 @@ create_artifact_staff_gandalf_the_grey_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = staff_gandalf_the_grey
 		set_variable = wizard_staff
+		set_variable = lotr_unique
 		save_scope_as = epic
 		equip_artifact_to_owner = yes
 	}
@@ -1534,8 +1444,9 @@ create_artifact_glamdring_effect = {
 		set_variable = elven
 		set_variable = relic
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = discovered
 			date = 6974.5.1
@@ -1578,14 +1489,14 @@ create_artifact_staff_radagast_the_brown_effect = {
 		set_variable = staff_radagast_the_brown
 		set_variable = wizard_staff
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
 
+## Palantir ##
 
-## Elven ##
-
-create_artifact_galadriel_mirror_effect = {
+create_artifact_palantir_orthanc_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 	# Not really used, but if we don't set the scopes we get errors in the feature selection
@@ -1593,339 +1504,11 @@ create_artifact_galadriel_mirror_effect = {
 
 	# Create the artifact
 	create_artifact = {
-		name = galadriel_mirror_name
-		description = galadriel_mirror_description
-		creator = character:linefinwe36 #Galadriel
+		name = palantir_orthanc_name
+		description = palantir_orthanc_description
 		type = pedestal
-		visuals = galadriel_mirror
-		template = galadriel_mirror_template
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 6014.1.1
-			actor = character:linefinwe36 #Galadriel
-			recipient = character:linefinwe36 #Galadriel
-			location = province:3108 #Caras Galadhon
-		}
-		modifier = galadriel_mirror_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = galadriel_mirror
-		save_scope_as = epic
-	}
-}
-
-create_artifact_elessar_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = elessar_name
-		description = elessar_description
-		type = miscellaneous
-		visuals = elessar
-		template = elessar_template
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 405.1.1
-			recipient = character:linefinwe25 #Idril Celebrindal
-		}
-		modifier = elessar_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = elessar
-		set_variable = elven
-		set_variable = relic
-		save_scope_as = epic
-	}
-}
-
-create_artifact_narn_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = narn_name
-		description = narn_description
-		type = book
-		visuals = narn
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 502.1.1
-			actor = character:lineofdaeron #Daeron
-			recipient = character:lineofelwe3 #Elu Thingol
-		}
-		modifier = narn_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = narn
-		save_scope_as = epic
-	}
-}
-
-create_artifact_leithian_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = leithian_name
-		description = leithian_description
-		type = book
-		visuals = leithian
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 453.1.1
-			actor = character:lineofdaeron #Daeron
-			recipient = character:lineofelwe3 #Elu Thingol
-		}
-		modifier = leithian_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = leithian
-		save_scope_as = epic
-	}
-}
-
-create_artifact_aranthel_and_ungoldagnir_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = aranthel_and_ungoldagnir_name
-		description = aranthel_and_ungoldagnir_description
-		type = sword
-		visuals = aranthel_and_ungoldagnir
-		template = aranthel_and_ungoldagnir_template
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 6014.1.1
-			recipient = character:lineoforopher3 #Thranduil
-			location = province:3108 #Caras Galadhon
-		}
-		modifier = aranthel_and_ungoldagnir_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = aranthel_and_ungoldagnir
-		set_variable = elven
-		set_variable = relic
-		save_scope_as = epic
-	}
-}
-
-create_artifact_crown_woodland_realm_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = crown_woodland_realm_name
-		description = crown_woodland_realm_description
-		type = helmet
-		visuals = crown_woodland_realm
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 4026.1.1
-			recipient = character:lineoforopher3 #Thranduil
-			location = province:3216 #Aradhrynd
-		}
-		modifier = crown_woodland_realm_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = {
-			name = artifact_succession_title
-			value = title:k_lasgalen
-		}
-		set_variable = relic
-		set_variable = elven
-		set_variable = crown_woodland_realm
-		save_scope_as = epic
-	}
-}
-
-create_artifact_legolas_childhood_sledge_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_famed = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = legolas_childhood_sledge_name
-		description = legolas_childhood_sledge_description
-		type = wall_small
-		visuals = wall_shield
-		visuals_source = title:e_greenwood
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 4830.10.4
-			recipient = character:lineoforopher6 #Legolas
-			location = province:3216 #Aradhrynd
-		}
-		modifier = legolas_childhood_sledge_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = legolas_childhood_sledge
-		save_scope_as = epic
-	}
-}
-
-create_artifact_hadhafang_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = hadhafang_name
-		description = hadhafang_description
-		type = sword
-		visuals = hadhafang
-		template = hadhafang_template
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 505.1.1
-			recipient = character:linefinwe25 #Idril
-		}
-		modifier = hadhafang_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = hadhafang
-		set_variable = elven
-		set_variable = relic
-		save_scope_as = epic
-		equip_artifact_to_owner = yes
-		
-		add_artifact_history = { # Earendil
-			type = inherited
-			date = 528.1.1
-			recipient = character:linefinwe26
-		}
-		add_artifact_history = { # Elrond
-			type = inherited
-			date = 542.9.10
-			recipient = character:linefinwe27
-		}
-	}
-}
-
-create_artifact_silver_harp_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = silver_harp_name
-		description = silver_harp_description
-		type = pedestal
-		visuals = silver_harp
-		template = silver_harp_template
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 110.1.1
-			actor = character:linefinwe11  #Maglor
-			recipient = character:linefinwe11  #Maglor
-			location = province:3900 #Tirion
-		}
-		modifier = silver_harp_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = silver_harp
-		set_variable = elven
-		set_variable = relic
-		save_scope_as = epic
-		
-		add_artifact_history = { # Elrond
-			type = given
-			date = 658.2.2
-			recipient = character:linefinwe27
-		}
-	}
-}
-
-create_artifact_silmaril_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = silmaril_name
-		description = silmaril_description
+		visuals = palantir
 		creator = character:linefinwe2 #Fëanor
-		type = helmet
-		visuals = silmaril
-		template = silmaril_template
 		wealth = scope:wealth
 		quality = scope:quality
 		history = {
@@ -1933,79 +1516,104 @@ create_artifact_silmaril_effect = {
 			date = 2.2.1
 			actor = character:linefinwe2 #Fëanor
 			recipient = character:linefinwe2 #Fëanor
-			location = province:3900 #tirion
+			location = province:3900 #Tirion
 		}
-		modifier = silmaril_modifier
+		modifier = palantir_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
 
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = silmaril
-		set_variable = elven
-		set_variable = relic
-		equip_artifact_to_owner = yes
+		set_variable = palantir_orthanc
+		set_variable = palantir
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
-		add_artifact_history = {
-			type = stolen
-			date = 468.6.1
-			recipient = character:lineofbeor32 # Beren
-		}
-		add_artifact_history = {
+
+		add_artifact_history = { # Elendil, Landed in ME with faithful
 			type = given
-			date = 468.7.1
-			recipient = character:lineofelwe3 # Thingol
+			date = 3912.1.1
+			recipient = character:lineofelendil
 		}
-		add_artifact_history = { # Dior Eluchil
+		add_artifact_history = { # Anarion, King of Gondor
 			type = inherited
-			date = 504.5.4
-			recipient = character:lineofelwe5
+			date = 3912.1.1
+			recipient = character:lineofanarion1
 		}
-		add_artifact_history = { # Nimloth
+		add_artifact_history = {
 			type = inherited
-			date = 508.2.6
-			recipient = character:lineofelwe9
+			date = 4035.10.5
+			recipient = character:lineofanarion5 # Meneldil
 		}
-		add_artifact_history = { # Earendil
-			type = given
-			date = 542.9.10
-			recipient = character:linefinwe26
+		add_artifact_history = {
+			type = inherited
+			date = 4191.8.2
+			recipient = character:lineofanarion7 # Cemendur
 		}
-	}
-}
-
-create_artifact_athrad_gillith_harp_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = athrad_gillith_harp_name
-		description = athrad_gillith_harp_description
-		type = miscellaneous
-		visuals = athrad_gillith_harp
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 2007.1.1
-			recipient = character:lineoflanthir1 #Lanthir
-			location = province:3911 #Caras Torn
+		add_artifact_history = {
+			type = inherited
+			date = 4271.11.20
+			recipient = character:lineofanarion8 # Eärendil
 		}
-		modifier = athrad_gillith_harp_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = athrad_gillith_harp
-		set_variable = elven
-		save_scope_as = epic
+		add_artifact_history = {
+			type = inherited
+			date = 4357.8.23
+			recipient = character:lineofanarion9 # Anardil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4444.2.23
+			recipient = character:lineofanarion10 # Ostoher
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4525.7.7
+			recipient = character:lineofanarion11 # Tarostar/Rómendacil I
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4574.8.17
+			recipient = character:lineofanarion12 # Turambar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4700.8.14
+			recipient = character:lineofanarion13 # Atanatar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4781.5.15
+			recipient = character:lineofanarion14 # Siriondil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4863.1.1
+			recipient = character:lineofanarion15 # Tarannon Falastur
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4946.1.1
+			recipient = character:lineofanarion18 # Eärnil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4969.1.1
+			recipient = character:lineofanarion19 # Ciryandil
+		}
+		add_artifact_history = { # Anarion, King of Gondor
+			type = inherited
+			date = 5048.1.1
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5182.1.1
+			recipient = character:lineofanarion21 # Atanatar Alcarin
+		}
+		add_artifact_title_history = {
+			target = title:d_isengard
+			date = 5200.1.1
+		}
 	}
 }
 
@@ -2039,6 +1647,7 @@ create_artifact_palantir_elostirion_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = palantir_elostirion
+		set_variable = lotr_unique
 		save_scope_as = epic
 		add_artifact_history = { # Elendil, Landed in ME with faithful
 			type = given
@@ -2057,17 +1666,17 @@ create_artifact_palantir_elostirion_effect = {
 		}
 		add_artifact_history = { # Eldacar
 			type = inherited
-			date = 4282.9.29 
+			date = 4282.9.29
 			recipient = character:lineisildur5
 		}
 		add_artifact_history = { # Arantar
 			type = inherited
-			date = 4372.1.19 
+			date = 4372.1.19
 			recipient = character:lineisildur6
 		}
 		add_artifact_history = { # Tarcil
 			type = inherited
-			date = 4468.5.12 
+			date = 4468.5.12
 			recipient = character:lineisildur7
 		}
 		add_artifact_history = { # Tarondor
@@ -2087,7 +1696,7 @@ create_artifact_palantir_elostirion_effect = {
 		}
 		add_artifact_history = { # Earendur, Last High King of Arnor
 			type = inherited
-			date = 4810.11.8 
+			date = 4810.11.8
 			recipient = character:lineisildur11
 		}
 		add_artifact_history = { # Amlaith, First King of Arthedain
@@ -2155,7 +1764,7 @@ create_artifact_palantir_elostirion_effect = {
 			date = 5846.6.30
 			recipient = character:lineisildur24
 		}
-		add_artifact_history = { # Araphant 
+		add_artifact_history = { # Araphant
 			type = inherited
 			date = 5924.11.20
 			recipient = character:lineisildur25
@@ -2173,6 +1782,1033 @@ create_artifact_palantir_elostirion_effect = {
 	}
 }
 
+create_artifact_palantir_minasithil_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = palantir_minasithil_name
+		description = palantir_minasithil_description
+		creator = character:linefinwe2 #Fëanor
+		type = pedestal
+		visuals = palantir
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 1.1.1
+			actor = character:linefinwe2 #Fëanor
+			recipient = character:linefinwe2 #Fëanor
+			location = province:3900 #Tirion
+		}
+		modifier = palantir_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = palantir_minasithil
+		set_variable = palantir
+		set_variable = lotr_unique
+		save_scope_as = epic
+
+		add_artifact_history = { # Elendil, Landed in ME with faithful
+			type = given
+			date = 3912.1.1
+			recipient = character:lineofelendil
+		}
+		add_artifact_history = { # Anarion, King of Gondor
+			type = inherited
+			date = 3912.1.1
+			recipient = character:lineofanarion1
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4035.10.5
+			recipient = character:lineofanarion5 # Meneldil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4191.8.2
+			recipient = character:lineofanarion7 # Cemendur
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4271.11.20
+			recipient = character:lineofanarion8 # Eärendil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4357.8.23
+			recipient = character:lineofanarion9 # Anardil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4444.2.23
+			recipient = character:lineofanarion10 # Ostoher
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4525.7.7
+			recipient = character:lineofanarion11 # Tarostar/Rómendacil I
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4574.8.17
+			recipient = character:lineofanarion12 # Turambar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4700.8.14
+			recipient = character:lineofanarion13 # Atanatar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4781.5.15
+			recipient = character:lineofanarion14 # Siriondil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4863.1.1
+			recipient = character:lineofanarion15 # Tarannon Falastur
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4946.1.1
+			recipient = character:lineofanarion18 # Eärnil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4969.1.1
+			recipient = character:lineofanarion19 # Ciryandil
+		}
+		add_artifact_history = { # Anarion, King of Gondor
+			type = inherited
+			date = 5048.1.1
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5182.1.1
+			recipient = character:lineofanarion21 # Atanatar Alcarin
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5259.1.1
+			recipient = character:lineofanarion22 # Narmacil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5327.1.1
+			recipient = character:lineofanarion23 # Calmacil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5337.1.1
+			recipient = character:lineofanarion24 # Rómendacil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5399.1.1
+			recipient = character:lineofanarion26 # Valacar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5465.1.1
+			recipient = character:lineofanarion27 # Eldacar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5470.1.1
+			recipient = character:lineofanarion53 # Castamir, the Usurper
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5480.1.1
+			recipient = character:lineofanarion27 # Eldacar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5523.1.1
+			recipient = character:lineofanarion29 # Aldamir
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5573.1.1
+			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5654.1.1
+			recipient = character:lineofanarion31 # Minardil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5667.1.1
+			recipient = character:lineofanarion32 # Telemnar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5669.1.1
+			recipient = character:lineofanarion37 # Tarondor
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5831.1.1
+			recipient = character:lineofanarion38 # Telumehtar Umbardacil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5883.1.1
+			recipient = character:lineofanarion39 # Narmacil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5889.1.1
+			recipient = character:lineofanarion40 # Calimehtar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5969.1.1
+			recipient = character:lineofanarion41 # Ondoher
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5977.1.1
+			recipient = character:lineofanarion50 # Eärnil II
+		}
+		add_artifact_history = {
+			type = given
+			date = 5978.1.1
+			recipient = character:mardiluncle
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 6034.1.1
+			recipient = character:mardilcousin
+		}
+		add_artifact_history = {
+			type = taken_in_siege
+			date = 6035.1.1
+			actor = character:mardilcousin
+			location = province:226 #Minas Ithil
+			recipient = character:nazgul1
+		}
+		add_artifact_history = {
+			type = given
+			date = 6974.1.1
+			recipient = character:lineofsauron
+		}
+	}
+}
+
+create_artifact_palantir_amonsul_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = palantir_amonsul_name
+		description = palantir_amonsul_description
+		creator = character:linefinwe2 #Fëanor
+		type = pedestal
+		visuals = palantir
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 1.1.1
+			actor = character:linefinwe2 #Fëanor
+			recipient = character:linefinwe2 #Fëanor
+			location = province:3900 #Tirion
+		}
+		modifier = palantir_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = palantir_amonsul
+		set_variable = palantir
+		set_variable = lotr_unique
+		save_scope_as = epic
+
+		add_artifact_history = { # Elendil, Landed in ME with faithful
+			type = given
+			date = 3912.1.1
+			recipient = character:lineofelendil
+		}
+		add_artifact_history = { # Isildur, First High King of Arnor
+			type = inherited
+			date = 4033.7.12
+			recipient = character:lineisildur0
+		}
+		add_artifact_history = { # Valandil
+			type = inherited
+			date = 4035.10.5
+			recipient = character:lineisildur4
+		}
+		add_artifact_history = { # Eldacar
+			type = inherited
+			date = 4282.9.29
+			recipient = character:lineisildur5
+		}
+		add_artifact_history = { # Arantar
+			type = inherited
+			date = 4372.1.19
+			recipient = character:lineisildur6
+		}
+		add_artifact_history = { # Tarcil
+			type = inherited
+			date = 4468.5.12
+			recipient = character:lineisildur7
+		}
+		add_artifact_history = { # Tarondor
+			type = inherited
+			date = 4548.12.9
+			recipient = character:lineisildur8
+		}
+		add_artifact_history = { # Valandur
+			type = inherited
+			date = 4635.2.27
+			recipient = character:lineisildur9
+		}
+		add_artifact_history = { # Elendur
+			type = inherited
+			date = 4685.4.24
+			recipient = character:lineisildur10
+		}
+		add_artifact_history = { # Earendur, Last High King of Arnor
+			type = inherited
+			date = 4810.11.8
+			recipient = character:lineisildur11
+		}
+		add_artifact_history = { # Amlaith, First King of Arthedain
+			type = inherited
+			date = 4894.7.12
+			recipient = character:lineisildur12
+		}
+		add_artifact_history = { # Beleg
+			type = inherited
+			date = 4979.3.5
+			recipient = character:lineisildur13
+		}
+		add_artifact_history = { # Mallor
+			type = inherited
+			date = 5062.12.20
+			recipient = character:lineisildur14
+		}
+		add_artifact_history = { # Celepharn
+			type = inherited
+			date = 5143.12.5
+			recipient = character:lineisildur15
+		}
+		add_artifact_history = { # Celebrindor
+			type = inherited
+			date = 5224.8.29
+			recipient = character:lineisildur16
+		}
+		add_artifact_history = { # Malvegil
+			type = inherited
+			date = 5305.2.19
+			recipient = character:lineisildur17
+		}
+		add_artifact_history = { # Argeleb I
+			type = inherited
+			date = 5382.4.4
+			recipient = character:lineisildur18
+		}
+		add_artifact_history = { #  Arveleg I
+			type = inherited
+			date = 5389.7.8
+			recipient = character:lineisildur19
+		}
+		add_artifact_history = { # Araphor
+			type = inherited
+			date = 5442.5.22
+			recipient = character:lineisildur20
+		}
+		add_artifact_history = { # Argeleb II
+			type = inherited
+			date = 5622.9.29
+			recipient = character:lineisildur21
+		}
+		add_artifact_history = { # Arvegil
+			type = inherited
+			date = 5703.4.17
+			recipient = character:lineisildur22
+		}
+		add_artifact_history = { # Arveleg II
+			type = inherited
+			date = 5776.8.21
+			recipient = character:lineisildur23
+		}
+		add_artifact_history = { #  Araval
+			type = inherited
+			date = 5846.6.30
+			recipient = character:lineisildur24
+		}
+		add_artifact_history = { # Araphant
+			type = inherited
+			date = 5924.11.20
+			recipient = character:lineisildur25
+		}
+		add_artifact_history = { # Arvedui, Last King of Arthedain
+			type = inherited
+			date = 5997.7.2
+			recipient = character:lineisildur26
+		}
+	}
+}
+
+create_artifact_palantir_annuminas_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = palantir_annuminas_name
+		description = palantir_annuminas_description
+		creator = character:linefinwe2 #Fëanor
+		type = pedestal
+		visuals = palantir
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 1.1.1
+			actor = character:linefinwe2 #Fëanor
+			recipient = character:linefinwe2 #Fëanor
+			location = province:3900 #Tirion
+		}
+		modifier = palantir_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = palantir_annuminas
+		set_variable = palantir
+		set_variable = lotr_unique
+		save_scope_as = epic
+
+		add_artifact_history = { # Elendil, Landed in ME with faithful
+			type = given
+			date = 3912.1.1
+			recipient = character:lineofelendil
+		}
+		add_artifact_history = { # Isildur, First High King of Arnor
+			type = inherited
+			date = 4033.7.12
+			recipient = character:lineisildur0
+		}
+		add_artifact_history = { # Valandil
+			type = inherited
+			date = 4035.10.5
+			recipient = character:lineisildur4
+		}
+		add_artifact_history = { # Eldacar
+			type = inherited
+			date = 4282.9.29
+			recipient = character:lineisildur5
+		}
+		add_artifact_history = { # Arantar
+			type = inherited
+			date = 4372.1.19
+			recipient = character:lineisildur6
+		}
+		add_artifact_history = { # Tarcil
+			type = inherited
+			date = 4468.5.12
+			recipient = character:lineisildur7
+		}
+		add_artifact_history = { # Tarondor
+			type = inherited
+			date = 4548.12.9
+			recipient = character:lineisildur8
+		}
+		add_artifact_history = { # Valandur
+			type = inherited
+			date = 4635.2.27
+			recipient = character:lineisildur9
+		}
+		add_artifact_history = { # Elendur
+			type = inherited
+			date = 4685.4.24
+			recipient = character:lineisildur10
+		}
+		add_artifact_history = { # Earendur, Last High King of Arnor
+			type = inherited
+			date = 4810.11.8
+			recipient = character:lineisildur11
+		}
+		add_artifact_history = { # Amlaith, First King of Arthedain
+			type = inherited
+			date = 4894.7.12
+			recipient = character:lineisildur12
+		}
+		add_artifact_history = { # Beleg
+			type = inherited
+			date = 4979.3.5
+			recipient = character:lineisildur13
+		}
+		add_artifact_history = { # Mallor
+			type = inherited
+			date = 5062.12.20
+			recipient = character:lineisildur14
+		}
+		add_artifact_history = { # Celepharn
+			type = inherited
+			date = 5143.12.5
+			recipient = character:lineisildur15
+		}
+		add_artifact_history = { # Celebrindor
+			type = inherited
+			date = 5224.8.29
+			recipient = character:lineisildur16
+		}
+		add_artifact_history = { # Malvegil
+			type = inherited
+			date = 5305.2.19
+			recipient = character:lineisildur17
+		}
+		add_artifact_history = { # Argeleb I
+			type = inherited
+			date = 5382.4.4
+			recipient = character:lineisildur18
+		}
+		add_artifact_history = { #  Arveleg I
+			type = inherited
+			date = 5389.7.8
+			recipient = character:lineisildur19
+		}
+		add_artifact_history = { # Araphor
+			type = inherited
+			date = 5442.5.22
+			recipient = character:lineisildur20
+		}
+		add_artifact_history = { # Argeleb II
+			type = inherited
+			date = 5622.9.29
+			recipient = character:lineisildur21
+		}
+		add_artifact_history = { # Arvegil
+			type = inherited
+			date = 5703.4.17
+			recipient = character:lineisildur22
+		}
+		add_artifact_history = { # Arveleg II
+			type = inherited
+			date = 5776.8.21
+			recipient = character:lineisildur23
+		}
+		add_artifact_history = { #  Araval
+			type = inherited
+			date = 5846.6.30
+			recipient = character:lineisildur24
+		}
+		add_artifact_history = { # Araphant
+			type = inherited
+			date = 5924.11.20
+			recipient = character:lineisildur25
+		}
+		add_artifact_history = { # Arvedui, Last King of Arthedain
+			type = inherited
+			date = 5997.7.2
+			recipient = character:lineisildur26
+		}
+	}
+}
+
+create_artifact_palantir_osgiliath_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = palantir_osgiliath_name
+		description = palantir_osgiliath_description
+		creator = character:linefinwe2 #Fëanor
+		type = pedestal
+		visuals = palantir
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 1.1.1
+			actor = character:linefinwe2 #Fëanor
+			recipient = character:linefinwe2 #Fëanor
+			location = province:3900 #Tirion
+		}
+		modifier = palantir_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = palantir_osgiliath
+		set_variable = palantir
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+## Elven ##
+
+create_artifact_galadriel_mirror_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = galadriel_mirror_name
+		description = galadriel_mirror_description
+		creator = character:linefinwe36 #Galadriel
+		type = pedestal
+		visuals = galadriel_mirror
+		template = galadriel_mirror_template
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 6014.1.1
+			actor = character:linefinwe36 #Galadriel
+			recipient = character:linefinwe36 #Galadriel
+			location = province:3108 #Caras Galadhon
+		}
+		modifier = galadriel_mirror_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = galadriel_mirror
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_elessar_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = elessar_name
+		description = elessar_description
+		type = miscellaneous
+		visuals = elessar
+		template = elessar_template
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 405.1.1
+			recipient = character:linefinwe25 #Idril Celebrindal
+		}
+		modifier = elessar_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = elessar
+		set_variable = elven
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_narn_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = narn_name
+		description = narn_description
+		type = book
+		visuals = narn
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 502.1.1
+			actor = character:lineofdaeron #Daeron
+			recipient = character:lineofelwe3 #Elu Thingol
+		}
+		modifier = narn_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = narn
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_leithian_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = leithian_name
+		description = leithian_description
+		type = book
+		visuals = leithian
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 453.1.1
+			actor = character:lineofdaeron #Daeron
+			recipient = character:lineofelwe3 #Elu Thingol
+		}
+		modifier = leithian_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = leithian
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_aranthel_and_ungoldagnir_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = aranthel_and_ungoldagnir_name
+		description = aranthel_and_ungoldagnir_description
+		type = sword
+		visuals = aranthel_and_ungoldagnir
+		template = aranthel_and_ungoldagnir_template
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 6014.1.1
+			recipient = character:lineoforopher3 #Thranduil
+			location = province:3108 #Caras Galadhon
+		}
+		modifier = aranthel_and_ungoldagnir_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = aranthel_and_ungoldagnir
+		set_variable = elven
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_crown_woodland_realm_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = crown_woodland_realm_name
+		description = crown_woodland_realm_description
+		type = helmet
+		visuals = crown_woodland_realm
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 1279.1.1
+			recipient = character:lineoforopher1 #Oropher
+			location = province:3338 #Amon Lanc
+		}
+		modifier = crown_woodland_realm_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:k_lasgalen
+		}
+		set_variable = relic
+		set_variable = elven
+		set_variable = crown_woodland_realm
+		set_variable = lotr_unique
+		save_scope_as = epic
+		
+		add_artifact_history = { # Thranduil
+			type = inherited
+			date = 4026.1.1
+			recipient = character:lineoforopher3
+		}
+	}
+}
+
+create_artifact_legolas_childhood_sledge_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_famed = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = legolas_childhood_sledge_name
+		description = legolas_childhood_sledge_description
+		type = wall_small
+		visuals = wall_shield
+		visuals_source = title:e_greenwood
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 4830.10.4
+			recipient = character:lineoforopher6 #Legolas
+			location = province:3216 #Aradhrynd
+		}
+		modifier = legolas_childhood_sledge_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = legolas_childhood_sledge
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_hadhafang_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = hadhafang_name
+		description = hadhafang_description
+		type = sword
+		visuals = hadhafang
+		template = hadhafang_template
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 505.1.1
+			recipient = character:linefinwe25 #Idril
+		}
+		modifier = hadhafang_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = hadhafang
+		set_variable = elven
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+		equip_artifact_to_owner = yes
+
+		add_artifact_history = { # Earendil
+			type = inherited
+			date = 528.1.1
+			recipient = character:linefinwe26
+		}
+		add_artifact_history = { # Elrond
+			type = inherited
+			date = 542.9.10
+			recipient = character:linefinwe27
+		}
+	}
+}
+
+create_artifact_silver_harp_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = silver_harp_name
+		description = silver_harp_description
+		type = pedestal
+		visuals = silver_harp
+		template = silver_harp_template
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 110.1.1
+			actor = character:linefinwe11  #Maglor
+			recipient = character:linefinwe11  #Maglor
+			location = province:3900 #Tirion
+		}
+		modifier = silver_harp_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = silver_harp
+		set_variable = elven
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+
+		add_artifact_history = { # Elrond
+			type = given
+			date = 658.2.2
+			recipient = character:linefinwe27
+		}
+	}
+}
+
+create_artifact_silmaril_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = silmaril_name
+		description = silmaril_description
+		creator = character:linefinwe2 #Fëanor
+		type = helmet
+		visuals = silmaril
+		template = silmaril_template
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 2.2.1
+			actor = character:linefinwe2 #Fëanor
+			recipient = character:linefinwe2 #Fëanor
+			location = province:3900 #tirion
+		}
+		modifier = silmaril_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = silmaril
+		set_variable = elven
+		set_variable = relic
+		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
+		save_scope_as = epic
+
+		add_artifact_history = {
+			type = stolen
+			date = 468.6.1
+			recipient = character:lineofbeor32 # Beren
+		}
+		add_artifact_history = {
+			type = given
+			date = 468.7.1
+			recipient = character:lineofelwe3 # Thingol
+		}
+		add_artifact_history = { # Dior Eluchil
+			type = inherited
+			date = 504.5.4
+			recipient = character:lineofelwe5
+		}
+		add_artifact_history = { # Nimloth
+			type = inherited
+			date = 508.2.6
+			recipient = character:lineofelwe9
+		}
+		add_artifact_history = { # Earendil
+			type = given
+			date = 542.9.10
+			recipient = character:linefinwe26
+		}
+	}
+}
+
+create_artifact_athrad_gillith_harp_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = athrad_gillith_harp_name
+		description = athrad_gillith_harp_description
+		type = miscellaneous
+		visuals = athrad_gillith_harp
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 2007.1.1
+			recipient = character:lineoflanthir1 #Lanthir
+			location = province:3911 #Caras Torn
+		}
+		modifier = athrad_gillith_harp_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = athrad_gillith_harp
+		set_variable = elven
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
 create_artifact_hyandolire_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -2184,7 +2820,7 @@ create_artifact_hyandolire_effect = {
 		name = hyandolire_name
 		description = hyandolire_description
 		type = sword
-		visuals = hadhafang
+		visuals = hyandolire
 		template = hyandolire_template
 		wealth = scope:wealth
 		quality = scope:quality
@@ -2199,11 +2835,12 @@ create_artifact_hyandolire_effect = {
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
-	
+
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = hyandolire
 		set_variable = elven
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -2233,13 +2870,14 @@ create_artifact_ringil_effect = {
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
-	
+
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ringil
 		set_variable = elven
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Turgon
 			type = inherited
 			date = 458.1.1
@@ -2281,9 +2919,49 @@ create_artifact_rop_effect = {
 		save_scope_as = newly_created_artifact
 		decaying = yes
 	}
-	
+
 	scope:newly_created_artifact = {
 		flag_as_trash_artifact = yes
+	}
+}
+
+create_artifact_aeglos_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = aeglos_name
+		description = aeglos_description
+		type = spear
+		visuals = aeglos
+		template = hadhafang_template
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 495.1.1
+			recipient = character:linefinwe41 #Gil-Galad
+		}
+		modifier = aeglos_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = aeglos
+		set_variable = elven
+		set_variable = lotr_unique
+		save_scope_as = epic
+
+		add_artifact_history = { # Elrond recovers Aeglos from Gil-galad's body
+			type = inherited
+			date = 4033.7.12
+			recipient = character:linefinwe27 #Elrond
+		}
 	}
 }
 
@@ -2306,7 +2984,7 @@ create_artifact_key_of_erebor_effect = { # AKA Key to the Side-door
 		history = {
 			type = created
 			date = 6133.1.1
-			recipient = character:lineofdurin82 #Thráin II, King under the Mountain aka King of Erebor
+			recipient = character:lineofdurin74 #Thráin I, King under the Mountain aka King of Erebor
 		}
 		modifier = key_of_erebor_modifier
 		save_scope_as = newly_created_artifact
@@ -2316,8 +2994,49 @@ create_artifact_key_of_erebor_effect = { # AKA Key to the Side-door
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = key_of_erebor
+		set_variable = lotr_unique
 		save_scope_as = epic
 		
+		add_artifact_history = { # Thorin I
+			type = inherited
+			date = 6223.12.25
+			recipient = character:lineofdurin75
+		}
+		add_artifact_history = { # Glóin
+			type = inherited
+			date = 6322.5.21
+			recipient = character:lineofdurin76
+		}
+		add_artifact_history = { # Óin
+			type = inherited
+			date = 6418.6.2
+			recipient = character:lineofdurin77
+		}
+		add_artifact_history = { # Náin II
+			type = inherited
+			date = 6521.3.30
+			recipient = character:lineofdurin78
+		}
+		add_artifact_history = { # Dáin I
+			type = inherited
+			date = 6618.1.8
+			recipient = character:lineofdurin79
+		}
+		add_artifact_history = { # Thror I
+			type = inherited
+			date = 6622.1.6
+			recipient = character:lineofdurin81
+		}
+		add_artifact_history = { # Thror I
+			type = inherited
+			date = 6622.1.6
+			recipient = character:lineofdurin81
+		}
+		add_artifact_history = { # Thráin II
+			type = inherited
+			date =	6823.5.13
+			recipient = lineofdurin82
+		}
 		add_artifact_history = { # Gandalf
 			type = given
 			date = 6883.1.1
@@ -2332,38 +3051,39 @@ create_artifact_key_of_erebor_effect = { # AKA Key to the Side-door
 }
 
 create_artifact_arkenstone_effect = {
-    # Get the character the artifact is being made for.
-    $OWNER$ = { save_scope_as = owner }
-    # Not really used, but if we don't set the scopes we get errors in the feature selection
-    set_artifact_rarity_illustrious = yes
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
 
-    # Create the artifact
-    create_artifact = {
-        name = arkenstone_name
-        description = arkenstone_description
-        type = pedestal
-        visuals = arkenstone
-        wealth = scope:wealth
-        quality = scope:quality
+	# Create the artifact
+	create_artifact = {
+		name = arkenstone_name
+		description = arkenstone_description
+		type = pedestal
+		visuals = arkenstone
+		wealth = scope:wealth
+		quality = scope:quality
 		template = arkenstone_template
-        history = {
-            type = created
-            date = 6032.1.1
-            recipient = character:lineofdurin75
-            location = province:4408 #Throne of Erebor
-        }
-        modifier = arkenstone_modifier
-        save_scope_as = newly_created_artifact
-        decaying = no
-    }
+		history = {
+			type = created
+			date = 6032.1.1
+			recipient = character:lineofdurin74
+			location = province:4408 #Throne of Erebor
+		}
+		modifier = arkenstone_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
 
-    scope:newly_created_artifact = {
-        set_variable = { name = historical_unique_artifact value = yes }
-        set_variable = arkenstone
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = arkenstone
 		set_variable = thorins_tomb
 		set_variable = relic
-        save_scope_as = epic
-		
+		set_variable = lotr_unique
+		save_scope_as = epic
+
 		add_artifact_history = { # Thorin I
 			type = inherited
 			date = 6223.12.25
@@ -2406,42 +3126,43 @@ create_artifact_arkenstone_effect = {
 			date = 6974.10.25
 			recipient = character:lineofdale46
 		}
-    }
+	}
 }
 
 create_artifact_arkenstone_backup_effect = {
-    # Get the character the artifact is being made for.
-    $OWNER$ = { save_scope_as = owner }
-    # Not really used, but if we don't set the scopes we get errors in the feature selection
-    set_artifact_rarity_illustrious = yes
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
 
-    # Create the artifact
-    create_artifact = {
-        name = arkenstone_name
-        description = arkenstone_description
-        type = helmet
-        visuals = arkenstone
-        wealth = scope:wealth
-        quality = scope:quality
+	# Create the artifact
+	create_artifact = {
+		name = arkenstone_name
+		description = arkenstone_description
+		type = helmet
+		visuals = arkenstone
+		wealth = scope:wealth
+		quality = scope:quality
 		template = arkenstone_template
-        history = {
-            type = created
-            date = 6032.1.1
-            recipient = character:lineofdurin82 #Thráin II, King under the Mountain aka King of Erebor
-            location = province:4408 #Throne of Erebor
-        }
-        modifier = arkenstone_modifier
-        save_scope_as = newly_created_artifact
-        decaying = no
-    }
+		history = {
+			type = created
+			date = 6032.1.1
+			recipient = character:lineofdurin82 #Thráin II, King under the Mountain aka King of Erebor
+			location = province:4408 #Throne of Erebor
+		}
+		modifier = arkenstone_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
 
-    scope:newly_created_artifact = {
-        set_variable = { name = historical_unique_artifact value = yes }
-        set_variable = arkenstone
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = arkenstone
 		set_variable = thorins_tomb
 		set_variable = relic
-        save_scope_as = epic
-		
+		set_variable = lotr_unique
+		save_scope_as = epic
+
 		add_artifact_history = { # Thorin I
 			type = inherited
 			date = 6223.12.25
@@ -2484,7 +3205,7 @@ create_artifact_arkenstone_backup_effect = {
 			date = 6974.10.25
 			recipient = character:lineofdale46
 		}
-    }
+	}
 }
 
 create_artifact_barazanthual_effect = { # Dáin's Red Axe
@@ -2515,6 +3236,7 @@ create_artifact_barazanthual_effect = { # Dáin's Red Axe
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = barazanthual
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -2549,8 +3271,9 @@ create_artifact_orcrist_effect = {
 		set_variable = elven
 		set_variable = relic
 		set_variable = thorins_tomb
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = discovered
 			date = 6974.5.1
@@ -2588,13 +3311,14 @@ create_artifact_axe_of_durin_effect = {
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
-	
+
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = axe_of_durin
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 2432.1.2
@@ -2782,13 +3506,14 @@ create_artifact_durins_helm_effect = {
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
-	
+
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = durins_helm
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 412.5.12
@@ -2817,7 +3542,7 @@ create_artifact_durins_helm_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1033.5.21
-			recipient = character:lineofdurin7 # Rathspakr 
+			recipient = character:lineofdurin7 # Rathspakr
 		}
 		add_artifact_history = {
 			type = inherited
@@ -3056,18 +3781,19 @@ create_artifact_sting_effect = {
 			recipient = character:linefinwe21 #Turgon
 		}
 		modifier = sting_modifier
+		template = sting_template
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
 
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
-		# set_variable = sting # Currently unused variable, can uncomment once used
+		set_variable = sting
 		set_variable = elven
-		set_variable = relic
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = discovered
 			date = 6974.5.1
@@ -3105,7 +3831,36 @@ create_artifact_red_book_of_westmarch_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		# set_variable = red_book_of_westmarch # Currently unused variable, can uncomment once used
-#		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_mithril_mail_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = mithril_mail_name
+		description = mithril_mail_description
+		type = armor_mail
+		visuals = armor
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = mithril_mail_modifier
+		template = mithril_mail_template
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = mithril_mail
+		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3143,8 +3898,9 @@ create_artifact_skull_earnur_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = skull_earnur
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Detached from Earnur's body by the WK
 			type = won_in_duel
 			date = 6083.1.1
@@ -3181,6 +3937,7 @@ create_artifact_sauron_defying_thunder_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = sauron_defying_thunder
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3214,6 +3971,7 @@ create_artifact_vasa_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vasa
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3247,6 +4005,7 @@ create_artifact_morgul_blade_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = morgul_blade
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3280,6 +4039,7 @@ create_artifact_helm_witchking_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = helm_witchking
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3313,6 +4073,7 @@ create_artifact_helm_khamul_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = helm_khamul
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3340,6 +4101,7 @@ create_artifact_scythe_of_khamul_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = scythe_of_khamul
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3373,6 +4135,7 @@ create_artifact_mask_goldenking_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = mask_goldenking
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -3394,7 +4157,7 @@ create_artifact_hame_of_the_vampire_effect = {
 		template = hame_of_the_vampire_template
 		history = {
 			type = created
-#			date = 459.1.1 # Vampires at Tol-in-Gaurhoth! This hame is visually a giant bat skin.
+			# date = 459.1.1 # Vampires at Tol-in-Gaurhoth! This hame is visually a giant bat skin.
 			date = 7005.11.26
 			recipient = character:lineofdale63 # Valdis
 			location = province:3621 # Orlmond
@@ -3407,230 +4170,8 @@ create_artifact_hame_of_the_vampire_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = hame_of_the_vampire
+		set_variable = lotr_unique
 		save_scope_as = epic
-	}
-}
-
-create_artifact_palantir_minasithil_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = palantir_minasithil_name
-		description = palantir_minasithil_description
-		creator = character:linefinwe2 #Fëanor
-		type = pedestal
-		visuals = palantir
-		wealth = scope:wealth
-		quality = scope:quality
-		history = {
-			type = created
-			date = 1.1.1
-			actor = character:linefinwe2 #Fëanor
-			recipient = character:linefinwe2 #Fëanor
-			location = province:3900 #Tirion
-		}
-		modifier = palantir_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = historical_unique_artifact value = yes }
-		set_variable = palantir_minasithil
-		set_variable = palantir
-		save_scope_as = epic
-		
-		add_artifact_history = { # Elendil, Landed in ME with faithful
-			type = given
-			date = 3912.1.1
-			recipient = character:lineofelendil
-		}
-		add_artifact_history = { # Anarion, King of Gondor
-			type = inherited
-			date = 3912.1.1
-			recipient = character:lineofanarion1
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4035.10.5
-			recipient = character:lineofanarion5 # Meneldil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4191.8.2
-			recipient = character:lineofanarion7 # Cemendur 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4271.11.20
-			recipient = character:lineofanarion8 # Eärendil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4357.8.23
-			recipient = character:lineofanarion9 # Anardil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4444.2.23
-			recipient = character:lineofanarion10 # Ostoher 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4525.7.7
-			recipient = character:lineofanarion11 # Tarostar/Rómendacil I
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4574.8.17
-			recipient = character:lineofanarion12 # Turambar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4700.8.14
-			recipient = character:lineofanarion13 # Atanatar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4781.5.15
-			recipient = character:lineofanarion14 # Siriondil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4863.1.1
-			recipient = character:lineofanarion15 # Tarannon Falastur 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4946.1.1
-			recipient = character:lineofanarion18 # Eärnil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 4969.1.1
-			recipient = character:lineofanarion19 # Ciryandil 
-		}
-		add_artifact_history = { # Anarion, King of Gondor
-			type = inherited
-			date = 5048.1.1
-			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5182.1.1
-			recipient = character:lineofanarion21 # Atanatar Alcarin 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5259.1.1
-			recipient = character:lineofanarion22 # Narmacil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5327.1.1
-			recipient = character:lineofanarion23 # Calmacil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5337.1.1
-			recipient = character:lineofanarion24 # Rómendacil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher 
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II 
-		}
-		add_artifact_history = {
-			type = given
-			date = 5978.1.1
-			recipient = character:mardiluncle
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6034.1.1
-			recipient = character:mardilcousin
-		}
-		add_artifact_history = {
-			type = taken_in_siege
-			date = 6035.1.1
-			actor = character:mardilcousin
-			location = province:226 #Minas Ithil
-			recipient = character:nazgul1
-		}
-		add_artifact_history = {
-			type = given
-			date = 6974.1.1
-			recipient = character:lineofsauron
-		}
 	}
 }
 
@@ -3638,42 +4179,43 @@ create_artifact_palantir_minasithil_effect = {
 ## Mountain Orc ##
 
 create_artifact_ulukai_effect = {
-    # Get the character the artifact is being made for.
-    $OWNER$ = { save_scope_as = owner }
-    # Not really used, but if we don't set the scopes we get errors in the feature selection
-    set_artifact_rarity_illustrious = yes
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
 
-    # Create the artifact
-    create_artifact = {
-        name = ulukai_name
-        description = ulukai_description
-        type = pedestal
-        visuals = ulukai
-        wealth = scope:wealth
-        quality = scope:quality
+	# Create the artifact
+	create_artifact = {
+		name = ulukai_name
+		description = ulukai_description
+		type = pedestal
+		visuals = ulukai
+		wealth = scope:wealth
+		quality = scope:quality
 		template = ulukai_template
-        history = {
-            type = discovered
-            date = 6974.11.30
+		history = {
+			type = discovered
+			date = 6974.11.30
 			actor = character:lineofazog6 #Gorgol, Lord of Gundabad
-            recipient = character:lineofazog6 #Gorgol, Lord of Gundabad
-            location = province:3210 #Gundabad
-        }
-        modifier = ulukai_modifier
-        save_scope_as = newly_created_artifact
-        decaying = no
-    }
+			recipient = character:lineofazog6 #Gorgol, Lord of Gundabad
+			location = province:3210 #Gundabad
+		}
+		modifier = ulukai_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
 
-    scope:newly_created_artifact = {
-        set_variable = { name = historical_unique_artifact value = yes }
-        set_variable = ulukai
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = ulukai
 		set_variable = relic
-        save_scope_as = epic
+		set_variable = lotr_unique
+		save_scope_as = epic
 		set_variable = {
 			name = artifact_succession_title
 			value = title:k_gundabad
 		}
-    }
+	}
 }
 
 
@@ -3713,9 +4255,10 @@ create_artifact_crown_of_gondor_effect = {
 		}
 		set_variable = crown_of_gondor
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
-	
+
 	add_artifact_title_history = {
 		target = title:e_gondor
 		date = 5200.1.1
@@ -3756,32 +4299,33 @@ create_artifact_throne_of_gondor_effect = {
 			value = title:e_gondor
 		}
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 4035.10.5
-			recipient = character:lineofanarion5 # Meneldil 
+			recipient = character:lineofanarion5 # Meneldil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4191.8.2
-			recipient = character:lineofanarion7 # Cemendur 
+			recipient = character:lineofanarion7 # Cemendur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4271.11.20
-			recipient = character:lineofanarion8 # Eärendil 
+			recipient = character:lineofanarion8 # Eärendil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4357.8.23
-			recipient = character:lineofanarion9 # Anardil 
+			recipient = character:lineofanarion9 # Anardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4444.2.23
-			recipient = character:lineofanarion10 # Ostoher 
+			recipient = character:lineofanarion10 # Ostoher
 		}
 		add_artifact_history = {
 			type = inherited
@@ -3791,132 +4335,132 @@ create_artifact_throne_of_gondor_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 4574.8.17
-			recipient = character:lineofanarion12 # Turambar 
+			recipient = character:lineofanarion12 # Turambar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4700.8.14
-			recipient = character:lineofanarion13 # Atanatar 
+			recipient = character:lineofanarion13 # Atanatar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4781.5.15
-			recipient = character:lineofanarion14 # Siriondil 
+			recipient = character:lineofanarion14 # Siriondil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4863.1.1
-			recipient = character:lineofanarion15 # Tarannon Falastur 
+			recipient = character:lineofanarion15 # Tarannon Falastur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4946.1.1
-			recipient = character:lineofanarion18 # Eärnil 
+			recipient = character:lineofanarion18 # Eärnil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4969.1.1
-			recipient = character:lineofanarion19 # Ciryandil 
+			recipient = character:lineofanarion19 # Ciryandil
 		}
 		add_artifact_history = { # Anarion, King of Gondor
 			type = inherited
 			date = 5048.1.1
-			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe 
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5182.1.1
-			recipient = character:lineofanarion21 # Atanatar Alcarin 
+			recipient = character:lineofanarion21 # Atanatar Alcarin
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5259.1.1
-			recipient = character:lineofanarion22 # Narmacil 
+			recipient = character:lineofanarion22 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5327.1.1
-			recipient = character:lineofanarion23 # Calmacil 
+			recipient = character:lineofanarion23 # Calmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5337.1.1
-			recipient = character:lineofanarion24 # Rómendacil 
+			recipient = character:lineofanarion24 # Rómendacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar 
+			recipient = character:lineofanarion26 # Valacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper 
+			recipient = character:lineofanarion53 # Castamir, the Usurper
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir 
+			recipient = character:lineofanarion29 # Aldamir
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion 
+			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil 
+			recipient = character:lineofanarion31 # Minardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar 
+			recipient = character:lineofanarion32 # Telemnar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor 
+			recipient = character:lineofanarion37 # Tarondor
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil 
+			recipient = character:lineofanarion38 # Telumehtar Umbardacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil 
+			recipient = character:lineofanarion39 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar 
+			recipient = character:lineofanarion40 # Calimehtar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher 
+			recipient = character:lineofanarion41 # Ondoher
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II 
+			recipient = character:lineofanarion50 # Eärnil II
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 6076.1.1
-			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor 
+			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
 		}
 		add_artifact_title_history = {
 			target = title:e_gondor_steward
@@ -3958,8 +4502,9 @@ create_artifact_black_chair_stewards_effect = {
 			name = artifact_succession_title
 			value = title:e_gondor_steward
 		}
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:e_gondor_steward
 			date = 6052.1.1
@@ -3994,6 +4539,7 @@ create_artifact_black_chair_replica_effect = {
 			name = artifact_succession_title
 			value = title:k_gondor_steward
 		}
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -4031,8 +4577,9 @@ create_artifact_steward_rod_effect = {
 			value = title:e_gondor_steward
 		}
 		set_variable = stewards_rod
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:e_gondor_steward
 			date = 6052.1.1
@@ -4068,8 +4615,9 @@ create_artifact_mithrellas_talisman_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = mithrellas_talisman
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:k_belfalas
 			date = 6100.1.1
@@ -4105,8 +4653,9 @@ create_artifact_lindalf_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = lindalf
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:k_belfalas
 			date = 6110.1.1
@@ -4144,136 +4693,137 @@ create_artifact_horn_gondor_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = horn_gondor
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
-			date = 6083.1.1 
-			recipient = character:linesteward5 # Eradan 
+			date = 6083.1.1
+			recipient = character:linesteward5 # Eradan
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 6113.1.1
-			recipient = character:linesteward6 # Herion 
+			recipient = character:linesteward6 # Herion
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6149.1.1 
-			recipient = character:linesteward7 # Belegorn 
+			date = 6149.1.1
+			recipient = character:linesteward7 # Belegorn
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6181.1.1 
-			recipient = character:linesteward8 # Húrin 
+			date = 6181.1.1
+			recipient = character:linesteward8 # Húrin
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6237.1.1 
-			recipient = character:linesteward11 # Túrin 
+			date = 6237.1.1
+			recipient = character:linesteward11 # Túrin
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6277.1.1 
-			recipient = character:linesteward15 # Hador 
+			date = 6277.1.1
+			recipient = character:linesteward15 # Hador
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6311.1.1 
-			recipient = character:linesteward16 # Barahir 
+			date = 6311.1.1
+			recipient = character:linesteward16 # Barahir
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6428.1.1 
-			recipient = character:linesteward17 # Dior 
+			date = 6428.1.1
+			recipient = character:linesteward17 # Dior
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6445.1.1 
-			recipient = character:linesteward19 # Denethor 
+			date = 6445.1.1
+			recipient = character:linesteward19 # Denethor
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6468.1.1 
-			recipient = character:linesteward22 # Boromir 
+			date = 6468.1.1
+			recipient = character:linesteward22 # Boromir
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6510.1.1 
-			recipient = character:linesteward23 # Cirion 
+			date = 6510.1.1
+			recipient = character:linesteward23 # Cirion
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6522.1.1 
-			recipient = character:linesteward24 # Hallas 
+			date = 6522.1.1
+			recipient = character:linesteward24 # Hallas
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6600.1.1 
-			recipient = character:linesteward50 # Húrin II 
+			date = 6600.1.1
+			recipient = character:linesteward50 # Húrin II
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6638.1.1 
-			recipient = character:linesteward25 # Belecthor 
+			date = 6638.1.1
+			recipient = character:linesteward25 # Belecthor
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6661.1.1 
-			recipient = character:linesteward26 # Orodreth 
+			date = 6661.1.1
+			recipient = character:linesteward26 # Orodreth
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6688.1.1 
-			recipient = character:linesteward27 # Ecthelion I 
+			date = 6688.1.1
+			recipient = character:linesteward27 # Ecthelion I
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6718.1.1 
-			recipient = character:linesteward30 # Egalmoth 
+			date = 6718.1.1
+			recipient = character:linesteward30 # Egalmoth
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6731.1.1 
-			recipient = character:linesteward31 # Beren 
+			date = 6731.1.1
+			recipient = character:linesteward31 # Beren
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6776.1.1 
-			recipient = character:linesteward32 # Beregond 
+			date = 6776.1.1
+			recipient = character:linesteward32 # Beregond
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6796.1.1 
-			recipient = character:linesteward33 # Belecthor II 
+			date = 6796.1.1
+			recipient = character:linesteward33 # Belecthor II
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6844.1.1 
-			recipient = character:linesteward34 # Thorondir  
+			date = 6844.1.1
+			recipient = character:linesteward34 # Thorondir
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6905.1.1 
+			date = 6905.1.1
 			recipient = character:linesteward35 # Túrin II
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6915.1.1 
-			recipient = character:linesteward36 # Turgon  
+			date = 6915.1.1
+			recipient = character:linesteward36 # Turgon
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6947.1.1 
-			recipient = character:linesteward37 # Ecthelion II  
+			date = 6947.1.1
+			recipient = character:linesteward37 # Ecthelion II
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 6986.1.1 
-			recipient = character:linesteward38 # Denethor II  
+			date = 6986.1.1
+			recipient = character:linesteward38 # Denethor II
 		}
 		add_artifact_history = {
 			type = inherited
-			date = 7017.1.1 
+			date = 7017.1.1
 			recipient = character:linesteward39 #Boromir
 		}
 	}
@@ -4310,8 +4860,9 @@ create_artifact_palantir_minasanor_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = palantir_minasanor
 		set_variable = palantir
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Anarion, King of Gondor
 			type = given
 			date = 3912.1.1
@@ -4320,27 +4871,27 @@ create_artifact_palantir_minasanor_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 4035.10.5
-			recipient = character:lineofanarion5 # Meneldil 
+			recipient = character:lineofanarion5 # Meneldil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4191.8.2
-			recipient = character:lineofanarion7 # Cemendur 
+			recipient = character:lineofanarion7 # Cemendur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4271.11.20
-			recipient = character:lineofanarion8 # Eärendil 
+			recipient = character:lineofanarion8 # Eärendil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4357.8.23
-			recipient = character:lineofanarion9 # Anardil 
+			recipient = character:lineofanarion9 # Anardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4444.2.23
-			recipient = character:lineofanarion10 # Ostoher 
+			recipient = character:lineofanarion10 # Ostoher
 		}
 		add_artifact_history = {
 			type = inherited
@@ -4350,132 +4901,132 @@ create_artifact_palantir_minasanor_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 4574.8.17
-			recipient = character:lineofanarion12 # Turambar 
+			recipient = character:lineofanarion12 # Turambar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4700.8.14
-			recipient = character:lineofanarion13 # Atanatar 
+			recipient = character:lineofanarion13 # Atanatar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4781.5.15
-			recipient = character:lineofanarion14 # Siriondil 
+			recipient = character:lineofanarion14 # Siriondil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4863.1.1
-			recipient = character:lineofanarion15 # Tarannon Falastur 
+			recipient = character:lineofanarion15 # Tarannon Falastur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4946.1.1
-			recipient = character:lineofanarion18 # Eärnil 
+			recipient = character:lineofanarion18 # Eärnil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4969.1.1
-			recipient = character:lineofanarion19 # Ciryandil 
+			recipient = character:lineofanarion19 # Ciryandil
 		}
 		add_artifact_history = { # Anarion, King of Gondor
 			type = inherited
 			date = 5048.1.1
-			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe 
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5182.1.1
-			recipient = character:lineofanarion21 # Atanatar Alcarin 
+			recipient = character:lineofanarion21 # Atanatar Alcarin
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5259.1.1
-			recipient = character:lineofanarion22 # Narmacil 
+			recipient = character:lineofanarion22 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5327.1.1
-			recipient = character:lineofanarion23 # Calmacil 
+			recipient = character:lineofanarion23 # Calmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5337.1.1
-			recipient = character:lineofanarion24 # Rómendacil 
+			recipient = character:lineofanarion24 # Rómendacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar 
+			recipient = character:lineofanarion26 # Valacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper 
+			recipient = character:lineofanarion53 # Castamir, the Usurper
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir 
+			recipient = character:lineofanarion29 # Aldamir
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion 
+			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil 
+			recipient = character:lineofanarion31 # Minardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar 
+			recipient = character:lineofanarion32 # Telemnar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor 
+			recipient = character:lineofanarion37 # Tarondor
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil 
+			recipient = character:lineofanarion38 # Telumehtar Umbardacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil 
+			recipient = character:lineofanarion39 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar 
+			recipient = character:lineofanarion40 # Calimehtar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher 
+			recipient = character:lineofanarion41 # Ondoher
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II 
+			recipient = character:lineofanarion50 # Eärnil II
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 6076.1.1
-			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor 
+			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
 		}
 		add_artifact_title_history = {
 			target = title:e_gondor_steward
@@ -4517,8 +5068,9 @@ create_artifact_ring_barahir_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_barahir
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = given
 			date = 2.1.2
@@ -4526,7 +5078,7 @@ create_artifact_ring_barahir_effect = {
 		}
 		add_artifact_history = {
 			type = given
-			date = 458.4.20 
+			date = 458.4.20
 			recipient = character:lineofbeor28 #Barahir
 		}
 		add_artifact_history = {
@@ -4539,12 +5091,12 @@ create_artifact_ring_barahir_effect = {
 			date = 462.6.18
 			recipient = character:lineofelwe5 #Dior
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = inherited
 			date = 508.2.6
 			recipient = character:lineofelwe9 # Nimloth
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = given
 			date = 542.9.10
 			recipient = character:lineofelros1 #Elros
@@ -4552,17 +5104,17 @@ create_artifact_ring_barahir_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1034.1.1
-			recipient = character:lineofelros2 # Vardamir 
+			recipient = character:lineofelros2 # Vardamir
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1063.1.1
-			recipient = character:lineofelros3 # Amandil 
+			recipient = character:lineofelros3 # Amandil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1195.1.1
-			recipient = character:lineofelros4 # Elendil 
+			recipient = character:lineofelros4 # Elendil
 		}
 		add_artifact_history = {
 			type = given
@@ -4573,7 +5125,7 @@ create_artifact_ring_barahir_effect = {
 			type = inherited
 			date = 1534.1.1
 			recipient = character:lineofelatan2 # Valandil
-		}	
+		}
 		add_artifact_history = {
 			type = inherited
 			date = 1588.1.1
@@ -4676,17 +5228,17 @@ create_artifact_ring_barahir_effect = {
 		}
 		add_artifact_history = { # Eldacar
 			type = inherited
-			date = 4282.9.29 
+			date = 4282.9.29
 			recipient = character:lineisildur5
 		}
 		add_artifact_history = { # Arantar
 			type = inherited
-			date = 4372.1.19 
+			date = 4372.1.19
 			recipient = character:lineisildur6
 		}
 		add_artifact_history = { # Tarcil
 			type = inherited
-			date = 4468.5.12 
+			date = 4468.5.12
 			recipient = character:lineisildur7
 		}
 		add_artifact_history = { # Tarondor
@@ -4706,7 +5258,7 @@ create_artifact_ring_barahir_effect = {
 		}
 		add_artifact_history = { # Earendur, Last High King of Arnor
 			type = inherited
-			date = 4810.11.8 
+			date = 4810.11.8
 			recipient = character:lineisildur11
 		}
 		add_artifact_history = { # Amlaith, First King of Arthedain
@@ -4774,7 +5326,7 @@ create_artifact_ring_barahir_effect = {
 			date = 5846.6.30
 			recipient = character:lineisildur24
 		}
-		add_artifact_history = { # Araphant 
+		add_artifact_history = { # Araphant
 			type = inherited
 			date = 5924.11.20
 			recipient = character:lineisildur25
@@ -4788,7 +5340,7 @@ create_artifact_ring_barahir_effect = {
 			target = title:d_northern_dunedain
 			date = 6008.1.1
 		}
-	}	
+	}
 }
 
 create_artifact_shards_of_narsil_effect = {
@@ -4809,7 +5361,7 @@ create_artifact_shards_of_narsil_effect = {
 		history = {
 			type = created
 			date = 262.1.1
-			actor = character:lineoftelchar1  #Telchar	
+			actor = character:lineoftelchar1  #Telchar
 			recipient = character:lineofelwe3 #Thingol
 			location = province:4869 #Nogrod
 		}
@@ -4822,19 +5374,20 @@ create_artifact_shards_of_narsil_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = shards_of_narsil
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
-		add_artifact_history = { 
+
+		add_artifact_history = {
 			type = inherited
 			date = 504.5.4
 			recipient = character:lineofelwe5 # Dior Eluchil
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = inherited
 			date = 508.2.6
 			recipient = character:lineofelwe9 # Nimloth
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = given
 			date = 542.9.10
 			recipient = character:lineofelros1 #Elros
@@ -4842,17 +5395,17 @@ create_artifact_shards_of_narsil_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1034.1.1
-			recipient = character:lineofelros2 # Vardamir 
+			recipient = character:lineofelros2 # Vardamir
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1063.1.1
-			recipient = character:lineofelros3 # Amandil 
+			recipient = character:lineofelros3 # Amandil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1195.1.1
-			recipient = character:lineofelros4 # Elendil 
+			recipient = character:lineofelros4 # Elendil
 		}
 		add_artifact_history = {
 			type = given
@@ -4863,7 +5416,7 @@ create_artifact_shards_of_narsil_effect = {
 			type = inherited
 			date = 1534.1.1
 			recipient = character:lineofelatan2 # Valandil
-		}	
+		}
 		add_artifact_history = {
 			type = inherited
 			date = 1588.1.1
@@ -4966,17 +5519,17 @@ create_artifact_shards_of_narsil_effect = {
 		}
 		add_artifact_history = { # Eldacar
 			type = inherited
-			date = 4282.9.29 
+			date = 4282.9.29
 			recipient = character:lineisildur5
 		}
 		add_artifact_history = { # Arantar
 			type = inherited
-			date = 4372.1.19 
+			date = 4372.1.19
 			recipient = character:lineisildur6
 		}
 		add_artifact_history = { # Tarcil
 			type = inherited
-			date = 4468.5.12 
+			date = 4468.5.12
 			recipient = character:lineisildur7
 		}
 		add_artifact_history = { # Tarondor
@@ -4996,7 +5549,7 @@ create_artifact_shards_of_narsil_effect = {
 		}
 		add_artifact_history = { # Earendur, Last High King of Arnor
 			type = inherited
-			date = 4810.11.8 
+			date = 4810.11.8
 			recipient = character:lineisildur11
 		}
 		add_artifact_history = { # Amlaith, First King of Arthedain
@@ -5064,7 +5617,7 @@ create_artifact_shards_of_narsil_effect = {
 			date = 5846.6.30
 			recipient = character:lineisildur24
 		}
-		add_artifact_history = { # Araphant 
+		add_artifact_history = { # Araphant
 			type = inherited
 			date = 5924.11.20
 			recipient = character:lineisildur25
@@ -5110,19 +5663,20 @@ create_artifact_anduril_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = anduril
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
-		add_artifact_history = { 
+
+		add_artifact_history = {
 			type = inherited
 			date = 504.5.4
 			recipient = character:lineofelwe5 # Dior Eluchil
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = inherited
 			date = 508.2.6
 			recipient = character:lineofelwe9 # Nimloth
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = given
 			date = 542.9.10
 			recipient = character:lineofelros1 #Elros
@@ -5130,17 +5684,17 @@ create_artifact_anduril_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 1034.1.1
-			recipient = character:lineofelros2 # Vardamir 
+			recipient = character:lineofelros2 # Vardamir
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1063.1.1
-			recipient = character:lineofelros3 # Amandil 
+			recipient = character:lineofelros3 # Amandil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 1195.1.1
-			recipient = character:lineofelros4 # Elendil 
+			recipient = character:lineofelros4 # Elendil
 		}
 		add_artifact_history = {
 			type = given
@@ -5151,7 +5705,7 @@ create_artifact_anduril_effect = {
 			type = inherited
 			date = 1534.1.1
 			recipient = character:lineofelatan2 # Valandil
-		}	
+		}
 		add_artifact_history = {
 			type = inherited
 			date = 1588.1.1
@@ -5254,17 +5808,17 @@ create_artifact_anduril_effect = {
 		}
 		add_artifact_history = { # Eldacar
 			type = inherited
-			date = 4282.9.29 
+			date = 4282.9.29
 			recipient = character:lineisildur5
 		}
 		add_artifact_history = { # Arantar
 			type = inherited
-			date = 4372.1.19 
+			date = 4372.1.19
 			recipient = character:lineisildur6
 		}
 		add_artifact_history = { # Tarcil
 			type = inherited
-			date = 4468.5.12 
+			date = 4468.5.12
 			recipient = character:lineisildur7
 		}
 		add_artifact_history = { # Tarondor
@@ -5284,7 +5838,7 @@ create_artifact_anduril_effect = {
 		}
 		add_artifact_history = { # Earendur, Last High King of Arnor
 			type = inherited
-			date = 4810.11.8 
+			date = 4810.11.8
 			recipient = character:lineisildur11
 		}
 		add_artifact_history = { # Amlaith, First King of Arthedain
@@ -5352,7 +5906,7 @@ create_artifact_anduril_effect = {
 			date = 5846.6.30
 			recipient = character:lineisildur24
 		}
-		add_artifact_history = { # Araphant 
+		add_artifact_history = { # Araphant
 			type = inherited
 			date = 5924.11.20
 			recipient = character:lineisildur25
@@ -5391,6 +5945,7 @@ create_artifact_sceptre_of_annuminas_effect = {
 			recipient = character:lineofelatan2 # Valandil
 		}
 		modifier = sceptre_of_annuminas_modifier
+		template = sceptre_of_annuminas_template
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
@@ -5399,12 +5954,13 @@ create_artifact_sceptre_of_annuminas_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = sceptre_of_annuminas
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 		set_variable = {
 			name = artifact_succession_title
 			value = title:e_arnor
 		}
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 1588.1.1
@@ -5507,17 +6063,17 @@ create_artifact_sceptre_of_annuminas_effect = {
 		}
 		add_artifact_history = { # Eldacar
 			type = inherited
-			date = 4282.9.29 
+			date = 4282.9.29
 			recipient = character:lineisildur5
 		}
 		add_artifact_history = { # Arantar
 			type = inherited
-			date = 4372.1.19 
+			date = 4372.1.19
 			recipient = character:lineisildur6
 		}
 		add_artifact_history = { # Tarcil
 			type = inherited
-			date = 4468.5.12 
+			date = 4468.5.12
 			recipient = character:lineisildur7
 		}
 		add_artifact_history = { # Tarondor
@@ -5537,7 +6093,7 @@ create_artifact_sceptre_of_annuminas_effect = {
 		}
 		add_artifact_history = { # Earendur, Last High King of Arnor
 			type = inherited
-			date = 4810.11.8 
+			date = 4810.11.8
 			recipient = character:lineisildur11
 		}
 		add_artifact_history = { # Amlaith, First King of Arthedain
@@ -5605,7 +6161,7 @@ create_artifact_sceptre_of_annuminas_effect = {
 			date = 5846.6.30
 			recipient = character:lineisildur24
 		}
-		add_artifact_history = { # Araphant 
+		add_artifact_history = { # Araphant
 			type = inherited
 			date = 5924.11.20
 			recipient = character:lineisildur25
@@ -5653,17 +6209,18 @@ create_artifact_elendilmir_elendil_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = elendilmir_elendil
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 		set_variable = {
 			name = artifact_succession_title
 			value = title:e_arnor
 		}
-		
+
 		add_artifact_history = {
 			type = given
 			date = 1290.1.1
 			recipient = character:lineofelatan2 # Valandil
-		}	
+		}
 		add_artifact_history = {
 			type = inherited
 			date = 1588.1.1
@@ -5798,25 +6355,26 @@ create_artifact_elendilmir_valandil_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = elendilmir_valandil
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 		set_variable = {
 			name = artifact_succession_title
 			value = title:e_arnor
 		}
-		
+
 		add_artifact_history = { # Eldacar
 			type = inherited
-			date = 4282.9.29 
+			date = 4282.9.29
 			recipient = character:lineisildur5
 		}
 		add_artifact_history = { # Arantar
 			type = inherited
-			date = 4372.1.19 
+			date = 4372.1.19
 			recipient = character:lineisildur6
 		}
 		add_artifact_history = { # Tarcil
 			type = inherited
-			date = 4468.5.12 
+			date = 4468.5.12
 			recipient = character:lineisildur7
 		}
 		add_artifact_history = { # Tarondor
@@ -5836,7 +6394,7 @@ create_artifact_elendilmir_valandil_effect = {
 		}
 		add_artifact_history = { # Earendur, Last High King of Arnor
 			type = inherited
-			date = 4810.11.8 
+			date = 4810.11.8
 			recipient = character:lineisildur11
 		}
 		add_artifact_history = { # Amlaith, First King of Arthedain
@@ -5904,7 +6462,7 @@ create_artifact_elendilmir_valandil_effect = {
 			date = 5846.6.30
 			recipient = character:lineisildur24
 		}
-		add_artifact_history = { # Araphant 
+		add_artifact_history = { # Araphant
 			type = inherited
 			date = 5924.11.20
 			recipient = character:lineisildur25
@@ -5956,8 +6514,9 @@ create_artifact_herugrim_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = herugrim
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:k_rohan
 			date = 6792.1.1
@@ -5995,8 +6554,9 @@ create_artifact_guthwine_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = guthwine
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:d_eastfold
 			date = 6600.1.1
@@ -6033,8 +6593,9 @@ create_artifact_tapestry_ride_eorl_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = tapestry_ride_eorl
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:k_rohan
 			date = 6578.8.3
@@ -6071,6 +6632,7 @@ create_artifact_horn_mark_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = horn_mark
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6104,6 +6666,7 @@ create_artifact_wulf_fang_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = wulf_fang
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6141,8 +6704,9 @@ create_artifact_branch_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = branch
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:d_korlea
 			date = 3913.1.1
@@ -6179,8 +6743,9 @@ create_artifact_niluzagar_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = niluzagar
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:e_bellakar
 			date = 4373.1.1
@@ -6218,6 +6783,7 @@ create_artifact_book_baitha_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = book_baitha
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6250,8 +6816,9 @@ create_artifact_ring_macilion_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		# set_variable = ring_macilion
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = given
 			date = 4023.1.1
@@ -6300,8 +6867,9 @@ create_artifact_throne_of_castaher_effect = {
 			name = artifact_succession_title
 			value = title:k_umbar
 		}
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:k_umbar
 			date = 6689.1.1
@@ -6323,7 +6891,6 @@ create_artifact_spear_sealord_effect = {
 		visuals = spear_sealord
 		wealth = scope:wealth
 		quality = scope:quality
-		template = spear_sealord_template # Template is where you set restrictions on usability!
 		history = {
 			type = discovered
 			date = 7013.1.1
@@ -6339,6 +6906,7 @@ create_artifact_spear_sealord_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = spear_sealord
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6372,6 +6940,7 @@ create_artifact_serpent_headdress_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = serpent_headdress
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6405,6 +6974,7 @@ create_artifact_scorpion_sting_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = scorpion_sting
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6438,6 +7008,7 @@ create_artifact_naluzor_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = naluzor
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6464,7 +7035,7 @@ create_artifact_bones_batou_joche_effect = {
 			type = created
 			date = 4930.1.1
 			recipient = character:lineofjoamtuv1 #Joam-Tuv
-			location = province:1578 #Joam 
+			location = province:1578 #Joam
 		}
 		modifier = bones_batou_joche_modifier
 		save_scope_as = newly_created_artifact
@@ -6475,6 +7046,7 @@ create_artifact_bones_batou_joche_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = bones_batou_joche
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6509,6 +7081,7 @@ create_artifact_shield_malador_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = shield_malador
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6544,6 +7117,7 @@ create_artifact_storms_wrath_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = storms_wrath
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6578,6 +7152,7 @@ create_artifact_cloak_ancient_ones_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = cloak_ancient_ones
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6606,6 +7181,7 @@ create_artifact_silver_sword_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = silver_sword
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6640,8 +7216,9 @@ create_artifact_heart_vatra_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = heart_vatra
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:k_ray
 			date = 6900.1.1
@@ -6682,6 +7259,7 @@ create_artifact_skull_bolg_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = skull_bolg
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6720,8 +7298,9 @@ create_artifact_telperion_chalice_effect = {
 			value = title:k_dorwinion
 		}
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Gil-galad gives the chalice to Oropher
 			type = given
 			date = 4023.1.1
@@ -6742,7 +7321,7 @@ create_artifact_telperion_chalice_effect = {
 			date = 6839.12.20
 		}
 	}
-}	
+}
 
 create_artifact_bard_bow_effect = {
 	# Get the character the artifact is being made for.
@@ -6761,9 +7340,9 @@ create_artifact_bard_bow_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 4026.1.1
+			date = 6965.1.1
 			recipient = character:lineofdale46 #Bard
-			location = province:3395 #Esgaroth		
+			location = province:3395 #Esgaroth
 		}
 		modifier = bard_bow_modifier
 		save_scope_as = newly_created_artifact
@@ -6778,8 +7357,9 @@ create_artifact_bard_bow_effect = {
 			value = title:k_dale
 		}
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 7010.1.1
@@ -6825,8 +7405,9 @@ create_artifact_throne_ovatha_effect = {
 			value = title:e_khand
 		}
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:c_madh_ortogh
 			date = 6966.6.22
@@ -6854,7 +7435,7 @@ create_artifact_crown_bountig_effect = {
 			date = 6799.8.29
 			recipient = character:bountigmedlokan #Bountig
 			location = province:3635 #Mistrand
-			
+
 		}
 		modifier = crown_bountig_modifier
 		save_scope_as = newly_created_artifact
@@ -6869,15 +7450,16 @@ create_artifact_crown_bountig_effect = {
 			value = title:e_golden_realm_rhun
 		}
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_title_history = {
 			target = title:e_golden_realm_rhun
 			date = 6839.4.22
 		}
 	}
 }
-	
+
 
 ### ADVENTURE ARTIFACTS ###
 
@@ -6909,6 +7491,7 @@ create_artifact_numenorean_figurine_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = numenorean_figurine
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6936,6 +7519,7 @@ create_artifact_numenorean_helm_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = numenorean_helm
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6964,6 +7548,7 @@ create_artifact_numenorean_shield_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = numenorean_shield
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -6990,6 +7575,7 @@ create_artifact_numenorean_steelbow_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = numenorean_steelbow
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7020,6 +7606,7 @@ create_artifact_guard_citadel_helm_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = guard_citadel_helm
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7048,6 +7635,7 @@ create_artifact_white_tree_branch_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = white_tree_branch
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7078,6 +7666,7 @@ create_artifact_dagger_westernesse_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = dagger_westernesse
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7105,6 +7694,7 @@ create_artifact_ranger_star_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ranger_star
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7134,6 +7724,7 @@ create_artifact_northron_horn_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = northron_horn
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7161,6 +7752,7 @@ create_artifact_northron_fibula_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = northron_fibula
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7188,6 +7780,7 @@ create_artifact_mundburgian_shield_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = mundburgian_shield
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7218,6 +7811,7 @@ create_artifact_elven_rope_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = elven_rope
 		set_variable = elven
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7247,6 +7841,7 @@ create_artifact_elven_brooch_effect = {
 		set_variable = elven_brooch
 		set_variable = elven
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7274,6 +7869,7 @@ create_artifact_lembas_bread_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = lembas_bread
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7303,6 +7899,7 @@ create_artifact_elven_cape_effect = {
 		set_variable = elven_cape
 		set_variable = elven
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7331,6 +7928,7 @@ create_artifact_miruvor_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = miruvor
 		set_variable = elven
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7358,6 +7956,7 @@ create_artifact_noldorin_tools_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = noldorin_tools
 		set_variable = elven
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7386,6 +7985,7 @@ create_artifact_eregion_gem_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = eregion_gem
 		set_variable = elven
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7414,6 +8014,7 @@ create_artifact_dwarven_tools_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = dwarven_tools
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7440,6 +8041,7 @@ create_artifact_mahal_figurine_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = mahal_figurine
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7468,6 +8070,7 @@ create_artifact_stonesinger_tablet_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = stonesinger_tablet
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7501,6 +8104,7 @@ create_artifact_mumak_rider_insignia_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = mumak_rider_insignia
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7529,6 +8133,7 @@ create_artifact_emblem_of_ladnoca_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = emblem_of_ladnoca
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7558,6 +8163,7 @@ create_artifact_flask_of_grog_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = flask_of_grog
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7585,6 +8191,7 @@ create_artifact_orc_whip_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = orc_whip
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7615,6 +8222,7 @@ create_artifact_dunlending_torc_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = dunlending_torc
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7645,6 +8253,7 @@ create_artifact_dorwinrim_chalice_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = dorwinrim_chalice
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7673,6 +8282,7 @@ create_artifact_rhunic_saddle_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = rhunic_saddle
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7700,6 +8310,7 @@ create_artifact_kine_drinking_horn_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = kine_drinking_horn
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7727,6 +8338,7 @@ create_artifact_walrus_tooth_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = walrus_tooth
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7753,7 +8365,7 @@ create_artifact_dragon_helm_of_dor_lomin_effect = {
 			type = created
 			date = 262.1.1
 			actor = character:lineoftelchar1  #Telchar
-			recipient = character:lineofdwalin5 # Azaghâl 
+			recipient = character:lineofdwalin5 # Azaghâl
 			location = province:4869 #Nogrod
 		}
 		modifier = dragon_helm_of_dor_lomin_modifier
@@ -7765,8 +8377,9 @@ create_artifact_dragon_helm_of_dor_lomin_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = dragon_helm_of_dor_lomin
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = given
 			date = 83.1.1
@@ -7811,7 +8424,7 @@ create_artifact_dragon_helm_of_dor_lomin_effect = {
 			type = inherited
 			date = 501.6.12
 			recipient = character:lineofhador5 #Hurin
-		}	
+		}
 	}
 }
 
@@ -7845,14 +8458,15 @@ create_artifact_dramborleg_effect = {
 		set_variable = dramborleg
 		set_variable = elven
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Earendil
 			type = inherited
 			date = 528.1.1
 			recipient = character:linefinwe26
 		}
-		add_artifact_history = { 
+		add_artifact_history = {
 			type = given
 			date = 542.9.10
 			recipient = character:lineofelros1 #Elros
@@ -7894,13 +8508,14 @@ create_artifact_anguirel_effect = {
 		set_variable = anguirel
 		set_variable = elven
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 402.1.1
 			recipient = character:linefinwe32 #Maeglin
-		}	
+		}
 	}
 }
 
@@ -7934,6 +8549,7 @@ create_artifact_anarion_helm_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = anarion_helm
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -7958,7 +8574,7 @@ create_artifact_black_arrow_effect = {
 			date = 6785.1.1
 			recipient = character:lineofdale36 #Girion
 			location = province:3390 #Dale
-			
+
 		}
 		modifier = black_arrow_modifier
 		save_scope_as = newly_created_artifact
@@ -7969,8 +8585,9 @@ create_artifact_black_arrow_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = black_arrow
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 6803.1.1
@@ -8022,6 +8639,7 @@ create_artifact_smaug_scale_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = smaug_scale
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8049,6 +8667,7 @@ create_artifact_smaug_skull_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = smaug_skull
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8084,6 +8703,7 @@ create_artifact_amroths_belt_effect = {
 		set_variable = amroths_belt
 		set_variable = elven
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8105,7 +8725,7 @@ create_artifact_nimrodel_gem_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 4026.1.1
+			date = 5000.1.1
 			recipient = character:lineofamdir2 #Amroth
 			location = province:3108 #Caras Galadhon
 		}
@@ -8119,6 +8739,7 @@ create_artifact_nimrodel_gem_effect = {
 		set_variable = nimrodel_gem
 		set_variable = elven
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8154,8 +8775,9 @@ create_artifact_laurelin_chalice_effect = {
 		set_variable = laurelin_chalice
 		set_variable = elven
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = { # Gil-galad gives the chalice to Oropher
 			type = given
 			date = 4023.1.1
@@ -8188,7 +8810,7 @@ create_artifact_sword_joam_tuv_effect = {
 			type = created
 			date = 4900.1.1
 			recipient = character:lineofjoamtuv1 #Joam-Tuv
-			location = province:1578 #Joam 
+			location = province:1578 #Joam
 		}
 		modifier = sword_joam_tuv_modifier
 		save_scope_as = newly_created_artifact
@@ -8199,6 +8821,7 @@ create_artifact_sword_joam_tuv_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = sword_joam_tuv
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8233,6 +8856,7 @@ create_artifact_forestel_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = forestel
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8267,32 +8891,33 @@ create_artifact_scroll_of_isildur_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = scroll_of_isildur
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 4035.10.5
-			recipient = character:lineofanarion5 # Meneldil 
+			recipient = character:lineofanarion5 # Meneldil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4191.8.2
-			recipient = character:lineofanarion7 # Cemendur 
+			recipient = character:lineofanarion7 # Cemendur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4271.11.20
-			recipient = character:lineofanarion8 # Eärendil 
+			recipient = character:lineofanarion8 # Eärendil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4357.8.23
-			recipient = character:lineofanarion9 # Anardil 
+			recipient = character:lineofanarion9 # Anardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4444.2.23
-			recipient = character:lineofanarion10 # Ostoher 
+			recipient = character:lineofanarion10 # Ostoher
 		}
 		add_artifact_history = {
 			type = inherited
@@ -8302,132 +8927,132 @@ create_artifact_scroll_of_isildur_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 4574.8.17
-			recipient = character:lineofanarion12 # Turambar 
+			recipient = character:lineofanarion12 # Turambar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4700.8.14
-			recipient = character:lineofanarion13 # Atanatar 
+			recipient = character:lineofanarion13 # Atanatar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4781.5.15
-			recipient = character:lineofanarion14 # Siriondil 
+			recipient = character:lineofanarion14 # Siriondil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4863.1.1
-			recipient = character:lineofanarion15 # Tarannon Falastur 
+			recipient = character:lineofanarion15 # Tarannon Falastur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4946.1.1
-			recipient = character:lineofanarion18 # Eärnil 
+			recipient = character:lineofanarion18 # Eärnil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4969.1.1
-			recipient = character:lineofanarion19 # Ciryandil 
+			recipient = character:lineofanarion19 # Ciryandil
 		}
 		add_artifact_history = { # Anarion, King of Gondor
 			type = inherited
 			date = 5048.1.1
-			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe 
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5182.1.1
-			recipient = character:lineofanarion21 # Atanatar Alcarin 
+			recipient = character:lineofanarion21 # Atanatar Alcarin
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5259.1.1
-			recipient = character:lineofanarion22 # Narmacil 
+			recipient = character:lineofanarion22 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5327.1.1
-			recipient = character:lineofanarion23 # Calmacil 
+			recipient = character:lineofanarion23 # Calmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5337.1.1
-			recipient = character:lineofanarion24 # Rómendacil 
+			recipient = character:lineofanarion24 # Rómendacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar 
+			recipient = character:lineofanarion26 # Valacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper 
+			recipient = character:lineofanarion53 # Castamir, the Usurper
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir 
+			recipient = character:lineofanarion29 # Aldamir
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion 
+			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil 
+			recipient = character:lineofanarion31 # Minardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar 
+			recipient = character:lineofanarion32 # Telemnar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor 
+			recipient = character:lineofanarion37 # Tarondor
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil 
+			recipient = character:lineofanarion38 # Telumehtar Umbardacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil 
+			recipient = character:lineofanarion39 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar 
+			recipient = character:lineofanarion40 # Calimehtar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher 
+			recipient = character:lineofanarion41 # Ondoher
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II 
+			recipient = character:lineofanarion50 # Eärnil II
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 6076.1.1
-			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor 
+			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
 		}
 		add_artifact_title_history = {
 			target = title:e_gondor_steward
@@ -8466,27 +9091,28 @@ create_artifact_statue_of_elros_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = statue_of_elros
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 4191.8.2
-			recipient = character:lineofanarion7 # Cemendur 
+			recipient = character:lineofanarion7 # Cemendur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4271.11.20
-			recipient = character:lineofanarion8 # Eärendil 
+			recipient = character:lineofanarion8 # Eärendil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4357.8.23
-			recipient = character:lineofanarion9 # Anardil 
+			recipient = character:lineofanarion9 # Anardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4444.2.23
-			recipient = character:lineofanarion10 # Ostoher 
+			recipient = character:lineofanarion10 # Ostoher
 		}
 		add_artifact_history = {
 			type = inherited
@@ -8496,67 +9122,67 @@ create_artifact_statue_of_elros_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 4574.8.17
-			recipient = character:lineofanarion12 # Turambar 
+			recipient = character:lineofanarion12 # Turambar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4700.8.14
-			recipient = character:lineofanarion13 # Atanatar 
+			recipient = character:lineofanarion13 # Atanatar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4781.5.15
-			recipient = character:lineofanarion14 # Siriondil 
+			recipient = character:lineofanarion14 # Siriondil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4863.1.1
-			recipient = character:lineofanarion15 # Tarannon Falastur 
+			recipient = character:lineofanarion15 # Tarannon Falastur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4946.1.1
-			recipient = character:lineofanarion18 # Eärnil 
+			recipient = character:lineofanarion18 # Eärnil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4969.1.1
-			recipient = character:lineofanarion19 # Ciryandil 
+			recipient = character:lineofanarion19 # Ciryandil
 		}
 		add_artifact_history = { # Anarion, King of Gondor
 			type = inherited
 			date = 5048.1.1
-			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe 
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5182.1.1
-			recipient = character:lineofanarion21 # Atanatar Alcarin 
+			recipient = character:lineofanarion21 # Atanatar Alcarin
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5259.1.1
-			recipient = character:lineofanarion22 # Narmacil 
+			recipient = character:lineofanarion22 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5327.1.1
-			recipient = character:lineofanarion23 # Calmacil 
+			recipient = character:lineofanarion23 # Calmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5337.1.1
-			recipient = character:lineofanarion24 # Rómendacil 
+			recipient = character:lineofanarion24 # Rómendacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar 
+			recipient = character:lineofanarion26 # Valacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 	}
 }
@@ -8591,32 +9217,33 @@ create_artifact_aldarion_erendis_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = aldarion_erendis
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 4035.10.5
-			recipient = character:lineofanarion5 # Meneldil 
+			recipient = character:lineofanarion5 # Meneldil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4191.8.2
-			recipient = character:lineofanarion7 # Cemendur 
+			recipient = character:lineofanarion7 # Cemendur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4271.11.20
-			recipient = character:lineofanarion8 # Eärendil 
+			recipient = character:lineofanarion8 # Eärendil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4357.8.23
-			recipient = character:lineofanarion9 # Anardil 
+			recipient = character:lineofanarion9 # Anardil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4444.2.23
-			recipient = character:lineofanarion10 # Ostoher 
+			recipient = character:lineofanarion10 # Ostoher
 		}
 		add_artifact_history = {
 			type = inherited
@@ -8626,67 +9253,67 @@ create_artifact_aldarion_erendis_effect = {
 		add_artifact_history = {
 			type = inherited
 			date = 4574.8.17
-			recipient = character:lineofanarion12 # Turambar 
+			recipient = character:lineofanarion12 # Turambar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4700.8.14
-			recipient = character:lineofanarion13 # Atanatar 
+			recipient = character:lineofanarion13 # Atanatar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4781.5.15
-			recipient = character:lineofanarion14 # Siriondil 
+			recipient = character:lineofanarion14 # Siriondil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4863.1.1
-			recipient = character:lineofanarion15 # Tarannon Falastur 
+			recipient = character:lineofanarion15 # Tarannon Falastur
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4946.1.1
-			recipient = character:lineofanarion18 # Eärnil 
+			recipient = character:lineofanarion18 # Eärnil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 4969.1.1
-			recipient = character:lineofanarion19 # Ciryandil 
+			recipient = character:lineofanarion19 # Ciryandil
 		}
 		add_artifact_history = { # Anarion, King of Gondor
 			type = inherited
 			date = 5048.1.1
-			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe 
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5182.1.1
-			recipient = character:lineofanarion21 # Atanatar Alcarin 
+			recipient = character:lineofanarion21 # Atanatar Alcarin
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5259.1.1
-			recipient = character:lineofanarion22 # Narmacil 
+			recipient = character:lineofanarion22 # Narmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5327.1.1
-			recipient = character:lineofanarion23 # Calmacil 
+			recipient = character:lineofanarion23 # Calmacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5337.1.1
-			recipient = character:lineofanarion24 # Rómendacil 
+			recipient = character:lineofanarion24 # Rómendacil
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar 
+			recipient = character:lineofanarion26 # Valacar
 		}
 		add_artifact_history = {
 			type = inherited
 			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar 
+			recipient = character:lineofanarion27 # Eldacar
 		}
 	}
 }
@@ -8714,6 +9341,7 @@ create_artifact_giant_bear_pelt_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = giant_bear_pelt
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8741,6 +9369,7 @@ create_artifact_goblin_crown_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = goblin_crown
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8774,6 +9403,7 @@ create_artifact_fram_spear_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = fram_spear
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8801,6 +9431,7 @@ create_artifact_axe_faderda_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = axe_faderda
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8825,7 +9456,7 @@ create_artifact_crown_ovatha_great_effect = {
 			date = 6000.1.1
 			recipient = character:lineofskakali1 #Ôvatha VI
 			location = province:2446 #Starlustsa Khand
-			
+
 		}
 		modifier = crown_ovatha_great_modifier
 		save_scope_as = newly_created_artifact
@@ -8840,6 +9471,7 @@ create_artifact_crown_ovatha_great_effect = {
 			value = title:e_khand
 		}
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8865,7 +9497,7 @@ create_narmacil_standard_effect = {
 			date = 5883.1.1
 			recipient = character:lineofanarion39 #Narmacil II
 			location = province:199 #Minas Tirith
-			
+
 		}
 		modifier = narmacil_standard_modifier
 		save_scope_as = newly_created_artifact
@@ -8876,6 +9508,7 @@ create_narmacil_standard_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = narmacil_standard
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8899,7 +9532,7 @@ create_ondoher_campaign_bed_effect = {
 			date = 5969.1.1
 			recipient = character:lineofanarion41 #Narmacil II
 			location = province:199 #Minas Tirith
-			
+
 		}
 		modifier = ondoher_campaign_bed_modifier
 		save_scope_as = newly_created_artifact
@@ -8909,6 +9542,7 @@ create_ondoher_campaign_bed_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ondoher_campaign_bed
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8933,7 +9567,7 @@ create_artifact_conquerors_war_chest_effect = {
 			date = 6431.12.22
 			recipient = character:lineofpultai1 #Narmacil II
 			location = province:3635 #Mistrand
-			
+
 		}
 		modifier = conquerors_war_chest_modifier
 		save_scope_as = newly_created_artifact
@@ -8944,6 +9578,7 @@ create_artifact_conquerors_war_chest_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = conquerors_war_chest
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -8977,11 +9612,12 @@ create_artifact_laegrist_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = laegrist
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
 
-create_artifact_turann_effect = { # The Forger of Rings. Celebrimbor's Hammer 
+create_artifact_turann_effect = { # The Forger of Rings. Celebrimbor's Hammer
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 	# Not really used, but if we don't set the scopes we get errors in the feature selection
@@ -9013,6 +9649,7 @@ create_artifact_turann_effect = { # The Forger of Rings. Celebrimbor's Hammer
 		set_variable = relic
 		set_variable = legendary_crafting_tool
 		equip_artifact_to_owner = yes
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -9048,8 +9685,9 @@ create_artifact_nardring_effect = { # Fëanor's Hammer
 		set_variable = elven # Currently unused variable, can uncomment once used
 		set_variable = relic
 		set_variable = legendary_crafting_tool
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = inherited
 			date = 2.12.2
@@ -9095,6 +9733,7 @@ create_artifact_azaghal_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = azaghal_helmet
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -9129,6 +9768,7 @@ create_artifact_lesser_ring_effect = {
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = lesser_ring
+		set_variable = lotr_unique
 		save_scope_as = epic
 	}
 }
@@ -9162,15 +9802,182 @@ create_artifact_nimphelos_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = nimphelos
 		set_variable = relic
+		set_variable = lotr_unique
 		save_scope_as = epic
-		
+
 		add_artifact_history = {
 			type = given
 			date = 2.12.2
 			recipient = character:lineofelwe3 #Elu Thingol
 		}
 	}
-	
+}
+
+create_artifact_royal_standard_cardolan_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = royal_standard_cardolan_name
+		description = royal_standard_cardolan_description
+		type = wall_big
+		visuals = tapestry
+		visuals_source = title:k_cardolan
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 4900.1.1
+			recipient = character:linecardolan1 #Thorondor
+		}
+		modifier = royal_standard_cardolan_modifier
+		save_scope_as = newly_created_artifact
+		decaying = yes
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = royal_standard_cardolan
+		set_variable = lotr_unique
+		save_scope_as = epic
+
+		add_artifact_history = {
+			type = inherited
+			date = 4969.1.1
+			recipient = character:linecardolan2 # Turambar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 	5034.1.1
+			recipient = character:linecardolan3 # Ciryon
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5112.1.1
+			recipient = character:linecardolan4 # Tarandil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5186.1.1
+			recipient = character:linecardolan5 # Calimendil
+		}
+	}
+}
+
+create_artifact_sceptre_of_umbar_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = sceptre_of_umbar_name
+		description = sceptre_of_umbar_description
+		type = regalia
+		visuals = sceptre_of_umbar
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = sceptre_of_umbar_modifier
+		template = sceptre_of_umbar_template
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = sceptre_of_umbar
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_crown_of_herumor_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_famed = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = crown_of_herumor_name
+		description = crown_of_herumor_description
+		type = helmet
+		visuals = crown
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = crown_of_bn_modifier
+		template = crown_of_bn_template
+		save_scope_as = newly_created_artifact
+		decaying = yes
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = crown_of_herumor
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_crown_of_fuinur_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_famed = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = crown_of_fuinur_name
+		description = crown_of_fuinur_description
+		type = helmet
+		visuals = crown
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = crown_of_bn_modifier
+		template = crown_of_bn_template
+		save_scope_as = newly_created_artifact
+		decaying = yes
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = crown_of_fuinur
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_badge_mirdain_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = badge_mirdain_name
+		description = badge_mirdain_description
+		type = brooch
+		visuals = badge_mirdain
+		template = elven_relic_misc_template
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = badge_mirdain_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = badge_mirdain
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
 }
 
 ### Nelornieth chain artifacts ###

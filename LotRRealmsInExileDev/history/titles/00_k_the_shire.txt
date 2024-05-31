@@ -713,9 +713,15 @@ c_northfarthing = {
 
 }
 
-b_greenfields = {
-    7003.8.16 = {
-        holder = lineoftook73 #Sigismond
+b_hardbottle = {
+    6918.1.1 = {
+        holder = lineofbracegirdle1 #Blanco Bracegirdle
+    }
+	6998.4.6 = {
+        holder = lineofbracegirdle2 #Bruno Bracegirdle
+    }
+	7043.12.22 = {
+        holder = lineofbracegirdle4 #Hugo Bracegirdle
     }
 }
 
@@ -785,5 +791,17 @@ c_westfarthing = {
     7032.3.24 = {
         holder = lineofwhitfoot1
         liege = k_shire
+    }
+}
+
+b_bywater = {
+    6965.1.1 = {
+        holder = lineofcotton0c #Holman Long Hom Cotton
+    }
+	7029.5.2 = {
+        holder = lineofcotton1 #Tolman Cotton
+    }
+	7072.9.22 = {
+        holder = lineofcotton2 #Tolman Cotton Jr
     }
 }

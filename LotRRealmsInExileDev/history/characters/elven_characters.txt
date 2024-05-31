@@ -28,6 +28,7 @@
 # Courtiers 
 #
 # Legend Seed Characters
+# Lenwë and Denethor
 
 # 7033 = T.A. 3000			
 
@@ -47,6 +48,7 @@ lineofingwe1 = {
 	trait = diligent			
 	trait = just			
 	trait = education_learning_4	
+	trait = twotreeslight
 	trait = sailed_west
 				
 	2.1.1 = {	#-4235.1.1		
@@ -57,7 +59,10 @@ lineofingwe1 = {
 		effect = {
 			set_relation_soulmate = character:lineofingwe2
 		}		
-	}						
+	}
+	2.3.1 = { #Sailed West
+		death = { death_reason = death_sailed_west }
+	}
 }
 lineofingwe2 = {				
 	name = Iminy_e_e 			
@@ -72,14 +77,15 @@ lineofingwe2 = {
 	trait = patient			
 	trait = just			
 	trait = education_learning_4
+	trait = twotreeslight
 	trait = sailed_west
 				
 	2.1.1 = {	#-4235.1.1		
 		birth = yes		
-	}						
-	2289.1.1 = {			
-		employer = lineofingwe3		
-	}						
+	}
+	2.3.1 = { #Sailed West
+		death = { death_reason = death_sailed_west }
+	}
 }
 lineofingwe3 = {				
 	name = Ingw_e_e # High King of the Elves			
@@ -108,7 +114,7 @@ lineofingwe3 = {
 		effect = {
 			set_relation_soulmate = character:lineofingwe4
 		}		
-	}					
+	}
 }
 lineofingwe4 = {				
 	name = Iliniel 			
@@ -121,6 +127,7 @@ lineofingwe4 = {
 	trait = content			
 	trait = brave			
 	trait = compassionate	
+	trait = twotreeslight
 	trait = sailed_west
 				
 	2.1.1 = {	#-3993.1.1		
@@ -275,13 +282,65 @@ lineoamarie = {
 ######################################				
 ##### The High King of the Noldor ####				
 ######################################				
+linefinwefather = { #Head of the Tatyar of Cuiviénen, father of Finwë, remained at Cuiviénen
+	name = Tata
+	religion = faith_eldar
+	culture = tatyar
 
+	trait = beauty_good_1
+	trait = physique_good_1
+
+	trait = education_stewardship_3
+	trait = just
+	trait = fickle
+	trait = diligent
+
+
+	2.1.1 = {	#-4235.1.1
+		birth = yes
+	}
+	2.1.1 = {	#-4235.1.1
+		add_spouse = linefinwemother
+		effect = {
+			set_relation_soulmate = character:linefinwemother
+		}
+	}
+	3130.1.1 = { # Disappears under mysterious circumstances
+		death = { death_reason = death_disappearance }
+	}
+}
+linefinwemother = { #wife of Tata
+	name = Taty_e_e 
+	religion = faith_eldar
+	culture = tatyar
+
+	female = yes
+
+	trait = beauty_good_1
+	trait = physique_good_1
+
+	trait = education_stewardship_3
+	trait = just
+	trait = patient
+	trait = content
+
+
+	2.1.1 = {	#-4235.1.1
+		birth = yes
+	}
+	3130.1.1 = { # Disappears under mysterious circumstances
+		death = { death_reason = death_disappearance }
+	}
+}
 linefinwe1 = {				
 	name = Finw_e_e_Nold_oran # High King of the Noldor			
 	dynasty = dynasty_finwe			
 	religion = faith_eldar			
 	culture = noldor
 	dna = finwe_dna
+
+	father = linefinwefather
+	mother = linefinwemother
 
 	diplomacy = 2
 	martial = 3
@@ -294,8 +353,8 @@ linefinwe1 = {
 	trait = physique_good_3			
 	trait = just			
 	trait = compassionate			
-	trait = brave	
-		
+	trait = brave
+
 	trait = twotreeslight	
 				
 	2.1.1 = {	#-3979.1.1		
@@ -344,6 +403,8 @@ linefinwe2 = {
 	trait = physique_good_3
 	trait = intellect_good_3
 	trait = lifestyle_blademaster
+	trait = lifestyle_artifact_crafting
+	trait = artificer
 	trait = arrogant
 	trait = brave
 	trait = zealous
@@ -676,6 +737,7 @@ linefinwe11 = {	# Second son of Fëanor, only to survive beyond the First Age - 
 	trait = physique_good_2			
 	trait = beauty_good_3
 	trait = lifestyle_blademaster
+	trait = poet
 	trait = education_diplomacy_3			
 	trait = patient			
 	trait = compassionate
@@ -880,6 +942,7 @@ linefinwe14 = {
 	trait = beauty_good_3			
 	trait = education_diplomacy_3			
 	trait = lifestyle_blademaster			
+	trait = lifestyle_artifact_crafting
 	trait = wrathful			
 	trait = callous			
 	trait = ambitious	
@@ -1024,7 +1087,8 @@ linefinwe18 = {
 	name = Celebrimbor			
 	dynasty_house = house_feanor			
 	religion = faith_eldar			
-	culture = noldor			
+	culture = noldor
+	dna = celebrimbor_dna	
 				
 	father = linefinwe14			
 	mother = linefinwe17	
@@ -1039,6 +1103,8 @@ linefinwe18 = {
 	trait = physique_good_3			
 	trait = education_stewardship_4			
 	trait = lifestyle_blademaster			
+	trait = lifestyle_artifact_crafting
+	trait = artificer
 	trait = compassionate			
 	trait = generous			
 	trait = just	
@@ -1049,7 +1115,6 @@ linefinwe18 = {
 		birth = yes
 		effect = { # Accounting for Noldor culture using Sindarin as primary on account of the Noldor of Middle-earth
 			learn_language = language_quenya
-            add_trait = lifestyle_artifact_crafting
 		}		
 	}			
 	2289.1.1 = {			
@@ -1959,7 +2024,7 @@ linefinwe38 = {
 }
 linefinwe39 = {				
 	name = Orodreth 			
-	dynasty_house = house_finarfin			
+	dynasty_house = house_orodreth
 	religion = faith_eldar			
 	culture = noldor
 	dna = orodreth_dna
@@ -2062,7 +2127,7 @@ linefinwe41 = {
 }
 linefinwe42 = {				
 	name = Finduilas 			
-	dynasty_house = house_finarfin			
+	dynasty_house = house_orodreth
 	religion = faith_eldar			
 	culture = noldor
 	dna = findulas_dna
@@ -2742,7 +2807,7 @@ lineofcirdan = { # Cirdan the Shipwright
 	dynasty = dynasty_nowe
 	religion = faith_eldar
 	culture = falathrim
-	dna = cirdan_dna
+	dna = cirdan2_dna
 	sexuality = heterosexual
 	
 	diplomacy = 9
@@ -3286,7 +3351,7 @@ lineofdaeron = { # Daeron of Doriath, greatest minstrel of the Elves (Maglor dis
 	}
 }
 
-lineofbeleg = { # Beleg Cúthalion, the Iron Bow of Doriath
+lineofbeleg = { # Beleg Cúthalion, the Strong Bow of Doriath
 	name = Beleg
 	dynasty = dynasty_beleg
 	religion = faith_eldar
@@ -3298,20 +3363,11 @@ lineofbeleg = { # Beleg Cúthalion, the Iron Bow of Doriath
 	trait = brave
 	trait = gregarious
 	trait = trusting
-	
-	trait = physique_good_2
-	trait = beauty_good_1
 	trait = strong
-	trait = lifestyle_hunter	
 	
 	
 	2.9.12 = {
 		birth = yes
-	}
-	486.1.1 = { #Beleg befriends Turin
-		effect = {
-			set_relation_friend = character:lineofhador7
-		}
 	}
 	489.1.1 = {
 		death = {
@@ -5350,13 +5406,26 @@ lineofvakuankka1 = {
 	learning = 7
 	prowess = 10
 
-	trait = education_learning_4
+	trait = education_martial_3
 	trait = intellect_good_2
 	trait = beauty_good_1
 	trait = depressed_1
+	trait = lifestyle_blademaster
 
 	2004.7.4 = {
 		birth = yes
+	}
+	4030.1.1 = {
+		give_nickname = nick_the_duckwarrior
+		    effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+			add_trait_xp = {
+				trait = lifestyle_blademaster 
+				value = 50
+			}
+        }
 	}
 }
 
@@ -7680,4 +7749,91 @@ nelorniethlegend3 = {
 	6104.6.7 = {
 		death = { death_reason = death_battle }
 	}
+}
+
+#####################################				
+##### Lenwë and Denethor         ####				
+#####################################
+
+lineoflenwe1 = {				
+	name = Lenw_e_e 			
+	dynasty = dynasty_lenwe			
+	religion = faith_eldar			
+	culture = nandor			
+				
+	trait = beauty_good_1			
+	trait = physique_good_2	
+	trait = intellect_good_2		
+	trait = content			
+	trait = compassionate			
+	trait = calm			
+	trait = education_diplomacy_4	
+				
+	2.1.1 = {			
+		birth = yes		
+	}			
+	2.2.1 = {			
+		add_spouse = lineoflenwe2
+		effect = {
+			set_relation_soulmate = character:lineoflenwe2
+		}		
+	}
+	2.12.1 = {		
+		death = {		
+			death_reason = death_vanished		
+		} 		
+	}						
+}
+
+lineoflenwe2 = {				
+	name = Eliniel 			
+	religion = faith_eldar			
+	culture = nandor			
+				
+	female = yes			
+				
+	trait = beauty_good_3			
+	trait = physique_good_1
+	trait = intellect_good_1			
+	trait = compassionate			
+	trait = patient			
+	trait = just			
+	trait = education_stewardship_3
+				
+	2.1.1 = {		
+		birth = yes		
+	}
+	2.12.1 = {		
+		death = {		
+			death_reason = death_vanished		
+		} 		
+	}											
+}
+
+lineoflenwe3 = {				
+	name = Denethor 			
+	dynasty = dynasty_lenwe			
+	religion = faith_eldar			
+	culture = laiquendi	
+
+	father = lineoflenwe1
+	mother = lineoflenwe2		
+				
+	trait = beauty_good_2			
+	trait = physique_good_3
+	trait = intellect_good_2			
+	trait = brave			
+	trait = stubborn			
+	trait = compassionate			
+	trait = education_martial_3
+	trait = forest_fighter
+				
+	2.1.1 = {			
+		birth = yes		
+	}			
+	2.12.1 = {		
+		death = {		
+			death_reason = death_battle		
+		} 		
+	}						
 }

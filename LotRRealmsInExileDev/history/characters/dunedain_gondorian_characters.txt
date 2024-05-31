@@ -827,6 +827,9 @@ lineofanarion26 = {
 	5283.1.1 = {				
 		add_spouse = linerhovanion3	
 	}
+	5355.1.1 = {				
+		add_trait = widowed	
+	}
 
 	5465.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -6867,6 +6870,7 @@ lebennin29 = {
 			learn_language = language_sindarin	
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 
 	7110.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -6896,6 +6900,7 @@ lebennin30 = {
 			learn_language = language_sindarin	
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 
 	7110.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -6923,6 +6928,7 @@ lebennin31 = {
 			learn_language = language_sindarin	
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 
 	7124.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -9410,8 +9416,10 @@ lineanfalas23 = {
 		birth = yes
 		effect = {
 			learn_language = language_sindarin
-		}			
+		}		
+			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7035.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -9438,6 +9446,7 @@ lineanfalas24 = {
 			learn_language = language_sindarin
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7103.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -9464,6 +9473,7 @@ lineanfalas25 = {
 			learn_language = language_sindarin
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7099.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -9486,8 +9496,9 @@ lineanfalas26 = {
 		birth = yes
 		effect = {
 			learn_language = language_sindarin
-		}			
+		}		
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7114.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -9510,8 +9521,9 @@ lineanfalas27 = {
 		birth = yes
 		effect = {
 			learn_language = language_sindarin
-		}			
+		}		
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7106.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -14658,6 +14670,10 @@ lebennin25 = {	#intermarried
 	7006.1.1 = {
 		add_spouse = lebennin19					
 	}
+	
+	7014.1.1 = {
+		add_character_modifier = mothered_many_children_lotr_modifier			
+	}
 
 	7072.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -14681,8 +14697,9 @@ linecelebhatol19 = {
 		birth = yes
 		effect = {
 			learn_language = language_sindarin	
-		}			
+		}		
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 
 	7097.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -14710,6 +14727,7 @@ linecelebhatol20 = {
 			learn_language = language_sindarin	
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 
 	7130.1.1 = {
 		death = { death_reason = death_natural_causes }
@@ -16798,6 +16816,7 @@ lineheledir23 = {
 			learn_language = language_sindarin
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7157.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -16822,8 +16841,9 @@ lineheledir24 = {
 		birth = yes
 		effect = {
 			learn_language = language_sindarin
-		}			
+		}		
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7147.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -16848,6 +16868,7 @@ lineheledir25 = {
 			learn_language = language_sindarin
 		}			
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 	7160.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
@@ -25026,12 +25047,10 @@ lineoflotu28 = {
 	female = yes
 
 	
-	trait = education_intrigue_1
 	trait = sadistic
 	trait = deceitful
 	trait = lustful
 	trait = beauty_good_2
-
 
 	trait = blood_of_numenor_3
 	6144.1.12 = {
@@ -27475,7 +27494,7 @@ lineofchief12 = {
 		birth = yes
 		effect = {
 			learn_language = language_sindarin	
-		}			
+		}		
 	}
 	
 	7030.1.20 = {
@@ -27487,6 +27506,7 @@ lineofchief12 = {
 			}
 		}
 	}
+	7033.1.1 = { employer = lineanfalas20 }
 
 	7130.1.1 = {
 		death = {				
@@ -27792,9 +27812,9 @@ lineofchief20 = {
 		birth = yes
 		effect = {
 			learn_language = language_sindarin	
-		}			
+		}	
 	}
-	
+	7033.1.1 = { employer = lineanfalas20 }
 	7014.10.30 = {
 			effect = {
 			add_trait = blind
@@ -28005,7 +28025,7 @@ Ristarehusband = {
 			learn_language = language_sindarin	
 		}			
 	}
-	
+	7033.1.1 = { employer = lineanfalas20 }
 	7005.10.2 = {
 		effect = {
 			add_trait = lifestyle_blademaster
@@ -28055,7 +28075,7 @@ lineofchief27 = {
 			learn_language = language_sindarin	
 		}			
 	}
-
+	7033.1.1 = { employer = lineanfalas20 }
 	7179.1.1 = {
 		death = {				
 			death_reason = death_natural_causes				
@@ -28153,7 +28173,7 @@ mordirson = {
 	trait = desert_warrior
 
 
-	trait = blood_of_numenor_2
+	trait = blood_of_numenor_1
 	7013.1.1 = {
 		birth = yes
 		effect = {
@@ -58230,7 +58250,7 @@ dynasty_dor_giril69 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6799.5.23 = {
         birth = yes
 		effect = {
@@ -58257,7 +58277,7 @@ dynasty_dor_giril70 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6819.12.14 = {
         birth = yes
 		effect = {
@@ -58283,7 +58303,7 @@ dynasty_dor_giril71 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6846.3.28 = {
         birth = yes
 		effect = {
@@ -58309,7 +58329,7 @@ dynasty_dor_giril72 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6864.5.7 = {
         birth = yes
 		effect = {
@@ -58336,7 +58356,7 @@ dynasty_dor_giril73 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6878.4.24 = {
         birth = yes
 		effect = {
@@ -58362,7 +58382,7 @@ dynasty_dor_giril74 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6903.6.9 = {
         birth = yes
 		effect = {
@@ -58388,7 +58408,7 @@ dynasty_dor_giril75 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6911.10.14 = {
         birth = yes
 		effect = {
@@ -58414,7 +58434,7 @@ dynasty_dor_giril76 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6915.11.26 = {
         birth = yes
 		effect = {
@@ -58440,7 +58460,7 @@ dynasty_dor_giril77 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6926.3.17 = {
         birth = yes
 		effect = {
@@ -58467,7 +58487,7 @@ dynasty_dor_giril78 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
     6937.12.23 = {
         birth = yes
 		effect = {
@@ -58493,7 +58513,7 @@ dynasty_dor_giril79 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     6986.6.12 = {
         birth = yes
 		effect = {
@@ -58520,7 +58540,7 @@ dynasty_dor_giril80 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7012.2.19 = {
         birth = yes
 		effect = {
@@ -58546,7 +58566,7 @@ dynasty_dor_giril81 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7069.10.24 = {
         birth = yes
 		effect = {
@@ -58573,7 +58593,7 @@ dynasty_dor_giril82 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7093.10.2 = {
         birth = yes
 		effect = {
@@ -58599,7 +58619,7 @@ dynasty_dor_giril83 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7123.5.6 = {
         birth = yes
 		effect = {
@@ -58625,7 +58645,7 @@ dynasty_dor_giril84 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7147.11.6 = {
         birth = yes
 		effect = {
@@ -58652,7 +58672,7 @@ dynasty_dor_giril85 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7164.9.9 = {
         birth = yes
 		effect = {
@@ -58678,7 +58698,7 @@ dynasty_dor_giril86 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7002.11.2 = {
         birth = yes
 		effect = {
@@ -58705,7 +58725,7 @@ dynasty_dor_giril87 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7021.3.24 = {
         birth = yes
 		effect = {
@@ -58731,7 +58751,7 @@ dynasty_dor_giril88 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7060.9.14 = {
         birth = yes
 		effect = {
@@ -58758,7 +58778,7 @@ dynasty_dor_giril89 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7086.8.16 = {
         birth = yes
 		effect = {
@@ -58784,7 +58804,7 @@ dynasty_dor_giril90 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7123.10.3 = {
         birth = yes
 		effect = {
@@ -58810,7 +58830,7 @@ dynasty_dor_giril91 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7139.12.19 = {
         birth = yes
 		effect = {
@@ -58836,7 +58856,7 @@ dynasty_dor_giril92 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7149.10.14 = {
         birth = yes
 		effect = {
@@ -58863,7 +58883,7 @@ dynasty_dor_giril93 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7163.1.26 = {
         birth = yes
 		effect = {
@@ -58889,7 +58909,7 @@ dynasty_dor_giril94 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7066.12.19 = {
         birth = yes
 		effect = {
@@ -58916,7 +58936,7 @@ dynasty_dor_giril95 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7080.5.7 = {
         birth = yes
 		effect = {
@@ -58942,7 +58962,7 @@ dynasty_dor_giril96 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7107.9.2 = {
         birth = yes
 		effect = {
@@ -58969,7 +58989,7 @@ dynasty_dor_giril97 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7126.5.13 = {
         birth = yes
 		effect = {
@@ -58995,7 +59015,7 @@ dynasty_dor_giril98 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7074.12.8 = {
         birth = yes
 		effect = {
@@ -59022,7 +59042,7 @@ dynasty_dor_giril99 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7097.2.20 = {
         birth = yes
 		effect = {
@@ -59048,7 +59068,7 @@ dynasty_dor_giril100 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7123.4.18 = {
         birth = yes
 		effect = {
@@ -59074,7 +59094,7 @@ dynasty_dor_giril101 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7125.1.19 = {
         birth = yes
 		effect = {
@@ -59100,7 +59120,7 @@ dynasty_dor_giril102 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7126.2.12 = {
         birth = yes
 		effect = {
@@ -59127,7 +59147,7 @@ dynasty_dor_giril103 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7147.6.23 = {
         birth = yes
 		effect = {
@@ -59153,7 +59173,7 @@ dynasty_dor_giril104 = {
     
 
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_1
     7003.3.26 = {
         birth = yes
 		effect = {
@@ -79942,7 +79962,7 @@ lineofmanwedur21 = {
 }
 
 lineofmanwedur22 = {
-    name = Mithrellas 
+    name = Mithrellas
     female = yes
 
     religion = faith_edain
@@ -85020,14 +85040,23 @@ eldariondna = {
 	trait = education_martial_3
 	trait = ambitious
 	trait = zealous
+	trait = blood_of_numenor_1
 	martial = 9
 
     7017.1.1 = {
         birth = yes
 		effect = {				
-			add_character_flag = do_not_prune							
+			add_character_flag = do_not_prune	
 		}
     }
+	7033.1.1 = {
+		effect = {
+			add_character_modifier = {
+				modifier = uncanny_health_lotr_modifier
+				years = 35
+			}
+		}
+	}
     7100.1.1 = {
         death = { death_reason = death_natural_causes }
     }
@@ -85046,14 +85075,23 @@ luthiendna = {
 	trait = intellect_good_1
 	trait = education_diplomacy_3
 	trait = honest
+	trait = blood_of_numenor_1
 	diplomacy = 9
 
     7017.1.1 = {
         birth = yes
 		effect = {				
-			add_character_flag = do_not_prune							
+			add_character_flag = do_not_prune					
 		}
     }
+	7033.1.1 = {
+		effect = {
+			add_character_modifier = {
+				modifier = uncanny_health_lotr_modifier
+				years = 35
+			}
+		}
+	}
     7100.1.1 = {
         death = { death_reason = death_natural_causes }
     }
@@ -85073,14 +85111,23 @@ indisdna = {
 	trait = education_stewardship_3
 	trait = just
 	trait = stubborn
+	trait = blood_of_numenor_1
 	stewardship = 9
 
     7017.1.1 = {
         birth = yes
 		effect = {				
-			add_character_flag = do_not_prune							
+			add_character_flag = do_not_prune				
 		}
     }
+	7033.1.1 = {
+		effect = {
+			add_character_modifier = {
+				modifier = uncanny_health_lotr_modifier
+				years = 35
+			}
+		}
+	}
     7100.1.1 = {
         death = { death_reason = death_natural_causes }
     }
@@ -85100,14 +85147,23 @@ altarieldna = {
 	trait = education_learning_3
 	trait = content
 	trait = diligent
+	trait = blood_of_numenor_1
 	learning = 9
 
     7017.1.1 = {
         birth = yes
 		effect = {				
-			add_character_flag = do_not_prune							
+			add_character_flag = do_not_prune				
 		}
     }
+	7033.1.1 = {
+		effect = {
+			add_character_modifier = {
+				modifier = uncanny_health_lotr_modifier
+				years = 35
+			}
+		}
+	}
     7100.1.1 = {
         death = { death_reason = death_natural_causes }
     }
@@ -85136,6 +85192,7 @@ dorhunen1 = {
 	trait = strong
 	trait = brave
 	trait = education_martial_3
+	trait = blood_of_numenor_8
 	
 	4621.1.1 = {
 		birth = yes
@@ -85155,6 +85212,7 @@ dorhunen2 = {
 	trait = diligent
 	trait = strong
 	trait = education_martial_2
+	trait = blood_of_numenor_8
 	
 	4759.1.1 = {
 		birth = yes
@@ -85173,6 +85231,7 @@ dorhunen3 = {
 	
 	trait = education_martial_2
 	trait = fickle
+	trait = blood_of_numenor_7
 	
 	4882.1.1 = {
 		birth = yes
@@ -85192,6 +85251,7 @@ dorhunen4 = { # Lords of Dagorlad
 	trait = education_martial_3
 	trait = giant
 	trait = brave
+	trait = blood_of_numenor_7
 	
 	5020.1.1 = {
 		birth = yes
@@ -85212,7 +85272,7 @@ boromir1 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_7
 	5087.1.1 = {
 		birth = yes
 	}
@@ -85252,7 +85312,7 @@ boromir3 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5201.1.1 = {
 		birth = yes
 	}
@@ -85272,7 +85332,7 @@ boromir4 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5261.1.1 = {
 		birth = yes
 	}
@@ -85292,7 +85352,7 @@ boromir5 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5326.1.1 = {
 		birth = yes
 	}
@@ -85312,7 +85372,7 @@ boromir6 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5389.1.1 = {
 		birth = yes
 	}
@@ -85331,6 +85391,7 @@ dorhunen5 = { # Lords of Men Rhunen
 	
 	trait = education_martial_1
 	trait = strategist
+	trait = blood_of_numenor_6
 	
 	5192.1.1 = {
 		birth = yes
@@ -85391,7 +85452,7 @@ caranthir3 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5350.1.1 = {
 		birth = yes
 	}
@@ -85411,7 +85472,7 @@ caranthir4 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5395.1.1 = {
 		birth = yes
 	}
@@ -85431,7 +85492,7 @@ caranthir5 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5468.1.1 = {
 		birth = yes
 	}
@@ -85451,7 +85512,7 @@ caranthir6 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5540.1.1 = {
 		birth = yes
 	}
@@ -85471,7 +85532,7 @@ caranthir7 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5603.1.1 = {
 		birth = yes
 		
@@ -85492,7 +85553,7 @@ caranthir8 = {
 	
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5668.1.1 = {
 		birth = yes
 	}
@@ -85514,7 +85575,7 @@ caranthir9 = {
 	trait = strong
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_4
 	5730.1.1 = {
 		birth = yes
 	}
@@ -85611,7 +85672,7 @@ dorhunen7 = {
 	mother = rhovanionwife1
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5426.1.1 = {
 		birth = yes
 	}
@@ -85635,7 +85696,7 @@ dorhunen13 = {
 	father = dorhunen7
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_4
 	5529.1.1 = {
 		birth = yes
 	}
@@ -85650,13 +85711,13 @@ aicawe = {
 	religion = faith_edain
 	culture = gondorian
 	
-	
+	trait = education_martial_4
 	trait = gregarious
 	trait = brave
 	trait = strong
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5586.1.1 = {
 		birth = yes
 	}
@@ -85677,7 +85738,7 @@ aicaweson1 = {
 	trait = patient
 	
 
-	trait = blood_of_numenor_6
+	trait = blood_of_numenor_5
 	5602.1.1 = {
 		birth = yes
 	}
@@ -85717,7 +85778,7 @@ aicaweson3 = {
 	trait = bubonic_plague
 	
 
-	trait = blood_of_numenor_4
+	trait = blood_of_numenor_5
 	5619.1.1 = {
 		birth = yes
 	}
@@ -85738,7 +85799,7 @@ aicaweson4 = {
 	trait = bubonic_plague
 	
 
-	trait = blood_of_numenor_4
+	trait = blood_of_numenor_5
 	5626.1.1 = {
 		birth = yes
 	}
@@ -85826,7 +85887,7 @@ dorhunen11 = {
 	trait = brave
 	
 
-	trait = blood_of_numenor_4
+	trait = blood_of_numenor_3
 	5806.1.1 = {
 		birth = yes
 	}
@@ -85848,7 +85909,7 @@ dorhunen12 = {
 	trait = beauty_good_1
 	
 
-	trait = blood_of_numenor_4
+	trait = blood_of_numenor_3
 	5851.1.1 = {
 		birth = yes
 	}
@@ -85888,7 +85949,7 @@ dorhunen14 = {
 	trait = beauty_good_1
 	
 
-	trait = blood_of_numenor_3
+	trait = blood_of_numenor_2
 	5931.1.1 = {
 		birth = yes
 	}

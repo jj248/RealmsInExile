@@ -18,6 +18,11 @@
 	nick_gaffer = {}
 	nick_roper = {}
 	nick_bombadil = {}
+	nick_flourdumpling = {}
+	nick_long_hom = {}
+	nick_the_greenhanded = {}
+	nick_daddy = {}
+	nick_old_noakes = {}
 	
 	# Eotheod Nicknames
 	nick_the_hapless = { is_bad = yes }
@@ -136,9 +141,9 @@
 	nick_parmaite = {}
 	# nick_the_great = {} # Already in vanilla
 	nick_star_watcher = {}
-	nick_the_mariner = {}
-	nick_the_vigilant = {}
-	nick_ship_builder = {}
+	nick_the_mariner_elros = {}
+	nick_the_vigilant_elros = {}
+	nick_ship_builder_elros = {}
 	nick_bright_sword = {}
 	nick_jewel_gatherer = {}
 	nick_shore_son = {}
@@ -188,6 +193,7 @@
 	nick_the_pale_elf = {}
 	nick_the_garden_gnome = {}
 	nick_halfelven = {}
+	nick_the_duckwarrior = {}
 
 	# Dwarven
 	nick_the_deathless = {}
@@ -680,3 +686,5 @@
 	nick_the_warmonger = {}
 	nick_the_cunning = {}
 	nick_the_quick_ironic = {}
+
+	nick_drake_slayer = {}

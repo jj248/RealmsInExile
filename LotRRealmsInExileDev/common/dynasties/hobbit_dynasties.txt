@@ -151,3 +151,69 @@ dynasty_gamgee = {
 	culture = "hobbit"
 	motto = dynn_gamgee_motto
 }
+
+dynasty_brockhouse = {
+	name = "dynn_brockhouse"
+	culture = "breelander"
+	motto = dynn_brockhouse_motto
+}
+
+dynasty_brown = {
+	name = "dynn_brown"
+	culture = "hobbit"
+	motto = dynn_brown_motto
+}
+
+dynasty_diggle = {
+	name = "dynn_diggle"
+	culture = "hobbit"
+	motto = dynn_diggle_motto
+}
+
+dynasty_lightfoot = {
+	name = "dynn_lightfoot"
+	culture = "hobbit"
+	motto = dynn_lightfoot_motto
+}
+
+dynasty_greenhand = {
+	name = "dynn_greenhand"
+	culture = "hobbit"
+	motto = dynn_greenhand_motto
+}
+
+dynasty_goodchild = {
+	name = "dynn_goodchild"
+	culture = "hobbit"
+	motto = dynn_goodchild_motto
+}
+
+dynasty_hayward = {
+	name = "dynn_hayward"
+	culture = "hobbit"
+	motto = dynn_hayward_motto
+}
+
+dynasty_maggot = {
+	name = "dynn_maggot"
+	culture = "hobbit"
+	motto = dynn_maggot_motto
+}
+
+dynasty_noakes = {
+	name = "dynn_noakes"
+	culture = "hobbit"
+	motto = dynn_noakes_motto
+}
+
+dynasty_sandyman = {
+	name = "dynn_sandyman"
+	culture = "hobbit"
+	motto = dynn_sandyman_motto
+}
+
+dynasty_twofoot = {
+	name = "dynn_twofoot"
+	culture = "hobbit"
+	motto = dynn_twofoot_motto
+}

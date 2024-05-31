@@ -15,6 +15,7 @@
 		NOT = {
 			is_orc = yes # Orcs don't go to college!
 			cannot_be_killed = yes
+			is_in_valinor = yes
 		}
 	}
 
@@ -1618,7 +1619,7 @@
 			NOT = { scope:host.location = scope:activity.activity_location }
 			scope:host.location = {
 				is_riverside_province = yes
-				geographical_region = world_europe
+				# geographical_region = world_europe #LotR
 				OR = {
 					terrain = farmlands
 					terrain = plains

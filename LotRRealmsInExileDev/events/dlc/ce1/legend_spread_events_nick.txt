@@ -5351,6 +5351,8 @@ legend_spread_events.5305 = {
 	trigger = {
 		any_neighboring_realm_same_rank_owner = {
 			is_available_healthy_ai_adult = yes
+			is_wastelands = no #LotR
+			NOT = { opposite_alignment = { TARGET = root } }
 			save_temporary_scope_as = potential_promoter_temp
 		}
 		promoted_legend ?= {
@@ -5367,6 +5369,8 @@ legend_spread_events.5305 = {
 		random_neighboring_realm_same_rank_owner = {
 			limit = {
 				is_available_healthy_ai_adult = yes
+				is_wastelands = no #LotR
+				NOT = { opposite_alignment = { TARGET = root } }
 			}
 
 			save_scope_as = potential_promoter
@@ -5656,6 +5660,8 @@ legend_spread_events.5310 = {
 		}
 		any_neighboring_top_liege_realm_owner = {
 			is_available_healthy_ai_adult = yes
+			is_wastelands = no #LotR
+			NOT = { opposite_alignment = { TARGET = root } }
 		}
 
 		OR = {
@@ -5674,6 +5680,8 @@ legend_spread_events.5310 = {
 		random_neighboring_top_liege_realm_owner = {
 			limit = {
 				is_available_healthy_ai_adult = yes
+				is_wastelands = no #LotR
+				NOT = { opposite_alignment = { TARGET = root } }
 			}
 
 			save_scope_as = potential_promoter
@@ -6251,6 +6259,12 @@ legend_spread_events.5320 = {
 					any_artifact_claimant = {
 						is_alive = no
 					}
+					
+					AND = { 
+						has_variable = ring_of_power
+						sauron_is_alive = yes
+					}
+					has_variable = silmaril
 				}
 			}
 
@@ -7623,14 +7637,10 @@ legend_spread_events.5410 = {
 	}
 
 	option = { # The tales of the Vinland were true!
-		name = legend_spread_events.5410.a
+		name = lotr_legend_spread_events.5410.a
 
 		trigger = {
-			# AND = { #LotR
-			# 	culture = { has_cultural_pillar = heritage_north_germanic }
-			# 	current_year >= 1000 #Use a rough estimate of when rumours of Vinland were beginning to propagate
-			# }
-			always = no #LotR
+			lotr_numenor_culture_trigger = yes
 		}
 
 		flavor = legend_spread_events.5410.a.flavor
@@ -7649,7 +7659,7 @@ legend_spread_events.5410 = {
 					title = legend_spread_events.5410.a.success
 
 					promoted_legend = {
-						set_legend_chapter = { name = discovery localization_key = legend_chapter_discovery_vinland }
+						set_legend_chapter = { name = discovery localization_key = legend_chapter_discovery_valinor }
 					}
 
 					promoted_legend = {
@@ -7906,7 +7916,7 @@ legend_spread_events.5415 = {
 legend_spread_events.5420 = {
 	type = character_event
 	title = legend_spread_events.5420.t
-	desc = legend_spread_events.5420.desc
+	desc = lotr_legend_spread_events.5420.desc
 	theme = legend
 	left_portrait = {
 		character = root

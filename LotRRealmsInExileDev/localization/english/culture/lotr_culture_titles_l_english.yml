@@ -39,8 +39,8 @@
  king_goblin_male:0 "Overboss"
  king_goblin_female:0 "Overboss"
  kingdom_goblin:0 "Vast Nest"
- emperor_goblin_male:0 "Great Goblin"
- emperor_goblin_female:0 "Great Goblin"
+ emperor_goblin_male:0 "Biggest Boss"
+ emperor_goblin_female:0 "Biggest Boss"
  empire_goblin:0 "Immense Hives"
  duke_goblin_town:0 "Goblin King"
  king_goblin_town:0 "Goblin King"
@@ -307,9 +307,9 @@
  dorwinion_master_merchant_male_count_title:0 "Patrician"
  dorwinion_winelord_female_count_title:0 "Vincountess"
  dorwinion_master_merchant_female_count_title:0 "Patrician"
- dorwinion_winelord_male_duke_title:0 "Margrave"
+ dorwinion_winelord_male_duke_title:0 "Magnate"
  dorwinion_master_merchant_male_duke_title:0 "Grand Patrician"
- dorwinion_winelord_female_duke_title:0 "Margravine"
+ dorwinion_winelord_female_duke_title:0 "Magnate"
  dorwinion_master_merchant_female_duke_title:0 "Grand Patrician"
  dorwinion_male_realm_master_title:0 "Realm-Master"
  dorwinion_female_realm_master_title:0 "Realm-Master"
@@ -386,20 +386,6 @@
 
  duchy_easterling:0 "[CHARACTER.Custom('easterling_duchy')]"
  county_easterling:0 "[CHARACTER.Custom('easterling_county')]"
-
- # vassal titles #
- count_oligarchy_male:0 "[CHARACTER.Custom('count_oligarchy_male')]"
- count_oligarchy_male_vassal:0 "Councilman"
- count_oligarchy_female:0 "[CHARACTER.Custom('count_oligarchy_female')]"
- count_oligarchy_female_vassal:0 "Councilwoman"
- duke_oligarchy_male:0 "[CHARACTER.Custom('duke_oligarchy_male')]"
- duke_oligarchy_male_vassal:0 "Upper Councilman"
- duke_oligarchy_female:0 "[CHARACTER.Custom('duke_oligarchy_female')]"
- duke_oligarchy_female_vassal:0 "Upper Councilwoman"
- king_oligarchy_male:0 "[CHARACTER.Custom('king_oligarchy_male')]"
- king_oligarchy_male_vassal:0 "Representative"
- king_oligarchy_female:0 "[CHARACTER.Custom('king_oligarchy_female')]"
- king_oligarchy_female_vassal:0 "Representative"
 
  count_feudal_male_ioriag:0 "Ôsvodeg"
  count_feudal_female_ioriag:0 "Ôsvodegah"
@@ -491,6 +477,20 @@
 
  independant_oligarchy_council_master:0 "Council Master"
  oligarch:0 "Council Master"
+ 
+ # vassal titles #
+ count_oligarchy_male:0 "[CHARACTER.Custom('count_oligarchy_male')]"
+ count_oligarchy_male_vassal:0 "Councilman"
+ count_oligarchy_female:0 "[CHARACTER.Custom('count_oligarchy_female')]"
+ count_oligarchy_female_vassal:0 "Councilwoman"
+ duke_oligarchy_male:0 "[CHARACTER.Custom('duke_oligarchy_male')]"
+ duke_oligarchy_male_vassal:0 "Upper Councilman"
+ duke_oligarchy_female:0 "[CHARACTER.Custom('duke_oligarchy_female')]"
+ duke_oligarchy_female_vassal:0 "Upper Councilwoman"
+ king_oligarchy_male:0 "[CHARACTER.Custom('king_oligarchy_male')]"
+ king_oligarchy_male_vassal:0 "Representative"
+ king_oligarchy_female:0 "[CHARACTER.Custom('king_oligarchy_female')]"
+ king_oligarchy_female_vassal:0 "Representative"
 
  ## Daen ##
  baron_daen_male:0 "Ardhi"
@@ -528,6 +528,9 @@
  duchy_hobbit:0 "Mayoralty"
  kingdom_hobbit:0 "Thaindom"
  empire_hobbit:0 "Lordship"
+ 
+ baron_archet_male:0 "Forrester"
+ baron_archet_female:0 "Forrester"
  
  ### Dwarves ###
 
@@ -581,12 +584,15 @@
 
  king_imladris_quenya:0 "Cáno" # Lord of Imladris
  queen_imladris_quenya:0 "Cáne" # Lady of Imladris
+ king_feanorian_host:0 "Hérohta" # Warlord
  
  ## Sindarin ##
  
  knight_sindarin:0 "Arben"
  count_sindarin:0 "Arodor"
+ count_female_sindarin:0 "Arodor"
  duke_sindarin:0 "Arphen"
+ duke_female_sindarin:0 "Arphen"
  king_male_sindarin:0 "Aran"
  king_female_sindarin:0 "Rían"
  emperor_male_sindarin:0 "Arandor"

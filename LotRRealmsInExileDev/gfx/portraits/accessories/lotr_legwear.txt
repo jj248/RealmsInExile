@@ -6,6 +6,10 @@ male_legwear_generic = {
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_legwear_generic_entity}
 }
 
+male_legwear_bombadil = {
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_legwear_bombadil_entity}
+}
+
 
 ## ROHAN ##
 
@@ -116,6 +120,26 @@ male_legwear_elven_war_01 = {
 female_legwear_elven_war_01 = {
 	set_tags = "shrink_legs"
 	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_legwear_elven_war_01_entity }
+}
+
+male_legwear_elven_war_noldor_01 = {
+	set_tags = "shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_legwear_elven_war_noldor_01_entity }
+}
+
+female_legwear_elven_war_noldor_01 = {
+	set_tags = "shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_legwear_elven_war_noldor_01_entity }
+}
+
+male_legwear_elven_war_galadhrim_01 = {
+	set_tags = "shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = male_legwear_elven_war_galadhrim_01_entity }
+}
+
+female_legwear_elven_war_galadhrim_01 = {
+	set_tags = "shrink_legs"
+	entity = { required_tags = ""		shared_pose_entity = torso		entity = female_legwear_elven_war_galadhrim_01_entity }
 }
 
 

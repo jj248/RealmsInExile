@@ -87,6 +87,7 @@ cloaks = {
 				highest_held_title_tier >= tier_kingdom
 				OR = {
 					portrait_elven_clothing_trigger = yes
+					portrait_lasgalendrim_clothing_trigger = yes
 					portrait_dalemen_clothing_trigger = yes
 					AND = { # Northron and non-tribal Woodmen Vale
 						portrait_northron_clothing_trigger = yes
@@ -853,6 +854,7 @@ cloaks = {
 				portrait_wear_armor_trigger = yes
 				portrait_elven_clothing_trigger = yes
 				culture = { has_cultural_pillar = heritage_lomiquendi }
+				NOT = { portrait_lasgalendrim_clothing_trigger = yes }
 			}		
 		}
 	}
@@ -891,6 +893,24 @@ cloaks = {
 			modifier = {
 				add = 1000
 				portrait_mountain_orc_clothing_trigger = yes
+			}		
+		}
+	}
+	
+	circumpolar_furs = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = polar_cloak
+				range = { 0 1 }
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				portrait_circumpolar_clothing_trigger = yes
 			}		
 		}
 	}

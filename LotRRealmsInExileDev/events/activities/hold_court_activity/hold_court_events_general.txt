@@ -19918,7 +19918,10 @@ hold_court.6210 = {
 			exists = scope:steward
 		}
 		if = {
-			limit = { is_elf = yes }
+			limit = { 
+				is_elf = yes
+				scope:6210_main_county = { is_elf = no }
+			}
 			scope:steward = {
 				set_council_task = {
 					task_type = task_elven_settlement
@@ -19927,7 +19930,10 @@ hold_court.6210 = {
 			}
 		}
 		else_if = {
-			limit = { is_orc = yes }
+			limit = { 
+				is_orc = yes
+				scope:6210_main_county = { is_orc = no }
+			}
 			scope:steward = {
 				set_council_task = {
 					task_type = task_ravage_the_land
@@ -23765,6 +23771,11 @@ hold_court.7050 = {
 		stress_impact = {
 			craven = medium_stress_gain
 			ambitious = minor_stress_gain
+		}
+		trigger = {
+			cannot_be_killed = no
+			is_elf = no #LotR
+			lotr_canon_safe_from_harm_trigger = no
 		}
 
 		hidden_effect = {
@@ -38259,6 +38270,7 @@ hold_court.8200 = {
 			hold_court_8200_infidel_trigger = yes
 			save_temporary_scope_as = other_temp
 		}
+
 		any_vassal = { # Is there another vassal of root faith who is not cynical and doesn't like the other one?
 			has_court_event_flag = no
 			is_available_ai_adult = yes
@@ -38270,7 +38282,18 @@ hold_court.8200 = {
 					has_friendly_relationship_trigger = { CHARACTER = prev }
 				}
 			}
+			save_temporary_scope_as = aggressor_vassal
 		}
+		trigger_if = {
+			limit = { scope:aggressor_vassal = { is_elf = yes } }
+			scope:other_temp = { is_human = yes faith_is_evil = yes }
+		}
+		trigger_else_if = {
+			limit = { scope:other_temp = { is_elf = yes } }
+			scope:aggressor_vassal = { is_human = yes faith_is_evil = yes }
+		}
+		trigger_else = { always = yes }
+		
 	}
 
 	weight_multiplier = {

@@ -463,6 +463,9 @@ autoerrorfixer_variable.1 = {
 		fix_variable_error = {ERROR = legendary_crafting_tool}
 		fix_variable_error = {ERROR = expedition_success_chance}
 		fix_variable_error = {ERROR = dwarven_expedition}
+		fix_variable_error = {ERROR = rallied_loyalist}
+		fix_variable_error = {ERROR = maglor_haruzan_event_troops}
+		fix_variable_error = {ERROR = is_lurtz}
 		fix_variable_error = {ERROR = dwarven_tools}
 		fix_variable_error = {ERROR = stonesinger_tablet}
 		fix_variable_error = {ERROR = mahal_figurine}
@@ -699,5 +702,35 @@ autoerrorfixer_variable.1 = {
 		fix_variable_error = {ERROR = narvi_legend}
 		fix_variable_error = {ERROR = accepted_promote_legend_var}
 		fix_variable_error = {ERROR = ringil}
+		fix_variable_error = {ERROR = reached_numenor_flag}
+
+		fix_variable_error = {ERROR = crafting_gems_list}
+		fix_variable_error = {ERROR = crafting_materials_list}
+		fix_variable_error = {ERROR = artifact_types_list}
+		fix_variable_error = {ERROR = prestige_crafting_materials_list}
+		fix_variable_error = {ERROR = story_artifact_crafting}
+		fix_variable_error = {ERROR = crafting_tools_artifact_icons}
+		fix_variable_error = {ERROR = trinket_artifact_icons}
+		fix_variable_error = {ERROR = enhancement_war_modifier_list}
+		fix_variable_error = {ERROR = enhancement_character_modifier_list}
+		fix_variable_error = {ERROR = helmet_artifact_icons}
+		fix_variable_error = {ERROR = base_stats_artifact_modifier_list}
+		fix_variable_error = {ERROR = enhancement_realm_modifier_list}
+		fix_variable_error = {ERROR = weapon_artifact_icons}
+		fix_variable_error = {ERROR = armor_artifact_icons}
+		fix_variable_error = {ERROR = climbed_meneltarma_flag}
+		fix_variable_error = {ERROR = regalia_artifact_icons}
+		fix_variable_error = {ERROR = crown_of_fuinur}
+		fix_variable_error = {ERROR = sceptre_of_umbar}
+		fix_variable_error = {ERROR = aeglos}
+		fix_variable_error = {ERROR = maglor_killed_balrog}
+		fix_variable_error = {ERROR = tutorial_completed}
+		fix_variable_error = {ERROR = quick_tutorial_selected}
+		fix_variable_error = {ERROR = tutorial_current_situation_gradual_reveal_1}
+		fix_variable_error = {ERROR = tutorial_current_situation_gradual_reveal_2}
+		fix_variable_error = {ERROR = intrigue_duel_on_attack}
+		fix_variable_error = {ERROR = tutorial_current_situation_gradual_reveal_3}
+		fix_variable_error = {ERROR = full_tutorial_selected}
+		fix_variable_error = {ERROR = tutorial_raised_troops}
 	}
 }

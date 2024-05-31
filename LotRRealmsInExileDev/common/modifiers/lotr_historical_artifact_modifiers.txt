@@ -56,13 +56,19 @@ ring_of_mortals_elves_modifier = {
 
 ring_of_mortals_nazgul_modifier = {
 	monthly_dynasty_prestige = 0.8
-	monthly_prestige = 0.8
+	monthly_prestige = 0.8	
+
+	dread_baseline_add = 5
+	enemy_hard_casualty_modifier = 0.05
 }
 
 ring_of_mortals_sauron_modifier = {
 	monthly_dynasty_prestige = 0.8
 	monthly_prestige = 0.8
-	domain_tax_mult = 0.02
+	domain_tax_mult = 0.02	
+
+	dread_baseline_add = 5
+	enemy_hard_casualty_modifier = 0.05
 }
 
 ring_of_mortals_orcs_modifier = {
@@ -226,7 +232,13 @@ rop_modifier = {
 	monthly_prestige = 0.5
 }
 
-
+aeglos_modifier = {
+	prowess_no_portrait = 17
+	pikemen_damage_mult = 0.25
+	pikemen_toughness_mult = 0.10
+	enemy_hard_casualty_modifier = 0.10
+	monthly_prestige = 0.3
+}
 
 ## Mordor & Nazgûl ##
 
@@ -247,6 +259,10 @@ vasa_modifier = {
 	prowess_per_prestige_level = 2
 	dread_baseline_add = 20
 	martial = 2
+	intimidated_vassal_tax_contribution_add = 0.10
+	intimidated_vassal_levy_contribution_add = 0.05
+	cowed_vassal_tax_contribution_add = 0.10
+	cowed_vassal_levy_contribution_add = 0.05
 }
 
 morgul_blade_modifier = {
@@ -344,8 +360,8 @@ durins_helm_modifier = {
 sting_modifier = { #Placeholder
 	prowess_no_portrait = 10
 	intrigue_per_prestige_level = 1	 
-	monthly_prestige = 1
-	monthly_dynasty_prestige_mult = 0.08
+	monthly_prestige = 0.5
+	owned_hostile_scheme_success_chance_add = 15
 }
 
 red_book_of_westmarch_modifier = { #Placeholder
@@ -355,6 +371,12 @@ red_book_of_westmarch_modifier = { #Placeholder
 	diplomacy = 1
 }
 
+mithril_mail_modifier = {
+	prowess_no_portrait = 20
+	monthly_prestige = 1
+	hostile_scheme_resistance_add = 100
+	courtly_tax_contribution_mult = 0.05
+}
 
 ## Mountain Orc ##
 
@@ -836,9 +858,9 @@ stonesinger_tablet_modifier = {
 mumak_rider_insignia_modifier = {
 	monthly_martial_lifestyle_xp_gain_mult = 0.15
 	court_grandeur_baseline_add = 4
-	monster_maintenance_mult = -0.1
-	monster_damage_mult = 0.1
-	monster_toughness_mult = 0.1
+	elephant_cavalry_maintenance_mult = -0.1
+	elephant_cavalry_damage_mult = 0.1
+	elephant_cavalry_toughness_mult = 0.1
 }
 
 emblem_of_ladnoca_modifier = {
@@ -1073,21 +1095,20 @@ laegrist_modifier = {
 	monthly_prestige = 0.5
 }
 
-turann_modifier = { # WIP
-	prowess_no_portrait = 20
+turann_modifier = {
 	monthly_prestige = 1
 	stewardship_per_prestige_level = 1
 	stewardship = 2
-	monthly_dynasty_prestige = 1.0
+	monthly_dynasty_prestige = 0.2
+	character_capital_county_monthly_development_growth_add = 0.05
 }
 
-nardring_modifier = { # WIP
-	prowess_no_portrait = 20
+nardring_modifier = {
 	monthly_prestige = 1
 	stewardship_per_prestige_level = 1
 	stewardship = 2
-	monthly_dynasty_prestige = 1.0
-	
+	monthly_dynasty_prestige = 0.2
+	character_capital_county_monthly_development_growth_add = 0.05
 }
 
 azaghal_helmet_modifier = {
@@ -1106,6 +1127,37 @@ lesser_ring_modifier = {
 	health = 3
 	stress_gain_mult = 0.1
 	stress_loss_mult = -0.1
+}
+
+royal_standard_cardolan_modifier = {
+	monthly_dynasty_prestige = 0.05
+	monthly_prestige = 0.5
+	court_grandeur_baseline_add = 4
+	monthly_prestige_gain_per_knight_add = 0.04
+	glory_hound_tax_contribution_mult = 0.04
+}
+
+sceptre_of_umbar_modifier = {
+	intimidated_vassal_tax_contribution_add = 0.05
+	intimidated_vassal_levy_contribution_add = 0.05
+	vassal_limit = 5
+	stewardship = 2
+	monthly_prestige = 0.5
+}
+
+crown_of_bn_modifier = {
+	monthly_prestige = 0.5
+	vassal_limit = 5
+	dread_baseline_add = 10
+	intimidated_vassal_tax_contribution_add = 0.05
+	intimidated_vassal_levy_contribution_add = 0.05
+}
+
+badge_mirdain_modifier = {
+	attraction_opinion = 10
+	monthly_piety = 0.8
+	character_capital_county_monthly_development_growth_add = 0.02
+	courtly_tax_contribution_mult = 0.04
 }
 
 ## Nelornieth chain artifacts

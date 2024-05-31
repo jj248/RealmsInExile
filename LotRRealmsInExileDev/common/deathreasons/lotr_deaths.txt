@@ -7,6 +7,11 @@ death_sailed_west = {
 	icon = "sailed_west.dds"
 }
 
+death_laid_down_life = {
+	natural = yes
+	icon = "death_natural.dds"
+}
+
 ### Event Deaths ###
 
 death_faded_grief = {
@@ -97,6 +102,10 @@ death_sandstorm = {
 	public_knowledge = yes
 	icon = "death_natural.dds"
 }
+death_durins_bane = {
+	public_knowledge = yes
+	icon = "death_murder.dds"
+}
 
 death_mining_accident = {
 	icon = "death_unknown.dds"
@@ -106,6 +115,12 @@ death_durins_bane = {
 	public_knowledge = yes
 	icon = "death_natural.dds"
 }
+
+death_troll = {
+	public_knowledge = yes
+	icon = "death_natural.dds"
+}
+
 
 ### Epidemic/Disease Deaths ###
 death_beardless_plague = {

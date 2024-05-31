@@ -144,6 +144,9 @@ decision_gundabad_ignite_the_forges = { # Fire up the war forges!
 			name = unavailable_unique_decisions
 			target = flag:decision_gundabad_ignite_the_forges
 		}
+		trigger_event = {
+			id = gundabad.0202
+		}
 	}
 
 	ai_potential = {
@@ -434,7 +437,7 @@ decision_gundabad_grey_mountains = { # Re-establish your kingdom
 		has_title = title:k_gundabad
 		has_title = title:k_grey_mountains
 		any_independent_ruler = {
-			count = 1
+			count < 1
 			custom_tooltip = {
 				text = decision_gundabad_grey_mountains_requirement
 				NOT = { has_culture = culture:wastelands }
@@ -443,6 +446,7 @@ decision_gundabad_grey_mountains = { # Re-establish your kingdom
 					kingdom = title:k_grey_mountains
 					title_province = { terrain = halls }
 				}
+				NOT = { this = root }
 			}
 		}
 	}

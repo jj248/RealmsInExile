@@ -4,6 +4,44 @@ castamir = {
 	type = legitimizing
 	quality = famed
 	is_shown = {
+		is_ai = no
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = castamir_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_northern_adunaic }
+			dynasty = dynasty:dynasty_kamal # Kamalaka
+		}
+		game_start_date >= 5481
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = must_own_umbar_or_gondor_tt
+			OR = {
+				has_title = title:k_umbar
+				has_title = title:e_umbar
+				has_title = title:e_castamir
+				has_title = title:e_gondor
+				has_title = title:e_gondor_steward
+				has_title = title:e_numenor_in_exile
+				has_title = title:e_reunitedkingdom
+			}
+		}
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofanarion53 # "Castamir - the Usurper"
+		title = title:e_gondor
+	}
+}
+castamir_ai = {
+	type = legitimizing
+	quality = mythical
+	is_shown = {
+		is_ai = yes
 		has_dlc_feature = legends
 		NOT = {
 			has_global_variable = castamir_legend
@@ -40,6 +78,39 @@ anarion = {
 	type = legitimizing
 	quality = famed
 	is_shown = {
+		is_ai = no
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = anarion_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_dunedain
+			NOR = {
+				any_parent_culture_or_above = { this = culture:dunedain_ranger }
+				this = culture:dunedain_ranger
+			}
+		}
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = must_be_a_king_in_greater_gondor_tt
+			capital_province = { geographical_region = custom_greater_gondor }
+			highest_held_title_tier >= tier_kingdom
+		}
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofanarion1 # "Anarion"
+		title = title:e_gondor
+	}
+}
+anarion_ai = {
+	type = legitimizing
+	quality = mythical
+	is_shown = {
+		is_ai = yes
 		has_dlc_feature = legends
 		NOT = {
 			has_global_variable = anarion_legend
@@ -71,6 +142,47 @@ isildur = {
 	type = legitimizing
 	quality = famed
 	is_shown = {
+		is_ai = no
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = isildur_legend
+		}
+		culture = { 
+			has_cultural_pillar = heritage_dunedain
+			OR = {
+				any_parent_culture_or_above = { this = culture:arnorian }
+				this = culture:arnorian
+				this = culture:dunedain
+			}
+		}
+		game_start_date >= 4035
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = must_hold_an_arnorian_kingdom_tt
+			OR = {
+				has_title = title:k_arthedain
+				has_title = title:k_cardolan
+				has_title = title:k_rhudaur
+				has_title = title:e_arnor
+				has_title = title:e_numenor_in_exile
+				has_title = title:e_reunitedkingdom
+			}
+		}
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineisildur0 # "Isildur"
+		title = title:e_arnor
+	}
+}
+isildur_ai = {
+	type = legitimizing
+	quality = mythical
+	is_shown = {
+		is_ai = yes
 		has_dlc_feature = legends
 		NOT = {
 			has_global_variable = isildur_legend
@@ -250,14 +362,35 @@ serkhoz = {
 	type = legitimizing
 	quality = famed
 	is_shown = {
+		is_ai = no
 		has_dlc_feature = legends
 		NOT = {
-			has_global_variable = pezar_legend
+			has_global_variable = serkhoz_legend
 		}
-		OR = {
-			culture = { has_cultural_pillar = heritage_igath }
-			dynasty = dynasty:dynasty_szrel
+		dynasty = dynasty:dynasty_szrel
+		game_start_date >=  4030
+	}
+	is_valid = {
+		prestige_level >= high_prestige_level
+		highest_held_title_tier >= tier_empire
+	}
+
+	chronicle = ancestral_glory
+	chronicle_properties = {
+		ancestor = character:lineofszrel1 #Surakhariz, Founder of the Szrel
+		title = title:e_szreldor
+	}
+}
+serkhoz_ai = {
+	type = legitimizing
+	quality = mythical
+	is_shown = {
+		is_ai = yes
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = serkhoz_legend
 		}
+		dynasty = dynasty:dynasty_szrel
 		game_start_date >=  4030
 	}
 	is_valid = {
@@ -301,7 +434,7 @@ dwalin = { # Dwalin the Wise
 	is_shown = {
 		has_dlc_feature = legends
 		NOT = {
-			has_global_variable = durin1_legend
+			has_global_variable = dwalin_legend
 		}
 		OR = {
 			culture = { has_cultural_pillar = heritage_broadbeam }
@@ -325,7 +458,7 @@ uri = { # Uri the Scarred
 	is_shown = {
 		has_dlc_feature = legends
 		NOT = {
-			has_global_variable = durin1_legend
+			has_global_variable = uri_legend
 		}
 		OR = {
 			culture = { has_cultural_pillar = heritage_firebeard }
@@ -343,17 +476,17 @@ uri = { # Uri the Scarred
 		title = title:e_blue_mountains
 	}
 }
-durin1 = { # Durin the Deathless
+thrar = { # Thrár the Proud
 	type = legitimizing
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
 		NOT = {
-			has_global_variable = durin1_legend
+			has_global_variable = thrar_legend
 		}
 		OR = {
-			culture = { has_cultural_pillar = heritage_longbeard }
-			dynasty = dynasty:dynasty_durin
+			culture = { has_cultural_pillar = heritage_blacklock }
+			dynasty = dynasty:dynasty_thrar
 		}
 	}
 	is_valid = {
@@ -363,8 +496,8 @@ durin1 = { # Durin the Deathless
 
 	chronicle = ancestral_glory
 	chronicle_properties = {
-		ancestor = character:lineofdurin1 # Durin the Deathless
-		title = title:e_misty_mountains
+		ancestor = character:lineofthrar0 # Thrár the Proud
+		title = title:e_yellow_mountains
 	}
 }
 gerontius = { # Old Took
@@ -507,13 +640,13 @@ wulf = {
 		title = title:k_rohan
 	}
 }
-tedjin_iorag = { # Tedjin claim to originate from the Iorags of Rhûn
+tedjin_ioriag = { # Tedjin claim to originate from the ioriags of Rhûn
 	type = heroic
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
 		NOT = {
-			has_global_variable = tedjin_iorag_legend
+			has_global_variable = tedjin_ioriag_legend
 		}
 		culture = {
 			has_cultural_pillar = heritage_tedjin
@@ -527,7 +660,7 @@ tedjin_iorag = { # Tedjin claim to originate from the Iorags of Rhûn
 
 	chronicle = ancient_people
 	chronicle_properties = {
-		culture = culture:iorag
+		culture = culture:ioriag
 		title = title:k_tedja
 		original_region = geographical_region:middleearth_rhun
 	}
@@ -606,6 +739,7 @@ turin = { # Turin Turambar
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
+		is_in_valinor = no
 		NOT = {
 			has_global_variable = turin_legend
 		}
@@ -627,6 +761,7 @@ tuor = { # Tuor
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
+		is_in_valinor = no
 		NOT = {
 			has_global_variable = tuor_legend
 		}
@@ -648,6 +783,7 @@ beren = { # Beren Erchamion
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
+		is_in_valinor = no
 		NOT = {
 			has_global_variable = beren_legend
 		}
@@ -669,12 +805,13 @@ elendil = { # Elendil the Tall
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
+		is_in_valinor = no
 		NOT = {
 			has_global_variable = elendil_legend
 		}
 		OR = {
 			culture = { has_cultural_pillar = heritage_dunedain }
-			is_elf = yes
+			is_eldar = yes
 		}
 	}
 	is_valid = {
@@ -693,14 +830,11 @@ fingolfin = { # Fingolfin
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
+		is_in_valinor = no
 		NOT = {
 			has_global_variable = fingolfin_legend
 		}
-		OR = {
-			#culture = { has_cultural_pillar = heritage_dunedain }
-			culture = { has_cultural_pillar = heritage_calaquendi }
-			is_elf = yes
-		}
+		is_eldar = yes
 	}
 	is_valid = {
 		is_landed = yes
@@ -866,7 +1000,7 @@ earendil_dunedain = { # Earendil
 	is_shown = {
 		has_dlc_feature = legends
 		NOT = {
-			has_global_variable = earendil_legend
+			has_global_variable = earendil_dunedain_legend
 		}
 		religion = religion:dunedain_religion
 	}
@@ -886,8 +1020,9 @@ earendil_elven = { # Earendil
 	quality = famed
 	is_shown = {
 		has_dlc_feature = legends
+		is_in_valinor = no
 		NOT = {
-			has_global_variable = earendil_legend
+			has_global_variable = earendil_elven_legend
 		}
 		religion = religion:elven_religion
 	}
@@ -908,7 +1043,7 @@ earendil_bellakari = { # Earendil
 	is_shown = {
 		has_dlc_feature = legends
 		NOT = {
-			has_global_variable = earendil_legend
+			has_global_variable = earendil_bellakari_legend
 		}
 		religion = religion:bellakari_religion
 	}

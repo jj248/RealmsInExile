@@ -56,6 +56,32 @@ remove_building_any_level = {
 	}
 }
 
+remove_duchy_building_any_level = {
+	if = {
+		limit = {
+			has_building_or_higher = $BUILDING$_01
+		}
+		if = {
+			limit = {
+				has_building = $BUILDING$_01
+			}
+			remove_building = $BUILDING$_01
+		}
+		else_if = {
+			limit = {
+				has_building = $BUILDING$_02
+			}
+			remove_building = $BUILDING$_02
+		}
+		else_if = {
+			limit = {
+				has_building = $BUILDING$_03
+			}
+			remove_building = $BUILDING$_03
+		}
+	}
+}
+
 ### ORC LIFESTYLE EFFECTS ###
 add_banner_orc_trait_effect = {
 	add_trait = banner_orc
@@ -125,7 +151,7 @@ add_explosive_engineer_trait_effect = {
 orc_shouty_mc_shoutface_effect = {
 	add_martial_skill = { 1 3 }
 	add_martial_lifestyle_xp = minor_lifestyle_xp
-	
+
 	stress_impact = {
 		calm = minor_stress_impact_gain
 		compassionate = medium_stress_impact_gain
@@ -224,8 +250,8 @@ hatred_of_free_peoples_effect = {
 remove_orc_enslavement_free_folk_county_effect = {
 	every_sub_realm_county = {
 		# if = {
-			limit = { has_county_modifier = orc_enslavement_free_folk_county_modifier }
-			remove_county_modifier = orc_enslavement_free_folk_county_modifier
+		limit = { has_county_modifier = orc_enslavement_free_folk_county_modifier }
+		remove_county_modifier = orc_enslavement_free_folk_county_modifier
 		# }
 	}
 }
@@ -370,5 +396,5 @@ hatred_of_free_peoples_humans_effect = {
 # 			}
 # 		}
 # 	}
-			
+
 # }

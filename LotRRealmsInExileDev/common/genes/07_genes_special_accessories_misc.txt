@@ -346,6 +346,41 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+			
+			bombadil_legwear = {
+				index = 27
+				male = {
+					1 = male_legwear_bombadil
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+			
+			elven_war_noldor_legwear = {
+				index = 28
+				male = {
+					1 = male_legwear_elven_war_noldor_01
+				}
+				female = {
+					1 = female_legwear_elven_war_noldor_01
+				}
+				boy = male
+				girl = female
+			}
+		
+		
+			elven_war_galadhrim_legwear = {
+				index = 29
+				male = {
+					1 = male_legwear_elven_war_galadhrim_01
+				}
+				female = {
+					1 = female_legwear_elven_war_galadhrim_01
+				}
+				boy = male
+				girl = female
+			}
 		}
 	
 		special_legwear = {
@@ -805,6 +840,22 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+			
+			polar_cloak = {
+				index = 31
+				male = { 
+					1 = empty
+					2 = male_furs_polar_01
+					2 = male_furs_polar_02
+					2 = male_furs_polar_03
+				}
+				female = { 
+					2 = empty
+					2 = female_furs_polar_01
+					2 = female_furs_polar_02
+					1 = female_furs_polar_03
+				}
+			}
 		}		
 	
 
@@ -1227,6 +1278,36 @@ special_genes = {
 				index = 44
 				male = {
 					1 = harad_spear_left_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			lasgalen_spear_left_hand = {
+				index = 45
+				male = {
+					1 = lasgalen_spear_left_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			orc_spear_left_hand = {
+				index = 46
+				male = {
+					1 = orc_spear_left_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			easterling_spear_left_hand = {
+				index = 47
+				male = {
+					1 = easterling_spear_left_hand
 				}
 				female = male
 				boy = male
@@ -1876,7 +1957,7 @@ special_genes = {
 			rohan_swords = {
 				index = 68
 				male = {
-					1 = rohan_sword
+					1 = herugrim_sword
 				}
 				female = male
 				boy = male
@@ -2111,6 +2192,116 @@ special_genes = {
 				index = 91
 				male = {
 					1 = harad_spear_right_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			lasgalen_spear_right_hand = {
+				index = 92
+				male = {
+					1 = lasgalen_spear_right_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			orc_spear_right_hand = {
+				index = 93
+				male = {
+					1 = orc_spear_right_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			lasgalen_sword = {
+				index = 94
+				male = {
+					1 = lasgalen_sword
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			noldor_sword = {
+				index = 95
+				male = {
+					1 = noldor_sword
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			umbaruz_sword = { 
+				index = 96
+				male = {
+					1 = umbaruz_sword
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			easterling_spear_right_hand = { 
+				index = 97
+				male = {
+					1 = easterling_spear_right_hand
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			orc_sword = { 
+				index = 98
+				male = {
+					1 = orc_sword
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			rohan_sword_01 = { 
+				index = 99
+				male = {
+					1 = rohan_sword_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			rohan_dagger = { 
+				index = 100
+				male = {
+					1 = rohan_dagger
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			black_numenorean_longsword_01 = { 
+				index = 101
+				male = {
+					1 = black_numenorean_longsword_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			ulairi_longsword_01 = { 
+				index = 102
+				male = {
+					1 = ulairi_longsword_01
 				}
 				female = male
 				boy = male

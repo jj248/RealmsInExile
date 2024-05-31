@@ -1,4 +1,44 @@
 texticon = {
+    icon = arnorian_bowmen_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/arnorian_bowmen.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = arnorian_cavalry_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/arnorian_cavalry.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = arnorian_soldiers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/arnorian_soldiers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = abrazanim_helberdiers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/abrazanim_helberdiers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = abrazanim_helberdiers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/abrazanim_helberdiers.dds"
@@ -102,6 +142,16 @@ texticon = {
     icon = bellanarud_auxiliaries_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/bellanarud_auxiliaries.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = belfalathric_bowmen_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/belfalathric_bowmen.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -219,6 +269,16 @@ texticon = {
 }
 
 texticon = {
+    icon = bozishnarud_battlemasters_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/bozishnarud_battlemasters.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = camel_rider_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/camel_rider.dds"
@@ -302,6 +362,16 @@ texticon = {
     icon = desert_javelineers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/desert_javelineers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = dragon_knight_horse_archers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/dragon_knight_horse_archers.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -539,6 +609,26 @@ texticon = {
 }
 
 texticon = {
+    icon = ephalzagar_an_adunai_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/ephalzagar_an_adunai.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = falathrim_haven_guard_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/falathrim_haven_guard.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = firebeard_skirmishers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/firebeard_skirmishers.dds"
@@ -592,6 +682,16 @@ texticon = {
     icon = fountain_guard_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/fountain_guard.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = gaian_stalkers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/gaian_stalkers.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -669,6 +769,27 @@ texticon = {
 }
 
 texticon = {
+    icon = goblin_skirmishers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/goblin_skirmishers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = goblin_warg_riders_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/goblin_warg_riders.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+
+texticon = {
     icon = gondorian_axemen_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/gondorian_axemen.dds"
@@ -712,6 +833,26 @@ texticon = {
     icon = gondor_rangers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/gondor_rangers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = gondor_archers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/gondor_archers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = gondorian_marines_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/gondorian_marines.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -769,6 +910,26 @@ texticon = {
 }
 
 texticon = {
+    icon = haradrim_radiers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/haradrim_radiers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = hasharin_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/hasharin.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = hillmen_skirmishers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/hillmen_skirmishers.dds"
@@ -812,6 +973,16 @@ texticon = {
     icon = hillmen_light_cavalry_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/hillmen_light_cavalry.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = hir_hathol_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/hir_hathol.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -939,6 +1110,16 @@ texticon = {
 }
 
 texticon = {
+    icon = knights_of_kharadune_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/knights_of_kharadune.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = loke_innas_rim_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/loke_innas_rim.dds"
@@ -1019,9 +1200,69 @@ texticon = {
 }
 
 texticon = {
+    icon = lossoth_ski_hunters_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/lossoth_ski_hunters.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = marchwardens_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/marchwardens.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = mahud_headhunters_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/mahud_headhunters.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = merchant_heavy_infantry_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/merchant_heavy_infantry.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = mountainorc_warriors_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/mountainorc_warriors.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = nafarati_marauders_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/nafarati_marauders.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = narudbriyig_hillriders_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/narudbriyig_hillriders.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -1092,6 +1333,16 @@ texticon = {
     icon = nuinevari_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/nuinevari.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = olog_hai_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/olog_hai.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -1239,6 +1490,16 @@ texticon = {
 }
 
 texticon = {
+    icon = siege_tower_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/siege_tower.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = silvan_rangers_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/silvan_rangers.dds"
@@ -1379,9 +1640,39 @@ texticon = {
 }
 
 texticon = {
+    icon = tedjin_khatajani_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/tedjin_khatajani.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = troll_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/troll.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = tulwangi_cliffwardens_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/tulwangi_cliffwardens.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = tulwangi_junglewalkers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/tulwangi_junglewalkers.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16
@@ -1449,6 +1740,26 @@ texticon = {
 }
 
 texticon = {
+    icon = variag_axemen_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/variag_axemen.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = variag_horse_archers_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/variag_horse_archers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = variag_pikemen_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/variag_pikemen.dds"
@@ -1489,6 +1800,16 @@ texticon = {
 }
 
 texticon = {
+    icon = wardens_of_annuminas_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/wardens_of_annuminas.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
     icon = windriders_of_khand_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/windriders_of_khand.dds"
@@ -1502,6 +1823,16 @@ texticon = {
     icon = undying_of_khazad_dum_icon
     iconsize = {
         texture = "gfx/interface/icons/regimenttypes/undying_of_khazad_dum.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = zagar_an_adunai_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/zagar_an_adunai.dds"
         size = { 25 25 }
         offset = { 0 6 }
         fontsize = 16

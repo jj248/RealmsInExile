@@ -23,6 +23,15 @@
 ## Gamgee - lineofgamgee
 ## Cotton - lineofcotton
 ## Sméagol - lineofgollum
+## Brockhouse - lineofbrockhouse
+## Brown - lineofbrown
+## Diggle - lineofdiggle
+## Lightfoot - lineoflightfoot
+## Greenhand - lineofgreenhand
+## Hayward - lineofhayward
+## Maggot - lineofmaggot
+## Noakes - lineofnoakes
+## Sandyman - lineofsandyman
 
 # Baggins
 
@@ -112,7 +121,7 @@ lineofbaggins4 = {
     }
 
     6886.4.23 = {
-        add_spouse = lineofbunce1
+        add_spouse = lineofbunce3
     }
 
     6944.6.12 = {
@@ -134,6 +143,10 @@ lineofbaggins5 = {
 
     6853.11.11 = {
         birth = yes
+    }
+	
+	6886.1.1 = {
+        add_spouse = lineofhornblower6b
     }
 
     6945.3.1 = {
@@ -174,6 +187,13 @@ lineofbaggins7 = {
     mother = lineofgrubb1
 
     sexuality = heterosexual
+	
+	trait = humble
+    trait = brave
+    trait = content
+    trait = scholar
+
+    trait = education_learning_2
 
     6879.10.8 = {
         birth = yes
@@ -362,6 +382,8 @@ lineofbaggins13 = {
 
     father = lineofbaggins9
     mother = lineofsackville1
+	
+	trait = greedy
 
     sexuality = heterosexual
 
@@ -387,6 +409,12 @@ lineofbaggins14 = {
 
     father = lineofbaggins13
     mother = lineofbracegirdle3
+	
+	martial = 4
+    intrigue = 9
+    prowess = 6
+    trait = education_intrigue_2
+	trait = greedy
 
     sexuality = heterosexual
 
@@ -417,8 +445,30 @@ lineofbaggins15 = {
     6936.11.15 = {
         birth = yes
     }
+	
+	6976.1.1 = {
+        add_spouse = lineofbaggins15wife
+    }
 
     7032.1.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbaggins15wife = {
+    name = Belba
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6938.1.16 = {
+        birth = yes
+    }
+
+    7034.2.27 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -432,6 +482,7 @@ lineofbaggins16 = {
     culture = hobbit
 
     father = lineofbaggins15
+	mother = lineofbaggins15wife
 
     sexuality = heterosexual
 
@@ -453,7 +504,7 @@ lineofbaggins17 = {
     culture = hobbit
 
     father = lineofbaggins4
-    mother = lineofbunce1
+    mother = lineofbunce3
 
     sexuality = heterosexual
 
@@ -474,15 +525,39 @@ lineofbaggins18 = {
     culture = hobbit
 
     father = lineofbaggins4
-    mother = lineofbunce1
+    mother = lineofbunce3
 
     sexuality = heterosexual
 
     6893.7.16 = {
         birth = yes
     }
+	
+	6934.1.1 = {
+        add_spouse = lineofbaggins18wife
+    }
+
 
     6981.9.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbaggins18wife = {
+    name = Pervinca
+	female = yes
+	
+    religion = faith_hobbit
+    culture = bucklander
+
+
+    sexuality = heterosexual
+
+    6894.1.6 = {
+        birth = yes
+    }
+
+    6988.9.3 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -495,6 +570,7 @@ lineofbaggins19 = {
     culture = hobbit
 
     father = lineofbaggins18
+	mother = lineofbaggins18wife
 
     sexuality = heterosexual
 
@@ -503,7 +579,7 @@ lineofbaggins19 = {
     }
 
     6977.11.8 = {
-        add_spouse = lineofbrownlock1
+        add_spouse = lineofbrownlock3
     }
 
     7024.11.15 = {
@@ -520,6 +596,7 @@ lineofbaggins20 = {
     culture = hobbit
 
     father = lineofbaggins18
+	mother = lineofbaggins18wife
 
     sexuality = heterosexual
 
@@ -540,15 +617,38 @@ lineofbaggins21 = {
     culture = hobbit
 
     father = lineofbaggins19
-    mother = lineofbrownlock1
+    mother = lineofbrownlock3
 
     sexuality = heterosexual
 
     6979.9.18 = {
         birth = yes
     }
+	
+	7013.1.1 = {
+        add_spouse = lineofbaggins21wife
+    }
 
     7051.12.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbaggins21wife = {
+    name = Adamanta
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+
+    sexuality = heterosexual
+
+    6977.1.8 = {
+        birth = yes
+    }
+
+    7071.1.2 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -561,7 +661,7 @@ lineofbaggins22 = {
     culture = hobbit
 
     father = lineofbaggins19
-    mother = lineofbrownlock1
+    mother = lineofbrownlock3
 
     sexuality = heterosexual
 
@@ -583,7 +683,7 @@ lineofbaggins23 = {
     culture = hobbit
 
     father = lineofbaggins19
-    mother = lineofbrownlock1
+    mother = lineofbrownlock3
 
     sexuality = heterosexual
 
@@ -605,6 +705,7 @@ lineofbaggins24 = {
     culture = hobbit
 
     father = lineofbaggins21
+	mother = lineofbaggins21wife
 
     sexuality = heterosexual
 
@@ -625,6 +726,7 @@ lineofbaggins25 = {
     culture = hobbit
 
     father = lineofbaggins5
+	mother = lineofhornblower6b
 
     sexuality = heterosexual
 
@@ -653,6 +755,10 @@ lineofbaggins26 = {
     mother = lineofbolger13
 
     sexuality = heterosexual
+	
+	trait = intellect_good_1
+    trait = poet
+    trait = education_learning_2
 
     6935.11.9 = {
         birth = yes
@@ -674,6 +780,9 @@ lineofbaggins27 = {
     mother = lineofbolger13
 
     sexuality = heterosexual
+	
+	trait = humble
+    trait = compassionate
 
     6941.3.16 = {
         birth = yes
@@ -703,8 +812,30 @@ lineofbaggins28 = {
     6944.8.24 = {
         birth = yes
     }
+	
+	6981.1.1 = {
+        add_spouse = lineofbaggins28wife
+    }
 
     7042.12.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbaggins28wife = {
+    name = Gardenia
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6943.8.4 = {
+        birth = yes
+    }
+	
+    7041.1.2 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -751,6 +882,7 @@ lineofbaggins30 = {
     culture = hobbit
 
     father = lineofbaggins28
+	mother = lineofbaggins28wife
 
     sexuality = heterosexual
 
@@ -763,16 +895,12 @@ lineofbaggins30 = {
     }
 }
 
-lineofbaggins31 = {
+lineofbaggins31 = {  #not a canon Baggins, made lowborn
     name = Daisy
     female = yes 
 
-    dynasty = dynasty_baggins
     religion = faith_hobbit
     culture = hobbit
-
-    father = lineofbaggins1
-    mother = lineofboffin5
 
     sexuality = heterosexual
 
@@ -1351,7 +1479,7 @@ lineoftook25 = {
     }
 
     7003.5.19 = {
-        add_spouse = lineofbanks1
+        add_spouse = lineofbanks3
     }
 
     7067.4.18 = {
@@ -1389,7 +1517,7 @@ lineoftook27 = {
     culture = hobbit
     
     father = lineoftook25
-    mother = lineofbanks1
+    mother = lineofbanks3
 
     sexuality = heterosexual
 
@@ -1411,7 +1539,7 @@ lineoftook28 = {
     culture = hobbit
     
     father = lineoftook25
-    mother = lineofbanks1
+    mother = lineofbanks3
 
     sexuality = heterosexual
 
@@ -1433,7 +1561,7 @@ lineoftook29 = {
     culture = hobbit
     
     father = lineoftook25
-    mother = lineofbanks1
+    mother = lineofbanks3
 
     sexuality = heterosexual
 
@@ -1454,7 +1582,7 @@ lineoftook30 = {
     culture = hobbit
     
     father = lineoftook25
-    mother = lineofbanks1
+    mother = lineofbanks3
 
     sexuality = heterosexual
 
@@ -3884,6 +4012,10 @@ lineofbrandybuck31 = {
     7015.8.19 = {
         birth = yes
     }
+	
+	7056.1.1 = {
+        add_spouse = lineofbolger9
+    }
 
     7120.2.2 = {
         death = { death_reason = death_natural_causes }
@@ -4261,7 +4393,9 @@ lineofbolger3 = {
         birth = yes
     }
 
-    ### TODO MARRIED DINA DIGGLE
+    6847.2.6 = {
+        add_spouse = lineofdiggle2
+    }
 
     6908.12.20 = {
         death = { death_reason = death_natural_causes }
@@ -4276,14 +4410,37 @@ lineofbolger4 = {
     culture = hobbit
 
     father = lineofbolger3
+	mother = lineofdiggle2
 
     sexuality = heterosexual
 
     6848.10.20 = {
         birth = yes
     }
+	
+	6886.2.6 = {
+        add_spouse = lineofbolger4wife
+    }
 
     6947.7.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbolger4wife = {
+    name = Mentha
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6849.1.21 = {
+        birth = yes
+    }
+
+    6949.2.1 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -4296,6 +4453,7 @@ lineofbolger5 = {
     culture = hobbit
 
     father = lineofbolger4
+	mother = lineofbolger4wife
 
     sexuality = heterosexual
 
@@ -4424,6 +4582,7 @@ lineofbolger10 = {
     culture = hobbit
 
     father = lineofbolger4
+	mother = lineofbolger4wife
 
     sexuality = heterosexual
 
@@ -4431,7 +4590,9 @@ lineofbolger10 = {
         birth = yes
     }
 
-    # TODO - Add Spouse Amethyst Hornblower
+    6933.1.1 = {
+        add_spouse = lineofhornblower7b
+    }
 
     6974.12.11 = {
         death = { death_reason = death_natural_causes }
@@ -4446,6 +4607,7 @@ lineofbolger11 = {
     culture = hobbit
 
     father = lineofbolger10
+	mother = lineofhornblower7b
 
     sexuality = heterosexual
 
@@ -4453,7 +4615,9 @@ lineofbolger11 = {
         birth = yes
     }
 
-    # TODO - Add Spouse Gerda Boffin
+    6974.1.1 = {
+        add_spouse = lineofboffin18
+    }
 
     7030.10.1 = {
         death = { death_reason = death_natural_causes }
@@ -4468,6 +4632,7 @@ lineofbolger12 = {
     culture = hobbit
 
     father = lineofbolger11
+	mother = lineofboffin18
 
     sexuality = heterosexual
 
@@ -4493,6 +4658,7 @@ lineofbolger13 = {
     culture = hobbit
 
     father = lineofbolger4
+	mother = lineofbolger4wife
 
     sexuality = heterosexual
 
@@ -4514,6 +4680,7 @@ lineofbolger14 = {
     culture = hobbit
 
     father = lineofbolger3
+	mother = lineofdiggle2
 
     sexuality = heterosexual
 
@@ -4591,8 +4758,30 @@ lineofbolger17 = {
     6813.7.20 = {
         birth = yes
     }
+	
+	6854.1.5 = {
+        add_spouse = lineofbolger17wife
+    }
 
     6894.2.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbolger17wife = {
+    name = Amethyst 
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6815.1.20 = {
+        birth = yes
+    }
+
+    6895.2.14 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -4605,6 +4794,7 @@ lineofbolger18 = {
     culture = hobbit
 
     father = lineofbolger17
+	mother = lineofbolger17wife
 
     sexuality = heterosexual
 
@@ -4637,7 +4827,9 @@ lineofbolger19 = {
         birth = yes
     }
 
-    # TODO Add Spouse Nina Lightfoot
+    6936.1.20 = {
+        add_spouse = lineoflightfoot2
+    }
 
     6980.2.11 = {
         death = { death_reason = death_natural_causes }
@@ -4652,6 +4844,7 @@ lineofbolger20 = {
     culture = hobbit
 
     father = lineofbolger19
+	mother = lineoflightfoot2
 
     sexuality = heterosexual
 
@@ -4777,6 +4970,10 @@ lineofhornblower1 = { # Invented Pipe-weed
     6654.11.22 = {
         birth = yes
     }
+	
+	6694.1.1 = {
+        add_spouse = lineofhornblower1wife
+    }
 
     6703.1.15 = {
 		give_nickname = nick_old_toby
@@ -4793,6 +4990,25 @@ lineofhornblower1 = { # Invented Pipe-weed
     }
 }
 
+lineofhornblower1wife = {
+    name = Tulip
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+
+    6656.1.2 = {
+        birth = yes
+    }
+
+    6750.1.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofhornblower2 = {
     name = Tobrand
 
@@ -4801,6 +5017,10 @@ lineofhornblower2 = {
     culture = hobbit
 
     father = lineofhornblower1
+	mother = lineofhornblower1wife
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     sexuality = heterosexual
 
@@ -4826,6 +5046,9 @@ lineofhornblower3 = {
 
     father = lineofhornblower2
     mother = lineofbrandybuck45
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     sexuality = heterosexual
 
@@ -4853,6 +5076,9 @@ lineofhornblower4 = {
     mother = lineoftook54
 
     sexuality = heterosexual
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     6778.5.7 = {
         birth = yes
@@ -4878,6 +5104,9 @@ lineofhornblower5 = {
     mother = lineofbrandybuck46
 
     sexuality = heterosexual
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     6813.7.19 = {
         birth = yes
@@ -4903,6 +5132,9 @@ lineofhornblower6 = {
     mother = lineofboffin16
 
     sexuality = heterosexual
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     6857.2.2 = {
         birth = yes
@@ -4913,6 +5145,28 @@ lineofhornblower6 = {
     }
 
     6943.1.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhornblower6b = {
+    name = Tanta
+	female = yes
+
+    dynasty = dynasty_hornblower
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofhornblower5
+    mother = lineofboffin16
+
+    sexuality = heterosexual
+
+    6853.1.1 = {
+        birth = yes
+    }
+
+    6950.1.12 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -4928,6 +5182,9 @@ lineofhornblower7 = {
     mother = lineofbaggins31
 
     sexuality = heterosexual
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     6897.11.26 = {
         birth = yes
@@ -4938,6 +5195,28 @@ lineofhornblower7 = {
     }
 
     6981.4.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhornblower7b = {
+    name = Amethyst
+	female = yes
+
+    dynasty = dynasty_hornblower
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofhornblower6
+    mother = lineofbaggins31
+
+    sexuality = heterosexual
+
+    6893.5.16 = {
+        birth = yes
+    }
+
+    6980.2.19 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -4953,6 +5232,9 @@ lineofhornblower8 = {
     mother = lineofbrandybuck20
 
     sexuality = heterosexual
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     6943.10.5 = {
         birth = yes
@@ -4977,15 +5259,38 @@ lineofhornblower9 = {
     father = lineofhornblower8
     mother = lineofbolger24
 
-    trait = hashishiyah
+    trait = lifestyle_gardener
+	trait = hashishiyah
 
     sexuality = heterosexual
 
     6985.6.12 = {
         birth = yes
     }
+	
+	7027.1.1 = {
+        add_spouse = lineofhornblower9wife
+    }
 
     7069.4.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhornblower9wife = {
+    name = Pervinca
+	female = yes
+	
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6988.7.12 = {
+        birth = yes
+    }
+
+    7080.12.23 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -4998,6 +5303,7 @@ lineofhornblower10 = {
     culture = hobbit
 
     father = lineofhornblower9
+	mother = lineofhornblower9wife
 
     sexuality = heterosexual
 
@@ -5019,6 +5325,7 @@ lineofhornblower11 = {
     culture = hobbit
 
     father = lineofhornblower9
+	mother = lineofhornblower9wife
 
     sexuality = heterosexual
 
@@ -5042,19 +5349,22 @@ lineofhornblower12 = {
     mother = lineofbolger24
 
     sexuality = homosexual
+	
+	trait = lifestyle_gardener
+	trait = hashishiyah
 
     trait = vengeful
     trait = craven
     trait = cynical
 
     diplomacy = 4
-    martial = 8
+    martial = 6
     stewardship = 3
     intrigue = 5
     learning = 1
-    prowess = 7
+    prowess = 6
 
-    trait = education_martial_2
+    trait = education_martial_1
 
     6991.7.10 = {
         birth = yes
@@ -5557,7 +5867,7 @@ lineofhornblower28 = {
 }
 
 lineofhornblower29 = {
-    name = Mango
+    name = Malva
     female = yes
 
     religion = faith_hobbit
@@ -5841,7 +6151,7 @@ lineofboffin5 = {
     female = yes
 
     dynasty = dynasty_boffin
-    religion = faith_edain
+    religion = faith_hobbit
     culture = hobbit
 
     father = lineofboffin1
@@ -5864,6 +6174,8 @@ lineofboffin6 = {
     dynasty = dynasty_boffin
     religion = faith_hobbit
     culture = hobbit
+	
+	trait = gluttonous
 
     father = lineofboffin2
     mother = lineofboffin2wife
@@ -5934,6 +6246,10 @@ lineofboffin8 = {
     6890.10.5 = {
         birth = yes
     }
+	
+	6931.7.12 = {
+        add_spouse = lineofbrockhouse3
+    }
 
     6989.1.19 = {
         death = { death_reason = death_natural_causes }
@@ -5955,8 +6271,55 @@ lineofboffin9 = {
     6893.1.25 = {
         birth = yes
     }
+	
+	6930.1.1 = {
+        add_spouse = lineofburrows1c
+    }
 
     6994.5.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin9a = {
+    name = Blaidoc
+
+    dynasty = dynasty_boffin
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofboffin9
+    mother = lineofburrows1c
+
+    sexuality = heterosexual
+
+    6933.1.1 = {
+        birth = yes
+    }
+
+    7032.4.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin9b = {
+    name = Mimosa
+	female = yes
+
+    dynasty = dynasty_boffin
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofboffin9
+    mother = lineofburrows1c
+
+    sexuality = heterosexual
+
+    6935.8.1 = {
+        birth = yes
+    }
+
+    7036.5.6 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -5976,6 +6339,10 @@ lineofboffin10 = {
 
     6898.9.1 = {
         birth = yes
+    }
+	
+	6946.7.12 = {
+        add_spouse = lineofbracegirdle1
     }
 
     6975.12.12 = {
@@ -5998,8 +6365,95 @@ lineofboffin11 = {
     6927.11.12 = {
         birth = yes
     }
+	
+	6969.1.12 = {
+        add_spouse = lineofboffin11wife
+    }
 
     7019.11.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin11wife = {
+    name = Lalia
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6930.9.12 = {
+        birth = yes
+    }
+
+    7022.11.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin11b = {
+    name = Vigo
+
+    dynasty = dynasty_boffin
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofboffin11
+    mother = lineofboffin11wife
+
+    sexuality = heterosexual
+
+    6970.11.12 = {
+        birth = yes
+    }
+	
+	7010.1.1 = {
+        add_spouse = lineofboffin11wife
+    }
+
+    7063.12.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin11bwife = {
+    name = Malva
+	female = yes 
+	
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6973.10.8 = {
+        birth = yes
+    }
+	
+    7073.8.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin11c = {
+    name = Folco
+
+    dynasty = dynasty_boffin
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofboffin11b
+    mother = lineofboffin11bwife
+
+    sexuality = heterosexual
+
+    7010.5.6 = {
+        birth = yes
+    }
+	
+
+    7095.2.7 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -6034,6 +6488,9 @@ lineofboffin15 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofboffin17
+	mother = lineofboffin17wife
 
     6977.9.3 = {
         birth = yes
@@ -6048,12 +6505,33 @@ lineofboffin15 = {
     }
 }
 
+lineofboffin15b = {
+    name = Tosto
+
+    dynasty = dynasty_boffin
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofboffin15
+	mother = lineofbaggins30
+
+    7021.10.3 = {
+        birth = yes
+    }
+
+    7122.9.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofboffin16 = {
     name = Jessamine
     female = yes
 
     dynasty = dynasty_boffin
-    religion = faith_edain
+    religion = faith_hobbit
     culture = hobbit
 
     father = lineofboffin1
@@ -6070,17 +6548,253 @@ lineofboffin16 = {
     }
 }
 
+lineofboffin17 = {
+    name = Gruffo
+
+    dynasty = dynasty_boffin
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofboffin8
+    mother = lineofbrockhouse3
+
+    sexuality = heterosexual
+
+    6933.11.5 = {
+        birth = yes
+    }
+	
+	6977.1.1 = {
+        add_spouse = lineofboffin17wife
+    }
+
+    7032.11.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin17wife = {
+    name = Berylla
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6935.1.5 = {
+        birth = yes
+    }
+
+    7033.8.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofboffin18 = {
+    name = Gerda
+	female = yes
+
+    dynasty = dynasty_boffin
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofboffin8
+    mother = lineofbrockhouse3
+
+    sexuality = heterosexual
+
+    6937.8.4 = {
+        birth = yes
+    }
+
+    7037.12.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#Brockhouse
+
+lineofbrockhouse1 = {
+    name = Uffo
+
+    dynasty = dynasty_brockhouse
+    religion = faith_hobbit
+    culture = breelander
+
+    sexuality = heterosexual
+
+    6840.1.5 = {
+        birth = yes
+    }
+	
+	6886.1.1 = {
+        add_spouse = lineofbrockhouse2
+    }
+
+    6935.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrockhouse2 = {
+    name = Laura
+	female = yes
+
+    religion = faith_hobbit
+    culture = breelander
+
+    sexuality = heterosexual
+
+    6845.1.2 = {
+        birth = yes
+    }
+
+    6946.5.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrockhouse3 = {
+    name = Sapphira
+	female = yes
+
+    dynasty = dynasty_brockhouse
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineofbrockhouse1
+    mother = lineofbrockhouse2
+
+    sexuality = heterosexual
+
+    6890.1.8 = {
+        birth = yes
+    }
+
+    6991.3.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrockhouse4 = {
+    name = William
+
+    dynasty = dynasty_brockhouse
+    religion = faith_hobbit
+    culture = breelander
+
+    father = lineofbrockhouse1
+    mother = lineofbrockhouse2
+
+    sexuality = heterosexual
+
+    6892.2.8 = {
+        birth = yes
+    }
+	
+	6926.1.1 = {
+        add_spouse = lineofbrockhouse5
+    }
+
+    6994.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrockhouse5 = {
+    name = Mimosa
+	female = yes
+
+    religion = faith_hobbit
+    culture = breelander
+
+    sexuality = heterosexual
+
+    6895.1.1 = {
+        birth = yes
+    }
+
+    6998.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrockhouse6 = {
+    name = Uffo
+
+    dynasty = dynasty_brockhouse
+    religion = faith_hobbit
+    culture = breelander
+
+    father = lineofbrockhouse4
+    mother = lineofbrockhouse5
+
+    sexuality = heterosexual
+
+    6946.2.7 = {
+        birth = yes
+    }
+
+    7047.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 # Goodenough
+
+lineofgoodenough0 = {
+    name = Adalgrim
+
+    dynasty = dynasty_goodenough
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6724.11.12 = {
+        birth = yes
+    }
+	
+	6764.1.1 = {
+        add_spouse = lineofgoodenough0wife
+    }
+
+    6820.11.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodenough0wife = {
+    name = Malva
+	female = yes
+	
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6723.11.12 = {
+        birth = yes
+    }
+
+    6818.11.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
 
 lineofgoodenough1 = {
     name = Ivy
     female = yes
 
     dynasty = dynasty_goodenough
-    religion = faith_edain
+    religion = faith_hobbit
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofgoodenough0
+	mother = lineofgoodenough0wife
 
     6764.3.2 = {
         birth = yes
@@ -6093,15 +6807,58 @@ lineofgoodenough1 = {
 
 # Grubb
 
+lineofgrubb0 = {
+    name = Mango
+
+    dynasty = dynasty_grubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6807.1.20 = {
+        birth = yes
+    }
+	
+	6746.1.1 = {
+        add_spouse = lineofgrubb0wife
+    }
+
+    6909.1.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb0wife = {
+    name = Tansy
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6806.1.2 = {
+        birth = yes
+    }
+
+    6904.11.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofgrubb1 = {
     name = Laura
     female = yes
 
     dynasty = dynasty_grubb
-    religion = faith_edain
+    religion = faith_hobbit
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofgrubb0
+	mother = lineofgrubb0wife
 
     6847.6.25 = {
         birth = yes
@@ -6117,10 +6874,13 @@ lineofgrubb2 = { #Sister of Laura
     female = yes
 
     dynasty = dynasty_grubb
-    religion = faith_edain
+    religion = faith_hobbit
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofgrubb0
+	mother = lineofgrubb0wife
 
     6845.10.26 = {
         birth = yes
@@ -6131,7 +6891,227 @@ lineofgrubb2 = { #Sister of Laura
     }
 }
 
+lineofgrubb3 = {
+    name = Percy
+
+    dynasty = dynasty_grubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofgrubb0
+	mother = lineofgrubb0wife
+
+    6851.2.2 = {
+        birth = yes
+    }
+	
+	6896.1.1 = {
+        add_spouse = lineofgrubb3wife
+    }
+
+    6952.1.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb3wife = {
+    name = Salvia
+	female = yes
+	
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+
+    6854.1.10 = {
+        birth = yes
+    }
+
+    6953.11.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb4 = {
+    name = Ilberic
+
+    dynasty = dynasty_grubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofgrubb3
+	mother = lineofgrubb3wife
+
+    6897.12.2 = {
+        birth = yes
+    }
+	
+	6927.1.1 = {
+        add_spouse = lineofgrubb4wife
+    }
+
+    7002.11.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb4wife = {
+    name = Tulip
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+
+    6898.2.2 = {
+        birth = yes
+    }
+
+    6992.1.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb5 = {
+    name = Mango
+
+    dynasty = dynasty_grubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofgrubb4
+	mother = lineofgrubb4wife
+
+    6928.1.1 = {
+        birth = yes
+    }
+	
+	6957.1.1 = {
+        add_spouse = lineofgrubb5wife
+    }
+
+    7025.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb5wife = {
+    name = Diamond
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6929.1.1 = {
+        birth = yes
+    }
+
+    7023.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb6 = {
+    name = Iago
+
+    dynasty = dynasty_grubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofgrubb5
+	mother = lineofgrubb5wife
+
+    6958.1.1 = {
+        birth = yes
+    }
+
+    7055.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgrubb7 = {
+    name = Tosser
+
+    dynasty = dynasty_grubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofgrubb5
+	mother = lineofgrubb5wife
+
+    6965.1.1 = {
+        birth = yes
+    }
+
+    7064.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 # Bracegirdle
+
+lineofbracegirdle1 = {
+    name = Blanco
+
+    dynasty = dynasty_bracegirdle
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6898.5.21 = {
+        birth = yes
+    }
+	
+	6946.7.12 = {
+        add_spouse = lineofboffin10
+    }
+
+    6998.4.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbracegirdle2 = {
+    name = Bruno
+
+    dynasty = dynasty_bracegirdle
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofbracegirdle1
+    mother = lineofboffin10
+
+    6946.11.8 = {
+        birth = yes
+    }
+	
+	6981.7.12 = {
+        add_spouse = lineofbracegirdle6
+    }
+
+    7043.12.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
 
 lineofbracegirdle3 = {
     name = Lobelia 
@@ -6142,12 +7122,41 @@ lineofbracegirdle3 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	trait = greedy
+	
+	father = lineofbracegirdle1
+    mother = lineofboffin10
 
     6951.7.24 = {
         birth = yes
     }
 
     7053.4.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbracegirdle4 = {
+    name = Hugo
+
+    dynasty = dynasty_bracegirdle
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofbracegirdle2
+	mother = lineofbracegirdle6
+	
+	trait = scholar
+    trait = education_learning_1
+
+    6983.8.1 = {
+        birth = yes
+    }
+
+    7074.9.5 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -6161,6 +7170,9 @@ lineofbracegirdle5 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofbracegirdle2
+	mother = lineofbracegirdle6
 
     6987.9.1 = {
         birth = yes
@@ -6171,7 +7183,65 @@ lineofbracegirdle5 = {
     }
 }
 
+lineofbracegirdle6 = {
+    name = Estella
+    female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6948.12.9 = {
+        birth = yes
+    }
+
+    7046.11.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 # Sackville
+
+lineofsackville0 = {
+    name = Odo 
+
+    dynasty = dynasty_sackville
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6853.1.7 = {
+        birth = yes
+    }
+	
+    6892.1.1 = {
+        add_spouse = lineofsackville0wife
+    }
+
+    6940.5.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofsackville0wife = {
+    name = Malva
+	female = yes 
+	
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6850.1.18 = {
+        birth = yes
+    }
+
+    6945.5.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
 
 lineofsackville1 = {
     name = Camellia 
@@ -6180,6 +7250,9 @@ lineofsackville1 = {
     dynasty = dynasty_sackville
     religion = faith_hobbit
     culture = hobbit
+	
+	father = lineofsackville0
+	mother = lineofsackville0wife
 
     sexuality = heterosexual
 
@@ -6194,6 +7267,46 @@ lineofsackville1 = {
 
 # Chubb
 
+lineofchubb0 = {
+    name = Filibert 
+
+    dynasty = dynasty_chubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6793.1.1 = {
+        birth = yes
+    }
+	
+	6822.1.1 = {
+        add_spouse = lineofchubb0wife
+    }
+
+    6885.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofchubb0wife = {
+    name = Mentha
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6795.1.1 = {
+        birth = yes
+    }
+
+    6889.1.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofchubb1 = {
     name = Adamanta 
     female = yes
@@ -6203,12 +7316,58 @@ lineofchubb1 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofchubb0
+	mother = lineofchubb0wife
 
     6823.11.2 = {
         birth = yes
     }
 
     6905.7.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofchubb1b = {
+    name = Falco 
+
+    dynasty = dynasty_chubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofchubb0
+	mother = lineofchubb0wife
+
+    6828.1.12 = {
+        birth = yes
+    }
+	
+	6868.1.1 = {
+        add_spouse = lineofchubb1bwife
+    }
+
+    6925.7.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofchubb1bwife = {
+    name = Daisy 
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+    6831.5.12 = {
+        birth = yes
+    }
+
+    6930.5.5 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -6222,6 +7381,9 @@ lineofchubb2 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofchubb1b
+	mother = lineofchubb1bwife
 
     6897.4.23 = {
         birth = yes
@@ -6232,9 +7394,135 @@ lineofchubb2 = {
     }
 }
 
+lineofchubb3 = {
+    name = Adalgrim 
+
+    dynasty = dynasty_chubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofchubb1b
+	mother = lineofchubb1bwife
+
+    6899.1.25 = {
+        birth = yes
+    }
+	
+	6948.1.1 = {
+        add_spouse = lineofchubb3wife
+    }
+
+    6999.6.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofchubb3wife = {
+    name = Nina
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6902.1.25 = {    
+        birth = yes
+    }
+
+    7003.1.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofchubb4 = {
+    name = Mango 
+
+    dynasty = dynasty_chubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofchubb3
+	mother = lineofchubb3wife
+
+    6970.4.25 = {
+        birth = yes
+    }
+
+    7079.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofchubb5 = {
+    name = Caramella
+    female = yes	
+
+    dynasty = dynasty_chubb
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofchubb3
+	mother = lineofchubb3wife
+
+    6975.4.1 = {
+        birth = yes
+    }
+
+    7078.10.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 # Bunce
 
 lineofbunce1 = {
+    name = Gerontius 
+
+    dynasty = dynasty_bunce
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6811.2.18 = {
+        birth = yes
+    }
+	
+	6850.1.1 = {
+        add_spouse = lineofbunce2
+    }
+
+    6912.11.25 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbunce2 = {
+    name = Malva 
+    female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6814.11.1 = {
+        birth = yes
+    }
+
+    6918.1.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbunce3 = {
     name = Mimosa 
     female = yes
 
@@ -6243,6 +7531,9 @@ lineofbunce1 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofbunce1
+	mother = lineofbunce2
 
     6851.5.19 = {
         birth = yes
@@ -6253,7 +7544,219 @@ lineofbunce1 = {
     }
 }
 
+lineofbunce4 = {
+    name = Heribald 
+
+    dynasty = dynasty_bunce
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofbunce1
+	mother = lineofbunce2
+
+    6856.1.1 = {
+        birth = yes
+    }
+	
+	6896.1.1 = {
+        add_spouse = lineofbunce4wife
+    }
+
+    6957.10.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbunce4wife = {
+    name = Mirabella
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6858.3.2 = {
+        birth = yes
+    }
+
+    6960.8.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbunce5 = {
+    name = Marroc 
+
+    dynasty = dynasty_bunce
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofbunce4
+	mother = lineofbunce4wife
+
+    6906.1.1 = {
+        birth = yes
+    }
+	
+	6956.1.1 = {
+        add_spouse = lineofbunce5wife
+    }
+
+    7006.1.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbunce5wife = {
+    name = Mentha
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6910.2.2 = {
+        birth = yes
+    }
+
+    7011.8.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbunce6 = {
+    name = Largo 
+
+    dynasty = dynasty_bunce
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofbunce5
+	mother = lineofbunce5wife
+
+    6966.1.1 = {
+        birth = yes
+    }
+
+    7068.1.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 # Burrows
+
+lineofburrows1a = { 
+    name = Lofast 
+
+    dynasty = dynasty_burrows
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6840.2.12 = {
+        birth = yes
+    }
+
+    6890.1.1 = {
+        add_spouse = lineofburrows1awife
+    }
+
+    6940.2.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofburrows1awife = { 
+    name = Alfrida 
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6845.6.1 = {
+        birth = yes
+    }
+
+    6948.1.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofburrows1b = { 
+    name = Longo 
+
+    dynasty = dynasty_burrows
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofburrows1a
+	mother = lineofburrows1awife
+
+    6891.6.20 = {
+        birth = yes
+    }
+
+    6940.1.1 = {
+        add_spouse = lineofburrows1bwife
+    }
+
+    6940.2.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofburrows1bwife = { 
+    name = Mentha 
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6895.1.17 = {
+        birth = yes
+    }
+
+    6998.8.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofburrows1c = { 
+    name = Druda
+	female = yes
+
+    dynasty = dynasty_burrows
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofburrows1a
+	mother = lineofburrows1awife
+
+    6893.4.14 = {
+        birth = yes
+    }
+
+    6992.8.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
 
 lineofburrows1 = {
     name = Rufus 
@@ -6263,6 +7766,9 @@ lineofburrows1 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofburrows1b
+	mother = lineofburrows1bwife
 
     6943.10.15 = {
         birth = yes
@@ -6389,6 +7895,46 @@ lineofburrows6 = {
 
 # Clayhanger
 
+lineofclayhanger0 = {
+    name = Rorimac 
+
+    dynasty = dynasty_clayhanger
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6856.1.22 = {
+        birth = yes
+    }
+	
+	6914.1.1 = {
+        add_spouse = lineofclayhanger0wife
+    }
+
+    6955.4.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofclayhanger0wife = {
+    name = Mimosa
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6858.12.22 = {
+        birth = yes
+    }
+
+    6959.12.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofclayhanger1 = {
     name = Lalia 
     female = yes
@@ -6396,6 +7942,9 @@ lineofclayhanger1 = {
     dynasty = dynasty_clayhanger
     religion = faith_hobbit
     culture = hobbit
+	
+	father = lineofclayhanger0
+	mother = lineofclayhanger0wife
 
     sexuality = heterosexual
     trait = education_diplomacy_3
@@ -6406,6 +7955,15 @@ lineofclayhanger1 = {
 
     6916.9.22 = {
         birth = yes
+    }
+	
+	7020.1.1 = {
+        give_nickname = nick_the_great
+        effect = {
+             add_character_flag = {
+                flag = had_nickname_event
+            }			
+        }
     }
 
     7035.4.3 = {
@@ -6453,28 +8011,73 @@ lineofproudfoot2 = {
     6937.10.17 = {
         birth = yes
     }
+	
+	6978.1.1 = {
+        add_spouse = lineofproudfoot2wife
+    }
 
     7038.12.28 = {
         death = { death_reason = death_natural_causes }
     }
 }
 
-lineofproudfoot3 = {
-    name = Olo 
-
-    dynasty = dynasty_proudfoot
+lineofproudfoot2wife = {
+    name = Marigold
+	female = yes
+	
     religion = faith_hobbit
     culture = hobbit
 
-    father = lineofproudfoot2
+    sexuality = heterosexual
+
+    6939.1.7 = {
+        birth = yes
+    }
+
+    7038.2.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofproudfoot3 = {
+    name = Olo	
+    
+	dynasty = dynasty_proudfoot
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofproudfoot2
+	mother = lineofproudfoot2wife
 
     sexuality = heterosexual
 
     6979.9.17 = {
         birth = yes
     }
+	
+	7020.1.1 = {
+        add_spouse = lineofproudfoot3wife
+    }
 
     7068.7.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofproudfoot3wife = {
+    name = Chica
+    female = yes	
+
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+
+    6977.9.7 = {
+        birth = yes
+    }
+
+    7064.7.17 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -6487,6 +8090,7 @@ lineofproudfoot4 = {
     culture = hobbit
 
     father = lineofproudfoot3
+	mother = lineofproudfoot3wife
 
     sexuality = heterosexual
 
@@ -6502,8 +8106,48 @@ lineofproudfoot4 = {
 # Banks
 
 lineofbanks1 = {
+    name =  Bungo
+
+    dynasty = dynasty_banks
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6938.8.17 = {
+        birth = yes
+    }
+    6958.6.20 = {
+        add_spouse = lineofbanks2
+    }
+    7031.5.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbanks2 = {
+    name = Erica
+    female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6937.8.17 = {
+        birth = yes
+    }
+    7027.5.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbanks3 = {
     name = Eglantine 
     female = yes
+
+    father = lineofbanks1
+    mother = lineofbanks2
 
     dynasty = dynasty_banks
     religion = faith_hobbit
@@ -6514,13 +8158,123 @@ lineofbanks1 = {
     6968.8.17 = {
         birth = yes
     }
-
     7071.5.13 = {
         death = { death_reason = death_natural_causes }
     }
 }
 
+lineofbanks4 = {
+    name = Willie
+
+    dynasty = dynasty_banks
+    religion = faith_hobbit
+    culture = breelander
+
+    sexuality = heterosexual
+	
+	father = lineofbanks1
+	mother = lineofbanks2
+
+    6965.1.1 = {
+        birth = yes
+    }
+	
+	6990.1.1 = {
+        add_spouse = lineofbanks5
+    }
+	
+	7030.1.1 = { #Lives in Archet
+		employer = lineofheathertoes5
+	}
+    7052.2.1 = { #Killed by Ruffians in Archet
+        death = { death_reason = death_battle }
+    }
+}
+
+lineofbanks5 = {
+    name = Olivia 
+    female = yes
+
+    religion = faith_hobbit
+    culture = breelander
+
+    sexuality = heterosexual
+
+    6970.1.1 = {
+        birth = yes
+    }
+	
+	7030.1.1 = { #Lives in Archet
+		employer = lineofheathertoes5
+	}
+	
+    7070.5.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbanks6 = {
+    name =  Basso
+
+    father = lineofbanks4
+    mother = lineofbanks5
+
+    dynasty = dynasty_banks
+    religion = faith_hobbit
+    culture = breelander
+
+    sexuality = heterosexual
+
+    6997.1.23 = {
+        birth = yes
+    }
+    7052.1.29 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+
 # Headstrong
+
+lineofheadstrong0 = {
+    name = Percy 
+
+    dynasty = dynasty_headstrong
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6729.1.12 = {
+        birth = yes
+    }
+	
+	6768.1.1 = {
+        add_spouse = lineofheadstrong0wife
+    }
+
+    6832.6.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofheadstrong0wife = {
+    name = Tulip
+	female = yes
+	
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6732.1.1 = {
+        birth = yes
+    }
+
+    6832.10.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
 
 lineofheadstrong1 = {
     name = Malva 
@@ -6531,6 +8285,9 @@ lineofheadstrong1 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofheadstrong0
+	mother = lineofheadstrong0wife
 
     6769.8.24 = {
         birth = yes
@@ -6543,6 +8300,46 @@ lineofheadstrong1 = {
 
 # Goldworthy
 
+lineofgoldworthy0 = {
+    name = Everard
+
+    dynasty = dynasty_goldworthy
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6739.1.24 = {
+        birth = yes
+    }
+	
+	6766.1.1 = {
+        add_spouse = lineofgoldworthy0wife
+    }
+
+    6822.12.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoldworthy0wife = {
+    name = Eglantine
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6742.1.1 = {
+        birth = yes
+    }
+
+    6832.2.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofgoldworthy1 = {
     name = Hanna 
     female = yes
@@ -6550,6 +8347,9 @@ lineofgoldworthy1 = {
     dynasty = dynasty_goldworthy
     religion = faith_hobbit
     culture = hobbit
+	
+	father = lineofgoldworthy0
+	mother = lineofgoldworthy0wife
 
     sexuality = heterosexual
 
@@ -6564,6 +8364,46 @@ lineofgoldworthy1 = {
 
 # Goold
 
+lineofgoold0 = {
+    name = Porto 
+
+    dynasty = dynasty_goold
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6897.12.28 = {
+        birth = yes
+    }
+	
+	6936.1.1 = {
+        add_spouse = lineofgoold0wife
+    }
+
+    7002.2.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoold0wife = {
+    name = Pansy 
+	female = yes
+
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+
+    6899.2.8 = {
+        birth = yes
+    }
+
+    7008.12.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofgoold1 = {
     name = Menegilda 
     female = yes
@@ -6573,6 +8413,9 @@ lineofgoold1 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofgoold0
+	mother = lineofgoold0wife
 
     6937.6.18 = {
         birth = yes
@@ -6585,6 +8428,46 @@ lineofgoold1 = {
 
 # Goodbody
 
+lineofgoodbody0 = {
+    name = Andwise 
+    
+	dynasty = dynasty_goodbody
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6770.1.1 = {
+        birth = yes
+    }
+	
+	6810.1.1 = {
+        add_spouse = lineofgoodbody0wife
+    }
+
+    6871.1.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodbody0wife = {
+    name = Melilot 
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6773.1.1 = {
+        birth = yes
+    }
+
+    6870.11.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofgoodbody1 = {
     name = Cora 
     female = yes
@@ -6592,10 +8475,13 @@ lineofgoodbody1 = {
     dynasty = dynasty_goodbody
     religion = faith_hobbit
     culture = hobbit
+	
+	father = lineofgoodbody0
+	mother = lineofgoodbody0wife
 
     sexuality = heterosexual
 
-    6812.1.20 = {
+    6811.1.20 = {
         birth = yes
     }
 
@@ -6604,9 +8490,203 @@ lineofgoodbody1 = {
     }
 }
 
+lineofgoodbody2 = {
+    name = Mango 
+
+    dynasty = dynasty_goodbody
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgoodbody0
+	mother = lineofgoodbody0wife
+
+    sexuality = heterosexual
+
+    6815.11.2 = {
+        birth = yes
+    }
+	
+	6846.1.1 = {
+        add_spouse = lineofgoodbody2wife
+    }
+
+    6905.6.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodbody2wife = {
+    name = Caramella 
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6818.1.12 = {
+        birth = yes
+    }
+
+    6915.10.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodbody3 = {
+    name = Togo 
+
+    dynasty = dynasty_goodbody
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgoodbody2
+	mother = lineofgoodbody2wife
+
+    sexuality = heterosexual
+
+    6855.1.3 = {
+        birth = yes
+    }
+	
+	6906.1.1 = {
+        add_spouse = lineofbaggins6
+    }
+
+    6945.10.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodbody4 = {
+    name = Fastolph 
+
+    dynasty = dynasty_goodbody
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgoodbody3
+	mother = lineofbaggins6
+
+    sexuality = heterosexual
+
+    6915.11.3 = {
+        birth = yes
+    }
+	
+	6946.1.1 = {
+        add_spouse = lineofgoodbody4wife
+    }
+
+    7005.2.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodbody4wife = {
+    name = Celandine 
+	female = yes
+
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+
+    6918.1.3 = {
+        birth = yes
+    }
+
+    7015.12.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodbody5 = {
+    name = Minto 
+
+    dynasty = dynasty_goodbody
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgoodbody4
+	mother = lineofgoodbody4wife
+
+    sexuality = heterosexual
+
+    6955.8.2 = {
+        birth = yes
+    }
+
+    7056.8.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodbody6 = {
+    name = Opal
+    female = yes	
+
+    dynasty = dynasty_goodbody
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgoodbody4
+	mother = lineofgoodbody4wife
+
+    sexuality = heterosexual
+
+    6960.1.22 = {
+        birth = yes
+    }
+
+    7062.5.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 # Brownlock
 
 lineofbrownlock1 = {
+    name = Ilberic 
+
+    dynasty = dynasty_brownlock
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6898.6.15 = {
+        birth = yes
+    }
+	
+	6936.1.1 = {
+        add_spouse = lineofbrownlock2
+    }
+
+    6999.8.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrownlock2 = {
+    name = Broomhild
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6900.7.12 = {
+        birth = yes
+    }
+
+    6938.1.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrownlock3 = {
     name = Gilly 
     female = yes
 
@@ -6615,6 +8695,9 @@ lineofbrownlock1 = {
     culture = hobbit
 
     sexuality = heterosexual
+	
+	father = lineofbrownlock1
+	mother = lineofbrownlock2
 
     6938.1.15 = {
         birth = yes
@@ -6639,6 +8722,7 @@ lineofwhitfoot1 = { # Mayor of the Shire at the WOTR
     trait = just
     trait = lifestyle_reveler
     trait = hashishiyah
+	trait = gluttonous
 
     diplomacy = 6
     martial = 4
@@ -6648,12 +8732,223 @@ lineofwhitfoot1 = { # Mayor of the Shire at the WOTR
     prowess = 3
 
     sexuality = heterosexual
+	
+	father = lineofwhitfoot2
+	mother = lineofwhitfoot3
 
     6972.3.12 = {
         birth = yes
     }
+	
+	7000.1.1 = {
+	    effect = {
+		     change_current_weight = 60
+		     change_target_weight = 60	
+        }
+    }
+	
+	7012.1.1 = {
+        add_spouse = lineofwhitfoot4
+    }
+	
+	7047.1.1 = {
+        give_nickname = nick_flourdumpling
+        effect = {
+             add_character_flag = {
+                flag = had_nickname_event
+            }			
+        }
+    }
 
-    7045.8.22 = {
+    7075.8.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot2 = {
+    name = Carl
+	
+    dynasty = dynasty_whitfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6930.2.1 = {
+        birth = yes
+    }
+	
+	6970.1.1 = {
+        add_spouse = lineofwhitfoot3
+    }
+
+    7030.3.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot3 = {
+    name = Columba
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6935.1.1 = {
+        birth = yes
+    }
+
+    7031.1.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot4 = {
+    name = Dora
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6975.5.1 = {
+        birth = yes
+    }
+
+    7080.1.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot5 = {
+    name = Flora
+	female = yes
+    
+	dynasty = dynasty_whitfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofwhitfoot1
+	mother = lineofwhitfoot4
+
+    7013.5.6 = {
+        birth = yes
+    }
+
+    7114.1.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot6 = {
+    name = Rose
+	female = yes
+    
+	dynasty = dynasty_whitfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofwhitfoot1
+	mother = lineofwhitfoot4
+
+    7015.1.2 = {
+        birth = yes
+    }
+
+    7115.4.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot7 = {
+    name = Rory
+    
+	dynasty = dynasty_whitfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofwhitfoot1
+	mother = lineofwhitfoot4
+
+    7018.1.2 = {
+        birth = yes
+    }
+
+    7113.7.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot8 = {
+    name = Tansy
+	female = yes
+    
+	dynasty = dynasty_whitfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofwhitfoot1
+	mother = lineofwhitfoot4
+
+    7020.11.11 = {
+        birth = yes
+    }
+
+    7118.12.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot9 = {
+    name = Percy
+    
+	dynasty = dynasty_whitfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofwhitfoot1
+	mother = lineofwhitfoot4
+
+    7022.1.1 = {
+        birth = yes
+    }
+
+    7119.3.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofwhitfoot10 = {
+    name = Lavender
+	female = yes
+    
+	dynasty = dynasty_whitfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofwhitfoot1
+	mother = lineofwhitfoot4
+
+    7028.9.10 = {
+        birth = yes
+    }
+
+    7122.4.5 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -6750,11 +9045,15 @@ lineofgamgee3 = { # "The Gaffer", Gardener at Bag End, married Bell Goodchild
 lineofgamgee3wife = {
     name = Bell
 	female = yes
-
+	
+    dynasty = dynasty_goodchild
  	religion = faith_hobbit
     culture = hobbit
 	
  	sexuality = heterosexual
+	
+	father = lineofgoodchild1
+	mother = lineofgoodchild1wife
 
     6960.8.20 = {
         birth = yes
@@ -6768,6 +9067,7 @@ lineofgamgee3wife = {
         death = { death_reason = death_natural_causes }
     }
 }
+
 lineofgamgee4 = {
     name = May
 	female = yes
@@ -6990,12 +9290,151 @@ lineofgamgee12 = { # nickname "Hal"
 
 # Cotton
 
-lineofcotton1 = { #of Bywater
+lineofcotton0 = {
+    name = Cottar
+
+	religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6853.4.4 = {
+        birth = yes
+    }
+	
+	6892.1.8 = {
+        add_spouse = lineofcotton0wife
+    }
+	
+    6948.9.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofcotton0wife = { 
+    name = Dina
+	female = yes
+
+	religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6855.4.6 = {
+        birth = yes
+    }
+	
+    6949.11.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofcotton0a = {  
+    name = Cotman
+
+	religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofcotton0
+	mother = lineofcotton0wife
+	
+    6893.6.2 = {
+        birth = yes
+    }
+	
+	6933.1.1 = {
+        add_spouse = lineofgreenhand6
+    }
+	
+    6992.12.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofcotton0b = {  
+    name = Carl
+
+	religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofcotton0
+	mother = lineofcotton0wife
+	
+    6896.1.2 = {
+        birth = yes
+    }
+	
+    6991.2.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofcotton0c = {   #First Cotton of Bywater
+    name = Holman
+
+    dynasty = dynasty_cotton
+	religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofcotton0a
+	mother = lineofgreenhand6
+	
+    6935.1.2 = {
+        birth = yes
+    }
+	
+	6965.1.1 = {
+        give_nickname = nick_long_hom
+        effect = {
+             add_character_flag = {
+                flag = had_nickname_event
+            }	
+        }
+    }
+	
+	6971.1.1 = {
+        add_spouse = lineofcotton0cwife
+    }
+	
+    7029.5.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofcotton0cwife = { 
+    name = Estella
+	female = yes
+
+	religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	
+    6936.8.2 = {
+        birth = yes
+    }
+	
+    7039.8.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofcotton1 = {
     name = Tolman
 
     dynasty = dynasty_cotton
 	religion = faith_hobbit
     culture = hobbit
+	
+	father = lineofcotton0c
+	mother = lineofcotton0cwife
 
     trait = brave
     trait = diligent
@@ -7014,11 +9453,28 @@ lineofcotton1 = { #of Bywater
         add_spouse = lineofcotton1wife
     }
 	
-	7032.1.1 = { 
-		employer = lineofbaggins12
-	}
-	
     7072.9.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofcotton1b = {
+    name = Wilcome
+
+    dynasty = dynasty_cotton
+	religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofcotton0c
+	mother = lineofcotton0cwife
+
+    sexuality = heterosexual
+
+    6979.1.6 = {
+        birth = yes
+    }
+	
+    7074.1.25 = {
         death = { death_reason = death_natural_causes }
     }
 }
@@ -7027,23 +9483,19 @@ lineofcotton1wife = {
     name = Lily
 	female = yes
 
-    dynasty = dynasty_cotton
+    dynasty = dynasty_brown
 	religion = faith_hobbit
     culture = hobbit
 	
  	sexuality = heterosexual
+	
+	father = lineofbrown1
+	mother = lineofbrown2
 
     6978.3.20 = {
         birth = yes
     }
 	
-	7010.1.8 = {
-        add_spouse = lineofcotton1
-    }
-	
-	7032.1.1 = { 
-		employer = lineofbaggins12
-	}
     7070.4.4 = {
         death = { death_reason = death_natural_causes }
     }
@@ -7078,7 +9530,7 @@ lineofcotton2 = {
 }
 
 lineofcotton3 = {
-    name = Rosie
+    name = Rose
 	female = yes
 
     dynasty = dynasty_cotton
@@ -7100,10 +9552,6 @@ lineofcotton3 = {
     7016.8.17 = {
         birth = yes
     }
-	
-	7032.1.1 = { # Works at the Green Dragon Inn, Bywater
-		employer = lineofbaggins12
-	}
 
     7115.12.15 = {
         death = { death_reason = death_natural_causes }
@@ -7111,7 +9559,7 @@ lineofcotton3 = {
 }
 
 lineofcotton4 = {
-    name = Jolly
+    name = Wilcome
 
     dynasty = dynasty_cotton
 	religion = faith_hobbit
@@ -7135,7 +9583,7 @@ lineofcotton4 = {
 }
 
 lineofcotton5 = {
-    name = Nick
+    name = Bowman
 
     dynasty = dynasty_cotton
 	religion = faith_hobbit
@@ -7160,7 +9608,7 @@ lineofcotton5 = {
 }
 
 lineofcotton6 = {
-    name = Nibs
+    name = Carl
 
     dynasty = dynasty_cotton
 	religion = faith_hobbit
@@ -7177,10 +9625,17 @@ lineofcotton6 = {
         birth = yes
     }
 	
+	7030.1.1 = {
+		effect = { #Has a cat in LOTRO
+			add_character_modifier = { modifier = cat_story_modifier }
+		}
+	}
+	
     7112.7.5 = {
         death = { death_reason = death_natural_causes }
     }
 }
+
 
 lineofbrownferret = {
     name = Gardenia
@@ -7207,7 +9662,222 @@ lineofbrownferret = {
     }
 }
 
-# Gollum
+# Trahald #Gollum Dynasty
+
+lineofgollum0 = {
+    name = Melisande
+	female = yes
+
+    dynasty = dynasty_gollum
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+
+    6365.11.1 = {
+        birth = yes
+    }
+	
+	6390.6.8 = {
+        add_spouse = lineofgollum0husband
+    }
+
+    6466.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum0husband = {
+    name = Fastolph
+	
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+
+    6360.1.1 = {
+        birth = yes
+    }
+
+    6456.11.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum1 = {
+    name = Ildra
+	female = yes
+
+    dynasty = dynasty_gollum
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+	
+	father = lineofgollum0husband
+	mother = lineofgollum0
+
+    6395.1.10 = {
+        birth = yes
+    }
+	
+	6430.6.8 = {
+        add_spouse = lineofgollum1husband
+    }
+
+    6483.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum1husband = {
+    name = Filibert
+
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+
+    6394.11.1 = {
+        birth = yes
+    }
+
+    6488.6.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum2 = {
+    name = Roselda
+	female = yes
+
+    dynasty = dynasty_gollum
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+	
+	father = lineofgollum1husband
+	mother = lineofgollum1
+
+    6433.1.10 = {
+        birth = yes
+    }
+	
+	6460.6.8 = {
+        add_spouse = lineofgollum2husband
+    }
+
+    6503.3.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum2b = {
+    name = Tulip
+	female = yes
+
+    dynasty = dynasty_gollum
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+	
+	father = lineofgollum1husband
+	mother = lineofgollum1
+
+    6434.11.10 = {
+        birth = yes
+    }
+
+    6523.3.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum2c = {
+    name = Violet
+	female = yes
+
+    dynasty = dynasty_gollum
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+	
+	father = lineofgollum1husband
+	mother = lineofgollum1
+
+    6436.1.2 = {
+        birth = yes
+    }
+
+    6528.6.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum2d = {
+    name = Ern
+	female = yes
+
+    dynasty = dynasty_gollum
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+	
+	father = lineofgollum1husband
+	mother = lineofgollum1
+
+    6437.11.2 = {
+        birth = yes
+    }
+	
+	6463.1.8 = {
+        add_spouse = lineofgollum2dhusband
+    }
+
+    6529.12.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum2dhusband = {
+    name = Beogol
+
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+
+
+    6434.1.6 = {
+        birth = yes
+    }
+
+    6521.2.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgollum2husband = {
+    name = Rithregol
+
+    religion = faith_hobbit
+    culture = stoors
+
+    sexuality = heterosexual
+
+    6430.11.1 = {
+        birth = yes
+    }
+
+    6510.1.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
 lineofgollum3 = { #Gollum
     name = Smeagol
 
@@ -7216,6 +9886,9 @@ lineofgollum3 = { #Gollum
     culture = stoors
 
     dna = gollum_dna
+	
+	father = lineofgollum2husband
+	mother = lineofgollum2
 
     trait = education_intrigue_2
     trait = craven
@@ -7259,7 +9932,10 @@ lineofgollum5 = {
     trait = lazy
     trait = intellect_bad_1
 
-    sexuality = asexual
+    sexuality = heterosexual
+	
+	mother = lineofgollum2d
+	father = lineofgollum2dhusband
 
     6464.2.10 = {
         birth = yes
@@ -7325,11 +10001,57 @@ breehobbit2 = { # Nob, works for Barliman in the Prancing Pony
     }
 }
 
-lineofmaggot1 = {
-    name = Conrad
+#Maggot 
 
+lineofmaggot0 = {
+    name = Bogman
+	
+    dynasty = dynasty_maggot 
     religion = faith_hobbit
     culture = hobbit
+
+	sexuality = heterosexual
+
+    6945.1.23 = {
+        birth = yes
+    }
+	
+	6980.1.1 = {
+        add_spouse = lineofmaggot0wife
+    }
+
+    7030.1.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot0wife = { #Puddifoot
+    name = Rhaga
+	female = yes
+	
+    religion = faith_hobbit
+    culture = hobbit
+
+	sexuality = heterosexual
+
+    6955.1.5 = {
+        birth = yes
+    }
+
+    7045.11.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot1 = {
+    name = Conrad
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot0
+	mother = lineofmaggot0wife
 
     trait = brave
     trait = stubborn
@@ -7342,11 +10064,15 @@ lineofmaggot1 = {
 	
 	sexuality = heterosexual
 
-    7005.8.23 = {
+    6985.8.23 = {
         birth = yes
     }
 	
-	7025.1.1 = {
+	7004.1.1 = { 
+		employer = lineofbolger7
+	}
+	
+	7005.1.1 = {
         give_nickname = nick_farmer_maggot
         effect = {
              add_character_flag = {
@@ -7354,11 +10080,1019 @@ lineofmaggot1 = {
             }	
         }
     }
-	7030.1.1 = { 
-		employer = lineofbolger7
-	}
+	
+	7020.1.1 = {
+        add_spouse = lineofmaggot1wife
+    }
 
-    7101.5.22 = {
+    7071.5.22 = {
         death = { death_reason = death_natural_causes }
     }
 }
+
+lineofmaggot1wife = {
+    name = Limnantha
+	female = yes
+	
+    religion = faith_hobbit
+    culture = bucklander
+	
+	sexuality = heterosexual
+
+    6989.10.3 = {
+        birth = yes
+    }
+	
+    7075.10.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot2 = {
+    name = Gretle
+	female = yes
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot0
+	mother = lineofmaggot0wife
+
+	sexuality = heterosexual
+
+    6987.1.2 = {
+        birth = yes
+    }
+
+    7080.12.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot3 = {
+    name = Hamond
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot1
+	mother = lineofmaggot1wife
+
+	sexuality = heterosexual
+
+    7019.10.23 = {
+        birth = yes
+    }
+	
+    7121.1.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot4 = {
+    name = Pomella
+	female = yes
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot1
+	mother = lineofmaggot1wife
+
+	sexuality = heterosexual
+
+    7020.1.15 = {
+        birth = yes
+    }
+	
+    7123.11.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot5 = {
+    name = Ivy
+	female = yes
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot1
+	mother = lineofmaggot1wife
+
+	sexuality = heterosexual
+
+    7021.11.18 = {
+        birth = yes
+    }
+	
+    7124.1.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot6 = {
+    name = Goodman
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot1
+	mother = lineofmaggot1wife
+
+	sexuality = heterosexual
+
+    7022.1.8 = {
+        birth = yes
+    }
+	
+    7125.11.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot7 = {
+    name = Limnantha
+	female = yes
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot1
+	mother = lineofmaggot1wife
+
+	sexuality = heterosexual
+
+    7024.12.18 = {
+        birth = yes
+    }
+	
+    7125.3.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofmaggot8 = {
+    name = Rollo
+	
+    dynasty = dynasty_maggot 
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofmaggot1
+	mother = lineofmaggot1wife
+
+	sexuality = heterosexual
+
+    7028.2.1 = {
+        birth = yes
+    }
+	
+    7123.2.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+# Brown
+
+lineofbrown1 = {
+    name = Polo
+
+    dynasty = dynasty_brown
+	religion = faith_hobbit
+    culture = hobbit
+	
+ 	sexuality = heterosexual
+
+    6938.3.2 = {
+        birth = yes
+    }
+	
+	6970.6.8 = {
+        add_spouse = lineofbrown2
+    }
+	
+    7039.1.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofbrown2 = {
+    name = Amaranth
+	female = yes
+
+	religion = faith_hobbit
+    culture = hobbit
+	
+ 	sexuality = heterosexual
+
+    6942.1.4 = {
+        birth = yes
+    }
+
+    7046.5.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#Diggle
+
+lineofdiggle1 = {
+    name = Adelard
+
+    dynasty = dynasty_diggle
+	religion = faith_hobbit
+    culture = hobbit
+	
+ 	sexuality = heterosexual
+
+    6767.3.2 = {
+        birth = yes
+    }
+	
+	6800.6.8 = {
+        add_spouse = lineofdiggle1wife
+    }
+	
+    6865.1.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofdiggle1wife = {
+    name = Olivia
+	female = yes
+
+	religion = faith_hobbit
+    culture = hobbit
+	
+ 	sexuality = heterosexual
+
+    6768.1.4 = {
+        birth = yes
+    }
+
+    6866.5.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofdiggle2 = {
+    name = Dina
+	female = yes
+
+    dynasty = dynasty_diggle
+	religion = faith_hobbit
+    culture = hobbit
+	
+ 	sexuality = heterosexual
+
+    6807.11.17 = {
+        birth = yes
+    }
+
+    6900.2.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#Lightfoot
+
+lineoflightfoot1 = {
+    name = Mango 
+
+    dynasty = dynasty_lightfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6854.1.6 = {
+        birth = yes
+    }
+
+    6886.1.20 = {
+        add_spouse = lineoflightfoot1wife
+    }
+
+    6940.2.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineoflightfoot1wife = {
+    name = Salvia
+	female = yes
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6856.8.6 = {
+        birth = yes
+    }
+
+    6950.2.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineoflightfoot2 = {
+    name = Nina
+	female = yes
+
+    dynasty = dynasty_lightfoot
+    religion = faith_hobbit
+    culture = hobbit
+
+    father = lineoflightfoot1
+    mother = lineoflightfoot1wife
+
+    sexuality = heterosexual
+
+    6894.2.9 = {
+        birth = yes
+    }
+	
+    6986.2.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+# Greenhand
+
+lineofgreenhand1 = {
+    name = Holman 
+
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	trait = lifestyle_gardener
+
+    sexuality = heterosexual
+
+    6843.1.21 = {
+        birth = yes
+    }
+	
+	6864.1.1 = {
+        give_nickname = nick_the_greenhanded
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }	 
+        }
+    }
+
+    6877.1.1 = {
+        add_spouse = lineofgreenhand1wife
+    }
+
+    6933.11.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand1wife = {
+    name = Tansy
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6846.12.23 = {
+        birth = yes
+    }
+
+    6938.10.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand2 = {
+    name = Rowan
+	female = yes
+
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgreenhand1
+	mother = lineofgreenhand1wife
+
+    sexuality = heterosexual
+
+    6882.5.20 = {
+        birth = yes
+    }
+	
+    #6922.1.1 = {
+    #    add_spouse = Hob Gammidge
+    #}
+
+    6973.1.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand3 = {
+    name = Halfred 
+
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgreenhand1
+	mother = lineofgreenhand1wife
+	
+    trait = lifestyle_gardener
+
+    sexuality = heterosexual
+
+    6884.6.16 = {
+        birth = yes
+    }
+	
+	6923.1.1 = {
+        add_spouse = lineofgreenhand3wife
+    }
+	
+    6985.12.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand3wife = {
+    name = Malva
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+	
+
+    sexuality = heterosexual
+
+    6888.1.6 = {
+        birth = yes
+    }
+	
+    6989.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand4 = {
+    name = Erling 
+
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgreenhand1
+	mother = lineofgreenhand1wife
+	
+
+    sexuality = heterosexual
+
+    6887.11.16 = {
+        birth = yes
+    }
+	
+    6984.10.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand5 = {
+    name = Hending
+	
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgreenhand1
+	mother = lineofgreenhand1wife
+	
+
+    sexuality = heterosexual
+
+    6892.7.10 = {
+        birth = yes
+    }
+	
+    6988.9.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand6 = {
+    name = Rose
+	female = yes
+	
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgreenhand1
+	mother = lineofgreenhand1wife
+	
+    sexuality = heterosexual
+
+    6895.1.10 = {
+        birth = yes
+    }
+	
+    6990.10.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand7 = {
+    name = Holman 
+
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgreenhand3
+	mother = lineofgreenhand3wife
+	
+    trait = lifestyle_gardener
+
+    sexuality = heterosexual
+
+    6925.12.16 = {
+        birth = yes
+    }
+	
+	6983.1.1 = { # Work as Gardener
+		employer = lineofbaggins12
+	}
+	
+    7022.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand7wife = {
+    name = Daisy
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6930.2.16 = {
+        birth = yes
+    }
+	
+	6970.1.1 = { 
+		add_spouse = lineofgreenhand7
+	}
+	
+    7028.10.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgreenhand8 = {
+    name = Halfast 
+
+    dynasty = dynasty_greenhand
+    religion = faith_hobbit
+    culture = hobbit
+	
+	father = lineofgreenhand7
+	mother = lineofgreenhand7wife
+	
+    trait = lifestyle_gardener
+
+    sexuality = heterosexual
+
+    6975.1.16 = {
+        birth = yes
+    }
+	
+    7072.4.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#Goodchild
+
+lineofgoodchild1 = {
+    name = Adelard
+	
+    dynasty = dynasty_goodchild
+ 	religion = faith_hobbit
+    culture = hobbit
+	
+ 	sexuality = heterosexual
+
+    6920.1.20 = {
+        birth = yes
+    }
+	
+	6945.1.1 = {
+        add_spouse = lineofgoodchild1wife
+    }
+	
+    7013.1.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofgoodchild1wife = {
+    name = Adaldrida
+	female = yes
+	
+ 	religion = faith_hobbit
+    culture = hobbit
+	
+ 	sexuality = heterosexual
+
+    6925.11.2 = {
+        birth = yes
+    }
+	
+    7023.11.14 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+# Hayward
+
+lineofhayward0 = {
+    name = Bob 
+
+    dynasty = dynasty_hayward
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+	
+	trait = lifestyle_gardener
+
+    6921.1.12 = {
+        birth = yes
+    }
+	
+	6989.1.1 = {
+        add_spouse = lineofhayward0wife
+    }
+
+    7014.10.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhayward0wife = {
+    name = Marigold 
+	female = yes
+
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+
+    6922.1.5 = {
+        birth = yes
+    }
+
+    7024.1.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhayward1 = {
+    name = Hob 
+
+    dynasty = dynasty_hayward
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+	
+	father = lineofhayward0
+	mother = lineofhayward0wife
+	
+	trait = lifestyle_gardener
+	
+	martial = 14
+
+    6961.9.12 = {
+        birth = yes
+    }
+
+    6997.1.1 = {
+        employer = lineofbrandybuck22
+    }
+	
+	7041.5.2 = {
+        employer = lineofbrandybuck29
+    }
+
+    7065.10.29 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhayward2 = {
+    name = Aster
+    female = yes	
+
+    dynasty = dynasty_hayward
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+	
+	father = lineofhayward0
+	mother = lineofhayward0wife
+
+    6968.1.2 = {
+        birth = yes
+    }
+
+    7070.1.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhayward3 = {
+    name = Daffodilly
+    female = yes	
+
+    dynasty = dynasty_hayward
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+	
+	father = lineofhayward0
+	mother = lineofhayward0wife
+
+    6963.9.22 = {
+        birth = yes
+    }
+
+    7061.11.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofhayward4 = {
+    name = Melilot
+    female = yes	
+
+    dynasty = dynasty_hayward
+    religion = faith_hobbit
+    culture = bucklander
+
+    sexuality = heterosexual
+	
+	father = lineofhayward0
+	mother = lineofhayward0wife
+
+    6964.10.2 = {
+        birth = yes
+    }
+
+    7069.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#Noakes
+
+lineofnoakes1 = {
+    name = Posco	
+
+    dynasty = dynasty_noakes
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6942.10.2 = {
+        birth = yes
+    }
+	
+    6992.10.6 = {
+        add_spouse = lineofnoakes1wife
+    }
+	
+	7020.1.1 = {
+        give_nickname = nick_old_noakes
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }	 
+        }
+    }
+	
+	7030.1.1 = {
+        employer = lineofcotton1
+    }
+
+    7050.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofnoakes1wife = {
+    name = Gardenia
+    female = yes	
+
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+
+    6954.1.2 = {
+        birth = yes
+    }
+	
+    7050.11.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofnoakes2 = {
+    name = Jaspera
+    female = yes	
+
+    dynasty = dynasty_noakes
+    religion = faith_hobbit
+    culture = hobbit
+
+    sexuality = heterosexual
+	
+	father = lineofnoakes1
+	mother = lineofnoakes1wife
+
+    7005.1.12 = {
+        birth = yes
+    }
+
+    7090.11.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#Sandyman
+
+lineofsandyman1 = {				 
+    name = Carl
+
+    dynasty = dynasty_sandyman
+	religion = faith_hobbit
+    culture = hobbit
+	
+	sexuality = heterosexual					   
+
+    6980.4.16 = {
+        birth = yes
+    }
+	
+	7010.1.6 = {
+        add_spouse = lineofsandyman1wife
+    }
+	
+    7070.9.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofsandyman1wife = {				 
+    name = Diamond
+	female = yes 
+	
+	religion = faith_hobbit
+    culture = hobbit
+	
+	sexuality = heterosexual					   
+
+    6982.4.6 = {
+        birth = yes
+    }
+	
+    7065.9.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineofsandyman2 = {				 
+    name = Ted
+
+    dynasty = dynasty_sandyman
+	religion = faith_hobbit
+    culture = hobbit
+
+	sexuality = heterosexual
+	
+	trait = greedy
+	
+	father = lineofsandyman1				   
+	mother = lineofsandyman1wife						   
+
+    7011.2.16 = {
+        birth = yes
+    }
+	
+	7012.1.1 = { 
+		employer = lineofbaggins12
+	}
+
+    7118.9.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#Twofoot
+
+lineoftwofoot1 = {				 
+    name = Abbo
+
+    dynasty = dynasty_twofoot
+	religion = faith_hobbit
+    culture = hobbit
+	
+	sexuality = heterosexual					   
+
+    6975.4.16 = {
+        birth = yes
+    }
+	
+	7009.1.6 = {
+        add_spouse = lineoftwofoot1wife
+    }
+	
+	7012.1.1 = { 
+		employer = lineofbaggins12
+	}
+	
+	7020.1.1 = {
+        give_nickname = nick_daddy
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }	 
+        }
+    }
+	
+    7072.9.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineoftwofoot1wife = {				 
+    name = Peony
+	female = yes 
+	
+	religion = faith_hobbit
+    culture = hobbit
+	
+	sexuality = heterosexual					   
+
+    6982.4.16 = {
+        birth = yes
+    }
+	
+    7064.9.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+lineoftwofoot2 = {				 
+    name = Dodder
+
+    dynasty = dynasty_twofoot
+	religion = faith_hobbit
+    culture = hobbit
+
+	sexuality = heterosexual
+	
+	father = lineoftwofoot1		   
+	mother = lineoftwofoot1wife						   
+
+    7015.2.6 = {
+        birth = yes
+    }
+
+    7116.9.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+

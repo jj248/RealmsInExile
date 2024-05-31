@@ -243,6 +243,7 @@ travel_danger_events_on_action = {
 		300 = lotr_travel_events.0002 # Danger! Giant Scorpion Attack - Dune Sea Only
 		300 = lotr_travel_events.0003 # Danger! Sandstorm! - Desert/ Dune Sea Only
 		300 = lotr_travel_events.0010 # Danger! Mount Doom's Breath - Volcanic Plains Only
+		100 = lotr_travel_events.0011 # Danger! Troll Attack!
 	}
 }
 
@@ -409,6 +410,16 @@ on_travel_plan_arrival = {
 		if = {
 			limit = { is_ai = no }
 			ep2_im_in_my_elements_terrain_grabber_effect = yes
+		}
+
+		if = {
+			limit = {
+				root.location = title:c_ost_in_edhil.title_province
+				root = character:linefinwe11
+				has_variable = temp_maglor_var
+			}
+			trigger_event = elven.1608
+			remove_variable = temp_maglor_var
 		}
 	}
 }

@@ -9709,7 +9709,10 @@ hunt.2000 = {
 			random_list = {
 				10 = {
 					add_to_list = realm_list
-					every_neighboring_and_across_water_top_liege_realm_owner = { add_to_list = realm_list }
+					every_neighboring_and_across_water_top_liege_realm_owner = { 
+						limit = { is_wastelands = no }
+						add_to_list = realm_list 
+					}
 					random_in_list = {
 						list = realm_list
 						random_realm_county = {
@@ -19703,7 +19706,7 @@ hunt.4030 = {
 
 	option = { # You are defeated
 		name = hunt.4030.a
-
+		increase_wounds_effect = { REASON = fight }
 		ai_chance = {
 			base = 100
 		}

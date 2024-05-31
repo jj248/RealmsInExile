@@ -1,5 +1,4 @@
 ﻿l_english:
-
  ####################################
  ###### Overarching Categories ######
  ####################################
@@ -107,7 +106,7 @@
  
  ### Mechanics ###
  game_concept_bloodofnumenor:0 "Blood of Númenor"
- game_concept_bloodofnumenor_desc:0 "The Blood of Númenor is the blood of those descended from the [numenoreans|E], the inhabitants of the isle of [numenor|E]. The [valargods|E], on account of the valor of the Fathers of Men in the [firstage|E] and War of Wrath, gave to them a lifespan thrice that of lesser men and a land in which they lived in peace and prosperity. But in time the bliss of [numenor|E] waned, for the fear of death came among them, and forsaking their wisdom and friendship with the Eldar, hubris and lust for eternal life brought their doom.\n\nIn-game, the [GetTrait('blood_of_numenor_1').GetName( GetNullCharacter )] [trait|E] grants significant bonuses to longevity and stats. The strength of the Blood and its accompanying blessings are tracked via the use of a [trait_level_track|E].\n\nThe [trait_level_track_xp|E] of a character with the [GetTrait('blood_of_numenor_1').GetName( GetNullCharacter )] [trait|E] is determined on birth and cannot be 'upgraded' to a higher level. A child's likelihood of inheriting the higher of the [trait_level_track_xp|E] of their parents is influenced by the parents' moral character, with a more virtuous parentage resulting in greater chances of retaining stronger [GetTrait('blood_of_numenor_1').GetName( GetNullCharacter )]. By contrast, morally wicked or corrupt characters are more likely to see the benefits of their prestigious bloodline fade away."
+ game_concept_bloodofnumenor_desc:0 "The Blood of Númenor is the blood of those descended from the [numenoreans|E], the inhabitants of the isle of [numenor|E]. The [valargods|E], on account of the valor of the Fathers of Men in the [firstage|E] and War of Wrath, gave to them a lifespan thrice that of lesser men and a land in which they lived in peace and prosperity. But in time the bliss of [numenor|E] waned, for the fear of death came among them, and forsaking their wisdom and friendship with the Eldar, hubris and lust for eternal life brought their doom.\n\nIn-game, Blood of Númenor [traits|E], such as [GetTrait('blood_of_numenor_1').GetName( GetNullCharacter )], grants significant bonuses to longevity and stats. Unlike [congenital|E] traits, these bloodline traits cannot be 'upgraded' to a higher level and always face the risk of being lost. A child's chances of inheriting the greater bloodline trait from their parents is influenced by the moral character of the parents, with a more virtuous parentage resulting in greater chances of retaining the stronger Blood of Númenor trait. By contrast, morally wicked or corrupt characters are more likely to see the benefits of their prestigious bloodline fade away."
  
  game_concept_protectorate:0 "Protectorate"
  game_concept_protectorates:0 "Protectorates"
@@ -423,7 +422,8 @@
  game_concept_dwarffathersshort:0 "Fathers"
  game_concept_dwarffathershort:0 "Father"
  game_concept_dwarffather:0 "Dwarf-Father"
- game_concept_dwarffathers_desc:0 "The Fathers of the Dwarves were the first seven dwarves, made by [mahalcharacter|E] and given soul by [eru|E] in the [dwarfcreation|E]. \nThe Seven were: \n\nDurin the Deathless, Father of the [longbeards|E] \nÚri the Scarred, Father of the [firebeards|E] \nDwálin the Wise, Father of the [broadbeams|E] \nSindri the Rich, Father of the [ironfists|E] \nThúlin the Swift, Father of the [stiffbeards|E] \nThrár the Proud, Father of the [blacklocks|E] \nBavór the Cold, Father of the [stonefoots|E]"
+ game_concept_dwarffathers_pluralshort:0 "Dwarf-Fathers"
+ game_concept_dwarffathers_desc:0 "The Fathers of the Dwarves were the first seven [dwarves|E], made by [mahalcharacter|E] and given soul by [eru|E] in the [dwarfcreation|E]. \nThe Seven were: \n\nDurin the Deathless, Father of the [longbeards|E] \nÚri the Scarred, Father of the [firebeards|E] \nDwálin the Wise, Father of the [broadbeams|E] \nSindri the Rich, Father of the [ironfists|E] \nThúlin the Swift, Father of the [stiffbeards|E] \nThrár the Proud, Father of the [blacklocks|E] \nBavór the Cold, Father of the [stonefoots|E]"
  
  game_concept_durin:0 "Durin"
  game_concept_durindeathless:0 "Durin the Deathless"
@@ -817,7 +817,7 @@
  game_concept_belegost_desc:0 "Founded by Dwalin the Wise, Belegost was one of the Mansions of the [dwarves|E]. Located north of Mount Dolmed, it ran from the east to the west of the Northern [bluemountains|E].\n\nIn the First Age, Belegost became renowned for its craftsmen, who built wonders like the Halls of Menegroth.\n\nIt fell into ruin at the end of the First Age, as a byproduct of the War of Wrath. Belegost would only be restored to its original height in the reign of Dwalin VII and Last, where he recieved the aid of Durin VII."
 
  game_concept_nogrod:0 "Nogrod"
- game_concept_nogrod_desc:0 "Founded by Uri the Scarred, Nogrod was one of the Mansions of the [dwarves|E]. Located south of Mount Dolmed, it ran from the east to the west of the Northern [bluemountains|E].\n\nIn the First Age, Nogrod became renowned for having the greatest smiths in all [middleearth|E]. This included the great Dwarven smiths Gamil Zirak and Telchar.\n\nNogrod fell into ruin at the end of the First Age, as a byproduct of the War of Wrath. Unlike Belegost, the city was so devestated that the Firebeards were forced to migrate south to Buzra-Dum. Nogrod would only be restored to its original height in the reign of Uri VII and Last, where he recieved the aid of Dwalin VII and Durin VII."
+ game_concept_nogrod_desc:0 "Founded by Uri the Scarred, Nogrod was one of the Mansions of the [dwarves|E]. Located south of Mount Dolmed, it ran from the east to the west of the Northern [bluemountains|E].\n\nIn the First Age, Nogrod became renowned for having the greatest smiths in all [middleearth|E]. This included the great Dwarven smiths Gamil Zirak and Telchar.\n\nNogrod fell into ruin at the end of the First Age, as a byproduct of the War of Wrath. Unlike Belegost, the city was so devastated that the Firebeards were forced to migrate south to Buzra-Dum. Nogrod would only be restored to its original height in the reign of Uri VII and Last, where he recieved the aid of Dwalin VII and Durin VII."
 
  ###############################
  ######## Races of Arda ########
@@ -835,6 +835,7 @@
  
  game_concept_adunaic:0 "Adûnaic"
  game_concept_adunai:0 "Adûnai"
+ game_concept_adunaim:0 "Adûnaim"
  game_concept_black_numenorean:0 "Black Númenórean"
  game_concept_black_numenoreans:0 "Black Númenóreans"
  game_concept_adunai_desc:0 "Adûnai is, linguistically, the equivalent of [numenorean|E] in the language of the common people of [numenor|E]: Adûnaic. Both refer to the exact same group. In practice, however, they refer to two connected but different groups. [numenorean|E] is used to refer to all the people of [numenor|E] before the [downfallofnumenor|E], whereas [adunai|E] is used to refer to the descendants of the [kingsmen|E] post [downfallofnumenor|E]. In Westron they are often referred to as [black_numenoreans|E], which is a derogatory term.\n\nThe [adunai|E] are the descendants of the [kingsmen|E] who settled the broader [numenorean|E] empire outside the [westlands|E], such as [umbar|E] and [anbalkumagan|E]. Although they were from the beginning far more advanced than the [conceptracemen|E] of [middleearth|E], and enjoyed long life - though shorter than those of the [dunedain|E] - their knowledge and culture dwindled faster, diverging into successor cultures, many completely losing the blessing of [numenor|E]."
@@ -1399,7 +1400,7 @@
  game_concept_additional_settlement_upkeep_desc:0 "Additional upkeep refers to the monthly income reduction due to holding to many [settlement_holding|E].\n\nRulers can #V abandon#! their settlement holdings if the upkeep starts to ruin the economy of the [realm|E]"
  game_concept_settlement_holding_limit:0 "Ongoing Colonies"
  game_concept_gui_settlement_holding_limit:0 "Settlement Limit"
- game_concept_settlement_holding_limit_desc:0 "The amount of settlements a [ruler|E] can hold at any give point in time is determined by their title tier.\n\nFor example:\n\n$EFFECT_LIST_BULLET$A #bold [count|E] #!can hold a maximum of 1 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E].\n\n$EFFECT_LIST_BULLET$A #bold [duke|E] #!can hold a maximum of 2 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E].\n\n$EFFECT_LIST_BULLET$A #bold [king|E] #!can hold a maximum of 3 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E].\n\n$EFFECT_LIST_BULLET$An #bold [emperor|E] #!can hold a maximum of 4 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E].\n\n#V The monthly upkeep increases with a #X factor of 3#! { 1 + 3 + ... } for each settlement holding you hold above your limit.#!"
+ game_concept_settlement_holding_limit_desc:0 "The amount of settlements a [ruler|E] can hold at any give point in time is determined by their title tier.\n\nFor example:\n\n$EFFECT_LIST_BULLET$A #bold [count|E] #!can hold a maximum of 1 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E].\n\n$EFFECT_LIST_BULLET$A #bold [duke|E] #!can hold a maximum of 2 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E].\n\n$EFFECT_LIST_BULLET$A #bold [king|E] #!can hold a maximum of 3 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E].\n\n$EFFECT_LIST_BULLET$An #bold [emperor|E] #!can hold a maximum of 4 [settlement_holding|E] without incurring additional settlment [additional_settlement_upkeep|E]."
 
  ##########################
  #######   Mining   #######

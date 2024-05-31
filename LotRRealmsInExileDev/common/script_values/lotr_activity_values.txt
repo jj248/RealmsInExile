@@ -17,6 +17,7 @@ boat_hire_duration_years = 2
 small_boat_cost = 150
 medium_boat_cost = 300
 large_boat_cost = 600
+sailing_food_and_supplies_cost = 100
 
 small_boat_repair_cost = 50
 medium_boat_repair_cost = 100
@@ -191,5 +192,22 @@ gwedding_wait_time_before_start_months = {
 	}
 	else = {
 		value = 0
+	}
+}
+
+### Playdate values
+standard_playdate_cooldown_time = {
+	if = {
+		limit = {
+			OR = {
+				is_elf = yes
+				is_dwarf = yes
+				is_hobbit = yes
+			}
+		}
+		value = 6
+	}
+	else = {
+		value = 3
 	}
 }

@@ -182,11 +182,7 @@ elven_ring_template = {
 	can_benefit = {
 		and = {
 			OR = { 
-				custom_description = {
-					text = is_elf
-					subject = this
-					is_elf = yes
-				}
+				is_elf = yes
 				is_maiar = yes
 			}
 			sauron_is_alive = yes
@@ -200,6 +196,10 @@ elven_ring_template = {
 	fallback = {
 		monthly_dynasty_prestige = 1
 		monthly_prestige = 1
+	}
+
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -222,6 +222,10 @@ ring_of_mortals_template = {
 	fallback = {
 		monthly_dynasty_prestige = 0.5
 		monthly_prestige = 0.5
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -251,6 +255,10 @@ wizard_staff_template = {
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
 		monthly_prestige = 1
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -293,11 +301,7 @@ elessar_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		OR = {
-			custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
+			is_elf = yes
 			dynasty = dynasty:dynasty_elros
 		}
 	}
@@ -309,6 +313,10 @@ elessar_template = {
 	fallback = {
 		monthly_prestige = 1
 		monthly_dynasty_prestige_mult = 0.1
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -322,11 +330,7 @@ aranthel_and_ungoldagnir_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		custom_description = {
-			text = is_elf
-			subject = this
-			is_elf = yes
-		}
+		is_elf = yes
 	}
 	can_reforge = {
 		always = yes
@@ -349,11 +353,7 @@ hadhafang_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		custom_description = {
-			text = is_elf
-			subject = this
-			is_elf = yes
-		}
+		is_elf = yes
 	}
 	can_reforge = {
 		always = yes
@@ -376,11 +376,7 @@ silver_harp_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		custom_description = {
-			text = is_elf
-			subject = this
-			is_elf = yes
-		}
+		is_elf = yes
 	}
 	can_reforge = {
 		always = yes
@@ -415,33 +411,9 @@ silmaril_template = {
 		court_grandeur_baseline_add = 10
 		health = -20
 	}
-
-	unique = yes
-}
-
-silver_harp_template = {
-	can_equip = {
-		is_orc = no
-		is_undead = no
-	}
-
-	# can this character benefit from the full modifiers of the artifact?
-	can_benefit = {
-		custom_description = {
-			text = is_elf
-			subject = this
-			is_elf = yes
-		}
-	}
-	can_reforge = {
-		always = yes
-	}
-
-	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
-	fallback = {
-		court_grandeur_baseline_add = 6
-		monthly_prestige_gain_mult = 0.04
-		attraction_opinion = 20
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -464,6 +436,10 @@ hyandolire_template = {
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
 		prowess = 10
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -491,7 +467,6 @@ arkenstone_template = {
 		court_grandeur_baseline_add = 4
 		monthly_prestige = 1
 		monthly_dynasty_prestige_mult = 0.08
-#		dwarven_religion_opinion = -100
 	}
 
 	unique = yes
@@ -517,7 +492,6 @@ orcrist_template = {
 		martial_per_prestige_level = 1
 		prowess_no_portrait = 15
 		monthly_prestige = 0.5
-#		dwarven_religion_opinion = -50
 	}
 
 	unique = yes
@@ -561,12 +535,13 @@ axe_of_durin_template = {
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
-		martial_per_prestige_level = 1
 		prowess_no_portrait = 15
 		monthly_prestige = 0.5
-		monthly_dynasty_prestige = 0.2
-		enemy_hard_casualty_modifier = 0.10
-#		dwarven_religion_opinion = -100
+		monthly_dynasty_prestige = 0.1
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -587,12 +562,12 @@ durins_helm_template = {
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
-		stewardship_per_prestige_level = 1
-		prowess_no_portrait = 15
-		monthly_prestige = 0.5
-		monthly_dynasty_prestige = 0.2
-		hard_casualty_modifier = -0.10
-#		dwarven_religion_opinion = -100
+		monthly_dynasty_prestige_mult = 0.1
+		monthly_prestige = 1
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -618,7 +593,7 @@ skull_earnur_template = {
 		court_grandeur_baseline_add = 3
 		learning = 1
 	}
-
+	
 	unique = yes
 }
 
@@ -640,7 +615,7 @@ vasa_template = {
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
-		prowess = 5
+		prowess = 15
 	}
 
 	unique = yes
@@ -649,11 +624,6 @@ vasa_template = {
 morgul_blade_template = {
 	can_equip = {
 		OR = {
-			custom_description = {
-				text = faith_is_evil
-				subject = this
-				faith_is_evil = yes
-			}
 			is_nazgul = yes
 			has_trait = sorcerer_1
 			has_trait = sorcerer_2
@@ -674,18 +644,22 @@ morgul_blade_template = {
 	fallback = {
 		prowess = 2
 	}
+	
+	ai_score = {
+		value = 100
+	}
 
 	unique = yes
 }
 
 helm_witchking_template = {
 	can_equip = {
-		culture = { has_cultural_pillar = heritage_undead }
+		always = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		always = yes	
+		culture = { has_cultural_pillar = heritage_undead }
 	}
 
 	can_reforge = {
@@ -702,12 +676,12 @@ helm_witchking_template = {
 
 helm_khamul_template = {
 	can_equip = {
-		culture = { has_cultural_pillar = heritage_undead }
+		always = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		always = yes	
+		culture = { has_cultural_pillar = heritage_undead }
 	}
 
 	can_reforge = {
@@ -724,12 +698,12 @@ helm_khamul_template = {
 
 scythe_of_khamul_template = {
 	can_equip = {
-		culture = { has_cultural_pillar = heritage_undead }
+		always = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		always = yes	
+		culture = { has_cultural_pillar = heritage_undead }
 	}
 
 	can_reforge = {
@@ -739,6 +713,11 @@ scythe_of_khamul_template = {
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
 		monthly_prestige = 0.5
+		prowess = 10
+	}
+	
+	ai_score = {
+		value = 150
 	}
 
 	unique = yes
@@ -746,12 +725,12 @@ scythe_of_khamul_template = {
 
 mask_goldenking_template = {
 	can_equip = {
-		culture = { has_cultural_pillar = heritage_undead }
+		always = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		always = yes	
+		culture = { has_cultural_pillar = heritage_undead }
 	}
 
 	can_reforge = {
@@ -775,6 +754,51 @@ hame_of_the_vampire_template = {
 	unique = yes
 }
 
+## Hobbitses ##
+
+sting_template = {
+	can_equip = {
+		is_orc = no
+		is_undead = no
+	}
+	
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		always = yes
+	}
+	can_reforge = {
+		always = yes
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+	}
+	
+	ai_score = {
+		value = 100
+	}
+
+	unique = yes
+}
+
+mithril_mail_template = {
+	can_equip = {
+		OR = { #Kid-sized
+			is_hobbit = yes
+			is_druedain = yes
+			is_a_minor = yes
+		}
+	}
+	can_benefit = {
+		always = yes
+	}
+
+	fallback = {
+	}
+	
+	unique = yes
+}
+
 ## Mountain Orc ##
 
 ulukai_template = {
@@ -786,9 +810,6 @@ ulukai_template = {
 			is_orc = yes
 			has_title = title:c_gundabad
 		}
-	}
-	can_reforge = {
-		is_orc = yes
 	}
 
 	fallback = {
@@ -804,7 +825,7 @@ ulukai_template = {
 
 crown_of_gondor_template = {
 	can_equip = {
-		Not = {has_primary_title = title:e_gondor_steward}
+		NOT = { has_primary_title = title:e_gondor_steward }
 	}
 	can_benefit = {
 		OR = {
@@ -815,18 +836,24 @@ crown_of_gondor_template = {
 		}
 	}
 	can_reforge = {
-		culture = { has_cultural_pillar = heritage_dunedain }
+		always = yes
 	}
 
 	fallback = {
-		monthly_prestige = 0.2
+		monthly_dynasty_prestige_mult = 0.05
+		monthly_prestige = 1	
 	}
+	
+	ai_score = {
+		value = 100
+	}
+	
 	unique = yes
 }
 
 throne_of_gondor_template = {
 	can_equip = {
-		Not = {has_primary_title = title:e_gondor_steward}
+		NOT = { has_primary_title = title:e_gondor_steward }
 	}
 	can_benefit = {
 		OR = {
@@ -842,17 +869,19 @@ throne_of_gondor_template = {
 
 	fallback = {
 		court_grandeur_baseline_add = 5
+		monthly_dynasty_prestige_mult = 0.05
 	}
+	
+	ai_score = {
+		value = 100
+	}
+	
 	unique = yes
 }
 
 steward_rod_template = {
 	can_equip = {
-		custom_description = {
-			text = faith_is_good
-			subject = this
-			faith_is_good = yes
-		}
+		always = yes
 	}
 	can_benefit = {
 		is_steward_of_gondor = yes
@@ -864,6 +893,7 @@ steward_rod_template = {
 	fallback = {
 		monthly_prestige = 0.2
 	}
+	
 	unique = yes
 }
 
@@ -898,9 +928,13 @@ horn_gondor_template = {
 	fallback = {
 		levy_reinforcement_rate_same_faith = 0.1
 	}
+	
+	ai_score = {
+		value = 100
+	}
+	
 	unique = yes
 }
-
 
 
 
@@ -909,11 +943,8 @@ horn_gondor_template = {
 
 ring_barahir_template = {
 	can_equip = {
-		custom_description = {
-			text = faith_is_good
-			subject = this
-			faith_is_good = yes
-		}
+		is_orc = no
+		is_nazgul = no
 	}
 	can_benefit = {
 		dynasty = dynasty:dynasty_elros
@@ -925,12 +956,17 @@ ring_barahir_template = {
 	fallback = {
 		monthly_prestige = 1
 	}
+	
+	ai_score = {
+		value = 100
+	}
+	
 	unique = yes
 }
 
 sceptre_of_annuminas_template = {
 	can_equip = {
-		faith.religion = { is_in_family = rf_eruhini }
+		always = yes
 	}
 	can_benefit = {
 		OR = {
@@ -946,7 +982,14 @@ sceptre_of_annuminas_template = {
 
 	fallback = {
 		powerful_vassal_opinion = 2
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.08
 	}
+	
+	ai_score = {
+		value = 100
+	}
+	
 	unique = yes
 }
 
@@ -967,6 +1010,11 @@ elendilmir_elendil_template = {
 	fallback = {
 		monthly_prestige = 0.5
 	}
+	
+	ai_score = {
+		value = 80
+	}
+	
 	unique = yes
 }
 
@@ -981,11 +1029,7 @@ elendilmir_valandil_template = {
 			has_primary_title = title:e_numenor_in_exile
 			has_primary_title = title:e_reunitedkingdom
 			AND = {
-				custom_description = {
-					text = is_elf
-					subject = this
-					is_elf = yes
-				} 
+				is_elf = yes
 				has_title = title:k_imladris
 			}
 		}
@@ -997,6 +1041,11 @@ elendilmir_valandil_template = {
 	fallback = {
 		monthly_prestige = 0.5
 	}
+	
+	ai_score = {
+		value = 60
+	}
+	
 	unique = yes
 }
 
@@ -1012,23 +1061,26 @@ rohan_royal_weapon_artifact = { # Locks Rohan artifacts to the title (if correct
 					has_primary_title = title:e_calenardhon
 				}
 				culture = { has_cultural_pillar = heritage_hadorim }
-				custom_description = {
-					text = faith_is_good
-					subject = this
-					faith_is_good = yes
-				}
+				faith_is_good = yes
 			}
 			dynasty = dynasty:100
 		}
 	}
+	
 	can_reforge = {
 		always = yes
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	fallback = { # It's still a blade...
 		prowess = 10
 		monthly_prestige = 0.5
 	}
+	
+	unique = yes
 }
 
 tapestry_ride_eorl_template = {
@@ -1040,11 +1092,7 @@ tapestry_ride_eorl_template = {
 					has_primary_title = title:e_calenardhon
 				}
 				culture = { has_cultural_pillar = heritage_hadorim }
-				custom_description = {
-					text = faith_is_good
-					subject = this
-					faith_is_good = yes
-				}
+				faith_is_good = yes
 			}
 			dynasty = dynasty:100
 		}
@@ -1101,11 +1149,7 @@ niluzagar_template = {
 				culture = { has_cultural_pillar = heritage_bellakari }
 			}
 			dynasty = dynasty:dynasty_tumakveh
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
@@ -1127,11 +1171,7 @@ branch_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		OR = {
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			faith_is_good = yes
 			culture = { has_cultural_pillar = heritage_bellakari }
 		}
 	}
@@ -1152,11 +1192,7 @@ book_baitha_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		OR = {
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			faith_is_good = yes
 			culture = { has_cultural_pillar = heritage_bellakari }
 		}
 	}
@@ -1183,14 +1219,12 @@ throne_of_castaher_template = {
 	fallback = {
 		court_grandeur_baseline_add = 2
 	}
-	unique = yes
-}
-
-spear_sealord_template = {
-	can_equip = {
-		always = yes
+	
+	ai_score = {
+		value = 100
 	}
 	
+	unique = yes
 }
 
 serpent_headdress_template = {
@@ -1223,11 +1257,7 @@ naluzor_template = {
 	can_benefit = {
 		OR = {
 			culture = { has_cultural_pillar = heritage_southern_apysaic }		
-			custom_description = {
-				text = faith_is_evil
-				subject = this
-				faith_is_evil = yes
-			}		
+			faith_is_evil = yes	
 		}
 	}
 	can_reforge = {
@@ -1271,9 +1301,6 @@ shield_malador_template = {
 	can_benefit = {
 			culture = { has_cultural_pillar = heritage_tedjin }
 	}
-	can_reforge = {
-		always = no
-	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
@@ -1294,11 +1321,7 @@ cloak_ancient_ones_template = {
 	can_benefit = {
 		OR = {
 			culture = { has_cultural_pillar = heritage_druedain }
-			custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
+			is_elf = yes
 		}
 	}
 	can_reforge = {
@@ -1323,9 +1346,6 @@ silver_sword_template = {
 			has_faith = faith:faith_ray
 			has_faith = faith:faith_iunast
 		}
-	}
-	can_reforge = {
-		always = no
 	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
@@ -1377,11 +1397,7 @@ twin_chalice_template = {
 	can_benefit = {
 		OR = {
 			culture = { has_cultural_pillar = heritage_northron }
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
@@ -1392,6 +1408,10 @@ twin_chalice_template = {
 	fallback = {
 		monthly_prestige = 0.5
 		court_grandeur_baseline_add = 6
+	}
+	
+	ai_score = {
+		value = 100
 	}
 
 	unique = yes
@@ -1416,6 +1436,10 @@ bard_bow_template = {
 		prowess = 11
 		monthly_dynasty_prestige = 0.1
 	}
+	
+	ai_score = {
+		value = 100
+	}
 
 	unique = yes
 }
@@ -1439,6 +1463,11 @@ throne_ovatha_template = {
 		monthly_dynasty_prestige = 0.1
 		vassal_opinion = 2
 	}
+	
+	ai_score = {
+		value = 100
+	}
+	
 	unique = yes
 }
 
@@ -1459,6 +1488,11 @@ crown_bountig_template = {
 		monthly_dynasty_prestige = 0.1
 		vassal_opinion = 2
 	}
+	
+	ai_score = {
+		value = 100
+	}
+	
 	unique = yes
 }
 
@@ -1476,11 +1510,7 @@ gondor_relic_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		OR = {
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			faith_is_good = yes
 			culture = { has_cultural_pillar = heritage_dunedain }
 		}
 	}
@@ -1499,7 +1529,8 @@ gondor_relic_template = {
 
 dagger_westernesse_template = {
 	can_equip = {
-		faith_is_evil = no
+		is_orc = no
+		is_nazgul = no
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1524,20 +1555,13 @@ dagger_westernesse_template = {
 
 elven_relic_misc_template = {
 	can_equip = {
-		custom_description = {
-			text = faith_is_evil
-			subject = this
-			faith_is_evil = no
-		}
+		is_orc = no
+		is_nazgul = no
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		custom_description = {
-			text = faith_is_good
-			subject = this
-			faith_is_good = yes
-		}
+		faith_is_good = yes
 	}
 	can_reforge = {
 		always = yes
@@ -1559,11 +1583,7 @@ elven_relic_pedestal_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		custom_description = {
-			text = faith_is_good
-			subject = this
-			faith_is_good = yes
-		}
+		faith_is_good = yes
 	}
 	can_reforge = {
 		always = yes
@@ -1634,11 +1654,7 @@ orc_relic_template = {
 	can_benefit = {
 		OR = {
 			is_orc = yes
-			custom_description = {
-				text = faith_is_evil
-				subject = this
-				faith_is_evil = yes
-			}
+			faith_is_evil = yes
 		}
 	}
 	can_reforge = {
@@ -1663,11 +1679,7 @@ dorwinrim_relic_template = {
 	can_benefit = {
 		OR = {
 			culture = { has_cultural_pillar = heritage_northron }
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
@@ -1689,16 +1701,7 @@ dorwinrim_relic_template = {
 dragon_helm_of_dor_lomin_template = {
 	can_equip = {
 		AND = {
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
-			custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = no
-			}
+			is_elf = no
 			prowess >= 20
 		}
 	}
@@ -1706,11 +1709,7 @@ dragon_helm_of_dor_lomin_template = {
 		lotr_has_numenorean_culture_trigger = yes
 	}
 	can_reforge = {
-		custom_description = {
-			text = is_dwarf
-			subject = this
-			is_dwarf = yes
-		}
+		always = yes
 	}
 
 	fallback = {
@@ -1722,28 +1721,17 @@ dragon_helm_of_dor_lomin_template = {
 
 dramborleg_template = {
 	can_equip = {
-		custom_description = {
-			text = faith_is_evil
-			subject = this
-			faith_is_evil = no
-		}
+		is_orc = no
+		is_nazgul = no
 	}
 	can_benefit = {
 		OR = {
-			lotr_has_numenorean_culture_trigger = yes
-			custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
+			is_elf = yes
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
-		custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
+		always = yes
 	}
 
 	fallback = {
@@ -1755,28 +1743,17 @@ dramborleg_template = {
 
 anguirel_template = {
 	can_equip = {
-		custom_description = {
-			text = faith_is_evil
-			subject = this
-			faith_is_evil = no
-		}
+		is_orc = no
+		is_nazgul = no
 	}
 	can_benefit = {
 		OR = {
-			lotr_has_numenorean_culture_trigger = yes
-			custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
+			is_elf = yes
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
-		custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
+		always = yes
 	}
 
 	fallback = {
@@ -1792,12 +1769,8 @@ anarion_helm_template = {
 	}
 	can_benefit = {
 		OR = {
-			lotr_has_numenorean_culture_trigger = yes
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			is_elf = yes
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
@@ -1813,28 +1786,16 @@ anarion_helm_template = {
 
 amroths_belt_template = {
 	can_equip = {
-		custom_description = {
-			text = faith_is_evil
-			subject = this
-			faith_is_evil = no
-		}
+		always = yes
 	}
 	can_benefit = {
 		OR = {
-			custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			is_elf = yes
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
-		always = yes
+		always = no
 	}
 
 	fallback = {
@@ -1846,28 +1807,16 @@ amroths_belt_template = {
 
 nimrodel_gem_template = {
 	can_equip = {
-		custom_description = {
-			text = faith_is_evil
-			subject = this
-			faith_is_evil = no
-		}
+		always = yes
 	}
 	can_benefit = {
 		OR = {
-			custom_description = {
-				text = is_elf
-				subject = this
-				is_elf = yes
-			}
-			custom_description = {
-				text = faith_is_good
-				subject = this
-				faith_is_good = yes
-			}
+			is_elf = yes
+			faith_is_good = yes
 		}
 	}
 	can_reforge = {
-		always = yes
+		always = no
 	}
 
 	fallback = {
@@ -1886,11 +1835,7 @@ sword_joam_tuv_template = {
 	can_benefit = {
 		OR = {
 			culture = { has_cultural_pillar = heritage_tedjin }
-			custom_description = {
-				text = faith_is_evil
-				subject = this
-				faith_is_evil = yes
-			}
+			faith_is_evil = yes
 		}
 	}
 	can_reforge = {
@@ -2000,9 +1945,6 @@ narmacil_standard_template = {
 	can_benefit = {
 		culture = { has_cultural_pillar = heritage_dunedain }
 	}
-	can_reforge = {
-		always = yes
-	}
 
 	fallback = {
 		monthly_dynasty_prestige = 0.05
@@ -2047,11 +1989,7 @@ azaghal_helmet_template = {
 		is_dwarf = yes
 	}
 	can_reforge = {
-		custom_description = {
-			text = is_dwarf
-			subject = this
-			is_dwarf = yes
-		}
+		always = yes
 	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
@@ -2073,11 +2011,47 @@ laegrist_template = {
 		culture = { has_cultural_pillar = heritage_dunedain }
 	}
 	can_reforge = {
-		always = no
+		always = yes
 	}
 
 	fallback = {
 		prowess = 3
+	}
+	unique = yes
+}
+
+sceptre_of_umbar_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		religion = religion:adunai_religion
+	}
+	can_reforge = {
+		always = yes
+	}
+
+	fallback = {
+		monthly_prestige = 0.5
+		vassal_limit = 5
+	}
+	unique = yes
+}
+
+crown_of_bn_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		faith.religion = { is_in_family = rf_forcesofevil }
+	}
+	can_reforge = {
+		always = yes
+	}
+
+	fallback = {
+		monthly_prestige = 0.5
+		vassal_limit = 5
 	}
 	unique = yes
 }

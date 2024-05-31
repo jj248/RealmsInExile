@@ -1717,6 +1717,7 @@ window = {
 					
 					### Plague Resistance
 					hbox = {
+						
 						datacontext = "[Holding.GetProvince]"
 						datacontext = "[HoldingView.AccessPlagueResistanceBreakdown]"
 						layoutpolicy_horizontal = expanding
@@ -2915,6 +2916,34 @@ window = {
 							raw_text = " [HoldingView.GetSupplyLimit|V]"
 							default_format = "#high"
 						}
+					}
+
+					### Plague Resistance
+					hbox = {
+						
+						datacontext = "[Holding.GetProvince]"
+						datacontext = "[HoldingView.AccessPlagueResistanceBreakdown]"
+						layoutpolicy_horizontal = expanding
+						margin = { 2 0 }
+						spacing = 3
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "HOLDING_VIEW_EPIDEMIC_RESISTANCE"
+							default_format = "#high"
+						}
+
+						expand = {}
+
+						text_single = {
+							text = "HOLDING_VIEW_EPIDEMIC_RESISTANCE_VALUE"
+							default_format = "#high"
+						}
+
+						tooltip_visible = "[ValueBreakdown.HasTooltip]"
+						tooltipwidget = {
+                            widget_value_breakdown_tooltip = {}
+                        }
 					}
 
 					expand = {}
@@ -4319,9 +4348,9 @@ types CountyViewTypes
 		name = "vassal_warning"
 		visible = "[Not( ObjectsEqual( HoldingView.GetHolder, GetPlayer ) )]"
 
-		coa_title_tiny = {
-			datacontext = "[HoldingView.GetHolder.GetPrimaryTitle]"
-		}
+		# coa_title_tiny = {
+		# 	datacontext = "[HoldingView.GetHolder.GetPrimaryTitle]"
+		# }
 
 		text_multi = {
 			autoresize = yes
