@@ -320,6 +320,45 @@
 		}
 	}
 	
+	##Japanese##
+
+	japanese_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = japanese_tabi
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_womaw_clothing_trigger = yes
+			}
+		}
+	}
+
+	japanese_war_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = japanese_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_womaw_clothing_trigger = yes
+			}
+		}
+	}
+
 ## ROHAN ##
 	
 	generic_legwear = {
@@ -745,11 +784,10 @@
 		weight = {
 			base = 0
 			modifier = {
-				add = 120
+				add = 100
 				portrait_wear_armor_trigger = yes
 				OR = {
 					portrait_elven_clothing_trigger = yes
-					portrait_lasgalendrim_clothing_trigger = yes
 				}
 			}
 		}
@@ -768,11 +806,83 @@
 		weight = {
 			base = 0
 			modifier = {
-				add = 1000
+				add = 110
 				portrait_wear_armor_trigger = yes
-				portrait_elven_clothing_trigger = yes
 				culture = { has_cultural_pillar = heritage_calaquendi }
 			}		
+		}
+	}
+	
+	elven_war_galadhrim_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = elven_war_galadhrim_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 110
+				portrait_wear_armor_trigger = yes
+				culture = { has_cultural_pillar = heritage_lomiquendi }
+				NOT = { portrait_lasgalendrim_clothing_trigger = yes }
+			}		
+		}
+	}
+	
+	elven_war_silvan_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = elven_war_silvan_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+                add = 110
+				highest_held_title_tier <= tier_duchy
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = lasgalendrim
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = lasgalendrim
+                    }
+					portrait_high_nobles_armor_trigger = { 
+                    CULTURE_INPUT = lasgalendrim
+					}
+                }
+            }
+		}
+	}
+	
+	elven_war_silvan_king_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = elven_war_silvan_king_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+                add = 110
+                highest_held_title_tier > tier_duchy
+                portrait_high_nobles_armor_trigger = { 
+                    CULTURE_INPUT = lasgalendrim
+                }
+            }
 		}
 	}
 	
@@ -796,7 +906,6 @@
 			}
 		}
 	}
-	
 	
 	## Mag ##
 

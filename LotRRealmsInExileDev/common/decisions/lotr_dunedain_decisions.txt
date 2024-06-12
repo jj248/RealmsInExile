@@ -969,11 +969,13 @@ decision_emyn_arnen_capital = {
 			else_if = {
 				limit = {
 					title:k_ithilien.holder = {
-						liege = ROOT
+						liege = root
 						has_title = title:c_emyn_arnen
 					}
 				}
-				set_realm_capital = title:c_emyn_arnen
+				title:k_ithilien.holder = {
+					set_realm_capital = title:c_emyn_arnen
+				}
 			}
 			else_if = {
 				limit = {

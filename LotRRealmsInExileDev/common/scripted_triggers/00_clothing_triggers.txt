@@ -424,7 +424,7 @@ portrait_fp2_iberian_muslim_clothing_spouse_trigger = {
 }
 
 portrait_fp2_iberian_muslim_clothing_contents_trigger = {
-	has_clothing_gfx = iberian_muslim_clothing_gfx #LotR
+	# has_clothing_gfx = iberian_muslim_clothing_gfx #LotR
 	has_clothing_gfx = north_haradrim_clothing_gfx #LotR
 }
 
@@ -2842,6 +2842,22 @@ portrait_uruk_clothing_spouse_trigger = {
 
 portrait_uruk_clothing_contents_trigger = {
 	has_clothing_gfx = uruk_clothing_gfx
+}
+
+## Womaw ##
+
+portrait_womaw_clothing_trigger = {
+	scope:culture = { portrait_womaw_clothing_contents_trigger = yes }
+}
+
+portrait_womaw_clothing_spouse_trigger = {
+	culture = {
+		portrait_womaw_clothing_contents_trigger = yes
+	}
+}
+
+portrait_womaw_clothing_contents_trigger = {
+	has_clothing_gfx = womaw_clothing_gfx
 }
 
 ## Circumpolar ##

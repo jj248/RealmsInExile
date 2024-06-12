@@ -140,7 +140,7 @@
  tradition_wanderers_of_the_wild_name:0 "Wanderers of the Wild"
  tradition_wanderers_of_the_wild_desc:0 "This culture is used to traveling the unforgiving wilds for extended periods of time. They are both expert trackers and elusive as shadows."
 
- tradition_dunedain_of_umbar:0 "Dúnedain of Umbar"
+ tradition_dunedain_of_umbar_name:0 "Dúnedain of Umbar"
  tradition_dunedain_of_umbar_desc:0 "The Dúnedain of Umbar, also known as the Umbaredain, are an interesting mix between Adûnaic and Dúnedain traditions and beliefs, displaying the arrogance and pride of the former with wisdom and faith of the latter."
  
  ### Harad Traditions ###
@@ -278,5 +278,4 @@
  culture_parameter_gregarious_trait_gives_extra_personal_scheme:0 "The [GetTrait('gregarious').GetName( GetNullCharacter )] [trait|E] gives Max [personal_schemes|E]: #P +1#!"
  culture_parameter_deceitful_trait_more_common:0 "The [GetTrait('deceitful').GetName( GetNullCharacter )] [trait|E] is more common"
  culture_parameter_deceitful_trait_gives_extra_hostile_scheme:0 "The [GetTrait('deceitful').GetName( GetNullCharacter )] [trait|E] gives Max [hostile_schemes|E]: #P +1#!"
- culture_parameter_gregarious_trait_gives_bonuses:0 "The [GetTrait('gregarious').GetName( GetNullCharacter )] [trait|E] has additional bonuses"
  SCHEME_DEVIOUS_TRADITION:1 "[GetCultureTradition('tradition_intricate_plotters').GetName]: $VALUE|+0=$"

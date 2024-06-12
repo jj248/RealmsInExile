@@ -201,6 +201,7 @@
 		DeathDeityNamePossessive = darkness_god_ancestors_possessive
 		DeathDeitySheHe = CHARACTER_SHEHE_SHE
 		DeathDeityHerHis = CHARACTER_HERHIS_HER
+		DeathDeityHerHim = CHARACTER_HERHIM_HIM
 		WitchGodName = darkness_god_night
 		WitchGodNamePossessive = darkness_god_night_possessive
 		WitchGodHerHis = CHARACTER_HERHIS_HER
@@ -334,6 +335,7 @@
 			doctrine = tenet_megaliths
 			
 			#Doctrines
+			
 			doctrine = unreformed_faith_doctrine
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_pluralism_righteous
@@ -358,6 +360,7 @@
 		faith_chaialla = { # Ancient faith of the Hill-Dwelling Chaialla of Thani-Hazad
 			color = { 202 226 142 }
 			icon = custom_faith_6
+			reformed_icon = custom_faith_6
 			graphical_faith = custom_faith_6
 			
 			holy_site = arokwanza

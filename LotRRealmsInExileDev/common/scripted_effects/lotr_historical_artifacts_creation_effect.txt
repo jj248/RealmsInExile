@@ -289,7 +289,7 @@ create_artifact_ring_of_longbeards_effect = {
 			recipient = character:linefinwe18  #Celebrimbor
 			location = province:4351 #Ost-in-Edhil
 		}
-		modifier = ring_of_mortals_sauron_modifier
+		modifier = ring_of_mortals_dwarves_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
@@ -438,75 +438,79 @@ create_artifact_ring_of_longbeards_effect = {
 			date = 5375.1.16
 			recipient = character:lineofdurin64
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5547.10.13
-			recipient = character:lineofdurin66
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5660.2.28
-			recipient = character:lineofdurin68
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5728.3.9
-			recipient = character:lineofdurin70
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5935.5.2
-			recipient = character:lineofdurin72 # Durin VI
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6013.3.1
-			recipient = character:lineofdurin73 # Nain 1
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6014.4.22
-			recipient = character:lineofdurin74 # Thrain I
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6223.12.25
-			recipient = character:lineofdurin75 # Thorin I
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6322.5.21
-			recipient = character:lineofdurin76 # Glóin
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6418.6.2
-			recipient = character:lineofdurin77 # Óin
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6521.3.30
-			recipient = character:lineofdurin78 # Náin II
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6618.1.8
-			recipient = character:lineofdurin79
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6622.1.6
-			recipient = character:lineofdurin81 # Thror
-		}
-		add_artifact_history = { # Thrain receives the Ring before the battle of Azanulbizar
-			type = given
-			date = 6823.5.13
-			recipient = character:lineofdurin82
-		}
-		add_artifact_history = { # Sauron takes it from Thrain
-			type = stolen
-			date = 6883.3.8
-			recipient = character:lineofsauron
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5547.10.13
+				recipient = character:lineofdurin66
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5660.2.28
+				recipient = character:lineofdurin68
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5728.3.9
+				recipient = character:lineofdurin70
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5935.5.2
+				recipient = character:lineofdurin72 # Durin VI
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6013.3.1
+				recipient = character:lineofdurin73 # Nain 1
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6014.4.22
+				recipient = character:lineofdurin74 # Thrain I
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6223.12.25
+				recipient = character:lineofdurin75 # Thorin I
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6322.5.21
+				recipient = character:lineofdurin76 # Glóin
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6418.6.2
+				recipient = character:lineofdurin77 # Óin
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6521.3.30
+				recipient = character:lineofdurin78 # Náin II
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6618.1.8
+				recipient = character:lineofdurin79
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6622.1.6
+				recipient = character:lineofdurin81 # Thror
+			}
+			add_artifact_history = { # Thrain receives the Ring before the battle of Azanulbizar
+				type = given
+				date = 6823.5.13
+				recipient = character:lineofdurin82
+			}
+			add_artifact_history = { # Sauron takes it from Thrain
+				type = stolen
+				date = 6883.3.8
+				recipient = character:lineofsauron
+			}
 		}
 	}
 }
@@ -534,7 +538,7 @@ create_artifact_ring_of_firebeards_effect = {
 			recipient = character:linefinwe18  #Celebrimbor
 			location = province:4351 #Ost-in-Edhil
 		}
-		modifier = ring_of_mortals_sauron_modifier
+		modifier = ring_of_mortals_dwarves_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
@@ -666,7 +670,7 @@ create_artifact_ring_of_broadbeams_effect = {
 			recipient = character:linefinwe18  #Celebrimbor
 			location = province:4351 #Ost-in-Edhil
 		}
-		modifier = ring_of_mortals_sauron_modifier
+		modifier = ring_of_mortals_dwarves_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
@@ -814,6 +818,7 @@ create_artifact_ring_of_men_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -853,6 +858,7 @@ create_artifact_witchking_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -905,6 +911,7 @@ create_artifact_khamul_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -957,6 +964,7 @@ create_artifact_goldenking_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -1009,6 +1017,7 @@ create_artifact_yi_indur_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -1061,6 +1070,7 @@ create_artifact_blindsorceror_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -1113,6 +1123,7 @@ create_artifact_mauhoshat_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -1165,6 +1176,7 @@ create_artifact_dendra_dwar_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -1217,6 +1229,7 @@ create_artifact_ren_iey_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -1269,6 +1282,7 @@ create_artifact_uvatha_ring_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = ring_of_men
 		set_variable = ring_of_mortals
+		set_variable = corrupted_ring
 		set_variable = ring_of_power
 		equip_artifact_to_owner = yes
 		set_variable = lotr_unique
@@ -1413,7 +1427,13 @@ create_artifact_glamdring_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = glamdring_name
-		description = glamdring_description
+		description = {
+			desc = glamdring_description
+			triggered_desc = {
+				trigger = { game_start_date > 6974.5.1 }
+				desc = glamdring_description_gandalf
+			}
+		}
 		type = sword
 		visuals = glamdring
 		wealth = scope:wealth
@@ -1495,7 +1515,10 @@ create_artifact_palantir_orthanc_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = palantir_orthanc_name
-		description = palantir_orthanc_description
+		description = {
+			desc = palantir_description
+			desc = palantir_orthanc_description
+		}
 		type = pedestal
 		visuals = palantir
 		creator = character:linefinwe2 #Fëanor
@@ -1616,7 +1639,10 @@ create_artifact_palantir_elostirion_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = palantir_elostirion_name
-		description = palantir_elostirion_description
+		description = {
+			desc = palantir_description
+			desc = palantir_elostirion_description
+		}
 		creator = character:linefinwe2 #Fëanor
 		type = pedestal
 		visuals = palantir
@@ -1724,50 +1750,54 @@ create_artifact_palantir_elostirion_effect = {
 			date = 5382.4.4
 			recipient = character:lineisildur18
 		}
-		add_artifact_history = { #  Arveleg I
-			type = inherited
-			date = 5389.7.8
-			recipient = character:lineisildur19
-		}
-		add_artifact_history = { # Araphor
-			type = inherited
-			date = 5442.5.22
-			recipient = character:lineisildur20
-		}
-		add_artifact_history = { # Argeleb II
-			type = inherited
-			date = 5622.9.29
-			recipient = character:lineisildur21
-		}
-		add_artifact_history = { # Arvegil
-			type = inherited
-			date = 5703.4.17
-			recipient = character:lineisildur22
-		}
-		add_artifact_history = { # Arveleg II
-			type = inherited
-			date = 5776.8.21
-			recipient = character:lineisildur23
-		}
-		add_artifact_history = { #  Araval
-			type = inherited
-			date = 5846.6.30
-			recipient = character:lineisildur24
-		}
-		add_artifact_history = { # Araphant
-			type = inherited
-			date = 5924.11.20
-			recipient = character:lineisildur25
-		}
-		add_artifact_history = { # Arvedui, Last King of Arthedain
-			type = inherited
-			date = 5997.7.2
-			recipient = character:lineisildur26
-		}
-		add_artifact_history = { # Cirdan the Shipwright
-			type = inherited
-			date = 6008.12.24
-			recipient = character:lineofcirdan
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { #  Arveleg I
+				type = inherited
+				date = 5389.7.8
+				recipient = character:lineisildur19
+			}
+			add_artifact_history = { # Araphor
+				type = inherited
+				date = 5442.5.22
+				recipient = character:lineisildur20
+			}
+			add_artifact_history = { # Argeleb II
+				type = inherited
+				date = 5622.9.29
+				recipient = character:lineisildur21
+			}
+			add_artifact_history = { # Arvegil
+				type = inherited
+				date = 5703.4.17
+				recipient = character:lineisildur22
+			}
+			add_artifact_history = { # Arveleg II
+				type = inherited
+				date = 5776.8.21
+				recipient = character:lineisildur23
+			}
+			add_artifact_history = { #  Araval
+				type = inherited
+				date = 5846.6.30
+				recipient = character:lineisildur24
+			}
+			add_artifact_history = { # Araphant
+				type = inherited
+				date = 5924.11.20
+				recipient = character:lineisildur25
+			}
+			add_artifact_history = { # Arvedui, Last King of Arthedain
+				type = inherited
+				date = 5997.7.2
+				recipient = character:lineisildur26
+			}
+			add_artifact_history = { # Cirdan the Shipwright
+				type = inherited
+				date = 6008.12.24
+				recipient = character:lineofcirdan
+			}
 		}
 	}
 }
@@ -1781,7 +1811,13 @@ create_artifact_palantir_minasithil_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = palantir_minasithil_name
-		description = palantir_minasithil_description
+		description = {
+			desc = palantir_description
+			triggered_desc = {
+				trigger = { game_start_date > 6035.1.1 }
+				desc = palantir_minasithil_description
+			}
+		}
 		creator = character:linefinwe2 #Fëanor
 		type = pedestal
 		visuals = palantir
@@ -1789,7 +1825,7 @@ create_artifact_palantir_minasithil_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 1.1.1
+			date = 2.2.1
 			actor = character:linefinwe2 #Fëanor
 			recipient = character:linefinwe2 #Fëanor
 			location = province:3900 #Tirion
@@ -1901,97 +1937,101 @@ create_artifact_palantir_minasithil_effect = {
 			date = 5337.1.1
 			recipient = character:lineofanarion24 # Rómendacil
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II
-		}
-		add_artifact_history = {
-			type = given
-			date = 5978.1.1
-			recipient = character:mardiluncle
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6034.1.1
-			recipient = character:mardilcousin
-		}
-		add_artifact_history = {
-			type = taken_in_siege
-			date = 6035.1.1
-			actor = character:mardilcousin
-			location = province:226 #Minas Ithil
-			recipient = character:nazgul1
-		}
-		add_artifact_history = {
-			type = given
-			date = 6974.1.1
-			recipient = character:lineofsauron
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5399.1.1
+				recipient = character:lineofanarion26 # Valacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5465.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5470.1.1
+				recipient = character:lineofanarion53 # Castamir, the Usurper
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5480.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5523.1.1
+				recipient = character:lineofanarion29 # Aldamir
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5573.1.1
+				recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5654.1.1
+				recipient = character:lineofanarion31 # Minardil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5667.1.1
+				recipient = character:lineofanarion32 # Telemnar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5669.1.1
+				recipient = character:lineofanarion37 # Tarondor
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5831.1.1
+				recipient = character:lineofanarion38 # Telumehtar Umbardacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5883.1.1
+				recipient = character:lineofanarion39 # Narmacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5889.1.1
+				recipient = character:lineofanarion40 # Calimehtar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5969.1.1
+				recipient = character:lineofanarion41 # Ondoher
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5977.1.1
+				recipient = character:lineofanarion50 # Eärnil II
+			}
+			add_artifact_history = {
+				type = given
+				date = 5978.1.1
+				recipient = character:mardiluncle
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6034.1.1
+				recipient = character:mardilcousin
+			}
+			add_artifact_history = {
+				type = taken_in_siege
+				date = 6035.1.1
+				actor = character:mardilcousin
+				location = province:226 #Minas Ithil
+				recipient = character:nazgul1
+			}
+			add_artifact_history = {
+				type = given
+				date = 6974.1.1
+				recipient = character:lineofsauron
+			}
 		}
 	}
 }
@@ -2005,7 +2045,13 @@ create_artifact_palantir_amonsul_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = palantir_amonsul_name
-		description = palantir_amonsul_description
+		description = {
+			desc = palantir_description
+			triggered_desc = {
+				trigger = { game_start_date > 6008.1.1 }
+				desc = palantir_amonsul_description
+			}
+		}
 		creator = character:linefinwe2 #Fëanor
 		type = pedestal
 		visuals = palantir
@@ -2013,7 +2059,7 @@ create_artifact_palantir_amonsul_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 1.1.1
+			date = 2.2.1
 			actor = character:linefinwe2 #Fëanor
 			recipient = character:linefinwe2 #Fëanor
 			location = province:3900 #Tirion
@@ -2115,45 +2161,50 @@ create_artifact_palantir_amonsul_effect = {
 			date = 5382.4.4
 			recipient = character:lineisildur18
 		}
-		add_artifact_history = { #  Arveleg I
-			type = inherited
-			date = 5389.7.8
-			recipient = character:lineisildur19
-		}
-		add_artifact_history = { # Araphor
-			type = inherited
-			date = 5442.5.22
-			recipient = character:lineisildur20
-		}
-		add_artifact_history = { # Argeleb II
-			type = inherited
-			date = 5622.9.29
-			recipient = character:lineisildur21
-		}
-		add_artifact_history = { # Arvegil
-			type = inherited
-			date = 5703.4.17
-			recipient = character:lineisildur22
-		}
-		add_artifact_history = { # Arveleg II
-			type = inherited
-			date = 5776.8.21
-			recipient = character:lineisildur23
-		}
-		add_artifact_history = { #  Araval
-			type = inherited
-			date = 5846.6.30
-			recipient = character:lineisildur24
-		}
-		add_artifact_history = { # Araphant
-			type = inherited
-			date = 5924.11.20
-			recipient = character:lineisildur25
-		}
-		add_artifact_history = { # Arvedui, Last King of Arthedain
-			type = inherited
-			date = 5997.7.2
-			recipient = character:lineisildur26
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { #  Arveleg I
+				type = inherited
+				date = 5389.7.8
+				recipient = character:lineisildur19
+			}
+			
+			add_artifact_history = { # Araphor
+				type = inherited
+				date = 5442.5.22
+				recipient = character:lineisildur20
+			}
+			add_artifact_history = { # Argeleb II
+				type = inherited
+				date = 5622.9.29
+				recipient = character:lineisildur21
+			}
+			add_artifact_history = { # Arvegil
+				type = inherited
+				date = 5703.4.17
+				recipient = character:lineisildur22
+			}
+			add_artifact_history = { # Arveleg II
+				type = inherited
+				date = 5776.8.21
+				recipient = character:lineisildur23
+			}
+			add_artifact_history = { #  Araval
+				type = inherited
+				date = 5846.6.30
+				recipient = character:lineisildur24
+			}
+			add_artifact_history = { # Araphant
+				type = inherited
+				date = 5924.11.20
+				recipient = character:lineisildur25
+			}
+			add_artifact_history = { # Arvedui, Last King of Arthedain
+				type = inherited
+				date = 5997.7.2
+				recipient = character:lineisildur26
+			}
 		}
 	}
 }
@@ -2167,7 +2218,13 @@ create_artifact_palantir_annuminas_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = palantir_annuminas_name
-		description = palantir_annuminas_description
+		description = {
+			desc = palantir_description
+			triggered_desc = {
+				trigger = { game_start_date > 6008.1.1 }
+				desc = palantir_amonsul_description
+			}
+		}
 		creator = character:linefinwe2 #Fëanor
 		type = pedestal
 		visuals = palantir
@@ -2175,7 +2232,7 @@ create_artifact_palantir_annuminas_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 1.1.1
+			date = 2.2.1
 			actor = character:linefinwe2 #Fëanor
 			recipient = character:linefinwe2 #Fëanor
 			location = province:3900 #Tirion
@@ -2277,45 +2334,49 @@ create_artifact_palantir_annuminas_effect = {
 			date = 5382.4.4
 			recipient = character:lineisildur18
 		}
-		add_artifact_history = { #  Arveleg I
-			type = inherited
-			date = 5389.7.8
-			recipient = character:lineisildur19
-		}
-		add_artifact_history = { # Araphor
-			type = inherited
-			date = 5442.5.22
-			recipient = character:lineisildur20
-		}
-		add_artifact_history = { # Argeleb II
-			type = inherited
-			date = 5622.9.29
-			recipient = character:lineisildur21
-		}
-		add_artifact_history = { # Arvegil
-			type = inherited
-			date = 5703.4.17
-			recipient = character:lineisildur22
-		}
-		add_artifact_history = { # Arveleg II
-			type = inherited
-			date = 5776.8.21
-			recipient = character:lineisildur23
-		}
-		add_artifact_history = { #  Araval
-			type = inherited
-			date = 5846.6.30
-			recipient = character:lineisildur24
-		}
-		add_artifact_history = { # Araphant
-			type = inherited
-			date = 5924.11.20
-			recipient = character:lineisildur25
-		}
-		add_artifact_history = { # Arvedui, Last King of Arthedain
-			type = inherited
-			date = 5997.7.2
-			recipient = character:lineisildur26
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { #  Arveleg I
+				type = inherited
+				date = 5389.7.8
+				recipient = character:lineisildur19
+			}
+			add_artifact_history = { # Araphor
+				type = inherited
+				date = 5442.5.22
+				recipient = character:lineisildur20
+			}
+			add_artifact_history = { # Argeleb II
+				type = inherited
+				date = 5622.9.29
+				recipient = character:lineisildur21
+			}
+			add_artifact_history = { # Arvegil
+				type = inherited
+				date = 5703.4.17
+				recipient = character:lineisildur22
+			}
+			add_artifact_history = { # Arveleg II
+				type = inherited
+				date = 5776.8.21
+				recipient = character:lineisildur23
+			}
+			add_artifact_history = { #  Araval
+				type = inherited
+				date = 5846.6.30
+				recipient = character:lineisildur24
+			}
+			add_artifact_history = { # Araphant
+				type = inherited
+				date = 5924.11.20
+				recipient = character:lineisildur25
+			}
+			add_artifact_history = { # Arvedui, Last King of Arthedain
+				type = inherited
+				date = 5997.7.2
+				recipient = character:lineisildur26
+			}
 		}
 	}
 }
@@ -2329,7 +2390,13 @@ create_artifact_palantir_osgiliath_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = palantir_osgiliath_name
-		description = palantir_osgiliath_description
+		description = {
+			desc = palantir_description
+			triggered_desc = {
+				trigger = { game_start_date > 5470.1.1 }
+				desc = palantir_osgiliath_description
+			}
+		}
 		creator = character:linefinwe2 #Fëanor
 		type = pedestal
 		visuals = palantir
@@ -2337,7 +2404,7 @@ create_artifact_palantir_osgiliath_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 1.1.1
+			date = 2.2.1
 			actor = character:linefinwe2 #Fëanor
 			recipient = character:linefinwe2 #Fëanor
 			location = province:3900 #Tirion
@@ -2353,6 +2420,111 @@ create_artifact_palantir_osgiliath_effect = {
 		set_variable = palantir
 		set_variable = lotr_unique
 		save_scope_as = epic
+		
+		add_artifact_history = { # Anarion, King of Gondor
+			type = given
+			date = 3912.1.1
+			recipient = character:lineofanarion1
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4035.10.5
+			recipient = character:lineofanarion5 # Meneldil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4191.8.2
+			recipient = character:lineofanarion7 # Cemendur
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4271.11.20
+			recipient = character:lineofanarion8 # Eärendil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4357.8.23
+			recipient = character:lineofanarion9 # Anardil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4444.2.23
+			recipient = character:lineofanarion10 # Ostoher
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4525.7.7
+			recipient = character:lineofanarion11 # Tarostar/Rómendacil I
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4574.8.17
+			recipient = character:lineofanarion12 # Turambar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4700.8.14
+			recipient = character:lineofanarion13 # Atanatar
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4781.5.15
+			recipient = character:lineofanarion14 # Siriondil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4863.1.1
+			recipient = character:lineofanarion15 # Tarannon Falastur
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4946.1.1
+			recipient = character:lineofanarion18 # Eärnil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 4969.1.1
+			recipient = character:lineofanarion19 # Ciryandil
+		}
+		add_artifact_history = { # Anarion, King of Gondor
+			type = inherited
+			date = 5048.1.1
+			recipient = character:lineofanarion20 # Hyarmendacil Ciryahe
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5182.1.1
+			recipient = character:lineofanarion21 # Atanatar Alcarin
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5259.1.1
+			recipient = character:lineofanarion22 # Narmacil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5327.1.1
+			recipient = character:lineofanarion23 # Calmacil
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 5337.1.1
+			recipient = character:lineofanarion24 # Rómendacil
+		}
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5399.1.1
+				recipient = character:lineofanarion26 # Valacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5465.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+		}
 	}
 }
 
@@ -2547,9 +2719,9 @@ create_artifact_crown_woodland_realm_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 4026.1.1
-			recipient = character:lineoforopher3 #Thranduil
-			location = province:3216 #Aradhrynd
+			date = 1279.1.1
+			recipient = character:lineoforopher1 #Oropher
+			location = province:3338 #Amon Lanc
 		}
 		modifier = crown_woodland_realm_modifier
 		save_scope_as = newly_created_artifact
@@ -2567,6 +2739,12 @@ create_artifact_crown_woodland_realm_effect = {
 		set_variable = crown_woodland_realm
 		set_variable = lotr_unique
 		save_scope_as = epic
+		
+		add_artifact_history = { # Thranduil
+			type = inherited
+			date = 4026.1.1
+			recipient = character:lineoforopher3
+		}
 	}
 }
 
@@ -2918,7 +3096,13 @@ create_artifact_aeglos_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = aeglos_name
-		description = aeglos_description
+		description = {
+			desc = aeglos_description
+			triggered_desc = {
+				trigger = { game_start_date > 4033.7.12 }
+				desc = aeglos_description_thirdage
+			}
+		}
 		type = spear
 		visuals = aeglos
 		template = hadhafang_template
@@ -2968,7 +3152,7 @@ create_artifact_key_of_erebor_effect = { # AKA Key to the Side-door
 		history = {
 			type = created
 			date = 6133.1.1
-			recipient = character:lineofdurin82 #Thráin II, King under the Mountain aka King of Erebor
+			recipient = character:lineofdurin74 #Thráin I, King under the Mountain aka King of Erebor
 		}
 		modifier = key_of_erebor_modifier
 		save_scope_as = newly_created_artifact
@@ -2980,7 +3164,42 @@ create_artifact_key_of_erebor_effect = { # AKA Key to the Side-door
 		set_variable = key_of_erebor
 		set_variable = lotr_unique
 		save_scope_as = epic
-
+		
+		add_artifact_history = { # Thorin I
+			type = inherited
+			date = 6223.12.25
+			recipient = character:lineofdurin75
+		}
+		add_artifact_history = { # Glóin
+			type = inherited
+			date = 6322.5.21
+			recipient = character:lineofdurin76
+		}
+		add_artifact_history = { # Óin
+			type = inherited
+			date = 6418.6.2
+			recipient = character:lineofdurin77
+		}
+		add_artifact_history = { # Náin II
+			type = inherited
+			date = 6521.3.30
+			recipient = character:lineofdurin78
+		}
+		add_artifact_history = { # Dáin I
+			type = inherited
+			date = 6618.1.8
+			recipient = character:lineofdurin79
+		}
+		add_artifact_history = { # Thror I
+			type = inherited
+			date = 6622.1.6
+			recipient = character:lineofdurin81
+		}
+		add_artifact_history = { # Thráin II
+			type = inherited
+			date =	6823.5.13
+			recipient = character:lineofdurin82
+		}
 		add_artifact_history = { # Gandalf
 			type = given
 			date = 6883.1.1
@@ -2990,6 +3209,11 @@ create_artifact_key_of_erebor_effect = { # AKA Key to the Side-door
 			type = given
 			date = 6974.1.1
 			recipient = character:lineofdurin83
+		}
+		add_artifact_history = { # Thorin II Oakenshield
+			type = inherited
+			date = 6974.11.30
+			recipient = character:lineofdurin90
 		}
 	}
 }
@@ -3012,7 +3236,7 @@ create_artifact_arkenstone_effect = {
 		history = {
 			type = created
 			date = 6032.1.1
-			recipient = character:lineofdurin75
+			recipient = character:lineofdurin74
 			location = province:4408 #Throne of Erebor
 		}
 		modifier = arkenstone_modifier
@@ -3027,6 +3251,11 @@ create_artifact_arkenstone_effect = {
 		set_variable = relic
 		set_variable = lotr_unique
 		save_scope_as = epic
+		
+		if = {
+			limit = { game_start_date > 6974.11.30 } #Death of Thorin
+			add_artifact_modifier = arkenstone_thorin_modifier
+		}
 
 		add_artifact_history = { # Thorin I
 			type = inherited
@@ -3106,6 +3335,11 @@ create_artifact_arkenstone_backup_effect = {
 		set_variable = relic
 		set_variable = lotr_unique
 		save_scope_as = epic
+		
+		if = {
+			limit = { game_start_date > 6974.11.30 } #Death of Thorin
+			add_artifact_modifier = arkenstone_thorin_modifier
+		}
 
 		add_artifact_history = { # Thorin I
 			type = inherited
@@ -3166,6 +3400,7 @@ create_artifact_barazanthual_effect = { # Dáin's Red Axe
 		visuals = barazanthual
 		wealth = scope:wealth
 		quality = scope:quality
+		template = barazanthual_template
 		history = {
 			type = created
 			date = 6838.1.1
@@ -3194,7 +3429,13 @@ create_artifact_orcrist_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = orcrist_name
-		description = orcrist_description
+		description = {
+			desc = orcrist_description
+			triggered_desc = {
+				trigger = { game_start_date > 6974.5.1 }
+				desc = orcrist_description_thorin
+			}
+		}
 		type = sword
 		visuals = orcrist
 		wealth = scope:wealth
@@ -3217,6 +3458,11 @@ create_artifact_orcrist_effect = {
 		set_variable = thorins_tomb
 		set_variable = lotr_unique
 		save_scope_as = epic
+		
+		if = {
+			limit = { game_start_date > 6974.11.30 } #Death of Thorin
+			add_artifact_modifier = orcrist_thorin_modifier
+		}
 
 		add_artifact_history = {
 			type = discovered
@@ -3237,7 +3483,13 @@ create_artifact_axe_of_durin_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = axe_of_durin_name
-		description = axe_of_durin_description
+		description = {
+			desc = axe_of_durin_description
+			triggered_desc = {
+				trigger = { game_start_date > 6013.3.1 } #Fall of Moria
+				desc = axe_of_durin_description_balrog
+			}
+		}
 		type = axe
 		visuals = axe_of_durin
 		template = axe_of_durin_template
@@ -3393,32 +3645,41 @@ create_artifact_axe_of_durin_effect = {
 			date = 5375.1.16
 			recipient = character:lineofdurin64
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5547.10.13
-			recipient = character:lineofdurin66
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5660.2.28
-			recipient = character:lineofdurin68
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5728.3.9
-			recipient = character:lineofdurin70
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5935.5.2
-			recipient = character:lineofdurin72 # Durin VI
-		}
-		add_artifact_history = {
-			type = discovered
-			date = 7026.1.1
-			location = province:4909 #Durin's Hall
-			actor = character:lineofdurin95 # Balin
-			recipient = character:lineofdurin95 # Balin
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5547.10.13
+				recipient = character:lineofdurin66
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5660.2.28
+				recipient = character:lineofdurin68
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5728.3.9
+				recipient = character:lineofdurin70
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5935.5.2
+				recipient = character:lineofdurin72
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5952.12.20
+				recipient = character:lineofdurinVI # Durin VI
+			}
+			add_artifact_history = {
+				type = discovered
+				date = 7026.1.1
+				location = province:4909 #Durin's Hall
+				actor = character:lineofdurin95 # Balin
+				recipient = character:lineofdurin95 # Balin
+			}
 		}
 	}
 }
@@ -3432,7 +3693,13 @@ create_artifact_durins_helm_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = durins_helm_name
-		description = durins_helm_description
+		description = {
+			desc = durins_helm_description
+			triggered_desc = {
+				trigger = { game_start_date > 6013.3.1 } #Fall of Moria
+				desc = durins_helm_description_balrog
+			}
+		}
 		type = helmet
 		visuals = durins_helm
 		template = durins_helm_template
@@ -3673,32 +3940,41 @@ create_artifact_durins_helm_effect = {
 			date = 5375.1.16
 			recipient = character:lineofdurin64
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5547.10.13
-			recipient = character:lineofdurin66
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5660.2.28
-			recipient = character:lineofdurin68
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5728.3.9
-			recipient = character:lineofdurin70
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5935.5.2
-			recipient = character:lineofdurin72 # Durin VI
-		}
-		add_artifact_history = {
-			type = discovered
-			date = 7026.1.1
-			location = province:4909 #Durin's Hall
-			actor = character:lineofdurin95 # Balin
-			recipient = character:lineofdurin95 # Balin
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5547.10.13
+				recipient = character:lineofdurin66
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5660.2.28
+				recipient = character:lineofdurin68
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5728.3.9
+				recipient = character:lineofdurin70
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5935.5.2
+				recipient = character:lineofdurin72
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5952.12.20
+				recipient = character:lineofdurinVI # Durin VI
+			}
+			add_artifact_history = {
+				type = discovered
+				date = 7026.1.1
+				location = province:4909 #Durin's Hall
+				actor = character:lineofdurin95 # Balin
+				recipient = character:lineofdurin95 # Balin
+			}
 		}
 	}
 }
@@ -4174,7 +4450,13 @@ create_artifact_crown_of_gondor_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = crown_of_gondor_name
-		description = crown_of_gondor_description
+		description = {
+			desc = crown_of_gondor_description
+			triggered_desc = {
+				trigger = { game_start_date > 6083.1.1 }
+				desc = crown_of_gondor_description_stewards
+			}
+		}
 		type = helmet
 		visuals = crown_of_gondor
 		wealth = scope:wealth
@@ -4201,11 +4483,11 @@ create_artifact_crown_of_gondor_effect = {
 		set_variable = relic
 		set_variable = lotr_unique
 		save_scope_as = epic
-	}
-
-	add_artifact_title_history = {
-		target = title:e_gondor
-		date = 5200.1.1
+		
+		add_artifact_title_history = {
+			target = title:e_gondor
+			date = 5200.1.1
+		}
 	}
 }
 
@@ -4218,7 +4500,17 @@ create_artifact_throne_of_gondor_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = throne_of_gondor_name
-		description = throne_of_gondor_description
+		description = {
+			desc = throne_of_gondor_description
+			triggered_desc = {
+				trigger = { game_start_date > 5480.1.1 }
+				desc = throne_of_gondor_description_kinstrife
+			}
+			triggered_desc = {
+				trigger = { game_start_date > 6083.1.1 }
+				desc = throne_of_gondor_description_stewards
+			}
+		}
 		type = throne_special
 		visuals = throne_of_gondor
 		wealth = scope:wealth
@@ -4331,84 +4623,88 @@ create_artifact_throne_of_gondor_effect = {
 			date = 5337.1.1
 			recipient = character:lineofanarion24 # Rómendacil
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6076.1.1
-			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
-		}
-		add_artifact_title_history = {
-			target = title:e_gondor_steward
-			date = 6083.1.1
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5399.1.1
+				recipient = character:lineofanarion26 # Valacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5465.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5470.1.1
+				recipient = character:lineofanarion53 # Castamir, the Usurper
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5480.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5523.1.1
+				recipient = character:lineofanarion29 # Aldamir
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5573.1.1
+				recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5654.1.1
+				recipient = character:lineofanarion31 # Minardil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5667.1.1
+				recipient = character:lineofanarion32 # Telemnar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5669.1.1
+				recipient = character:lineofanarion37 # Tarondor
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5831.1.1
+				recipient = character:lineofanarion38 # Telumehtar Umbardacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5883.1.1
+				recipient = character:lineofanarion39 # Narmacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5889.1.1
+				recipient = character:lineofanarion40 # Calimehtar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5969.1.1
+				recipient = character:lineofanarion41 # Ondoher
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5977.1.1
+				recipient = character:lineofanarion50 # Eärnil II
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6076.1.1
+				recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
+			}
+			add_artifact_title_history = {
+				target = title:e_gondor_steward
+				date = 6083.1.1
+			}
 		}
 	}
 }
@@ -4790,7 +5086,7 @@ create_artifact_palantir_minasanor_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 1.1.1
+			date = 2.2.1
 			actor = character:linefinwe2 #Fëanor
 			recipient = character:linefinwe2 #Fëanor
 			location = province:3900 #Tirion
@@ -4897,90 +5193,93 @@ create_artifact_palantir_minasanor_effect = {
 			date = 5337.1.1
 			recipient = character:lineofanarion24 # Rómendacil
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6076.1.1
-			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
-		}
-		add_artifact_title_history = {
-			target = title:e_gondor_steward
-			date = 6083.1.1
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5399.1.1
+				recipient = character:lineofanarion26 # Valacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5465.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5470.1.1
+				recipient = character:lineofanarion53 # Castamir, the Usurper
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5480.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5523.1.1
+				recipient = character:lineofanarion29 # Aldamir
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5573.1.1
+				recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5654.1.1
+				recipient = character:lineofanarion31 # Minardil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5667.1.1
+				recipient = character:lineofanarion32 # Telemnar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5669.1.1
+				recipient = character:lineofanarion37 # Tarondor
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5831.1.1
+				recipient = character:lineofanarion38 # Telumehtar Umbardacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5883.1.1
+				recipient = character:lineofanarion39 # Narmacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5889.1.1
+				recipient = character:lineofanarion40 # Calimehtar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5969.1.1
+				recipient = character:lineofanarion41 # Ondoher
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5977.1.1
+				recipient = character:lineofanarion50 # Eärnil II
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6076.1.1
+				recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
+			}
+			add_artifact_title_history = {
+				target = title:e_gondor_steward
+				date = 6083.1.1
+			}
 		}
 	}
 }
 
 ## Arnor ##
-
 
 create_artifact_ring_barahir_effect = {
 	# Get the character the artifact is being made for.
@@ -5240,49 +5539,53 @@ create_artifact_ring_barahir_effect = {
 			date = 5382.4.4
 			recipient = character:lineisildur18
 		}
-		add_artifact_history = { #  Arveleg I
-			type = inherited
-			date = 5389.7.8
-			recipient = character:lineisildur19
-		}
-		add_artifact_history = { # Araphor
-			type = inherited
-			date = 5442.5.22
-			recipient = character:lineisildur20
-		}
-		add_artifact_history = { # Argeleb II
-			type = inherited
-			date = 5622.9.29
-			recipient = character:lineisildur21
-		}
-		add_artifact_history = { # Arvegil
-			type = inherited
-			date = 5703.4.17
-			recipient = character:lineisildur22
-		}
-		add_artifact_history = { # Arveleg II
-			type = inherited
-			date = 5776.8.21
-			recipient = character:lineisildur23
-		}
-		add_artifact_history = { #  Araval
-			type = inherited
-			date = 5846.6.30
-			recipient = character:lineisildur24
-		}
-		add_artifact_history = { # Araphant
-			type = inherited
-			date = 5924.11.20
-			recipient = character:lineisildur25
-		}
-		add_artifact_history = { # Arvedui, Last King of Arthedain
-			type = inherited
-			date = 5997.7.2
-			recipient = character:lineisildur26
-		}
-		add_artifact_title_history = {
-			target = title:d_northern_dunedain
-			date = 6008.1.1
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { #  Arveleg I
+				type = inherited
+				date = 5389.7.8
+				recipient = character:lineisildur19
+			}
+			add_artifact_history = { # Araphor
+				type = inherited
+				date = 5442.5.22
+				recipient = character:lineisildur20
+			}
+			add_artifact_history = { # Argeleb II
+				type = inherited
+				date = 5622.9.29
+				recipient = character:lineisildur21
+			}
+			add_artifact_history = { # Arvegil
+				type = inherited
+				date = 5703.4.17
+				recipient = character:lineisildur22
+			}
+			add_artifact_history = { # Arveleg II
+				type = inherited
+				date = 5776.8.21
+				recipient = character:lineisildur23
+			}
+			add_artifact_history = { #  Araval
+				type = inherited
+				date = 5846.6.30
+				recipient = character:lineisildur24
+			}
+			add_artifact_history = { # Araphant
+				type = inherited
+				date = 5924.11.20
+				recipient = character:lineisildur25
+			}
+			add_artifact_history = { # Arvedui, Last King of Arthedain
+				type = inherited
+				date = 5997.7.2
+				recipient = character:lineisildur26
+			}
+			add_artifact_title_history = {
+				target = title:d_northern_dunedain
+				date = 6008.1.1
+			}
 		}
 	}
 }
@@ -5298,7 +5601,7 @@ create_artifact_shards_of_narsil_effect = {
 		name = shards_of_narsil_name
 		description = shards_of_narsil_description
 		creator = character:lineofelwe3 #Thingol
-		type = regalia
+		type = miscellaneous
 		visuals = shards_of_narsil
 		wealth = scope:wealth
 		quality = scope:quality
@@ -5531,49 +5834,53 @@ create_artifact_shards_of_narsil_effect = {
 			date = 5382.4.4
 			recipient = character:lineisildur18
 		}
-		add_artifact_history = { #  Arveleg I
-			type = inherited
-			date = 5389.7.8
-			recipient = character:lineisildur19
-		}
-		add_artifact_history = { # Araphor
-			type = inherited
-			date = 5442.5.22
-			recipient = character:lineisildur20
-		}
-		add_artifact_history = { # Argeleb II
-			type = inherited
-			date = 5622.9.29
-			recipient = character:lineisildur21
-		}
-		add_artifact_history = { # Arvegil
-			type = inherited
-			date = 5703.4.17
-			recipient = character:lineisildur22
-		}
-		add_artifact_history = { # Arveleg II
-			type = inherited
-			date = 5776.8.21
-			recipient = character:lineisildur23
-		}
-		add_artifact_history = { #  Araval
-			type = inherited
-			date = 5846.6.30
-			recipient = character:lineisildur24
-		}
-		add_artifact_history = { # Araphant
-			type = inherited
-			date = 5924.11.20
-			recipient = character:lineisildur25
-		}
-		add_artifact_history = { # Arvedui, Last King of Arthedain
-			type = inherited
-			date = 5997.7.2
-			recipient = character:lineisildur26
-		}
-		add_artifact_title_history = {
-			target = title:d_northern_dunedain
-			date = 6008.1.1
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { #  Arveleg I
+				type = inherited
+				date = 5389.7.8
+				recipient = character:lineisildur19
+			}
+			add_artifact_history = { # Araphor
+				type = inherited
+				date = 5442.5.22
+				recipient = character:lineisildur20
+			}
+			add_artifact_history = { # Argeleb II
+				type = inherited
+				date = 5622.9.29
+				recipient = character:lineisildur21
+			}
+			add_artifact_history = { # Arvegil
+				type = inherited
+				date = 5703.4.17
+				recipient = character:lineisildur22
+			}
+			add_artifact_history = { # Arveleg II
+				type = inherited
+				date = 5776.8.21
+				recipient = character:lineisildur23
+			}
+			add_artifact_history = { #  Araval
+				type = inherited
+				date = 5846.6.30
+				recipient = character:lineisildur24
+			}
+			add_artifact_history = { # Araphant
+				type = inherited
+				date = 5924.11.20
+				recipient = character:lineisildur25
+			}
+			add_artifact_history = { # Arvedui, Last King of Arthedain
+				type = inherited
+				date = 5997.7.2
+				recipient = character:lineisildur26
+			}
+			add_artifact_title_history = {
+				target = title:d_northern_dunedain
+				date = 6008.1.1
+			}
 		}
 	}
 }
@@ -5867,7 +6174,6 @@ create_artifact_anduril_effect = {
 	}
 }
 
-
 create_artifact_sceptre_of_annuminas_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -5877,7 +6183,17 @@ create_artifact_sceptre_of_annuminas_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = sceptre_of_annuminas_name
-		description = sceptre_of_annuminas_description
+		description = {
+			desc = sceptre_of_annuminas_description
+			triggered_desc = {
+				trigger = { game_start_date > 4894.7.12 }
+				desc = sceptre_of_annuminas_description_secession
+			}
+			triggered_desc = {
+				trigger = { game_start_date > 6008.12.24 }
+				desc = sceptre_of_annuminas_description_fall
+			}
+		}
 		creator = character:lineofelatan2 #Valandil
 		type = regalia
 		visuals = sceptre_of_annuminas
@@ -6075,54 +6391,57 @@ create_artifact_sceptre_of_annuminas_effect = {
 			date = 5382.4.4
 			recipient = character:lineisildur18
 		}
-		add_artifact_history = { #  Arveleg I
-			type = inherited
-			date = 5389.7.8
-			recipient = character:lineisildur19
-		}
-		add_artifact_history = { # Araphor
-			type = inherited
-			date = 5442.5.22
-			recipient = character:lineisildur20
-		}
-		add_artifact_history = { # Argeleb II
-			type = inherited
-			date = 5622.9.29
-			recipient = character:lineisildur21
-		}
-		add_artifact_history = { # Arvegil
-			type = inherited
-			date = 5703.4.17
-			recipient = character:lineisildur22
-		}
-		add_artifact_history = { # Arveleg II
-			type = inherited
-			date = 5776.8.21
-			recipient = character:lineisildur23
-		}
-		add_artifact_history = { #  Araval
-			type = inherited
-			date = 5846.6.30
-			recipient = character:lineisildur24
-		}
-		add_artifact_history = { # Araphant
-			type = inherited
-			date = 5924.11.20
-			recipient = character:lineisildur25
-		}
-		add_artifact_history = { # Arvedui, Last King of Arthedain
-			type = inherited
-			date = 5997.7.2
-			recipient = character:lineisildur26
-		}
-		add_artifact_history = { # Elrond keeps safe the regalia of Arnor
-			type = given
-			date = 6008.12.24
-			recipient = character:linefinwe27
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { #  Arveleg I
+				type = inherited
+				date = 5389.7.8
+				recipient = character:lineisildur19
+			}
+			add_artifact_history = { # Araphor
+				type = inherited
+				date = 5442.5.22
+				recipient = character:lineisildur20
+			}
+			add_artifact_history = { # Argeleb II
+				type = inherited
+				date = 5622.9.29
+				recipient = character:lineisildur21
+			}
+			add_artifact_history = { # Arvegil
+				type = inherited
+				date = 5703.4.17
+				recipient = character:lineisildur22
+			}
+			add_artifact_history = { # Arveleg II
+				type = inherited
+				date = 5776.8.21
+				recipient = character:lineisildur23
+			}
+			add_artifact_history = { #  Araval
+				type = inherited
+				date = 5846.6.30
+				recipient = character:lineisildur24
+			}
+			add_artifact_history = { # Araphant
+				type = inherited
+				date = 5924.11.20
+				recipient = character:lineisildur25
+			}
+			add_artifact_history = { # Arvedui, Last King of Arthedain
+				type = inherited
+				date = 5997.7.2
+				recipient = character:lineisildur26
+			}
+			add_artifact_history = { # Elrond keeps safe the regalia of Arnor
+				type = given
+				date = 6008.12.24
+				recipient = character:linefinwe27
+			}
 		}
 	}
 }
-
 
 create_artifact_elendilmir_elendil_effect = {
 	# Get the character the artifact is being made for.
@@ -6260,15 +6579,18 @@ create_artifact_elendilmir_elendil_effect = {
 			date = 4033.7.12
 			recipient = character:lineisildur0
 		}
-		add_artifact_history = { # Saruman's spies find the Elendilmir in the Gladden Fields
-			type = discovered
-			date = 6033.1.1
-			recipient = character:lineofsaruman
-			location = province:776 #Gladden Fields
+		if = {
+			limit = { current_date >= 7033.1.1 } # Saruman's spies find the Elendilmir in the Gladden Fields
+			
+			add_artifact_history = { # Saruman's spies find the Elendilmir in the Gladden Fields
+				type = discovered
+				date = 7033.1.1
+				recipient = character:lineofsaruman
+				location = province:776 #Gladden Fields
+			}
 		}
 	}
 }
-
 
 create_artifact_elendilmir_valandil_effect = {
 	# Get the character the artifact is being made for.
@@ -6279,7 +6601,17 @@ create_artifact_elendilmir_valandil_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = elendilmir_valandil_name
-		description = elendilmir_valandil_description
+		description = {
+			desc = elendilmir_valandil_description
+			triggered_desc = {
+				trigger = { game_start_date > 4894.7.12 }
+				desc = elendilmir_valandil_description_secession
+			}
+			triggered_desc = {
+				trigger = { game_start_date > 6008.12.24 }
+				desc = elendilmir_valandil_description_fall
+			}
+		}
 		creator = character:lineisildur4 #Valandil
 		type = helmet
 		visuals = elendilmir
@@ -6376,50 +6708,54 @@ create_artifact_elendilmir_valandil_effect = {
 			date = 5382.4.4
 			recipient = character:lineisildur18
 		}
-		add_artifact_history = { #  Arveleg I
-			type = inherited
-			date = 5389.7.8
-			recipient = character:lineisildur19
-		}
-		add_artifact_history = { # Araphor
-			type = inherited
-			date = 5442.5.22
-			recipient = character:lineisildur20
-		}
-		add_artifact_history = { # Argeleb II
-			type = inherited
-			date = 5622.9.29
-			recipient = character:lineisildur21
-		}
-		add_artifact_history = { # Arvegil
-			type = inherited
-			date = 5703.4.17
-			recipient = character:lineisildur22
-		}
-		add_artifact_history = { # Arveleg II
-			type = inherited
-			date = 5776.8.21
-			recipient = character:lineisildur23
-		}
-		add_artifact_history = { #  Araval
-			type = inherited
-			date = 5846.6.30
-			recipient = character:lineisildur24
-		}
-		add_artifact_history = { # Araphant
-			type = inherited
-			date = 5924.11.20
-			recipient = character:lineisildur25
-		}
-		add_artifact_history = { # Arvedui, Last King of Arthedain
-			type = inherited
-			date = 5997.7.2
-			recipient = character:lineisildur26
-		}
-		add_artifact_history = { # Elrond keeps safe the regalia of Arnor
-			type = given
-			date = 6008.12.24
-			recipient = character:linefinwe27
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { #  Arveleg I
+				type = inherited
+				date = 5389.7.8
+				recipient = character:lineisildur19
+			}
+			add_artifact_history = { # Araphor
+				type = inherited
+				date = 5442.5.22
+				recipient = character:lineisildur20
+			}
+			add_artifact_history = { # Argeleb II
+				type = inherited
+				date = 5622.9.29
+				recipient = character:lineisildur21
+			}
+			add_artifact_history = { # Arvegil
+				type = inherited
+				date = 5703.4.17
+				recipient = character:lineisildur22
+			}
+			add_artifact_history = { # Arveleg II
+				type = inherited
+				date = 5776.8.21
+				recipient = character:lineisildur23
+			}
+			add_artifact_history = { #  Araval
+				type = inherited
+				date = 5846.6.30
+				recipient = character:lineisildur24
+			}
+			add_artifact_history = { # Araphant
+				type = inherited
+				date = 5924.11.20
+				recipient = character:lineisildur25
+			}
+			add_artifact_history = { # Arvedui, Last King of Arthedain
+				type = inherited
+				date = 5997.7.2
+				recipient = character:lineisildur26
+			}
+			add_artifact_history = { # Elrond keeps safe the regalia of Arnor
+				type = given
+				date = 6008.12.24
+				recipient = character:linefinwe27
+			}
 		}
 	}
 }
@@ -7217,7 +7553,17 @@ create_artifact_telperion_chalice_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = telperion_chalice_name
-		description = telperion_chalice_description
+		description = {
+			desc = telperion_chalice_description
+			triggered_desc = {
+				trigger = { game_start_date > 4025.1.1 }
+				desc = telperion_chalice_description_oropher
+			}
+			triggered_desc = {
+				trigger = { game_start_date > 6791.5.21 }
+				desc = telperion_chalice_description_dorwinion
+			}
+		}
 		type = pedestal
 		visuals = telperion_chalice
 		template = twin_chalice_template
@@ -7225,7 +7571,7 @@ create_artifact_telperion_chalice_effect = {
 		quality = scope:quality
 		history = {
 			type = created
-			date = 4026.1.1
+			date = 4022.1.1
 			recipient = character:linefinwe41 #Gil-Galad
 			location = province:4266 #Mithlond
 		}
@@ -7247,7 +7593,7 @@ create_artifact_telperion_chalice_effect = {
 
 		add_artifact_history = { # Gil-galad gives the chalice to Oropher
 			type = given
-			date = 4023.1.1
+			date = 4025.1.1
 			recipient = character:lineoforopher1 #Oropher
 		}
 		add_artifact_history = {
@@ -7255,14 +7601,18 @@ create_artifact_telperion_chalice_effect = {
 			date = 4026.1.1
 			recipient = character:lineoforopher3 #Thranduil
 		}
-		add_artifact_history = { # Thranduil sends the twin chalices as a coronation gift
-			type = given
-			date = 6791.5.21
-			recipient = character:lineofkoldana75 #Bladorthin
-		}
-		add_artifact_title_history = {
-			target = title:k_dorwinion
-			date = 6839.12.20
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = { # Thranduil sends the twin chalices as a coronation gift
+				type = given
+				date = 6791.5.21
+				recipient = character:lineofkoldana75 #Bladorthin
+			}
+			add_artifact_title_history = {
+				target = title:k_dorwinion
+				date = 6839.12.20
+			}
 		}
 	}
 }
@@ -7404,6 +7754,124 @@ create_artifact_crown_bountig_effect = {
 	}
 }
 
+## Thani-Hazad ###
+
+create_artifact_witness_of_restraint_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = witness_of_restraint_name
+		description = witness_of_restraint_description
+		type = mace
+		visuals = witness_of_restraint
+		wealth = scope:wealth
+		quality = scope:quality
+		template = witness_of_restraint_template
+		modifier = witness_of_restraint_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = witness_of_restraint
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_cleaver_of_foolish_folks_effect = { # Otherwise known as "Narûnûphkaran"
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = cleaver_of_foolish_folks_name
+		description = cleaver_of_foolish_folks_description
+		type = axe
+		visuals = cleaver_of_foolish_folks
+		wealth = scope:wealth
+		quality = scope:quality
+		template = cleaver_of_foolish_folks_template
+		modifier = cleaver_of_foolish_folks_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = cleaver_of_foolish_folks
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_the_grand_concordant_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = the_grand_concordant_name
+		description = the_grand_concordant_description
+		type = miscellaneous
+		visuals = the_grand_concordant
+		wealth = scope:wealth
+		quality = scope:quality
+		template = the_grand_concordant_template
+		modifier = the_grand_concordant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = the_grand_concordant
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
+create_artifact_gilded_armour_of_imrazor_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = gilded_armour_of_imrazor_name
+		description = gilded_armour_of_imrazor_description
+		type = armor_mail
+		visuals = gilded_armour_of_imrazor
+		wealth = scope:wealth
+		quality = scope:quality
+		template = gilded_armour_of_imrazor_template
+		modifier = gilded_armour_of_imrazor_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = gilded_armour_of_imrazor
+		set_variable = relic
+		set_variable = lotr_unique
+		save_scope_as = epic
+	}
+}
+
 
 ### ADVENTURE ARTIFACTS ###
 
@@ -7524,6 +7992,7 @@ create_artifact_numenorean_steelbow_effect = {
 	}
 }
 
+
 # Gondorian common
 
 create_artifact_guard_citadel_helm_effect = {
@@ -7584,6 +8053,7 @@ create_artifact_white_tree_branch_effect = {
 	}
 }
 
+
 # Arnorian common #
 
 create_artifact_dagger_westernesse_effect = {
@@ -7642,6 +8112,7 @@ create_artifact_ranger_star_effect = {
 		save_scope_as = epic
 	}
 }
+
 
 # Northron common #
 
@@ -7728,6 +8199,7 @@ create_artifact_mundburgian_shield_effect = {
 		save_scope_as = epic
 	}
 }
+
 
 # Elven common #
 
@@ -7934,6 +8406,7 @@ create_artifact_eregion_gem_effect = {
 	}
 }
 
+
 # Dwarven common #
 
 create_artifact_dwarven_tools_effect = {
@@ -8020,8 +8493,6 @@ create_artifact_stonesinger_tablet_effect = {
 }
 
 
-
-
 # Haradrim common #
 
 create_artifact_mumak_rider_insignia_effect = {
@@ -8082,6 +8553,7 @@ create_artifact_emblem_of_ladnoca_effect = {
 	}
 }
 
+
 # Orcish common #
 
 create_artifact_flask_of_grog_effect = {
@@ -8140,6 +8612,7 @@ create_artifact_orc_whip_effect = {
 	}
 }
 
+
 # Dunlending common #
 
 create_artifact_dunlending_torc_effect = {
@@ -8171,6 +8644,7 @@ create_artifact_dunlending_torc_effect = {
 	}
 }
 
+
 # Dorwinrim common #
 
 create_artifact_dorwinrim_chalice_effect = {
@@ -8201,6 +8675,7 @@ create_artifact_dorwinrim_chalice_effect = {
 		save_scope_as = epic
 	}
 }
+
 
 # Rhûnic common #
 
@@ -8697,7 +9172,17 @@ create_artifact_laurelin_chalice_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = laurelin_chalice_name
-		description = laurelin_chalice_description
+		description = {
+			desc = laurelin_chalice_description
+			triggered_desc = {
+				trigger = { game_start_date > 4025.1.1 }
+				desc = laurelin_chalice_description_oropher
+			}
+			triggered_desc = {
+				trigger = { game_start_date > 6791.5.21 }
+				desc = laurelin_chalice_description_dorwinion
+			}
+		}
 		type = pedestal
 		visuals = laurelin_chalice
 		template = twin_chalice_template
@@ -8779,7 +9264,13 @@ create_artifact_forestel_effect = {
 	# Create the artifact
 	create_artifact = {
 		name = forestel_name
-		description = forestel_description
+		description = {
+			desc = forestel_description
+			triggered_desc = {
+				trigger = { game_start_date > 5470.1.1 }
+				desc = forestel_description_kinstrife
+			}
+		}
 		type = axe
 		visuals = forestel
 		template = forestel_template
@@ -8802,6 +9293,12 @@ create_artifact_forestel_effect = {
 		set_variable = relic
 		set_variable = lotr_unique
 		save_scope_as = epic
+		
+		add_artifact_history = {
+			type = given
+			date = 5370.1.1
+			recipient = character:lineofanarion28 #Ornendil
+		}
 	}
 }
 
@@ -8923,84 +9420,88 @@ create_artifact_scroll_of_isildur_effect = {
 			date = 5337.1.1
 			recipient = character:lineofanarion24 # Rómendacil
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5470.1.1
-			recipient = character:lineofanarion53 # Castamir, the Usurper
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5480.1.1
-			recipient = character:lineofanarion27 # Eldacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5523.1.1
-			recipient = character:lineofanarion29 # Aldamir
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5573.1.1
-			recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5654.1.1
-			recipient = character:lineofanarion31 # Minardil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5667.1.1
-			recipient = character:lineofanarion32 # Telemnar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5669.1.1
-			recipient = character:lineofanarion37 # Tarondor
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5831.1.1
-			recipient = character:lineofanarion38 # Telumehtar Umbardacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5883.1.1
-			recipient = character:lineofanarion39 # Narmacil
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5889.1.1
-			recipient = character:lineofanarion40 # Calimehtar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5969.1.1
-			recipient = character:lineofanarion41 # Ondoher
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5977.1.1
-			recipient = character:lineofanarion50 # Eärnil II
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 6076.1.1
-			recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
-		}
-		add_artifact_title_history = {
-			target = title:e_gondor_steward
-			date = 6083.1.1
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5399.1.1
+				recipient = character:lineofanarion26 # Valacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5465.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5470.1.1
+				recipient = character:lineofanarion53 # Castamir, the Usurper
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5480.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5523.1.1
+				recipient = character:lineofanarion29 # Aldamir
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5573.1.1
+				recipient = character:lineofanarion30 # Hyarmendacil Vinyarion
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5654.1.1
+				recipient = character:lineofanarion31 # Minardil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5667.1.1
+				recipient = character:lineofanarion32 # Telemnar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5669.1.1
+				recipient = character:lineofanarion37 # Tarondor
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5831.1.1
+				recipient = character:lineofanarion38 # Telumehtar Umbardacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5883.1.1
+				recipient = character:lineofanarion39 # Narmacil
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5889.1.1
+				recipient = character:lineofanarion40 # Calimehtar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5969.1.1
+				recipient = character:lineofanarion41 # Ondoher
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5977.1.1
+				recipient = character:lineofanarion50 # Eärnil II
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 6076.1.1
+				recipient = character:lineofanarion51 # Eärnur, the Last King of Gondor
+			}
+			add_artifact_title_history = {
+				target = title:e_gondor_steward
+				date = 6083.1.1
+			}
 		}
 	}
 }
@@ -9118,15 +9619,19 @@ create_artifact_statue_of_elros_effect = {
 			date = 5337.1.1
 			recipient = character:lineofanarion24 # Rómendacil
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5399.1.1
+				recipient = character:lineofanarion26 # Valacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5465.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
 		}
 	}
 }
@@ -9249,15 +9754,19 @@ create_artifact_aldarion_erendis_effect = {
 			date = 5337.1.1
 			recipient = character:lineofanarion24 # Rómendacil
 		}
-		add_artifact_history = {
-			type = inherited
-			date = 5399.1.1
-			recipient = character:lineofanarion26 # Valacar
-		}
-		add_artifact_history = {
-			type = inherited
-			date = 5465.1.1
-			recipient = character:lineofanarion27 # Eldacar
+		if = {
+			limit = { current_date > 5382.5.1 } # Fall of Arnor BM
+			
+			add_artifact_history = {
+				type = inherited
+				date = 5399.1.1
+				recipient = character:lineofanarion26 # Valacar
+			}
+			add_artifact_history = {
+				type = inherited
+				date = 5465.1.1
+				recipient = character:lineofanarion27 # Eldacar
+			}
 		}
 	}
 }

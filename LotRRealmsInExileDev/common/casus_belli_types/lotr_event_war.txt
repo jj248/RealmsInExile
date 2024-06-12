@@ -2411,6 +2411,14 @@ final_battle_gondor_cb = {
 			every_war_ally = {
 				add_prestige = 2000
 			}
+			if = {
+				limit = { 
+					NOT = { has_global_variable = lotr_achievement_76 }
+					is_ai = no
+					dynasty = dynasty:dynasty_dol_amroth
+				}
+				set_global_variable = lotr_achievement_76
+			}
 		}
 		
 		
@@ -5410,7 +5418,7 @@ war_in_the_north_cb = {
 		if = {
 			limit = {
 				NOT = { exists = global_var:lotr_achievement_48 }
-				is_ai = no
+				scope:attacker = { is_ai = no }
 			}
 			set_global_variable = lotr_achievement_48
 		}

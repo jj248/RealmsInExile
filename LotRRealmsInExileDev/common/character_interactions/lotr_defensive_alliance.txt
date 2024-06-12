@@ -17,11 +17,14 @@ establish_defensive_alliance_interaction = {
 	answer_reject_key = SEND_GIFT_REJECT
 
 	is_shown = {
+		scope:actor = { is_sauron = no }
+		scope:recipient = { is_sauron = no }
 		scope:actor = { has_perk = defensive_negotiations_perk }
 		NOT = { scope:recipient = scope:actor }
 		NOT = { scope:actor = { has_variable_list = defensive_allies } }
 		scope:actor = {
 			NOT = { has_culture = culture:wastelands }
+			is_ruler = yes
 			is_in_valinor = no
 		}
 		scope:recipient = {
@@ -167,7 +170,7 @@ establish_defensive_alliance_interaction = {
 		}
 		
 		modifier = {
-			add = -150
+			add = -250
 			scope:recipient = { opposite_alignment = { TARGET = scope:actor } }
 		}
 
@@ -727,6 +730,17 @@ establish_defensive_alliance_interaction = {
 		}
 
 		fp3_struggle_resist_allied_wars_modifier = yes
+		
+		#LotR - Elves won't ally other races in LotE difficulty setting
+		modifier = {
+			desc = DIFFERENT_RACE_REASON
+			trigger_if = { 
+				scope:recipient = { is_elf = yes }
+				has_game_rule = apocalyptic_sauron_strength
+			}
+			scope:actor = { is_elf = no }
+			add = -500
+		}
 	}
 
 	ai_potential = {
@@ -736,13 +750,6 @@ establish_defensive_alliance_interaction = {
 	ai_targets = {
 		ai_recipients = dynasty
 		max = 20
-	}
-	ai_targets = {
-		ai_recipients = family
-		max = 10
-	}
-	ai_targets = {
-		ai_recipients = spouses
 	}
 	ai_targets = {
 		ai_recipients = neighboring_rulers
@@ -791,6 +798,17 @@ establish_defensive_alliance_interaction = {
 			scope:recipient = {
 				is_vassal_of = scope:actor
 			}
+		}
+		
+		#LotR - Elves won't ally other races in LotE difficulty setting
+		modifier = {
+			desc = DIFFERENT_RACE_REASON
+			trigger_if = { 
+				scope:actor = { is_elf = yes }
+				has_game_rule = apocalyptic_sauron_strength
+			}
+			scope:recipient = { is_elf = no }
+			add = -500
 		}
 	}
 }

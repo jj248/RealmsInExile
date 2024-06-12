@@ -28,6 +28,24 @@ struggle_balrog_phase_armageddon = {
 	parent = balrog_struggle
 }
 
+#### Thani-Hazad Struggle ####
+
+thani_hazad_struggle = {
+	parent = struggle
+}
+
+struggle_thani_hazad_phase_disintegration = {
+	parent = thani_hazad_struggle
+}
+
+struggle_thani_hazad_phase_confederation = {
+	parent = thani_hazad_struggle
+}
+
+struggle_thani_hazad_phase_unification = {
+	parent = thani_hazad_struggle
+}
+
 #### Wilderness Mechanics ####
 
 colonisation = {
@@ -348,6 +366,7 @@ fay = {
 
 balrog = {
 	parent = maiargods
+	alias = { balrogs }
 }
 
 ### The Valar ###
@@ -555,7 +574,7 @@ tareg = {
 ### The Dwarves ###
 dwarffathers = {
 	parent = conceptmajorcharacter
-	alias = { dwarffathersshort dwarffathershort dwarffather}
+	alias = { dwarffathersshort dwarffathershort dwarffather dwarffathers_pluralshort }
 }
 durin = {
 	parent = conceptmajorcharacter
@@ -818,6 +837,12 @@ numenor = {
 	alias = { westernesse anadune }
 	parent = conceptplace
 }
+
+numenorean_empire = {
+	texture = "gfx/interface/icons/concept_icons/conceptplacenumenor.dds"
+	alias = { empire_of_numenor }
+	parent = numenor
+}
 realms_in_exile = {
 	texture = "gfx/interface/icons/concept_icons/conceptplacemiddleearth.dds"
 	alias = { realm_in_exile }
@@ -902,11 +927,14 @@ ray = {
 }
 thanihazad = {
 	parent = conceptplace
-	alias = { }
+	alias = { sevenlands }
 }
 mirenore = {
 	parent = conceptplace
 	alias = { mirenore_short zimrathani }
+}
+balan_lai = {
+	parent = conceptmajorloreidea
 }
 hildorien = {
 	parent = conceptplace
@@ -1153,6 +1181,10 @@ penni = {
 	parent = avari
 }
 
+cuind = {
+	parent = avari
+}
+
 ### Dwarves ###
 dwarves = {
 	parent = conceptrace
@@ -1261,8 +1293,9 @@ eriadorcolonisationthirdphase = {
 }
 
 ### Elves ###
-greatjourney = {
+thegreatjourney = {
 	parent = concepthistoricevent
+	alias = { greatjourney }
 }
 oathoffeanor = {
 	parent = concepthistoricevent
@@ -1604,7 +1637,9 @@ oiolare = {
 	alias = { oiolare_tree oiolare_trees }
 }
 
-defensive_alliance = { }
+defensive_alliance = {
+	alias = { defensive_ally }
+}
 
 ###########################
 #### Artifact Crafting ####

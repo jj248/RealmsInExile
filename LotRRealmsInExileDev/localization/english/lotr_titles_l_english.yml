@@ -3410,7 +3410,7 @@
  b_carchost:0 "Carchost"
  b_narchost:0 "Narchost"
  c_udun:0 "Udûn"
- b_carach_angren:0 "Isenmouthe"
+ b_carach_angren:0 "Carach Angren"
  b_udun:0 "Rogkalúr" #LOTRO
  c_durthang:0 "Durthang"
  b_durthang:0 "Durthang"
@@ -3469,7 +3469,7 @@
  b_mithram_gap:0 "Mithram Gap"
  b_ostigurth:0 "Ostigurth"
  b_nargroth:0 "Nargroth"
- b_khagukhor:0 "Khagukhôr"
+ b_khagukhor:0 "Seregost"
  c_kirithgal:0 "Kirithgal"
  b_kirithgal:0 "Kirithgal"
  b_ennyn_ur:0 "Ennyn Ûr"
@@ -6252,7 +6252,7 @@
  b_orunmila:0 "Orunmila"
  c_ojua:0 "Ojua"
  b_ojua:0 "Ojua"
- b_ilewíde:0 "Iléwíde"
+ b_ilew_i_de:0 "Iléwíde"
  b_ayanfe:0 "Ayanfe"
  c_bwakuta:0 "Bwakuta"
  b_bwakuta:0 "Bwakuta"
@@ -6679,7 +6679,7 @@
  k_soriya:0 "Sôriya"
  e_tedjin:0 "Qadjajar"
  e_faithful_tedjin:0 "Tedyathâni"
- e_anbalkumagan:0 "An-Balkûmagân"
+ e_anbalkumagan:0 "Anbalûkkhôr" # Empire of An-Balkûmagân
  e_thon_an_kharlokh:0 "Thôn an-Khârlôkh"
  e_thon_an_kharlokh_article:"the "
  e_numenor_in_exile:0 "Númenor-in-Exile"
@@ -6708,7 +6708,8 @@
  d_concordant_circle_article:0 "$the_$"
  k_arne:0 "Arne" # Kingdom of the Eriadorim in the late Second Age
  e_pharazain:0 "Pharazâin"
- 
+ e_thani_hazad_southern_province:0 "Kharasûzâin" # Name for a reduced Thani-hazad after the Empire of An-Balkumagan forms
+
  ### Special/Old Titulars ###
  e_valinor:0 "Valinor" 
  k_alqualonde:0 "Alqualondë"
@@ -6934,7 +6935,6 @@
  cn_agarnaith_blackspeech:0 "Grishbalt"
  cn_barad_wath_blackspeech:0 "Lugbolvag"
  cn_minas_durlith_blackspeech:0 "Hilug"  #Ash Tower
- cn_gorgoroth_black_speech:0 "Ognirtok"  #Land of Terror
  cn_b_kala_murg_sindarin:0 "Othronn Mithren" #Grey Stronghold
  cn_b_kra_burzum_sindarin:0 "Nelegroth" #LOTRO
  cn_c_kam_lagurz_sindarin:0 "Fennas Gost" #LOTRO
@@ -6942,7 +6942,6 @@
  cn_b_mamshar_sindarin:0 "Amon Ruth" #LOTRO
  cn_b_udun_sindarin:0 "Anglach" #LOTRO
  cn_b_udun_wastelands:0 "Udûn"
- cn_b_carach_angren_sindarin:0 "Carach Angren"
  cn_baraddur_quenya:0 "Lúnaturco"
  cn_b_barad_perras_blackspeech:0 "Lugvarg" #LOTRO
  cn_b_imlad_ithil_black_speech:0 "Banám Lugaun"
@@ -6965,8 +6964,6 @@
  cn_mulburz_sindarin:0 "Mithothlonn"
  cn_kirithgal_blackspeech:0 "Magh Groth" #LOTRO
  cn_b_ennyn_ur_blackspeech:0 "Krulronk" #LOTRO
- cn_seregost_blackspeech:0 "Khagukhôr" #MERP
- cn_b_khagukhor_sindarin:0 "Seregost" #MERP
  cn_b_flaksharbtur_sindarin:0 "Gorgorost"
  cn_b_gwathiraug_blackspeech:0 "Zi-asht"
  cn_b_morigost_blackspeech:0 "Lugshakamb"
@@ -6990,6 +6987,7 @@
  k_edhellond:0 "Edhellond"
  d_edhellond:0 "Edhellond"
  k_feanor_host:0 "Fëanorian Host"
+ k_feanor_host_article:0 "$the_$"
  k_feanorians_article:0 "$the_$"
 
  # Lindon

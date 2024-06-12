@@ -3043,7 +3043,7 @@
 		icon = core_tenet_pacifism
 
 		is_shown = {
-			religion = { is_in_family = rf_eruhini }
+			religion = religion:elven_religion
 		}
 
 		piety_cost = {
@@ -3091,8 +3091,7 @@
 		icon = core_tenet_pacifism
 
 		is_shown = { # Is only shown for Elves!
-			#religion = { is_in_family = rf_eruhini }
-			always = no
+			religion = religion:elven_religion
 		}
 
 		piety_cost = {
@@ -3553,16 +3552,21 @@
 		}
 		
 		traits = {
-			virtues = { blood_of_numenor patient }
+			virtues = {
+				# blood_of_numenor
+				patient
+			}
 			sins = { chaste }
 		}
 		
+		character_modifier = {
+			domain_tax_different_faith_mult = 0.2
+			levy_reinforcement_rate_same_faith = 0.25
+			levy_reinforcement_rate_different_faith = -0.25
+		}
+		
 		parameters = {
-			character_modifier = {
-				domain_tax_different_faith_mult = 0.2
-				levy_reinforcement_rate_same_faith = 0.25
-				levy_reinforcement_rate_different_faith = -0.25
-			}
+			lotr_numenor_blood_bonuses = yes #Boni for blood of numenor traits. Replaces use of it as a virtue
 			# Unlocks the 'Sponsor Adunaic Propaganda' activity option
 			adunaic_propaganda_active_desc = 0
 		}

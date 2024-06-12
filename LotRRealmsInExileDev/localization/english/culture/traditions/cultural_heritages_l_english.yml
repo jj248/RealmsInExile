@@ -68,6 +68,8 @@
  heritage_southern_adunaic_collective_noun:0 "Southern Adûnaic"
  heritage_southern_apysaic_name:0 "Southern Apysaic"
  heritage_southern_apysaic_collective_noun:0 "Southern Apysaic"
+ heritage_amutani_name:0 "Amutani"
+ heritage_amutani_collective_noun:0 "Amutani"
  heritage_tedjin_name:0 "Tedjin"
  heritage_tedjin_collective_noun:0 "Tedjin"
  heritage_tulwangi_name:0 "Tûlwangi"
@@ -90,3 +92,5 @@
  heritage_north_khailuza_collective_noun:0 "North Khailûza" #Khailûzans?
  heritage_south_khailuza_name:0 "South Khailûza"
  heritage_south_khailuza_collective_noun:0 "South Khailûza" #Khailûzans?
+ heritage_womaw_name:0 "Wômawrin" # More properly perhaps just Wômaw, but this helps dilineate the culture and the heritage
+ heritage_womaw_collective_noun:0 "Wômawrin"

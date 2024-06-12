@@ -318,13 +318,16 @@ arkenstone_modifier = {
 	court_grandeur_baseline_add = 4
 	monthly_prestige = 1
 	monthly_dynasty_prestige_mult = 0.08
+}
+
+arkenstone_thorin_modifier = {
 	dwarven_religion_opinion = -100
 }
 
 barazanthual_modifier = {
 	prowess_no_portrait = 10
-	heavy_infantry_damage_mult = 0.04
-	heavy_infantry_toughness_mult = 0.06
+	heavy_infantry_damage_mult = 0.1
+	heavy_infantry_toughness_mult = 0.1
 	monthly_prestige = 0.2
 }
 
@@ -333,6 +336,9 @@ orcrist_modifier = {
 	martial_per_prestige_level = 1
 	prowess_no_portrait = 17
 	monthly_prestige = 0.5
+}
+
+orcrist_thorin_modifier = {
 	dwarven_religion_opinion = -50
 }
 
@@ -706,6 +712,33 @@ crown_bountig_modifier = {
 	vassal_opinion = 10
 	vassal_tax_contribution_mult = 0.1
 	vassal_levy_contribution_mult = 0.05
+}
+
+### Thani-Hazad ###
+
+witness_of_restraint_modifier = {
+	prowess_no_portrait = 10
+	monthly_prestige = 0.75
+	monthly_dynasty_prestige = 0.15
+}
+
+cleaver_of_foolish_folks_modifier = {
+	prowess_no_portrait = 13
+	monthly_prestige = 0.25
+	dread_baseline_add = 10
+}
+
+the_grand_concordant_modifier = {
+	monthly_prestige = 1
+	monthly_dynasty_prestige = 0.30
+	diplomacy_per_prestige_level = 1
+}
+
+gilded_armour_of_imrazor_modifier = {
+	monthly_dynasty_prestige = 0.15
+	monthly_prestige = 0.75
+	prowess_no_portrait = 5
+	heavy_infantry_toughness_mult = 0.15
 }
 	
 
