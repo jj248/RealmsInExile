@@ -1326,6 +1326,8 @@ special_genes = {
 			}
 			
 			noldor_spear_left_hand = {
+				index = 43
+				male = {
 					1 = noldor_spear_left_hand
 				}
 				female = male
