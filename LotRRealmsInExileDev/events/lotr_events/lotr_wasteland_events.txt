@@ -57,23 +57,23 @@ wastelands.0001 = {
 	immediate = {
 		debug_log = "Wastelands.0001: Preventing raiding..."
 		scope:raider = {
-				send_interface_toast = {	
-					title = wastelands.0001.t
-					left_icon = scope:raider
-					custom_tooltip = wastelands.0001.desc			
-				}
-				add_truce_both_ways = {
-					character = scope:county.holder.top_liege
-					years = 10
-					name = TRUCE_TRADE_DEAL
-				}
+			send_interface_toast = {	
+				title = wastelands.0001.t
+				left_icon = scope:raider
+				custom_tooltip = wastelands.0001.desc			
+			}
+			add_truce_both_ways = {
+				character = scope:county.holder.top_liege
+				years = 10
+				name = TRUCE_TRADE_DEAL
+			}
 
-				# Add some mutual opinion gain.
-				reverse_add_opinion = {
-					target = scope:county.holder.top_liege
-					modifier = pleased_opinion
-					opinion = 100
-				}
+			# Add some mutual opinion gain.
+			reverse_add_opinion = {
+				target = scope:county.holder.top_liege
+				modifier = pleased_opinion
+				opinion = 100
+			}
 		}		
 	}	
 }
@@ -233,7 +233,7 @@ wastelands.0006 = {
 		trigger_if = { #default game rules
 			limit = { has_game_rule = default_colonisation_speed }
 			OR = {
-				dynasty = dynasty:dynasty_elros # Can only start colonising after Aragorn returns
+				dynasty = dynasty:dynasty_elendil # Can only start colonising after Aragorn returns
 				dynasty = dynasty:dynasty_oropher # Can only start colonising after Aragorn returns
 				culture = culture:woodmen # Can only start colonising after Aragorn returns
 				culture = culture:valemen # Can only start colonising after Aragorn returns

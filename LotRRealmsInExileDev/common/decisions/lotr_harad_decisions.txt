@@ -136,8 +136,19 @@ decision_chelkar_submission = {
 		current_year >= 7000 # Suladans ambitions
 		culture = { has_cultural_pillar = heritage_northern_apysaic }
 		has_title = title:k_haruzan	
-		title:k_chelkar = { exists = holder }		
-		is_target_in_global_variable_list = { 
+		title:k_chelkar = {
+			exists = holder
+			holder ?= {
+				NOT = { is_sauron = yes }
+				NOT = { this = ROOT }
+				top_liege = {
+					NOT = { is_sauron = yes }
+					NOT = { this = ROOT }
+				}
+			}
+		}
+		NOT = { has_title = title:k_chelkar }
+		is_target_in_global_variable_list = {
 			name = haruzan_expansion_routes
 			target = flag:haruzan_eastern_expansion
 		}
@@ -674,11 +685,9 @@ decision_arysor_trade_dominance = {
 		OR = {
 			culture = culture:arysisani
 			culture = { any_parent_culture_or_above = { this = culture:arysisani }}
-			capital_province = {
-				county = {
-					any_this_title_or_de_jure_above = {
-						this = title:k_arysis
-					}
+			capital_county = {
+				any_this_title_or_de_jure_above = {
+					this = title:k_arysis
 				}
 			}
 		}
@@ -784,7 +793,7 @@ decision_arysor_trade_dominance = {
 		#}
 		#if = {
 		#	limit = {
-		#		NOT = { root.culture = culture:arysisani
+		#		NOT = { root.culture = culture:arysisani}
 		#	}
 		#	culture:arysisani = {
 		#		if = {

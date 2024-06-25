@@ -7,6 +7,7 @@
 	}
 	faiths = {
 		faith_thani_hazad
+		faith_gimileth
 	}
 	regions = {
 		middleearth_thani_hazad_struggle_region
@@ -62,8 +63,8 @@
 						catalyst_accepted_independence_faction_demands = medium_struggle_catalyst_over_time_gain
 						catalyst_fabricating_duchy_level_claims = medium_struggle_catalyst_over_time_gain
 						catalyst_reveal_secret_important = medium_struggle_catalyst_over_time_gain
-						catalyst_fabricated_hook_scheme = medium_struggle_catalyst_over_time_gain
 						catalyst_becomes_rival_with_involved = minor_struggle_catalyst_over_time_gain
+						catalyst_fabricated_hook_scheme = minor_struggle_catalyst_over_time_gain
 						catalyst_imprison_important = minor_struggle_catalyst_over_time_gain
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 					}
@@ -80,7 +81,7 @@
 						catalyst_ransom_important = medium_struggle_catalyst_over_time_gain
 						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_over_time_gain
 						catalyst_release_important = minor_struggle_catalyst_over_time_gain
-						catalyst_sway_scheme = minimal_struggle_catalyst_over_time_gain
+						catalyst_sway_scheme = minor_struggle_catalyst_over_time_gain
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 					}
 				}
@@ -91,6 +92,26 @@
 
 				interloper_parameters = {
 					truces_by_involved_or_interlopers_within_region_shorter = yes
+				}
+
+				involved_character_modifier = {
+					same_culture_mercenary_hire_cost_mult = -0.3
+					ai_war_chance = 15
+					ai_war_cooldown = -0.5
+					led_by_owner_extra_advantage_add = 3
+					glory_hound_ai_energy = very_high_positive_ai_value
+					glory_hound_ai_boldness = very_high_positive_ai_value
+				}
+				
+				interloper_character_modifier = {
+					enemy_hard_casualty_modifier = 0.05
+					# Interlopers'll have an easier time with hiring mercenaries.
+					mercenary_hire_cost_mult = -0.40
+					# But also benefit greatly from taking part personally.
+					# Get out there and do your part.
+					led_by_owner_extra_advantage_add = 15
+					ai_war_chance = 10
+					ai_war_cooldown = -0.5
 				}
 			}
 
@@ -108,6 +129,14 @@
 					unlikely_to_accept_vassalisation = yes
 					unlocks_incite_revolts_interaction = yes
 				}
+
+				involved_character_modifier = {
+					diplomatic_range_mult = -0.25
+				}
+				
+				involved_parameters = {
+					unlocks_claim_throne_for_powerful_vassals = yes
+				}
 			}
 
 			ending_decisions = {
@@ -124,18 +153,18 @@
 				struggle_thani_hazad_phase_disintegration = {
 					catalysts = {
 						catalyst_execute_important = monumental_struggle_catalyst_over_time_gain
+						catalyst_vassalize_independent_ruler = massive_struggle_catalyst_over_time_gain
 						catalyst_enforcing_de_jure_claims = massive_struggle_catalyst_over_time_gain
 						catalyst_abduct_scheme = massive_struggle_catalyst_over_time_gain
 						catalyst_mysterious_dissapearance_involved_character = major_struggle_catalyst_over_time_gain
 						catalyst_using_a_hook_on_very_important_character = major_struggle_catalyst_over_time_gain
 						catalyst_broke_truce_against_important_character = major_struggle_catalyst_over_time_gain
 						catalyst_discovery_of_very_important_murder = major_struggle_catalyst_over_time_gain
-						catalyst_vassalize_independent_ruler = major_struggle_catalyst_over_time_gain
 						catalyst_accepted_independence_faction_demands = medium_struggle_catalyst_over_time_gain
 						catalyst_fabricating_duchy_level_claims = medium_struggle_catalyst_over_time_gain
 						catalyst_reveal_secret_important = medium_struggle_catalyst_over_time_gain
-						catalyst_fabricated_hook_scheme = medium_struggle_catalyst_over_time_gain
 						catalyst_becomes_rival_with_involved = minor_struggle_catalyst_over_time_gain
+						catalyst_fabricated_hook_scheme = minor_struggle_catalyst_over_time_gain
 						catalyst_imprison_important = minor_struggle_catalyst_over_time_gain
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 					}
@@ -152,17 +181,18 @@
 						catalyst_ransom_important = medium_struggle_catalyst_over_time_gain
 						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_over_time_gain
 						catalyst_release_important = minor_struggle_catalyst_over_time_gain
-						catalyst_sway_scheme = minimal_struggle_catalyst_over_time_gain
+						catalyst_sway_scheme = minor_struggle_catalyst_over_time_gain
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 					}
 				}
 				struggle_thani_hazad_phase_unification = {
 					catalysts = {
-						catalyst_forming_alliance_with_major_uninvolved_power = medium_struggle_catalyst_over_time_gain
-						catalyst_interloper_uninvolved_gain_struggle_vassals = major_struggle_catalyst_over_time_gain
-						catalyst_interloper_uninvolved_gain_struggle_titles = major_struggle_catalyst_over_time_gain
-						catalyst_sign_truce_outside_war = major_struggle_catalyst_over_time_gain
-						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+						catalyst_forming_alliance_with_major_uninvolved_power = monumental_struggle_catalyst_over_time_gain
+						catalyst_interloper_uninvolved_gain_struggle_titles = monumental_struggle_catalyst_over_time_gain
+						catalyst_involved_ruler_lost_war = monumental_struggle_catalyst_over_time_gain
+						catalyst_interloper_uninvolved_gain_struggle_vassals = massive_struggle_catalyst_over_time_gain
+						catalyst_sign_truce_outside_war = massive_struggle_catalyst_over_time_gain
+						catalyst_passing_of_time = major_struggle_catalyst_over_time_gain
 					}
 				}
 			}
@@ -171,6 +201,13 @@
 				name = WAR_EFFECTS_NAME
 				common_parameters = {
 					wars_more_expensive = yes
+					involved_rulers_can_join_other_involved_rulers = yes
+				}
+				
+				interloper_character_modifier = {
+					mercenary_hire_cost_mult = -0.20
+					ai_war_chance = 10
+					ai_war_cooldown = -0.5
 				}
 			}
 
@@ -180,6 +217,9 @@
 
 			culture_effects = {
 				name = CULTURE_EFFECTS_NAME
+				involved_parameters = {
+					unlocks_claim_throne_for_powerful_vassals = yes
+				}
 			}
 
 			other_effects = {
@@ -213,17 +253,18 @@
 						catalyst_ransom_important = medium_struggle_catalyst_over_time_gain
 						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_over_time_gain
 						catalyst_release_important = minor_struggle_catalyst_over_time_gain
-						catalyst_sway_scheme = minimal_struggle_catalyst_over_time_gain
+						catalyst_sway_scheme = minor_struggle_catalyst_over_time_gain
 						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
 					}
 				}
 				struggle_thani_hazad_phase_unification = {
 					catalysts = {
-						catalyst_forming_alliance_with_major_uninvolved_power = medium_struggle_catalyst_over_time_gain
-						catalyst_interloper_uninvolved_gain_struggle_vassals = major_struggle_catalyst_over_time_gain
-						catalyst_interloper_uninvolved_gain_struggle_titles = major_struggle_catalyst_over_time_gain
-						catalyst_sign_truce_outside_war = major_struggle_catalyst_over_time_gain
-						catalyst_passing_of_time = minimal_struggle_catalyst_over_time_gain
+						catalyst_forming_alliance_with_major_uninvolved_power = monumental_struggle_catalyst_over_time_gain
+						catalyst_interloper_uninvolved_gain_struggle_titles = monumental_struggle_catalyst_over_time_gain
+						catalyst_involved_ruler_lost_war = monumental_struggle_catalyst_over_time_gain
+						catalyst_interloper_uninvolved_gain_struggle_vassals = massive_struggle_catalyst_over_time_gain
+						catalyst_sign_truce_outside_war = massive_struggle_catalyst_over_time_gain
+						catalyst_passing_of_time = major_struggle_catalyst_over_time_gain
 					}
 				}
 			}
@@ -231,12 +272,16 @@
 			war_effects = {
 				name = WAR_EFFECTS_NAME
 
-				
 				involved_character_modifier = {
 					same_culture_mercenary_hire_cost_mult = -0.20
 					advantage = 5 # gives the upper hand against outsiders
 				}
 
+				involved_county_modifier = {
+					# The region is more amenable for waging war.
+					levy_size = 0.5
+					garrison_size = -0.25
+				}
 			}
 
 			faith_effects = {

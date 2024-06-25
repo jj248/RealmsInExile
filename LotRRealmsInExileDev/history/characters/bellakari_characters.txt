@@ -67,7 +67,7 @@ lineoftumakvehbelzagargrandfather = { # Bêlzagar's Númenórean Grandfather.
 						
 			
 	trait = intellect_good_1					
-
+	trait = born_on_numenor
     trait = blood_of_numenor_10
 	3674.4.21 = {			
 		birth = yes	
@@ -1351,6 +1351,7 @@ lineoftumakveh33 = {
 	dynasty = dynasty_tumakveh
 	religion = faith_infinite_wisdom
 	culture = bellakaze
+    dna = urduzir_dna 
 
 	
 	trait = education_diplomacy_2
@@ -3464,7 +3465,7 @@ lineofisilithor1 = {
 	trait = just			
 	trait = compassionate			
 	trait = calm			
-
+	trait = born_on_numenor
     trait = blood_of_numenor_8
 	3849.8.14 = {			
 		birth = yes		
@@ -4809,6 +4810,7 @@ lineofisilithor30 = {
     dynasty = dynasty_korlea
     religion = faith_conservative_eruism
     culture = bellakarani
+    dna = lineofisilithor30_dna
 
     father = lineofisilithor28
     mother = lineofisilithor29
@@ -46518,12 +46520,10 @@ izindubeth1 = { # Imrathôr of Narîk-zadan, Izindube_e_th the Prophet
     trait = theologian
     trait = scholar
     trait = diplomat
+	trait = blood_of_numenor_4
 	
 	4805.8.2 = {
 		birth = yes
-        effect = {	
-            add_trait = blood_of_numenor_6
-        }
 	}
     4900.1.1 = {
         give_nickname = nick_the_prophet_saint
@@ -46609,12 +46609,10 @@ izindubeth_special_2 = { 	# Saint Gimilzôr the Unbreakable: Unrelenting faith, 
 	trait = maimed
 	trait = whole_of_body
 	trait = saint
+	trait = blood_of_numenor_1
 	
 	5512.5.3 = {
 		birth = yes
-        effect = {	
-            add_trait = blood_of_numenor_3
-        }
 	}	
 	5552.3.4 = {
         give_nickname = nick_the_unbreakable_saint

@@ -91,6 +91,14 @@ make_settlement_county_wilderness = {
 		}
 		every_county_province = {
 			limit = {
+				is_county_capital = no
+				has_holding = yes
+			}
+			set_holding_type = ruined_holding
+		}
+		every_county_province = {
+			limit = {
+				is_county_capital = yes
 				has_holding = yes
 			}
 			if = {
@@ -285,6 +293,14 @@ ai_colonisation_effect = {
 				set_holding_type = settlement_holding
 			}
 			every_county_province = {
+				limit = {
+					has_holding = yes
+					is_county_capital = no
+					has_holding_type = wastelands_holding			
+				}
+				set_holding_type = ruined_holding
+			}
+			every_county_province = {
 				barony = { generate_coa = yes }
 			}
 		}
@@ -389,7 +405,11 @@ correct_wastelands_tracker = {
 			value = var:correct_settlement_count.div2
 		}
 		if = {
-			limit = { NOT = { var:num_settled_wilderness = var:correct_settlement_count } }
+			limit = {
+				exists = var:num_settled_wilderness
+				exists = var:correct_settlement_count
+				NOT = { var:num_settled_wilderness = var:correct_settlement_count }
+			}
 			set_variable = {
 				name = num_settled_wilderness
 				value = var:correct_settlement_count

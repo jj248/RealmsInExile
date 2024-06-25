@@ -505,9 +505,9 @@
  lotr_intro_events.7507.a:0 "Heed the words of the wise..."
 
  # Introduction to Arimîth
- lotr_intro_events.7508.t:0 "INTRO - PLACEHOLDER"
- lotr_intro_events.7508.desc:0 "Arimîth - Description"
- lotr_intro_events.7508.a:0 "Arimîth - Option"
+ lotr_intro_events.7508.t:0 "The Jewel of the Southlands"
+ lotr_intro_events.7508.desc:0 "Arimîth, Princess of Karsalas, is as cunning as she is fair. The only child of her father, he passed suddenly at a young age, leaving the so-called 'Jewel of the Southlands', as the Princess was known, in a precarious position. Her two uncles were quick to pounce, and it was only with the pressure of Phorakôn, leader of the [balan_lai|E], that they backed off.\n\nYet Arimîth was not cowed, for following that incident she has grown into a shrewd, confident, and cautious leader; worthy of her position as a Princess of the [balan_lai|E]. Since then, however, there has been a new player in her life.\n\nProud and passionate Imrazôr III, Prince of Alsarias, has long sought Arimîth's heart. Whereas once she was uncertain, over the long period of courtship she has come to return his affections.\n\nYet for their tale of love to come to a conclusion, there is much yet to be done, for romance may yet influence the future of the [balan_lai|E]."
+ lotr_intro_events.7508.a:0 "There is much that must happen."
 
  # Introduction to Karaag
  lotr_intro_events.7509.t:0 "INTRO - PLACEHOLDER"
@@ -523,3 +523,8 @@
  lotr_intro_events.7511.t:0 "The Clubfooted"
  lotr_intro_events.7511.desc:0 "Daroc III, Prince of Hammerdal, is a man of no small stature. A lifelong cripple, Daroc's clubfeet and limp had caused many to believe that he would be unfit to rule over the martial men of Hammerdal. In his youth he faced a raiding force of [anbalkumagan|E], and crushed a man's skull in its helmet. Any uncertainty would soon be forgotten.\n\nTo Daroc, his limp is nothing more than an extra challenge to overcome. He is the greatest in size and most ferocious in battle of all the Princes of the [balan_lai|E], and there are scarce few who do not fear facing him even in his middle age.\n\nYet with the Stormhost rising once more in the north, it is his realm that shall first face total assault, and there is no certainty if his fellow Princes shall come to his aid."
  lotr_intro_events.7511.a:0 "The storm rises again."
+
+ # Introduction to Szoranh, the dragon at world's end
+ lotr_intro_events.7512.t:0 "The Dragon and his Scarlet Blades"
+ lotr_intro_events.7512.desc:0 "Szoranh was once a nameless deckhand. Born with a disfigured left foot, he was little use as a combatant. Ambitious despite his deformity, Szoranh was often seen ashore learning to read and count coin. This changed rather suddenly when he met Bhalrim.\n\nThe Scarlet Sword was a feared warrior in Vulmaw, for the joy he took in the suffering of his foes. Content to act the part of wandering sword for hire, Bhalrim never chose to tie himself to any master. Yet it would seem that Szoranh and Bhalrim were a duo set upon each other's paths by fate, for they swiftly formed a deep bond and carried out plans to usurp a fleet and sail for a land of oppertunity.\n\nThe Balan Lai are vulnerable. Pel crumbles as a dome struck with thunderous force, while in the north Szoranh hears tell of some host of men that moves as a storm across the land. Surely any such army would be a welcome ally to the Freed of Kadir.\n\nWherever the pair strikes, they carry the legacy of Womawas and Kadir further than ever before into the west of Middle earth."
+ lotr_intro_events.7512.a:0 "To World's End and ever onward."

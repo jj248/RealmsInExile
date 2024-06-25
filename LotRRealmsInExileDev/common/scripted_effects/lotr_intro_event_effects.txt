@@ -89,8 +89,12 @@ fire_intro_events_3000 = {
 			add_character_modifier = sauron_strengthened_1_modifier
 		}
 		else_if = {
-			limit = { has_game_rule = apocalyptic_sauron_strength }
+			limit = { has_game_rule = very_strong_sauron_strength }
 			add_character_modifier = sauron_strengthened_2_modifier
+		}
+		else_if = {
+			limit = { has_game_rule = apocalyptic_sauron_strength }
+			add_character_modifier = sauron_strengthened_3_modifier
 		}
 		trigger_event = {
 			id = sauron.4000
@@ -127,6 +131,10 @@ fire_intro_events_3000 = {
 				id = nazgul.0051
 				years = 15
 			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -146,6 +154,10 @@ fire_intro_events_3000 = {
 				days = 1
 			}
 			set_culture = culture:ringwraith
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -222,9 +234,19 @@ fire_intro_events_3000 = {
 	}
 
 	character:lineofhuz190 = { # Huz-Margoz
-		trigger_event = {
-			id = lotr_intro_events.7003
-			days = 1
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+			}
+			trigger_event = {
+				id = lotr_intro_events.7003
+				days = 1
+			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -250,6 +272,10 @@ fire_intro_events_3000 = {
 			trigger_event = {
 				id = lotr_intro_events.4001
 				days = 1
+			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
 			}
 		}
 	}
@@ -481,6 +507,10 @@ fire_intro_events_3000 = {
 				id = lotr_intro_events.7202
 				days = 1
 			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -566,7 +596,7 @@ fire_intro_events_3000 = {
 	}
 
 	# The Golden King
-	character:goldenking1 = {
+	character:nazgul3 = {
 		set_global_variable = {
 			name = goldenking
 			value = this
@@ -581,6 +611,10 @@ fire_intro_events_3000 = {
 				days = 1
 			}
 			set_culture = culture:ringwraith
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -608,6 +642,10 @@ fire_intro_events_3000 = {
 			trigger_event = {
 				id = lotr_intro_events.7004
 				days = 1
+			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
 			}
 		}
 	}
@@ -665,6 +703,10 @@ fire_intro_events_3000 = {
 				id = lotr_intro_events.7501
 				days = 1
 			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -677,6 +719,10 @@ fire_intro_events_3000 = {
 			trigger_event = {
 				id = lotr_intro_events.7502
 				days = 1
+			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
 			}
 		}
 	}
@@ -983,8 +1029,6 @@ fire_intro_events_3000 = {
 		}
 	}
 
-
-
 	############################
 	### Elven Introductions	 ###
 	############################
@@ -1235,31 +1279,19 @@ fire_intro_events_3000 = {
 	###########################
 	### Vulmaw Introduction ###
 	###########################
-
-	character:lineofszoranh1 = { # Dragon at World's End starting event
+	character:lineofszoranh1 = { # The Dragon at world's end. Founder of the Scarlet Triad
 		if = {
 			limit = {
 				is_alive = yes
 				is_landed = yes
 			}
-			# trigger_event = {
-			# 	id = lotr_intro_events.2004
-			# 	days = 1
-			# }
-			spawn_army = {
-				uses_supply = no
-				inheritable = no
-				name = scarlet_blades
-				levies = 700
-				 men_at_arms = {
-				 	type = waw_pirates
-				 	stacks = 2
-				 }
-				
-				location = capital_province
+			trigger_event = {
+				id = lotr_intro_events.7512
+				days = 1
 			}
 		}
 	}
+
 	###############################
 	### Orc/Goblin Introduction ###
 	###############################
@@ -1274,6 +1306,10 @@ fire_intro_events_3000 = {
 				id = lotr_intro_events.4002
 				days = 1
 			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -1287,6 +1323,10 @@ fire_intro_events_3000 = {
 				id = lotr_intro_events.4003
 				days = 1
 			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
+			}
 		}
 	}
 
@@ -1299,6 +1339,10 @@ fire_intro_events_3000 = {
 			trigger_event = {
 				id = lotr_intro_events.4004
 				days = 1
+			}
+			if = {
+				limit = { has_game_rule = apocalyptic_sauron_strength }
+				add_character_modifier = sauron_strengthened_4_modifier
 			}
 		}
 	}

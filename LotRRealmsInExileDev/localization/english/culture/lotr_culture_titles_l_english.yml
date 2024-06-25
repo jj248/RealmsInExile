@@ -401,6 +401,30 @@
  duchy_easterling:0 "[CHARACTER.Custom('easterling_duchy')]"
  county_easterling:0 "[CHARACTER.Custom('easterling_county')]"
 
+ ### Womarin
+ duchy_scarlet_triad:0 "Organization"
+ duke_scarlet_triad:0 "Suào’p"
+
+ emperor_sea_dragon_host:0 "Sea Dragon"
+ empire_sea_dragon_host:0 "Hosts"
+
+ ## Womaw Heritage # Notably, ruling titles are almost always gender-neutral in Womarin. Interesting!
+ baron_male_womarin:0 "Kâg"
+ baron_female_womarin:0 "Kâg"
+ barony_womarin:0 "Kâgrûs" 
+ count_male_womarin:0 "Kanga"
+ count_female_womarin:0 "Kanga"
+ county_womarin:0 "Kangarûs"
+ duke_male_womarin:0 "Hion"
+ duke_female_womarin:0 "Hion"
+ duchy_womarin:0 "Hionrûs"
+ king_male_womarin:0 "Mûl"
+ king_female_womarin:0 "Mûl"
+ kingdom_womarin:0 "Mûlrûs"
+ emperor_male_womarin:0 "Hionvôr"
+ emperor_female_womarin:0 "Hionvôr"
+ empire_womarin:0 "Drûs"
+
  # vassal titles #
  count_oligarchy_male:0 "[CHARACTER.Custom('count_oligarchy_male')]"
  count_oligarchy_male_vassal:0 "Councilman"

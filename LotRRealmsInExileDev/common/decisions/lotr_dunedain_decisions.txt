@@ -1319,7 +1319,11 @@ decision_gondor_x_bellakar = {
 			}
 		}
 		faith_is_good = yes
-		dynasty = dynasty:dynasty_elros 
+		OR = {
+			dynasty = dynasty:dynasty_elros
+			dynasty = dynasty:dynasty_elendil
+			dynasty = dynasty:dynasty_anarion
+		}
 
 		NOT = {
 			is_target_in_global_variable_list = {
@@ -1450,7 +1454,11 @@ decision_reunited_kingdom = {
 		has_title = title:e_arnor
 		NOT = { has_title = title:e_reunitedkingdom }
 
-		dynasty = dynasty:dynasty_elros
+		OR = {
+			dynasty = dynasty:dynasty_elros
+			dynasty = dynasty:dynasty_elendil
+			dynasty = dynasty:dynasty_anarion
+		}
 
 		highest_held_title_tier >= tier_empire
 		
@@ -2054,12 +2062,18 @@ decision_reclaim_royal_lineage = {
 	
 	is_shown = {
 		is_landed = yes
-		highest_held_title_tier >= tier_kingdom
 		faith_is_good = yes
 		OR = { # Ensures at least one option is still available
 			dynasty = dynasty:dynasty_aranbor
 			dynasty = dynasty:dynasty_silivnir
 		}
+	}
+	
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_dunedain }
+		faith.religion = religion:dunedain_religion
+		prestige_level >= 5
+		has_title = title:e_arnor
 		trigger_if = {
 			limit = { 
 				has_dlc_feature = legends
@@ -2073,13 +2087,6 @@ decision_reclaim_royal_lineage = {
 		trigger_else = {
 			legitimacy_level = 5
 		}
-	}
-	
-	is_valid = {
-		culture = { has_cultural_pillar = heritage_dunedain }
-		faith.religion = religion:dunedain_religion
-		prestige_level >= 5
-		has_title = title:e_arnor
 	}
 	
 	is_valid_showing_failures_only = {
@@ -3716,7 +3723,9 @@ decision_integrate_the_northern_provinces = {
 
 	is_shown = {
 		is_independent_ruler = yes
-		culture = { has_cultural_pillar = heritage_dunedain }
+		
+		lotr_has_numenorean_culture_trigger = yes
+		
 		OR = {
 			has_title = title:e_arnor
 			AND = {
@@ -3724,6 +3733,13 @@ decision_integrate_the_northern_provinces = {
 				is_target_in_global_variable_list = {
 					name = unavailable_unique_decisions
 					target = flag:decision_solidify_reunited_kingdom
+				}
+			}
+			AND = {
+				has_title = title:e_numenor_in_exile
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:decision_numenor_in_exile
 				}
 			}
 		}

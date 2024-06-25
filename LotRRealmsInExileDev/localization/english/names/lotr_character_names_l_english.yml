@@ -4015,6 +4015,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Eldal_ot_e_e:0 "Eldalótë" #Q # Legacy Elves Unsorted
  Eldal_ote:0 "Eldalóte" # Quenya Female
  Eldalote:0 "Eldalote" # Dunedain Unsorted
+ Eldal_oto:0 "Eldalóto" # Quenya Male
  Eldamir:0 "Eldamir" # Quenya Male
  Eldanar:0 "Eldanar" # Quenya Male
  Eldanon:0 "Eldanon" # Quenya Male
@@ -5583,6 +5584,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Grolg:0 "Grolg" # Orc Unsorted
  Gromka:0 "Gromka" # Orc Unsorted
  Grond:0 "Grond" # Orc Unsorted
+ Gronnil:0 "Gronnil" # Sindarin Mal
  Grorfand:0 "Grorfand" # Orc Unsorted
  Grorg:0 "Grorg" # Orc Unsorted
  Grorgi:0 "Grorgi" # Orc Unsorted
@@ -7176,6 +7178,7 @@ Uirne:0 "Uirne" # Hillmen Female
  L_eowynn:0 "Léowynn" # Unsorted Unsorted
  L_if:0 "Líf" # Unsorted Unsorted
  L_Indal:0 "Líndal" # Nandorin Male
+ L_iregiel:0 "Líregiel" #Sindarin female
  L_is:0 "Lís" # Unsorted Unsorted
  L_ithskyalf:0 "Líthskyalf" # Dwarven Unsorted
  L_o_ow_e_e:0 "Löwë" #Q # Legacy Elves Unsorted
@@ -7501,7 +7504,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Lo_o_miphel:0 "Lômiphel" # Adunaic Female
  Lo_o_mizi_i_r:0 "Lômizîr" # Adunaic Female
  Lo_o_thraph:0 "Lôthraphel" # Igath Female
- Lo_t_het_ari:0 "Loþetári" # Unsorted Unsorted
+ Lo_t_het_ari:0 "Lothetári" # Unsorted Unsorted
  Lobamab:0 "Lobamab" # Orc Unsorted
  Lobelia:0 "Lobelia" # Hobbit Female
  Lod:0 "Lod" # Gwathiurim Unsorted
@@ -7516,6 +7519,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Logabath:0 "Logabath" # Orc Unsorted
  Loggru:0 "Loggru" # Orc Unsorted
  Loguth:0 "Loguth" # Orc Unsorted
+ Logyd:0 "Logyd" # Sindarin Male
  Lojnar:0 "Lojnar" # Tedjin Male
  Lokha_a_ng:0 "Lokhâng" # Womarin Male
  Lokk:0 "Lokk" # Orc Unsorted
@@ -12113,6 +12117,7 @@ Uirne:0 "Uirne" # Hillmen Female
  V_ana:0 "Vána" # Quenya Female
  V_e_eaher:0 "Vëaher" # Unsorted Unsorted
  V_e_eandur:0 "Vëandur" # Unsorted Unsorted
+ V_e_eantur:0 "Vëantur" # Quenya Male
  V_i_shrakh:0 "Vîshrakh" # Unsorted Unsorted
  V_iri_e_e:0 "Vírië" #Q # Legacy Elves Unsorted
  V_u_kr_o_b_u_l:0 "Vûkrôbûl" # Orc Unsorted
@@ -12620,6 +12625,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Yurzavet:0 "Yurzavet" # Ioriag Female
  Yusraa:0 "Yusraa" # Apysaic Female
  Yvonen:0 "Yvonen" # Dorwinion Female
+ _Yliel:0 "Ýliel" # Sindarin female
  Z_irabel:0 "Zírabel" # Adunaic Female
  Z_kk:0 "Zâkk" # Abrakhan Male
  Z_omemir:0 "Zómemir" # Unsorted Unsorted
@@ -13232,6 +13238,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Febus:0 "Febus"
  Feirefiz:0 "Feirefiz"
 #  Felec:0 "Felec" # Already defined in vanilla
+ Felvebon:0 "Felvebon"
  Flois:0 "Flois"
  Floriant:0 "Floriant"
  Freichfras:0 "Freichfras"
@@ -13696,6 +13703,7 @@ Uirne:0 "Uirne" # Hillmen Female
  Gveneoure:0 "Gveneoure"
  Gwaeddan:0 "Gwaeddan"
  Gwendolen:0 "Gwendolen"
+ Gwendolien:0 "Gwendolien"
  Gwendoloena:0 "Gwendoloena"
  Gwennor:0 "Gwennor"
  Gwenore:0 "Gwenore"

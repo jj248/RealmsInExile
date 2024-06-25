@@ -1,4 +1,5 @@
 ﻿l_english:
+
  dynn_istari_motto:0 "Do not meddle in the affairs of wizards"
 
 ## Dwarves ##
@@ -92,6 +93,7 @@
  dynn_bombadil_motto:0 "Ring a dong! Hop along!"
  
  ### Dunedain ### Juke note: There are probably some wrong ones in here since they were unsorted
+ dynn_elendil_motto:0 "Et Eärello Endorenna utúlien. Sinomë maruvan ar Hildinyar tenn' Ambar-metta."
  dynn_isildur_motto:0 "The flame of the West"
  dynn_anarion_motto:0 "Sovereigns of peace and splendour"
  dynn_elros_motto:0 "The Star of Eärendil will shine for eternity" 
@@ -651,7 +653,7 @@
  dynn_onikana_motto:0 "We shall reclaim our heritage"
 
  ### An-Balkûmagân ###
- dynn_anballukkhorohin_motto:0 "Preservers of the Heritage of the Adûnaim"
+ dynn_anballukkhorohin_motto:0 "Preservers of the Heritage of the Adûnâi"
  dynn_nolundur_motto:0 "Ride the seas, guard the gate"
  dynn_zimrakhor_motto:0 "Rightful masters of all fine jewels"
  dynn_urudeth_motto:0 "The mountain's strength is born from blood"
@@ -867,3 +869,6 @@
  dynn_sederivassaltwo_motto:0 "Always heard, never seen"
  dynn_sederivassalthree_motto:0 "Freedom or death"
  dynn_balisar_motto:0 "Guided by elven-stars"
+
+ ### Vulmaw ###
+ dynn_kebtsiihta_motto:0 "Waves whisper freedom, Endless horizon calling, Boundless dreams set sail"
